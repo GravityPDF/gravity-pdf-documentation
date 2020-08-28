@@ -1,15 +1,379 @@
 module.exports = {
-  v3: {
-    Installation: [
-      'v3/installation-requirements',
-      'v3/installation-requirements2',
-      'v3/installation-requirements3',
-    ],
-  },
+  v3: [
+    {
+      type: 'category',
+      label: 'User',
+      items: [
+        {
+          'type': 'category',
+          'label': 'Installation',
+          'items': [
+            'v3/installation-requirements',
+            'v3/installation-via-wordpress-admin',
+            'v3/installation-manual-initialisation',
+            'v3/installation-via-ftp'
+          ]
+        },
+        {
+          'type': 'category',
+          'label': 'Configuration',
+          'items': [
+            'v3/display-pdf-in-browser',
+            'v3/getting-started-with-gravity-pdf-configuration',
+            'v3/configuration-options-examples',
+            'v3/wheres-configuration-folder'
+          ]
+        },
+        {
+          'type': 'category',
+          'label': 'Config Video Series',
+          'items': [
+            'v3/getting-started-with-gravity-pdf-configuration/basic-configuration-video-part-one',
+            'v3/getting-started-with-gravity-pdf-configuration/how-to-automated-pdf-email-part-two',
+            'v3/getting-started-with-gravity-pdf-configuration/how-to-allow-user-pdf-downloads-video-part-three',
+            'v3/getting-started-with-gravity-pdf-configuration/how-to-manual-review-before-pdf-email-part-four',
+            'v3/getting-started-with-gravity-pdf-configuration/send-pdf-after-accepting-payment-video-part-five'
+          ]
+        },
+        {
+          'type': 'category',
+          'label': 'Troubleshooting',
+          'items': [
+            'v3/known-issues-and-limitations',
+            'v3/memory-problems'
+          ]
+        },
+      ],
+    },
 
-  v4: {
+    {
+      type: 'category',
+      label: 'Developers',
+      items: [
+        {
+          'type': 'category',
+          'label': 'Getting Started',
+          'items': [
+            'v3/custom-templates-introduction',
+            'v3/custom-templates-with-mergetags',
+            'v3/custom-templates-with-form-data-array',
+            'v3/accessing-product-data',
+            'v3/accessing-survey-poll-quiz-data',
+            'v3/filters-and-hooks',
+            'v3/reserved-variables',
+          ]
+        },
+        {
+          'type': 'category',
+          'label': 'mPDF Features',
+          'items': [
+            'v3/language-support',
+            'v3/css-and-html-support',
+          ]
+        },
+        {
+          'type': 'category',
+          'label': 'mPDF Demos',
+          'items': [
+            'v3/basic-html-pdf-template-example',
+            'v3/background-images-and-rounded-corners-pdf-template-example',
+            'v3/images-pdf-template-example',
+            'v3/tables-pdf-template-example',
+            'v3/floats-and-fixed-positioning-pdf-template-example',
+            'v3/headers-and-footers-pdf-template-example',
+            'v3/change-document-size-pdf-template-example',
+            'v3/watermarks-pdf-template-example'
+          ]
+        }
+      ],
+    },
+  ],
 
-  },
+  v4: [
+    {
+      type: 'category',
+      label: 'User',
+      items: [
+        {
+          type: 'category',
+          label: 'Getting Started',
+
+          items: [
+            'v4/five-minute-install',
+            'v4/user-installation',
+            'v4/user-global-settings',
+            'v4/user-setup-pdf',
+            'v4/user-viewing-pdfs',
+            'v4/user-shortcodes',
+            'v4/user-managing-pdfs',
+            'v4/user-pdf-template-manager',
+            'v4/user-custom-fonts',
+            'v4/user-additional-templates',
+            'v4/user-gravity-forms-compatibility',
+          ],
+
+          'collapsed': false,
+        },
+
+        {
+          'type': 'category',
+          'label': 'Under The Hood',
+          'items': [
+            'v4/user-css-ready-classes',
+            'v4/user-adding-page-breaks',
+            'v4/user-hide-form-fields',
+            'v4/uploaded-images',
+            'v4/user-importing-exporting-and-duplicating',
+            'v4/user-pdf-security',
+            'v4/gravityview-support',
+            'v4/gravity-flow-support',
+            'v4/gdpr-and-gravity-pdf',
+            'v4/v3-to-v4-migration',
+          ]
+        },
+
+        {
+          'type': 'category',
+          'label': 'Common Problems',
+          'items': [
+            'v4/user-activation-errors',
+            'v4/user-increasing-memory-limit',
+            'v4/user-supported-pdf-viewers',
+            'v4/user-white-screen-of-death',
+            'v4/user-email-notifications',
+            'v4/postscript-outlines-not-supported',
+            'v4/user-weird-characters-showing-instead-of-pdf',
+            'v4/user-why-arent-columns-showing-in-pdf',
+            'v4/user-generated-in-x-seconds',
+            'v4/user-setup_ids-depreciated-gravity-pdf-4-0',
+            'v4/user-pdf-menu-items-under-dashboard',
+            'v4/user-restricted-site-access-plugin-conflict',
+            'v4/user-500-internal-server-error',
+            'v4/user-no-gravity-form-entry-id-passed-to-gravity-pdf'
+          ]
+        },
+      ]
+    },
+
+    {
+      type: 'category',
+      label: 'Extension Shop',
+      items: [
+        {
+          'type': 'doc',
+          'id': 'v4/shop-installing-upgrading-extensions',
+        },
+
+        {
+          'type': 'category',
+          'label': 'Plugins',
+          'items': [
+            'v4/shop-plugin-core-booster-add-on',
+            'v4/shop-plugin-previewer-add-on'
+          ],
+          'collapsed': false,
+        }
+      ],
+    },
+
+    {
+      type: 'category',
+      label: 'Template Shop',
+      items: [
+        {
+          'type': 'doc',
+          'id': 'v4/shop-installing-upgrading-premium-templates',
+        },
+
+        {
+          'type': 'category',
+          'label': 'Universal Templates',
+          'items': [
+            'v4/shop-pdf-template-barot',
+            'v4/shop-pdf-template-sabre',
+            'v4/shop-pdf-template-cellulose',
+            'v4/shop-pdf-template-formium',
+            'v4/shop-pdf-template-colossus',
+            'v4/shop-pdf-template-tritan'
+          ]
+        },
+        {
+          'type': 'category',
+          'label': 'Invoice Templates',
+          'items': [
+            'v4/shop-pdf-template-invoice-classic',
+            'v4/shop-pdf-template-invoice-modern',
+            'v4/shop-pdf-template-invoice-aurora',
+            'v4/shop-pdf-template-invoice-iconic'
+          ]
+        },
+        {
+          'type': 'category',
+          'label': 'Letter Templates',
+          'items': [
+            'v4/shop-pdf-template-formal-letter',
+            'v4/shop-pdf-template-business-letter-1',
+            'v4/shop-pdf-template-business-letter-2'
+          ]
+        },
+      ],
+    },
+
+    {
+      type: 'category',
+      label: 'Developers',
+      items: [
+        {
+          'type': 'category',
+          'label': 'Core Concepts',
+          'items': [
+            'v4/developer-start-customising',
+            'v4/developer-first-custom-pdf',
+            'v4/developer-mergetags-and-conditional-shortcodes',
+            'v4/developer-php-form-data-array',
+            'v4/developer-template-configuration-and-image',
+            'v4/developer-template-hierarchy',
+            'v4/development-helper-parameters'
+          ],
+          'collapsed': false,
+        },
+        {
+          'type': 'category',
+          'label': 'PDF Features',
+          'items': [
+            'v4/developer-supported-html-and-css',
+            'v4/developer-headers-and-footers',
+            'v4/developer-images',
+            'v4/developer-watermarks',
+            'v4/developer-backgrounds',
+            'v4/developer-rounded-corners',
+            'v4/developer-tables',
+            'v4/developer-floats',
+            'v4/developer-positioning',
+            'v4/developer-pagebreaks',
+          ]
+        },
+        {
+          'type': 'category',
+          'label': 'API',
+          'items': [
+            'v4/developer-api-whats-it-for',
+            'v4/api_get_log_class',
+            'v4/api_get_notice_class',
+            'v4/get_data_class',
+            'v4/api_get_options_class',
+            'v4/api_get_misc_class',
+            'v4/api_get_form_class',
+            'v4/api_get_mvc_class',
+            'v4/api_get_form_pdfs',
+            'v4/api_get_pdf',
+            'v4/api_add_pdf',
+            'v4/api_update_pdf',
+            'v4/api_delete_pdf',
+            'v4/api_get_plugin_settings',
+            'v4/api_get_plugin_option',
+            'v4/api_add_plugin_option',
+            'v4/api_update_plugin_option',
+            'v4/api_delete_plugin_option',
+            'v4/api_create_pdf',
+            'v4/api_product_table',
+            'v4/likert_table',
+            'v4/api_add_pdf_font',
+            'v4/delete_pdf_font',
+            'v4/api_get_pdf_fonts',
+            'v4/api_get_form_data'
+          ]
+        },
+        {
+          'type': 'category',
+          'label': 'Filter Hooks',
+          'items': [
+            'v4/gfpdf_gf_noconflict_scripts',
+            'v4/gfpdf_gf_noconflict_styles',
+            'v4/gfpdf_one_time_action_routes',
+            'v4/gfpdf_localised_script_array',
+            'v4/gfpdf_template_args',
+            'v4/gfpdf_settings_general',
+            'v4/gfpdf_settings_general_security',
+            'v4/gfpdf_settings_tools',
+            'v4/gfpdf_form_settings',
+            'v4/gfpdf_form_settings_appearance',
+            'v4/gfpdf_form_settings_advanced',
+            'v4/gfpdf_registered_fields',
+            'v4/gfpdf_pdf_html_output',
+            'v4/gfpdf_mpdf_class',
+            'v4/gfpdf_mpdf_init_class',
+            'v4/gfpdf_pdf_actions',
+            'v4/gfpdf_pdf_list_columns',
+            'v4/gfpdf_field_value',
+            'v4/gfpdf_field_html_value',
+            'v4/gfpdf_get_settings',
+            'v4/gfpdf_pdf_config',
+            'v4/gfpdf_form_add_pdf',
+            'v4/gfpdf_form_update_pdf',
+            'v4/gfpdf_get_option',
+            'v4/gfpdf_update_option',
+            'v4/gfpdf_capabilities',
+            'v4/gfpdf_settings_sanitize',
+            'v4/gfpdf_signature_width',
+            'v4/gfpdf_form_settings_sanitize',
+            'v4/gfpdf_core_template_fields_list',
+            'v4/gfpdf_working_folder_name',
+            'v4/gfpdf_template_location',
+            'v4/gfpdf_template_location_uri',
+            'v4/gfpdf_font_location',
+            'v4/gfpdf_tmp_location',
+            'v4/gfpdf_multisite_template_location',
+            'v4/gfpdf_multisite_template_location_uri',
+            'v4/gfpdf_pdf_middleware',
+            'v4/gfpdf_pdf_filename',
+            'v4/gfpdf_field_class',
+            'v4/gfpdf_gravityforms_shortcode_attributes',
+            'v4/gfpdf_include_list_styles',
+            'v4/gfpdf_include_product_styles',
+            'v4/gfpdf_field_section_break_html',
+            'v4/gfpdf_show_field_value',
+            'v4/gfpdf_field_label',
+            'v4/gfpdf_pdf_field_content',
+            'v4/gfpdf_enable_master_password_field',
+            'v4/gfpdf_field_middleware',
+            'v4/gfpdf_get_pdf_display_list',
+            'v4/gfpdf_get_active_pdfs',
+            'v4/gfpdf_override_pdf_bypass',
+            'v4/gfpdf_maybe_attach_to_notification',
+            'v4/gfpdf_form_data',
+            'v4/gfpdf_current_pdf_configuration',
+            'v4/gfpdf_form_data_key_order',
+            'v4/gfpdf_container_disable_faux_columns'
+          ]
+        },
+        {
+          'type': 'category',
+          'label': 'Action Hooks',
+          'items': [
+            'v4/gfpdf_tool_tab_actions',
+            'v4/gfpdf_pdf_list_column_id',
+            'v4/gfpdf_core_template',
+            'v4/gfpdf_fully_loaded',
+            'v4/gfpdf_version_changed',
+            'v4/gfpdf_plugin_installed',
+            'v4/gfpdf_post_save_pdf',
+            'v4/gfpdf_post_general_settings_page',
+            'v4/gfpdf_post_tools_settings_page',
+            'v4/gfpdf_post_help_settings_page',
+            'v4/gfpdf_pre_html_fields',
+            'v4/gfpdf_post_html_fields',
+            'v4/gfpdf_pre_generate_and_save_pdf_notification',
+            'v4/gfpdf_post_generate_and_save_pdf_notification',
+            'v4/gfpdf_pre_generate_and_save_pdf',
+            'v4/gfpdf_post_generate_and_save_pdf',
+            'v4/gfpdf_pre_view_or_download_pdf'
+          ]
+        },
+
+      ],
+    },
+  ],
 
   v5: [
     {
