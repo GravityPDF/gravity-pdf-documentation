@@ -1,7 +1,7 @@
 const oembed = require('@agentofuser/remark-oembed')
 module.exports = {
   title: 'Gravity PDF',
-  url: 'https://gravitypdf.com/documentation',
+  url: 'https://docs.gravitypdf.com',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   favicon: 'img/favicon.ico',
@@ -34,13 +34,20 @@ module.exports = {
 
             {
               label: 'v3',
-              to: 'v3/installation-requirements',
+              to: 'v3/installation-requirements/',
             },
           ]
         },
+
         {
-          href: 'https://github.com/gravityPDF/gravity-pdf-documentation',
-          label: 'GitHub',
+          href: 'https://gravitypdf.com/support/',
+          label: 'Get Help',
+          position: 'right',
+        },
+
+        {
+          href: 'https://gravitypdf.com/redirect-to-download-latest-version-of-gravity-pdf/',
+          label: 'Download',
           position: 'right',
         },
       ],
@@ -49,28 +56,35 @@ module.exports = {
       style: 'dark',
       links: [
         {
-          title: 'Docs',
+          title: ' ',
           items: [
             {
-              label: 'Style Guide',
-              to: 'docs/',
-            }
+              label: 'Back to GravityPDF.com',
+              href: 'https://gravitypdf.com/',
+            },
+
+            {
+              label: 'Demo Site',
+              href: 'https://demo.gravitypdf.com/',
+            },
           ],
         },
         {
           title: 'Community',
           items: [
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-            },
-            {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
-            },
-            {
               label: 'Twitter',
-              href: 'https://twitter.com/docusaurus',
+              href: 'https://twitter.com/gravitypdf',
+            },
+
+            {
+              label: 'YouTube',
+              href: 'https://www.youtube.com/channel/UCLdyzpNdEw71lvfhkfiTmAA',
+            },
+
+            {
+              label: 'Facebook',
+              href: 'https://www.facebook.com/gravitypdf',
             },
           ],
         },
@@ -78,17 +92,27 @@ module.exports = {
           title: 'More',
           items: [
             {
-              label: 'Blog',
-              to: 'blog',
+              label: 'Support',
+              href: 'https://gravitypdf.com/support/',
+            },
+
+            {
+              label: 'Shop',
+              href: 'https://gravitypdf.com/shop/',
+            },
+
+            {
+              label: 'News',
+              href: 'https://gravitypdf.com/blog/',
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              href: 'https://github.com/gravityPDF/gravity-pdf',
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Gravity PDF.`,
+      copyright: `Copyright © Gravity PDF. All Rights Reserved.`,
     },
     prism: {
       defaultLanguage: 'php',
@@ -112,12 +136,13 @@ module.exports = {
           editUrl: 'https://github.com/gravityPDF/gravity-pdf-documentation/edit/master/',
           remarkPlugins: [
             oembed.default
-          ]
+          ],
+          showLastUpdateTime: true,
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
-        showLastUpdateTime: true,
+
       },
     ],
   ],
