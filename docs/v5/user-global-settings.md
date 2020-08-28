@@ -1,5 +1,5 @@
 ---
-title: "Documentation: Gravity PDF Settings and What They Do"
+title: "Gravity PDF Settings and What They Do"
 sidebar_label: "Global Settings"
 description: "Gravity PDF is fully integrated into Gravity Forms. If you've ever used a Gravity Forms add-on you'll feel right at home setting up Gravity PDF."
 ---
