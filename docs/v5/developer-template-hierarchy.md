@@ -1,20 +1,20 @@
 ---
-title: "PDF Template Hierarchy and Loading Order – Development"
+title: "PDF Template Hierarchy and Loading Order"
 sidebar_label: "Template Hierarchy"
 description: "Gravity PDF has a template hierarchy much like WordPress theme and child themes. You can override PDF templates, configuration and images."
 ---
 
-### Introduction 
+## Introduction 
 
 We [touched on the template hierarchy](developer-first-custom-pdf.md#template-hierarchy) when you created your first custom PDF template, but it's a little more involved – especially for Multisite installations. It's also not just limited to PDF templates; you can override the core configuration and image preview files as well.
 
-### Standard WordPress Installation 
+## Standard WordPress Installation 
 
 ![WordPress Standard Template Hierarchy](https://resources.gravitypdf.com/uploads/2015/11/WordPress-Standard-Hierarchy.png)
 
 On a standard WordPress installation the template hierarchy is straightforward. Files in the [PDF Working Directory](developer-first-custom-pdf.md#working-directory) override templates that ship with the plugin – provided they have the same name. [When you prepare your website for custom PDF templates](developer-first-custom-pdf.md#preparing-the-infrastructure) all the plugin's template files are copied over to your PDF working directory so you can override the settings if you wish. It's straightforward and easy.
 
-### Multisite WordPress Installation 
+## Multisite WordPress Installation 
 
 ![WordPress Multisite Template Hierarchy](https://resources.gravitypdf.com/uploads/2015/11/WordPress-Multisite-Hierarchy.png)
 

@@ -4,35 +4,28 @@ sidebar_label: "gfpdf_mpdf_init_class"
 description: "Modify the mPDF settings before any HTML has been processed. Usually you'll want to use this filter to change the default configuration settings for mPDF."
 ---
 
-**Jump To Section**
-
-* [Description](#description)
-* [Parameters](#parameters)
-* [Usage](#usage)
-* [Source Code](#source-code)
-
-### Description 
+## Description 
 
 This filter can be used to modify the mPDF settings before any HTML has been processed. Usually you'll want to use this filter to [change the default configuration settings for mPDF](https://github.com/mpdf/mpdf/blob/development/src/Config/ConfigVariables.php). If you want to write directly to the PDF (`$pdf->WriteHTML()`), it's recommended to use the [gfpdf_mpdf_class filter](gfpdf_mpdf_class.md) instead as doing so in this filter can break the automated header/footer support. 
 
-### Parameters 
+## Parameters 
 
-$mpdf | object
+### $mpdf | object
 *  The initialised `mPDF` class that handles the PDF generation
 
-$form | array
+### $form | array
 *  The current Gravity Form array
 
-$entry | array 
+### $entry | array 
 *  The raw Gravity Form Entry array.
 
-$settings | array
+### $settings | array
 *  The current PDF settings being processed
 
-$Helper_PDF | object
+### $Helper_PDF | object
 *  The initialised `\GFPDF\Helper\Helper_PDF` class
 
-### Usage 
+## Usage 
 
 Gravity PDF has some very sane defaults for mPDF, but you may want to utilise one of their more advanced features or change the default settings. If so, this is the filter to use. 
 
@@ -68,6 +61,6 @@ add_filter( 'gfpdf_mpdf_init_class', function( $mpdf, $form, $entry, $settings, 
 }, 10, 5 );
 ```
 
-### Source Code 
+## Source Code 
 
 This filter is located in the `Helper_PDF::begin_pdf()` method of `/src/helper/Helper_PDF.php`.

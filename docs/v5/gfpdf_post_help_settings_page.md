@@ -4,17 +4,11 @@ sidebar_label: "gfpdf_post_help_settings_page"
 description: "This hook allows you to output content at the bottom of the PDF Help Settings tab. "
 ---
 
-**Jump To Section**
-
-* [Description](#description)
-* [Usage](#usage)
-* [Source Code](#source-code)
-
-### Description 
+## Description 
 
 This hook allows you to output content at the bottom of the [PDF Help Settings tab](user-global-settings.md#help). 
 
-### Usage 
+## Usage 
 
 This snippet shows you how you can include a message after the Help Settings form:
 
@@ -28,6 +22,6 @@ add_action( 'gfpdf_post_help_settings_page', function() {
 }, 3 );
 ```
 
-### Source Code 
+## Source Code 
 
 This action is located in `/src/view/html/Settings/help.php`.

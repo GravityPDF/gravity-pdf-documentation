@@ -4,14 +4,7 @@ sidebar_label: "gfpdf_multisite_template_location"
 description: "For multisite installations we create a subdirectory inside the PDF_EXTENDED_TEMPLATES folder using each multisite's ID."
 ---
 
-**Jump To Section**
-
-* [Description](#description)
-* [Parameters](#parameters)
-* [Usage](#usage)
-* [Source Code](#source-code)
-
-### Description 
+## Description 
 
 By default, the [PDF working directory](developer-first-custom-pdf.md#working-directory) is found in your `/wp-content/uploads/PDF_EXTENDED_TEMPLATES` folder. For multisite installations we also create a subdirectory inside the `PDF_EXTENDED_TEMPLATES` folder using each multisite's ID. This filter allows you to change that location (but you'll normally want to use the [`gfpdf_template_location` filter](gfpdf_template_location.md) instead). 
 
@@ -21,21 +14,21 @@ The multisite working directory **MUST be in a publicly accessible folder** (acc
 
 You can also use this filter by targeting the multisite ID directly: `gfpdf_multisite_template_location_$blog_id`. 
 
-### Parameters 
+## Parameters 
 
-$directory | string
+### $directory | string
 *  The path to the multisite [PDF working directory](developer-first-custom-pdf.md#working-directory)
 
-$working_folder | string
+### $working_folder | string
 *  The working directory folder name. By default this is `PDF_EXTENDED_TEMPLATES`.
 
-$upload_path | string
+### $upload_path | string
 *  The path to your uploads directory (where the PDF working directory is stored by default).
 
-$blog_id | integer
+### $blog_id | integer
 *  The current ID of the multisite being processed
 
-### Usage 
+## Usage 
 
 The following snippet shows you how you can move the multisite PDF working directory for site #3 to your `wp-content` directory (instead of its original location in your uploads folder):
 
@@ -63,6 +56,6 @@ add_filter( 'gfpdf_template_location_uri', function( $url, $working_folder, $upl
 }, 10, 4 );
 ```
 
-### Source Code 
+## Source Code 
 
 This filter is located in the `Model_Install::setup_multisite_template_location()` method of `/src/model/Model_Install.php`.

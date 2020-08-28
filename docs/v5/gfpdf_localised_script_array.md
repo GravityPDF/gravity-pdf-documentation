@@ -4,23 +4,16 @@ sidebar_label: "gfpdf_localised_script_array"
 description: ""
 ---
 
-**Jump To Section**
-
-* [Description](#description)
-* [Parameters](#parameters)
-* [Usage](#usage)
-* [Source Code](#source-code)
-
-### Description 
+## Description 
 
 The array returned by this filter gets passed directly to `wp_localize_script()`. You can use it to pass in additional values or modify existing values in the `GFPDF` JavaScript object which gets automatically included when the `gfpdf_js_settings` script is loaded.
 
-### Parameters 
+## Parameters 
 
-$localised | array
+### $localised | array
 *  An associative array that gets output in our `GFPDF` JavaScript object.
 
-### Usage 
+## Usage 
 
 The following snippet can be used to change output of an existing record:
 
@@ -46,6 +39,6 @@ add_filter( 'gfpdf_localised_script_array', function( $localised ) {
 } );
 ```
 
-### Source Code 
+## Source Code 
 
 This filter is located in the `Helper_Data::get_localised_script_data()` method of `/src/helper/Helper_Data.php`.

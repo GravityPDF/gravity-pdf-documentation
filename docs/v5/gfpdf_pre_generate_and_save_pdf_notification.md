@@ -4,37 +4,31 @@ sidebar_label: "gfpdf_pre_generate_and_save_pdf_notification"
 description: ""
 ---
 
-**Jump To Section**
 
-* [Description](#description)
-* [Version](#version)
-* [Parameters](#parameters)
-* [Usage](#usage)
-* [Source Code](#source-code)
 
-### Description 
+## Description 
 
 This action can be used to run a task or change a setting prior to the PDF being generated and saved for notifications. If you change the PDF settings on the fly, [you should use the `gfpdf_post_generate_and_save_pdf_notification` action](gfpdf_post_generate_and_save_pdf_notification.md) to clean up your filter. 
 
-### Version 
+## Version 
 
 This action was introduced in Gravity PDF 4.5.
 
-### Parameters 
+## Parameters 
 
-$form | array
+### $form | array
 *  The Gravity Forms form array
 
-$entry | array
+### $entry | array
 *  The Gravity Form entry array
 
-$settings | array
+### $settings | array
 *  The current Gravity PDF settings array
 
-#notification | array
+### #notification | array
 *  The current notification being sent
 
-### Usage 
+## Usage 
 
 ```.language-php
 add_action( 'gfpdf_pre_generate_and_save_pdf_notification', function( $form, $entry, $settings, $notifications ) {
@@ -46,6 +40,6 @@ add_action( 'gfpdf_post_generate_and_save_pdf_notification', function( $form, $e
 }, 10, 4 );
 ```
 
-### Source Code 
+## Source Code 
 
 This action is located in the `notifications()` method of `/src/model/Model_PDF.php`.

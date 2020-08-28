@@ -4,37 +4,31 @@ sidebar_label: "gfpdf_get_active_pdfs"
 description: ""
 ---
 
-**Jump To Section**
 
-* [Description](#description)
-* [Version](#version)
-* [Parameters](#parameters)
-* [Usage](#usage)
-* [Source Code](#source-code)
 
-### Description 
+## Description 
 
 This filter can be used to programically enable or disable a PDF configured on the form. By default, Gravity PDF will check if the PDF status is active and the conditional logic is valid. This hook allows you to filter PDFs with advanced logic. 
 
-### Version 
+## Version 
 
 This filter was introduced in Gravity PDF 4.2.
 
-### Parameters 
+## Parameters 
 
-$filtered | array
+### $filtered | array
 *  The filtered list of PDF settings
 
-$pdfs | array
+### $pdfs | array
 *  The unfiltered list of PDF settings
 
-$entry | array
+### $entry | array
 *  The raw Gravity Form Entry array.
 
-$form | array
+### $form | array
 *  The Gravity Forms array
 
-### Usage 
+## Usage 
 
 Use the following code to enable the form's PDFs if two sets of conditions are true (something you cannot do with standard Gravity Forms conditional logic), otherwise disable the documents:
 
@@ -74,6 +68,6 @@ add_filter( 'gfpdf_get_active_pdfs', function( $filtered, $pdfs, $entry, $form )
 }, 10, 4 );
 ```
 
-### Source Code 
+## Source Code 
 
 This filter is located in the `Model_PDF::get_active_pdfs()` method in `/src/model/Model_PDF.php`.

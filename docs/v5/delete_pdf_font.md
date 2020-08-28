@@ -4,44 +4,35 @@ sidebar_label: "delete_pdf_font()"
 description: "This function allows you to delete any installed custom PDF fonts using code. It accepts a single argument: the font name."
 ---
 
-**Jump To Section**
-
--   [Description](#description)
--   [Version](#version)
--   [Parameters](#parameters)
--   [Return](#return)
--   [Usage](#usage)
--   [Source Code](#source-code)
-
-### Description 
+## Description 
 
 This function allows you to delete any installed custom PDF fonts using code. It accepts a single argument: the font name.
 
-### Version 
+## Version 
 
 This method was introduced in Gravity PDF 4.1.
 
-### Parameters 
+## Parameters 
 
-font\_name \| string \| required
+### font\_name \| string \| required
 * The name of the custom PDF font to delete
 
-### Return 
+## Return 
 
-boolean \| WP\_Error
+### boolean \| WP\_Error
 * Returns `true` if the font is installed correctly, or `WP_Error` on failure
 
-### Usage 
+## Usage 
 
 ```
-    /* This should be used in a one-time filter or action */
-    $results = GPDFAPI::delete_pdf_font( 'Brandon Grotesque' );
+/* This should be used in a one-time filter or action */
+$results = GPDFAPI::delete_pdf_font( 'Brandon Grotesque' );
 
-    if ( ! is_wp_error( $results ) ) {
-       /* Successfully deleted */
-    }
+if ( ! is_wp_error( $results ) ) {
+   /* Successfully deleted */
+}
 ```
 
-### Source Code 
+## Source Code 
 
 This method is located in `api.php`.

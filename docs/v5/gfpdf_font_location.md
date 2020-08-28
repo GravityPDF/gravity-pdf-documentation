@@ -4,14 +4,7 @@ sidebar_label: "gfpdf_font_location"
 description: "By default, custom fonts are stored in the fonts folder inside the PDF working directory. This filter allows you to change that location. "
 ---
 
-**Jump To Section**
-
-* [Description](#description)
-* [Parameters](#parameters)
-* [Usage](#usage)
-* [Source Code](#source-code)
-
-### Description 
+## Description 
 
 By default custom fonts are stored in the `fonts` folder inside the [PDF working directory](developer-first-custom-pdf.md#working-directory). This filter allows you to change that location. 
 
@@ -19,18 +12,18 @@ Unlike the PDF working directory, the `fonts` folder does not need to be in a pu
 
 *Note:* your web server needs write access to the folder you move this directory to.
 
-### Parameters 
+## Parameters 
 
-$path | string
+### $path | string
 *  The path to the custom fonts folder.
 
-$working_folder | string
+### $working_folder | string
 *  The working directory folder name. By default this is `PDF_EXTENDED_TEMPLATES`.
 
-$upload_path | string
+### $upload_path | string
 *  The path to your uploads directory (where the PDF working directory is stored by default).
 
-### Usage 
+## Usage 
 
 The following snippet shows you how you can move the PDF fonts directory to a private folder that's not accessible through a browser:
 
@@ -52,6 +45,6 @@ add_filter( 'gfpdf_font_location', function( $path, $working_folder, $upload_url
 
 Once you've verified the filter works correctly you should manually remove the old directory.
 
-### Source Code 
+## Source Code 
 
 This filter is located in the `Model_Install::setup_template_location()` method of `/src/model/Model_Install.php`.

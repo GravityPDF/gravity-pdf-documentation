@@ -1,10 +1,10 @@
 ---
-title: "Table Formating and its Quirks in PDFs – PDF Development"
+title: "Custom Template Table Formating and its Quirks in PDFs"
 sidebar_label: "Tables"
 description: "There is quite good support for HTML tables in mPDF, but it does have its quirks. Use tables for tabular data and you'll find them a treat."
 ---
 
-### Introduction 
+## Introduction 
 
 There is quite good support for HTML tables in [mPDF](http://mpdf.github.io/), but it does have its quirks. The two biggest issues you might face when using tables are:
 
@@ -16,14 +16,14 @@ Because of these two issues tables have limited use when designing your PDF layo
 
 ![Example of Tables rendered in mPDF](https://resources.gravitypdf.com/uploads/2015/11/table-preview.png)
 
-### Table Rendering 
+## Table Rendering 
 
 The table autosizing feature can sometimes cause issues with your layouts. One way to prevent unnecessary font resizing is to set a special `autosize` attribute to `1` and the table overflow to `wrap` when defining the table:
 
 ```html
-    <table autosize="1" style="overflow: wrap">
+<table autosize="1" style="overflow: wrap">
 
-    </table>
+</table>
 ```
 
 Other problems with cell width can occur when you have fixed widths applied to `<td>` or `<th>` tags. To prevent problems follow these guidelines:
@@ -35,42 +35,42 @@ Other problems with cell width can occur when you have fixed widths applied to `
 3.  Don't add a width to at least one of your columns.
 
 ```html
-    <table autosize="1">
-       <!-- Set the cell widths in the first row -->
-       <tr>
-            <td width="30%">Cell 1</td>
-            <td width="30%">Cell 2</td>
-            <td>Cell 3</td><!-- This column will fill the rest of the table width (about 40%, minus the border width)
-       </tr>
+<table autosize="1">
+   <!-- Set the cell widths in the first row -->
+   <tr>
+        <td width="30%">Cell 1</td>
+        <td width="30%">Cell 2</td>
+        <td>Cell 3</td><!-- This column will fill the rest of the table width (about 40%, minus the border width)
+   </tr>
 
-       <!-- No need to set them for any other rows -->
-       <tr>
-            <td>Cell 1</td>
-            <td>Cell 2</td>
-            <td>Cell 2</td>
-       </tr>
-    </table>
+   <!-- No need to set them for any other rows -->
+   <tr>
+        <td>Cell 1</td>
+        <td>Cell 2</td>
+        <td>Cell 2</td>
+   </tr>
+</table>
 ```
 
-### Repeating Header and Footers 
+## Repeating Header and Footers 
 
 If a table extends across multiple pages the `<thead></thead>` and `<tfoot></tfoot>` elements will be automatically appended and prepended to the table for each new page.
 
-### Rotating Table 
+## Rotating Table 
 
 Tables can be rotated 90 degrees clockwise or counter-clockwise so they fit nicely on portrait documents. This feature can be applied using the CSS `rotate` property.
 
 ```css
-    #clockwise {
-       rotate: 90;
-    }
+#clockwise {
+   rotate: 90;
+}
 
-    #counterclockwise {
-       rotate: -90;
-    }
+#counterclockwise {
+   rotate: -90;
+}
 ```
 
-### Example 
+## Example 
 
 [We’ve put together a sample showing off the table support in Gravity PDF](https://gist.github.com/jakejackson1/de009962d7ec776d223c).
 

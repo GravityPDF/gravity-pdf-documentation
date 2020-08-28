@@ -4,26 +4,19 @@ sidebar_label: "gfpdf_include_product_styles"
 description: "Gravity PDF includes a global stylesheet which applies to all PDFs. This filter allows you to remove the product table styles for all or some of your PDFs."
 ---
 
-**Jump To Section**
-
-* [Description](#description)
-* [Parameters](#parameters)
-* [Usage](#usage)
-* [Source Code](#source-code)
-
-### Description 
+## Description 
 
 Gravity PDF includes a global stylesheet which applies to all PDFs. This filter allows you to remove the product table styles for all or some of your PDFs.
 
-### Parameters 
+## Parameters 
 
-$active | boolean
+### $active | boolean
 *  Whether to show or remove the default product table styles
 
-$settings | array
+### $settings | array
 *  The current PDF settings being processed.
 
-### Usage 
+## Usage 
 
 This snippet shows you how to display the default product table CSS for all PDFs:
 
@@ -47,6 +40,6 @@ add_filter( 'gfpdf_include_product_styles', function( $active, $settings ) {
 }, 10, 2 );
 ```
  
-### Source Code 
+## Source Code 
 
 This filter is located in the `/src/view/html/PDF/core_template_styles.php` file.

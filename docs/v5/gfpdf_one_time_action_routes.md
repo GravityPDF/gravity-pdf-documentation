@@ -4,17 +4,7 @@ sidebar_label: "gfpdf_one_time_action_routes"
 description: "Gravity PDF can create one-time action messages to be displayed to the user while in the WordPress admin area. We show you how."
 ---
 
-**Jump To Section**
-
-* [Description](#description)
-* [Parameters](#parameters)
-    * [$routes Key-Pair Details](#route-key-pair)
-* [Usage](#usage)
-    * [Add One-Time Action](#add-one-time-action)
-    * [Remove One-Time Action](#remove-one-time-action)
-* [Source Code](#source-code)
-
-### Description 
+## Description 
 
 Gravity PDF can create one-time action messages to be displayed to the user while in the WordPress admin area. We use these to prompt important actions like the v3 to v4 Migration and our plugin review notice. 
 
@@ -22,46 +12,46 @@ Our one-time actions handles security related to XSS and user permissions. It al
 
 If your plugin needs to run important functionality that requires user interaction for Gravity PDF users the `gfpdf_one_time_action_routes` is the perfect solution.
 
-### Parameters 
+## Parameters 
 
-$routes | array
+### $routes | array
 * A multidimensional array containing all the logic needed for our action. A route array should contain the following array keys: `action`, `action_text`, `condition`, `process`, `view`, `capability`. You can optionally include the `view_class` key as well.
 
-#### $routes Key-Pair Details 
+### $routes Key-Pair Details 
 
 It's very important you include ALL required route keys and set up appropriate functions for the `condition`, `process` and `view` keys. Below is more information about what each key does and what its value should be.
 
-action
+### action
 *  The *action* key is an individual route's ID. This should be unique and we recommend prefixing it to prevent clashing with any other routes. 
 
-action_text
+### action_text
 *  This is the text displayed in the primary action button for the route. You should make this translation-ready by wrapping the text inside the `__()` function. 
 
-condition
+### condition
 *  This key should reference a valid callback function or method by following the PHP `call_user_func()` standards.
 *  Ensure your callback returns a boolean value. If it's `true` your one-time action will be shown to the user (unless it has been dismissed).
 
-process
+### process
 *  This key should reference a valid callback function or method by following the PHP `call_user_func()` standards.
 *  Use this callback to actually run your action. It doesn't need to return anything and if you want to output anything to the user you should use the `Helper_Notices::add_notice()` or `Helper_Notices::add_error()` methods. 
 *  On success you should manually dismiss the notice to prevent any extra processing when loading in the admin area. See the [usage](#add-one-time-action) instructions below for more details.
 
-view
+### view
 *  This key should reference a valid callback function or method by following the PHP `call_user_func()` standards.
 *  Ensure your callback returns your message (exactly how shortcodes function). If you want to keep to Gravity PDF's one-time action styles wrap your message in `<div style="font-size:15px; line-height: 25px"></div>` tags. 
 *  Your view will also need to include the `View_Actions::get_action_buttons()` method after your message HTML. See the [usage](#add-one-time-action) instructions below for more details.
 
-capability
+### capability
 *  Add the minimum [WordPress capability](https://codex.wordpress.org/Roles_and_Capabilities) (or [Gravity Form capability](https://www.gravityhelp.com/documentation/article/role-management-guide/)) a user needs to have to see and run the one-time action.
 
-view_class
+### view_class
 *  Use this key to add a class to the WordPress notice container. 
 
-### Usage 
+## Usage 
 
 Because `gfpdf_one_time_action_routes` calls multiple functions, which you need to define, it's much more involved that your standard WordPress filter. But it's also extreamly powerful when used correctly. 
 
-#### Add One-Time Action 
+### Add One-Time Action 
 
 Below is the basic structure used to create one-time actions for Gravity PDF. While we've included the callback functions inline, you can reference any function or method that the PHP `call_user_func()` function supports.
 
@@ -144,7 +134,7 @@ add_filter( 'gfpdf_one_time_action_routes', function( $routes ) {
 } );
 ```
 
-#### Remove One-Time Action 
+### Remove One-Time Action 
 
 If you want to remove an existing one-time action you can do so with the following code:
 
@@ -162,7 +152,7 @@ add_filter( 'gfpdf_one_time_action_routes', function( $routes ) {
 } );
 ```
 
-### Source Code 
+## Source Code 
 
 This filter is located in the `Controller_Actions::get_routes()` method of `/src/controller/Controller_Actions.php`.
 

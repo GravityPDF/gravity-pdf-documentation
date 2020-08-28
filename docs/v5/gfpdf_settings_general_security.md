@@ -4,23 +4,16 @@ sidebar_label: "gfpdf_settings_general_security"
 description: "This filter is used to add new fields to the security section of the General tab of the Gravity PDF settings."
 ---
 
-**Jump To Section**
-
-* [Description](#description)
-* [Parameters](#parameters)
-* [Usage](#usage)
-* [Source Code](#source-code)
-
-### Description 
+## Description 
 
 This filter can be used to add new fields to the [security section of the General tab of the Gravity PDF settings page](user-global-settings.md#general). It's basically a Fields API and all validation, sanitising and saving is handled automatically for you.
 
-### Parameters 
+## Parameters 
 
-$fields | array
+### $fields | array
 *  An associative array that includes a breakdown of the field information. We go into more detail about what each field configuration setting does [in our custom PDF configuration guide](developer-template-configuration-and-image.md#custom-fields).
 
-### Usage 
+## Usage 
 
 The following sample shows you how to add two new fields to the security section of the General tab in the Gravity PDF settings page:
 
@@ -71,6 +64,6 @@ add_filter( 'gfpdf_settings_general_security', function( $fields ) {
 } );
 ```
 
-### Source Code 
+## Source Code 
 
 This filter is located in the `Helper_Options_Fields::get_registered_fields()` method of `/src/helper/Helper_Options_Fields.php`.

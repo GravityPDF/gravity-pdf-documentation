@@ -4,23 +4,18 @@ sidebar_label: "gfpdf_capabilities"
 description: ""
 ---
 
-**Jump To Section**
 
--   [Description](#description)
--   [Parameters](#parameters)
--   [Usage](#usage)
--   [Source Code](#source-code)
 
-### Description 
+## Description 
 
 This filter can be used to add new capabilities to the [user restrictions global setting](user-global-settings.md#user-restriction). By default all Gravity Form capabilities and all active WordPress capabilities are included.
 
-### Parameters 
+## Parameters 
 
-$capabilities \| array
+### $capabilities \| array
 * The multidimensional associative array that holds the list of capabilities.
 
-### Usage 
+## Usage 
 
 This snippet adds a new group to our *User Restrictions* global setting which includes three capabilities:
 
@@ -38,6 +33,6 @@ This snippet adds a new group to our *User Restrictions* global setting which in
     } );
 ```
 
-### Source Code 
+## Source Code 
 
 This filter is located in the `Helper_Abstract_Options::get_capabilities()` method of `/src/helper/abstract/Helper_Abstract_Options.php`.

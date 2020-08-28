@@ -4,22 +4,15 @@ sidebar_label: "gfpdf_gf_noconflict_styles"
 description: "When Gravity Forms is in No-Conflict mode, along with enqueuing CSS you also need to specifically register styles with Gravity Forms."
 ---
 
-**Jump To Section**
-
-* [Description](#description)
-* [Parameters](#parameters)
-* [Usage](#usage)
-* [Source Code](#source-code)
-
-### Description 
+## Description 
 
 When Gravity Forms is in [No-Conflict mode](https://www.gravityhelp.com/documentation/article/enabling-no-conflict-mode/), along with [enqueuing CSS](https://developer.wordpress.org/reference/functions/wp_enqueue_style/) using `wp_enqueue_style()` you also need to specifically register styles so they are loaded on Gravity Forms pages. 
 
 We've ensured any enqueued styles with a handle beginning with `gfpdf_css` are automatically registered, but you may need to register other WordPress styles. This filter allows you to easily register a WordPress CSS handler so it's included on No Conflict Gravity Form pages. 
 
-### Parameters 
+## Parameters 
 
-$items | array
+### $items | array
 *  The list of CSS handler currently being registered with Gravity Form's No-Conflict mode. 
 *  By default any CSS handler beginning with `gfpdf_css`, and already enqueued, are registered on Gravity Forms pages. The following WordPress styles are also registered on *Gravity PDF pages*:
 
@@ -33,7 +26,7 @@ $default_styles = array(
 );
 ```
 
-### Usage 
+## Usage 
 
 This example will register a core WordPress CSS file with Gravity Forms No-Conflict mode.
 
@@ -52,6 +45,6 @@ add_filter( 'gfpdf_gf_noconflict_styles', function( $items ) {
 } );
 ```
 
-### Source Code 
+## Source Code 
 
 This filter is located in the `Router::auto_noconflict_styles()` method of `/src/bootstrap.php`.

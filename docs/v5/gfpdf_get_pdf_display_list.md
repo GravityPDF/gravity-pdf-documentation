@@ -4,34 +4,28 @@ sidebar_label: "gfpdf_get_pdf_display_list"
 description: ""
 ---
 
-**Jump To Section**
 
-* [Description](#description)
-* [Version](#version)
-* [Parameters](#parameters)
-* [Usage](#usage)
-* [Source Code](#source-code)
 
-### Description 
+## Description 
 
 Use this filter to remove (or add) links to the list of PDFs shown on [the Entry List and Entry Details pages](user-viewing-pdfs.md).
 
-### Version 
+## Version 
 
 This filter was introduced in Gravity PDF 4.2.
 
-### Parameters 
+## Parameters 
 
-$args | array
+### $args | array
 *  An associative array containing the keys `name`, `view` and `download` which signify the name of the PDF and the URLs to view or download the document.
 
-$entry | array
+### $entry | array
 *  The raw Gravity Form Entry array.
 
-$form | array
+### $form | array
 *  The Gravity Forms array
 
-### Usage 
+## Usage 
 
 Use the following code to remove a PDF with the ID `5886dcb38f30b`:
 
@@ -57,6 +51,6 @@ add_filter( 'gfpdf_get_pdf_display_list', function( $args, $entry, $form ) {
 }, 10, 3 );
 ```
 
-### Source Code 
+## Source Code 
 
 This filter is located in the `Model_PDF::get_pdf_display_list()` method in `/src/model/Model_PDF.php` .

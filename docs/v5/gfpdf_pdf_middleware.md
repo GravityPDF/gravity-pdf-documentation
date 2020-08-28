@@ -4,14 +4,7 @@ sidebar_label: "gfpdf_pdf_middleware"
 description: "Our middleware is used as the bridge between our user and their ability to access the requested PDF. It's our security layer."
 ---
 
-**Jump To Section**
-
-* [Description](#description)
-* [Parameters](#parameters)
-* [Usage](#usage)
-* [Source Code](#source-code)
-
-### Description 
+## Description 
 
 Middleware is a term used to define a bridge between two operations. In this case, our middleware is used as the bridge between our user and their ability to access the requested PDF. Or in other words, our middleware acts as the security layer. A user has to flow through each middleware filter and pass each test before they can view the PDF. If a middleware filter returns `WP_Error` the user will be denied access to the PDF.
 
@@ -23,18 +16,18 @@ Another key consideration when working with this filter and Gravity PDF is that 
 
 The important part to remember about working with our middleware is that filters should only return `WP_Error` when the check fails. If a check passes we just return the value of `$error` and let the process continue.
 
-### Parameters 
+## Parameters 
 
-$error | mixed
+### $error | mixed
 *  A `WP_Error` is returned on failure. Anything else is considered valid.
 
-$entry | array
+### $entry | array
 *  The raw Gravity Form Entry array.
 
-$settings | array
+### $settings | array
 *  The current PDF settings being processed
 
-### Usage 
+## Usage 
 
 This snippet shows you can how can remove existing middleware. In this case we are effectively enabling public access to all Gravity PDF documents (we do NOT recommend doing this):
 
@@ -83,6 +76,6 @@ add_action( 'gfpdf_pdf_middleware', function( $error, $entry, $settings ) {
 
 ```
 
-### Source Code 
+## Source Code 
 
 This filter is located in the `Model_PDF::process_pdf()` method of `/src/model/Model_PDF.php`.

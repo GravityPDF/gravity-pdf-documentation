@@ -4,32 +4,25 @@ sidebar_label: "gfpdf_pdf_filename"
 description: ""
 ---
 
-**Jump To Section**
-
-* [Description](#description)
-* [Parameters](#parameters)
-* [Usage](#usage)
-* [Source Code](#source-code)
-
-### Description 
+## Description 
 
 Use this filter to dynamically change the name of your saved PDF file. This is useful if you cannot accomplish the filename you want using Gravity Forms merge tags alone, or if you need to conditionally change the filename based on a user's response. 
 
-### Parameters 
+## Parameters 
 
-$name | string
+### $name | string
 *  The current PDF filename
 
-$form | array
+### $form | array
 *  The current Gravity Form array
 
-$entry | array
+### $entry | array
 *  The raw Gravity Form Entry array.
 
-$settings | array
+### $settings | array
 *  The current PDF settings being processed
 
-### Usage 
+## Usage 
 
 This snippet will change the PDF name using a custom date format:
 
@@ -80,6 +73,6 @@ add_action( 'gfpdf_pdf_filename', function( $name, $form, $entry, $settings ) {
 }, 10, 4 );
 ```
 
-### Source Code 
+## Source Code 
 
 This filter is located in the `Model_PDF::get_pdf_name()` method of `/src/model/Model_PDF.php`.

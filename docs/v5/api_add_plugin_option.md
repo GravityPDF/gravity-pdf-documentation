@@ -4,37 +4,28 @@ sidebar_label: "add_plugin_option()"
 description: "This method allows you to add a new global Gravity PDF setting. Usually you'll want to call GPDFAPI::update_plugin_option() instead. "
 ---
 
-**Jump To Section**
-
--   [Description](#description)
--   [Version](#version)
--   [Parameters](#parameters)
--   [Return](#return)
--   [Usage](#usage)
--   [Source Code](#source-code)
-
-### Description 
+## Description 
 
 This method allows you to add a new global Gravity PDF setting. If the option key already exists [a `WP_Error` is returned](https://codex.wordpress.org/Class_Reference/WP_Error). Usually you'll want to call [`GPDFAPI::update_plugin_option()`](/v5/api_update_plugin_option) instead.
 
-### Version 
+## Version 
 
 This method was introduced in Gravity PDF 4.0.
 
-### Parameters 
+## Parameters 
 
-$key \| string
+### $key \| string
 * The global PDF setting ID. Best to prefix this value to prevent conflict.
 
-$value \| mixed
+### $value \| mixed
 * What ever value you want to store
 
-### Return 
+## Return 
 
-boolean \| WP\_Error
+### boolean \| WP\_Error
 * True on success, false if database failed to update and [`WP_Error`](https://codex.wordpress.org/Class_Reference/WP_Error) if the `$key` already exists.
 
-### Usage 
+## Usage 
 
 The following snippet shows you how to add a new PDF global option and correctly handle any errors:
 
@@ -54,6 +45,6 @@ The following snippet shows you how to add a new PDF global option and correctly
     } );
 ```
 
-### Source Code 
+## Source Code 
 
 This method is located in `api.php`.

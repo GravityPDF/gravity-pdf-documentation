@@ -4,40 +4,34 @@ sidebar_label: "gfpdf_mpdf_post_init_class"
 description: "This filter can be used to modify the mPDF settings before any HTML has been processed, but after Gravity PDF sets up the initial object."
 ---
 
-**Jump To Section**
 
-* [Description](#description)
-* [Version](#version)
-* [Parameters](#parameters)
-* [Usage](#usage)
-* [Source Code](#source-code)
 
-### Description 
+## Description 
 
 This filter can be used to modify the mPDF settings before any HTML has been processed, but after Gravity PDF sets up the initial object. 
 
-### Version 
+## Version 
 
 This filter was introduced in Gravity PDF 5.1.5.
 
-### Parameters 
+## Parameters 
 
-$mpdf | object
+### $mpdf | object
 *  The initialised `mPDF` class that handles the PDF generation
 
-$form | array
+### $form | array
 *  The current Gravity Form array
 
-$entry | array 
+### $entry | array 
 *  The raw Gravity Form Entry array.
 
-$settings | array
+### $settings | array
 *  The current PDF settings being processed
 
-$Helper_PDF | object
+### $Helper_PDF | object
 *  The initialised `\GFPDF\Helper\Helper_PDF` class
 
-### Usage 
+## Usage 
 
 Use this filter to override any of the Gravity PDF default mPDF settings.
 
@@ -51,6 +45,6 @@ add_filter( 'gfpdf_mpdf_init_class', function( $mpdf, $form, $entry, $settings, 
 }, 10, 5 );
 ```
 
-### Source Code 
+## Source Code 
 
 This filter is located in the `Helper_PDF::begin_pdf()` method of `/src/helper/Helper_PDF.php`.

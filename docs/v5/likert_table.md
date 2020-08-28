@@ -4,48 +4,39 @@ sidebar_label: "likert_table()"
 description: "This function will output (or return) the Survey Add-on Likert table."
 ---
 
-**Jump To Section**
-
--   [Description](#description)
--   [Version](#version)
--   [Parameters](#parameters)
--   [Return](#return)
--   [Usage](#usage)
--   [Source Code](#source-code)
-
-### Description 
+## Description 
 
 This function will output (or return) the Survey Add-on Likert table.
 
-### Version 
+## Version 
 
 This method was introduced in Gravity PDF 4.0.
 
-### Parameters 
+## Parameters 
 
-$entry \| array
+### $entry \| array
 * The raw Gravity PDF Entry
 
-$field\_id \| integer
+### $field\_id \| integer
 * The field ID of the likert field you want to output
 
-$return \| boolean \| optional
+### $return \| boolean \| optional
 * Set to true to have the likert table HTML returned. By default this is false and will automatically be echoed.
 
-### Return 
+## Return 
 
-string \| void
+### string \| void
 * Returns the HTML string when `$return` is true
 
-### Usage 
+## Usage 
 
 The following snippet shows you how to output the likert table from your Gravity PDF template:
 
 ```
-    /* The raw $entry array is available to all Gravity PDF templates automatically */
-    GPDFAPI::likert_table( $entry, 20 );
+/* The raw $entry array is available to all Gravity PDF templates automatically */
+GPDFAPI::likert_table( $entry, 20 );
 ```
 
-### Source Code 
+## Source Code 
 
 This method is located in `api.php`.

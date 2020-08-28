@@ -4,34 +4,28 @@ sidebar_label: "gfpdf_post_generate_and_save_pdf"
 description: ""
 ---
 
-**Jump To Section**
 
-* [Description](#description)
-* [Version](#version)
-* [Parameters](#parameters)
-* [Usage](#usage)
-* [Source Code](#source-code)
 
-### Description 
+## Description 
 
 This action can be used to a task or clean-up settings changes after the PDF is generated and saved [using the API](v4/api_create_pdf/). [Usually used in conjunction with `gfpdf_pre_generate_and_save_pdf`](v4/gfpdf_pre_generate_and_save_pdf/)
 
-### Version 
+## Version 
 
 This action was introduced in Gravity PDF 4.5.
 
-### Parameters 
+## Parameters 
 
-$form | array
+### $form | array
 *  The Gravity Forms form array
 
-$entry | array
+### $entry | array
 *  The Gravity Form entry array
 
-$settings | array
+### $settings | array
 *  The current Gravity PDF settings array
 
-### Usage 
+## Usage 
 
 ```.language-php
 add_action( 'gfpdf_post_generate_and_save_pdf', function( $form, $entry, $settings ) {
@@ -43,6 +37,6 @@ add_action( 'gfpdf_pre_generate_and_save_pdf', function( $form, $entry, $setting
 }, 10, 3 );
 ```
 
-### Source Code 
+## Source Code 
 
 This action is located in the `create_pdf()` method of `/api.php`.
