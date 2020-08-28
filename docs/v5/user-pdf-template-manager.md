@@ -28,7 +28,9 @@ Once you've accessed the PDF Template Manager you'll see a prominent search bar 
 
 One of the powerful new features is the ability to install PDF Template `.zip` packages straight from the UI. You'll see an "Add New Template" box below all your installed templates where you can drag and drop your `.zip` package.
 
-> This feature is only for PDF Template files that have [been created for Gravity PDF](developer-start-customising.md). You cannot zip up a document you have on your computer (like a `.pdf` or `.docx`) and upload it using the Template Manager.
+:::info
+This feature is only for PDF Template files that have [been created for Gravity PDF](developer-start-customising.md). You cannot zip up a document you have on your computer (like a `.pdf` or `.docx`) and upload it using the Template Manager.
+:::
 
 If you [purchase a PDF template from our shop](https://gravitypdf.com/shop/) the `.zip` file you'll receive can be installed through this manager. If a PDF template already exists when you upload the `.zip` it will be automatically updated (the old template will be overridden with the new one). **You’ll lose any changes you make to the PDF template file(s) during an update**.
 

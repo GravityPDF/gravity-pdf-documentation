@@ -50,7 +50,9 @@ The [page confirmation](https://docs.gravityforms.com/configuring-confirmations-
 
 The [redirect confirmation](https://docs.gravityforms.com/configuring-confirmations-in-gravity-forms/#redirect-confirmation) allows you to send the user to another location upon completing their form. If you choose, you can redirect the user straight to a PDF. To get it functioning you need to copy and paste the sample shortcode found on the [PDF form list](user-managing-pdfs.md#download-shortcode).
 
-> If using the [signed PDF URL feature](user-shortcodes.md#signed-attribute) with the redirect method, the `Pass Field Data Via Query String` option will be ignored. 
+:::info
+If using the [signed PDF URL feature](user-shortcodes.md#signed-attribute) with the redirect method, the `Pass Field Data Via Query String` option will be ignored.
+::: 
 
 ### Usage in Notifications 
 
