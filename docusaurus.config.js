@@ -122,7 +122,12 @@ module.exports = {
       v4: `<div class="alert alert--danger margin-bottom--md" role="alert">&#x1F525; Gravity PDF v4 end of life was 2019-10-04 and <strong>this version is no longer supported</strong>. This legacy documentation is kept for reference only.</div>`,
       v5: ``
     },
-    latestVersion: 'v5'
+    latestVersion: 'v5',
+
+    googleAnalytics: {
+      trackingID: 'UA-58177521-3',
+      anonymizeIP: true,
+    },
   },
   presets: [
     [
@@ -145,4 +150,6 @@ module.exports = {
       },
     ],
   ],
+
+  plugins: ['@docusaurus/plugin-google-analytics'],
 };
