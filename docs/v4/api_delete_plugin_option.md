@@ -35,7 +35,7 @@ boolean
 
 The following snippet shows you how to remove a PDF global option and correctly handle any errors:
 
-```.language-php
+```
 add_action( 'init', function() {
 	if ( class_exists( 'GPDFAPI' ) ) {
 

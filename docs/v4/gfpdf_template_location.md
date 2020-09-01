@@ -34,7 +34,7 @@ $upload_path | string
 
 The following snippet shows you how you can move the PDF working directory to your `wp-content` directory (instead of its original location in your uploads folder):
 
-```.language-php
+```
 add_filter( 'gfpdf_template_location', function( $directory, $working_folder, $upload_path ) {
 	/* Make sure you include the forward slash! */
 	return WP_CONTENT_DIR . '/' . $working_folder . '/';

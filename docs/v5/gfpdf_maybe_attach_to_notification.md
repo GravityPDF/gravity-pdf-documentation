@@ -35,7 +35,7 @@ This filter was introduced in Gravity PDF 4.2.
 
 The following will include all generated PDFs with all Gravity Forms notifications:
 
-```.language-php
+```
 add_filter( 'gfpdf_maybe_attach_to_notification', function( $attach, $notification, $settings, $entry, $form ) {
 	return true;
 }, 10, 5 );
@@ -43,7 +43,7 @@ add_filter( 'gfpdf_maybe_attach_to_notification', function( $attach, $notificati
 
 The above isn't really useful though. The below sample will attach any PDF with a name containing the word 'Submission' to any Gravity Form notification on form #5:
 
-```.language-php
+```
 add_filter( 'gfpdf_maybe_attach_to_notification', function( $attach, $notification, $settings, $entry, $form ) {
 	if ( $form['id'] === 5 && strpos( $settings['name'], 'Submission' ) !== false ) {
 		return true;

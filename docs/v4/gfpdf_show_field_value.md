@@ -27,7 +27,7 @@ $show_value | boolean
 
 ### Usage 
 
-```.language-php
+```
 add_action( 'gfpdf_show_field_value', function( $show_value ) {
    return true;
 }, 10 );

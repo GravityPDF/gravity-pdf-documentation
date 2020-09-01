@@ -34,7 +34,7 @@ $upload_path | string
 
 The following snippet shows you how you can move the PDF fonts directory to a private folder that's not accessible through a browser:
 
-```.language-php
+```
 add_filter( 'gfpdf_font_location', function( $path, $working_folder, $upload_url ) {
     /**
      * On a standard WordPress installation the ABSPATH directory refers to the top-level directory on your web server

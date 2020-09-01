@@ -27,7 +27,7 @@ $settings | array
 
 This snippet shows you how to display the default product table CSS for all PDFs:
 
-```.language-php
+```
 add_filter( 'gfpdf_include_product_styles', function( $active, $settings ) {
 	return false;
 }, 10, 2 );
@@ -35,7 +35,7 @@ add_filter( 'gfpdf_include_product_styles', function( $active, $settings ) {
 
 This snippet shows you how to display the default product table CSS for a particular PDF:
 
-```.language-php
+```
 add_filter( 'gfpdf_include_product_styles', function( $active, $settings ) {
 
 	/* Display the list field styles for a specific PDF */

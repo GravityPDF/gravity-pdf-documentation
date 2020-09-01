@@ -24,7 +24,7 @@ $folder | array
 
 This snippet shows how to change the PDF working directory name:
 
-```.language-php
+```
 add_action( 'gfpdf_working_folder_name', function( $folder ) {
 	return 'PDF_Templates';
 } );

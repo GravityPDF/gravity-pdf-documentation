@@ -29,7 +29,7 @@ $enable | boolean
 
 Use the following code to enable the field:
 
-```.language-php
+```
 add_filter( 'gfpdf_enable_master_password_field', function( $enable, $settings ) {
 	return true;
 }, 10, 2 );

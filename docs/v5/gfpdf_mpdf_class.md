@@ -29,7 +29,7 @@ This filter can be used to include additional content directly in your PDF, or o
 
 The snippet below will output additional debugging information to the end of the PDF when WordPress has debugging mode enabled:
 
-```.language-php
+```
 add_filter( 'gfpdf_mpdf_class', function( $mpdf, $form, $entry, $settings, $Helper_PDF ) {
 
 	/* You might want to include additional debugging information if WP_DEBUG is true */
@@ -44,7 +44,7 @@ add_filter( 'gfpdf_mpdf_class', function( $mpdf, $form, $entry, $settings, $Help
 
 You might also like to change the display mode from the 'fullpage' setting we default to:
 
-```.language-php
+```
 add_filter( 'gfpdf_mpdf_class', function( $mpdf, $form, $entry, $settings, $Helper_PDF ) {
 
 	/**

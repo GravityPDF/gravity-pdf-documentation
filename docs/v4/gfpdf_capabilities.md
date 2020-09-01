@@ -24,7 +24,7 @@ $capabilities | array
 
 This snippet adds a new group to our *User Restrictions* global setting which includes three capabilities:
 
-```.language-php
+```
 add_action( 'gfpdf_capabilities', function( $capabilities ) {
 
 	/* Ensure your capabilities are correctly registered with WordPress */

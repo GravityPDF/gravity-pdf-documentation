@@ -22,7 +22,7 @@ This filter can be used to dynamically change or add to the Gravity PDF global s
 
 This snippet shows you how to change the *logged out timeout* security setting. Before modifying the setting we're looking for a constant you conditionally defined at some stage (but you could use any temporary condition). 
 
-```.language-php
+```
 add_action( 'gfpdf_get_settings', function( $settings, $is_temp ) {
 
 	/**

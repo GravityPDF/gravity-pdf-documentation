@@ -32,7 +32,7 @@ You can also use this filter by targeting the multisite ID directly: `gfpdf_mult
 
 The following snippet shows you how you can move the multisite PDF working directory for site #3 to your `wp-content` directory (instead of its original location in your uploads folder):
 
-```.language-php
+```
 add_filter( 'gfpdf_multisite_template_location', function( $directory, $working_folder, $upload_path, $blog_id ) {
 	if ( 3 == $blog_id ) {
 		/* Make sure you include the forward slash! */

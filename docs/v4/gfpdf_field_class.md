@@ -39,7 +39,7 @@ $form | array
 
 The following snippet shows you how to use the filter to override the Textarea class. The actual filter is easy to use but you'll also need to create a separate file for your field:
 
-```.language-php
+```
 add_filter( 'gfpdf_field_class', function( $class, $field, $entry ) {
 	/* Only override the textarea field */
 	if ( 'textarea' == $field['type'] ) {
@@ -56,7 +56,7 @@ add_filter( 'gfpdf_field_class', function( $class, $field, $entry ) {
 
 Alternatively we could have used the `gfpdf_field_class_$type` filter and removed the IF statement:
 
-```.language-php
+```
 add_filter( 'gfpdf_field_class_textarea', function( $class, $field, $entry ) {
 	/* Include the new field class which will override the current textarea class */
 	require_once( __DIR__ . '/Prefix_Allcaps_Textarea_Field.php' );
@@ -70,7 +70,7 @@ add_filter( 'gfpdf_field_class_textarea', function( $class, $field, $entry ) {
 
 And here's the accompanying `Prefix_Allcaps_Textarea_Field.php` file which should be in the same directory as the file the `gfpdf_field_class` filter above is placed:
 
-```.language-php
+```
 <?php
 
 /**
@@ -113,7 +113,7 @@ class Prefix_Allcaps_Textarea_Field extends Field_Textarea {
 
 It's worth noting that developers who add *new* fields to Gravity Forms don't need to use this filter to switch out the class. You just need to create a class that extends `GFPDF\Helper\Helper_Abstract_Fields` and include it during the `init` action. Just make sure you adhere to the appropriate naming convention – see `Helper_Misc::get_field_class($type)` for an example of the correct class name (when using the `gfpdf_field_class` filter above you don't need to worry about adhering to a specific naming convention). 
 
-```.language-php
+```
 add_action( 'init', function() {
 	/**
 	 * Include the new field class

@@ -12,7 +12,7 @@ This action is triggered when Gravity PDF is activated for the first time. It wi
 
 This snippet will show you how to run your own code right when Gravity PDF is installed:
 
-```.language-php
+```
 add_action( 'gfpdf_plugin_installed', function() {
 	/* Run any one-time checks you need to */	
 } );

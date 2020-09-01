@@ -27,7 +27,7 @@ $original_width | string
 
 This snippet shows you how you increase the signature size and instead only reduce the width by 50%:
 
-```.language-php
+```
 add_action( 'gfpdf_signature_width', function( $optimised_width, $original_width ) {
 	return $original_width / 2;
 }, 10, 2 );

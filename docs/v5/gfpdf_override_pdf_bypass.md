@@ -26,7 +26,7 @@ This filter was introduced in Gravity PDF 4.2.
 
 Use the following code to enable the field:
 
-```.language-php
+```
 add_filter( 'gfpdf_override_pdf_bypass', function( $enable, $pdf ) {
 	return true;
 }, 10, 2 );

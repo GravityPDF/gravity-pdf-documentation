@@ -38,7 +38,7 @@ boolean
 
 The following snippet shows you how to update a PDF global option and correctly handle any errors:
 
-```.language-php
+```
 add_action( 'init', function() {
 	if ( class_exists( 'GPDFAPI' ) ) {
 		$option = GPDFAPI::update_plugin_option( 'prefix_option_name', 'My Value' );

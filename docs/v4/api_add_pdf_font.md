@@ -51,7 +51,7 @@ boolean | WP_Error
 ### Usage 
 
 This sample shows the simplest usage of `add_pdf_font()`:
-```.language-php
+```
 /* This should be used in a one-time filter or action */
 $font_data =  [
 	'font_name'   => 'Brandon Grotesque',
@@ -67,7 +67,7 @@ if ( ! is_wp_error( $results ) ) {
 
 If you want to install the italic, bold and bold italic variants pass all the associative key options:
 
-```.language-php
+```
 /* This should be used in a one-time filter or action */
 $font_data =  [
 	'font_name'   => 'Brandon Grotesque',

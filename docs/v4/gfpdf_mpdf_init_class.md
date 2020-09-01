@@ -38,7 +38,7 @@ Gravity PDF has some very sane defaults for mPDF, but you may want to utilise on
 
 Below is a snippet to enable the use of active form fields in PDFs. Keep in mind Gravity PDF does NOT support this feature and our support team will not be able to assist you with any problems you encounter.
 
-```.language-php 
+``` 
 add_filter( 'gfpdf_mpdf_init_class', function( $mpdf, $form, $entry, $settings, $Helper_PDF ) {
 
 	/**

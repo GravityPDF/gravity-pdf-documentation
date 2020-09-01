@@ -32,13 +32,13 @@ This filter was added in Gravity PDF 5.1.
 
 This snippet will show you how to disable the aggregate data for all PDFs:
 
-```.language-php
+```
 add_filter( 'gfpdf_disable_global_addon_data', '__return_true' );
 ```
 
 This snippet will show you how to disable the aggregate data for all PDFs of a particular Gravity Form:
 
-```.language-php
+```
 add_filter( 'gfpdf_disable_global_addon_data', function( $disable, $form, $options, $fields ) {
     if ( $form['id'] === 5 ) {
         return true;

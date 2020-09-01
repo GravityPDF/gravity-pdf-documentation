@@ -33,7 +33,7 @@ array | WP_Error
 
 ### Usage 
 
-```.language-php
+```
 /* Get the form data for the Entry #260 */
 $entry = GPDFAPI::get_form_data( 260 );
 

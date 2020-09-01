@@ -20,7 +20,7 @@ This filter allows you to add to the action links on the [PDF list page](user-ma
 
 The following snippet adds a *View* link to the PDF list:
 
-```.language-php 
+``` 
 add_filter( 'gfpdf_pdf_actions', function( $actions, $item ) {
 
 	/**

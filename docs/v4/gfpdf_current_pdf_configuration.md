@@ -50,7 +50,7 @@ $form | array
 
 The following will dynamically force empty fields to be displayed in Core or Universal templates:
 
-```.language-php
+```
 add_filter( 'gfpdf_current_pdf_configuration', function( $config, $entry, $form ) {
 	$config['meta']['empty'] = true;
 

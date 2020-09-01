@@ -17,7 +17,7 @@ This filter can be used to add new fields to the [Advanced settings tab for indi
 
 The following sample shows you how to add two new fields to the Advanced tab of the contextual PDF settings pages:
 
-```.language-php
+```
 add_filter( 'gfpdf_form_settings_advanced', function( $fields ) {
 
    /**
@@ -53,7 +53,7 @@ add_filter( 'gfpdf_form_settings_advanced', function( $fields ) {
 
 The following snippet shows you how to change the label of an existing field:
 
-```.language-php
+```
 add_filter( 'gfpdf_form_settings_advanced', function( $fields ) {
 
 	if ( isset( $fields['format'] ) ) {

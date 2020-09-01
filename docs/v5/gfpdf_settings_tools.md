@@ -19,7 +19,7 @@ The Tools tab doesn't have a submit button like other pages. This page is specif
 
 The following snippet shows you how to add a new button to the Tools tab. Remember, when adding new buttons you also need to do your [processing in the `gfpdf_tool_tab_actions` action](gfpdf_tool_tab_actions.md).
 
-```.language-php
+```
 add_filter( 'gfpdf_settings_tools', function( $fields ) {
 
    /**
@@ -41,7 +41,7 @@ add_filter( 'gfpdf_settings_tools', function( $fields ) {
 
 The following snippet shows you how to change the label of an existing field:
 
-```.language-php
+```
 add_filter( 'gfpdf_settings_tools', function( $fields ) {
 
 	if ( isset( $fields['setup_templates'] ) ) {

@@ -38,7 +38,7 @@ $class | array
 
 This snippet will show you how to target a specific field type and make changes to the user's response:
 
-```.language-php
+```
 add_action( 'gfpdf_field_value', function( $value, $field, $entry, $form, $class ) {
 
 	/* Check for textarea fields and indent the first line */

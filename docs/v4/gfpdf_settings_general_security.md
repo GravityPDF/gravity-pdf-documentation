@@ -24,7 +24,7 @@ $fields | array
 
 The following sample shows you how to add two new fields to the security section of the General tab in the Gravity PDF settings page:
 
-```.language-php
+```
 add_filter( 'gfpdf_settings_general_security', function( $fields ) {
 
    /**
@@ -60,7 +60,7 @@ add_filter( 'gfpdf_settings_general_security', function( $fields ) {
 
 The following snippet shows you how to change the label of an existing field:
 
-```.language-php
+```
 add_filter( 'gfpdf_settings_general_security', function( $fields ) {
 
 	if ( isset( $fields['admin_capabilities'] ) ) {

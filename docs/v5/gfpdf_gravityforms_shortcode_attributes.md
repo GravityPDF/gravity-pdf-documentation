@@ -17,7 +17,7 @@ Use this filter to modify the `[gravitypdf]` shortcode attribute properties befo
 
 This snippet shows you how to target a specific PDF's shortcode and include a custom class name:
 
-```.language-php
+```
 add_filter( 'gfpdf_gravityforms_shortcode_attributes', function( $attributes ) {
 
 	/* Only modify the shortcode attributes from a specific PDF */

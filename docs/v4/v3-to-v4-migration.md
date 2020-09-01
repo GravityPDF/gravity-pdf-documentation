@@ -132,7 +132,7 @@ In Gravity PDF v3 we only initialised the software on certain pages. However, in
 
 If you previously added code to manually initialised Gravity PDF it should be removed, as it will cause problems with v4:
 
-```.language-php
+```
 
 //Remove any code that is similar to this
 add_action('init', 'pdf_init', 15); 

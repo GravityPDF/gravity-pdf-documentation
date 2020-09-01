@@ -38,7 +38,7 @@ boolean | WP_Error
 
 The following snippet shows you how to add a new PDF global option and correctly handle any errors:
 
-```.language-php
+```
 add_action( 'init', function() {
 	if ( class_exists( 'GPDFAPI' ) ) {
 		$option = GPDFAPI::add_plugin_option( 'prefix_option_name', 'My Value' );

@@ -24,7 +24,7 @@ $gfpdf | object
 
 The snippet below shows you how to use this filter to initialise your plugin. The code assumes you've created and included a class called `Prefix_Custom_Gravity_PDF_Plugin` which has an `init` method. You'll want to change this to suit your plugin's structure.
 
-```.language-php
+```
 add_action( 'gfpdf_fully_loaded', 'prefix_intialise_custom_plugin' );
 
 /**

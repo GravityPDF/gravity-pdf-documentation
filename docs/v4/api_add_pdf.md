@@ -38,7 +38,7 @@ string | boolean
 
 This snippet shows the minimum settings that should be passed when adding a new PDF:
 
-```.language-php
+```
 add_action( 'init', function() {
 	if ( class_exists( 'GPDFAPI' ) ) {
 

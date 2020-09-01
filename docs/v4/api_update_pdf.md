@@ -41,7 +41,7 @@ boolean
 
 The following snippet shows you how to retrieve a PDF's existing settings and update the name:
 
-```.language-php
+```
 add_action( 'init', function() {
 	if ( class_exists( 'GPDFAPI' ) ) {
 

@@ -17,7 +17,7 @@ By default mPDF temporary files are stored in the system temporary directory. Th
 
 The following snippet shows you how you can move the directory to a different location:
 
-```.language-php
+```
 add_filter( 'gfpdf_mpdf_tmp_location', function( $path ) {
      $data = GPDFAPI::get_data_class();
      return $data->template_tmp_location . 'mpdf';

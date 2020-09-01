@@ -27,7 +27,7 @@ $new_version | string
 
 This snippet will show you how to run your own upgrade code right after a Gravity PDF update:
 
-```.language-php
+```
 add_action( 'gfpdf_version_changed', function( $old_version, $new_version ) {
 	/* Run any upgrade checks you need to */	
 }, 10, 2 );

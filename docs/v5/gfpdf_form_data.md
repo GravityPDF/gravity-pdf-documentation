@@ -29,7 +29,7 @@ This filter was introduced in Gravity PDF 4.2.
 
 The following will include a new piece of data in the `['misc']` key:
 
-```.language-php
+```
 add_filter( 'gfpdf_form_data', function( $form_data, $entry, $form ) {
 
 	$form_data['misc']['custom_key'] = 'Information';

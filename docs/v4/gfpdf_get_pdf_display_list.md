@@ -35,7 +35,7 @@ $form | array
 
 Use the following code to remove a PDF with the ID `5886dcb38f30b`:
 
-```.language-php
+```
 add_filter( 'gfpdf_get_pdf_display_list', function( $args, $entry, $form ) {
 	return array_filter( $args, function( $pdf ) {
 		return strpos( $pdf['url'], '5886dcb38f30b' );
@@ -45,7 +45,7 @@ add_filter( 'gfpdf_get_pdf_display_list', function( $args, $entry, $form ) {
 
 Or, add your own link to the PDF list with the following:
 
-```.language-php
+```
 add_filter( 'gfpdf_get_pdf_display_list', function( $args, $entry, $form ) {
 	$args[] = [
 		'name'     => 'Additional PDF',

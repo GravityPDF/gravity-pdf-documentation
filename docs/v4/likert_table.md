@@ -41,7 +41,7 @@ string | void
 
 The following snippet shows you how to output the likert table from your Gravity PDF template:
 
-```.language-php
+```
 /* The raw $entry array is available to all Gravity PDF templates automatically */
 GPDFAPI::likert_table( $entry, 20 );
 ```

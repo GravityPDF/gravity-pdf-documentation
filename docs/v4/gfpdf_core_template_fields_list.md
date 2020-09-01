@@ -30,7 +30,7 @@ $class | object
 
 This snippet shows how to leverage this filter to create a new core field and define that core field's settings:
 
-```.language-php
+```
 add_action( 'gfpdf_core_template_fields_list', function( $fields, $template_settings, $class ) {
 	$fields['prefix_custom_core_field'] = 'prefix_custom_core_field_function'; /* the value references our callback. Anything PHP's `call_user_func` function accepts can be passed here */
 

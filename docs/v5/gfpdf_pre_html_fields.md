@@ -26,7 +26,7 @@ This action was introduced in Gravity PDF 4.1.
 
 This snippet will display a message before the PDF field HTML markup:
 
-```.language-php
+```
 add_action( 'gfpdf_pre_html_fields', function( $entry, $config ) {
    echo 'This is a notice that is displayed before the PDF content';
 }, 10, 2 );
@@ -34,7 +34,7 @@ add_action( 'gfpdf_pre_html_fields', function( $entry, $config ) {
 
 If you want to display a message when a particular value is entered into the form use the `$entry` array:
 
-```.language-php
+```
 add_action( 'gfpdf_pre_html_fields', function( $entry, $config ) {
     if ( $entry[1] === 'Yes' ) {
         echo 'This is a notice that is displayed before the PDF content';

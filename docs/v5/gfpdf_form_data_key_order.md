@@ -23,7 +23,7 @@ This filter was introduced in Gravity PDF 4.4.
 
 This snippet will re-order the `misc` and `field` keys in the `$form_data` array.
 
-```.language-php
+```
 add_filter( 'gfpdf_form_data_key_order', function( $order ) {
 	/* Get the array key for the matching values */
 	$search_key  = array_search( 'field', $order );

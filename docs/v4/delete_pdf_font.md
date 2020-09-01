@@ -33,7 +33,7 @@ boolean | WP_Error
 
 ### Usage 
 
-```.language-php
+```
 /* This should be used in a one-time filter or action */
 $results = GPDFAPI::delete_pdf_font( 'Brandon Grotesque' );
 

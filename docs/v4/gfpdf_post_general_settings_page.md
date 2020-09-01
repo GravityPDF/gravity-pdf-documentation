@@ -18,7 +18,7 @@ This hook allows you to output content at the bottom of the [PDF General Setting
 
 This snippet shows you how you can include a message after the General Settings form, but before the System Status:
 
-```.language-php
+```
 add_action( 'gfpdf_post_general_settings_page', function() {
 	/* We set the action priority to 5 so this content will be included before the System Status */
 	?>
@@ -30,7 +30,7 @@ add_action( 'gfpdf_post_general_settings_page', function() {
 
 If you want to include content after the System Status just adjust the priority so it's over 10:
 
-```.language-php
+```
 add_action( 'gfpdf_post_general_settings_page', function() { }, 15 );
 ```
 

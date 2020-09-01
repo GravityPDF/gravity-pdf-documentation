@@ -29,7 +29,7 @@ $form_id | integer
 
 In this snippet we're adding a new custom setting to the PDF settings:
 
-```.language-php
+```
 add_action( 'gfpdf_form_add_pdf', function( $pdf, $form_id ) {
 	$pdf['prefix_custom_setting'] = 'My Custom Setting';
 	return $pdf;
@@ -38,7 +38,7 @@ add_action( 'gfpdf_form_add_pdf', function( $pdf, $form_id ) {
 
 You can also specifically target a form: 
 
-```.language-php
+```
 add_action( 'gfpdf_form_add_pdf_2', function( $pdf ) { }, 10 );
 ```
 

@@ -29,7 +29,7 @@ array
 
 This following snippet retrieves the global PDF settings and read the `default_pdf_size` option:
 
-```.language-php
+```
 add_action( 'init', function() {
 	if ( class_exists( 'GPDFAPI' ) ) {
 		$settings         = GPDFAPI::get_plugin_settings();

@@ -18,7 +18,7 @@ This hook allows you to output content at the bottom of the [PDF Tools Settings 
 
 This snippet shows you how you can include a message after the Tools Settings form, but before the Uninstaller:
 
-```.language-php
+```
 add_action( 'gfpdf_post_tools_settings_page', function() {
 	/* We set the action priority to 3 so this content will be included before the Uninstaller */
 	?>
@@ -30,13 +30,13 @@ add_action( 'gfpdf_post_tools_settings_page', function() {
 
 If you want to include content after the Uninstaller and before the System Status make sure your priority is between 5 and 10:
 
-```.language-php
+```
 add_action( 'gfpdf_post_tools_settings_page', function() { }, 7 );
 ```
 
 And to display content after the System status use a priority over 10:
 
-```.language-php
+```
 add_action( 'gfpdf_post_tools_settings_page', function() { }, 15 );
 ```
 

@@ -29,7 +29,7 @@ This method was introduced in Gravity PDF 4.0.
 
 This snippet shows how to access our options class and get a list of Gravity PDF's supported paper size:
 
-```.language-php
+```
 add_action( 'init', function() {
 	if ( class_exists( 'GPDFAPI' ) ) {
 		/* Get Gravity PDF options class */

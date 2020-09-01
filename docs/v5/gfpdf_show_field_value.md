@@ -31,13 +31,13 @@ This action was introduced in Gravity PDF 4.1.
 
 Show value for all selected field types:
 
-```.language-php
+```
 add_action( 'gfpdf_show_field_value', '__return_true' );
 ```
 
 Show value for select field types only:
 
-```.language-php
+```
 add_action( 'gfpdf_show_field_value', function( $show_value, $field = null, $items = null ) {
 	if ( $field !== null && $field->get_input_type() === 'select' ) {
 		return true;

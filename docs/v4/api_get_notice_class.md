@@ -29,7 +29,7 @@ This method was introduced in Gravity PDF 4.0.
 
 The following snippet shows you the usage of our notice class in a basic admin action your plugin might implement:
 
-```.language-php
+```
 add_action( 'admin_init', function() {
 	if ( class_exists( 'GPDFAPI' ) ) {
 		/* Get Gravity PDF notice class */

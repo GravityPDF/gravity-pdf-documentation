@@ -18,7 +18,7 @@ This hook allows you to output content at the bottom of the [PDF Help Settings t
 
 This snippet shows you how you can include a message after the Help Settings form:
 
-```.language-php
+```
 add_action( 'gfpdf_post_help_settings_page', function() {
 	/* We set the action priority to 3 so this content will be included before the Uninstaller */
 	?>

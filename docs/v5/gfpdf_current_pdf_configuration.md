@@ -42,7 +42,7 @@ This filter was introduced in Gravity PDF 4.2.
 
 The following will dynamically force empty fields to be displayed in Core or Universal templates:
 
-```.language-php
+```
 add_filter( 'gfpdf_current_pdf_configuration', function( $config, $entry, $form ) {
 	$config['meta']['empty'] = true;
 

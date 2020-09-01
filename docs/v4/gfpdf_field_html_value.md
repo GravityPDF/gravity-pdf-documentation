@@ -47,7 +47,7 @@ $class | object
 
 This snippet simplifies the mark-up for most Gravity Form fields ([see notes in the description above](#description) about unsupported fields):
 
-```.language-php
+```
 add_filter( 'gfpdf_field_html_value', function( $html, $value, $show_label, $label, $field, $form, $entry, $class ) {
 
     $html = "
@@ -63,7 +63,7 @@ add_filter( 'gfpdf_field_html_value', function( $html, $value, $show_label, $lab
 
 If you wanted to restrict this to a particular Gravity Form you could use this snippet:
 
-```.language-php
+```
 add_filter( 'gfpdf_field_html_value', function( $html, $value, $show_label, $label, $field, $form, $entry, $class ) {
 
 	if ( 10 == $form['id'] ) {
@@ -81,7 +81,7 @@ add_filter( 'gfpdf_field_html_value', function( $html, $value, $show_label, $lab
 
 And if you wanted to only change the mark-up for a specific field type you could include this snippet:
 
-```.language-php
+```
 add_filter( 'gfpdf_field_html_value', function( $html, $value, $show_label, $label, $field, $form, $entry, $class ) {
 
 	if ( 'textarea' == $field->type ) {
@@ -99,7 +99,7 @@ add_filter( 'gfpdf_field_html_value', function( $html, $value, $show_label, $lab
 
 Or you can remove any Hidden field types from the PDF entirely:
 
-```.language-php
+```
 add_filter( 'gfpdf_field_html_value', function( $html, $value, $show_label, $label, $field, $form, $entry, $class ) {
 
 	if ( 'hidden' === $field->type ) {
@@ -113,7 +113,7 @@ add_filter( 'gfpdf_field_html_value', function( $html, $value, $show_label, $lab
 
 You can also include additional field information by using our DOM manipulation library, QueryPath. In this example we include a field's description below the label:
 
-```.language-php
+```
 add_filter( 'gfpdf_field_html_value', function( $html, $value, $show_label, $label, $field, $form, $entry, $class ) {
 
     /* Check if the field has a description */

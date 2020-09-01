@@ -38,7 +38,7 @@ $Helper_PDF | object
 
 This snippet uses the `GFPDF\\Helper\\Helper_QueryPath` class to load, manipulate and return our HTML. In this sample we're making the colour of all our v4 template labels red. 
 
-```.language-php
+```
 add_filter( 'gfpdf_pdf_html_output', function( $html, $form, $entry, $settings, $Helper_PDF ) {
 
     /* Initialise like this */
@@ -57,7 +57,7 @@ add_filter( 'gfpdf_pdf_html_output', function( $html, $form, $entry, $settings, 
 
 You might also like to use this filter to insert new mark-up between certain fields. This snippet inserts a `<hr />` tag every three rows – but you could change that to a page break or any other HTML tag: 
 
-```.language-php
+```
 add_filter( 'gfpdf_pdf_html_output', function( $html, $form, $entry, $settings, $Helper_PDF ) {
 
     $qp = new GFPDF\\Helper\\Helper_QueryPath();
@@ -76,7 +76,7 @@ As you can see the Query Path library is very powerful and we *strongly recommen
 
 If you need to, you also have the option to specifically target PDF templates assigned to individual Gravity Forms:
 
-```.language-php
+```
 /* Only run this filter on Gravity Form #5 */
 add_filter( 'gfpdf_pdf_html_output_5', function( $html, $form, $entry, $settings, $Helper_PDF ) { }, 10, 5 )
 ```

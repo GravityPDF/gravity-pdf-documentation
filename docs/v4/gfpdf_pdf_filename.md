@@ -33,7 +33,7 @@ $settings | array
 
 This snippet will change the PDF name using a custom date format:
 
-```.language-php
+```
 add_action( 'gfpdf_pdf_filename', function( $name, $form, $entry, $settings ) {
 
 	/* Only change the name of a specific PDF (we don't want all of them to use this new name ) */
@@ -54,7 +54,7 @@ add_action( 'gfpdf_pdf_filename', function( $name, $form, $entry, $settings ) {
 
 You might also like to dynamically change the PDF name based on a response the user provided:
 
-```.language-php
+```
 add_action( 'gfpdf_pdf_filename', function( $name, $form, $entry, $settings ) {
 
 	/* Only change the name of a specific PDF (we don't want all of them to use this new name ) */

@@ -19,7 +19,7 @@ The following snippet shows you how to correctly process a button called `prefix
 
 Note: it's **very important** you don't skip on the nonce verification! 
 
-```.language-php
+```
 add_action( 'gfpdf_tool_tab_actions', function( $settings ) {
 
 	/**

@@ -33,7 +33,7 @@ $action | string
 
 ### Usage 
 
-```.language-php
+```
 add_action( 'gfpdf_pre_view_or_download_pdf', function( $entry_id, $pdf_id, $action ) {
    add_filter( 'gfpdf_mpdf_class', 'prefix_modify_the_mpdf_object' );
 }, 10, 3 );

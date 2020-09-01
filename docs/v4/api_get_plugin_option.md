@@ -38,7 +38,7 @@ mixed
 
 The following snippet shows you how to retrieve the `default_pdf_size` global PDF option:
 
-```.language-php
+```
 add_action( 'init', function() {
 	if ( class_exists( 'GPDFAPI' ) ) {
 		$default_pdf_size = GPDFAPI::get_plugin_option( 'default_pdf_size' );

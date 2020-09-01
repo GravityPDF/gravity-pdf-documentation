@@ -26,7 +26,7 @@ $columns | array
 
 The following snippet shows you how to add a new column to the PDF list table. 
 
-```.language-php
+```
 add_filter( 'gfpdf_pdf_list_columns', function( $columns ) {
     /* Add a new column called Stats */
 	$columns['stats'] = __( 'Stats', 'prefix-text-domain' );
@@ -36,7 +36,7 @@ add_filter( 'gfpdf_pdf_list_columns', function( $columns ) {
 
 If you want to change the name of an existing column you can easily do so with this snippet:
 
-```.language-php
+```
 add_filter( 'gfpdf_pdf_list_columns', function( $columns ) {
 	/* Change the 'name' column text to 'Title' */
 	$columns['name'] = __( 'Title', 'prefix-text-domain' );

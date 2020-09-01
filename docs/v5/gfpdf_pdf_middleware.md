@@ -31,7 +31,7 @@ The important part to remember about working with our middleware is that filters
 
 This snippet shows you can how can remove existing middleware. In this case we are effectively enabling public access to all Gravity PDF documents (we do NOT recommend doing this):
 
-```.language-php
+```
 add_action( 'init', function() {
 
 	/* Get the Controller_PDF class so we can remove middleware filters */
@@ -46,7 +46,7 @@ add_action( 'init', function() {
 
 This snippet shows you how you can add your own authentication middleware to Gravity PDF using an API key:
 
-```.language-php
+```
 add_action( 'gfpdf_pdf_middleware', function( $error, $entry, $settings ) {
 	/* Don't bother running this check if an error has already been triggered */
 	if ( ! is_wp_error( $error ) ) {

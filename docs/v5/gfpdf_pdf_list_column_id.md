@@ -19,7 +19,7 @@ The `$id` in the action name refers to the column ID you set in the `gfpdf_pdf_l
 
 The following snippet shows you how to customise the output of new columns. In this case we added a new column with the *stats* ID using the `gfpdf_pdf_list_columns` filter.
 
-```.language-php
+```
 add_action( 'gfpdf_pdf_list_column_stats', function( $settings ) {
 	/**
 	 * Display the current stats which are being stored in the options table.

@@ -35,7 +35,7 @@ array | WP_Error
 
 This snippet will show you how to get the current list of PDFs setup on a particular Gravity Form and loop through the results:
 
-```.language-php
+```
 add_action( 'init', function() {
 	if ( class_exists( 'GPDFAPI' ) ) {
 

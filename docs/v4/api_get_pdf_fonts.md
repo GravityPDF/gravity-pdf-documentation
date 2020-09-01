@@ -32,7 +32,7 @@ array
 
 ### Usage 
 
-```.language-php
+```
 $fonts_list = GPDFAPI::get_pdf_fonts();
 
 foreach( $fonts_list as $group_name => $group ) {

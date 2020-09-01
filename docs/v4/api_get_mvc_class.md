@@ -29,7 +29,7 @@ object | boolean
 
 This snippet will show you how to use our method to remove an action we set in the controller:
 
-```.language-php
+```
 add_action( 'admin_init', function() {
 	if ( class_exists( 'GPDFAPI' ) ) {
 	    /* Get the Controller_Settings class so we can remove the  */

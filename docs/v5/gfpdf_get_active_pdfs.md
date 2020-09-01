@@ -32,7 +32,7 @@ This filter was introduced in Gravity PDF 4.2.
 
 Use the following code to enable the form's PDFs if two sets of conditions are true (something you cannot do with standard Gravity Forms conditional logic), otherwise disable the documents:
 
-```.language-php
+```
 add_filter( 'gfpdf_get_active_pdfs', function( $filtered, $pdfs, $entry, $form ) {
 
 	if( $form['id'] == 5 ) {
@@ -49,7 +49,7 @@ add_filter( 'gfpdf_get_active_pdfs', function( $filtered, $pdfs, $entry, $form )
 
 If you'd like to disable a PDF if a payment is not successful, you can use a modified version of the following code:
 
-```.language-php
+```
 add_filter( 'gfpdf_get_active_pdfs', function( $filtered, $pdfs, $entry, $form ) {
 
 	$new_filtered_pdfs = [];

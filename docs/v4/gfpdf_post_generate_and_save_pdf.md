@@ -33,7 +33,7 @@ $settings | array
 
 ### Usage 
 
-```.language-php
+```
 add_action( 'gfpdf_post_generate_and_save_pdf', function( $form, $entry, $settings ) {
    remove_filter( 'gfpdf_mpdf_class', 'prefix_modify_the_mpdf_object' );
 }, 10, 3 );

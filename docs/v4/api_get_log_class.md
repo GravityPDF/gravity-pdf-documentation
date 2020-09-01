@@ -39,7 +39,7 @@ This method was introduced in Gravity PDF 4.0.
 
 The following snippet shows you how to use this method and write to our log file:
 
-```.language-php
+```
 add_action( 'init', function() {
 	if ( class_exists( 'GPDFAPI' ) ) {
 		/* Get Gravity PDF logging class */

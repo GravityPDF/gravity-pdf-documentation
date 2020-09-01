@@ -37,7 +37,7 @@ Use this filter to override any of the Gravity PDF default mPDF settings.
 
 Below is a snippet to override the text direction in mPDF:
 
-```.language-php 
+``` 
 add_filter( 'gfpdf_mpdf_init_class', function( $mpdf, $form, $entry, $settings, $Helper_PDF ) {
 	$mpdf->SetDirectionality( 'ltr' );
 

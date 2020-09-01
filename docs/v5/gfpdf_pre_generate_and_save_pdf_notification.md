@@ -30,7 +30,7 @@ This action was introduced in Gravity PDF 4.5.
 
 ## Usage 
 
-```.language-php
+```
 add_action( 'gfpdf_pre_generate_and_save_pdf_notification', function( $form, $entry, $settings, $notifications ) {
    add_filter( 'gfpdf_mpdf_class', 'prefix_modify_the_mpdf_object' );
 }, 10, 4 );

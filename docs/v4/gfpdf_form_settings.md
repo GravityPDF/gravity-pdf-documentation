@@ -24,7 +24,7 @@ $fields | array
 
 The following sample shows you how to add two new fields to the General tab of the contextual PDF settings pages:
 
-```.language-php
+```
 add_filter( 'gfpdf_form_settings', function( $fields ) {
 
    /**
@@ -60,7 +60,7 @@ add_filter( 'gfpdf_form_settings', function( $fields ) {
 
 The following snippet shows you how to change the label of an existing field:
 
-```.language-php
+```
 add_filter( 'gfpdf_form_settings', function( $fields ) {
 
 	if ( isset( $fields['name'] ) ) {

@@ -24,7 +24,7 @@ $gfpdf_settings | array
 
 This snippet shows how you can output fields to multiple sections of the Gravity PDF UI:
 
-```.language-php
+```
 add_filter( 'gfpdf_registered_fields', function( $gfpdf_settings ) {
 
    /**

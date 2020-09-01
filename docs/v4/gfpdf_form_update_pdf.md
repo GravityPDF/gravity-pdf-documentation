@@ -32,7 +32,7 @@ $pdf_id | string
 
 In this snippet we're first checking if the setting exists and, if it doesn't, adding it to our settings array:
 
-```.language-php
+```
 add_action( 'gfpdf_form_update_pdf', function( $pdf, $form_id, $pdf_id ) {
 	/* If the PDF doesn't contain this setting yet we'll set a default */
 	if ( ! isset( $pdf['prefix_custom_setting'] ) ) {
@@ -44,7 +44,7 @@ add_action( 'gfpdf_form_update_pdf', function( $pdf, $form_id, $pdf_id ) {
 
 You can also specifically target a form: 
 
-```.language-php
+```
 add_action( 'gfpdf_form_update_pdf_2', function( $pdf, $form_id, $pdf_id ) { }, 10, 3 );
 ```
 

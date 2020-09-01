@@ -18,7 +18,7 @@ This filter is triggered for all Gravity PDF templates. You can add custom CSS o
 
 This snippet will force text on all PDFs to be display as the colour red:
 
-```.language-php 
+``` 
 add_action( 'gfpdf_core_template', function() {
 	?>
 		<style>

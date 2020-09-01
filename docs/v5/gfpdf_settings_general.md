@@ -17,7 +17,7 @@ This filter can be used to add new fields to the [General tab of the Gravity PDF
 
 The following sample shows you how to add two new fields to the General tab of the Gravity PDF settings page:
 
-```.language-php
+```
 add_filter( 'gfpdf_settings_general', function( $fields ) {
 
    /**
@@ -53,7 +53,7 @@ add_filter( 'gfpdf_settings_general', function( $fields ) {
 
 The following snippet shows you how to change the label of an existing field:
 
-```.language-php
+```
 add_filter( 'gfpdf_settings_general', function( $fields ) {
 
 	if ( isset( $fields['default_pdf_size'] ) ) {

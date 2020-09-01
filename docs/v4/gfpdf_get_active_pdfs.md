@@ -38,7 +38,7 @@ $form | array
 
 Use the following code to enable the form's PDFs if two sets of conditions are true (something you cannot do with standard Gravity Forms conditional logic), otherwise disable the documents:
 
-```.language-php
+```
 add_filter( 'gfpdf_get_active_pdfs', function( $filtered, $pdfs, $entry, $form ) {
 
 	if ( ( $entry[1] === 'Australia' || $entry[1] === 'New Zealand' ) && $entry[2] === 'Married' ) {

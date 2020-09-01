@@ -29,7 +29,7 @@ $key | string
 
 The following snippet shows how you can change a global PDF setting option:
 
-```.language-php
+```
 add_action( 'gfpdf_update_option', function( $value, $key ) {
 	/* Let's change the default template value when it's requested */
 	if( 'default_template' == $key ) {
@@ -43,7 +43,7 @@ add_action( 'gfpdf_update_option', function( $value, $key ) {
 
 You can also specifically target an option: 
 
-```.language-php
+```
 add_action( 'gfpdf_update_option_default_template', function( $value, $key ) {
 	$value = 'rubix';
 	return $value;

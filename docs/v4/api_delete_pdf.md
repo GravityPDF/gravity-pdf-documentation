@@ -38,7 +38,7 @@ boolean
 
 The following snippet shows you how to delete an existing PDF:
 
-```.language-php
+```
 add_action( 'init', function() {
 	if ( class_exists( 'GPDFAPI' ) ) {
 		/* Delete the PDF on form #2 */

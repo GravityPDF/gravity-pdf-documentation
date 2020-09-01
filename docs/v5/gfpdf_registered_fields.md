@@ -17,7 +17,7 @@ This filter contains the full array of all our different Gravity PDF sections an
 
 This snippet shows how you can output fields to multiple sections of the Gravity PDF UI:
 
-```.language-php
+```
 add_filter( 'gfpdf_registered_fields', function( $gfpdf_settings ) {
 
    /**

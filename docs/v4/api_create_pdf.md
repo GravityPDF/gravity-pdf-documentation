@@ -38,7 +38,7 @@ string | WP_Error
 
 The following snippet shows you how to generate a PDF and test that it was successful:
 
-```.language-php
+```
 add_action( 'init', function() {
 	if ( class_exists( 'GPDFAPI' ) ) {
 

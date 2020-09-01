@@ -34,7 +34,7 @@ You can also use the `gfpdf_post_save_pdf_$form_id` action if needed.
 
 This snippet shows you how to copy the generated PDF to a separate directory on your server. Keep in mind that unless the folder you copy to is placed outside the root website directory your PDFs will be publicly accessible from this new folder:
 
-```.language-php
+```
 add_action( 'gfpdf_post_save_pdf', function( $pdf_path, $filename, $settings, $entry, $form ) {
 
 	/* Only move PDFs from form #2 */
@@ -59,7 +59,7 @@ add_action( 'gfpdf_post_save_pdf', function( $pdf_path, $filename, $settings, $e
 
 You can also use the form-specific action and remove the IF statement:
 
-```.language-php
+```
 add_action( 'gfpdf_post_save_pdf_2', function( $pdf_path, $filename, $settings, $entry, $form ) {
 	/* The directory we want to copy our PDF to */
 	$copy_to_dir = ABSPATH . 'PDFs/';
@@ -79,7 +79,7 @@ add_action( 'gfpdf_post_save_pdf_2', function( $pdf_path, $filename, $settings, 
 
 You might also like to copy all PDFs to another directory and group them by their forms:
 
-```.language-php
+```
 add_action( 'gfpdf_post_save_pdf', function( $pdf_path, $filename, $settings, $entry, $form ) {
 	/* The directory we want to copy our PDF to */
 	$copy_to_dir = ABSPATH . 'PDFs/' . $form['title'] . '/';

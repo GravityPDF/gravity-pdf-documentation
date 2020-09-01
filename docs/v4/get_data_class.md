@@ -29,7 +29,7 @@ This method was introduced in Gravity PDF 4.0.
 
 This snippet shows how to access any data Gravity PDF stored in our data class:
 
-```.language-php
+```
 add_action( 'init', function() {
 	if ( class_exists( 'GPDFAPI' ) ) {
 		/* Get Gravity PDF data class */
@@ -44,7 +44,7 @@ add_action( 'init', function() {
 
 You can also store your own data and use it later:
 
-```.language-php
+```
 add_action( 'init', function() {
 	if ( class_exists( 'GPDFAPI' ) ) {
 		/* Get Gravity PDF data class */

@@ -35,7 +35,7 @@ This filter was introduced in Gravity PDF 4.2.
 
 The following code will prefix all values with a bullet point:
 
-```.language-php
+```
 add_filter( 'gfpdf_pdf_field_content', function( $value, $field, $entry, $form ) {
 	return '• ' . $value;
 }, 10, 4 );
@@ -43,7 +43,7 @@ add_filter( 'gfpdf_pdf_field_content', function( $value, $field, $entry, $form )
 
 You can also target specific field types:
 
-```.language-php
+```
 add_filter( 'gfpdf_pdf_field_content_text', function( $value, $field, $entry, $form ) {
 	return '• ' . $value;
 }, 10, 4 );
@@ -51,7 +51,7 @@ add_filter( 'gfpdf_pdf_field_content_text', function( $value, $field, $entry, $f
 
 Or an individual field, targeted by ID:
 
-```.language-php
+```
 add_filter( 'gfpdf_pdf_field_content', function( $value, $field, $entry, $form ) {
 	if( $field->id === 20 ) {
 		return '• ' . $value;
@@ -63,7 +63,7 @@ add_filter( 'gfpdf_pdf_field_content', function( $value, $field, $entry, $form )
 
 Display each sub-field in an address field on a new line:
 
-```.language-php
+```
 add_filter( 'gfpdf_pdf_field_content', function( $value, $field, $entry, $form, $pdf_field ) {
         if( $field->type === 'address' ) {
 	    $content = $pdf_field->value();
@@ -77,7 +77,7 @@ add_filter( 'gfpdf_pdf_field_content', function( $value, $field, $entry, $form, 
 
 Remove the links from the Upload File fields so that only the filename will be shown:
 
-```.language-php
+```
 add_filter( 'gfpdf_pdf_field_content', function( $value, $field, $entry, $form, $pdf_field ) {
 	if ( $field->type === 'fileupload' ) {
 		return wp_kses( $value, [ 'ul' => [], 'li' => [] ] );
@@ -89,7 +89,7 @@ add_filter( 'gfpdf_pdf_field_content', function( $value, $field, $entry, $form, 
 
 Remove the links from Slim Image Cropper fields so that only the image will be shown:
 
-```.language-php
+```
 add_filter( 'gfpdf_pdf_field_content', function( $value, $field, $entry, $form, $pdf_field ) {
 	if ( $field->type === 'slim' ) {
 		return wp_kses( $value, [ 'img' => [ 'src' => [] ] ] );

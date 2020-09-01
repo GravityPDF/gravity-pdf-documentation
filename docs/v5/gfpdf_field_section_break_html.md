@@ -44,7 +44,7 @@ This filter was introduced in Gravity PDF 4.1.
 
 This snippet simplifies the mark-up for the Section Break:
 
-```.language-php
+```
 add_action( 'gfpdf_field_section_break_html', function( $html, $title, $description, $value, $field, $form, $entry, $class ) {
 
     $html = "
@@ -60,7 +60,7 @@ add_action( 'gfpdf_field_section_break_html', function( $html, $title, $descript
 
 If you wanted to restrict this to a particular Gravity Form you could use this snippet:
 
-```.language-php
+```
 add_action( 'gfpdf_field_section_break_html', function( $html, $title, $description, $value, $field, $form, $entry, $class ) {
 
     if ( 10 == $form['id'] ) {

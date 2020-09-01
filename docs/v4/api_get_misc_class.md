@@ -29,7 +29,7 @@ This method was introduced in Gravity PDF 4.0.
 
 This snippet shows how to access our miscellaneous class and check if we're currently on a Gravity PDF admin page:
 
-```.language-php
+```
 add_action( 'init', function() {
 	if ( class_exists( 'GPDFAPI' ) ) {
 		/* Get Gravity PDF misc class */

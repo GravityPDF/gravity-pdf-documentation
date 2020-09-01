@@ -39,7 +39,7 @@ This filter allows you to remove any of the existing middleware or add new condi
 
 This snippet shows you can how can remove existing field middleware. In this case we are removing the conditional logic checks we do on each field in the PDF:
 
-```.language-php
+```
 add_action( 'init', function() {
 
 	/* Get the Controller_PDF class so we can remove middleware filters */
@@ -51,7 +51,7 @@ add_action( 'init', function() {
 
 This snippet shows you how you can add your own restrictions and prevent Paragraph fields from being displayed:
 
-```.language-php
+```
 add_filter( 'gfpdf_field_middleware', function( $action, $field, $entry, $form, $config, $products, $blacklisted ) {
 	if ( $action === false ) {
 		if ( $field->get_input_type() === 'textarea' ) {

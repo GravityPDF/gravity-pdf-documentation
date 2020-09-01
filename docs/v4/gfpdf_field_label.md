@@ -35,7 +35,7 @@ $entry | array
 
 The following code will display a field's admin label if it exists, otherwise fall back to the standard label:
 
-```.language-php
+```
 add_filter( 'gfpdf_field_label', function( $label, $field, $entry ) {
 	return ( strlen( $field->adminLabel ) > 0 ) ? $field->adminLabel : $label;
 }, 10, 3 );
@@ -43,7 +43,7 @@ add_filter( 'gfpdf_field_label', function( $label, $field, $entry ) {
 
 You can also target specific field types:
 
-```.language-php
+```
 add_filter( 'gfpdf_field_label', function( $label, $field, $entry ) {
 	if( $field->type === 'text' ) {
 		return 'Text Label';
@@ -55,7 +55,7 @@ add_filter( 'gfpdf_field_label', function( $label, $field, $entry ) {
 
 Or an individual field:
 
-```.language-php
+```
 add_filter( 'gfpdf_field_label', function( $label, $field, $entry ) {
 	if( $field->id === 20 ) {
 		return 'Field #20 Label';

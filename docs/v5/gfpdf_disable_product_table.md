@@ -35,13 +35,13 @@ This filter was added in Gravity PDF 5.1.
 
 This snippet will show you how to disable the Product table in PDFs:
 
-```.language-php
+```
 add_filter( 'gfpdf_disable_product_table', '__return_true' );
 ```
 
 This snippet will show you how to disable the Product table in PDFs for a particular Gravity Form:
 
-```.language-php
+```
 add_filter( 'gfpdf_disable_product_table', function( $disable, $entry, $form, $config, $products ) {
     if ( $form['id'] === 5 ) {
         return true;

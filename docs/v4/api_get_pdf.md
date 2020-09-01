@@ -38,7 +38,7 @@ array | WP_Error
 
 This snippet shows you how to get an individual PDF configuration and do an active if it's currently active:
 
-```.language-php
+```
 add_action( 'init', function() {
 	if ( class_exists( 'GPDFAPI' ) ) {
 

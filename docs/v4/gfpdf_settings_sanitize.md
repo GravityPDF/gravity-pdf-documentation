@@ -35,7 +35,7 @@ $field | mixed
 
 This snippet shows you how to correctly sanitise your custom Gravity PDF field: 
 
-```.language-php
+```
 add_action( 'gfpdf_settings_sanitize', function( $value, $key, $input, $field ) {
 
 	/* Check if it's our custom field and return a blank array if the variable type isn't currently an array */
@@ -52,7 +52,7 @@ add_action( 'gfpdf_settings_sanitize', function( $value, $key, $input, $field ) 
 
 You can also target your field directly using the field ID:
 
-```.language-php
+```
 add_action( 'gfpdf_settings_sanitize_prefix_custom_field', function( $value, $key, $input, $field ) {	
 	if( ! is_array( $value ) ) {
 		return array();

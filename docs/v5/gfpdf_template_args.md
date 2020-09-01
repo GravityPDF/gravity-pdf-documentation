@@ -26,7 +26,7 @@ This filter can be used to add to or modify [the variables passed directly to PD
 
 The following snippet can be used to include new data to all our PDF templates:
 
-```.language-php
+```
 add_filter( 'gfpdf_template_args', function( $data, $entry, $settings, $form ) {
 
 	/* Add a new data record which can be accessed directly via $prefix_key from PDF templates */
@@ -38,7 +38,7 @@ add_filter( 'gfpdf_template_args', function( $data, $entry, $settings, $form ) {
 
 The following snippet can be used to include new data to a specific Gravity Forms's PDF templates:
 
-```.language-php
+```
 add_filter( 'gfpdf_template_args', function( $data, $entry, $settings, $form ) {
 
 	/* Only include this data on templates loaded on form #5 */
