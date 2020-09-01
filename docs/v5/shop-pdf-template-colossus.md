@@ -51,7 +51,7 @@ All PDF templates have common settings that can be configured, such as font, sec
 
 Along with the options specific to *Colossus*, the following core settings are also supported:
 
--   [Footer](v4/user-setup-pdf/#footer)
+-   [Footer](user-setup-pdf.md#footer)
 
 ## CSS Ready Classes 
 

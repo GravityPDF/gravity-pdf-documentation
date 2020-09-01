@@ -20,6 +20,6 @@ The easiest method of installing the plugin is <a href="/v3/installation-via-wor
 
 On successful activation of the plugin you will see a notice saying one of two things:
 
-1. <strong>The auto installer was successfully completed.</strong> This message signifies the plugin has verified your server is fully compatible with the software and it has automatically completed the initialisation process. At this point Gravity PDF is fully installed <a href="/v3/standard-configuration/">and ready for configuration</a>.
+1. <strong>The auto installer was successfully completed.</strong> This message signifies the plugin has verified your server is fully compatible with the software and it has automatically completed the initialisation process. At this point Gravity PDF is fully installed <a href="/v3/getting-started-with-gravity-pdf-configuration/">and ready for configuration</a>.
 
 1. <strong><a href="/v3/installation-manual-initialisation/">You’ll be asked to manually initialise the plugin</a>.</strong> To manually initialise follow the prompt or head to the Form -&gt; Settings -&gt; PDF page in the main menu.
