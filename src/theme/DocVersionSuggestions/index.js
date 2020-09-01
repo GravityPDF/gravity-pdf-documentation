@@ -12,8 +12,30 @@ import { getVersion } from '../GetVersion'
 
 const router_1 = require('@docusaurus/router')
 
-const doesHaveMatchingLatestDocs = (version, matchPath) => {
-  return version.docs.find((doc) => doc.path === matchPath) !== undefined
+const basename = (path) => {
+  // strip trailing slash (if present)
+  if( path.slice(-1) === '/' ) {
+    path = path.slice(0, -1)
+  }
+
+  return path.substring(path.lastIndexOf('/') + 1 )
+}
+
+const doesHaveMatchingLatestDocs = (version, latestVersion, slug) => {
+  let returnValue = false
+
+  version.docs.forEach((doc) => {
+    // check if doc matches the current version
+    const versionRegex = RegExp('^\/' + latestVersion + '\/')
+    if (returnValue === false && versionRegex.test(doc.path)) {
+      // check if the doc contains the slug we are looking for
+      if( slug.search(basename(doc.path)) !== -1 ) {
+        returnValue = doc.path
+      }
+    }
+  })
+
+  return returnValue
 }
 
 const useMandatoryActiveDocsPluginId = () => {
@@ -59,8 +81,8 @@ function DocVersionSuggestions () {
   // display notice, link to latest documentation, and badge all together
   let jumpToHtml = ''
   if (currentVersion[1] < latestVersion[1]) {
-    const newPathname = pathname.replace('/' + currentVersion + '/', '/' + latestVersion + '/')
-    if (doesHaveMatchingLatestDocs(version, newPathname)) {
+    const newPathname = doesHaveMatchingLatestDocs(version, latestVersion, basename(pathname))
+    if (newPathname !== false) {
       jumpToHtml = <Link to={newPathname}>Go to the current documentation</Link>
     }
   }
