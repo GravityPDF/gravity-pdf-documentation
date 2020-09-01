@@ -33,7 +33,7 @@ https://www.youtube.com/watch?v=IC1UO2AkRMw
 The extension adds a new bulk action option called *Download PDF* on [Gravity Forms Entry List pages](https://docs.gravityforms.com/entries/). Like other bulk actions, you select the checkbox next to each entry you would like to generate PDFs for. To refine the entries, you can use Gravity Forms native filters to show only *Starred* or *Unread* entries, or use the entry search feature. If you've got a lot of entries, you can use Gravity Forms *Select All Entries* feature to include all paginated pages.
 
 :::note
-The `Download PDF` option will only be listed in the Bulk Action select box [if you have at least one active PDF configured on your Gravity Form](setup-pdf.md#locating-pdf-settings).
+The `Download PDF` option will only be listed in the Bulk Action select box [if you have at least one active PDF configured on your Gravity Form](../users/setup-pdf.md#locating-pdf-settings).
 :::
 
 ### Bulk Generator 
@@ -58,7 +58,7 @@ Before you can kickoff the build process, you'll need to do a tiny bit of config
 
 Choose the PDFs you'd like to generate for the entries you've selected. If you've got multiple PDFs, and you'd like to generate them all, you can use the handy *Toggle All* feature. 
 
-If a PDF isn't showing up, you should [check if it has not been deactivated](managing-pdfs.md#active-toggle). Only active PDFs will be listed. 
+If a PDF isn't showing up, you should [check if it has not been deactivated](../users/managing-pdfs.md#active-toggle). Only active PDFs will be listed. 
 
 #### Directory Structure  
 
@@ -114,7 +114,7 @@ The zip file is deleted from the server after 24 hours during the daily schedule
 
 ### Why is the filename of some PDFs suffixed with the entry ID and PDF ID? 
 
-If a PDF with the same filename already exists in the zip, the plugin includes the Entry ID and a shortened version of the PDF ID (the first two and last two characters) in the filename to prevent a naming conflict. If you don't want this to occur, [make use of merge tags in the PDF filename](setup-pdf.md#filename) so it is unique for each document. 
+If a PDF with the same filename already exists in the zip, the plugin includes the Entry ID and a shortened version of the PDF ID (the first two and last two characters) in the filename to prevent a naming conflict. If you don't want this to occur, [make use of merge tags in the PDF filename](../users/setup-pdf.md#filename) so it is unique for each document. 
 
 ### Has the plugin been translated into any other languages? 
 
@@ -126,9 +126,9 @@ Yes! Besides English, we've had the plugin translated into Dutch, French, German
 
 The Bulk Generator will display warnings for the following reasons:
 
-1. **Conditional Logic** – this is the most common warning. It means the [PDF Conditional Logic](setup-pdf.md#conditional-logic) did not pass for the current entry and so it was skipped. This is normal behaviour and can usually be ignored. 
-1. **Deactivated PDF** - this warning can occur if [a PDF gets deactivated](managing-pdfs.md#active-toggle) after you've begun the Build step. If this occurs, wait until the current Build finishes, reactivate the PDF and then run a new build just for the problem PDF.
-1. **Invalid PDF** - this warning can occur if a PDF gets deleted after you've begun the Build step. If it was deleted accidentally, you should [recreate the PDF on the form](setup-pdf.md) and run the build again. 
+1. **Conditional Logic** – this is the most common warning. It means the [PDF Conditional Logic](../users/setup-pdf.md#conditional-logic) did not pass for the current entry and so it was skipped. This is normal behaviour and can usually be ignored. 
+1. **Deactivated PDF** - this warning can occur if [a PDF gets deactivated](../users/managing-pdfs.md#active-toggle) after you've begun the Build step. If this occurs, wait until the current Build finishes, reactivate the PDF and then run a new build just for the problem PDF.
+1. **Invalid PDF** - this warning can occur if a PDF gets deleted after you've begun the Build step. If it was deleted accidentally, you should [recreate the PDF on the form](../users/setup-pdf.md) and run the build again. 
 
 ### There are a number of errors in my Activity Log. Why did they occur? 
 

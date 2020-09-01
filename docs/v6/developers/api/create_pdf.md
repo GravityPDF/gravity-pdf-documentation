@@ -6,7 +6,7 @@ description: ""
 
 ## Description 
 
-When provided the Gravity Form entry ID and PDF ID, this method will correctly generate the PDF, save it to disk, [trigger the `gpdf_post_save_pdf` action](gfpdf_post_save_pdf.md) and return the absolute path to the PDF.
+When provided the Gravity Form entry ID and PDF ID, this method will correctly generate the PDF, save it to disk, [trigger the `gpdf_post_save_pdf` action](../actions/gfpdf_post_save_pdf.md) and return the absolute path to the PDF.
 
 ## Version 
 

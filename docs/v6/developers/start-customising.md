@@ -34,16 +34,16 @@ Along with learning the ins and outs to create a template and configuration file
 
 We'll cover:
 
--   [Supported HTML / CSS](supported-html-and-css.md): it's not like your web browser.
--   [Headers and Footers](headers-and-footers.md)
--   [Images](images.md)
--   [Watermarks](watermarks.md)
--   [Background Images](backgrounds.md)
--   [Rounded Corners](rounded-corners.md)
--   [Page Breaks](pagebreaks.md)
--   [Tables](tables.md)
--   [Positioning](positioning.md)
--   [Floats](floats.md)
+-   [Supported HTML / CSS](pdf-features/supported-html-and-css.md): it's not like your web browser.
+-   [Headers and Footers](pdf-features/headers-and-footers.md)
+-   [Images](../users/displaying-uploaded-images.md)
+-   [Watermarks](pdf-features/watermarks.md)
+-   [Background Images](pdf-features/backgrounds.md)
+-   [Rounded Corners](pdf-features/rounded-corners.md)
+-   [Page Breaks](pdf-features/pagebreaks.md)
+-   [Tables](pdf-features/tables.md)
+-   [Positioning](pdf-features/positioning.md)
+-   [Floats](pdf-features/floats.md)
 
 For those developers looking for in-depth knowledge about the PDF software that powers Gravity PDF, [head over to the mPDF documentation](http://mpdf.github.io/). 
 

@@ -42,7 +42,7 @@ Click the *Add Font* "plus" icon and an empty form will be displayed where you c
 * This field is optional and if not provided the PDF software will mimic bold-italics when referenced. However, you will get a better result if a bold-italics font file is installed.
 
 #### Custom Template Usage
-* This is a read-only field which displays a simple CSS statement for use in [custom PDF templates](start-customising.md). If you want the entire PDF to use your custom font then change the [Font setting](setup-pdf.md#font) when you setup your PDF.
+* This is a read-only field which displays a simple CSS statement for use in [custom PDF templates](../developers/start-customising.md). If you want the entire PDF to use your custom font then change the [Font setting](setup-pdf.md#font) when you setup your PDF.
 
 ### Edit Font 
 

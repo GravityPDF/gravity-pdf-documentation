@@ -8,7 +8,7 @@ description: ""
 
 ## Description 
 
-Use this filter to enable the PDF Master Password in the Advanced tab when the [Security option is enabled](setup-pdf.md#pdf-security).
+Use this filter to enable the PDF Master Password in the Advanced tab when the [Security option is enabled](../../users/setup-pdf.md#pdf-security).
 
 ## Version 
 

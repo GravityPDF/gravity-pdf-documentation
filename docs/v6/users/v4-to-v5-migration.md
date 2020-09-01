@@ -28,7 +28,7 @@ If you've [purchased a premium PDF template from our online store](https://gravi
 
 ### mPDF v7 
 
-The library we use to generate PDF documents is called mPDF and it also got a major version bump. Our team has worked closely with the mPDF developers over the past 12 months to ensure there's little (if any) differences to PDFs generated using Gravity PDF v4 and v5 when [using the standard templating functionality](start-customising.md). However, any developers who are accessing the mPDF library directly – either in a custom template or using a filter – may need to modify their code. Notable changes in mPDF v7 include:
+The library we use to generate PDF documents is called mPDF and it also got a major version bump. Our team has worked closely with the mPDF developers over the past 12 months to ensure there's little (if any) differences to PDFs generated using Gravity PDF v4 and v5 when [using the standard templating functionality](../developers/start-customising.md). However, any developers who are accessing the mPDF library directly – either in a custom template or using a filter – may need to modify their code. Notable changes in mPDF v7 include:
 
 1.  Moved class `mPDF` to namespace `Mpdf\Mpdf`. Note: [we've polyfilled the mPDF object for backwards compatibly reasons](https://github.com/GravityPDF/gravity-pdf/blob/development/src/deprecated.php#L736).
 2.  The configuration files have been removed, now configured via the `_construct`
@@ -43,7 +43,7 @@ The library we use to generate PDF documents is called mPDF and it also got a ma
 
 ### Removed /resources/ Directory 
 
-The `/resources/` directory, which contained assets (images and CSS) used in v3 example template files, has been removed. If your custom template(s) relied on files in this directory you'll need to move them to the [PDF Working Directory](first-custom-pdf.md#working-directory) and update your template(s).
+The `/resources/` directory, which contained assets (images and CSS) used in v3 example template files, has been removed. If your custom template(s) relied on files in this directory you'll need to move them to the [PDF Working Directory](../developers/first-custom-pdf.md#working-directory) and update your template(s).
 
 ### Gravity PDF Customers 
 
@@ -71,7 +71,7 @@ The following are optional tasks you can take after completing the migration pro
 
 In Gravity PDF v5 [all fonts have been removed from the core plugin files](core-pdf-fonts.md) and now need to be installed when the plugin is first activated. Note: you won't need to reinstall the fonts after every upgrade, only the initial installation. 
 
-If you upgraded from v4.3+, the software automatically copied the fonts to the [PDF Working Directory's](first-custom-pdf.md#working-directory) font subfolder. However, mPDF v7 includes additional fonts which support even more languages out of the box. To take advantage of this, it is recommended to run the [Core Font Installer](global-settings.md#core-fonts). This feature is available from [the Tools tab](global-settings.md#tools) of the [Global PDF settings](global-settings.md). ![The prompt you'll receive to install the Core Fonts if upgraded from pre v4.3](https://resources.gravitypdf.com/uploads/2017/12/core-fontdownload-prompt.png) If you upgraded from v4.2 or below you'll be prompted to run the Core Font Installer automatically. Click the `Install Core Fonts` button to start the process.
+If you upgraded from v4.3+, the software automatically copied the fonts to the [PDF Working Directory's](../developers/first-custom-pdf.md#working-directory) font subfolder. However, mPDF v7 includes additional fonts which support even more languages out of the box. To take advantage of this, it is recommended to run the [Core Font Installer](global-settings.md#core-fonts). This feature is available from [the Tools tab](global-settings.md#tools) of the [Global PDF settings](global-settings.md). ![The prompt you'll receive to install the Core Fonts if upgraded from pre v4.3](https://resources.gravitypdf.com/uploads/2017/12/core-fontdownload-prompt.png) If you upgraded from v4.2 or below you'll be prompted to run the Core Font Installer automatically. Click the `Install Core Fonts` button to start the process.
 
 #### Enable Background Processing 
 

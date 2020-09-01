@@ -6,7 +6,7 @@ description: "This hook allows you to output content at the bottom of the PDF To
 
 ## Description 
 
-This hook allows you to output content at the bottom of the [PDF Tools Settings tab](global-settings.md#tools). Keep in mind our System Status notice uses this hook on priority 10, so you can choose to place your content before or after this block by changing your action's priority. Also, the [Uninstaller](global-settings.md#uninstall) has a priority of 5.
+This hook allows you to output content at the bottom of the [PDF Tools Settings tab](../../users/global-settings.md#tools). Keep in mind our System Status notice uses this hook on priority 10, so you can choose to place your content before or after this block by changing your action's priority. Also, the [Uninstaller](../../users/global-settings.md#uninstall) has a priority of 5.
 
 ## Usage 
 

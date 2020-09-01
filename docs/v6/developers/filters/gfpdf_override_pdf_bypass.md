@@ -8,7 +8,7 @@ description: ""
 
 ## Description 
 
-Currently, if a PDF has been generated during the PHP execution it won't be generated a second time ([refer to our security policy for more information on how and when PDFs are saved to the filesystem](pdf-security.md#filesystem)). This occurs most often when sending the PDF via email to multiple parties. Use this filter to disable this cache and regenerate the PDF each time. **Warning: This could cause long page load times for the end user, or timeouts.**
+Currently, if a PDF has been generated during the PHP execution it won't be generated a second time ([refer to our security policy for more information on how and when PDFs are saved to the filesystem](../../users/pdf-security.md#filesystem)). This occurs most often when sending the PDF via email to multiple parties. Use this filter to disable this cache and regenerate the PDF each time. **Warning: This could cause long page load times for the end user, or timeouts.**
 
 ## Version 
 

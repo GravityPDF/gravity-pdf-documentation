@@ -6,9 +6,9 @@ description: "Use this filter to add additional columns to the PDF list view tab
 
 ## Description 
 
-Use this filter to add additional columns to the [PDF list view](managing-pdfs.md) table, or change the names of existing columns. 
+Use this filter to add additional columns to the [PDF list view](../../users/managing-pdfs.md) table, or change the names of existing columns. 
 
-By default the software will look in the Gravity PDF settings array for the column content. It searches for an array key which matches the column ID and outputs that value. If you want to customise the output of the column you should use the [`gfpdf_pdf_list_column_$id` action](gfpdf_pdf_list_column_id.md).
+By default the software will look in the Gravity PDF settings array for the column content. It searches for an array key which matches the column ID and outputs that value. If you want to customise the output of the column you should use the [`gfpdf_pdf_list_column_$id` action](../actions/gfpdf_pdf_list_column_id.md).
 
 ## Parameters 
 

@@ -54,7 +54,7 @@ Below is the list of settings available in the General tab, with a brief descrip
 * Select the PDF template that should be used to generated the document. The [global Default Template setting](global-settings.md#default-template) controls which template to use by default.
 * Gravity PDF comes with **four completely-free templates** for you to choose from. Upon changing your selection (using the drop down or selecting the Advanced button to get a more graphical overview) the *Template* tab will be updated (or removed if it has no options) to reflect the template-specific options.
 * Additional templates can be purchased from our [template shop](https://gravitypdf.com/template-shop/) and then installed through the [PDF Template Manager](pdf-template-manager.md).
-* Developers with HTML, CSS and a little PHP knowledge can also [create their own designs and layouts](start-customising.md). Alternatively, the Gravity PDF team offers [design and integration services](https://gravitypdf.com/integration-services/) for those looking for a custom solution – we can even integrate existing PDF documents.
+* Developers with HTML, CSS and a little PHP knowledge can also [create their own designs and layouts](../developers/start-customising.md). Alternatively, the Gravity PDF team offers [design and integration services](https://gravitypdf.com/integration-services/) for those looking for a custom solution – we can even integrate existing PDF documents.
 
 ### Notifications 
 * This setting allows you to automatically attach the PDF to the selected notification(s).
@@ -186,7 +186,7 @@ Below is the list of settings available in the Advanced tab, with a brief descri
 * Adjust the image DPI (Dots Per Inch). By default this is set to 96. If professionally printing you should set this to *300* and change the [*Format*](#format) to *PDF/X-1a*.
 
 ### Always Save PDF 
-* By default, when a new Gravity Form entry is submitted a PDF is only ever saved to disk when the [*Notifications*](#notifications) feature is enabled. When active, this option is very useful in conjunction [with the `gfpdf_post_save_pdf` filter](gfpdf_post_save_pdf.md), which can be used to copy the generated PDF to an alternate location.
+* By default, when a new Gravity Form entry is submitted a PDF is only ever saved to disk when the [*Notifications*](#notifications) feature is enabled. When active, this option is very useful in conjunction [with the `gfpdf_post_save_pdf` filter](../developers/actions/gfpdf_post_save_pdf.md), which can be used to copy the generated PDF to an alternate location.
 
 ### Enable Public Access 
 * Enabling public access to the PDF will **disable all security protocols** and give anonymous users access to the PDF. This means anyone worldwide can view the PDF document for all your form's entries. 

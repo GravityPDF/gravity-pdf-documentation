@@ -8,7 +8,7 @@ description: ""
 
 ## Description 
 
-This filter can be used to add new capabilities to the [user restrictions global setting](global-settings.md#user-restriction). By default all Gravity Form capabilities and all active WordPress capabilities are included.
+This filter can be used to add new capabilities to the [user restrictions global setting](../../users/global-settings.md#user-restriction). By default all Gravity Form capabilities and all active WordPress capabilities are included.
 
 ## Parameters 
 

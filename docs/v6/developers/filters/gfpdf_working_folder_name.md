@@ -6,12 +6,12 @@ description: "By default, the PDF working directory is called PDF_EXTENDED_TEMPL
 
 ## Description 
 
-By default, the [PDF working directory](first-custom-pdf.md#working-directory) is called `PDF_EXTENDED_TEMPLATES`. Using this filter you can easily change the name. 
+By default, the [PDF working directory](../first-custom-pdf.md#working-directory) is called `PDF_EXTENDED_TEMPLATES`. Using this filter you can easily change the name. 
 
 ## Parameters 
 
 ### $folder | array
-*  The folder name of the [PDF working directory](first-custom-pdf.md#working-directory)
+*  The folder name of the [PDF working directory](../first-custom-pdf.md#working-directory)
 
 ## Usage 
 

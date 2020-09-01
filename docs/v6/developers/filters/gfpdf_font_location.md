@@ -6,7 +6,7 @@ description: "By default, custom fonts are stored in the fonts folder inside the
 
 ## Description 
 
-By default custom fonts are stored in the `fonts` folder inside the [PDF working directory](first-custom-pdf.md#working-directory). This filter allows you to change that location. 
+By default custom fonts are stored in the `fonts` folder inside the [PDF working directory](../first-custom-pdf.md#working-directory). This filter allows you to change that location. 
 
 Unlike the PDF working directory, the `fonts` folder does not need to be in a public directory.
 

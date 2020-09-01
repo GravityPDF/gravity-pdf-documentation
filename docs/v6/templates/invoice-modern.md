@@ -17,7 +17,7 @@ As an *Invoice* PDF template, *Invoice Modern* can be used with any Gravity Form
 
 ## Configuring 
 
-All PDF templates have common settings that can be configured, such as font, security and PDF attachments. We recommend [reviewing the PDF setup guide](setup-pdf.md) to get a better understanding on all the available settings. All template-specific configuration is done from the *Template* tab and below you'll find detailed information about each option available in *Invoice Modern*, what it does and how it alters the generated PDF.
+All PDF templates have common settings that can be configured, such as font, security and PDF attachments. We recommend [reviewing the PDF setup guide](../users/setup-pdf.md) to get a better understanding on all the available settings. All template-specific configuration is done from the *Template* tab and below you'll find detailed information about each option available in *Invoice Modern*, what it does and how it alters the generated PDF.
 
 The invoice PDF configuration is split up into six sections:
 
@@ -110,7 +110,7 @@ Because Gravity Forms has no product fields specifically for tax we've implement
 2.  All products use the same tax rate
 3.  All prices in Gravity Forms are to be tax inclusive
 
-With that said, you can take advantage of [Gravity PDF's Conditional Logic](setup-pdf.md#conditional-logic) to set different tax rates based on a buyer's address.
+With that said, you can take advantage of [Gravity PDF's Conditional Logic](../users/setup-pdf.md#conditional-logic) to set different tax rates based on a buyer's address.
 
 #### Enable Basic Tax Calculations 
 * By default, basic tax is disabled in the invoices. Tick this checkbox to enable tax.
@@ -205,8 +205,8 @@ The Shipping Label is taken from the Gravity Forms Shipping Field
 
 ## Recommended Font 
 
-*Roboto* is an open source sans-serif font (Apache License, Version 2.0) that is easy to read and works well with *Invoice Modern* at 10pt. Set the PDF font in the [Appearance tab](setup-pdf.md#appearance-tab).
+*Roboto* is an open source sans-serif font (Apache License, Version 2.0) that is easy to read and works well with *Invoice Modern* at 10pt. Set the PDF font in the [Appearance tab](../users/setup-pdf.md#appearance-tab).
 
 ## Viewing PDF 
 
-Once you've saved your new PDF you can [view it from the Gravity Forms Entries List page](viewing-pdfs.md). Just remember to fill out and submit your form if the entry list is empty.
+Once you've saved your new PDF you can [view it from the Gravity Forms Entries List page](../users/viewing-pdfs.md). Just remember to fill out and submit your form if the entry list is empty.

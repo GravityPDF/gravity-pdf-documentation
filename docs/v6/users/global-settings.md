@@ -22,7 +22,7 @@ From here you'll be able to control the PDF defaults like paper size, font and t
 ### Default Template 
 * Use this option to set the default template for all [individual PDFs](setup-pdf.md) (templates control the PDF design and layout). Gravity PDF comes with **four completely-free templates** for you to choose from. Click the `Advanced` button to view a preview of all available designs.
 * The default template is *Zadani* – a minimalist business-style template that will generate a well-spaced document great for printing. Additional templates can be purchased from our [template shop](https://gravitypdf.com/template-shop/) and [installed through our PDF Template Manager](pdf-template-manager.md).
-* Developers with HTML, CSS and PHP knowledge can [create their own designs and layouts](start-customising.md). Alternatively, the Gravity PDF team offers [design and integration services](http://gravitypdf.com/integration-services/) for those looking for a custom solution – we can even integrate existing PDF documents.
+* Developers with HTML, CSS and PHP knowledge can [create their own designs and layouts](../developers/start-customising.md). Alternatively, the Gravity PDF team offers [design and integration services](http://gravitypdf.com/integration-services/) for those looking for a custom solution – we can even integrate existing PDF documents.
 
 ### Default Font Type 
 * Use this option to set the default font for all [individual PDFs](setup-pdf.md). Gravity PDF ships with fonts for the majority of languages worldwide and uses the unicode typeface *DejaVu Sans Condensed* by default. For languages that aren't supported out of the box, you can use our [*Font Installer*](#fonts) to upload TTF or OTF font files for use in PDFs.
@@ -98,8 +98,8 @@ The tools tab contains useful functions for power users. You can install the cor
 
 ### Setup Custom Templates 
 * Gravity PDF uses a templating system similar to WordPress' child themes. The core templates that ship with the plugin are located in the `/src/templates/` directory (it acts like a parent theme), however you cannot modify these files without losing your changes when the plugin is updated. To circumvent this issue templates can be placed in the plugin's working directory `/wp-content/uploads/PDF_EXTENDED_TEMPLATES/` (the child theme in our analogy). From here you can edit the templates as you see fit and you won't lose your modifications during updates.
-* The *Setup Custom Templates* option copies all the core templates to the [PDF Working Directory](first-custom-pdf.md#working-directory). If you have previously run this setup the core files in this directory will be overridden.
-* Before running this function it's recommended that you [review our developer's guide to templating](start-customising.md).
+* The *Setup Custom Templates* option copies all the core templates to the [PDF Working Directory](../developers/first-custom-pdf.md#working-directory). If you have previously run this setup the core files in this directory will be overridden.
+* Before running this function it's recommended that you [review our developer's guide to templating](../developers/start-customising.md).
 
 ### Fonts 
 * The font manager allows you to install any TTF font and use it in your PDFs. There are two required fields when adding a new font:

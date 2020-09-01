@@ -8,7 +8,7 @@ description: "Only certain form data is important to you. That's why Gravity PDF
 
 Only certain form data is important to you. That's why Gravity PDF has a number of ways to filter out the unimportant fields in your generated PDF. 
 
-It's important to note that only certain PDF templates have these filtering options. All the core PDF templates will support the features discussed below, but [premium](https://gravitypdf.com/shop/), [custom templates](https://gravitypdf.com/integration-services/) or [your own DIY templates](start-customising.md) may not.
+It's important to note that only certain PDF templates have these filtering options. All the core PDF templates will support the features discussed below, but [premium](https://gravitypdf.com/shop/), [custom templates](https://gravitypdf.com/integration-services/) or [your own DIY templates](../developers/start-customising.md) may not.
 
 ## What fields are displayed in the PDF? 
 

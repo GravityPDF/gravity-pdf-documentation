@@ -8,7 +8,7 @@ description: ""
 
 ## Description 
 
-Use this filter to include additional information in the `$form_data` array (which is [used extensively in custom PDF templates](php-form-data-array.md)). While you can remove information added to this array we **strongly recommend against this**. Instead, only use it to add new information.
+Use this filter to include additional information in the `$form_data` array (which is [used extensively in custom PDF templates](../php-form-data-array.md)). While you can remove information added to this array we **strongly recommend against this**. Instead, only use it to add new information.
 
 ## Version 
 

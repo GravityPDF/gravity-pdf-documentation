@@ -17,7 +17,7 @@ The *Business Letter #2* premium PDF template is a modern take on the formal bus
 
 ## Configuring 
 
-All PDF templates have common settings that can be configured, such as font, security and PDF attachments, and we recommend [reviewing the PDF setup guide](setup-pdf.md) to get a better understanding on all the available settings. All template-specific configuration is done from the *Template* tab and below you'll find detailed information about each option available in *Business Letter #2*, what it does and how it alters the generated PDF.
+All PDF templates have common settings that can be configured, such as font, security and PDF attachments, and we recommend [reviewing the PDF setup guide](../users/setup-pdf.md) to get a better understanding on all the available settings. All template-specific configuration is done from the *Template* tab and below you'll find detailed information about each option available in *Business Letter #2*, what it does and how it alters the generated PDF.
 
 ### Standard Information
 ![Field positions for Business Letter #2](https://resources.gravitypdf.com/uploads/2017/04/field-position-1.png)
@@ -116,8 +116,8 @@ All PDF templates have common settings that can be configured, such as font, sec
 
 ## Recommended Fonts 
 
-*Open Sans* is an open source font (Apache License, Version 2.0) that's optimised for print, web, and mobile interfaces. It works well with *Business Letter #2* at 10pt. You can set the PDF font in the [Appearance tab](setup-pdf.md#appearance-tab).
+*Open Sans* is an open source font (Apache License, Version 2.0) that's optimised for print, web, and mobile interfaces. It works well with *Business Letter #2* at 10pt. You can set the PDF font in the [Appearance tab](../users/setup-pdf.md#appearance-tab).
 
 ## Viewing PDF 
 
-Once you've saved your new PDF you can [view it from the Gravity Forms Entries List page](viewing-pdfs.md). Just remember to fill out and submit your form if the entry list is empty.
+Once you've saved your new PDF you can [view it from the Gravity Forms Entries List page](../users/viewing-pdfs.md). Just remember to fill out and submit your form if the entry list is empty.

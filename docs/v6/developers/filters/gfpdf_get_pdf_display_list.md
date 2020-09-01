@@ -8,7 +8,7 @@ description: ""
 
 ## Description 
 
-Use this filter to remove (or add) links to the list of PDFs shown on [the Entry List and Entry Details pages](viewing-pdfs.md).
+Use this filter to remove (or add) links to the list of PDFs shown on [the Entry List and Entry Details pages](../../users/viewing-pdfs.md).
 
 ## Version 
 

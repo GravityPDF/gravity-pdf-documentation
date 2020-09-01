@@ -41,10 +41,10 @@ By default, Gravity Forms will not handle proxy-based IP addresses automatically
 ## PDFs and the File System 
 
 :::note tl;dr
-PDFs stored on the disk have a limited lifespan, and are protected from direct access on Apache and Litespeed web servers. Other servers aren’t automatically protected and it’s advisable to use [the `gfpdf_tmp_location` filter](gfpdf_tmp_location.md) to change the PDF directory to somewhere outside your public directory structure.
+PDFs stored on the disk have a limited lifespan, and are protected from direct access on Apache and Litespeed web servers. Other servers aren’t automatically protected and it’s advisable to use [the `gfpdf_tmp_location` filter](../developers/filters/gfpdf_tmp_location.md) to change the PDF directory to somewhere outside your public directory structure.
 :::
 
-Currently, the only time a PDF is actually saved to disk is when it's configured to be [attached to a form's notification(s)](setup-pdf.md#notifications), or the [*Always Save PDF* setting](setup-pdf.md#save-pdf) is enabled (use Always Save in conjunction with [the `gfpdf_post_save_pdf` action](gfpdf_post_save_pdf.md) to copy PDFs to another directory). The PDF temporary directory defaults to `/wp-content/uploads/PDF_EXTENDED_TEMPLATES/tmp/` and generated documents stored here are cleaned up automatically from the disk once the Gravity Forms submission process has been completed. Any stray documents older than 12 hours are also automatically cleaned up. The PDFs are not cached on the file system and they are dynamically generated upon request.
+Currently, the only time a PDF is actually saved to disk is when it's configured to be [attached to a form's notification(s)](setup-pdf.md#notifications), or the [*Always Save PDF* setting](setup-pdf.md#save-pdf) is enabled (use Always Save in conjunction with [the `gfpdf_post_save_pdf` action](../developers/actions/gfpdf_post_save_pdf.md) to copy PDFs to another directory). The PDF temporary directory defaults to `/wp-content/uploads/PDF_EXTENDED_TEMPLATES/tmp/` and generated documents stored here are cleaned up automatically from the disk once the Gravity Forms submission process has been completed. Any stray documents older than 12 hours are also automatically cleaned up. The PDFs are not cached on the file system and they are dynamically generated upon request.
 
 ## Prevent Owner Access 
 

@@ -14,7 +14,7 @@ description: "Beautiful PDF Reports using Gravity Forms and GFChart. Includes 15
 
 ## Prerequisites 
 
-Along with having [Gravity Forms](https://rocketgenius.pxf.io/c/1211356/445235/7938) and [Gravity PDF](installation.md) installed on your website, **to use Reports for GFChart [you need a GFChart ALL license](https://gfchart.com/pricing/?ref=24)** and have the following plugins installed:
+Along with having [Gravity Forms](https://rocketgenius.pxf.io/c/1211356/445235/7938) and [Gravity PDF](../users/installation.md) installed on your website, **to use Reports for GFChart [you need a GFChart ALL license](https://gfchart.com/pricing/?ref=24)** and have the following plugins installed:
 
 1. [GFChart v1.17+](https://gfchart.com/?ref=24) with active license key
 1. GFChart Image Charts v1.0.0-beta1+
@@ -62,9 +62,9 @@ Before you do anything you should determine what type of report you need, as thi
 1. **Event/Booking/Registration/Subscription** - after compelting the form, a report PDF is sent showing other user's demographics. 
 1. **Report on demand** - rather than scheduling reports, you can create a form that will send out the report on submission.
 
-If you'd prefer to get a report once a day/week/month you would create a new Gravity Form for this purpose . [See our Scheduling Reports section for more details about this configuration](#scheduling-reports). Whichever option you decide, you setup the report PDFs like you would any other: [via your form's PDF settings](setup-pdf.md#locating-pdf-settings). 
+If you'd prefer to get a report once a day/week/month you would create a new Gravity Form for this purpose . [See our Scheduling Reports section for more details about this configuration](#scheduling-reports). Whichever option you decide, you setup the report PDFs like you would any other: [via your form's PDF settings](../users/setup-pdf.md#locating-pdf-settings). 
 
-All *Reports for GFChart* templates have common settings that can be configured, such as font, security and PDF attachments, and we recommend [reviewing the PDF setup guide](setup-pdf.md) to get a better understanding on all the available options. The individual template-specific configuration is done from the *Template* tab, and below you’ll find detailed information about the available options.
+All *Reports for GFChart* templates have common settings that can be configured, such as font, security and PDF attachments, and we recommend [reviewing the PDF setup guide](../users/setup-pdf.md) to get a better understanding on all the available options. The individual template-specific configuration is done from the *Template* tab, and below you’ll find detailed information about the available options.
 
 ### Templates 
 
@@ -371,12 +371,12 @@ The ability to get a report emailed to you on a regular schedule is an important
 
 1. [Create a Notification (or Notifications) that will be emailed on your schedule](https://docs.gravityforms.com/configuring-notifications-in-gravity-forms/).
 
-1. [Create the PDF Report(s)](#setup-pdf-reports) that you want sent out and make sure you configure the PDF to [attach to the Notification(s)](setup-pdf.md#notifications) you setup in the previous step.
+1. [Create the PDF Report(s)](#setup-pdf-reports) that you want sent out and make sure you configure the PDF to [attach to the Notification(s)](../users/setup-pdf.md#notifications) you setup in the previous step.
 
 1. Update the GFChart graphs and/or calculations to be displayed in the report [with a relative date range](https://gfchart.com/documentation/?ref=24#relative-date-filtering). The common setup is to configure a relative date range with the same value as the notification schedule. For example, if you want the report to go out at the beginning of every month with last month's data you'd set the GFChart's Date Range "Start" date to "first day of last month" and leave the "End" date blank. If the report was going out weekly on a Monday morning with last week's data, use "Monday last week" in GFChart's "Start" date. Or if the report is sent out at the beginning of the day, you could use "yesterday" or "-1 day".
 ![Relative date formatting](https://resources.gravitypdf.com/uploads/2020/06/relative-date-format.png)
 
-1. Once you've go this far it's best to test that the PDF Report(s) are generating correctly and being attached to the Notification(s). Go submit a test entry to the form and then verify the email is received with the PDF Report attached. If you can correctly [view the PDF Report from the Entry List page](viewing-pdfs.md) but are having email delivery issues, [read and impliment our Email Notification Best Practice guide](email-notifications.md) before proceeding with the scheduling setup.
+1. Once you've go this far it's best to test that the PDF Report(s) are generating correctly and being attached to the Notification(s). Go submit a test entry to the form and then verify the email is received with the PDF Report attached. If you can correctly [view the PDF Report from the Entry List page](../users/viewing-pdfs.md) but are having email delivery issues, [read and impliment our Email Notification Best Practice guide](../users/email-notifications.md) before proceeding with the scheduling setup.
 
 1. **Optional**: all the scheduling plugins make use of [WordPress' in-built Cron mechnasim](https://developer.wordpress.org/plugins/cron/) which relies on traffic to your website to trigger the events. If your website doesn't get the traffic at the scheduled time then your reports will be delayed. If your hosting provided doesn't already include a dedicated cron solution, and you must have these reports at the specific time you've scheduled, [you should disable the default WP Cron and setup a proper system cron instead](https://kinsta.com/knowledgebase/disable-wp-cron/).
 
@@ -481,10 +481,10 @@ If everything has been setup correctly, after submitting the entry to your repor
 
 The aggrigate form data for the GFChart, as well as the chart settings, are sent securely over HTTPS to a GFChart server for processing, and an image is returned. Whether the aggrigate data is [considered annonymised](https://gdpr-info.eu/recitals/no-26/) will depend on what field(s) and chart settings are configured. The rule of thumb is: if you cannot link the standalone GFChart image to an identifiable natural person then that data is considered annonymised and the GDPR does not apply to the aggrigate data sent to the GFChart server. If you're interested in GFChart's privacy policy, [reach our to their support team with your questions](https://gfchart.com/support/?ref=24). 
 
-Once the GFChart image is returned, the PDF generation is completed like normal using Gravity PDF. [Refer to our GDPR for Gravity PDF guide for more information](gdpr-and-gravity-pdf.md).
+Once the GFChart image is returned, the PDF generation is completed like normal using Gravity PDF. [Refer to our GDPR for Gravity PDF guide for more information](../users/gdpr-and-gravity-pdf.md).
 
 ### The reports are slow to generate. Is it possible to make it faster?
 
 For each chart you include in the PDF report, an API request has to be made to the GFChart server and we have to await a response. Reports with one or two charts will generate quicker than those with three or four. 
 
-If the bottleneck is during the form submission process, you can dramatically speed this up [by enabling Gravity PDF's Background Processing feature](global-settings.md#background-processing) which will offload the Notification sending process (and PDF generation) to a background queue.
+If the bottleneck is during the form submission process, you can dramatically speed this up [by enabling Gravity PDF's Background Processing feature](../users/global-settings.md#background-processing) which will offload the Notification sending process (and PDF generation) to a background queue.

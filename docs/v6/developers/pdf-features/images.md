@@ -17,7 +17,7 @@ The PDF engine Gravity PDF uses, [mPDF](http://mpdf.github.io), supports the fol
 
 To display images in your PDF template use the standard `<img src="" />` HTML tag.
 
-The software will accept a URL or absolute path to the image file, although we've found [using an absolute path to the image](helper-parameters.md#useful-paths-and-urls) offers better cross-server compatibility and it's the recommended solution.
+The software will accept a URL or absolute path to the image file, although we've found [using an absolute path to the image](../helper-parameters.md#useful-paths-and-urls) offers better cross-server compatibility and it's the recommended solution.
 
 ![Sample of mPDF image support](https://resources.gravitypdf.com/uploads/2015/11/image-support.png)
 

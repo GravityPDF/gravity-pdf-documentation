@@ -15,14 +15,14 @@ Before we jump right into the code, we're going to discuss the architecture Grav
 When Gravity PDF is installed it automatically creates a folder called `PDF_EXTENDED_TEMPLATES` in your WordPress upload directory. This folder is used to store temporary files, fonts and custom PDF templates. Any PHP files in the root of this folder will be classified as a PDF template[^1] and the system will automatically register it.
 
 :::info
-On a vanilla WordPress installation the full path to the `PDF_EXTENDED_TEMPLATES` directory is `/wp-content/uploads/PDF_EXTENDED_TEMPLATES`. Your installation may be different if defining the `WP_CONTENT_DIR` or `UPLOADS` constants, or if you've used the [`gfpdf_template_location`](gfpdf_template_location.md) and [`gfpdf_template_location_uri`](gfpdf_template_location_uri.md) filters.
+On a vanilla WordPress installation the full path to the `PDF_EXTENDED_TEMPLATES` directory is `/wp-content/uploads/PDF_EXTENDED_TEMPLATES`. Your installation may be different if defining the `WP_CONTENT_DIR` or `UPLOADS` constants, or if you've used the [`gfpdf_template_location`](filters/gfpdf_template_location.md) and [`gfpdf_template_location_uri`](filters/gfpdf_template_location_uri.md) filters.
 :::
 
 ## Preparing the Infrastructure 
 
 ![How to get your server ready for custom PDF templates](https://resources.gravitypdf.com/uploads/2015/10/custom-templates-v5-1.png)
 
-Running the [`Setup Custom Templates` tool function](global-settings.md#custom-templates) from `Forms -> Settings -> PDF -> Tools` in your admin area will automatically copy all the core templates to the `PDF_EXTENDED_TEMPLATES` directory so you can easily begin templating. We recommend you copy and rename one of the core templates in `PDF_EXTENDED_TEMPLATES` to use as a starting point for your custom template.
+Running the [`Setup Custom Templates` tool function](../users/global-settings.md#custom-templates) from `Forms -> Settings -> PDF -> Tools` in your admin area will automatically copy all the core templates to the `PDF_EXTENDED_TEMPLATES` directory so you can easily begin templating. We recommend you copy and rename one of the core templates in `PDF_EXTENDED_TEMPLATES` to use as a starting point for your custom template.
 
 ### Multisite Structure 
 
@@ -142,7 +142,7 @@ Next we're going to layout the basic structure. Go ahead and add the following b
 <!-- The PDF content should be placed in here -->
 ```
 
-Think of Gravity PDF templates as HTML that is automatically included inside the `<body>` tag. Any [supported CSS](supported-html-and-css.md#css-support) can be placed in the `<style>` tags, while your actual content should be included below that. Simple!
+Think of Gravity PDF templates as HTML that is automatically included inside the `<body>` tag. Any [supported CSS](pdf-features/supported-html-and-css.md#css-support) can be placed in the `<style>` tags, while your actual content should be included below that. Simple!
 
 To finish off our example we've going to replace `<!-- The PDF content should be placed in here -->` with `<h1>Hello World</h1>`. Once done, save the example and upload it to your [PDF working directory](#working-directory).
 
@@ -152,7 +152,7 @@ To finish off our example we've going to replace `<!-- The PDF content should be
 
 ![The new Sol System PDF group](https://resources.gravitypdf.com/uploads/2015/11/sol-system-group.png)
 
-Once you've uploaded the template you'll be able to see your new *Sol System* group added to the [template](setup-pdf.md#template) field when configuring new form PDF templates. Go ahead and [configure a new form PDF](setup-pdf.md) with your Hello World template and then [view the PDF](viewing-pdfs.md). You should see a PDF with "Hello World" written in large text.
+Once you've uploaded the template you'll be able to see your new *Sol System* group added to the [template](../users/setup-pdf.md#template) field when configuring new form PDF templates. Go ahead and [configure a new form PDF](../users/setup-pdf.md) with your Hello World template and then [view the PDF](../users/viewing-pdfs.md). You should see a PDF with "Hello World" written in large text.
 
 ### Adding Styles 
 
@@ -173,6 +173,6 @@ Save and upload the template again. When you view it you'll see the heading is n
 
 ---
 
-Just keep in mind that the PDF software doesn't function exactly like a web browser. Not all [HTML or CSS is supported](supported-html-and-css.md) in PDFs and [cascading CSS support is limited](supported-html-and-css.md#cascading-limitations).
+Just keep in mind that the PDF software doesn't function exactly like a web browser. Not all [HTML or CSS is supported](pdf-features/supported-html-and-css.md) in PDFs and [cascading CSS support is limited](pdf-features/supported-html-and-css.md#cascading-limitations).
 
 [^1]: For legacy reasons ensure you don't name your template `configuration.php` or `configuration.archive.php`.

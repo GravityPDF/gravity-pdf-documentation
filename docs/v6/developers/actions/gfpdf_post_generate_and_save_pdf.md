@@ -8,7 +8,7 @@ description: ""
 
 ## Description 
 
-This action can be used to a task or clean-up settings changes after the PDF is generated and saved [using the API](create_pdf.md). [Usually used in conjunction with `gfpdf_pre_generate_and_save_pdf`](gfpdf_pre_generate_and_save_pdf.md)
+This action can be used to a task or clean-up settings changes after the PDF is generated and saved [using the API](../api/create_pdf.md). [Usually used in conjunction with `gfpdf_pre_generate_and_save_pdf`](gfpdf_pre_generate_and_save_pdf.md)
 
 ## Version 
 

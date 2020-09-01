@@ -11,7 +11,7 @@ This filter contains the full array of all our different Gravity PDF sections an
 ## Parameters 
 
 ### $gfpdf_settings | array
-*  An associative array that includes a breakdown of each section available in Gravity PDF. These sections contain another associative array which lists of the fields for a section. For more details about how fields are structured in the configuration [review our custom PDF configuration guide](template-configuration-and-image.md#custom-fields).
+*  An associative array that includes a breakdown of each section available in Gravity PDF. These sections contain another associative array which lists of the fields for a section. For more details about how fields are structured in the configuration [review our custom PDF configuration guide](../template-configuration-and-image.md#custom-fields).
 
 ## Usage 
 

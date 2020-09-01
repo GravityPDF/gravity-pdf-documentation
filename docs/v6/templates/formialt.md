@@ -14,11 +14,11 @@ description: "Formialt‘s sleek rounded corners, robust colour control, and com
 
 ## Limitations 
 
-As a *Universal* PDF template, *Formialt* can be used with all Gravity Forms and will correctly display any official Gravity Forms fields. *Formialt* does not support [CSS Ready Class columns](css-ready-classes.md).
+As a *Universal* PDF template, *Formialt* can be used with all Gravity Forms and will correctly display any official Gravity Forms fields. *Formialt* does not support [CSS Ready Class columns](../users/css-ready-classes.md).
 
 ## Configuring 
 
-All PDF templates have common settings that can be configured, such as font, security and PDF attachments, and we recommend [reviewing the PDF setup guide](setup-pdf.md) to get a better understanding on all the available settings. All template-specific configuration is done from the *Template* tab and below you'll find detailed information about each option available in *Formialt*, what it does and how it alters the generated PDF.
+All PDF templates have common settings that can be configured, such as font, security and PDF attachments, and we recommend [reviewing the PDF setup guide](../users/setup-pdf.md) to get a better understanding on all the available settings. All template-specific configuration is done from the *Template* tab and below you'll find detailed information about each option available in *Formialt*, what it does and how it alters the generated PDF.
 
 ### Main Heading 
 * The main heading is left-aligned and included on first page of your PDF, before any of your Gravity Forms fields. Merge tags are supported.
@@ -49,15 +49,15 @@ The following Heading / Field Background Colors were used in Formialt's shop scr
 
 Along with the options specific to *Formialt*, the following core settings are also supported:
 
--   [Show Page Names](setup-pdf.md#show-page-names)
--   [Show HTML Fields](setup-pdf.md#show-html-fields)
--   [Show Section Break Description](setup-pdf.md#show-section-break-description)
--   [Enable Conditional Logic](setup-pdf.md#enable-conditional-logic)
--   [Show Empty Fields](setup-pdf.md#show-empty-fields)
--   [Header](setup-pdf.md#header)
--   [First Page Header](setup-pdf.md#first-page-header)
--   [Footer](setup-pdf.md#footer)
--   [First Page Footer](setup-pdf.md#first-page-footer)
+-   [Show Page Names](../users/setup-pdf.md#show-page-names)
+-   [Show HTML Fields](../users/setup-pdf.md#show-html-fields)
+-   [Show Section Break Description](../users/setup-pdf.md#show-section-break-description)
+-   [Enable Conditional Logic](../users/setup-pdf.md#enable-conditional-logic)
+-   [Show Empty Fields](../users/setup-pdf.md#show-empty-fields)
+-   [Header](../users/setup-pdf.md#header)
+-   [First Page Header](../users/setup-pdf.md#first-page-header)
+-   [Footer](../users/setup-pdf.md#footer)
+-   [First Page Footer](../users/setup-pdf.md#first-page-footer)
 
 ## Recommended Font 
 
@@ -65,4 +65,4 @@ Along with the options specific to *Formialt*, the following core settings are a
 
 ## Viewing PDF 
 
-Once you've saved your new PDF you can [view it from the Gravity Forms Entries List page](viewing-pdfs.md). Just remember to fill out and submit your form if the entry list is empty.
+Once you've saved your new PDF you can [view it from the Gravity Forms Entries List page](../users/viewing-pdfs.md). Just remember to fill out and submit your form if the entry list is empty.

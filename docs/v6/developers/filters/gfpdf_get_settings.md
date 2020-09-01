@@ -6,7 +6,7 @@ description: "This filter can be used to dynamically change or add to the Gravit
 
 ## Description 
 
-This filter can be used to dynamically change or add to the Gravity PDF global settings. For a permanent way to set the global settings you should use the [`GPDFAPI::add_plugin_option()`](add_plugin_option.md) or [`GPDFAPI::update_plugin_option()`](update_plugin_option.md) methods instead. 
+This filter can be used to dynamically change or add to the Gravity PDF global settings. For a permanent way to set the global settings you should use the [`GPDFAPI::add_plugin_option()`](../api/add_plugin_option.md) or [`GPDFAPI::update_plugin_option()`](../api/update_plugin_option.md) methods instead. 
 
 ## Parameters 
 
