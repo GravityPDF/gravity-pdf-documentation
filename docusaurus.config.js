@@ -130,7 +130,6 @@ module.exports = {
       {
         docs: {
           routeBasePath: '/',
-          homePageId: 'doc1',
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl: 'https://github.com/gravityPDF/gravity-pdf-documentation/edit/master/',
