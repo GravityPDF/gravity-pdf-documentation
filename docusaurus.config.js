@@ -142,6 +142,7 @@ module.exports = {
             oembed.default
           ],
           showLastUpdateTime: true,
+          disableVersioning: true,
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -150,6 +151,4 @@ module.exports = {
       },
     ],
   ],
-
-  plugins: ['@docusaurus/plugin-google-analytics'],
 };
