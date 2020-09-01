@@ -6,12 +6,12 @@ description: "This filter is used to add new fields to the General tab of the co
 
 ## Description 
 
-This filter can be used to add new fields to the [General settings tab for individual PDFs](user-setup-pdf.md#general-tab). It's basically a Fields API and all validation, sanitising and saving is handled automatically for you.
+This filter can be used to add new fields to the [General settings tab for individual PDFs](setup-pdf.md#general-tab). It's basically a Fields API and all validation, sanitising and saving is handled automatically for you.
 
 ## Parameters 
 
 ### $fields | array
-*  An associative array that includes a breakdown of the field information. We go into more detail about what each field configuration setting does [in our custom PDF configuration guide](developer-template-configuration-and-image.md#custom-fields).
+*  An associative array that includes a breakdown of the field information. We go into more detail about what each field configuration setting does [in our custom PDF configuration guide](template-configuration-and-image.md#custom-fields).
 
 ## Usage 
 

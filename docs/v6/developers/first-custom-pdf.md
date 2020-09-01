@@ -22,7 +22,7 @@ On a vanilla WordPress installation the full path to the `PDF_EXTENDED_TEMPLATES
 
 ![How to get your server ready for custom PDF templates](https://resources.gravitypdf.com/uploads/2015/10/custom-templates-v5-1.png)
 
-Running the [`Setup Custom Templates` tool function](user-global-settings.md#custom-templates) from `Forms -> Settings -> PDF -> Tools` in your admin area will automatically copy all the core templates to the `PDF_EXTENDED_TEMPLATES` directory so you can easily begin templating. We recommend you copy and rename one of the core templates in `PDF_EXTENDED_TEMPLATES` to use as a starting point for your custom template.
+Running the [`Setup Custom Templates` tool function](global-settings.md#custom-templates) from `Forms -> Settings -> PDF -> Tools` in your admin area will automatically copy all the core templates to the `PDF_EXTENDED_TEMPLATES` directory so you can easily begin templating. We recommend you copy and rename one of the core templates in `PDF_EXTENDED_TEMPLATES` to use as a starting point for your custom template.
 
 ### Multisite Structure 
 
@@ -40,7 +40,7 @@ The site ID can be found by looking at each site's `Edit` URL in the `Network Ad
 
 #### Multisite 
 
-[The hierarchy in Multisite installations has an extra tier](developer-template-hierarchy.md#multisite-wordpress-install). In a Multisite network the core templates and `PDF_EXTENDED_TEMPLATES` directory still act like parent and child themes, but [the sub-site folders](#multisite-structure) acts like a child "child theme".
+[The hierarchy in Multisite installations has an extra tier](template-hierarchy.md#multisite-wordpress-install). In a Multisite network the core templates and `PDF_EXTENDED_TEMPLATES` directory still act like parent and child themes, but [the sub-site folders](#multisite-structure) acts like a child "child theme".
 
 The templates places in the root `PDF_EXTENDED_TEMPLATES` directory are loaded by all sites in the network. While templates in a sub-site directory – like `PDF_EXTENDED_TEMPLATES/5/` – are site specific. This setup can be very useful when duplicating sites in your network, but most of the time you'll add your custom template to the sub-site folders.
 
@@ -90,10 +90,10 @@ The following variables are available to all PDF templates:
 * The current [Gravity Form entry object](https://www.gravityhelp.com/documentation/article/entry-object/) being processed. This object contains all properties of a particular entry in **raw** format – accessing field data directly from the object should be avoided, where possible. The object is formatted as an associative array and the field IDs are the array keys.
 
 ### $form\_data 
-* The formatted [$entry](#entry) data stored in an associative array. [View full documentation on the `$form_data` array](developer-php-form-data-array.md).
+* The formatted [$entry](#entry) data stored in an associative array. [View full documentation on the `$form_data` array](php-form-data-array.md).
 
 ### $settings 
-* The current PDF configuration settings in array format. Standard settings like filename and font size are stored in this array, as well as [template-specific settings](developer-template-configuration-and-image.md).
+* The current PDF configuration settings in array format. Standard settings like filename and font size are stored in this array, as well as [template-specific settings](template-configuration-and-image.md).
 
 ### $fields 
 * An array of the current Gravity Forms fields which can be accessed using their field ID number – `print_r( $fields[20] );`. This is just a formatted version of the `$form['fields']` array.
@@ -142,7 +142,7 @@ Next we're going to layout the basic structure. Go ahead and add the following b
 <!-- The PDF content should be placed in here -->
 ```
 
-Think of Gravity PDF templates as HTML that is automatically included inside the `<body>` tag. Any [supported CSS](developer-supported-html-and-css.md#css-support) can be placed in the `<style>` tags, while your actual content should be included below that. Simple!
+Think of Gravity PDF templates as HTML that is automatically included inside the `<body>` tag. Any [supported CSS](supported-html-and-css.md#css-support) can be placed in the `<style>` tags, while your actual content should be included below that. Simple!
 
 To finish off our example we've going to replace `<!-- The PDF content should be placed in here -->` with `<h1>Hello World</h1>`. Once done, save the example and upload it to your [PDF working directory](#working-directory).
 
@@ -152,7 +152,7 @@ To finish off our example we've going to replace `<!-- The PDF content should be
 
 ![The new Sol System PDF group](https://resources.gravitypdf.com/uploads/2015/11/sol-system-group.png)
 
-Once you've uploaded the template you'll be able to see your new *Sol System* group added to the [template](user-setup-pdf.md#template) field when configuring new form PDF templates. Go ahead and [configure a new form PDF](user-setup-pdf.md) with your Hello World template and then [view the PDF](user-viewing-pdfs.md). You should see a PDF with "Hello World" written in large text.
+Once you've uploaded the template you'll be able to see your new *Sol System* group added to the [template](setup-pdf.md#template) field when configuring new form PDF templates. Go ahead and [configure a new form PDF](setup-pdf.md) with your Hello World template and then [view the PDF](viewing-pdfs.md). You should see a PDF with "Hello World" written in large text.
 
 ### Adding Styles 
 
@@ -173,6 +173,6 @@ Save and upload the template again. When you view it you'll see the heading is n
 
 ---
 
-Just keep in mind that the PDF software doesn't function exactly like a web browser. Not all [HTML or CSS is supported](developer-supported-html-and-css.md) in PDFs and [cascading CSS support is limited](developer-supported-html-and-css.md#cascading-limitations).
+Just keep in mind that the PDF software doesn't function exactly like a web browser. Not all [HTML or CSS is supported](supported-html-and-css.md) in PDFs and [cascading CSS support is limited](supported-html-and-css.md#cascading-limitations).
 
 [^1]: For legacy reasons ensure you don't name your template `configuration.php` or `configuration.archive.php`.

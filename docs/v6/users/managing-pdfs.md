@@ -6,9 +6,9 @@ description: "Managing your PDFs and performing actions like activate/deactivate
 
 ![A look at a form's PDF list](https://resources.gravitypdf.com/uploads/2015/10/pdf-list.png) 
 
-When you begin taking advantage of [conditional logic](user-setup-pdf.md#conditional-logic), or install a [premium](https://gravitypdf.com/shop/) or [custom](https://gravitypdf.com/integration-services/) template, one PDF per form just isn't enough. That's why we've built an AJAXified PDF list to help you activate / deactivate, duplicate and delete your PDFs – all without a page reload. You can also add new PDFs or edit existing ones (it's not AJAX-powered though). The user interface is similar to the confirmation and notification lists so you should feel right at home. 
+When you begin taking advantage of [conditional logic](setup-pdf.md#conditional-logic), or install a [premium](https://gravitypdf.com/shop/) or [custom](https://gravitypdf.com/integration-services/) template, one PDF per form just isn't enough. That's why we've built an AJAXified PDF list to help you activate / deactivate, duplicate and delete your PDFs – all without a page reload. You can also add new PDFs or edit existing ones (it's not AJAX-powered though). The user interface is similar to the confirmation and notification lists so you should feel right at home. 
 
-To access the *Managing PDFs* page see [Locating Your PDF Settings](user-setup-pdf.md#locating-pdf-settings).
+To access the *Managing PDFs* page see [Locating Your PDF Settings](setup-pdf.md#locating-pdf-settings).
 
 ## List Columns 
 
@@ -17,10 +17,10 @@ To access the *Managing PDFs* page see [Locating Your PDF Settings](user-setup-p
 The PDF list contains four columns which provide an overview of the PDFs currently configured for your Gravity Form. These include:
 
 ### Name 
-* This column displays the internal PDF [name](user-setup-pdf.md#name). It also functions as the "actions" column. By hovering over the row the `Edit`, `Duplicate` and `Delete` actions will appear in this column.
+* This column displays the internal PDF [name](setup-pdf.md#name). It also functions as the "actions" column. By hovering over the row the `Edit`, `Duplicate` and `Delete` actions will appear in this column.
 
 ### Download Shortcode 
-* This column displays a sample shortcode that generates a download link for the PDF. Use it in the Gravity Form confirmations or notifications. [See our shortcode documentation](user-shortcodes.md) for more details about the `[gravitypdf]` shortcode.
+* This column displays a sample shortcode that generates a download link for the PDF. Use it in the Gravity Form confirmations or notifications. [See our shortcode documentation](shortcodes.md) for more details about the `[gravitypdf]` shortcode.
 
 ### Template 
 * The selected PDF template will be displayed in this column. Along with the name, the template's group will also be displayed. For instance, any template that ships with the software is apart of the `Core` group. This is useful when you start creating custom PDF templates.
@@ -43,11 +43,11 @@ The Edit, Duplicate and Delete actions will appear in the [*Name*](#name) column
 
 ### Add 
 
-New PDFs can be added by clicking the `Add New` button, which is located to the right of the *Gravity PDF* page heading. [See our Setup PDF documentation](user-setup-pdf.md) for more details on adding new PDFs.
+New PDFs can be added by clicking the `Add New` button, which is located to the right of the *Gravity PDF* page heading. [See our Setup PDF documentation](setup-pdf.md) for more details on adding new PDFs.
 
 ### Edit 
 
-Click a PDFs *Edit* action to modify an existing PDF configuration. [See our Setup PDF documentation](user-setup-pdf.md) for more in-depth details on what each PDF setting does.
+Click a PDFs *Edit* action to modify an existing PDF configuration. [See our Setup PDF documentation](setup-pdf.md) for more in-depth details on what each PDF setting does.
 
 ### Activate / Deactivate PDFs 
 

@@ -14,7 +14,7 @@ Gravity PDF v5 decouples the Core PDF fonts from the plugin. This means that the
 
 ![The Core Font Installer in action](https://resources.gravitypdf.com/uploads/2017/12/core-font-installer.png) 
 
-When the plugin is activated / upgraded, Gravity PDF will detect if the Core Fonts have been previously installed and show a prompt if they have not. When the prompt is shown, click the **Install Core Fonts** button to begin the installation. If you need to reinstall the Core Fonts for any reason you can initiate the installation from the [PDF Global Settings Tools tab](user-global-settings.md#tools). If any fonts fail to download, the installer will ask if you want to retry the installation. Only the failed downloads will be retried.
+When the plugin is activated / upgraded, Gravity PDF will detect if the Core Fonts have been previously installed and show a prompt if they have not. When the prompt is shown, click the **Install Core Fonts** button to begin the installation. If you need to reinstall the Core Fonts for any reason you can initiate the installation from the [PDF Global Settings Tools tab](global-settings.md#tools). If any fonts fail to download, the installer will ask if you want to retry the installation. Only the failed downloads will be retried.
 
 ### via FTP 
 
@@ -24,7 +24,7 @@ When the plugin is activated / upgraded, Gravity PDF will detect if the Core Fon
 
 [Trellis](https://roots.io/trellis/) (which uses [Ansible](https://www.ansible.com/how-ansible-works)) is a popular way to setup and manage a server that can automatically deploy your WordPress website (we use it extensively at Gravity PDF). Because of the shared uploads directory, out-of-the-box Trellis users can safely run the Core PDF Font installation with the Font Manager. 
 
-If you've moved the [PDF Working Directory](developer-first-custom-pdf.md#working-directory) to a location outside your uploads folder (the default location), and don't want to commit the Core PDF fonts to your Git repo (we didn't), you'll need to install the fonts with each deployment. Trellis makes this very simple using their deployment hooks. 
+If you've moved the [PDF Working Directory](first-custom-pdf.md#working-directory) to a location outside your uploads folder (the default location), and don't want to commit the Core PDF fonts to your Git repo (we didn't), you'll need to install the fonts with each deployment. Trellis makes this very simple using their deployment hooks. 
 
 To start, [create a custom task and override the `deploy_build_after` hook](https://roots.io/trellis/docs/deploys/#custom-tasks). After adding the custom task your `group_vars/all/main.yml` configuration file should look similar to this:
 

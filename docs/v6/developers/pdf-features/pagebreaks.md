@@ -25,7 +25,7 @@ In its most basic form, you can add pagebreaks as simply as:
 
 When used this way the new page will use the same size and margins as your previous page.
 
-When using [page numbering in the header or footer](developer-headers-and-footers.md#reserved-variables) you can also use the `<pagebreaks/>` tag to reset the page number.
+When using [page numbering in the header or footer](headers-and-footers.md#reserved-variables) you can also use the `<pagebreaks/>` tag to reset the page number.
 
 ```html
 <!-- Reset the page number back to 1 -->
@@ -37,7 +37,7 @@ When using [page numbering in the header or footer](developer-headers-and-footer
 
 ## @page 
 
-We briefly touched on using `@page` when [discussing headers and footers](developer-headers-and-footers.md#displaying-headers-and-footers). This special CSS property can be used to control margins, headers/footers and backgrounds:
+We briefly touched on using `@page` when [discussing headers and footers](headers-and-footers.md#displaying-headers-and-footers). This special CSS property can be used to control margins, headers/footers and backgrounds:
 
 ```css
 @page {

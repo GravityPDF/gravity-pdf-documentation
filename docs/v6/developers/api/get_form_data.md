@@ -6,7 +6,7 @@ description: ""
 
 ## Description 
 
-This API method will return [the $form\_data array](developer-php-form-data-array.md) for a particular entry.
+This API method will return [the $form\_data array](php-form-data-array.md) for a particular entry.
 
 ## Version 
 

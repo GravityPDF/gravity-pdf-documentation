@@ -57,7 +57,7 @@ There are two different methods to assign headers and footers:
 1.  Using the special CSS selector `@page`
 2.  Using mPDF's custom HTML setter tags `<sethtmlpageheader>` and `<sethtmlpagefooter>`
 
-**Setting your own header or footer in your PDF template [will override the core header and footer fields](developer-template-configuration-and-image.md#configuration-structure)**.
+**Setting your own header or footer in your PDF template [will override the core header and footer fields](template-configuration-and-image.md#configuration-structure)**.
 
 ### @page 
 
@@ -88,7 +88,7 @@ You can also apply headers and footers to the first page of your document using 
 </style>
 ```
 
-You can get more specific with named `@page` selectors but [we'll discuss those in the `<pagebreak>` section](developer-pagebreaks.md).
+You can get more specific with named `@page` selectors but [we'll discuss those in the `<pagebreak>` section](pagebreaks.md).
 
 ### Inline HTML 
 

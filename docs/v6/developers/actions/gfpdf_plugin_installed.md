@@ -6,7 +6,7 @@ description: "This action is triggered when Gravity PDF is activated for the fir
 
 ## Description 
 
-This action is triggered when Gravity PDF is activated for the first time. It will not fire for subsequent activations or upgrades ([see `gfpdf_version_changed`](gfpdf_version_changed.md)) unless the software [is first uninstalled](user-global-settings.md#uninstall). 
+This action is triggered when Gravity PDF is activated for the first time. It will not fire for subsequent activations or upgrades ([see `gfpdf_version_changed`](gfpdf_version_changed.md)) unless the software [is first uninstalled](global-settings.md#uninstall). 
 
 ## Usage 
 

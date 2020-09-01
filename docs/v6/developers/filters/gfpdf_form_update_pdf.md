@@ -6,7 +6,7 @@ description: "This filter can be used to add or edit settings when a PDF is upda
 
 ## Description 
 
-This filter can be used to add or edit settings when a PDF is updated – either via the UI or using the [`GPDFAPI::update_pdf()`](api_update_pdf.md) method. Any changes made to the PDF settings using this filter will be permanently stored in the database. 
+This filter can be used to add or edit settings when a PDF is updated – either via the UI or using the [`GPDFAPI::update_pdf()`](update_pdf.md) method. Any changes made to the PDF settings using this filter will be permanently stored in the database. 
 
 You also have the option to use the `gfpdf_form_update_pdf_$form_id` filter.
 

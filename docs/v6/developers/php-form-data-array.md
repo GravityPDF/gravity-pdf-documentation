@@ -6,12 +6,12 @@ description: "Take full control over your custom PDF templates for Gravity PDF b
 
 ## Introduction 
 
-[Gravity Forms merge tags and conditional shortcodes](developer-mergetags-and-conditional-shortcodes.md) are useful PDF-building tools, but there are drawbacks. For instance, *you cannot create nested conditionals* or do any *post-processing to the entry data* – you aren't able to determine the age of someone by their date of birth, or convert a field to upper case. To achieve this behaviour we need to utilise PHP and the `$form_data` associative array – a formatted version of the `$entry` object.
+[Gravity Forms merge tags and conditional shortcodes](mergetags-and-conditional-shortcodes.md) are useful PDF-building tools, but there are drawbacks. For instance, *you cannot create nested conditionals* or do any *post-processing to the entry data* – you aren't able to determine the age of someone by their date of birth, or convert a field to upper case. To achieve this behaviour we need to utilise PHP and the `$form_data` associative array – a formatted version of the `$entry` object.
 
 ## Template Tutorial – Part 3 
 
 ![Gravity PDF PHP template](https://resources.gravitypdf.com/uploads/2015/11/pdf-template-sample.png)
-First, we're going to convert the template we did in the [Part 2 exercise](developer-mergetags-and-conditional-shortcodes.md#template-tutorial) from merge tags/conditional shortcodes to PHP. Then we'll look at the two post-processing use-cases we discussed [in the introduction](#introduction). Finally, we'll take a closer look at the `$form_data` array.
+First, we're going to convert the template we did in the [Part 2 exercise](mergetags-and-conditional-shortcodes.md#template-tutorial) from merge tags/conditional shortcodes to PHP. Then we'll look at the two post-processing use-cases we discussed [in the introduction](#introduction). Finally, we'll take a closer look at the `$form_data` array.
 
 ### Convert Merge tags to PHP 
 

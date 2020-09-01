@@ -12,7 +12,7 @@ You can purchase the *Previewer* plugin from our [Extension Shop](https://gravit
 
 ## Installation 
 
-[Please follow our installation guide](shop-installing-upgrading-extensions.md), which provides instructions for uploading the add-on to your WordPress website and adding your license key for automatic updates.
+[Please follow our installation guide](installing-upgrading-extensions.md), which provides instructions for uploading the add-on to your WordPress website and adding your license key for automatic updates.
 
 :::note
 The REST API must be enabled to use this plugin.
@@ -20,7 +20,7 @@ The REST API must be enabled to use this plugin.
 
 ## Configuring 
 
-This extension adds a new field called **PDF Preview** to the [Gravity Forms Editor](https://www.gravityhelp.com/documentation/article/creating-a-form/), and can be found under the 'Advanced Fields' section. To correctly setup the *Previewer* field, you first need to [configure a PDF on your chosen Gravity Form](user-setup-pdf.md).
+This extension adds a new field called **PDF Preview** to the [Gravity Forms Editor](https://www.gravityhelp.com/documentation/article/creating-a-form/), and can be found under the 'Advanced Fields' section. To correctly setup the *Previewer* field, you first need to [configure a PDF on your chosen Gravity Form](setup-pdf.md).
 
 ### PDF Preview Options 
 
@@ -37,7 +37,7 @@ Once you've added the *PDF Preview* field to the form, you have a number of opti
 
 #### PDF to Preview  
 
-A dropdown that allows you to select one of the active PDFs [configured on the current Gravity Form](user-setup-pdf.md) the end user can preview.
+A dropdown that allows you to select one of the active PDFs [configured on the current Gravity Form](setup-pdf.md) the end user can preview.
 
 #### Preview Height  
 
@@ -176,7 +176,7 @@ If you need your user content to expand across multiple pages, and include your 
 
 ### PDF Security in Previewer 
 
-By default, when you've [allowed your user to download the PDF via the Previewer](shop-plugin-previewer-add-on.md#download-preview) the PDF Security settings are disabled. To use the security [you've set in the PDF settings](user-setup-pdf.md#pdf-security), include the following snippet in your active theme's functions.php file:
+By default, when you've [allowed your user to download the PDF via the Previewer](previewer-add-on.md#download-preview) the PDF Security settings are disabled. To use the security [you've set in the PDF settings](setup-pdf.md#pdf-security), include the following snippet in your active theme's functions.php file:
 
 ```
 add_filter( 'gfpdf_previewer_enable_pdf_security', '__return_false' );

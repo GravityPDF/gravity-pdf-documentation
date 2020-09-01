@@ -6,7 +6,7 @@ description: "This hook allows you to output content at the bottom of the PDF He
 
 ## Description 
 
-This hook allows you to output content at the bottom of the [PDF Help Settings tab](user-global-settings.md#help). 
+This hook allows you to output content at the bottom of the [PDF Help Settings tab](global-settings.md#help). 
 
 ## Usage 
 

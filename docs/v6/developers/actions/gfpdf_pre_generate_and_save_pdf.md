@@ -8,7 +8,7 @@ description: ""
 
 ## Description 
 
-This action can be used to run a task or change a setting prior to the PDF being generated and saved [using the API](api_create_pdf.md). If you change the PDF settings on the fly, [you should use the `gfpdf_post_generate_and_save_pdf` action](gfpdf_post_generate_and_save_pdf.md) to clean up your filter(s). 
+This action can be used to run a task or change a setting prior to the PDF being generated and saved [using the API](create_pdf.md). If you change the PDF settings on the fly, [you should use the `gfpdf_post_generate_and_save_pdf` action](gfpdf_post_generate_and_save_pdf.md) to clean up your filter(s). 
 
 ## Version 
 

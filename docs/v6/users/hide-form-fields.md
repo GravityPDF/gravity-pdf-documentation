@@ -8,15 +8,15 @@ description: "Only certain form data is important to you. That's why Gravity PDF
 
 Only certain form data is important to you. That's why Gravity PDF has a number of ways to filter out the unimportant fields in your generated PDF. 
 
-It's important to note that only certain PDF templates have these filtering options. All the core PDF templates will support the features discussed below, but [premium](https://gravitypdf.com/shop/), [custom templates](https://gravitypdf.com/integration-services/) or [your own DIY templates](developer-start-customising.md) may not.
+It's important to note that only certain PDF templates have these filtering options. All the core PDF templates will support the features discussed below, but [premium](https://gravitypdf.com/shop/), [custom templates](https://gravitypdf.com/integration-services/) or [your own DIY templates](start-customising.md) may not.
 
 ## What fields are displayed in the PDF? 
 
-Gravity PDF will adhere to your form's conditional logic when generating a PDF. That means if the conditional logic determines a field (or entire section) should be hidden it won't be displayed on the PDF. Also, if a user doesn't fill in anything for a particular field it won't be displayed either. Both of these settings can be modified – see [*Enable Conditional Logic*](user-setup-pdf.md#enable-conditional-logic) and [*Show Empty Fields*](user-setup-pdf.md#show-empty-fields). 
+Gravity PDF will adhere to your form's conditional logic when generating a PDF. That means if the conditional logic determines a field (or entire section) should be hidden it won't be displayed on the PDF. Also, if a user doesn't fill in anything for a particular field it won't be displayed either. Both of these settings can be modified – see [*Enable Conditional Logic*](setup-pdf.md#enable-conditional-logic) and [*Show Empty Fields*](setup-pdf.md#show-empty-fields). 
 
-HTML and Page fields are also hidden by default, but they can be enabled using the [*Show Page Names*](user-setup-pdf.md#show-page-names) and [*Show HTML Fields*](user-setup-pdf.md#show-html-fields) options. 
+HTML and Page fields are also hidden by default, but they can be enabled using the [*Show Page Names*](setup-pdf.md#show-page-names) and [*Show HTML Fields*](setup-pdf.md#show-html-fields) options. 
 
-You can also choose to show or hide the form's title using the [*Show Form Title*](user-setup-pdf.md#show-form-title) option.
+You can also choose to show or hide the form's title using the [*Show Form Title*](setup-pdf.md#show-form-title) option.
 
 ## Hiding Specific Fields in the PDF 
 

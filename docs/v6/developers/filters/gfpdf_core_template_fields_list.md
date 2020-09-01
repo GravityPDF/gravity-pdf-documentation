@@ -6,7 +6,7 @@ description: ""
 
 ## Description 
 
-This field can be used to create [new core PDF template fields](developer-template-configuration-and-image.md#core-fields) and make them available to the PDF configuration.
+This field can be used to create [new core PDF template fields](template-configuration-and-image.md#core-fields) and make them available to the PDF configuration.
 
 ## Parameters 
 
@@ -14,7 +14,7 @@ This field can be used to create [new core PDF template fields](developer-templa
 *  The associative array which holds the field ID in the array key and the method/function which will get passed to PHP's `call_user_func` function. 
 
 ### $template_settings | array
-*  The current template settings being run. [Read more about template configurations here](developer-template-configuration-and-image.md#core-fields).
+*  The current template settings being run. [Read more about template configurations here](template-configuration-and-image.md#core-fields).
 
 ### $class | object
 *  The current template's configuration class being processed.

@@ -117,7 +117,7 @@ Most properties in this specification are supported, including: multiple colour-
 
 ## Background Images 
 
-Background images can be included using the URL or full local path – the preferred method using [one of the absolute path constants](development-helper-parameters.md#useful-paths-and-urls) – to the image. You can use the `background` or `background-image`, `background-position`, `background-size` and `background-repeat` CSS properties to control the image display. *Currently unsupported is multiple background images per container*.
+Background images can be included using the URL or full local path – the preferred method using [one of the absolute path constants](helper-parameters.md#useful-paths-and-urls) – to the image. You can use the `background` or `background-image`, `background-position`, `background-size` and `background-repeat` CSS properties to control the image display. *Currently unsupported is multiple background images per container*.
 
 ```
 <!-- Basic Background Image with no constraints -->

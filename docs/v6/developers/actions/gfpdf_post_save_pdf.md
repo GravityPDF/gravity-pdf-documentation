@@ -8,7 +8,7 @@ description: "This action is fired right after a PDF is saved to disk. It allows
 
 This action is run right after a PDF is saved to disk. It allows you to **copy the PDF** to another location (*do not move the PDF otherwise you'll break the PDF notifications*). 
 
-It will be triggered when a Gravity Forms notification is sent AND the [PDF is configured to be attached to it](user-setup-pdf.md#notifications) – this includes during the initial form submission and when resending notifications. It will also be triggered during the form submission when the [*Always Save PDF*](user-setup-pdf.md#save-pdf) setting is enabled or when using [`GPDFAPI::create_pdf( $entry_id, $pdf_id )`](api_create_pdf.md) method in our API. 
+It will be triggered when a Gravity Forms notification is sent AND the [PDF is configured to be attached to it](setup-pdf.md#notifications) – this includes during the initial form submission and when resending notifications. It will also be triggered during the form submission when the [*Always Save PDF*](setup-pdf.md#save-pdf) setting is enabled or when using [`GPDFAPI::create_pdf( $entry_id, $pdf_id )`](create_pdf.md) method in our API. 
 
 You can also use the `gfpdf_post_save_pdf_$form_id` action if needed.
 

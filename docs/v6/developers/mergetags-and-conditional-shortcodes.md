@@ -12,7 +12,7 @@ Gravity Forms has a [powerful macro they call *Merge Tags*](https://www.gravityh
 
 ![The Hello World Gravity Forms form](https://resources.gravitypdf.com/uploads/2015/11/hello-world-form.png)
 
-In [Template Tutorial – Part 1](developer-first-custom-pdf.md#template-tutorial) we showed you the very minimum needed to create a PDF template. In part 2 we're going to utilise merge tags and conditional shortcodes in a template. Before you begin you will need to [download the Gravity Forms form](https://resources.gravitypdf.com/uploads/2015/11/hello-world-gravity-form.json) (right click and 'save link as') we'll be working with and [import it into your website](https://www.gravityhelp.com/documentation/article/importing-a-form-into-gravity-forms/). Once done, submit a new entry for the newly-imported *Hello World* form.
+In [Template Tutorial – Part 1](first-custom-pdf.md#template-tutorial) we showed you the very minimum needed to create a PDF template. In part 2 we're going to utilise merge tags and conditional shortcodes in a template. Before you begin you will need to [download the Gravity Forms form](https://resources.gravitypdf.com/uploads/2015/11/hello-world-gravity-form.json) (right click and 'save link as') we'll be working with and [import it into your website](https://www.gravityhelp.com/documentation/article/importing-a-form-into-gravity-forms/). Once done, submit a new entry for the newly-imported *Hello World* form.
 
 ### Merge Tags 
 

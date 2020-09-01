@@ -8,7 +8,7 @@ description: "The CSS property float is partially supported, allowing block elem
 
 The CSS property `float` is *partially* supported, allowing block elements to be placed alongside one another. However, there are certain limitations you should be aware of before using them:
 
-1.  Floats only work for block elements (remember, [all HTML is hard-coded as either block or inline](developer-supported-html-and-css.md#html-support)).
+1.  Floats only work for block elements (remember, [all HTML is hard-coded as either block or inline](supported-html-and-css.md#html-support)).
 
 2.  Block elements need to have a width set (fixed or percentage-based)
 

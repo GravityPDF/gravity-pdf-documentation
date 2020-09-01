@@ -6,12 +6,12 @@ description: "This filter is used to add new fields to the General tab of the Gr
 
 ## Description 
 
-This filter can be used to add new fields to the [General tab of the Gravity PDF settings page](user-global-settings.md#general). It's basically a Fields API and all validation, sanitising and saving is handled automatically for you.
+This filter can be used to add new fields to the [General tab of the Gravity PDF settings page](global-settings.md#general). It's basically a Fields API and all validation, sanitising and saving is handled automatically for you.
 
 ## Parameters 
 
 ### $fields | array
-*  An associative array that includes a breakdown of the field information. We go into more detail about what each field configuration setting does [in our custom PDF configuration guide](developer-template-configuration-and-image.md#custom-fields).
+*  An associative array that includes a breakdown of the field information. We go into more detail about what each field configuration setting does [in our custom PDF configuration guide](template-configuration-and-image.md#custom-fields).
 
 ## Usage 
 

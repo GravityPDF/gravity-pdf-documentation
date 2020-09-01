@@ -6,7 +6,7 @@ description: "This filter can be used to add to or modify the variables passed d
 
 ## Description 
 
-This filter can be used to add to or modify [the variables passed directly to PDF templates](developer-first-custom-pdf.md#variables-available). It can be useful if you want to ensure custom data is available to all Gravity PDF templates, or all templates assigned to a particular Gravity Form.
+This filter can be used to add to or modify [the variables passed directly to PDF templates](first-custom-pdf.md#variables-available). It can be useful if you want to ensure custom data is available to all Gravity PDF templates, or all templates assigned to a particular Gravity Form.
 
 ## Parameters 
 

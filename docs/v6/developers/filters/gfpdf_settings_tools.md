@@ -6,14 +6,14 @@ description: "This filter is used to add fields on the Tools tab of the Gravity 
 
 ## Description 
 
-This filter can be used to add new fields to the [Tools tab of the Gravity PDF settings page](user-global-settings.md#general). It's basically a Fields API and all validation, sanitising and saving is handled automatically for you.
+This filter can be used to add new fields to the [Tools tab of the Gravity PDF settings page](global-settings.md#general). It's basically a Fields API and all validation, sanitising and saving is handled automatically for you.
 
 The Tools tab doesn't have a submit button like other pages. This page is specifically for action tasks like `Setup Custom Templates`. If you want to add a new action you should include a new form `button` and do your processing [from the `gfpdf_tool_tab_actions` action](gfpdf_tool_tab_actions.md).
 
 ## Parameters 
 
 ### $fields | array
-*  An associative array that includes a breakdown of the field information. We go into more detail about what each field configuration setting does [in our custom PDF configuration guide](developer-template-configuration-and-image.md#custom-fields).
+*  An associative array that includes a breakdown of the field information. We go into more detail about what each field configuration setting does [in our custom PDF configuration guide](template-configuration-and-image.md#custom-fields).
 
 ## Usage 
 

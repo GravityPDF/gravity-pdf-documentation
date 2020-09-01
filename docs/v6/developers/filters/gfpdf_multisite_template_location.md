@@ -6,7 +6,7 @@ description: "For multisite installations we create a subdirectory inside the PD
 
 ## Description 
 
-By default, the [PDF working directory](developer-first-custom-pdf.md#working-directory) is found in your `/wp-content/uploads/PDF_EXTENDED_TEMPLATES` folder. For multisite installations we also create a subdirectory inside the `PDF_EXTENDED_TEMPLATES` folder using each multisite's ID. This filter allows you to change that location (but you'll normally want to use the [`gfpdf_template_location` filter](gfpdf_template_location.md) instead). 
+By default, the [PDF working directory](first-custom-pdf.md#working-directory) is found in your `/wp-content/uploads/PDF_EXTENDED_TEMPLATES` folder. For multisite installations we also create a subdirectory inside the `PDF_EXTENDED_TEMPLATES` folder using each multisite's ID. This filter allows you to change that location (but you'll normally want to use the [`gfpdf_template_location` filter](gfpdf_template_location.md) instead). 
 
 The multisite working directory **MUST be in a publicly accessible folder** (accessed via a URL) and **MUST be used in conjunction with the [`gfpdf_multisite_template_location_uri`](gfpdf_multisite_template_location_uri.md) filter**. Both the `gfpdf_multisite_template_location` and `gfpdf_multisite_template_location_uri` filters should point to the same directory – one is the path and one is the URL.
 
@@ -17,7 +17,7 @@ You can also use this filter by targeting the multisite ID directly: `gfpdf_mult
 ## Parameters 
 
 ### $directory | string
-*  The path to the multisite [PDF working directory](developer-first-custom-pdf.md#working-directory)
+*  The path to the multisite [PDF working directory](first-custom-pdf.md#working-directory)
 
 ### $working_folder | string
 *  The working directory folder name. By default this is `PDF_EXTENDED_TEMPLATES`.

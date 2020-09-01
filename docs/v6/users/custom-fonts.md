@@ -11,7 +11,7 @@ Gravity PDF Core Fonts include characters for a large percentage of languages wo
 
 ## Font Installer 
 
-The font installer is found in the plugin setting's [*Tools* tab](user-global-settings.md#tools) – navigate to `Forms -> Settings -> PDF -> Tools` in your WordPress admin area – and is accessed by selecting the *Manage Fonts* button. Only `.ttf` fonts can be used, and all fonts *must* be uploaded through your media library. 
+The font installer is found in the plugin setting's [*Tools* tab](global-settings.md#tools) – navigate to `Forms -> Settings -> PDF -> Tools` in your WordPress admin area – and is accessed by selecting the *Manage Fonts* button. Only `.ttf` fonts can be used, and all fonts *must* be uploaded through your media library. 
 
 ## Managing Fonts
 
@@ -42,7 +42,7 @@ Click the *Add Font* "plus" icon and an empty form will be displayed where you c
 * This field is optional and if not provided the PDF software will mimic bold-italics when referenced. However, you will get a better result if a bold-italics font file is installed.
 
 #### Custom Template Usage
-* This is a read-only field which displays a simple CSS statement for use in [custom PDF templates](developer-start-customising.md). If you want the entire PDF to use your custom font then change the [Font setting](user-setup-pdf.md#font) when you setup your PDF.
+* This is a read-only field which displays a simple CSS statement for use in [custom PDF templates](start-customising.md). If you want the entire PDF to use your custom font then change the [Font setting](setup-pdf.md#font) when you setup your PDF.
 
 ### Edit Font 
 

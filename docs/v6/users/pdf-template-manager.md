@@ -12,7 +12,7 @@ The PDF Template Manager allows you to better view, search and manage your PDF T
 
 ![Access the PDF Template Manager through the Advanced button next to the Template Dropdown](https://resources.gravitypdf.com/uploads/2017/03/access.png) 
 
-You can access the PDF Template Manager through the [Global PDF Settings page](user-global-settings.md#default-template) or when [configuring a PDF on your form](user-setup-pdf.md#template). Just look for the *Advanced* button that will appear next to the Template dropdown box. 
+You can access the PDF Template Manager through the [Global PDF Settings page](global-settings.md#default-template) or when [configuring a PDF on your form](setup-pdf.md#template). Just look for the *Advanced* button that will appear next to the Template dropdown box. 
 
 More information on each PDF can be viewed by clicking (or navigating with your keyboard and pressing Enter) on a PDF image.
 
@@ -29,7 +29,7 @@ Once you've accessed the PDF Template Manager you'll see a prominent search bar 
 One of the powerful new features is the ability to install PDF Template `.zip` packages straight from the UI. You'll see an "Add New Template" box below all your installed templates where you can drag and drop your `.zip` package.
 
 :::info
-This feature is only for PDF Template files that have [been created for Gravity PDF](developer-start-customising.md). You cannot zip up a document you have on your computer (like a `.pdf` or `.docx`) and upload it using the Template Manager.
+This feature is only for PDF Template files that have [been created for Gravity PDF](start-customising.md). You cannot zip up a document you have on your computer (like a `.pdf` or `.docx`) and upload it using the Template Manager.
 :::
 
 If you [purchase a PDF template from our shop](https://gravitypdf.com/shop/) the `.zip` file you'll receive can be installed through this manager. If a PDF template already exists when you upload the `.zip` it will be automatically updated (the old template will be overridden with the new one). **You’ll lose any changes you make to the PDF template file(s) during an update**.
@@ -40,4 +40,4 @@ If you [purchase a PDF template from our shop](https://gravitypdf.com/shop/) the
 
 If you ever need to delete a custom PDF template you can easily do so via the Delete button when viewing individual PDFs (click the template image to view an individual PDF). You'll be asked to confirm this action before it deletes anything. 
 
-Core PDF templates (Zadani, Rubix, Focus Gravity and Blank Slate) cannot be deleted. However, if you've modified a core template in the [PDF Working Directory](developer-first-custom-pdf.md#working-directory) you will get the option to delete your modified version.
+Core PDF templates (Zadani, Rubix, Focus Gravity and Blank Slate) cannot be deleted. However, if you've modified a core template in the [PDF Working Directory](first-custom-pdf.md#working-directory) you will get the option to delete your modified version.

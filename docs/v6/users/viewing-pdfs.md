@@ -8,7 +8,7 @@ Once you've successfully configured a PDF on one of your Gravity Forms you'll be
 
 ## Entry List 
 
-![The Gravity Forms Entry List page with View PDF link](https://resources.gravitypdf.com/uploads/2015/11/entry-list-v5.png) When viewing the entries list a "View PDF/View PDFs" or "Download PDF/Download PDFs" link will be added to each entry's quick toolbar. These links get displayed when you hover over an entry. The text View PDF or Download PDF will show up based on your global [*Entry View*](user-global-settings.md#view) setting.
+![The Gravity Forms Entry List page with View PDF link](https://resources.gravitypdf.com/uploads/2015/11/entry-list-v5.png) When viewing the entries list a "View PDF/View PDFs" or "Download PDF/Download PDFs" link will be added to each entry's quick toolbar. These links get displayed when you hover over an entry. The text View PDF or Download PDF will show up based on your global [*Entry View*](global-settings.md#view) setting.
 
 ## Entry Details 
 

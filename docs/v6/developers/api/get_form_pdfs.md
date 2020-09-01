@@ -6,7 +6,7 @@ description: "This method will return an array containing all the PDFs configure
 
 ## Description 
 
-This method will return an array containing all the PDFs configured on a particular Gravity Form. If you want an individual PDF settings [see `GPDFAPI::get_pdf()`](api_get_pdf.md).
+This method will return an array containing all the PDFs configured on a particular Gravity Form. If you want an individual PDF settings [see `GPDFAPI::get_pdf()`](get_pdf.md).
 
 ## Version 
 

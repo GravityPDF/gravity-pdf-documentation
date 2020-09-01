@@ -6,7 +6,7 @@ description: "We've included a number of techniques to assist you create custom 
 
 ## Introduction  
 
-We've included a number of techniques to assist you when creating custom PDF templates. From viewing the `$form_data` array in an easy-to-read format, to direct paths to the [PDF working directory](developer-first-custom-pdf.md#working-directory).
+We've included a number of techniques to assist you when creating custom PDF templates. From viewing the `$form_data` array in an easy-to-read format, to direct paths to the [PDF working directory](first-custom-pdf.md#working-directory).
 
 ## URL Parameters 
 
@@ -18,7 +18,7 @@ The URL parameter is the `name=value` pair after the question mark.
 
 ### data=1 
 * ![Preview of the 'data' attribute](https://resources.gravitypdf.com/uploads/2015/11/data.png)
-* The data URL parameter is used to display the full output of the `$form_data` array in your browser. This is very useful when [creating your PDF template using PHP only](developer-php-form-data-array.md).
+* The data URL parameter is used to display the full output of the `$form_data` array in your browser. This is very useful when [creating your PDF template using PHP only](php-form-data-array.md).
 * Usage: `https://gravitypdf.com/pdf/12i0afjafwijww212/?data=1`
 
 ### html=1 
@@ -41,11 +41,11 @@ When creating custom PDF templates it's often useful to include external CSS fil
 * Usage: `<img src="<?= __DIR__; ?>/images/hello-world.png" width="400" />`
 
 ### PDF\_TEMPLATE\_LOCATION 
-* This is a constant that contains the path to the [PDF working directory](developer-first-custom-pdf.md#working-directory) or, in multisite installations, the path to the [individual multisite working directory](developer-first-custom-pdf.md#multisite-structure).
+* This is a constant that contains the path to the [PDF working directory](first-custom-pdf.md#working-directory) or, in multisite installations, the path to the [individual multisite working directory](first-custom-pdf.md#multisite-structure).
 * We recommend using [`__DIR__`](#dir) where possible
 
 ### PDF\_TEMPLATE\_URL\_LOCATION 
-* This is a constant that contains the URL to the [PDF working directory](developer-first-custom-pdf.md#working-directory) or, for multisite installations, the URL to the [individual multisite working directory](developer-first-custom-pdf.md#multisite-structure). This is useful if you want to provide a link to a file on the host machine.
+* This is a constant that contains the URL to the [PDF working directory](first-custom-pdf.md#working-directory) or, for multisite installations, the URL to the [individual multisite working directory](first-custom-pdf.md#multisite-structure). This is useful if you want to provide a link to a file on the host machine.
 * If you want to include images or stylesheets that are located on your web server we recommend using [`__DIR__`](#dir) where possible
 * Usage: `<a href="<?= PDF_TEMPLATE_URL_LOCATION; ?>images/hello-world.png">View Sample</a>`
 

@@ -18,7 +18,7 @@ Gravity PDF is a third party extension for Gravity Forms, created by an independ
 
 **Software Requirements**
 
--   [Gravity Forms](https://rocketgenius.pxf.io/c/1211356/445235/7938) 2.3.1+. [Any license type will work](user-gravity-forms-compatibility.md#gravityforms-licenses).
+-   [Gravity Forms](https://rocketgenius.pxf.io/c/1211356/445235/7938) 2.3.1+. [Any license type will work](gravity-forms-compatibility.md#gravityforms-licenses).
 -   WordPress 4.8+
 
 **Server Requirements**

@@ -8,7 +8,7 @@ description: ""
 
 ## Description 
 
-This action can be used to run a task or change a setting prior to the PDF being generated for viewing or downloading, either [via a shortcode, merge tag](user-shortcodes.md) or [from the admin area](user-viewing-pdfs.md).
+This action can be used to run a task or change a setting prior to the PDF being generated for viewing or downloading, either [via a shortcode, merge tag](shortcodes.md) or [from the admin area](viewing-pdfs.md).
 
 ## Version 
 

@@ -6,13 +6,13 @@ description: "When the `WP_DEBUG` constant is set to `true` Gravity PDF will sho
 
 ## Gravity PDF 5.1+
 
-When [Debug Mode is enabled in the global PDF settings](user-global-settings.md#debug-mode), Gravity PDF will show debug information at the bottom of the PDFs it generates (PDF stats). This may look like:
+When [Debug Mode is enabled in the global PDF settings](global-settings.md#debug-mode), Gravity PDF will show debug information at the bottom of the PDFs it generates (PDF stats). This may look like:
 
     Generated in 1.13 seconds
     Peak Memory usage 64.00 MB
     Number of fonts 3
 
-This is useful information [when building a custom PDF template](developer-start-customising.md) but not something you'll want enabled during production. You can disable this by setting Debug Mode to `No`. 
+This is useful information [when building a custom PDF template](start-customising.md) but not something you'll want enabled during production. You can disable this by setting Debug Mode to `No`. 
 
 ## Gravity PDF 5.0
 
@@ -23,4 +23,4 @@ This is useful information [when building a custom PDF template](developer-start
     Peak Memory usage 64.00 MB
     Number of fonts 3
 
-This is useful information [when building a custom PDF template](developer-start-customising.md) but not something you'll want enabled during production. You can disable this by setting `WP_DEBUG` or `WP_DEBUG_DISPLAY` to `false` in your `wp-config.php` file.
+This is useful information [when building a custom PDF template](start-customising.md) but not something you'll want enabled during production. You can disable this by setting `WP_DEBUG` or `WP_DEBUG_DISPLAY` to `false` in your `wp-config.php` file.

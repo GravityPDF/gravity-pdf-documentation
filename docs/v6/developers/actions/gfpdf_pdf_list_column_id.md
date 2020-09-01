@@ -6,7 +6,7 @@ description: "Customise the content for new columns added to the PDF list view t
 
 ## Description 
 
-Use this filter to customise the content for new columns added to the [PDF list view](user-managing-pdfs.md) table. This action should be used in conjunction with the [`gfpdf_pdf_list_columns` filter](gfpdf_pdf_list_columns.md), which actually adds the new column to the table.
+Use this filter to customise the content for new columns added to the [PDF list view](managing-pdfs.md) table. This action should be used in conjunction with the [`gfpdf_pdf_list_columns` filter](gfpdf_pdf_list_columns.md), which actually adds the new column to the table.
 
 The `$id` in the action name refers to the column ID you set in the `gfpdf_pdf_list_columns` filter (the array key).
 

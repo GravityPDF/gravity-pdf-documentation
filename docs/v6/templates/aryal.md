@@ -10,7 +10,7 @@ description: "Aryal is a colourful, stylish Universal template with a focus on d
 
 ## Installation 
 
-[Please follow our installation guide](shop-installing-upgrading-premium-templates.md), which provides instructions for setting up and configuring your premium template.
+[Please follow our installation guide](installing-upgrading-premium-templates.md), which provides instructions for setting up and configuring your premium template.
 
 ## Limitations 
 
@@ -18,7 +18,7 @@ As a *Universal* PDF template, *Aryal* can be used with all Gravity Forms and wi
 
 ## Configuring 
 
-All PDF templates have common settings that can be configured, such as font, security and PDF attachments, and we recommend [reviewing the PDF setup guide](user-setup-pdf.md) to get a better understanding on all the available settings. All template-specific configuration is done from the *Template* tab and below you'll find detailed information about each option available in *Aryal*, what it does and how it alters the generated PDF.
+All PDF templates have common settings that can be configured, such as font, security and PDF attachments, and we recommend [reviewing the PDF setup guide](setup-pdf.md) to get a better understanding on all the available settings. All template-specific configuration is done from the *Template* tab and below you'll find detailed information about each option available in *Aryal*, what it does and how it alters the generated PDF.
 
 ### Main Heading 
 * The main heading is left-aligned and included on first page of your PDF, [below the Logo](#logo) (if present), and before any of your Gravity Forms fields. Merge tags are supported.
@@ -53,12 +53,12 @@ The following Primary and Secondary Colors were used in Aryal's shop screenshots
 
 Along with the options specific to *Aryal*, the following core settings are also supported:
 
--   [Show Page Names](user-setup-pdf.md#show-page-names)
--   [Show HTML Fields](user-setup-pdf.md#show-html-fields)
--   [Show Section Break Description](user-setup-pdf.md#show-section-break-description)
--   [Enable Conditional Logic](user-setup-pdf.md#enable-conditional-logic)
--   [Show Empty Fields](user-setup-pdf.md#show-empty-fields)
--   [Footer](user-setup-pdf.md#footer)
+-   [Show Page Names](setup-pdf.md#show-page-names)
+-   [Show HTML Fields](setup-pdf.md#show-html-fields)
+-   [Show Section Break Description](setup-pdf.md#show-section-break-description)
+-   [Enable Conditional Logic](setup-pdf.md#enable-conditional-logic)
+-   [Show Empty Fields](setup-pdf.md#show-empty-fields)
+-   [Footer](setup-pdf.md#footer)
 
 ## Recommended Font 
 
@@ -66,4 +66,4 @@ Along with the options specific to *Aryal*, the following core settings are also
 
 ## Viewing PDF 
 
-Once you've saved your new PDF you can [view it from the Gravity Forms Entries List page](user-viewing-pdfs.md). Just remember to fill out and submit your form if the entry list is empty.
+Once you've saved your new PDF you can [view it from the Gravity Forms Entries List page](viewing-pdfs.md). Just remember to fill out and submit your form if the entry list is empty.

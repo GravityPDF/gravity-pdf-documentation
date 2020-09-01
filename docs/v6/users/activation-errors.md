@@ -4,7 +4,7 @@ sidebar_label: "Activation Errors"
 description: "When activated, a number of checks are run to ensure the web server meets all the requirements. Find out how to fix any problems that may occur."
 ---
 
-When Gravity PDF is activated it will run a number of checks to ensure your web server meets all the [software requirements](user-installation.md#requirements). It also verifies the minimum version requirements for WordPress and Gravity Form. If it detects a problem a notice will be displayed in your admin area. 
+When Gravity PDF is activated it will run a number of checks to ensure your web server meets all the [software requirements](installation.md#requirements). It also verifies the minimum version requirements for WordPress and Gravity Form. If it detects a problem a notice will be displayed in your admin area. 
 
 ## Activation Errors
 
@@ -42,4 +42,4 @@ This error means the version of PHP you are running doesn't have the LibXML exte
 
 ### You need 128MB of WP Memory (RAM) but we only found X available 
 
-This error means the WordPress memory limit isn't high enough. Generating PDF documents is hard work and uses a lot of resources, which is why it needs more memory. [Read our guide on how you can increase your memory limit](user-increasing-memory-limit.md) to fix the problem.
+This error means the WordPress memory limit isn't high enough. Generating PDF documents is hard work and uses a lot of resources, which is why it needs more memory. [Read our guide on how you can increase your memory limit](increasing-memory-limit.md) to fix the problem.

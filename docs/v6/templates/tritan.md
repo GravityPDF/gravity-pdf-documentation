@@ -10,7 +10,7 @@ description: ""
 
 ## Installation 
 
-[Please follow our installation guide](shop-installing-upgrading-premium-templates.md) that provides instructions for setting up and configuring your premium template.
+[Please follow our installation guide](installing-upgrading-premium-templates.md) that provides instructions for setting up and configuring your premium template.
 
 ## Limitations 
 
@@ -18,7 +18,7 @@ As a *Universal* PDF template *Tritan* can be used with all Gravity Forms and wi
 
 ## Configuring 
 
-All PDF templates have common settings that can be configured, such as font, security and PDF attachments, and we recommend [reviewing the PDF setup guide](user-setup-pdf.md) to get a better understanding on all the available settings. All template-specific configuration is done from the *Template* tab and below you'll find detailed information about each option available in *Tritan*, what it does and how it alters the generated PDF.
+All PDF templates have common settings that can be configured, such as font, security and PDF attachments, and we recommend [reviewing the PDF setup guide](setup-pdf.md) to get a better understanding on all the available settings. All template-specific configuration is done from the *Template* tab and below you'll find detailed information about each option available in *Tritan*, what it does and how it alters the generated PDF.
 
 ### Main Heading 
 * The main heading is included at the very start of your PDF, before any other content. Merge tags are supported.
@@ -48,7 +48,7 @@ All PDF templates have common settings that can be configured, such as font, sec
 
 ### Sidebar Content 
 * The main content of your sidebar where you can include information such as contact details, instructions, social media links or opening hours, etc.
-* Alternatively, you can add user-supplied content with merge tags and [hide those fields from the main content area](user-hide-form-fields.md).
+* Alternatively, you can add user-supplied content with merge tags and [hide those fields from the main content area](hide-form-fields.md).
 * For optimal display, use Headings and Horizontal Lines to split up the sidebar content into easy-to-read blocks. **Note:** All heading tags (h1 – h6) will be displayed identically in the sidebar.
 
 ### Sidebar Font Color 
@@ -58,16 +58,16 @@ All PDF templates have common settings that can be configured, such as font, sec
 
 Along with the options specific to *Tritan*, the following core settings are also supported:
 
--   [Show Page Names](user-setup-pdf.md#show-page-names)
--   [Show HTML Fields](user-setup-pdf.md#show-html-fields)
--   [Show Section Break Description](user-setup-pdf.md#show-section-break-description)
--   [Enable Conditional Logic](user-setup-pdf.md#enable-conditional-logic)
--   [Show Empty Fields](user-setup-pdf.md#show-empty-fields)
+-   [Show Page Names](setup-pdf.md#show-page-names)
+-   [Show HTML Fields](setup-pdf.md#show-html-fields)
+-   [Show Section Break Description](setup-pdf.md#show-section-break-description)
+-   [Enable Conditional Logic](setup-pdf.md#enable-conditional-logic)
+-   [Show Empty Fields](setup-pdf.md#show-empty-fields)
 
 ## Recommended Font 
 
-*Tritan* comes bundled with both *Fira Sans Regular* and *Fira Sans Light* which are both open source fonts (SIL Open Font License 1.1). *Fira Sans* is a highly legible sans serif font that works great at 10pt with *Tritan*. Set the PDF font in the [Appearance tab](user-setup-pdf.md#appearance-tab).
+*Tritan* comes bundled with both *Fira Sans Regular* and *Fira Sans Light* which are both open source fonts (SIL Open Font License 1.1). *Fira Sans* is a highly legible sans serif font that works great at 10pt with *Tritan*. Set the PDF font in the [Appearance tab](setup-pdf.md#appearance-tab).
 
 ## Viewing PDF 
 
-Once you've saved your new PDF you can [view it from the Gravity Forms Entries List page](user-viewing-pdfs.md). Just remember to fill out and submit your form if the entry list is empty.
+Once you've saved your new PDF you can [view it from the Gravity Forms Entries List page](viewing-pdfs.md). Just remember to fill out and submit your form if the entry list is empty.

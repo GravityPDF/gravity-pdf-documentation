@@ -13,7 +13,7 @@ Two unique HTML tags are used to output watermarks (one for text watermarks and 
 -   `<watermarktext content [ alpha ] />`
 -   `<watermarkimage src [ alpha ] [ size ] [ position ] />`
 
-**Watermarks cannot be used when [setting the PDF format](user-setup-pdf.md#format) to PDF/A-1b or PDF/X-1a.**
+**Watermarks cannot be used when [setting the PDF format](setup-pdf.md#format) to PDF/A-1b or PDF/X-1a.**
 
 ## Text Watermarks 
 

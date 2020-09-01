@@ -6,7 +6,7 @@ description: "When called this method returns the existing global PDF plugins se
 
 ## Description 
 
-When called this method [returns the existing global PDF plugins settings](user-global-settings.md).
+When called this method [returns the existing global PDF plugins settings](global-settings.md).
 
 ## Version 
 

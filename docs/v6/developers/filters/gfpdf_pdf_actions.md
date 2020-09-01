@@ -6,7 +6,7 @@ description: "This filter allows you to add to the action links on the PDF list 
 
 ## Description 
 
-This filter allows you to add to the action links on the [PDF list page](user-managing-pdfs.md). Keep in mind this is only half the process. You still need to write the logic that handles the action. 
+This filter allows you to add to the action links on the [PDF list page](managing-pdfs.md). Keep in mind this is only half the process. You still need to write the logic that handles the action. 
 
 ## Parameters 
 

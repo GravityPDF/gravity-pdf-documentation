@@ -11,7 +11,7 @@ Use this filter to modify the `[gravitypdf]` shortcode attribute properties befo
 ## Parameters 
 
 ### $attributes | array
-*  The current shortcode attributes being processed. By default these include: `id`, `text`, `type`, `class`, `entry` and `print`. [See our shortcode documentation](user-shortcodes.md#shortcode-attributes) for more details on what each of these attributes do. 
+*  The current shortcode attributes being processed. By default these include: `id`, `text`, `type`, `class`, `entry` and `print`. [See our shortcode documentation](shortcodes.md#shortcode-attributes) for more details on what each of these attributes do. 
 
 ## Usage 
 

@@ -9,7 +9,7 @@ description: ""
 
 ## Installation 
 
-[Please follow our installation guide](shop-installing-upgrading-premium-templates.md), which provides instructions for setting up and configuring your premium template.
+[Please follow our installation guide](installing-upgrading-premium-templates.md), which provides instructions for setting up and configuring your premium template.
 
 ## Limitations 
 
@@ -17,7 +17,7 @@ As a *Universal* PDF template, *Colossus* can be used with all Gravity Forms and
 
 ## Configuring 
 
-All PDF templates have common settings that can be configured, such as font, security and PDF attachments, and we recommend [reviewing the PDF setup guide](user-setup-pdf.md) to get a better understanding on all the available settings. All template-specific configuration is done from the *Template* tab and below you'll find detailed information about each option available in *Colossus*, what it does and how it alters the generated PDF.
+All PDF templates have common settings that can be configured, such as font, security and PDF attachments, and we recommend [reviewing the PDF setup guide](setup-pdf.md) to get a better understanding on all the available settings. All template-specific configuration is done from the *Template* tab and below you'll find detailed information about each option available in *Colossus*, what it does and how it alters the generated PDF.
 
 ### Main Heading 
 * The main heading is included at the very start of your PDF, before any other content. Merge tags are supported.
@@ -51,7 +51,7 @@ All PDF templates have common settings that can be configured, such as font, sec
 
 Along with the options specific to *Colossus*, the following core settings are also supported:
 
--   [Footer](user-setup-pdf.md#footer)
+-   [Footer](setup-pdf.md#footer)
 
 ## CSS Ready Classes 
 
@@ -62,8 +62,8 @@ Along with the options specific to *Colossus*, the following core settings are a
 
 ## Recommended Font 
 
-*Colossus* comes bundled with *Arimo*, an open source Google web font (Apache License, Version 2.0). *Arimo* is a innovative, refreshing sans serif font that works great at 10pt with *Colossus*. Set the PDF font [in the Appearance tab](user-setup-pdf.md#appearance-tab).
+*Colossus* comes bundled with *Arimo*, an open source Google web font (Apache License, Version 2.0). *Arimo* is a innovative, refreshing sans serif font that works great at 10pt with *Colossus*. Set the PDF font [in the Appearance tab](setup-pdf.md#appearance-tab).
 
 ## Viewing PDF 
 
-Once you've saved your new PDF you can [view it from the Gravity Forms Entries List page](user-viewing-pdfs.md). Just remember to fill out and submit your form if the entry list is empty.
+Once you've saved your new PDF you can [view it from the Gravity Forms Entries List page](viewing-pdfs.md). Just remember to fill out and submit your form if the entry list is empty.

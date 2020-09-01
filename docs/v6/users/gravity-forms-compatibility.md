@@ -32,7 +32,7 @@ A license is valid for one calendar year from the purchase date and gives you ac
 
 ### How Does This Affect Gravity PDF?
 
-As long as the [minimum requirements are met](user-installation.md#requirements), Gravity PDF works with any Gravity Forms license type. Pick the one that best suits your business requirements. You can easily upgrade licenses at a later date if you decide you need access to certain add-ons.
+As long as the [minimum requirements are met](installation.md#requirements), Gravity PDF works with any Gravity Forms license type. Pick the one that best suits your business requirements. You can easily upgrade licenses at a later date if you decide you need access to certain add-ons.
 
 ## Gravity PDF Add-Ons Compatibility
 

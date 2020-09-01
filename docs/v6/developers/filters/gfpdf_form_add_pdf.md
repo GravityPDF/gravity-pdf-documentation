@@ -6,7 +6,7 @@ description: "This filter can be used to add additional settings when a new PDF 
 
 ## Description 
 
-This filter can be used to add or edit settings when a new PDF is created using the [`GPDFAPI::add_pdf()`](api_add_pdf.md) method. Due to the way the software is architected this filter doesn't fire when a PDF is created via the UI. See the update PDF filters [see `gfpdf_form_update_pdf`](gfpdf_form_update_pdf.md) instead.
+This filter can be used to add or edit settings when a new PDF is created using the [`GPDFAPI::add_pdf()`](add_pdf.md) method. Due to the way the software is architected this filter doesn't fire when a PDF is created via the UI. See the update PDF filters [see `gfpdf_form_update_pdf`](gfpdf_form_update_pdf.md) instead.
 
 You also have the option to use the `gfpdf_form_add_pdf_$form_id` filter.
 

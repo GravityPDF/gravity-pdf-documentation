@@ -12,11 +12,11 @@ You can purchase the *Watermark* plugin from our [Extension Shop](https://gravit
 
 ## Installation 
 
-[Please follow our installation guide](shop-installing-upgrading-extensions.md), which provides instructions for uploading the add-on to your WordPress website and adding your license key for automatic updates.
+[Please follow our installation guide](installing-upgrading-extensions.md), which provides instructions for uploading the add-on to your WordPress website and adding your license key for automatic updates.
 
 ## Configuring 
 
-This extension adds a number of new settings to all non-legacy PDF templates (any template designed for Gravity PDF v4 or higher) and [they can be found in the *Appearance* tab](user-setup-pdf.md#appearance-tab) when [adding/editing the PDF settings](user-setup-pdf.md#locating-pdf-settings).
+This extension adds a number of new settings to all non-legacy PDF templates (any template designed for Gravity PDF v4 or higher) and [they can be found in the *Appearance* tab](setup-pdf.md#appearance-tab) when [adding/editing the PDF settings](setup-pdf.md#locating-pdf-settings).
 
 ### Watermark Settings
 ![Watermark settings](https://resources.gravitypdf.com/uploads/edd/2019/03/settings1.png)
@@ -29,7 +29,7 @@ Below is the list of settings added by *Watermark*, with a brief description abo
 
 #### Image Watermark 
 *  Display an image watermark on each page of your PDF, vertically and horizontally centred.
-*  For the best results, use a transparent PNG image the same dimensions as the [PDF Paper Size](user-setup-pdf.md#paper-size).
+*  For the best results, use a transparent PNG image the same dimensions as the [PDF Paper Size](setup-pdf.md#paper-size).
 *  To ensure your PDF generates quickly and the PDF file size stays small we recommend using an image under 1MB. [Try run the image through a compression tool like TinyPNG](https://tinypng.com/).
 
 #### Text Watermark 
@@ -40,7 +40,7 @@ Below is the list of settings added by *Watermark*, with a brief description abo
 
 #### Font 
 *  Select the font to use for the [Text Watermark](#text-watermark).
-*  Additional fonts can be installed [via the Font Manager](user-custom-fonts.md).
+*  Additional fonts can be installed [via the Font Manager](custom-fonts.md).
 
 #### Opacity 
 *  Control the transparency of both the Image and Text Watermarks by selecting a value between 0 and 100%.
@@ -48,9 +48,9 @@ Below is the list of settings added by *Watermark*, with a brief description abo
 
 ### Previewer 
 
-The *Watermark* plugin settings are supported [with the *Previewer* add-on](shop-plugin-previewer-add-on.md), so you can display image watermarks when previewing the PDF. 
+The *Watermark* plugin settings are supported [with the *Previewer* add-on](previewer-add-on.md), so you can display image watermarks when previewing the PDF. 
 
-The [*Previewer* Text Watermark setting](shop-plugin-previewer-add-on.md#watermark) takes precedent over the *Watermark* setting when the PDF is displayed before form submission. For example, if you were to:
+The [*Previewer* Text Watermark setting](previewer-add-on.md#watermark) takes precedent over the *Watermark* setting when the PDF is displayed before form submission. For example, if you were to:
 
 * Set the *Watermark* Text Watermark to "Sample"
 * Set the *Previewer* Field's Text Watermark to "Preview"

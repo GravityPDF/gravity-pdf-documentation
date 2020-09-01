@@ -12,7 +12,7 @@ There is quite good support for HTML tables in [mPDF](http://mpdf.github.io/), b
 
 2.  **Autosizing.** On a website, if a table is too large for its container it might overflow outside it, or use a horizontal scroll bar. Because PDFs cannot do those things it instead alters the column widths and font sizes. Basically, mPDF places more priority on producing a pleasing, efficiently laid out table than it does respecting defined widths and sizes. [But there are ways to minimise this effect](#table-rendering).
 
-Because of these two issues tables have limited use when designing your PDF layout. We've found [carefully calculated floats](developer-floats.md) is the better option for producing more complex designs. Use tables for tabular data and you'll find them a treat.
+Because of these two issues tables have limited use when designing your PDF layout. We've found [carefully calculated floats](floats.md) is the better option for producing more complex designs. Use tables for tabular data and you'll find them a treat.
 
 ![Example of Tables rendered in mPDF](https://resources.gravitypdf.com/uploads/2015/11/table-preview.png)
 

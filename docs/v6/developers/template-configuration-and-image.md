@@ -6,13 +6,13 @@ description: "Gravity PDF allows users to set template-specific options when the
 
 ## Introduction 
 
-The template configuration file is *an optional* feature which allows you to [set template-specific options](user-setup-pdf.md#template-tab) for your custom template. You can also run commands when the template is installed or deleted [via the PDF Template Manager](user-pdf-template-manager.md) (work's great for installing custom fonts). 
+The template configuration file is *an optional* feature which allows you to [set template-specific options](setup-pdf.md#template-tab) for your custom template. You can also run commands when the template is installed or deleted [via the PDF Template Manager](pdf-template-manager.md) (work's great for installing custom fonts). 
 
 ## Template Configuration 
 
 ![Our Hello World Template File](https://resources.gravitypdf.com/uploads/2015/11/configuration.png)
 
-The template configuration file is a file you create (or copy) and needs to be placed inside the `/config/` folder in the [PDF working directory](developer-first-custom-pdf.md#working-directory). 
+The template configuration file is a file you create (or copy) and needs to be placed inside the `/config/` folder in the [PDF working directory](first-custom-pdf.md#working-directory). 
 
 ### Configuration Naming Convention 
 
@@ -105,7 +105,7 @@ class Business_Letter implements Helper_Interface_Config, Helper_Interface_Setup
 
 ### configuration() 
 
-The `configuration()` method allows you to return an array which [defines the supported template settings](user-setup-pdf.md#template-tab). The array is split into two sub-keys: `core` and `fields`. The `core` key allows you to enable built-in fields like headers and footers, while the `fields` key allows you to implement your own fields using our settings API.
+The `configuration()` method allows you to return an array which [defines the supported template settings](setup-pdf.md#template-tab). The array is split into two sub-keys: `core` and `fields`. The `core` key allows you to enable built-in fields like headers and footers, while the `fields` key allows you to implement your own fields using our settings API.
 
 #### Core Fields 
 
@@ -136,7 +136,7 @@ Below are details of all the core fields available to you:
 
 ##### show\_form\_title 
 * Adds a Yes/No field to the template section asking users if they want to shows the Gravity Form title at the beginning of the PDF template.
-* Only applicable when template is using `$pdf->process_html_structure()` in your PDF template. Although you can add your own field logic based on this setting. [See custom field support for more details](developer-template-configuration-and-image.md#custom-field-support).
+* Only applicable when template is using `$pdf->process_html_structure()` in your PDF template. Although you can add your own field logic based on this setting. [See custom field support for more details](template-configuration-and-image.md#custom-field-support).
 
 ##### show\_page\_names 
 * Adds a Yes/No field to the template section asking users if they want to show Gravity Form page names in the appropriate location within the PDF.
@@ -160,27 +160,27 @@ Below are details of all the core fields available to you:
 
 ##### header 
 * Adds a Rich Text Editor to the template section allowing users to include information in the header of the PDF
-* [Unless you use `@page`](developer-pagebreaks.md#at-page) to set your own header, the core header will automatically be included in your PDF.
+* [Unless you use `@page`](pagebreaks.md#at-page) to set your own header, the core header will automatically be included in your PDF.
 
 ##### first\_header 
 * Adds a Rich Text Editor to the template section allowing users to include information in a header on the first page of the PDF
-* [Unless you use `@page`](developer-pagebreaks.md#at-page) to set your own header, the core header will automatically be included in your PDF.
+* [Unless you use `@page`](pagebreaks.md#at-page) to set your own header, the core header will automatically be included in your PDF.
 
 ##### footer 
 * Adds a Rich Text Editor to the template section allowing users to include information in the footer of the PDF
-* [Unless you use `@page`](developer-pagebreaks.md#at-page) to set your own footer, the core footer will automatically be included in your PDF.
+* [Unless you use `@page`](pagebreaks.md#at-page) to set your own footer, the core footer will automatically be included in your PDF.
 
 ##### first\_footer 
 * Adds a Rich Text Editor to the template section allowing users to include information in a footer on the first page of the PDF
-* [Unless you use `@page`](developer-pagebreaks.md#at-page) to set your own footer, the core footer will automatically be included in your PDF.
+* [Unless you use `@page`](pagebreaks.md#at-page) to set your own footer, the core footer will automatically be included in your PDF.
 
 ##### background\_color 
 * Adds a colour picker to the template section allowing users to change the PDF background colour.
-* [Unless you use `@page`](developer-pagebreaks.md#at-page) to set your own background(-color), the background colour will automatically be included in your PDF.
+* [Unless you use `@page`](pagebreaks.md#at-page) to set your own background(-color), the background colour will automatically be included in your PDF.
 
 ##### background\_image 
 * Adds an upload box to the template section allowing users to upload and select a background image for the PDF
-* [Unless you use `@page`](developer-pagebreaks.md#at-page) to set your own background(-image), the background image will automatically be included in your PDF.
+* [Unless you use `@page`](pagebreaks.md#at-page) to set your own background(-image), the background image will automatically be included in your PDF.
 
 #### Custom Fields 
 
@@ -324,7 +324,7 @@ Because only certain options apply to certain fields this isn't an exhaustive li
 
 ### Custom Field Support 
 
-The `header`, `first_header`, `footer`, `first_footer`, `background_color` and `background_image` core fields are automatically supported in custom PDF templates (provided you don't override them with your own header/footer or background [using `@page`](developer-pagebreaks.md#at-page)). However, all custom fields will need appropriate logic included in your PDF template.
+The `header`, `first_header`, `footer`, `first_footer`, `background_color` and `background_image` core fields are automatically supported in custom PDF templates (provided you don't override them with your own header/footer or background [using `@page`](pagebreaks.md#at-page)). However, all custom fields will need appropriate logic included in your PDF template.
 
 To do this, you'll have to access a variable named `$settings` in the PDF template. This variable is an array that contains all the settings a user has defined (using the field ID as the array key) and is where your template settings will be located.
 
@@ -372,7 +372,7 @@ $color       = isset( $settings['prefix_color'] ) ? $settings['prefix_color'] : 
 
 ### setUp() and tearDown() 
 
-The `setUp()` method will be triggered when your template is [installed via the PDF Template Manager](user-pdf-template-manager.md#install) ([see how to zip up your template for installation](install-template-via-template-manager.md)). While the `tearDown()` method is triggered when [deleted via the PDF Template Manager](user-pdf-template-manager.md#delete). 
+The `setUp()` method will be triggered when your template is [installed via the PDF Template Manager](pdf-template-manager.md#install) ([see how to zip up your template for installation](install-template-via-template-manager.md)). While the `tearDown()` method is triggered when [deleted via the PDF Template Manager](pdf-template-manager.md#delete). 
 
 We like to use these methods to automatically install custom fonts (`setUp()`), and then clean-up additional template-related files when deleted (`tearDown()`).
 
@@ -382,7 +382,7 @@ The *Delete* function of the PDF Template Manager will only delete the template 
 
 If you need to include additional files with your template, we recommend saving them to `/install/Template_Name/` (substitute `Template_Name`). This will make it easy for you to clean-up when writing `tearDown()`. 
 
-Below is a sample showing you how you can auto-install a font and clean-up your template's files on delete. This assumes you've created the directory structure `/install/Hello_World/font-fira-sans/` in your [PDF working directory](developer-first-custom-pdf.md#working-directory) and have the listed fonts included.
+Below is a sample showing you how you can auto-install a font and clean-up your template's files on delete. This assumes you've created the directory structure `/install/Hello_World/font-fira-sans/` in your [PDF working directory](first-custom-pdf.md#working-directory) and have the listed fonts included.
 
 ```
  <?php
@@ -465,11 +465,11 @@ class Hello_World implements Helper_Interface_Config, Helper_Interface_Setup_Tea
 
 ![Our Hello World template fields](https://resources.gravitypdf.com/uploads/2015/11/hello-world-configuration.png)
 
-Continuing on from our [Part 3 Hello World Tutorial](developer-php-form-data-array.md#template-tutorial), we're going to show you how to create a template configuration with core footer and background image support enabled. We'll also add a new field that will determine if meta data should be included in the document.
+Continuing on from our [Part 3 Hello World Tutorial](php-form-data-array.md#template-tutorial), we're going to show you how to create a template configuration with core footer and background image support enabled. We'll also add a new field that will determine if meta data should be included in the document.
 
 ### Template Configuration 
 
-First, let's [grab a copy of the basic PDF template PHP mark-up](https://gist.github.com/jakejackson1/903c607beab274619ab19f508d65ce74) and save it in the `config` folder of our [PDF working directory](developer-first-custom-pdf.md#working-directory). Remember to save the file as `hello-world.php` – the same name we used for our template file. This sample code already has the class name changed to `Hello_World`, but you would normally update this to match your template's file name.
+First, let's [grab a copy of the basic PDF template PHP mark-up](https://gist.github.com/jakejackson1/903c607beab274619ab19f508d65ce74) and save it in the `config` folder of our [PDF working directory](first-custom-pdf.md#working-directory). Remember to save the file as `hello-world.php` – the same name we used for our template file. This sample code already has the class name changed to `Hello_World`, but you would normally update this to match your template's file name.
 
 The only area we'll be focusing on is the empty array being returned in the `configuration` method. We'll need to update this to include our two core fields and create our custom field. Let's do the core fields first:
 
@@ -492,7 +492,7 @@ public function configuration() {
 
 The [core fields can easily be enabled](#core-fields) by passing their name as the array key with a `true` value.
 
-We've just told the system we want to enable the footer field and our background image field. If you edit your Hello World PDF settings in WordPress, [you'll see a new Template tab](user-setup-pdf.md#template-tab) with our two core fields included. The system will automatically parse and store these fields when the PDF settings are saved.
+We've just told the system we want to enable the footer field and our background image field. If you edit your Hello World PDF settings in WordPress, [you'll see a new Template tab](setup-pdf.md#template-tab) with our two core fields included. The system will automatically parse and store these fields when the PDF settings are saved.
 
 Including a custom field is a little trickier, but we're just defining array key/value pairs that tell Gravity PDF how to display a field:
 
@@ -527,7 +527,7 @@ We've just told Gravity PDF about a new radio field called *Show Meta Data* that
 
 [Read more about the specifics of each field attribute](#custom-fields).
 
-If you go back to the [Template tab](user-setup-pdf.md#template-tab) you'll now see our two core fields and the *Show Meta Data* field. Go ahead and enable/fill in information for each field then save it.
+If you go back to the [Template tab](setup-pdf.md#template-tab) you'll now see our two core fields and the *Show Meta Data* field. Go ahead and enable/fill in information for each field then save it.
 
 [Download the completed configuration template for our Hello World PDF](https://gist.github.com/jakejackson1/0115bf12f6303e2e400799fc3080245c).
 
