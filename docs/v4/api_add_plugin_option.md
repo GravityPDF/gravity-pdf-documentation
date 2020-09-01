@@ -15,7 +15,7 @@ description: "This method allows you to add a new global Gravity PDF setting. Us
 
 ### Description 
 
-This method allows you to add a new global Gravity PDF setting. If the option key already exists [a `WP_Error` is returned](https://codex.wordpress.org/Class_Reference/WP_Error). Usually you'll want to call [`GPDFAPI::update_plugin_option()`](https://gravitypdf.com/documentation/v4/api_update_plugin_option) instead. 
+This method allows you to add a new global Gravity PDF setting. If the option key already exists [a `WP_Error` is returned](https://codex.wordpress.org/Class_Reference/WP_Error). Usually you'll want to call [`GPDFAPI::update_plugin_option()`](api_update_plugin_option.md) instead. 
 
 ### Version 
 

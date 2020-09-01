@@ -401,8 +401,6 @@ if ( ! defined( 'ABSPATH' ) ) {
  * Class Hello_World
  *
  * @package  GFPDF\Templates\Config
- *
- * @Internal See https://gravitypdf.com/documentation/v5/developer-template-configuration-and-image/ for more information about this class
  */
 class Hello_World implements Helper_Interface_Config, Helper_Interface_Setup_TearDown {
 

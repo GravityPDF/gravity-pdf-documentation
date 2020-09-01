@@ -108,17 +108,17 @@ Orientation
 :    The field defaults to *Portrait*.
 
 Font 
-:    Select the font to be used in your PDF. This field defaults to the [Default Font](https://gravitypdf.com/documentation/v4/user-global-settings//#font-type) option in the global settings.
+:    Select the font to be used in your PDF. This field defaults to the [Default Font](user-global-settings.md#font-type) option in the global settings.
 :    If none of the pre-installed fonts suit your needs, additional fonts can be installed using our [Font Installer](user-custom-fonts.md).
 
 Font Size 
-:    Control the font size used in the PDF. The field defaults to the [Default Font Size](https://gravitypdf.com/documentation/v4/user-global-settings//#font-size) option in the global settings.
+:    Control the font size used in the PDF. The field defaults to the [Default Font Size](user-global-settings.md#font-size) option in the global settings.
 
 Font Colour 
-:    Control the font colour used in the PDF. The field defaults to the [Default Font Colour](https://gravitypdf.com/documentation/v4/user-global-settings//#font-colour) option in the global settings.
+:    Control the font colour used in the PDF. The field defaults to the [Default Font Colour](user-global-settings.md#font-colour) option in the global settings.
 
 Reverse Text (RTL) 
-:    Control the text direction used in the PDF. The field defaults to the [Reverse Text (RTL)](https://gravitypdf.com/documentation/v4/user-global-settings//#rtl) option in the global settings.
+:    Control the text direction used in the PDF. The field defaults to the [Reverse Text (RTL)](user-global-settings.md#rtl) option in the global settings.
 
 ---
 
@@ -211,7 +211,7 @@ Image DPI
 :    Adjust the image DPI (Dots Per Inch). By default this is set to 96. If professionally printing you should set this to *300* and change the [*Format*](#format) to *PDF/X-1a*.
 
 Always Save PDF 
-:    By default, when a new Gravity Form entry is submitted a PDF is only ever saved to disk when the [*Notifications*](#notifications) feature is enabled. When active, this option is very useful in conjunction [with the `gfpdf_post_save_pdf` filter](https://gravitypdf.com/documentation/v4/gfpdf_post_save_pdf/), which can be used to copy the generated PDF to an alternate location.
+:    By default, when a new Gravity Form entry is submitted a PDF is only ever saved to disk when the [*Notifications*](#notifications) feature is enabled. When active, this option is very useful in conjunction [with the `gfpdf_post_save_pdf` filter](gfpdf_post_save_pdf.md), which can be used to copy the generated PDF to an alternate location.
 
 Enable Public Access 
 :    Enabling public access to the PDF will **disable all security protocols** and give anonymous users access to the PDF. This means anyone worldwide can view the PDF document for all your form's entries. 

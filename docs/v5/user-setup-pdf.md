@@ -87,17 +87,17 @@ Below is the list of settings available in the Appearance tab, with a brief desc
 * The field defaults to *Portrait*.
 
 ### Font 
-* Select the font to be used in your PDF. This field defaults to the [Default Font](user-global-settings/.md#font-type) option in the global settings.
+* Select the font to be used in your PDF. This field defaults to the [Default Font](user-global-settings.md#font-type) option in the global settings.
 * If none of the pre-installed fonts suit your needs, additional fonts can be installed using our [Font Installer](user-custom-fonts.md).
 
 ### Font Size 
-* Control the font size used in the PDF. The field defaults to the [Default Font Size](user-global-settings/.md#font-size) option in the global settings.
+* Control the font size used in the PDF. The field defaults to the [Default Font Size](user-global-settings.md#font-size) option in the global settings.
 
 ### Font Colour 
-* Control the font colour used in the PDF. The field defaults to the [Default Font Colour](user-global-settings/.md#font-colour) option in the global settings.
+* Control the font colour used in the PDF. The field defaults to the [Default Font Colour](user-global-settings.md#font-colour) option in the global settings.
 
 ### Reverse Text (RTL) 
-* Control the text direction used in the PDF. The field defaults to the [Reverse Text (RTL)](user-global-settings/.md#rtl) option in the global settings.
+* Control the text direction used in the PDF. The field defaults to the [Reverse Text (RTL)](user-global-settings.md#rtl) option in the global settings.
 
 ## Template Tab 
 

@@ -43,7 +43,7 @@ This snippet shows you can how can remove existing field middleware. In this cas
 add_action( 'init', function() {
 
 	/* Get the Controller_PDF class so we can remove middleware filters */
-	$pdf = GPDFAPI::get_mvc_class( 'Model_PDF' ); /* See https://gravitypdf.com/documentation/v4/api_get_mvc_class/ for details on this API method */
+	$pdf = GPDFAPI::get_mvc_class( 'Model_PDF' );
 
 	remove_filter( 'gfpdf_field_middleware', [ $pdf, 'field_middle_conditional_fields' ], 10 );
 } );

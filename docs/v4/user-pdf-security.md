@@ -35,9 +35,9 @@ To correctly test the owner security policy you'll need to submit a new entry us
 
 ### PDFs and the File System 
 
-> **tl;dr** – PDFs stored on the disk have a limited lifespan, and are protected from direct access on Apache and Litespeed web servers. Other servers aren't automatically protected and it's advisable to use [the `gfpdf_tmp_location` filter](https://gravitypdf.com/documentation/v4/gfpdf_tmp_location/) to change the PDF directory to somewhere outside your public directory structure.
+> **tl;dr** – PDFs stored on the disk have a limited lifespan, and are protected from direct access on Apache and Litespeed web servers. Other servers aren't automatically protected and it's advisable to use [the `gfpdf_tmp_location` filter](gfpdf_tmp_location.md) to change the PDF directory to somewhere outside your public directory structure.
 
-Currently, the only time a PDF is actually saved to disk is when it's configured to be [attached to a form's notification(s)](user-setup-pdf.md#notifications), or the [*Always Save PDF* setting](user-setup-pdf.md#save-pdf) is enabled (use Always Save in conjunction with [the `gfpdf_post_save_pdf` action](https://gravitypdf.com/documentation/v4/gfpdf_post_save_pdf/) to copy PDFs to another directory). By default, these PDFs are saved locally to `/wp-content/uploads/PDF_EXTENDED_TEMPLATES/tmp/` but are cleaned up automatically from the disk once the Gravity Forms submission process has been completed. Any stray documents older than 12 hours are also automatically cleaned up. 
+Currently, the only time a PDF is actually saved to disk is when it's configured to be [attached to a form's notification(s)](user-setup-pdf.md#notifications), or the [*Always Save PDF* setting](user-setup-pdf.md#save-pdf) is enabled (use Always Save in conjunction with [the `gfpdf_post_save_pdf` action](gfpdf_post_save_pdf.md) to copy PDFs to another directory). By default, these PDFs are saved locally to `/wp-content/uploads/PDF_EXTENDED_TEMPLATES/tmp/` but are cleaned up automatically from the disk once the Gravity Forms submission process has been completed. Any stray documents older than 12 hours are also automatically cleaned up. 
 
 #### Direct PDF Access 
 
@@ -45,7 +45,7 @@ While we only store PDFs in the `tmp` directory for short periods, this behaviou
 
 #### Private PDF Directory 
 
-The simplest approach to protect the PDFs saved to disk – without having to worry about specific web server configuration – is to move the `tmp` folder outside the public directory structure. [This can be done using the `gfpdf_tmp_location` filter](https://gravitypdf.com/documentation/v4/gfpdf_tmp_location/). Follow the instructions in the link and place the example snippet in your theme's `functions.php` file or create a [Must Use plugin](https://codex.wordpress.org/Must_Use_Plugins).
+The simplest approach to protect the PDFs saved to disk – without having to worry about specific web server configuration – is to move the `tmp` folder outside the public directory structure. [This can be done using the `gfpdf_tmp_location` filter](gfpdf_tmp_location.md). Follow the instructions in the link and place the example snippet in your theme's `functions.php` file or create a [Must Use plugin](https://codex.wordpress.org/Must_Use_Plugins).
 
 To test the filter works correctly submit a new Gravity Form entry and look for the private folder you've set. Inside should be a `.htaccess` file. Once the new location has been verified delete the old `tmp` directory from your server.
 

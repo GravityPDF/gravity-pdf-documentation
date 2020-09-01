@@ -13,7 +13,7 @@ description: "This filter allows you to manipulate the PDF template HTML before 
 
 ### Description 
 
-This filter allows you to manipulate the raw PDF template HTML before it's sent to mPDF for rendering. This is a quick and dirty way to modify the PDF HTML dynamically. If you are instead looking to modify a field's mark-up [there are better filters for the job](https://gravitypdf.com/documentation/v4/gfpdf_field_html_value/). 
+This filter allows you to manipulate the raw PDF template HTML before it's sent to mPDF for rendering. This is a quick and dirty way to modify the PDF HTML dynamically. If you are instead looking to modify a field's mark-up [there are better filters for the job](gfpdf_field_html_value.md). 
 
 If you do use this filter we recommend making your changes using a DOM parser. Gravity PDF includes the [QueryPath library](http://api.querypath.org/docs/index.html), which is specifically designed to make it simple to manipulate HTML. 
 

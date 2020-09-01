@@ -14,7 +14,7 @@ description: ""
 
 ### Description 
 
-This action can be used to a task or clean-up settings changes after the PDF is generated and saved [using the API](https://gravitypdf.com/documentation/v4/api_create_pdf/). [Usually used in conjunction with `gfpdf_pre_generate_and_save_pdf`](https://gravitypdf.com/documentation/v4/gfpdf_pre_generate_and_save_pdf/)
+This action can be used to a task or clean-up settings changes after the PDF is generated and saved [using the API](api_create_pdf.md). [Usually used in conjunction with `gfpdf_pre_generate_and_save_pdf`](gfpdf_pre_generate_and_save_pdf.md)
 
 ### Version 
 

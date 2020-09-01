@@ -13,7 +13,7 @@ description: "This filter contains the full array of all our different Gravity P
 
 ### Description 
 
-This filter contains the full array of all our different Gravity PDF sections and their associative field information. It combines the output from filters like [`gfpdf_settings_general`](https://gravitypdf.com/documentation/v4/gfpdf_settings_general/) and [`gfpdf_settings_tools`](https://gravitypdf.com/documentation/v4/gfpdf_settings_tools/) into a single array. This filter is very useful if you want to make changes to multiple section fields at the same time or need to add multiple fields to different sections. 
+This filter contains the full array of all our different Gravity PDF sections and their associative field information. It combines the output from filters like [`gfpdf_settings_general`](gfpdf_settings_general.md) and [`gfpdf_settings_tools`](gfpdf_settings_tools.md) into a single array. This filter is very useful if you want to make changes to multiple section fields at the same time or need to add multiple fields to different sections. 
 
 ### Parameters 
 

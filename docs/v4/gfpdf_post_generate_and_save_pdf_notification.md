@@ -14,7 +14,7 @@ description: ""
 
 ### Description 
 
-This action can be used to a task or clean-up settings changes after the PDF is generated and saved for notifications. [Usually used in conjunction with `gfpdf_pre_generate_and_save_pdf_notification`](https://gravitypdf.com/documentation/v4/gfpdf_pre_generate_and_save_pdf_notification/)
+This action can be used to a task or clean-up settings changes after the PDF is generated and saved for notifications. [Usually used in conjunction with `gfpdf_pre_generate_and_save_pdf_notification`](gfpdf_pre_generate_and_save_pdf_notification.md)
 
 ### Version 
 

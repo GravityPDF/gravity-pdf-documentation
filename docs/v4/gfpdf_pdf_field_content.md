@@ -14,7 +14,7 @@ description: ""
 
 ### Description 
 
-Use this filter to dynamically change a field's value in Core and Universal templates before it gets wrapped in the final HTML markup. In the majority of cases this filter will be more useful than [`gfpdf_field_html_value`](https://gravitypdf.com/documentation/v4/gfpdf_field_html_value/). Be aware, section fields, page fields and the product table are not run through this filter.
+Use this filter to dynamically change a field's value in Core and Universal templates before it gets wrapped in the final HTML markup. In the majority of cases this filter will be more useful than [`gfpdf_field_html_value`](gfpdf_field_html_value.md). Be aware, section fields, page fields and the product table are not run through this filter.
 
 ### Version 
 

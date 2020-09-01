@@ -13,7 +13,7 @@ description: "This action should be used in conjunction with the gfpdf_settings_
 
 ### Description 
 
-This action should be used in conjunction [with the `gfpdf_settings_tools` filter](https://gravitypdf.com/documentation/v4/gfpdf_settings_tools/) to add new functionality to Gravity PDF. While the `gfpdf_settings_tools` filter adds the new button to the admin area, the `gfpdf_tool_tab_actions` does all the actual validation and processing. 
+This action should be used in conjunction [with the `gfpdf_settings_tools` filter](gfpdf_settings_tools.md) to add new functionality to Gravity PDF. While the `gfpdf_settings_tools` filter adds the new button to the admin area, the `gfpdf_tool_tab_actions` does all the actual validation and processing. 
 
 ### Parameters 
 
@@ -22,7 +22,7 @@ $settings | array
 
 ### Usage 
 
-The following snippet shows you how to correctly process a button called `prefix_flush_logs`, which we've assumed was included in the Tools tab [using the `gfpdf_settings_tools` filter](https://gravitypdf.com/documentation/v4/gfpdf_settings_tools/).
+The following snippet shows you how to correctly process a button called `prefix_flush_logs`, which we've assumed was included in the Tools tab [using the `gfpdf_settings_tools` filter](gfpdf_settings_tools.md).
 
 Note: it's **very important** you don't skip on the nonce verification! 
 

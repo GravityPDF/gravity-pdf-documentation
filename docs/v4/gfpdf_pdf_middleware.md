@@ -42,7 +42,7 @@ This snippet shows you can how can remove existing middleware. In this case we a
 add_action( 'init', function() {
 
 	/* Get the Controller_PDF class so we can remove middleware filters */
-	$pdf = GPDFAPI::get_mvc_class( 'Model_PDF' ); /* See https://gravitypdf.com/documentation/v4/api_get_mvc_class/ for details on this API method */
+	$pdf = GPDFAPI::get_mvc_class( 'Model_PDF' );
 
 	remove_filter( 'gfpdf_pdf_middleware', array( $pdf, 'middle_owner_restriction' ), 40 );
 	remove_filter( 'gfpdf_pdf_middleware', array( $pdf, 'middle_logged_out_timeout' ), 50 );

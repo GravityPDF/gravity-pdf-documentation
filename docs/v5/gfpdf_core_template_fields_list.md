@@ -32,7 +32,6 @@ add_action( 'gfpdf_core_template_fields_list', function( $fields, $template_sett
 
 /**
  * This is our callback function which includes our new field details
- * See https://gravitypdf.com/documentation/v5/developer-template-configuration-and-image/#custom-fields for details about the array structure
  * If a PDF template configuration passes `prefix_custom_core_field` as true in it's core array this field will now show on the PDF template tab
  */
 function prefix_custom_core_field_function() {

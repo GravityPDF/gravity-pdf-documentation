@@ -14,7 +14,7 @@ description: ""
 
 ### Description 
 
-This action can be used to run a task or change a setting prior to the PDF being generated and saved for notifications. If you change the PDF settings on the fly, [you should use the `gfpdf_post_generate_and_save_pdf_notification` action](https://gravitypdf.com/documentation/v4/gfpdf_post_generate_and_save_pdf_notification/) to clean up your filter. 
+This action can be used to run a task or change a setting prior to the PDF being generated and saved for notifications. If you change the PDF settings on the fly, [you should use the `gfpdf_post_generate_and_save_pdf_notification` action](gfpdf_post_generate_and_save_pdf_notification.md) to clean up your filter. 
 
 ### Version 
 
