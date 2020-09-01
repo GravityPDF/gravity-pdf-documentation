@@ -676,6 +676,308 @@ module.exports = {
       ],
     },
 
-  ]
+  ],
 
+  v6: [
+    {
+      type: 'category',
+      label: 'Users',
+      items: [
+        {
+          type: 'category',
+          label: 'Getting Started',
+
+          items: [
+            'v6/users/five-minute-install',
+            'v6/users/installation',
+            'v6/users/core-pdf-fonts',
+            'v6/users/global-settings',
+            'v6/users/setup-pdf',
+            'v6/users/viewing-pdfs',
+            'v6/users/shortcodes',
+            'v6/users/managing-pdfs',
+            'v6/users/pdf-template-manager',
+            'v6/users/custom-fonts',
+          ],
+
+          'collapsed': false,
+        },
+
+        {
+          'type': 'category',
+          'label': 'Under The Hood',
+          'items': [
+            'v6/users/pdf-security',
+            'v6/users/hide-form-fields',
+            'v6/users/adding-page-breaks',
+            'v6/users/css-ready-classes',
+            'v6/users/displaying-uploaded-images',
+            'v6/users/background-processing',
+            'v6/users/gravityview-support',
+            'v6/users/gravity-flow-support',
+            'v6/users/additional-templates',
+            'v6/users/gdpr-and-gravity-pdf',
+            'v6/users/gravity-forms-compatibility',
+            'v6/users/v4-to-v5-migration',
+          ]
+        },
+
+        {
+          'type': 'category',
+          'label': 'Common Problems',
+          'items': [
+            'v6/users/500-internal-server-error',
+            'v6/users/white-screen-of-death',
+            'v6/users/increasing-memory-limit',
+            'v6/users/cannot-find-ttf-truetype-font-file',
+            'v6/users/supported-pdf-viewers',
+            'v6/users/activation-errors',
+            'v6/users/email-notifications',
+            'v6/users/generated-in-x-seconds',
+            'v6/users/why-arent-columns-showing-in-pdf',
+            'v6/users/weird-characters-showing-instead-of-pdf',
+            'v6/users/pdf-menu-items-under-dashboard',
+            'v6/users/no-gravity-form-entry-id-passed-to-gravity-pdf',
+            'v6/users/how-to-display-the-nested-forms-table-shown-prior-to-v5-1',
+            'v6/users/columns-in-nested-forms-do-not-work-in-the-pdf',
+            'v6/users/setup_ids-depreciated-gravity-pdf-4-0',
+            'v6/users/adjust-size-of-header-footer-images'
+          ]
+        },
+      ]
+    },
+
+    {
+      type: 'category',
+      label: 'Extensions',
+      items: [
+        {
+          'type': 'doc',
+          'id': 'v6/extensions/installing-upgrading-extensions',
+        },
+
+        {
+          'type': 'category',
+          'label': 'Plugins',
+          'items': [
+            'v6/extensions/bulk-generator-add-on',
+            'v6/extensions/core-booster-add-on',
+            'v6/extensions/previewer-add-on',
+            'v6/extensions/reports-for-gfchart-add-on',
+            'v6/extensions/watermark-add-on',
+          ],
+          'collapsed': false,
+        }
+      ],
+    },
+
+    {
+      type: 'category',
+      label: 'Templates',
+      items: [
+        {
+          'type': 'doc',
+          'id': 'v6/templates/installing-upgrading-premium-templates',
+        },
+
+        {
+          'type': 'category',
+          'label': 'Universal Templates',
+          'items': [
+            'v6/templates/aryal',
+            'v6/templates/leo',
+            'v6/templates/formialt',
+            'v6/templates/tritan',
+            'v6/templates/sabre',
+            'v6/templates/cellulose',
+            'v6/templates/formium',
+            'v6/templates/barot',
+            'v6/templates/colossus',
+          ]
+        },
+        {
+          'type': 'category',
+          'label': 'Invoice Templates',
+          'items': [
+            'v6/templates/invoice-classic',
+            'v6/templates/invoice-modern',
+            'v6/templates/invoice-aurora',
+            'v6/templates/invoice-iconic'
+          ]
+        },
+        {
+          'type': 'category',
+          'label': 'Letter Templates',
+          'items': [
+            'v6/templates/formal-letter',
+            'v6/templates/business-letter-1',
+            'v6/templates/business-letter-2'
+          ]
+        },
+      ],
+    },
+
+    {
+      type: 'category',
+      label: 'Developers',
+      items: [
+        {
+          'type': 'category',
+          'label': 'Core Concepts',
+          'items': [
+            'v6/developers/start-customising',
+            'v6/developers/first-custom-pdf',
+            'v6/developers/mergetags-and-conditional-shortcodes',
+            'v6/developers/php-form-data-array',
+            'v6/developers/template-configuration-and-image',
+            'v6/developers/template-preview-image',
+            'v6/developers/install-template-via-template-manager',
+            'v6/developers/template-hierarchy',
+            'v6/developers/helper-parameters',
+          ],
+          'collapsed': false,
+        },
+        {
+          'type': 'category',
+          'label': 'PDF Features',
+          'items': [
+            'v6/developers/pdf-features/supported-html-and-css',
+            'v6/developers/pdf-features/headers-and-footers',
+            'v6/developers/pdf-features/images',
+            'v6/developers/pdf-features/watermarks',
+            'v6/developers/pdf-features/backgrounds',
+            'v6/developers/pdf-features/rounded-corners',
+            'v6/developers/pdf-features/tables',
+            'v6/developers/pdf-features/floats',
+            'v6/developers/pdf-features/positioning',
+            'v6/developers/pdf-features/pagebreaks',
+          ]
+        },
+        {
+          'type': 'category',
+          'label': 'API',
+          'items': [
+            'v6/developers/api/whats-it-for',
+            'v6/developers/api/get_log_class',
+            'v6/developers/api/get_notice_class',
+            'v6/developers/api/get_data_class',
+            'v6/developers/api/get_options_class',
+            'v6/developers/api/get_misc_class',
+            'v6/developers/api/get_form_class',
+            'v6/developers/api/get_mvc_class',
+            'v6/developers/api/get_form_pdfs',
+            'v6/developers/api/get_pdf',
+            'v6/developers/api/add_pdf',
+            'v6/developers/api/update_pdf',
+            'v6/developers/api/delete_pdf',
+            'v6/developers/api/get_plugin_settings',
+            'v6/developers/api/get_plugin_option',
+            'v6/developers/api/add_plugin_option',
+            'v6/developers/api/update_plugin_option',
+            'v6/developers/api/delete_plugin_option',
+            'v6/developers/api/create_pdf',
+            'v6/developers/api/product_table',
+            'v6/developers/api/likert_table',
+            'v6/developers/api/get_pdf_fonts',
+            'v6/developers/api/add_pdf_font',
+            'v6/developers/api/delete_pdf_font',
+            'v6/developers/api/get_form_data'
+          ]
+        },
+        {
+          'type': 'category',
+          'label': 'Filter Hooks',
+          'items': [
+            'v6/developers/filters/gfpdf_capabilities',
+            'v6/developers/filters/gfpdf_container_disable_faux_columns',
+            'v6/developers/filters/gfpdf_container_skip_fields',
+            'v6/developers/filters/gfpdf_core_template_fields_list',
+            'v6/developers/filters/gfpdf_current_pdf_configuration',
+            'v6/developers/filters/gfpdf_disable_global_addon_data',
+            'v6/developers/filters/gfpdf_disable_product_table',
+            'v6/developers/filters/gfpdf_enable_master_password_field',
+            'v6/developers/filters/gfpdf_field_class',
+            'v6/developers/filters/gfpdf_field_html_value',
+            'v6/developers/filters/gfpdf_field_label',
+            'v6/developers/filters/gfpdf_field_middleware',
+            'v6/developers/filters/gfpdf_field_section_break_html',
+            'v6/developers/filters/gfpdf_field_value',
+            'v6/developers/filters/gfpdf_font_location',
+            'v6/developers/filters/gfpdf_form_add_pdf',
+            'v6/developers/filters/gfpdf_form_data',
+            'v6/developers/filters/gfpdf_form_data_key_order',
+            'v6/developers/filters/gfpdf_form_settings',
+            'v6/developers/filters/gfpdf_form_settings_advanced',
+            'v6/developers/filters/gfpdf_form_settings_appearance',
+            'v6/developers/filters/gfpdf_form_settings_sanitize',
+            'v6/developers/filters/gfpdf_form_update_pdf',
+            'v6/developers/filters/gfpdf_get_active_pdfs',
+            'v6/developers/filters/gfpdf_get_option',
+            'v6/developers/filters/gfpdf_get_pdf_display_list',
+            'v6/developers/filters/gfpdf_get_settings',
+            'v6/developers/filters/gfpdf_gf_noconflict_scripts',
+            'v6/developers/filters/gfpdf_gf_noconflict_styles',
+            'v6/developers/filters/gfpdf_gravityforms_shortcode_attributes',
+            'v6/developers/filters/gfpdf_include_list_styles',
+            'v6/developers/filters/gfpdf_include_product_styles',
+            'v6/developers/filters/gfpdf_localised_script_array',
+            'v6/developers/filters/gfpdf_maybe_attach_to_notification',
+            'v6/developers/filters/gfpdf_mpdf_class',
+            'v6/developers/filters/gfpdf_mpdf_init_class',
+            'v6/developers/filters/gfpdf_mpdf_post_init_class',
+            'v6/developers/filters/gfpdf_mpdf_tmp_location',
+            'v6/developers/filters/gfpdf_multisite_template_location',
+            'v6/developers/filters/gfpdf_multisite_template_location_uri',
+            'v6/developers/filters/gfpdf_one_time_action_routes',
+            'v6/developers/filters/gfpdf_override_pdf_bypass',
+            'v6/developers/filters/gfpdf_pdf_actions',
+            'v6/developers/filters/gfpdf_pdf_config',
+            'v6/developers/filters/gfpdf_pdf_field_content',
+            'v6/developers/filters/gfpdf_pdf_filename',
+            'v6/developers/filters/gfpdf_pdf_html_output',
+            'v6/developers/filters/gfpdf_pdf_list_columns',
+            'v6/developers/filters/gfpdf_pdf_middleware',
+            'v6/developers/filters/gfpdf_registered_fields',
+            'v6/developers/filters/gfpdf_settings_general',
+            'v6/developers/filters/gfpdf_settings_general_security',
+            'v6/developers/filters/gfpdf_settings_sanitize',
+            'v6/developers/filters/gfpdf_settings_tools',
+            'v6/developers/filters/gfpdf_show_field_value',
+            'v6/developers/filters/gfpdf_signature_width',
+            'v6/developers/filters/gfpdf_template_args',
+            'v6/developers/filters/gfpdf_template_location',
+            'v6/developers/filters/gfpdf_template_location_uri',
+            'v6/developers/filters/gfpdf_tmp_location',
+            'v6/developers/filters/gfpdf_update_option',
+            'v6/developers/filters/gfpdf_working_folder_name',
+          ]
+        },
+        {
+          'type': 'category',
+          'label': 'Action Hooks',
+          'items': [
+            'v6/developers/actions/gfpdf_core_template',
+            'v6/developers/actions/gfpdf_fully_loaded',
+            'v6/developers/actions/gfpdf_pdf_list_column_id',
+            'v6/developers/actions/gfpdf_plugin_installed',
+            'v6/developers/actions/gfpdf_post_general_settings_page',
+            'v6/developers/actions/gfpdf_post_generate_and_save_pdf',
+            'v6/developers/actions/gfpdf_post_generate_and_save_pdf_notification',
+            'v6/developers/actions/gfpdf_post_help_settings_page',
+            'v6/developers/actions/gfpdf_post_html_fields',
+            'v6/developers/actions/gfpdf_post_save_pdf',
+            'v6/developers/actions/gfpdf_post_tools_settings_page',
+            'v6/developers/actions/gfpdf_pre_generate_and_save_pdf',
+            'v6/developers/actions/gfpdf_pre_generate_and_save_pdf_notification',
+            'v6/developers/actions/gfpdf_pre_html_fields',
+            'v6/developers/actions/gfpdf_pre_view_or_download_pdf',
+            'v6/developers/actions/gfpdf_tool_tab_actions',
+            'v6/developers/actions/gfpdf_version_changed',
+          ]
+        },
+
+      ],
+    },
+
+  ]
 }
