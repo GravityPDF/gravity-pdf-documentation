@@ -38,12 +38,12 @@ Search for the plugin directly from your WordPress admin area and install it wit
 
 1. Login to your WordPress admin area and navigate to the `Plugins -> Add New` page.
 
-1. Use the search bar in the top right-hand corner of the plugins page to search for `Gravity PDF`. 
+2. Use the search bar in the top right-hand corner of the plugins page to search for `Gravity PDF`. 
     ![Plugin Installation Screen](https://resources.gravitypdf.com/uploads/2015/10/automatic-install.png)
 
-1. Click the `Install Now` button on the Gravity PDF plugin to confirm the installation.
+3. Click the `Install Now` button on the Gravity PDF plugin to confirm the installation.
 
-1. Once the installation has completed select the `Activate` link. 
+4. Once the installation has completed select the `Activate` link. 
 
 ### Manual Installation 
 
