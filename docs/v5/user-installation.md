@@ -9,7 +9,7 @@ description: "Gravity PDF can be run on most shared web hosting. The easiest way
 Gravity PDF can be run on most shared web hosting providers and the easiest way to check if yours is compatible is to [install](#install) the plugin. Gravity PDF has multiple checks in place when activating and will let you know if there are any issues than need addressing.
 
 :::info
-While Gravity PDF is a free plugin, it requires Gravity Forms to run. You'll need to [purchase a Gravity Forms license](https://rocketgenius.pxf.io/c/1211356/445235/7938) before you can use Gravity PDF – any license type will work.
+While Gravity PDF is a free plugin, it requires Gravity Forms to run. You'll need to [purchase a Gravity Forms license](https://gravity-pdf-documentation.onrender.com/v5/user-gravity-forms-compatibility#gravity-forms-licenses) before you can use Gravity PDF – any license type will work.
 :::
 
 :::note
@@ -67,7 +67,7 @@ Upload the Gravity PDF plugin files to the WordPress plugins directory using you
 
 2.  Once downloaded, unzip the plugin folder. A folder called `gravity-forms-pdf-extended` will be extracted and this is what you should upload to your FTP server.
 
-3.  Open your favourite FTP client (we recommend [Filezilla](https://filezilla-project.org/)) and enter your hostname, username and password. If you are unsure where to get these details you should contact your web hosting provider for assistance.
+3.  Open your favourite FTP client (we recommend [Filezilla](https://filezilla-project.org/)) and enter your hostname, username and password. If you are unsure where to get these details, you should contact your web hosting provider for assistance.
 
 4.  Once logged in, navigate to your WordPress plugin directory (usually `/wp-content/plugins/`) and upload the `gravity-forms-pdf-extended` folder. If a directory called `gravity-forms-pdf-extended` already exists, delete it before uploading. ![Upload plugin via FTP](https://resources.gravitypdf.com/uploads/2015/10/ftp-upload.png)
 
