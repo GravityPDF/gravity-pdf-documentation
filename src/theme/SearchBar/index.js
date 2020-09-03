@@ -14,8 +14,7 @@ import Link from '@docusaurus/Link'
 import Head from '@docusaurus/Head'
 import useSearchQuery from '@theme/hooks/useSearchQuery'
 import { DocSearchButton, useDocSearchKeyboardEvents } from '@docsearch/react'
-
-const router_1 = require('@docusaurus/router')
+import { getVersion } from '../GetVersion'
 
 let DocSearchModal = null;
 
@@ -149,16 +148,9 @@ function DocSearch(props) {
   );
 }
 
-/* Extract the major version from the URL */
-const getVersionFromPath = (path) =>
-  path.match(/^\/(v[0-9]+)\//)
-
 function SearchBar() {
   const {siteConfig} = useDocusaurusContext();
-
-  // Get the current route and extract the version from it
-  const { pathname } = router_1.useLocation()
-  let currentVersion = getVersionFromPath(pathname)
+  const currentVersion = getVersion()
 
   if (currentVersion !== null) {
     siteConfig.themeConfig.algolia.searchParameters = {

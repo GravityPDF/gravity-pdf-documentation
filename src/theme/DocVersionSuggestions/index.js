@@ -8,6 +8,7 @@ import React from 'react'
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext'
 import Link from '@docusaurus/Link'
 import { useActivePlugin, useLatestVersion, } from '@theme/hooks/useDocs'
+import { getVersion } from '../GetVersion'
 
 const router_1 = require('@docusaurus/router')
 
@@ -25,10 +26,6 @@ const useMandatoryActiveDocsPluginId = () => {
   return activePlugin.pluginId
 }
 
-/* Extract the major version from the URL */
-const getVersionFromPath = (path) =>
-  path.match(/^\/(v[0-9]+)\//)
-
 function DocVersionSuggestions () {
   const {
     siteConfig: {
@@ -40,10 +37,8 @@ function DocVersionSuggestions () {
   } = useDocusaurusContext()
   const pluginId = useMandatoryActiveDocsPluginId()
   const version = useLatestVersion(pluginId)
-
-  // Get the current route and extract the version from it
+  let currentVersion = getVersion()
   const { pathname } = router_1.useLocation()
-  let currentVersion = getVersionFromPath(pathname)
 
   // If not on documentation pages, display nothing
   if (!currentVersion) {
