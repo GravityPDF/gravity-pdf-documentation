@@ -10,14 +10,14 @@ Gravity PDF is fully integrated into Gravity Forms. The PDF settings are located
 
 ## General Tab 
 
-From here you'll be able to control the PDF defaults like paper size, font and template. You also have advanced options giving you granular control over the security protocols. This tab is only available to users with the `gravityforms_view_settings` capability. By default this is administrators and network super admins (if running a multisite). Below is the list of settings available in the General tab, with a brief description about what each is for.
+From here you'll be able to control the PDF defaults like paper size, font and template. You also have advanced options giving you granular control over the security protocols. This tab is only available to users with the `gravityforms_view_settings` capability. By default, this is administrators and network super admins (if running a multisite). Below is the list of settings available in the General tab, with a brief description about what each is for.
 
 ### Default Paper Size 
 * Use this option to set the paper size for all [individual PDFs](setup-pdf.md). The default selection is A4 (210 x 297mm), but other common paper sizes such as US Letter and Legal are easily accessible. Also preloaded are the ISO-standard *A*, *B* and *C* paper sizes, as well as *RA* and *SRA*.
-* If none of the preloaded options suit you can also select [*Custom Paper Size*](#custom-paper-size) and control the width and height in millimetres or inches.
+* If none of the preloaded options suit, you can also select [*Custom Paper Size*](#custom-paper-size) and control the width and height in millimetres or inches.
 
 ### Custom Paper Size 
-* This field is hidden until you select the *Custom Template Option* from the [*Default Paper Size*](#paper-size) field. It allows you to control the exact paper size of your document – in millimetres or inches. When displayed, this field is required and only positive numbers are permitted in the width and height inputs.
+* This field is hidden until you select the *Custom Template Option* from the [*Default Paper Size*](#default-paper-size) field. It allows you to control the exact paper size of your document – in millimetres or inches. When displayed, this field is required and only positive numbers are permitted in the width and height inputs.
 
 ### Default Template 
 * Use this option to set the default template for all [individual PDFs](setup-pdf.md) (templates control the PDF design and layout). Gravity PDF comes with **four completely-free templates** for you to choose from. Click the `Advanced` button to view a preview of all available designs.
@@ -37,7 +37,7 @@ From here you'll be able to control the PDF defaults like paper size, font and t
 * Use this option to default the text direction for all [individual PDFs](setup-pdf.md). Many languages worldwide are written from right to left – Arabic and Hebrew script are examples of this. The default is set to *No*, with RTL support disabled.
 
 ### Entry View 
-* This option determines if the PDF on your admin [entry list/detail pages](viewing-pdfs.md) will be shown in your browser or a download prompt should be shown. By default this option is set to `View`.
+* This option determines if the PDF on your admin [entry list/detail pages](viewing-pdfs.md) will be shown in your browser or a download prompt should be shown. By default, this option is set to `View`.
 
 ### Background Processing 
 * When enable, during form submission and resending notifications PDFs will be processed and emailed in a background task. This is very useful if you've complex PDFs, have multiple PDFs assigned to a form, want to speed up the submission process, or are resending notifications in bulk.
@@ -51,22 +51,22 @@ From here you'll be able to control the PDF defaults like paper size, font and t
 * _PDF statistics:_ when Debug Mode is on the PDF will display the time spent generating the document, peak memory usage, and number of fonts used. 
 * _Template header caching:_ to decrease the plugin initialisation time, we store the template header data in a transient (expires weekly) instead of reading that information from the filesystem. The cache is flushed automatically when installing or deleting a template [via the PDF Template Manager](pdf-template-manager.md), or when toggling Debug Mode. The cache is disabled when Debug Mode is on. 
 * Replaces [Shortcode Debug Message](#shortcode-debug-message) setting in Gravity PDF 5.1
-* By default this option is set to `No`.
+* By default, this option is set to `No`.
 
 ### Shortcode Debug Message 
 * When enabled, users with the `gravityforms_view_entries` capability (the Administrator Role by default) will be shown debug messages when the [gravitypdf] shortcode cannot be generated.
-* When disabled and an error occurs processing the [gravitypdf] shortcode no content is shown.
-* By default this option is set to `Disable`.
+* When disabled, and an error occurs processing the [gravitypdf] shortcode, no content is shown.
+* By default, this option is set to `Disable`.
 * _This setting was replaced by [Debug Mode](#debug-mode) in Gravity PDF 5.1_
 
 ### Advanced Options 
 
 ![Gravity PDF Advanced Options on the General Tab](https://resources.gravitypdf.com/uploads/2015/10/security-settings-v5.png)
 
-The advanced options focuses on PDF security and can be shown by clicking the `Show Advanced Options...` link (just above the *Save Changes* button). The security settings are configured with sane defaults and in most cases you won't need to modify this behaviour. Our [security documentation page](pdf-security.md) focuses or the finer points of the plugin's security protocols and is worth a read before changing these options.
+The advanced options focus on PDF security and can be shown by clicking the `Show Advanced Options...` link (just above the *Save Changes* button). The security settings are configured with sane defaults and in most cases you won't need to modify this behaviour. Our [security documentation page](pdf-security.md) focuses or the finer points of the plugin's security protocols and is worth a read before changing these options.
 
 #### User Restriction 
-* Logged in users who do not have the `gravityforms_view_entries` capability are prevented from accessing any PDF if they aren't the original owner – the owner is who filled in the form entry originally. If you leave the setting untouched only site administrators and network super admins (if running a multisite) can view the generated PDFs. To change this behaviour you can assign capabilities that other roles have access to. For instance, if you wanted the [*Editor* role](https://codex.wordpress.org/Roles_and_Capabilities#Editor) to have access to PDFs you could add the `edit_pages` capability. Alternatively, instead of adding additional capabilities to this field you could use a role editing plugin like [User Role Editor](https://wordpress.org/plugins/user-role-editor/) to give an existing role the `gravityforms_view_entries` capability. Choose the best solution for your use-case.
+* Logged in users who do not have the `gravityforms_view_entries` capability are prevented from accessing any PDF if they aren't the original owner – the owner is who filled in the form entry originally. If you leave the setting untouched only site administrators and network super admins (if running a multisite) can view the generated PDFs. To change this behaviour, you can assign capabilities that other roles have access to. For instance, if you wanted the [*Editor* role](https://codex.wordpress.org/Roles_and_Capabilities#Editor) to have access to PDFs you could add the `edit_pages` capability. Alternatively, instead of adding additional capabilities to this field, you could use a role editing plugin like [User Role Editor](https://wordpress.org/plugins/user-role-editor/) to give an existing role the `gravityforms_view_entries` capability. Choose the best solution for your use-case.
 * This option has no effect on PDFs sent as attachments in Gravity Form notifications but does effect the `[gravitypdf]` shortcode and PDF merge tags.
 * More information about WordPress roles and capabilities [can be found in the WordPress codex](https://codex.wordpress.org/Roles_and_Capabilities).
 
@@ -76,9 +76,9 @@ The advanced options focuses on PDF security and can be shown by clicking the `S
 * The default option is `No`.
 
 #### Logged Out Timeout 
-* When a logged out user attempts to view a PDF the plugin will try and match their current IP address against the one saved with the Gravity Forms entry. If they match they get access. However, this method isn't a secure long-term option [because IP addresses can change](http://whatismyipaddress.com/keeps-changing). To prevent unauthorised access we implemented a timeout feature. After X amount of time the user no longer has access to the generated PDF.
+* When a logged out user attempts to view a PDF, the plugin will try and match their current IP address against the one saved with the Gravity Forms entry. If they match they get access. However, this method isn't a secure long-term option [because IP addresses can change](http://whatismyipaddress.com/keeps-changing). To prevent unauthorised access we implemented a timeout feature. After X amount of time, the user no longer has access to the generated PDF.
 * This option has no effect on PDFs sent as attachments in Gravity Form notifications but does effect the `[gravitypdf]` shortcode and PDF merge tags.
-* By default this timeout is set to 20 minutes. **While it is not recommended** you can disable the timeout functionality by setting the value to zero (0).
+* By default, this timeout is set to 20 minutes. **While it is not recommended** you can disable the timeout functionality by setting the value to zero (0).
 
 ## License Tab 
 
@@ -94,20 +94,20 @@ This tab will appear if you've purchased and activated [a Gravity PDF extension]
 
 ![Gravity PDF Tools Settings Page](https://resources.gravitypdf.com/uploads/2015/10/tools-tab-v5-a.png) 
 
-The tools tab contains useful functions for power users. You can install the core PDF fonts, any additional fonts for use in your PDF documents, prepare your system for custom PDF templates and uninstall the plugin. This tab is only available to users with the `gravityforms_edit_settings` capability. By default this is administrators and network super admins (if running a multisite). Below is the list of settings available in the Tools tab, with a brief description about what each is for.
+The tools tab contains useful functions for power users. You can install the core PDF fonts, any additional fonts for use in your PDF documents, prepare your system for custom PDF templates and uninstall the plugin. This tab is only available to users with the `gravityforms_edit_settings` capability. By default, this is administrators and network super admins (if running a multisite). Below is the list of settings available in the Tools tab, with a brief description about what each is for.
 
 ### Setup Custom Templates 
-* Gravity PDF uses a templating system similar to WordPress' child themes. The core templates that ship with the plugin are located in the `/src/templates/` directory (it acts like a parent theme), however you cannot modify these files without losing your changes when the plugin is updated. To circumvent this issue templates can be placed in the plugin's working directory `/wp-content/uploads/PDF_EXTENDED_TEMPLATES/` (the child theme in our analogy). From here you can edit the templates as you see fit and you won't lose your modifications during updates.
-* The *Setup Custom Templates* option copies all the core templates to the [PDF Working Directory](../developers/first-custom-pdf.md#working-directory). If you have previously run this setup the core files in this directory will be overridden.
-* Before running this function it's recommended that you [review our developer's guide to templating](../developers/start-customising.md).
+* Gravity PDF uses a templating system similar to WordPress' child themes. The core templates that ship with the plugin are located in the `/src/templates/` directory (it acts like a parent theme). However, you cannot modify these files without losing your changes when the plugin is updated. To circumvent this issue, templates can be placed in the plugin's working directory `/wp-content/uploads/PDF_EXTENDED_TEMPLATES/` (the child theme in our analogy). From here you can edit the templates as you see fit and you won't lose your modifications during updates.
+* The *Setup Custom Templates* option copies all the core templates to the [PDF Working Directory](../developers/first-custom-pdf.md#working-directory). If you have previously run this setup, the core files in this directory will be overridden.
+* Before running this function, it's recommended that you [review our developer's guide to templating](../developers/start-customising.md).
 
 ### Fonts 
 * The font manager allows you to install any TTF font and use it in your PDFs. There are two required fields when adding a new font:
     1.  Unique font name (only alphanumeric characters and spaces must be used)
     2.  The URL to the font file (fonts must be uploaded via the Media Library and in TTF format)
 
-    If the particular font provides different files for bold, italic and bold-italic typefaces you can optionally include them. A faux bold, italic or bold italic style will be rendered in the PDF if they are not set.
-* Once a font is installed you can select it in the PDF settings. If creating a PDF template you also have the option to set the font family directly using CSS (a helpful snippet is provided).
+    If the particular font provides different files for bold, italic and bold-italic typefaces, you can optionally include them. A faux bold, italic or bold italic style will be rendered in the PDF if they are not set.
+* Once a font is installed, you can select it in the PDF settings. If creating a PDF template you also have the option to set the font family directly using CSS (a helpful snippet is provided).
 * Review our [Font Manager documentation](custom-fonts.md) for more in-depth details on managing PDF fonts.
 
 ### Install Core Fonts 
@@ -117,9 +117,9 @@ The tools tab contains useful functions for power users. You can install the cor
 ![Uninstallation feature](https://resources.gravitypdf.com/uploads/2015/10/tools-tab-v5-b.png)
 
 ### Uninstall 
-* This option will completely remove the plugin from your website and clean up the database and file system – it will be as if the software was never installed. **Any custom templates you have will also be deleted**. During the uninstallation the plugin will automatically deactivate and redirect you to the plugins page.
-* When the uninstall button is clicked a warning box will pop up asking you to confirm before continuing.
-* A user must have the `gravityforms_uninstall` capability to complete this action. By default this is only site administrators. If running a multisite, only a network super admin can do the uninstallation.
+* This option will completely remove the plugin from your website and clean up the database and file system – it will be as if the software was never installed. **Any custom templates you have will also be deleted**. During the uninstallation, the plugin will automatically deactivate and redirect you to the plugins page.
+* When the uninstall button is clicked, a warning box will pop up asking you to confirm before continuing.
+* A user must have the `gravityforms_uninstall` capability to complete this action. By default, this is only site administrators. If running a multisite, only a network super admin can do the uninstallation.
 
 ## Help Tab 
 

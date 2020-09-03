@@ -31,7 +31,7 @@ The PDF list contains four columns which provide an overview of the PDFs current
 
 ## Actions 
 
-There a five main actions available to you when managing your PDFs. They are:
+There are five main actions available to you when managing your PDFs. They are:
 
 1.  [Add](#add)
 2.  [Edit](#edit)
@@ -53,13 +53,13 @@ Click a PDFs *Edit* action to modify an existing PDF configuration. [See our Set
 
 ![Active and deactivated toggles](https://resources.gravitypdf.com/uploads/2015/10/toggles.png) 
 
-PDFs can be **completely disabled** by using the activate/deactivate toggle – located to the left of the `Name` column. Once a PDF has been deactivated users and administrators will no longer be able to access the document. The PDF will not be attached to email notifications, and its shortcode won't generate a link.
+PDFs can be **completely disabled** by using the activate/deactivate toggle – located to the left of the `Name` column. Once a PDF has been deactivated, users and administrators will no longer be able to access the document. The PDF will not be attached to email notifications, and its shortcode won't generate a link.
 
 ### Duplicate 
 
 ![The UI shown when duplicating PDFs](https://resources.gravitypdf.com/uploads/2015/10/duplcate.png) 
 
-You can duplicate an existing PDF configuration by clicking the *Duplicate* action. This action will happen in the background without the page reloading and once done you'll see a copy of the PDF added to the list.
+You can duplicate an existing PDF configuration by clicking the *Duplicate* action. This action will happen in the background without the page reloading and once done, you'll see a copy of the PDF added to the list.
 
 ### Delete 
 

@@ -20,7 +20,7 @@ More information on each PDF can be viewed by clicking (or navigating with your 
 
 ![Search for installed templates](https://resources.gravitypdf.com/uploads/2017/03/search.png) 
 
-Once you've accessed the PDF Template Manager you'll see a prominent search bar at the top of the interface. Use it to filter your **installed** PDF templates – searches are done on the PDF title, description author and group so it's even simpler to find the PDF you're looking for.
+Once you've accessed the PDF Template Manager, you'll see a prominent search bar at the top of the interface. Use it to filter your **installed** PDF templates – searches are done on the PDF title, description author and group so it's even simpler to find the PDF you're looking for.
 
 ## Install 
 
@@ -40,4 +40,4 @@ If you [purchase a PDF template from our shop](https://gravitypdf.com/shop/) the
 
 If you ever need to delete a custom PDF template you can easily do so via the Delete button when viewing individual PDFs (click the template image to view an individual PDF). You'll be asked to confirm this action before it deletes anything. 
 
-Core PDF templates (Zadani, Rubix, Focus Gravity and Blank Slate) cannot be deleted. However, if you've modified a core template in the [PDF Working Directory](../developers/first-custom-pdf.md#working-directory) you will get the option to delete your modified version.
+Core PDF templates (Zadani, Rubix, Focus Gravity and Blank Slate) cannot be deleted. However, if you've modified a core template in the [PDF Working Directory](../developers/first-custom-pdf.md#working-directory), you will get the option to delete your modified version.

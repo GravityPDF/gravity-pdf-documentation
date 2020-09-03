@@ -52,20 +52,20 @@ Below is the list of settings available in the General tab, with a brief descrip
 
 ### Template 
 * Select the PDF template that should be used to generated the document. The [global Default Template setting](global-settings.md#default-template) controls which template to use by default.
-* Gravity PDF comes with **four completely-free templates** for you to choose from. Upon changing your selection (using the drop down or selecting the Advanced button to get a more graphical overview) the *Template* tab will be updated (or removed if it has no options) to reflect the template-specific options.
+* Gravity PDF comes with **four completely-free templates** for you to choose from. Upon changing your selection (using the drop down or selecting the Advanced button to get a more graphical overview), the *Template* tab will be updated (or removed if it has no options) to reflect the template-specific options.
 * Additional templates can be purchased from our [template shop](https://gravitypdf.com/template-shop/) and then installed through the [PDF Template Manager](pdf-template-manager.md).
 * Developers with HTML, CSS and a little PHP knowledge can also [create their own designs and layouts](../developers/start-customising.md). Alternatively, the Gravity PDF team offers [design and integration services](https://gravitypdf.com/integration-services/) for those looking for a custom solution – we can even integrate existing PDF documents.
 
 ### Notifications 
 * This setting allows you to automatically attach the PDF to the selected notification(s).
-* The PDF [active state](managing-pdfs.md#active-toggle) and [*Conditional Logic*](#conditional-logic) determine if the PDF will be attached to the notification. If one or both of these tests fail no PDF will be attached. This setting **does not** affect the actual notification conditional logic (which determines if the notification should be sent).
+* The PDF [active state](managing-pdfs.md#activate--deactivate-pdfs) and [*Conditional Logic*](#conditional-logic) determine if the PDF will be attached to the notification. If one or both of these tests fail, no PDF will be attached. This setting **does not** affect the actual notification conditional logic (which determines if the notification should be sent).
 * [If Background Processing is enabled](global-settings.md#background-processing), during the form submission when it's determined a PDF should be attached to a notification, Gravity PDF will handle the PDF generation and notification sending as a background task. The major benefit is the end-user doesn't have to wait for these tasks to complete before seeing the form's Confirmation page. Resending notifications from your admin area will also be processed as a background task.
-* If there is semi-sensitive user information included in the PDF it's recommended you enable [*PDF Security*](#pdf-security) with a strong [*Password*](#password) (more than 10 characters, with a mix of symbols, numbers and upper and lower case). Password-protected PDFs are encrypted using 128-bit AES.
-* If very sensitive user information is included in the PDF it is recommended you **do not** enable this feature as email can be insecure. Instead [use the `[gravitypdf]` shortcode over HTTPS](shortcodes.md) and enable [*PDF Security*](#pdf-security).
+* If there is semi-sensitive user information included in the PDF, it's recommended you enable [*PDF Security*](#enable-pdf-security) with a strong [*Password*](#password) (more than 10 characters, with a mix of symbols, numbers and upper and lower case). Password-protected PDFs are encrypted using 128-bit AES.
+* If very sensitive user information is included in the PDF, it is recommended you **do not** enable this feature as email can be insecure. Instead [use the `[gravitypdf]` shortcode over HTTPS](shortcodes.md) and enable [*PDF Security*](#enable-pdf-security).
 
 ### Conditional Logic 
 * Conditional logic is a [powerful feature of Gravity Forms](https://www.gravityhelp.com/documentation/article/enable-conditional-logic/) allowing you to show or hide fields in your form based on a user's response. We've extended this behaviour to Gravity PDF, allowing you to enable or disable a PDF if a user responded a specific way.
-* If the conditional logic determines a PDF should be disabled it will not be generated for that entry. The PDF will not be accessible through the `[gravitypdf]` shortcode and will not be attached to notifications. Site administrators won't even be able to access it from the admin area.
+* If the conditional logic determines a PDF should be disabled, it will not be generated for that entry. The PDF will not be accessible through the `[gravitypdf]` shortcode and will not be attached to notifications. Site administrators won't even be able to access it from the admin area.
 
 ## Appearance Tab 
 
@@ -76,28 +76,28 @@ The appearance tab contains fields that control the general look and feel of you
 Below is the list of settings available in the Appearance tab, with a brief description about what each is for.
 
 ### Paper Size 
-* Use this option to set the PDF paper size. This field defaults to the [Default Paper Size](global-settings.md#paper-size) option in the global settings. Common paper sizes like US Letter and Legal are available. The ISO-standard *A*, *B* and *C* paper sizes, as well as *RA* and *SRA*, are also preloaded.
-* If none of the preloaded options suit you can also select [*Custom Paper Size*](#custom-paper-size) and control the width and height in millimetres or inches.
+* Use this option to set the PDF paper size. This field defaults to the [Default Paper Size](global-settings.md#default-paper-size) option in the global settings. Common paper sizes like US Letter and Legal are available. The ISO-standard *A*, *B* and *C* paper sizes, as well as *RA* and *SRA*, are also preloaded.
+* If none of the preloaded options suit, you can also select [*Custom Paper Size*](#custom-paper-size) and control the width and height in millimetres or inches.
 
 ### Custom Paper Size 
-* This field is hidden until you select the *Custom Paper Size* option from the [*Paper Size*](#paper-size) field. It allows you to control the exact paper size of your document – in millimetres or inches. When displayed, this field is required and only positive numbers are permitted in the width and height inputs.
+* This field is hidden until you select the *Custom Paper Size* option from the [*Paper Size*](#paper-size) field. It allows you to control the exact paper size of your document – in millimetres or inches. When displayed, this field is required, and only positive numbers are permitted in the width and height inputs.
 
 ### Orientation 
 * This allows you to change the paper orientation from portrait to landscape. A page displayed in portrait mode is taller than it is wide. Inversely, landscape pages are wider than they are tall.
 * The field defaults to *Portrait*.
 
 ### Font 
-* Select the font to be used in your PDF. This field defaults to the [Default Font](global-settings.md#font-type) option in the global settings.
+* Select the font to be used in your PDF. This field defaults to the [Default Font](global-settings.md#default-font-type) option in the global settings.
 * If none of the pre-installed fonts suit your needs, additional fonts can be installed using our [Font Installer](custom-fonts.md).
 
 ### Font Size 
-* Control the font size used in the PDF. The field defaults to the [Default Font Size](global-settings.md#font-size) option in the global settings.
+* Control the font size used in the PDF. The field defaults to the [Default Font Size](global-settings.md#default-font-size) option in the global settings.
 
 ### Font Colour 
-* Control the font colour used in the PDF. The field defaults to the [Default Font Colour](global-settings.md#font-colour) option in the global settings.
+* Control the font colour used in the PDF. The field defaults to the [Default Font Colour](global-settings.md#default-font-colour) option in the global settings.
 
 ### Reverse Text (RTL) 
-* Control the text direction used in the PDF. The field defaults to the [Reverse Text (RTL)](global-settings.md#rtl) option in the global settings.
+* Control the text direction used in the PDF. The field defaults to the [Reverse Text (RTL)](global-settings.md#reverse-text-rtl) option in the global settings.
 
 ## Template Tab 
 
@@ -111,21 +111,21 @@ Below is a description of the core template settings.
 * Optionally display the form name at the beginning of the PDF document.
 
 ### Show Page Names 
-* When using Gravity Forms' *Page Break* fields you have the option to [name each page using the *Start Paging* field](https://www.gravityhelp.com/documentation/article/page-break/). When this PDF option is enabled these page names will be displayed in your PDF.
+* When using Gravity Forms' *Page Break* fields you have the option to [name each page using the *Start Paging* field](https://www.gravityhelp.com/documentation/article/page-break/). When this PDF option is enabled, these page names will be displayed in your PDF.
 
 ### Show HTML Fields 
 * Show your form's HTML fields in the PDF.
-* If your HTML has conditional logic this will be honoured in the PDF. See [*Enable Conditional Logic*](#enable-conditional-logic) to disable this feature.
+* If your HTML has conditional logic, this will be honoured in the PDF. See [*Enable Conditional Logic*](#enable-conditional-logic) to disable this feature.
 
 ### Show Section Break Description 
 * The [*Section Break* field](https://www.gravityhelp.com/documentation/article/section-break/) allows you to enter a label and description. By default, a PDF will only show a section break's *label*. Enabling this option will also show the section break description.
 
 ### Enable Conditional Logic 
-* When this option is enabled, the Gravity Form field conditionals you set in your form will be adhered to in the PDF. This means if a field's conditional logic says it should be hidden then it won't be included in the PDF. 
+* When this option is enabled, the Gravity Form field conditionals you set in your form will be adhered to in the PDF. This means if a field's conditional logic says it should be hidden, then it won't be included in the PDF. 
 * This option is useful when you have [*Show Empty Fields*](#show-empty-fields) enabled.
 
 ### Show Empty Fields 
-* By default, any field not completed by the user won't be shown in the PDF document. When enabled this option will display all fields, regardless of whether the user filled it out.
+* By default, any field not completed by the user won't be shown in the PDF document. When enabled, this option will display all fields, regardless of whether the user filled it out.
 * Conditional logic is honoured on all fields, including empty ones. See [*Enable Conditional Logic*](#enable-conditional-logic) to disable this feature.
 
 ### Header 
@@ -134,7 +134,7 @@ Below is a description of the core template settings.
 * The special tags `{PAGENO}` – which displays the current page number – and `{nbpg}` – which displays the total number of pages in the document – can be used in the header.
 
 ### First Page Header 
-* When enabled you can add a different header to the first page of your PDF document.
+* When enabled, you can add a different header to the first page of your PDF document.
 * Gravity Form merge tags can be used in the header.
 * The special tags `{PAGENO}` – which displays the current page number – and `{nbpg}` – which displays the total number of pages in the document – can be used in the header.
 
@@ -144,7 +144,7 @@ Below is a description of the core template settings.
 * The special tags `{PAGENO}` – which displays the current page number – and `{nbpg}` – which displays the total number of pages in the document – can be used in the footer.
 
 ### First Page Footer 
-* When enabled you can add a different footer to the first page of your PDF document.
+* When enabled, you can add a different footer to the first page of your PDF document.
 * Gravity Form merge tags can be used in the footer.
 * The special tags `{PAGENO}` – which displays the current page number – and `{nbpg}` – which displays the total number of pages in the document – can be used in the footer.
 
@@ -160,13 +160,13 @@ Below is the list of settings available in the Advanced tab, with a brief descri
 * This allows you to change the PDF to one of the ISO-standard PDF/A-1b or PDF/X-1a formats.
 * The PDF/A-1b standard is designed for long-term archiving and is 100% self-contained. All the information necessary for displaying the document is embedded in the file.
 * The PDF/X-1a standard is designed to facilitate printing. Like the PDF/A-1b standard, the document is 100% self-contained but has the added restriction that all images need to be CMYK or spot colours. The software will automatically convert any images to CMYK.
-* Both the PDF/A-1b and PDF/X-1a standards do not allow transparency, which means you cannot use watermarks or PNG images with alpha channel transparency. Additionally, the [*PDF Security*](#pdf-security) option is disabled – which includes the [*Password*](#password) and [*Privileges*](#privileges) fields.
+* Both the PDF/A-1b and PDF/X-1a standards do not allow transparency, which means you cannot use watermarks or PNG images with alpha channel transparency. Additionally, the [*PDF Security*](#enable-pdf-security) option is disabled – which includes the [*Password*](#password) and [*Privileges*](#privileges) fields.
 
 ### Enable PDF Security 
-* When the [*Format*](#format) is set to *Standard* you have the option to enable PDF security. This allows you to set a password to access the PDF, or control the end-user document privileges.
+* When the [*Format*](#format) is set to *Standard*, you have the option to enable PDF security. This allows you to set a password to access the PDF or control the end-user document privileges.
 
 ### Password 
-* When [*PDF Security*](#pdf-security) is enabled you have the option to password-protect your PDF documents. 
+* When [*PDF Security*](#enable-pdf-security) is enabled, you have the option to password-protect your PDF documents. 
 * [Mergetag](https://www.gravityhelp.com/documentation/article/merge-tags/) usage is allowed in this field.
 * Leave this field blank if you don't want to set a password (useful if you only want to control the end-user [*Privileges*](#privileges))
 
@@ -180,7 +180,7 @@ Below is the list of settings available in the Advanced tab, with a brief descri
      1. **Fill Forms**: Allow users to fill in any active form field elements.
      1. **Printing - High Resolution**: Allow high quality printing and PDF re-distilling.
      1. **Printing - Low Resolution**: Low-resolution printing will generate a bitmapped image of the document that is suitable for personal use. High-quality reproduction and re-distilling is disabled. If you don't want the user to print at all remove both *Printing* privileges.
-     1. **Modify**: If this privilege is removed, document modifications is disabled. However, copying, extracting content and printing are allowed.
+     1. **Modify**: If this privilege is removed, document modifications are disabled. However, copying, extracting content and printing are allowed.
 
 ### Image DPI 
 * Adjust the image DPI (Dots Per Inch). By default this is set to 96. If professionally printing you should set this to *300* and change the [*Format*](#format) to *PDF/X-1a*.
@@ -190,8 +190,8 @@ Below is the list of settings available in the Advanced tab, with a brief descri
 
 ### Enable Public Access 
 * Enabling public access to the PDF will **disable all security protocols** and give anonymous users access to the PDF. This means anyone worldwide can view the PDF document for all your form's entries. 
-* For most users the [standard security measures](pdf-security.md) will be adequate and public access should remain disabled.
+* For most users, the [standard security measures](pdf-security.md) will be adequate, and public access should remain disabled.
 
 ### Restrict Owner 
-* This option defaults to the [global Default Owner Restrictions](global-settings.md#default-owner-restrictions) value but you have the option to override that behaviour on a per-PDF basis. 
+* This option defaults to the [global Default Owner Restrictions](global-settings.md#default-owner-restrictions) value, but you have the option to override that behaviour on a per-PDF basis. 
 * This option is used to prevent the original entry owner from viewing the generated PDF.  

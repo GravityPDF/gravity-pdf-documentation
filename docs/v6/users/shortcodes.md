@@ -36,31 +36,31 @@ We've ensured the `[gravitypdf]` shortcode works with as little configuration as
 
 ![The \[gravitypdf\] shortcode in the Gravity Forms text confirmation](https://resources.gravitypdf.com/uploads/2015/10/text-confirmation.png) 
 
-The [text confirmation](https://docs.gravityforms.com/configuring-confirmations-in-gravity-forms/#text-confirmations) is the simplest Gravity Forms confirmation type. When selected, you can enter a message using the WordPress editor. To get it functioning you just need to copy and paste the sample shortcode found on the [PDF form list](managing-pdfs.md).
+The [text confirmation](https://docs.gravityforms.com/configuring-confirmations-in-gravity-forms/#text-confirmations) is the simplest Gravity Forms confirmation type. When selected, you can enter a message using the WordPress editor. To get it functioning, you just need to copy and paste the sample shortcode found on the [PDF form list](managing-pdfs.md).
 
 #### Page Confirmation
 
 ![The \[gravitypdf\] shortcode in the Gravity Forms page confirmation](https://resources.gravitypdf.com/uploads/2015/10/page-redirect.png) 
 
-The [page confirmation](https://docs.gravityforms.com/configuring-confirmations-in-gravity-forms/#page-confirmations) allows you to redirect users to an existing WordPress page. This method is not quite "copy and paste", but it's close. To get it functioning you need to copy the sample shortcode found on the [PDF form list](managing-pdfs.md#download-shortcode) and place it on the WordPress page you're sending your user to. Once done, go back to your confirmation configuration and enable the `Pass Field Data Via Query String` option. Add `entry={entry_id}` to the field that appears and click save.
+The [page confirmation](https://docs.gravityforms.com/configuring-confirmations-in-gravity-forms/#page-confirmations) allows you to redirect users to an existing WordPress page. This method is not quite "copy and paste", but it's close. To get it functioning you need to copy the sample shortcode found on the [PDF form list](managing-pdfs.md) and place it on the WordPress page you're sending your user to. Once done, go back to your confirmation configuration and enable the `Pass Field Data Via Query String` option. Add `entry={entry_id}` to the field that appears and click save.
 
 #### Redirect Confirmation 
 
 ![The \[gravitypdf\] shortcode in the Gravity Forms redirect confirmation](https://resources.gravitypdf.com/uploads/2015/10/redirect-confirmation-e1541561008512.png) 
 
-The [redirect confirmation](https://docs.gravityforms.com/configuring-confirmations-in-gravity-forms/#redirect-confirmation) allows you to send the user to another location upon completing their form. If you choose, you can redirect the user straight to a PDF. To get it functioning you need to copy and paste the sample shortcode found on the [PDF form list](managing-pdfs.md#download-shortcode).
+The [redirect confirmation](https://docs.gravityforms.com/configuring-confirmations-in-gravity-forms/#redirect-confirmation) allows you to send the user to another location upon completing their form. If you choose, you can redirect the user straight to a PDF. To get it functioning you need to copy and paste the sample shortcode found on the [PDF form list](managing-pdfs.md).
 
 :::info
-If using the [signed PDF URL feature](shortcodes.md#signed-attribute) with the redirect method, the `Pass Field Data Via Query String` option will be ignored.
+If using the [signed PDF URL feature](#signed-optional) with the redirect method, the `Pass Field Data Via Query String` option will be ignored.
 ::: 
 
 ### Usage in Notifications 
 
 ![Adding the shortcode to notifications](https://resources.gravitypdf.com/uploads/2015/10/notification-example.png) 
 
-Gravity Forms [Notifications](https://docs.gravityforms.com/configuring-notifications-in-gravity-forms/) are automated emails sent after the form is submitted. If you would prefer not [sending the PDF as an email attachment](setup-pdf.md#notifications) (usually for security reasons) you can use the `[gravitypdf]` shortcode and create a direct link to the PDF. Because of the default [security protocols](pdf-security.md), this method is very effective when the recipient has a WordPress user account. 
+Gravity Forms [Notifications](https://docs.gravityforms.com/configuring-notifications-in-gravity-forms/) are automated emails sent after the form is submitted. If you would prefer not [sending the PDF as an email attachment](setup-pdf.md#notifications) (usually for security reasons), you can use the `[gravitypdf]` shortcode and create a direct link to the PDF. Because of the default [security protocols](pdf-security.md), this method is very effective when the recipient has a WordPress user account. 
 
-If users aren't logged in when completing the form, use the [signed PDF URL feature](shortcodes.md#signed-attribute) or add the shortcode to the [confirmation page](#confirmation) instead.
+If users aren't logged in when completing the form, use the [signed PDF URL feature](#signed-optional) or add the shortcode to the [confirmation page](#confirmation) instead.
 
 ### Building the Shortcode 
 
@@ -75,16 +75,16 @@ The `[gravitypdf]` shortcode is customisable and there are a number of attribute
 * *Example:* `[gravitypdf id="560f2ef799945"]`
 
 ##### Name (optional) 
-* This attribute doesn't effect the shortcode in any way, but does allow you to quickly determine which PDF it references.
+* This attribute doesn't affect the shortcode in any way, but does allow you to quickly determine which PDF it references.
 
 ##### Text (optional) 
 * This attribute allows you to change the generated link's text which the end-user will see.
-* If the `text` attribute isn't present it will default to *Download PDF*.
+* If the `text` attribute isn't present, it will default to *Download PDF*.
 * *Example:* `[gravitypdf id="560f2ef799945" text="View PDF"]`
 
 ##### Type (optional) 
-* The `type` attribute has two valid parameters: `download` and `view`. When the `download` option is set, and a user clicks the PDF link, a save dialog box will open – allowing a user to download and then view the PDF locally. When the `view` option is set the PDF will be rendered in their web browser.
-* If the `type` attribute isn't present it will default to `download`.
+* The `type` attribute has two valid parameters: `download` and `view`. When the `download` option is set, and a user clicks the PDF link, a save dialog box will open – allowing a user to download and then view the PDF locally. When the `view` option is set, the PDF will be rendered in their web browser.
+* If the `type` attribute isn't present, it will default to `download`.
 * *Example:* `[gravitypdf id="560f2ef799945" type="view"]` or `[gravitypdf id="560f2ef799945" type="view" text="View PDF"]`
 
 ##### Signed (optional) 
@@ -95,7 +95,7 @@ The `[gravitypdf]` shortcode is customisable and there are a number of attribute
 * Added in Gravity PDF 5.1
 
 ##### Expires (optional) 
-* The `expires` attribute works in conjunction [with the `signed` attribute](#signed-attribute) and it changes the default signed URL timeout period. 
+* The `expires` attribute works in conjunction [with the `signed` attribute](#signed-optional) and it changes the default signed URL timeout period. 
 * If the attribute isn't included, the signed URL will fallback to the global [Logged Out Timeout](global-settings.md#logged-out-timeout) setting (20-minutes by default).
 * *Example:* `[gravitypdf id="560f2ef799945" signed="1" expires="5 minutes"]`
 * *Example:* `[gravitypdf id="560f2ef799945" signed="1" expires="7 days"]`
@@ -113,8 +113,8 @@ The `[gravitypdf]` shortcode is customisable and there are a number of attribute
 * *Example:* `[gravitypdf id="560f2ef799945" print="1"]`
 
 ##### Entry (semi-optional) 
-* When the shortcode is used in Gravity Form confirmations or notifications this attribute can be omitted (as we already know which entry is being processed). However, if you want to use the shortcode outside of that environment you need to pass in the Gravity Form entry ID.
-* Alternatively, instead of passing the entry ID directly to the shortcode you can set the ID via URL parameters (the "query string"). If the `entry` or `lid` URL parameters exist its value will be used as the ID (see [*Page Confirmation*](#page-confirmation) for more details).
+* When the shortcode is used, in Gravity Form confirmations or notifications this attribute can be omitted (as we already know which entry is being processed). However, if you want to use the shortcode outside of that environment, you need to pass in the Gravity Form entry ID.
+* Alternatively, instead of passing the entry ID directly to the shortcode, you can set the ID via URL parameters (the "query string"). If the `entry` or `lid` URL parameters exist its value will be used as the ID (see [*Page Confirmation*](#page-confirmation) for more details).
 * *Example:* `[gravitypdf id="560f2ef799945" entry="250"]` or `[gravitypdf id="560f2ef799945"]` with a URL like `http://test.com/?entry=250`
 
 ##### Raw (optional) 
@@ -132,6 +132,6 @@ If the [gravitypdf] shortcode doesn't display a link to the PDF, an error likely
 
 If you don't need a HTML download link to the PDF, but do want to access the raw PDF URL you can use the PDF Mergetags. These are included automatically in the Gravity Forms Merge Tag selector and can be used anywhere merge tags are supported. 
 
-If you'd like the raw signed PDF URL, [use the `raw` attribute](#raw-attribute) with the [gravitypdf] shortcode.
+If you'd like the raw signed PDF URL, [use the `raw` attribute](#raw-optional) with the [gravitypdf] shortcode.
 
 [^1]: The [Page confirmation](#page-confirmation) method requires a little extra configuration than text and redirect confirmations.

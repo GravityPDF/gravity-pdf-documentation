@@ -4,11 +4,11 @@ sidebar_label: "Viewing PDFs"
 description: "Once you've successfully configured a PDF on one of your Gravity Forms you'll be able to view and download the PDFs from the Gravity Forms entries page."
 ---
 
-Once you've successfully configured a PDF on one of your Gravity Forms you'll be able to view and download the PDFs from the [Gravity Forms entries page](https://docs.gravityforms.com/entries/) in your admin area. **If the list is empty you'll need to fill out and submit your form first**.
+Once you've successfully configured a PDF on one of your Gravity Forms you'll be able to view and download the PDFs from the [Gravity Forms entries page](https://docs.gravityforms.com/entries/) in your admin area. **If the list is empty, you'll need to fill out and submit your form first**.
 
 ## Entry List 
 
-![The Gravity Forms Entry List page with View PDF link](https://resources.gravitypdf.com/uploads/2015/11/entry-list-v5.png) When viewing the entries list a "View PDF/View PDFs" or "Download PDF/Download PDFs" link will be added to each entry's quick toolbar. These links get displayed when you hover over an entry. The text View PDF or Download PDF will show up based on your global [*Entry View*](global-settings.md#view) setting.
+![The Gravity Forms Entry List page with View PDF link](https://resources.gravitypdf.com/uploads/2015/11/entry-list-v5.png) When viewing the entries list, a "View PDF/View PDFs" or "Download PDF/Download PDFs" link will be added to each entry's quick toolbar. These links get displayed when you hover over an entry. The text View PDF or Download PDF will show up based on your global [*Entry View*](global-settings.md#entry-view) setting.
 
 ## Entry Details 
 
