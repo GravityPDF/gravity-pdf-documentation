@@ -128,6 +128,13 @@ module.exports = {
       trackingID: 'UA-58177521-3',
       anonymizeIP: true,
     },
+
+    algolia: {
+      appId: 'ZIC2DYW3QP',
+      apiKey: 'e4084362b30d242dd2933b56d6ff2ed7',
+      indexName: 'dev_GravityPDF',
+      searchParameters: {},
+    },
   },
   presets: [
     [
