@@ -20,7 +20,7 @@ While you do have to pay for the software, it's one of those must-have plugins t
 
 ## Gravity Forms Licenses
 
-When purchasing [Gravity Forms](https://rocketgenius.pxf.io/c/1211356/445235/7938) you have a choice of three different licenses which include:
+When purchasing [Gravity Forms](https://rocketgenius.pxf.io/c/1211356/445235/7938), you have a choice of three different licenses which include:
 
 1. _Basic_ – a single-site license with Basic add-ons
 1. _Pro_ – three-site license with Pro add-ons included
@@ -46,4 +46,4 @@ While Gravity PDF might not support all possible third-party Gravity Forms add-o
 
 ## Who to Contact for Support?
 
-The general rule of thumb is if you disable Gravity PDF and the problem persists you need to [contact the Gravity Forms support team](https://rocketgenius.pxf.io/c/1211356/445235/7938?u=https%3A%2F%2Fwww.gravityforms.com%2Fsupport%2F) (you'll need an active license key to get support). For anything PDF related [get in touch with our support team](https://gravitypdf.com/support/).
+The general rule of thumb is if you disable Gravity PDF and the problem persists you need to [contact the Gravity Forms support team](https://rocketgenius.pxf.io/c/1211356/445235/7938?u=https%3A%2F%2Fwww.gravityforms.com%2Fsupport%2F) (you'll need an active license key to get support). For anything PDF related, [get in touch with our support team](https://gravitypdf.com/support/).
