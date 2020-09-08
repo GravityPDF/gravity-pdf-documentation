@@ -26,10 +26,10 @@ All PDF templates have common settings that can be configured, such as font, sec
 * To include the form title, use the `{form_title}` merge tag.
 
 ### Primary Colour 
-* This colour is used in the top-left header triangle, and bottom-right footer triangle. The List and Likert fields also make use of this colour in their table layout.
+* This colour is used in the top-left header triangle and bottom-right footer triangle. The List and Likert fields also make use of this colour in their table layout.
 
 ### Secondary Colour 
-* This colour is used in the top-right header triangle, and the bottom-left footer triangle. The HTML and Product fields also make use of this colour in their layout.
+* This colour is used in the top-right header triangle and the bottom-left footer triangle. The HTML and Product fields also make use of this colour in their layout.
 
 ### Left Footer 
 * This content will be displayed in the bottom left triangle on each page of your document
@@ -70,4 +70,4 @@ Along with the options specific to *Tritan*, the following core settings are als
 
 ## Viewing PDF 
 
-Once you've saved your new PDF you can [view it from the Gravity Forms Entries List page](user-viewing-pdfs.md). Just remember to fill out and submit your form if the entry list is empty.
+Once you've saved your new PDF, you can [view it from the Gravity Forms Entries List page](user-viewing-pdfs.md). Just remember to fill out and submit your form if the entry list is empty.
