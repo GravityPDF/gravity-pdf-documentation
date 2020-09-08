@@ -6,7 +6,7 @@ description: ""
 
 ![Sabre works great with business letters, invoices, etc](https://resources.gravitypdf.com/uploads/edd/2017/03/sabre-2.png)
 
-*Sabre* is a universal PDF template that integrates seamlessly into any Gravity Form you might create. You can [purchase from our PDF Template Shop](https://gravitypdf.com/shop/sabre/). It provides functionality to include both the submitted user info and your important business details through the a highly customisable full-height sidebar.
+*Sabre* is a universal PDF template that integrates seamlessly into any Gravity Form you might create. You can [purchase from our PDF Template Shop](https://gravitypdf.com/shop/sabre/). It provides functionality to include both the submitted user info and your important business details through a highly customisable full-height sidebar.
 
 ## Installation 
 
@@ -75,4 +75,4 @@ Along with the options specific to *Sabre*, the following core settings are also
 
 ## Viewing PDF 
 
-Once you've saved your new PDF you can [view it from the Gravity Forms Entries List page](user-viewing-pdfs.md). Just remember to fill out and submit your form if the entry list is empty.
+Once you've saved your new PDF, you can [view it from the Gravity Forms Entries List page](user-viewing-pdfs.md). Just remember to fill out and submit your form if the entry list is empty.
