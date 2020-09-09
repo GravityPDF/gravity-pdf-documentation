@@ -14,7 +14,7 @@ description: "Beautiful PDF Reports using Gravity Forms and GFChart. Includes 15
 
 ## Prerequisites 
 
-Along with having [Gravity Forms](https://rocketgenius.pxf.io/c/1211356/445235/7938) and [Gravity PDF](user-installation.md) installed on your website, **to use Reports for GFChart, [you need a GFChart ALL license](https://gfchart.com/pricing/?ref=24)** and have the following plugins installed:
+Along with having [Gravity Forms](https://rocketgenius.pxf.io/c/1211356/445235/7938) and [Gravity PDF](user-installation.md) installed on your website, **to use Reports for GFChart [you need a GFChart ALL license](https://gfchart.com/pricing/?ref=24)**, and have the following plugins installed:
 
 1. [GFChart v1.17+](https://gfchart.com/?ref=24) with active license key
 1. GFChart Image Charts v1.0.0-beta1+
