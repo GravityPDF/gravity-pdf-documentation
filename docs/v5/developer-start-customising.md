@@ -53,4 +53,4 @@ For those developers looking for in-depth knowledge about the PDF software that 
 
 We've worked hard to document as many of the filters and actions available in Gravity PDF. This includes changing the output of particular Gravity Form fields to controlling the PDF security (we call it middleware). All filters documentation is located under the *Filter Hooks* category in the sidebar, while actions are found under *Action Hooks*.
 
-If you want to request a new filter or action be added [please open a new ticket on GitHub](https://github.com/GravityPDF/gravity-pdf/issues).
+If you want to request a new filter or action be added, [please open a new ticket on GitHub](https://github.com/GravityPDF/gravity-pdf/issues).
