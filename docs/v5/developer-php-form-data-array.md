@@ -6,7 +6,7 @@ description: "Take full control over your custom PDF templates for Gravity PDF b
 
 ## Introduction 
 
-[Gravity Forms merge tags and conditional shortcodes](developer-mergetags-and-conditional-shortcodes.md) are useful PDF-building tools, but there are drawbacks. For instance, *you cannot create nested conditionals* or do any *post-processing to the entry data* – you aren't able to determine the age of someone by their date of birth, or convert a field to upper case. To achieve this behaviour we need to utilise PHP and the `$form_data` associative array – a formatted version of the `$entry` object.
+[Gravity Forms merge tags, and conditional shortcodes](developer-mergetags-and-conditional-shortcodes.md) are useful PDF-building tools, but there are drawbacks. For instance, *you cannot create nested conditionals* or do any *post-processing to the entry data* – you aren't able to determine the age of someone by their date of birth, or convert a field to upper case. To achieve this behaviour we need to utilise PHP and the `$form_data` associative array – a formatted version of the `$entry` object.
 
 ## Template Tutorial – Part 3 
 
@@ -73,7 +73,7 @@ The conditional shortcodes we used in our *Hello World* template are basic `IF x
 <?php endif; ?>
 ```
 
-You could have also use a `switch` statement if you wanted:
+You could have also used a `switch` statement if you wanted:
 
 ```
 switch ( $location ) {
@@ -148,13 +148,13 @@ PDF templates are just PHP files that are loaded in WordPress. Anything you can 
 
 ## Form Data Array Up Close 
 
-The `$form_data` array is used to access the Gravity Form entry information, but unlike merge tags there's no selector to show you what's actually in the array. That's why we've added a `data` URL parameter which shows you the complete contents of the `$form_data` array.
+The `$form_data` array is used to access the Gravity Form entry information, but unlike merge tags, there's no selector to show you what's actually in the array. That's why we've added a `data` URL parameter which shows you the complete contents of the `$form_data` array.
 
 To see the array, first view a PDF in your admin area. When it loads add `?data=1` to the URL and reload. The address should look similar to this:
 
     https://gravitypdf.com/pdf/12i410491024123/100/?data=1
 
-If we take a look at the `$form_data` array from the [tutorial](#template-tutorial) above you'll see a simple structured associative array:
+If we take a look at the `$form_data` array from the [tutorial](#template-tutorial--part-3) above you'll see a simple structured associative array:
 
     Array
     (
@@ -231,7 +231,7 @@ You will also notice in our `$form_data['field']` array there are three differen
 
 ## Accessing Common Field Data 
 
-The `$form_data` variable is an associative array, so more experienced PHP developers should have no problem accessing the information they need. However large forms can make this array intimidating for first time template builders. Below are examples for how to access the most common Gravity Forms fields.
+The `$form_data` variable is an associative array, so more experienced PHP developers should have no problem accessing the information they need. However, large forms can make this array intimidating for first time template builders. Below are examples of how to access the most common Gravity Forms fields.
 
 ### Standard Fields 
 
