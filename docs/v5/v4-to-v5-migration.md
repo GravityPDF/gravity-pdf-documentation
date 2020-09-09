@@ -43,7 +43,7 @@ The library we use to generate PDF documents is called mPDF and it also got a ma
 
 ### Removed /resources/ Directory 
 
-The `/resources/` directory, which contained assets (images and CSS) used in v3 example template files, has been removed. If your custom template(s) relied on files in this directory, you'll need to move them to the [PDF Working Directory](developer-first-custom-pdf.md#working-directory) and update your template(s).
+The `/resources/` directory, which contained assets (images and CSS) used in v3 example template files, has been removed. If your custom template(s) relied on files in this directory then you'll need to move them to the [PDF Working Directory](developer-first-custom-pdf.md#working-directory) and update your template(s).
 
 ### Gravity PDF Customers 
 
