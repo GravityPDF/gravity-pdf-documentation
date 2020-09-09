@@ -20,7 +20,7 @@ While you do have to pay for the software, it's one of those must-have plugins t
 
 ## Gravity Forms Licenses
 
-When purchasing [Gravity Forms](https://rocketgenius.pxf.io/c/1211356/445235/7938), you have a choice of three different licenses which include:
+When purchasing [Gravity Forms](https://rocketgenius.pxf.io/c/1211356/445235/7938) you have a choice of three different licenses which include:
 
 1. _Basic_ – a single-site license with Basic add-ons
 1. _Pro_ – three-site license with Pro add-ons included
