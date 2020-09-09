@@ -130,9 +130,8 @@ module.exports = {
     },
 
     algolia: {
-      appId: 'ZIC2DYW3QP',
-      apiKey: 'e4084362b30d242dd2933b56d6ff2ed7',
-      indexName: 'dev_GravityPDF',
+      apiKey: '3f8f81a078907e98ed8d3a5bedc3c61c',
+      indexName: 'gravitypdf',
       searchParameters: {},
     },
   },
