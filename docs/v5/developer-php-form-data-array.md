@@ -6,7 +6,7 @@ description: "Take full control over your custom PDF templates for Gravity PDF b
 
 ## Introduction 
 
-[Gravity Forms merge tags, and conditional shortcodes](developer-mergetags-and-conditional-shortcodes.md) are useful PDF-building tools, but there are drawbacks. For instance, *you cannot create nested conditionals* or do any *post-processing to the entry data* – you aren't able to determine the age of someone by their date of birth, or convert a field to upper case. To achieve this behaviour we need to utilise PHP and the `$form_data` associative array – a formatted version of the `$entry` object.
+[Gravity Forms merge tags and conditional shortcodes](developer-mergetags-and-conditional-shortcodes.md) are useful PDF-building tools, but there are drawbacks. For instance, *you cannot create nested conditionals* or do any *post-processing to the entry data* – you aren't able to determine the age of someone by their date of birth, or convert a field to upper case. To achieve this behaviour we need to utilise PHP and the `$form_data` associative array – a formatted version of the `$entry` object.
 
 ## Template Tutorial – Part 3 
 
@@ -148,7 +148,7 @@ PDF templates are just PHP files that are loaded in WordPress. Anything you can 
 
 ## Form Data Array Up Close 
 
-The `$form_data` array is used to access the Gravity Form entry information, but unlike merge tags, there's no selector to show you what's actually in the array. That's why we've added a `data` URL parameter which shows you the complete contents of the `$form_data` array.
+The `$form_data` array is used to access the Gravity Form entry information, but, unlike merge tags, there's no selector to show you what's actually in the array. That's why we've added a `data` URL parameter which shows you the complete contents of the `$form_data` array.
 
 To see the array, first view a PDF in your admin area. When it loads add `?data=1` to the URL and reload. The address should look similar to this:
 
