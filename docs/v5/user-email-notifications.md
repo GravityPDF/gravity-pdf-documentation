@@ -20,7 +20,7 @@ When setting up a notification the *From Email* field **must** contain an email 
 
 ## Dedicated Mail Delivery Service 
 
-Having the correct Gravity Forms mail settings is a good start, but it doesn't guarantee your emails will always hit the mark. At the beginning of the article, we mentioned SPF and DKIM DNS records. These two records are used by mail servers to verify an email is legitimate and hasn't been sent by a spammer – they're like email border control. All quality mail delivery services will instruct you in how to configure these two DNS records and verify they are set up correctly. The best part is, once you start sending emails through the mail service they will correctly sign all outgoing mail automatically (like an official stamp, or seal of approval) and log the status of all emails.
+Having the correct Gravity Forms mail settings is a good start, but it doesn't guarantee your emails will always hit the mark. At the beginning of the article we mentioned SPF and DKIM DNS records. These two records are used by mail servers to verify an email is legitimate and hasn't been sent by a spammer – they're like email border control. All quality mail delivery services will instruct you in how to configure these two DNS records and verify they are set up correctly. The best part is, once you start sending emails through the mail service they will correctly sign all outgoing mail automatically (like an official stamp, or seal of approval) and log the status of all emails.
 
 ## Which Service to Choose? 
 
@@ -28,7 +28,7 @@ There are a number of premium mail services you can choose from, including [Send
 
 ## Setting up Mailgun 
 
-While Mailgun touts, they are the "Email Service For Developers" there's no need to be worried. Yes, they do have a lot of weird looking code samples during the sign up process, but you can ignore all that. We're going to configure WordPress to send mail using SMTP.
+While Mailgun touts they are the "Email Service For Developers" there's no need to be worried. Yes, they do have a lot of weird looking code samples during the sign up process, but you can ignore all that. We're going to configure WordPress to send mail using SMTP.
 
 1.  First, install the [WP Mail SMTP plugin](https://wordpress.org/plugins/wp-mail-smtp/) on your WordPress website and activate the plugin. A new settings page called `Email` will be available under the `Settings` tab, but we're not going to configure the plugin just yet.
 2.  Head to [Mailgun's signup page](https://mailgun.com/signup) and fill out the form. It's your standard name, email, password type form. ![Mailgun Signup Page](https://resources.gravitypdf.com/uploads/2015/10/initial-signup.png)
@@ -50,11 +50,11 @@ While Mailgun touts, they are the "Email Service For Developers" there's no need
 
 7.  At this stage, you should also activate your Mailgun account. To do this, find the email they sent to the address provided during signup and click the activation link.
 
-8.  Once your DNS settings are correctly setup we need to get your SMTP details so we can configure WordPress. Under the `Domain Information` section in Mailgun is a link to *Manage SMTP credentials*. Follow the link, and you will be taken to your SMTP management area. Click the gear icon next to the existing `postmaster` user and set a password. ![SMTP Setup Link](https://resources.gravitypdf.com/uploads/2015/10/manage-credentials.png) ![Set new Mailgun SMTP password](https://resources.gravitypdf.com/uploads/2015/10/set-smtp-password.png)
+8.  Once your DNS settings are correctly setup we need to get your SMTP details so we can configure WordPress. Under the `Domain Information` section in Mailgun is a link to *Manage SMTP credentials*. Follow the link and then you will be taken to your SMTP management area. Click the gear icon next to the existing `postmaster` user and set a password. ![SMTP Setup Link](https://resources.gravitypdf.com/uploads/2015/10/manage-credentials.png) ![Set new Mailgun SMTP password](https://resources.gravitypdf.com/uploads/2015/10/set-smtp-password.png)
 
 9.  Now we can go back to WordPress, navigate to `Settings -> Email` and fill in the credentials. Add a default *From Email* and *From Name* (remembering the instructions we provided in the [Gravity Forms](#gravityforms) section), then go down to the SMTP Options section and use the details provided on the Mailgun SMTP Credentials page. The *SMTP Host* should be `smtp.mailgun.org`, and the *SMTP Port* is `465`. Set *Encryption* to `Use SSL encryption`, set *Authentication* to `Yes: Use SMTP authentication`, and enter your SMTP username and password credentials (the one you set up in the previous step). When done, click `Save Changes`.
 
-10. Finally, you can test everything works correctly by sending a test email. This can be done straight from the WordPress SMTP plugin admin page and is found just under the form you completed in the last step. If everything was successful, the result should be `bool(true)`. If it wasn't, review the `SMTP debugging output` for hints on what went wrong.
+10. Finally, you can test everything works correctly by sending a test email. This can be done straight from the WordPress SMTP plugin admin page and is found just under the form you completed in the last step. If everything was successful the result should be `bool(true)`. If it wasn't, review the `SMTP debugging output` for hints on what went wrong.
 
 Now sit back and enjoy the fact your emails have the best chance of reaching their intended destination.
 
