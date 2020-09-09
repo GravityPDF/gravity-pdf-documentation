@@ -97,7 +97,7 @@ Once you have copied the above into your config file, you'll need to rename the 
 2.  Any hyphens (-) should be replaced with underscores (\_)
 3.  The class name should be in sentence case (the first character of each word separated by an underscore (\_) should be upper case)
 
-For instance, if you created a custom template called `business-letter.php`, the class name should be `Business_Letter`:
+For instance, if you created a custom template called `business-letter.php` then the class name should be `Business_Letter`:
 
 ```
 class Business_Letter implements Helper_Interface_Config, Helper_Interface_Setup_TearDown {
