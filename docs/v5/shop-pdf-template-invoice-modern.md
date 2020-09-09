@@ -164,10 +164,10 @@ All text in the PDF can easily be changed below. By default, the labels are disp
 * Australian businesses registered for GST should change this to "Tax Invoice"
 
 #### Date (2) 
-* The label displayed next to the [Invoice Date](#date-format). Leave blank to disable.
+* The label displayed next to the [Invoice Date](#date-format-4). Leave blank to disable.
 
 #### Invoice Number (3) 
-* The label displayed next to the [Invoice Number](#invoice-number). Leave blank to disable.
+* The label displayed next to the [Invoice Number](#invoice-number-2). Leave blank to disable.
 
 #### Invoice Total Cost Summary (4) 
 * The label displayed next to the Invoice Total in the summary section. Leave blank to disable.
