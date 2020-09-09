@@ -20,13 +20,13 @@ The software ships with conservative defaults that provides a well-balanced mix 
 
 1.  Administrator and Super Administrator users (if running multisite) can access all PDFs.
 
-2.  Any user with a [WordPress role](https://codex.wordpress.org/Roles_and_Capabilities) that has the [`gravityforms_view_entries` capability](https://www.gravityhelp.com/documentation/article/role-management-guide/) (by default this is only Administrators and Super Administrators) can access all PDFs. You can change this behaviour by modifying the [User Restrictions](user-global-settings.md#user-restriction) option in the global settings or adding the `gravityforms_view_entries` capability to an existing role (use a [role editor plugin](https://wordpress.org/plugins/search.php?q=role+editor)).
+2.  Any user with a [WordPress role](https://codex.wordpress.org/Roles_and_Capabilities) that has the [`gravityforms_view_entries` capability](https://www.gravityhelp.com/documentation/article/role-management-guide/) (by default this is only Administrators and Super Administrators) can access all PDFs. You can change this behaviour by modifying the [User Restrictions](user-global-settings.md#user-restriction) option in the global settings, or adding the `gravityforms_view_entries` capability to an existing role (use a [role editor plugin](https://wordpress.org/plugins/search.php?q=role+editor)).
 
 3.  The original Gravity Form entry owner (the end-user who completed the form) can access their PDF. The protocols used to determine if a user is the owner include:
-    - The software will compare the user's IP address against the one stored with the entry, and if they match, the PDF will be displayed. Because [IP addresses do change](http://whatismyipaddress.com/keeps-changing), a time-based security measure has also been implemented which only allows logged-out user access to the PDF for 20 minutes by default after submitting the form. This behaviour can be changed using the [Logged Out Timeout](user-global-settings.md#logged-out-timeout) option in the global settings.
+    - The software will compare the user's IP address against the one stored with the entry and, if they match, the PDF will be displayed. Because [IP addresses do change](http://whatismyipaddress.com/keeps-changing), a time-based security measure has also been implemented which only allows logged-out user access to the PDF for 20 minutes by default after submitting the form. This behaviour can be changed using the [Logged Out Timeout](user-global-settings.md#logged-out-timeout) option in the global settings.
     - If the user's IP doesn't match, or the 20-minute timeout window has expired, AND the entry owner was originally logged in when completing the form they will be redirected to a login page. Once authenticated, the software will compare the user's ID with the one stored in the entry. If they match, the PDF will be displayed.
     - If a user is already logged in, we'll do the user ID comparison without the need to login again.
-    - To correctly test the owner security policy, you'll need to submit a new entry using a web proxy like [hide.me](https://hide.me/en/proxy) so that the IP address differs from your own.
+    - To correctly test the owner security policy you'll need to submit a new entry using a web proxy like [hide.me](https://hide.me/en/proxy) so that the IP address differs from your own.
 
 :::caution
 By default, Gravity Forms will not handle proxy-based IP addresses automatically (Cloudflare, Load Balancer and WAF Firewalls are affected). In such cases our IP-based access policy mentioned below will not work. If you are affected you can [use the `gform_ip_address` filter](https://docs.gravityforms.com/gform_ip_address/) to return the correct user IP.
@@ -61,7 +61,7 @@ If you are collecting sensitive data from your users, there are a number of best
 1.  Install an [SSL certificate](https://www.namecheap.com/support/knowledgebase/article.aspx/786/38/what-is-an-ssl-certificate-and-what-is-it-used-for) and correctly enable HTTPS on your website. For better trust between you and your users, [you might opt for an EV Certificate](https://www.namecheap.com/security/ssl-certificates/extended-validation.aspx). [Let's Encrypt](https://letsencrypt.org/) offer free SSL certificates for those with a dedicated server, and many web hosts now offer free certificates via Let's Encrypt. Test your HTTPS implementation by [running an SSL Server test](https://www.ssllabs.com/ssltest/) – aim for an "A+".
 2.  Use dedicated web hosting (or similar). Ensure the hosting service you choose meets your country's regulations in regard to the data being collected – an example being [Amazon's Cloud Compliance](http://aws.amazon.com/compliance/).
 
-3.  If you collect and store credit card details on your server, you must [be PCI-compliant](https://www.pcisecuritystandards.org/merchants/). Even if you aren't storing payment details, the user information you are storing may be sensitive enough that you could follow PCI best-practice.
+3.  If you collect and store credit card details on your server you must [be PCI-compliant](https://www.pcisecuritystandards.org/merchants/). Even if you aren't storing payment details, the user information you are storing may be sensitive enough that you could follow PCI best-practice.
 
 4.  Encrypt your dedicated server's file system as well as the database.
 
@@ -75,4 +75,4 @@ If you are collecting sensitive data from your users, there are a number of best
 
 9.  Install security plugins like [Sucuri Security](https://wordpress.org/plugins/sucuri-scanner/), [Wordfence Security](https://wordpress.org/plugins/wordfence/) or [iThemes Security](https://wordpress.org/plugins/better-wp-security/) (to prevent conflicts only install and run one of these security plugins).
 
-The list above is just some of the ways you can keep your website and user data secure. Remember, security is not "set and forget". It is an on-going process, and you should remain ever vigilant.
+The list above is just some ways you can keep your website and user data secure. Remember, security is not "set and forget". It is an ongoing process, and you should remain ever vigilant.
