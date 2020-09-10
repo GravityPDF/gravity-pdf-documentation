@@ -6,7 +6,7 @@ description: "By default mPDF temporary files are stored in the system temporary
 
 ## Description 
 
-By default mPDF temporary files are stored in the system temporary directory. This location was chosen to work around restrictions preventing the font cache being saved to disk in public folders on some hosting providers. 
+By default, mPDF temporary files are stored in the system temporary directory. This location was chosen to work around restrictions preventing the font cache being saved to disk in public folders on some hosting providers. 
 
 ## Parameters 
 
@@ -25,7 +25,7 @@ add_filter( 'gfpdf_mpdf_tmp_location', function( $path ) {
 
 ```
 
-Once you've verified the filter works correctly you should manually remove the old directory.
+Once you've verified the filter works correctly, you should manually remove the old directory.
 
 ## Source Code 
 
