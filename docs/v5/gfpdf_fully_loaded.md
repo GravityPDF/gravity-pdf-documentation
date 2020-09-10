@@ -6,7 +6,7 @@ description: "This action is run right after Gravity PDF has fully loaded (which
 
 ## Description 
 
-This action is run right after Gravity PDF has fully loaded (which happens on the `after_setup_theme` hook after all the plugin checks have passed). If you want to create a plugin to enhance Gravity PDF we recommend using this action to initialise. 
+This action is run right after Gravity PDF has fully loaded (which happens on the `after_setup_theme` hook after all the plugin checks have passed). If you want to create a plugin to enhance Gravity PDF, we recommend using this action to initialise. 
 
 ## Parameters 
 
@@ -15,7 +15,7 @@ This action is run right after Gravity PDF has fully loaded (which happens on th
 
 ## Usage 
 
-The snippet below shows you how to use this filter to initialise your plugin. The code assumes you've created and included a class called `Prefix_Custom_Gravity_PDF_Plugin` which has an `init` method. You'll want to change this to suit your plugin's structure.
+The snippet below shows you how to use this filter to initialise your plugin. The code assumes you've created and included a class called `Prefix_Custom_Gravity_PDF_Plugin`, which has an `init` method. You'll want to change this to suit your plugin's structure.
 
 ```
 add_action( 'gfpdf_fully_loaded', 'prefix_intialise_custom_plugin' );
