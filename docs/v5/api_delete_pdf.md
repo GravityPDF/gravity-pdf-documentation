@@ -6,7 +6,7 @@ description: "This method will permanently delete an existing PDF's settings. Th
 
 ## Description 
 
-This method will permanently delete an existing PDF's settings. **This cannot be undone so use it carefully**.
+This method will permanently delete an existing PDF's settings. **This cannot be undone, so use it carefully**.
 
 ## Version 
 
