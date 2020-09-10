@@ -8,7 +8,7 @@ description: "Background colours, gradients and images can be applied to all blo
 
 Background colours, gradients and images can be applied to all block HTML elements in the PDF, including the whole page, while inline HTML elements only support the background colour property.
 
-On block-level elements there's good support for most image CSS properties which give you precise control over background images, image resolution, opacity and transparency.
+On block-level elements, there's good support for most image CSS properties which give you precise control over background images, image resolution, opacity and transparency.
 
 ![Showing off the different background types supported](https://resources.gravitypdf.com/uploads/2015/11/backgrounds.png)
 
@@ -65,7 +65,7 @@ This is inline content <span style="background: yellow">that should be highlight
 
 Both background linear and radial gradients are supported and can be applied using the `background-image` property, which follows the CSS3-specification.
 
-Most properties in this specification are supported, including: multiple colour-stops, opacity, gradient axis (linear) and shape and extent (radial). However some gradient line definitions like `to right corner` or `to bottom left` don't work as expected – but `right`, `left`, or `45degs` works correctly.
+Most properties in this specification are supported, including: multiple colour-stops, opacity, gradient axis (linear) and shape and extent (radial). However, some gradient line definitions like `to right corner` or `to bottom left` don't work as expected – but `right`, `left`, or `45degs` works correctly.
 
 **Linear Gradient Examples**
 
