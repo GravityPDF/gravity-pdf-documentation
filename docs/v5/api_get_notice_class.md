@@ -6,7 +6,7 @@ description: "If you extend Gravity PDF, this methods allows you to easily displ
 
 ## Description 
 
-If you extend Gravity PDF, this methods allows you to easily display a message or error to the user in the WP Admin area. When using this class you'll need to trigger the message/error before the `admin_notices` or `network_admin_notices` WordPress hooks.
+If you extend Gravity PDF, this methods allows you to easily display a message or error to the user in the WP Admin area. When using this class, you'll need to trigger the message/error before the `admin_notices` or `network_admin_notices` WordPress hooks.
 
 ## Version 
 
@@ -42,7 +42,7 @@ add_action( 'admin_init', function() {
                 return;
             }
 
-            /* User passed all authentication checks so lets process the action */
+            /* User passed all authentication checks, so lets process the action */
 
             /* Action was successful so lets tell the user */
             $notice->add_notice( __( 'Action successful.', 'prefix-text-domain' ) );
@@ -54,4 +54,4 @@ add_action( 'admin_init', function() {
 
 ## Source Code 
 
-This method is located in `api.php` and the notice class can be found in `src/helper/Helper_Notices.php`
+This method is located in `api.php`, and the notice class can be found in `src/helper/Helper_Notices.php`
