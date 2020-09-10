@@ -6,15 +6,15 @@ description: "When Gravity Forms is in No-Conflict mode, along with enqueuing JS
 
 ## Description 
 
-When Gravity Forms is in [No-Conflict mode](https://www.gravityhelp.com/documentation/article/enabling-no-conflict-mode/), along with [enqueuing JS](https://developer.wordpress.org/reference/functions/wp_enqueue_script/) using `wp_enqueue_script()` you also need to specifically register scripts so they are loaded on Gravity Forms pages. 
+When Gravity Forms is in [No-Conflict mode](https://docs.gravityforms.com/enabling-no-conflict-mode/), along with [enqueuing JS](https://developer.wordpress.org/reference/functions/wp_enqueue_script/) using `wp_enqueue_script()` you also need to specifically register scripts so they are loaded on Gravity Forms pages. 
 
-We've ensured any enqueued scripts with a handle beginning with "gfpdf_js" are automatically registered, but you may need to register other WordPress scripts. This filter allows you to easily register a WordPress JS handler so it's included on No Conflict Gravity Form pages. 
+We've ensured any enqueued scripts with a handle beginning with "gfpdf_js" are automatically registered, but you may need to register other WordPress scripts. This filter allows you to easily register a WordPress JS handler, so it's included on No Conflict Gravity Form pages. 
 
 ## Parameters 
 
 ### $items | array
 *  The list of JS handlers currently being registered with Gravity Form's No-Conflict mode. 
-*  By default any JS handler beginning with "gfpdf_js", and already enqueued, are registered on Gravity Forms pages. The following WordPress scripts are also registered on *Gravity PDF pages*:
+*  By default, any JS handler beginning with "gfpdf_js", and already enqueued, are registered on Gravity Forms pages. The following WordPress scripts are also registered on *Gravity PDF pages*:
 
 ```language-php
 $default_scripts = array(
