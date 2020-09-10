@@ -14,13 +14,13 @@ The CSS property `float` is *partially* supported, allowing block elements to be
 
 3.  Floats inside floats are not supported (with the exception of images)
 
-4.  Text next to floats should wrap correctly but backgrounds and borders may overlap
+4.  Text next to floats should wrap correctly, but backgrounds and borders may overlap
 
 5.  Margins can create issues for floats. Use padding instead.
 
 6.  You should manually clear all floats to prevent issues when the floated element is not the last elements in the document
 
-7.  The standard box-model applies, so if you have two floats with a 50% width and either of them has padding, margin or borders they will not fit side-by-side.
+7.  The standard box-model applies, so if you have two floats with a 50% width and either of them has padding, margin or borders, they will not fit side-by-side.
 
 ## Columns 
 
@@ -62,7 +62,7 @@ As you can see you've applied a 49% width to both containers, which adds up to 9
 
 ## Borders and Padding 
 
-To apply border and padding to the floated elements you need to create an inner container which you'll then target with the appropriate CSS. Continuing on from our previous example, you can apply borders and padding to the inner block without effecting the floats:
+To apply border and padding to the floated elements, you need to create an inner container which you'll then target with the appropriate CSS. Continuing on from our previous example, you can apply borders and padding to the inner block without affecting the floats:
 
 ```html
 <style>
