@@ -52,4 +52,4 @@ add_action( 'init', function() {
 
 ## Source Code 
 
-This method is located in `api.php` and the data class can be found in `src/helper/Helper_Data.php`
+This method is located in `api.php`, and the data class can be found in `src/helper/Helper_Data.php`
