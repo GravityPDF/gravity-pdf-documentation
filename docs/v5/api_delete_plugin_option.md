@@ -1,7 +1,7 @@
 ---
 title: "Gravity PDF API – delete_plugin_option()"
 sidebar_label: "delete_plugin_option()"
-description: "This method allows you to deleted a global Gravity PDF setting. This is permanent and cannot be undone."
+description: "This method allows you to delete a global Gravity PDF setting. This is permanent and cannot be undone."
 ---
 
 ## Description 
@@ -20,7 +20,7 @@ This method was introduced in Gravity PDF 4.0.
 ## Return 
 
 ### boolean
-* True on success, false if database failed to update .
+* True on success, false if database failed to update.
 
 ## Usage 
 
