@@ -8,7 +8,7 @@ description: ""
 
 ## Description 
 
-By default, Gravity PDF will group products in a table at the end of a PDF. This filter allows you hide that table in the PDF.
+By default, Gravity PDF will group products in a table at the end of a PDF. This filter allows you to hide that table in the PDF.
 
 ## Version 
 
