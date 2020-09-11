@@ -57,6 +57,12 @@ img + em {
   display: block;
 }
 
-a.footer__link-item:hover {
+footer a {
+  color: var(--ifm-footer-link-color);
+  line-height: 2;
+}
+
+footer a:hover,
+footer a.footer__link-item:hover {
   color: var(--ifm-color-primary-dark-mode);
 }

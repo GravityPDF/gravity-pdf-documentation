@@ -64,7 +64,7 @@ module.exports = {
             },
 
             {
-              label: 'Demo Site',
+              label: 'Gravity PDF Demo',
               href: 'https://demo.gravitypdf.com/',
             },
           ],
@@ -112,7 +112,7 @@ module.exports = {
           ],
         },
       ],
-      copyright: `Copyright © Gravity PDF. All Rights Reserved.`,
+      copyright: `Documentation Licensed under <a href="https://github.com/GravityPDF/gravity-pdf-documentation/LICENSE.md">CC BY-SA 4.0</a>`,
     },
     prism: {
       defaultLanguage: 'php',
