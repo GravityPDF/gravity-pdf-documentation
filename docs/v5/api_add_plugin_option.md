@@ -18,7 +18,7 @@ This method was introduced in Gravity PDF 4.0.
 * The global PDF setting ID. Best to prefix this value to prevent conflict.
 
 ### $value \| mixed
-* What ever value you want to store
+* Whatever value you want to store
 
 ## Return 
 
