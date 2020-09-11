@@ -6,7 +6,7 @@ description: "Get access to the common class methods uses in the Gravity PDF plu
 
 ## Description
 
-Get access to the common class methods uses in the Gravity PDF plugin. You might use methods like `is_gfpdf_page()` to check if the current page being loaded is a Gravity PDF page, or get the current Gravity PDF field class name based on the field type. There's more than 25 different methods to use so we recommend reviewing the `src/helper/Helper_Misc.php` file for full details.
+Get access to the common class methods uses in the Gravity PDF plugin. You might use methods like `is_gfpdf_page()` to check if the current page being loaded is a Gravity PDF page, or get the current Gravity PDF field class name based on the field type. There's more than 25 different methods to use, so we recommend reviewing the `src/helper/Helper_Misc.php` file for full details.
 
 ## Version
 
@@ -37,4 +37,4 @@ add_action( 'init', function() {
 
 ## Source Code
 
-This method is located in `api.php` and the misc class can be found in `src/helper/Helper_Misc.php`.
+This method is located in `api.php`, and the misc class can be found in `src/helper/Helper_Misc.php`.
