@@ -8,7 +8,7 @@ description: "This filter can be used to completely change the standard HTML mar
 
 This filter can be used to change the inner HTML mark-up in Core and Universal templates that's wrapped around most field – section fields, page fields and the product table are not run through this filter. This mark-up is then sent to the PDF renderer. You can target different field type (like textarea, radio and select) or just modify a single field. Your changes can also be applied to all forms or some. 
 
-In most cases [the `gfpdf_pdf_field_content` filter](gfpdf_pdf_field_content.md) will be more suitable.
+In most cases, [the `gfpdf_pdf_field_content` filter](gfpdf_pdf_field_content.md) will be more suitable.
 
 ## Parameters 
 
