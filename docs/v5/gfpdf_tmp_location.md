@@ -6,14 +6,14 @@ description: "By default temporary files Gravity PDF creates are stored in the t
 
 ## Description 
 
-By default, temporary files Gravity PDF created are stored in the `tmp` folder inside the [PDF working directory](developer-first-custom-pdf.md#working-directory). As we discussed [in the PDF security documentation](user-pdf-security.md#filesystem) this directory is protected from direct access by a `.htaccess` file. However, this only works for web servers running Apache or Litespeed. This filter allows you to move this folder to a private directory that isn't accessible from the web, ensuring your PDFs stay private.
+By default, temporary files Gravity PDF create are stored in the `tmp` folder inside the [PDF working directory](developer-first-custom-pdf.md#working-directory). As we discussed [in the PDF security documentation](user-pdf-security.md#filesystem) this directory is protected from direct access by a `.htaccess` file. However, this only works for web servers running Apache or Litespeed. This filter allows you to move this folder to a private directory that isn't accessible from the web, ensuring your PDFs stay private.
 
 :::info
 Your web server needs write access to the folder you move this directory to.
 :::
 
 :::note
-**Do you host with WP Engine?** Instead of using the filter below, to protect your PDFs, you will need to [setup a Redirect Rule](https://wpengine.com/support/redirect/) in your control panel. Set the *Source* to `^/wp-content/uploads/PDF_EXTENDED_TEMPLATES/tmp/.*` and the *Destination* to your home page.
+**Do you host with WP Engine?** Instead of using the filter below, to protect your PDFs you will need to [setup a Redirect Rule](https://wpengine.com/support/redirect/) in your control panel. Set the *Source* to `^/wp-content/uploads/PDF_EXTENDED_TEMPLATES/tmp/.*` and the *Destination* to your home page.
 ::: 
 
 ## Parameters 
