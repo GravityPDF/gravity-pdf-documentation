@@ -6,7 +6,7 @@ description: "Our options class handles all the settings registration and displa
 
 ## Description 
 
-Our options class handles all the settings registration and display, as well as providing a full CRUD (create, read, update, delete) for our stored global and individual PDF settings. All the CRUD functionality is available directly through our API so you won't need to call it from the options class directly. For full details about utilising the options class we recommend reviewing the `src/helper/abstract/Helper_Abstract_Options.php` file.
+Our options class handles all the settings registration and display, as well as providing a full CRUD (create, read, update, delete) for our stored global and individual PDF settings. All the CRUD functionality is available directly through our API so you won't need to call it from the options class directly. For full details about utilising the options class, we recommend reviewing the `src/helper/abstract/Helper_Abstract_Options.php` file.
 
 ## Version 
 
@@ -34,4 +34,4 @@ add_action( 'init', function() {
 
 ## Source Code 
 
-This method is located in `api.php` and the options class can be found in `src/helper/abstract/Helper_Abstract_Options.php`.
+This method is located in `api.php`, and the options class can be found in `src/helper/abstract/Helper_Abstract_Options.php`.
