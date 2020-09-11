@@ -18,7 +18,7 @@ This method was introduced in Gravity PDF 4.0.
 * The raw Gravity PDF Entry
 
 ### $return \| boolean \| optional
-* Set to true to have the product table HTML returned. By default this is false and will automatically be echoed.
+* Set to true to have the product table HTML returned. By default, this is false and will automatically be echoed.
 
 ## Return 
 
