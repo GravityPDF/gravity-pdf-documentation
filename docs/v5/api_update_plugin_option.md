@@ -1,7 +1,7 @@
 ---
 title: "Gravity PDF API – update_plugin_option()"
 sidebar_label: "update_plugin_option()"
-description: "This method allows you to update a global Gravity PDF setting. If the option doesn't exist it will be added. "
+description: "This method allows you to update a global Gravity PDF setting. If the option doesn't exist, it will be added. "
 ---
 
 ## Description
@@ -18,7 +18,7 @@ This method was introduced in Gravity PDF 4.0.
 * The global PDF setting ID. Best to prefix this value to prevent conflict.
 
 ### $value \| mixed
-* What ever value you want to store.
+* Whatever value you want to store.
 
 ## Return
 
