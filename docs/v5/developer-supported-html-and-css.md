@@ -11,17 +11,17 @@ The PDF software we use to generate documents, [mPDF](http://mpdf.github.io/), i
 
 ## HTML Support 
 
-Most HTML 4 and 5 tags are recognised and, to some extent, supported in mPDF – including nested tables. For the best results you should [follow the XHTML specification](http://www.w3.org/TR/xhtml1/) and create valid HTML when building your PDF templates. A lot of display issues arise from a missing closing tag, or incorrectly nested HTML.
+Most HTML 4 and 5 tags are recognised and, to some extent, supported in mPDF – including nested tables. For the best results, you should [follow the XHTML specification](http://www.w3.org/TR/xhtml1/) and create valid HTML when building your PDF templates. A lot of display issues arise from a missing closing tag, or incorrectly nested HTML.
 
-Along with the standardised HTML tag support, there is also [custom HTML tags which mPDF introduced](http://mpdf.github.io/reference/html-control-tags/overview.html) to give you more control over your PDF. These include header and footers, page breaks, bookmarks, table of contents and annotations. One of the biggest quirks you'll need to get use to is that all HTML elements are hard coded as either `block` or `inline` elements and they cannot be changed using the CSS `display` property.
+Along with the standardised HTML tag support, there is also [custom HTML tags which mPDF introduced](http://mpdf.github.io/reference/html-control-tags/overview.html) to give you more control over your PDF. These include header and footers, page breaks, bookmarks, table of contents and annotations. One of the biggest quirks you'll need to get used to is that all HTML elements are hard coded as either `block` or `inline` elements and they cannot be changed using the CSS `display` property.
 
-For full details on supported HTML tags and attributes [we recommend you review the mPDF manual](http://mpdf.github.io/html-support/html-tags.html).
+For full details on supported HTML tags and attributes, [we recommend you review the mPDF manual](http://mpdf.github.io/html-support/html-tags.html).
 
 ## CSS Support 
 
 CSS styles can be declared in an external stylesheet and included via `<link />` or `@media`, included inline using `<style></style>` tags or using the `style` attribute directly on a HTML element: `<div style="background: #EEE;">`.
 
-Because HTML elements are hard coded to `block` or `inline` only certain CSS can be applied to particular HTML. If you're creating a custom template we strongly recommend you review the mPDF manual [on supported CSS for each HTML element](http://mpdf.github.io/css-stylesheets/supported-css.html).
+Because HTML elements are hard coded to `block` or `inline` only certain CSS can be applied to particular HTML. If you're creating a custom template, we strongly recommend you review the mPDF manual [on supported CSS for each HTML element](http://mpdf.github.io/css-stylesheets/supported-css.html).
 
 The following CSS selectors can be used in mPDF. Lower styles and attributes in the list will override higher styles and attributes.
 
@@ -47,7 +47,7 @@ An area mPDF falls down in is its cascading CSS support. There's limited support
 -   `a#my-id {...}`
 -   `span.my-class {...}`
 
-That's not to say you cannot apply styles to inline elements. You just cannot use them in a cascading fashion. To get around this issue we recommend applying ID and class attributes to all elements you want to style and target them directly.
+That's not to say you cannot apply styles to inline elements. You just cannot use them in a cascading fashion. To get around this issue, we recommend applying ID and class attributes to all elements you want to style and target them directly.
 
 -   `#my-id {...}`
 -   `.my-class {...}`
@@ -61,6 +61,6 @@ Only block-level elements with fixed-widths can be floated in mPDF. Keep in mind
 
 ### Fixed Position Limitations 
 
-Only top-level block elements can be `fixed` or `absolute` positioned. Fixed-position or floating elements nested inside other fixed-position or floating elements are not supported. Fixed elements will be restricted to inside the page margins, while absolute elements treats the entire page as the container.
+Only top-level block elements can be `fixed` or `absolute` positioned. Fixed-position or floating elements nested inside other fixed-position or floating elements are not supported. Fixed elements will be restricted to inside the page margins, while absolute elements treat the entire page as the container.
 
 [You can read more about fixed-positioning in the mPDF documentation](http://mpdf.github.io/what-else-can-i-do/fixed-position-blocks.html).
