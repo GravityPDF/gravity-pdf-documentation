@@ -13,7 +13,7 @@ description: ""
 
 ## Limitations 
 
-As an *Invoice* PDF template, *Invoice Modern* can be used with any Gravity Forms that **include Product fields**. You have access to your form data through Gravity Forms Merge Tags. For more information, see the [Gravity Forms Merge Tags documentation](https://www.gravityhelp.com/documentation/article/merge-tags/).
+As an *Invoice* PDF template, *Invoice Modern* can be used with any Gravity Forms that **include Product fields**. You have access to your form data through Gravity Forms Merge Tags. For more information, see the [Gravity Forms Merge Tags documentation](https://docs.gravityforms.com/category/user-guides/merge-tags-getting-started/).
 
 ## Configuring 
 
@@ -86,7 +86,7 @@ The invoice PDF configuration is split up into six sections:
 
 ![The buyers info guide](https://resources.gravitypdf.com/uploads/2017/04/buyer-info-1.png)
 
-The buyer information will usually be included using [Merge Tags](https://www.gravityhelp.com/documentation/article/merge-tags/).
+The buyer information will usually be included using [Merge Tags](https://docs.gravityforms.com/category/user-guides/merge-tags-getting-started/).
 
 #### Buyer Name (1) 
 * Enter the name of the individual or the company making the purchase.
