@@ -67,6 +67,10 @@ module.exports = {
               label: 'Gravity PDF Demo',
               href: 'https://demo.gravitypdf.com/',
             },
+
+            {
+              html: 'Affiliate links to Gravity Forms and third party Gravity Forms plugins are used throughout this website.'
+            }
           ],
         },
         {
