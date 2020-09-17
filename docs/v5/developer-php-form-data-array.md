@@ -653,7 +653,7 @@ if ( sizeof( $form_data['field'][32] ) > 0 ) {
     echo $form_data['field'][32]['description'];
 
     /* Output image to PDF */
-    if ( is_file( $form_data['field'][32]['path' ) ) {
+    if ( is_file( $form_data['field'][32]['path'] ) ) {
         echo '<img src="'. $form_data['field'][32]['path'] . '" width="300" />'; /* best to use the path and check it exists on the server first */
     }
 }
