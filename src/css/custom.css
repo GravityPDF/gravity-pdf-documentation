@@ -26,6 +26,12 @@
   --ifm-footer-background-color: #2b2b2b;
 }
 
+@media screen and (min-width: 1024px) {
+  :root {
+    --docusaurus-announcement-bar-height: 45px !important;
+  }
+}
+
 html[data-theme="dark"] {
   --ifm-color-primary: var(--ifm-color-primary-dark-mode);
 }
@@ -69,4 +75,21 @@ footer a {
 footer a:hover,
 footer a.footer__link-item:hover {
   color: var(--ifm-color-primary-dark-mode);
+}
+
+/* Announcement Bar */
+.announcementBarContent_node_modules-\@docusaurus-theme-classic-lib-theme-AnnouncementBar- {
+  font-weight: bold;
+}
+
+.announcementBarContent_node_modules-\@docusaurus-theme-classic-lib-theme-AnnouncementBar- a {
+  display: inline-block;
+  background: #FE620F;
+  padding: 5px 10px;
+  border-radius: 5px;
+  text-decoration: none !important;
+}
+
+.announcementBarContent_node_modules-\@docusaurus-theme-classic-lib-theme-AnnouncementBar- a:hover {
+  background: #FF1B46;
 }

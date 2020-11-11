@@ -138,6 +138,14 @@ module.exports = {
       indexName: 'gravitypdf',
       searchParameters: {},
     },
+
+    announcementBar: {
+      id: 'bundle-giveaway', // Any value that will identify this message.
+      content:
+        'Massive Gravity Plugin Bundle Giveaway! $1000+ Worth of Software to Win <a target="_blank" rel="noopener noreferrer" href="https://gravitypdf.com/gravity-bundle-giveaway/?utm_source=gravitypdf-docs&utm_medium=giveaway&utm_campaign=2020-bundle-promo">Free Entry</a>',
+      backgroundColor: '#1D2475', // Defaults to `#fff`.
+      textColor: '#FFFFFF', // Defaults to `#000`.
+    },
   },
   presets: [
     [
