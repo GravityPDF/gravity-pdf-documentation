@@ -78,18 +78,15 @@ footer a.footer__link-item:hover {
 }
 
 /* Announcement Bar */
-.announcementBarContent_node_modules-\@docusaurus-theme-classic-lib-theme-AnnouncementBar- {
-  font-weight: bold;
-}
-
-.announcementBarContent_node_modules-\@docusaurus-theme-classic-lib-theme-AnnouncementBar- a {
+div[class^="announcementBar"] a {
   display: inline-block;
   background: #FE620F;
   padding: 5px 10px;
   border-radius: 5px;
   text-decoration: none !important;
+  font-weight: bold;
 }
 
-.announcementBarContent_node_modules-\@docusaurus-theme-classic-lib-theme-AnnouncementBar- a:hover {
+div[class^="announcementBar"] a:hover {
   background: #FF1B46;
 }
