@@ -1,11 +1,11 @@
 ---
-title: "Business Letter #1 Template: How to Install and Configure"
-sidebar_label: "Business Letter #1"
+title: "Montgomery Certificate Template: How to Install and Configure"
+sidebar_label: "Montgomery"
 description: ""
 ---
 
-![Business Letter #1 a modern take on the formal business letter.](https://resources.gravitypdf.com/uploads/edd/2017/03/cover-image-7.png)
-The *Business Letter #1* premium PDF template is a modern take on the formal business letter and can be [purchased from our PDF Template Shop](https://gravitypdf.com/shop/business-letter-1/). This guide will walk you through installing and configuring *Business Letter #1* to its full potential.
+![Montgomery a modern take on the formal certificate.](https://resources.gravitypdf.com/uploads/edd/2017/03/cover-image-7.png)
+The *Montgomery* premium PDF template is a modern take on the formal business certificate and can be [purchased from our PDF Template Shop](https://gravitypdf.com/shop/). This guide will walk you through installing and configuring *Montgomery* to its full potential.
 
 ## Installation 
 
