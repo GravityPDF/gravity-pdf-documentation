@@ -13,7 +13,7 @@ The *Montgomery* premium PDF template is a modern take on the formal business ce
 
 ## Limitations 
 
-*Montgomery* can be used with all Gravity Forms. You'll have access to your form data for use in the letter through Gravity Forms Merge Tags. For more information, see the [Gravity Forms Merge Tags documentation](https://docs.gravityforms.com/category/user-guides/merge-tags-getting-started/).
+*Montgomery* can be used with all Gravity Forms. You'll have access to your form data for use in the certificate through Gravity Forms Merge Tags. For more information, see the [Gravity Forms Merge Tags documentation](https://docs.gravityforms.com/category/user-guides/merge-tags-getting-started/).
 
 ## Configuring 
 
