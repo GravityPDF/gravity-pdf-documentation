@@ -21,8 +21,6 @@ All PDF templates have common settings that can be configured, such as font, sec
 
 ### Organization Details
 
-![The field positions in Business Letter 1](https://resources.gravitypdf.com/uploads/2017/04/field-positions-1.png)
-
 #### Logo (1) 
 * Upload your company / business logo for inclusion in the letter.
 * An image 500px wide will be a suitable resolution in most cases. To ensure your PDF generates quickly and the PDF file size stays small, we recommend using an image under 1MB.
@@ -46,64 +44,22 @@ All PDF templates have common settings that can be configured, such as font, sec
 #### Awardee Name (6) 
 * Use Gravity Forms merge tags to include the certificate recipient's name.
 
-### Business Information 
+#### Additional Information (7) 
+* The main body of your certificate. Use the full-featured rich text editor to format the body of the certificate how you want. You can easily integrated data captured from your users by using Merge Tags.
 
-![The field positions in Business Letter 1](https://resources.gravitypdf.com/uploads/2017/04/field-positions-2.png)
+#### Date (8) 
+* The date to be included in the certificate.
 
-#### Business Logo (6) 
-* Upload your company / business logo for inclusion in the letter.
-* An image 500px wide will be a suitable resolution in most cases. To ensure your PDF generates quickly and the PDF file size stays small, we recommend using an image under 1MB.
-
-#### Business Address (7) 
-* The business / sender address is split into three separate fields for each line it takes up in the letter.
-* You are usually the sender, and your address should be used, but you can also use Merge Tags to include that information from the form.
-
-#### Business Contact Info (8) 
-* The business / sender contact information is split into two separate fields for each line it takes up in the letter.
-* Include your company / business email, phone or fax.
-
-#### Business Website (9) 
-* Include your company / business website address
-
-### Recipient Information 
-
-![The field positions in Business Letter 1](https://resources.gravitypdf.com/uploads/2017/04/field-positions-3.png)
-
-#### Recipient Name (10) 
-* Use Gravity Forms merge tags to include the letter recipient's name. In the settings, this is split up between four fields: Prefix, First Name, Last Name and Suffix.
-
-#### Recipient Business/Position (11) 
-* If applicable, include the recipient business and/or position in the company using Merge Tags.
-
-#### Recipient Address (12) 
-* The recipient address is split into three separate fields for each line it takes up in the letter.
+#### Date Label (9) 
+* The date label to be used in the certificate. It can be the date signed, date awarded or the date of the event.
 
 ### Signatory Details 
 
-![The field positions in Business Letter 1](https://resources.gravitypdf.com/uploads/2017/04/field-positions-4.png)
-
-#### Blank Signature (13) 
-* Tick this checkbox if the letter is to be printed and signed by hand. The PDF will leave a gap between the [Closing Salutation](#closing-salutation-4) and the Signatory Name.
-
 #### Signature (13) 
-* Upload an image of your signature. If no image is set a faux signature will be used instead, generated using the [Signatory Name](#signature-name-14).
-* This template comes bundled with *Dancing Script*, an open source Google script font (SIL Open Font License, Version 1.1), used for the faux signature.
+* Upload an image of your signature. 
 
-#### Signatory Name (14) 
-* The full name of the signatory (i.e the person who is signing the letter)
-
-#### Signatory Business/Position (15) 
-* You can include the signatory's business and/or position. This is optional.
-
-### Extras 
-
-![Extra settings for the letter](https://resources.gravitypdf.com/uploads/2017/04/carbon-copy.png)
-
-#### Carbon Copy (16) 
-* Additional names you intend to send the letter to. This is included at the bottom of the letter.
-
-#### Carbon Copy Label (17) 
-* The label used in the letter for [Carbon Copy](#carbon-copy-16).
+#### Signature Label (14) 
+* It can be the full name of the signatory (i.e the person who is signing the certificate).
 
 ## Recommended Font 
 
