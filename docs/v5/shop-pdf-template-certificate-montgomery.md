@@ -19,16 +19,19 @@ The *Montgomery* premium PDF template is a modern take on the formal business ce
 
 All PDF templates have common settings that can be configured, such as font, security and PDF attachments, and we recommend [reviewing the PDF setup guide](user-setup-pdf.md) to get a better understanding on all the available settings. All template-specific configuration is done from the *Template* tab and below you'll find detailed information about each option available in *Formal Letter*, what it does and how it alters the generated PDF.
 
-### Standard Information
+### Organization Details
 
 ![The field positions in Business Letter 1](https://resources.gravitypdf.com/uploads/2017/04/field-positions-1.png)
 
 #### Logo (1) 
-* The image of company that appears on top of the certificate. An image 500px wide is suitable in most cases.
+* Upload your company / business logo for inclusion in the letter.
+* An image 500px wide will be a suitable resolution in most cases. To ensure your PDF generates quickly and the PDF file size stays small, we recommend using an image under 1MB.
 
 #### Business Name (2) 
 * The name of the company that appears below the logo. This moves slightly upwards and its font sizes increases slightly when there is no logo set.
 * If you leave this setting blank, it won't be included in the PDF.
+
+### Certificate Configuration
 
 #### Title (3) 
 * The title of the certificate. You can easily integrated data captured from your users by using Merge Tags.
@@ -40,10 +43,8 @@ All PDF templates have common settings that can be configured, such as font, sec
 #### Introduction (5) 
 * This text appears right after the subtitle and before the name of awardee of the certificate. It gives a brief introduction and presentation of the certificate to the awardee.
 
-#### Indent Paragraphs 
-* When checked the first line of each paragraph of the [Body](#letter-body-3) text is indented.
-
-![You can optionally indent the body text](https://resources.gravitypdf.com/uploads/2017/04/indent-and-signature-2.png)
+#### Awardee Name (6) 
+* Use Gravity Forms merge tags to include the certificate recipient's name.
 
 ### Business Information 
 
@@ -106,7 +107,7 @@ All PDF templates have common settings that can be configured, such as font, sec
 
 ## Recommended Font 
 
-*Roboto* is an open source sans-serif font (Apache License, Version 2.0) that is easy to read and works well with *Business Letter #1* at 10pt. Set the PDF font in the [Appearance tab](user-setup-pdf.md#appearance-tab).
+*Open Sans L Li B Bi* is a free font family by Ascender Fonts that is easy to read and works well with *Montgomery* at 14pt. Set the PDF font in the [Appearance tab](user-setup-pdf.md#appearance-tab).
 
 ## Viewing PDF 
 
