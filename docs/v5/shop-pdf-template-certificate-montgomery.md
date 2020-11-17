@@ -23,15 +23,11 @@ All PDF templates have common settings that can be configured, such as font, sec
 
 ![The field positions in Business Letter 1](https://resources.gravitypdf.com/uploads/2017/04/field-positions-1.png)
 
-#### Greeting Salutation (1) 
-* The opening greeting for your letter. If you've set the [Recipient's Name](#recipient-name-10) the following Merge Tags are available for use: `{prefix}`, `{firstname}`, `{surname}`, `{suffix}`.
-* Instead of using the recipient's full name, you can also use `Dear {prefix} {surname}`.
-* If you don't know the recipient's name use `To whom it may concern` or `Dear Sir or Madam`.
-* Note: American English usually uses a colon instead of a comma at the end of the greeting.
+#### Logo (1) 
+* The image of company that appears on top of the certificate. An image 500px wide is suitable in most cases.
 
-#### Letter Subject (2) 
-* Include a brief summary about your letter. The Subject will be included below your [Greetings Salutation](#greeting-salutation-1) and above your [Letter Body](#letter-body-3).
-* You might like to append your subject with "Re:" or "Subject:" and/or write it in capital letters.
+#### Business Name (2) 
+* The name of the company that appears below the logo. This moves slightly upwards when there is no logo set.
 * If you leave this setting blank, it won't be included in the PDF.
 
 #### Letter Body (3) 
