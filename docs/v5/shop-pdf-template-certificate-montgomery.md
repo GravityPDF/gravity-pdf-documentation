@@ -27,25 +27,18 @@ All PDF templates have common settings that can be configured, such as font, sec
 * The image of company that appears on top of the certificate. An image 500px wide is suitable in most cases.
 
 #### Business Name (2) 
-* The name of the company that appears below the logo. This moves slightly upwards when there is no logo set.
+* The name of the company that appears below the logo. This moves slightly upwards and its font sizes increases slightly when there is no logo set.
 * If you leave this setting blank, it won't be included in the PDF.
 
-#### Letter Body (3) 
-* The main body of your letter. Use the full-featured rich text editor to format the letter how you want. You can easily integrated data captured from your users by using Merge Tags.
-* You should excludes salutations, addresses and signatures as they are handled by other settings.
+#### Title (3) 
+* The title of the certificate. You can easily integrated data captured from your users by using Merge Tags.
+* You should excludes subtitle as it is handled by other settings.
 
-#### Closing Salutation (4) 
-* This text appears right after the body of your letter.
-* `Yours sincerely` is a common closing salutation. Outside the US, if you don't know the recipient's name `Yours, faithfully` should be used.
+#### Subtitle (4) 
+* This text appears right after the title of the certificate. It describes what type of certificate the document is.
 
-#### Date Format (5) 
-* Select the date format that is shown in the letter. The date shown on the PDF is taken from the entry submission date.
-* We support date formats out of the box:
-    -   November 29, 2018 (Month Day, Year)
-    -   29/11/2018 (dd/mm/yyyy)
-    -   11/29/2018 (mm/dd/yyyy)
-    -   2018-11-29 (yyyy-mm-dd)
-    -   Disable Date
+#### Introduction (5) 
+* This text appears right after the subtitle and before the name of awardee of the certificate. It gives a brief introduction and presentation of the certificate to the awardee.
 
 #### Indent Paragraphs 
 * When checked the first line of each paragraph of the [Body](#letter-body-3) text is indented.
