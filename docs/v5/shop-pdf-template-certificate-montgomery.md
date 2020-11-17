@@ -4,7 +4,6 @@ sidebar_label: "Montgomery"
 description: ""
 ---
 
-![Montgomery a modern take on the formal certificate.](https://resources.gravitypdf.com/uploads/edd/2017/03/cover-image-7.png)
 The *Montgomery* premium PDF template is a modern take on the formal business certificate and can be [purchased from our PDF Template Shop](https://gravitypdf.com/shop/). This guide will walk you through installing and configuring *Montgomery* to its full potential.
 
 ## Installation 
