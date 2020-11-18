@@ -1,10 +1,10 @@
 ---
-title: "Montgomery Certificate Template: How to Install and Configure"
-sidebar_label: "Montgomery"
+title: "Royal Certificate Template: How to Install and Configure"
+sidebar_label: "Royal"
 description: ""
 ---
 
-The *Montgomery* premium PDF template is a modern take on the formal business certificate. It can be [purchased from our PDF Template Shop](https://gravitypdf.com/shop/). This guide will walk you through installing and configuring *Montgomery* to its full potential.
+The *Royal* premium PDF template is a modern take on the formal business certificate. It can be [purchased from our PDF Template Shop](https://gravitypdf.com/shop/). This guide will walk you through installing and configuring *Royal* to its full potential.
 
 ## Installation 
 
@@ -12,11 +12,11 @@ The *Montgomery* premium PDF template is a modern take on the formal business ce
 
 ## Limitations 
 
-*Montgomery* can be used with all Gravity Forms. You'll have access to your form data for use in the certificate through Gravity Forms Merge Tags. For more information, see the [Gravity Forms Merge Tags documentation](https://docs.gravityforms.com/category/user-guides/merge-tags-getting-started/).
+*Royal* can be used with all Gravity Forms. You'll have access to your form data for use in the certificate through Gravity Forms Merge Tags. For more information, see the [Gravity Forms Merge Tags documentation](https://docs.gravityforms.com/category/user-guides/merge-tags-getting-started/).
 
 ## Configuring 
 
-All PDF templates have common settings that can be configured, such as font, security and PDF attachments, and we recommend [reviewing the PDF setup guide](user-setup-pdf.md) to get a better understanding of all the available settings. All template-specific configuration is done from the *Template* tab, and below you'll find detailed information about each option available in *Montgomery*, what it does and how it alters the generated PDF.
+All PDF templates have common settings that can be configured, such as font, security and PDF attachments, and we recommend [reviewing the PDF setup guide](user-setup-pdf.md) to get a better understanding of all the available settings. All template-specific configuration is done from the *Template* tab, and below you'll find detailed information about each option available in *Royal*, what it does and how it alters the generated PDF.
 
 ### Organization Details
 
@@ -62,7 +62,7 @@ All PDF templates have common settings that can be configured, such as font, sec
 
 ## Recommended Font 
 
-*Open Sans L Li B Bi* is a free font family by Ascender Fonts is easy to read and works well with *Montgomery* at 14pt. Set the PDF font in the [Appearance tab](user-setup-pdf.md#appearance-tab).
+*Josefin Sans L Li R I* is a free font family by Santiago Orozco is easy to read and works well with *Royal* at 14pt. Set the PDF font in the [Appearance tab](user-setup-pdf.md#appearance-tab).
 
 ## Viewing PDF 
 
