@@ -62,7 +62,7 @@ All PDF templates have common settings that can be configured, such as font, sec
 
 ## Recommended Font 
 
-*Josefin Sans L Li R I* is a free font family by Santiago Orozco is easy to read and works well with *Royal* at 14pt. Set the PDF font in the [Appearance tab](user-setup-pdf.md#appearance-tab).
+*Josefin Sans L Li R I* is a free font family by Santiago Orozco and is easy to read and works well with *Royal* at 14pt. Set the PDF font in the [Appearance tab](user-setup-pdf.md#appearance-tab).
 
 ## Viewing PDF 
 
