@@ -37,14 +37,14 @@ All PDF templates have common settings that can be configured, such as font, sec
 #### Subtitle (4) 
 * This text is displayed below the [Title](#title-3). It describes what type of certificate is being used in the document.
 
-#### Presentation Line (5) 
-* This text is displayed below the [Subtitle](#subtitle-5). It introduces a certificate presentation to the [Recipient](#recipient-6).
+#### Introduction (5) 
+* This text is displayed below the [Subtitle](#subtitle-5). It introduces a certificate presentation to the [Awardee Name](#awardee-name-6).
 
-#### Recipient (6) 
-* This text is displayed below the [Presentation Line](#presentation-line-5). It contains the name of the person receiving the certificate. [Merge Tags](https://docs.gravityforms.com/category/user-guides/merge-tags-getting-started/) are supported.
+#### Awardee Name (6) 
+* This text is displayed below the [Introduction](#introduction-5). It contains the name of the person receiving the certificate. [Merge Tags](https://docs.gravityforms.com/category/user-guides/merge-tags-getting-started/) are supported.
 
-#### Description (7) 
-* This text is displayed below the [Recipient](#recipient-6). Use the full-featured Rich Text Editor to supply/format a brief description of why the recipient is receiving the certificate. [Merge Tags](https://docs.gravityforms.com/category/user-guides/merge-tags-getting-started/) are supported.
+#### Additional Information (7) 
+* This text is displayed below the [Awardee Name](#awardee-name-6). Use the full-featured Rich Text Editor to supply/format a brief description of why the recipient is receiving the certificate. [Merge Tags](https://docs.gravityforms.com/category/user-guides/merge-tags-getting-started/) are supported.
 
 #### Date (8) 
 * The date to be included in the certificate.
@@ -57,7 +57,7 @@ All PDF templates have common settings that can be configured, such as font, sec
 #### Signature (13) 
 * Upload an image of your signature.
 
-#### Signatory Name (14) 
+#### Signature Label (14) 
 * The full name of the signatory (i.e the person who is signing the certificate).
 
 ## Recommended Font 
