@@ -62,7 +62,7 @@ All PDF templates have common settings that can be configured, such as font, sec
 
 ## Recommended Font 
 
-*Open Sans L Li B Bi* is a free font family by Ascender Fonts is easy to read and works well with *Montgomery* at 14pt. Set the PDF font in the [Appearance tab](user-setup-pdf.md#appearance-tab).
+*Open Sans L Li B Bi* is a free font family by Ascender Fonts and is easy to read and works well with *Montgomery* at 14pt. Set the PDF font in the [Appearance tab](user-setup-pdf.md#appearance-tab).
 
 ## Viewing PDF 
 
