@@ -16,7 +16,7 @@ To work around this limitation and display / show / embed uploaded images in Gra
 ![](https://resources.imagehopper.tech/uploads/2020/11/form-editor-image-hopper-field-open.png) 
 _Where to find the Image Hopper field in the Form Editor_
 
-Once installed, add a new Image Cropper field to your Gravity Form. Just make sure to set the *Downscale Images* width and height setting to no more than 1000x1000px to prevent the aforementioned image size issue. Gravity PDF will now automatically display / show the uploaded images in the Core / Universal PDFs.
+Once installed, add a new Image Hopper field to your Gravity Form. Just make sure to set the *Downscale Images* width and height setting to no more than 1000x1000px to prevent the aforementioned image size issue. Gravity PDF will now automatically display / show the uploaded images in the Core / Universal PDFs.
 
 ![](https://resources.imagehopper.tech/uploads/2020/11/image-hopper-in-gravity-pdf-document.png) 
 _The Image Hopper Field displays images in Core / Universal PDFs automatically_
