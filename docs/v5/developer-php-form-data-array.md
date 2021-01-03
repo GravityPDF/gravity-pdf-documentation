@@ -31,7 +31,7 @@ To keep your code cleaner you could set these values as variables earlier in the
    $name     = $form_data['field'][1]['first'];
 ?>
 
-<p>You're from <?= echo $location; ?>, <?= echo $name; ?>? How cool is that!</p>
+<p>You're from <?= $location; ?>, <?= $name; ?>? How cool is that!</p>
 ```
 
 If you're accessing a lot of fields from `$form_data['field']` you might like to assign it a shorter variable name:
