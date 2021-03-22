@@ -27,22 +27,22 @@ All PDF templates have common settings that can be configured, such as font, sec
 
 ### Logo / Image 
 * This image is positioned in the top-left of the first page of the PDF. The height of the image will be no greater than 175px (15 millimetres or about 0.6 inches).
-* An image 500px wide will be a suitable resolution in most cases. To ensure your PDF generates quickly and the PDF file size stays small we recommend using an image under 1MB.
+* An image 500px wide will be a suitable resolution in most cases. To ensure your PDF generates quickly and the PDF file size stays small, we recommend using an image under 1MB.
 
 ### Cell Border Color 
 * Set the cell border colour for the field label and user response. The default colour is Alto (hex `#d4d4d4`).
 
 ### Cell Border 
-* Cell borders are shown by default. When this checkbox is ticked the PDF will not show any borders around the field label or user response.
+* Cell borders are shown by default. When this checkbox is ticked, the PDF will not show any borders around the field label or user response.
 
 ### First Page Header 
 * The header is displayed in the top-right corner of page 1 in your PDF. The header is not displayed on any other pages (this matches the functionality of the logo).
-* The header is right-aligned in the document and this cannot be changed.
+* The header is right-aligned in the document, and this cannot be changed.
 * Added in version 1.3.
 
 ### Footer 
 * The footer is displayed in the bottom-left corner of all pages in your PDF.
-* The footer is left-aligned in the document and this cannot be changed.
+* The footer is left-aligned in the document, and this cannot be changed.
 * Added in version 1.3.
 
 ### Page Numbers 
@@ -60,8 +60,8 @@ Along with the options specific to *Cellulose*, the following core settings are 
 
 ## Recommended Font 
 
-*Cellulose* comes bundled with *Arimo*, an open source Google web font (Apache License, Version 2.0). *Arimo* is a innovative, refreshing sans serif font that works great at 10pt with *Cellulose*. Set the PDF font [in the Appearance tab](../users/setup-pdf.md#appearance-tab).
+*Cellulose* comes bundled with *Arimo*, an open source Google web font (Apache License, Version 2.0). *Arimo* is an innovative, refreshing sans serif font that works great at 10pt with *Cellulose*. Set the PDF font [in the Appearance tab](../users/setup-pdf.md#appearance-tab).
 
 ## Viewing PDF 
 
-Once you've saved your new PDF you can [view it from the Gravity Forms Entries List page](../users/viewing-pdfs.md). Just remember to fill out and submit your form if the entry list is empty.
+Once you've saved your new PDF, you can [view it from the Gravity Forms Entries List page](../users/viewing-pdfs.md). Just remember to fill out and submit your form if the entry list is empty.

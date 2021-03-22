@@ -13,7 +13,7 @@ description: ""
 
 ## Limitations 
 
-As an *Invoice* PDF template, *Invoice Classic* can be used with any Gravity Forms that **include Product fields**. You have access to your form data through Gravity Forms Merge Tags. For more information see the [Gravity Forms Merge Tags documentation](https://www.gravityhelp.com/documentation/article/merge-tags/).
+As an *Invoice* PDF template, *Invoice Classic* can be used with any Gravity Forms that **include Product fields**. You have access to your form data through Gravity Forms Merge Tags. For more information, see the [Gravity Forms Merge Tags documentation](https://www.gravityhelp.com/documentation/article/merge-tags/).
 
 ## Configuring 
 
@@ -23,9 +23,9 @@ The invoice PDF configuration is split up into six sections:
 
 -   [Company Info](#company-info)
 -   [Invoice Settings](#invoice-settings)
--   [Buyer Info](#buyer-info)
+-   [Buyer Info](#buyer-information)
 -   [Tax Settings](#tax-settings)
--   [Extras](#extras)
+-   [Extras](#additional-details)
 -   [Labels](#labels)
 
 ### Company Information 
@@ -34,41 +34,41 @@ The invoice PDF configuration is split up into six sections:
 
 #### Logo (1) 
 * This image is included at the top of the generated PDF invoice. It can be positioned left or right using the [Logo Position](#logo-position) option.
-* An image 500px wide will be a suitable resolution in most cases. To ensure your PDF generates quickly and the PDF file size stays small we recommend using an image under 1MB.
+* An image 500px wide will be a suitable resolution in most cases. To ensure your PDF generates quickly and the PDF file size stays small, we recommend using an image under 1MB.
 
 #### Logo Position 
 * Change the logo positioning in the PDF. Supported positions are Top Left and Top Right of the document.
-* By default, logos are positioned on the left-hand-side of the invoice
+* By default, logos are positioned on the left-hand-side of the invoice.
 
 #### Business Name (2) 
 * Enter your business or trading name that should get displayed in the invoice
 
 #### Business Address (3) 
 * The business address is split into three separate fields for each line it takes up in the invoice.
-* There's no need to enter your company name in the address. The [Business Name](#business-name) field is automatically included just above it.
+* There's no need to enter your company name in the address. The [Business Name](#business-name-2) field is automatically included just above it.
 
 #### Registration Number (4) 
-* Include your business registration number here (if any). In the US this is your EIN, in Australia your ABN and the UK your CRN.
+* Include your business registration number here (if any). In the US this is your EIN, in Australia, your ABN and the UK your CRN.
 
 #### Contact Information (5) 
 * There are two contact fields where you can include your phone number, email address, fax or website.
 
 #### Additional Information (6) 
-* There are two fields where you can include additional information about your company
+* There are two fields where you can include additional information about your company.
 
 ### Invoice Settings 
 
 ![The invoice settings info guide](https://resources.gravitypdf.com/uploads/2017/04/invoice-settings-2.png)
 
 #### Invoice Number Prefix (1) 
-* This is an optional field that is included before the [Invoice Number](#invoice-number) on the PDF.
+* This is an optional field that is included before the [Invoice Number](#invoice-number-2) on the PDF.
 
 #### Invoice Number (2) 
-* By default the invoice number uses the Gravity Forms entry ID. Be aware, this number is NOT sequential.
-* If you need a sequential invoice number we recommend [the Gravity Perks Unique ID add-on](https://gravitywiz.com/documentation/gp-unique-id/?ref=78).
+* By default, the invoice number uses the Gravity Forms entry ID. Be aware, this number is NOT sequential.
+* If you need a sequential invoice number, we recommend [the Gravity Perks Unique ID add-on](https://gravitywiz.com/documentation/gp-unique-id/?ref=78).
 
 #### Invoice Number Suffix (3) 
-* This is an optional field that is included after the [Invoice Number](#invoice-number) on the PDF.
+* This is an optional field that is included after the [Invoice Number](#invoice-number-2) on the PDF.
 
 #### Date Format (4) 
 * Select the date format that is shown on the invoice. The date shown on the PDF is taken from the entry submission date.
@@ -102,7 +102,7 @@ The buyer information will usually be included [using Merge Tags](https://www.gr
 ### Tax Settings 
 
 ![The tax settings info guide](https://resources.gravitypdf.com/uploads/2017/04/tax.png)
-Because Gravity Forms has no product fields specifically for tax we've implemented basic tax support in the invoice. There are restrictions and these include:
+Because Gravity Forms has no product fields specifically for tax, we've implemented basic tax support in the invoice. There are restrictions, and these include:
 
 1.  All products are classified as taxable
 2.  All products are the same tax rate
@@ -121,7 +121,7 @@ With that said, you can take advantage of [Gravity PDF's Conditional Logic](../u
 * The percentage of tax that should be applied to the invoice. For example, in Australia it's 10%.
 
 #### Tax Rate Label (3) 
-* This is label is shown next to the [Tax Rate](#tax-rate).
+* This is label is shown next to the [Tax Rate](#tax-rate-2).
 
 #### Enable Tax on Shipping 
 * By default, tax on shipping is disabled in the invoices. Tick this checkbox to enable shipping tax.
@@ -130,13 +130,13 @@ With that said, you can take advantage of [Gravity PDF's Conditional Logic](../u
 * By default, the total tax is shown in the invoice summary section (the top right of the PDF). Tick this box to remove the tax amount from the summary.
 
 #### Hide Tax Column in Table (5) 
-* By default, a new column is added to the invoice table which shows the calculated tax for each line item. Tick this box to remove the column.
+* By default, a new column is added to the invoice table, which shows the calculated tax for each line item. Tick this box to remove the column.
 
 #### Tax Number (6) 
 * Enter your company's tax number (if applicable). For example, VAT-registered companies have a Tax Identification number which should be included.
 
 #### Tax Number Label (7) 
-* The label to be shown next to the [Tax Number](#tax-number). This won't be shown if the Tax Number is left blank.
+* The label to be shown next to the [Tax Number](#tax-number-6). This won't be shown if the Tax Number is left blank.
 
 ### Additional Details 
 
@@ -154,17 +154,17 @@ With that said, you can take advantage of [Gravity PDF's Conditional Logic](../u
 ### Labels 
 
 ![The labels info guide](https://resources.gravitypdf.com/uploads/2017/04/labels-2.png)
-All text in the PDF can easily be changed below. By default, the labels are displayed in English but you can easily translate them. Many elements in the PDF can be disabled by saving a blank label.
+All text in the PDF can easily be changed below. By default, the labels are displayed in English, but you can easily translate them. Many elements in the PDF can be disabled by saving a blank label.
 
 #### Title (1) 
-* The invoice title that is displayed in the top right corner of the invoice by default. If the [Logo Position](#logo-position) is set to Right the label will be displayed on the left instead.
+* The invoice title that is displayed in the top right corner of the invoice by default. If the [Logo Position](#logo-position) is set to right, the label will be displayed on the left instead.
 * Australian businesses registered for GST should change this to "Tax Invoice"
 
 #### Date (2) 
-* The label displayed next to the [Invoice Date](#date-format). Leave blank to disable.
+* The label displayed next to the [Invoice Date](#date-format-4). Leave blank to disable.
 
 #### Invoice Number (3) 
-* The label displayed next to the [Invoice Number](#invoice-number). Leave blank to disable.
+* The label displayed next to the [Invoice Number](#invoice-number-3). Leave blank to disable.
 
 #### Invoice Total Cost Summary (4) 
 * The label displayed next to the Invoice Total in the summary section. Leave blank to disable.
@@ -188,7 +188,7 @@ All text in the PDF can easily be changed below. By default, the labels are disp
 * The label shown in the Product table header for the Total column (i.e the total cost for each line item).
 
 #### Subtotal (11) 
-* The total cost for all products, excluding shipping. If tax is enabled the subtotal will also exclude tax.
+* The total cost for all products, excluding shipping. If tax is enabled, the subtotal will also exclude tax.
 
 #### Overall Total (12) 
 * The overall invoice total including shipping, and tax (if applicable).
@@ -197,13 +197,13 @@ All text in the PDF can easily be changed below. By default, the labels are disp
 * The payment should be made by this date.
 
 :::note
-The Shipping Label is taken from the Gravity Forms Shipping Field
+The Shipping Label is taken from the Gravity Forms Shipping Field.
 :::
 
 ## Recommended Font 
 
-*Invoice Classic* comes bundled with *PT Serif* which is an open source licensed font (SIL Open Font License, Version 1.1). PT Serif is a transitional typeface with humanistic accents. For the best results we recommend using PT Serif at 10pt. Set the PDF font [in the Appearance tab](../users/setup-pdf.md#appearance-tab).
+*Invoice Classic* comes bundled with *PT Serif* which is an open source licensed font (SIL Open Font License, Version 1.1). PT Serif is a transitional typeface with humanistic accents. For the best results, we recommend using PT Serif at 10pt. Set the PDF font [in the Appearance tab](../users/setup-pdf.md#appearance-tab).
 
 ## Viewing PDF 
 
-Once you've saved your new PDF you can [view it from the Gravity Forms Entries List page](../users/viewing-pdfs.md). Just remember to fill out and submit your form if the entry list is empty.
+Once you've saved your new PDF, you can [view it from the Gravity Forms Entries List page](../users/viewing-pdfs.md). Just remember to fill out and submit your form if the entry list is empty.

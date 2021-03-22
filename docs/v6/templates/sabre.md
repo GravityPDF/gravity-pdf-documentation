@@ -6,7 +6,7 @@ description: ""
 
 ![Sabre works great with business letters, invoices, etc](https://resources.gravitypdf.com/uploads/edd/2017/03/sabre-2.png)
 
-*Sabre* is a universal PDF template that integrates seamlessly into any Gravity Form you might create. You can [purchase from our PDF Template Shop](https://gravitypdf.com/shop/sabre/). It provides functionality to include both the submitted user info and your important business details through the a highly customisable full-height sidebar.
+*Sabre* is a universal PDF template that integrates seamlessly into any Gravity Form you might create. You can [purchase from our PDF Template Shop](https://gravitypdf.com/shop/sabre/). It provides functionality to include both the submitted user info and your important business details through a highly customisable full-height sidebar.
 
 ## Installation 
 
@@ -31,7 +31,7 @@ All PDF templates have common settings that can be configured, such as font, sec
 
 ### Sidebar Logo / Image 
 * This image is centre-aligned in the header of each page of the PDF. The height of the image will be no greater than 280px (25 millimetres or about 1 inch).
-* An image 500px wide will be a suitable resolution in most cases. To ensure your PDF generates quickly and the PDF file size stays small we recommend using an image under 1MB.
+* An image 500px wide will be a suitable resolution in most cases. To ensure your PDF generates quickly and the PDF file size stays small, we recommend using an image under 1MB.
 
 ### Sidebar Content 
 * The main content of your sidebar where you can include information such as contact details, instructions, social media links or opening hours, etc.
@@ -40,7 +40,7 @@ All PDF templates have common settings that can be configured, such as font, sec
 
 ### Secondary Sidebar Content 
 * Essentially a footer that appears at the very bottom of your sidebar.
-* For best results keep this short and sweet.
+* For best results, keep this short and sweet.
 
 ### Sidebar Font 
 * Set the font type used in the sidebar. This overrides the font set in the [Appearance tab](../users/setup-pdf.md#appearance-tab).
@@ -75,4 +75,4 @@ Along with the options specific to *Sabre*, the following core settings are also
 
 ## Viewing PDF 
 
-Once you've saved your new PDF you can [view it from the Gravity Forms Entries List page](../users/viewing-pdfs.md). Just remember to fill out and submit your form if the entry list is empty.
+Once you've saved your new PDF, you can [view it from the Gravity Forms Entries List page](../users/viewing-pdfs.md). Just remember to fill out and submit your form if the entry list is empty.

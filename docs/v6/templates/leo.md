@@ -18,10 +18,10 @@ As a *Universal* PDF template, *Leo* can be used with all Gravity Forms and will
 
 ## Configuring 
 
-All PDF templates have common settings that can be configured, such as font, security and PDF attachments, and we recommend [reviewing the PDF setup guide](../users/setup-pdf.md) to get a better understanding on all the available settings. All template-specific configuration is done from the *Template* tab and below you'll find detailed information about each option available in *Leo*, what it does and how it alters the generated PDF.
+All PDF templates have common settings that can be configured, such as font, security and PDF attachments, and we recommend [reviewing the PDF setup guide](../users/setup-pdf.md) to get a better understanding on all the available settings. All template-specific configuration is done from the *Template* tab, and below you'll find detailed information about each option available in *Leo*, what it does and how it alters the generated PDF.
 
 ### Main Heading 
-* The main heading is included on first page of your PDF, before any other content, on the top-left side (adjacent to the [Logo](#logo)). Merge tags are supported.
+* The main heading is included on the first page of your PDF, before any other content, on the top-left side (adjacent to the [Logo](#logo)). Merge tags are supported.
 * Leave the field blank to disable.
 * This option replaces the "Show Form Title" setting. To replicate, use the `{form_title}` merge tag.
 
@@ -31,12 +31,12 @@ All PDF templates have common settings that can be configured, such as font, sec
 
 ### Logo / Image 
 * This image is positioned in the top-right of the first page of the PDF (adjacent to the [Main Heading](#main-heading)). The height of the image will be no greater than 235px (20 millimetres or about 0.78 inches).
-* An image 500px wide will be a suitable resolution in most cases. To ensure your PDF generates quickly and the PDF file size stays small we recommend using an image under 1MB.
+* An image 500px wide will be a suitable resolution in most cases. To ensure your PDF generates quickly and the PDF file size stays small, we recommend using an image under 1MB.
 
 ### Footer 
 * The footer is displayed in the bottom of all pages in your PDF.
-* The footer text is center-aligned in the document and this cannot be changed.
-* The footer background colour is set using the [Secondary Color](#secondary-color) Setting. The text colour will use black or white (which ever has the best contrast).
+* The footer text is center-aligned in the document, and this cannot be changed.
+* The footer background colour is set using the [Secondary Color](#secondary-color) Setting. The text colour will use black or white (whichever has the best contrast).
 
 ### Primary Color 
 * Used for the top-bar background colour that is displayed on every page. The default colour is Azure Radiance (hex `#098FFE`).
@@ -60,4 +60,4 @@ Along with the options specific to *Leo*, the following core settings are also s
 
 ## Viewing PDF 
 
-Once you've saved your new PDF you can [view it from the Gravity Forms Entries List page](../users/viewing-pdfs.md). Just remember to fill out and submit your form if the entry list is empty.
+Once you've saved your new PDF, you can [view it from the Gravity Forms Entries List page](../users/viewing-pdfs.md). Just remember to fill out and submit your form if the entry list is empty.

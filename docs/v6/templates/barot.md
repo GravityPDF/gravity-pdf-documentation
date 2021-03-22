@@ -60,3 +60,7 @@ Along with the options specific to *Barot*, the following core settings are also
 ## Recommended Font 
 
 *Barot* comes bundled with *Droid Serif*, an open source licensed font (Apache License, Version 2.0). *Droid Serif* is a highly readable font that works great at 10pt with Sabre. Set the PDF font in the [Appearance tab](../users/setup-pdf.md#appearance-tab).
+
+## Viewing PDF 
+
+Once you've saved your new PDF, you can [view it from the Gravity Forms Entries List page](../users/viewing-pdfs.md). Just remember to fill out and submit your form if the entry list is empty.

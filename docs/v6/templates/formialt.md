@@ -21,7 +21,7 @@ As a *Universal* PDF template, *Formialt* can be used with all Gravity Forms and
 All PDF templates have common settings that can be configured, such as font, security and PDF attachments, and we recommend [reviewing the PDF setup guide](../users/setup-pdf.md) to get a better understanding on all the available settings. All template-specific configuration is done from the *Template* tab and below you'll find detailed information about each option available in *Formialt*, what it does and how it alters the generated PDF.
 
 ### Main Heading 
-* The main heading is left-aligned and included on first page of your PDF, before any of your Gravity Forms fields. Merge tags are supported.
+* The main heading is left-aligned and included on the first page of your PDF, before any of your Gravity Forms fields. Merge tags are supported.
 * The Main Heading background will use the [Heading Background Color](#heading-background-color), while the font color will be set to black or white, depending on the best contrast.
 * Leave the field blank to disable.
 * This option replaces the "Show Form Title" setting. To replicate, use the `{form_title}` merge tag.
@@ -61,8 +61,8 @@ Along with the options specific to *Formialt*, the following core settings are a
 
 ## Recommended Font 
 
-*Formialt* comes packaged with the open source sans-serif font, [Roboto](https://fonts.google.com/specimen/Roboto), which was designed by Christian Robertson, an interface designer for Google. Roboto features friendly and open curves and has a natural reading rhythm. For the best results we recommend using Roboto at 10pt.
+*Formialt* comes packaged with the open source sans-serif font, [Roboto](https://fonts.google.com/specimen/Roboto), which was designed by Christian Robertson, an interface designer for Google. Roboto features friendly and open curves and has a natural reading rhythm. For the best results, we recommend using Roboto at 10pt.
 
 ## Viewing PDF 
 
-Once you've saved your new PDF you can [view it from the Gravity Forms Entries List page](../users/viewing-pdfs.md). Just remember to fill out and submit your form if the entry list is empty.
+Once you've saved your new PDF, you can [view it from the Gravity Forms Entries List page](../users/viewing-pdfs.md). Just remember to fill out and submit your form if the entry list is empty.

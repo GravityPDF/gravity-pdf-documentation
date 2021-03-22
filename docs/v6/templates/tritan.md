@@ -26,10 +26,10 @@ All PDF templates have common settings that can be configured, such as font, sec
 * To include the form title, use the `{form_title}` merge tag.
 
 ### Primary Colour 
-* This colour is used in the top-left header triangle, and bottom-right footer triangle. The List and Likert fields also make use of this colour in their table layout.
+* This colour is used in the top-left header triangle and bottom-right footer triangle. The List and Likert fields also make use of this colour in their table layout.
 
 ### Secondary Colour 
-* This colour is used in the top-right header triangle, and the bottom-left footer triangle. The HTML and Product fields also make use of this colour in their layout.
+* This colour is used in the top-right header triangle and the bottom-left footer triangle. The HTML and Product fields also make use of this colour in their layout.
 
 ### Left Footer 
 * This content will be displayed in the bottom left triangle on each page of your document
@@ -43,7 +43,7 @@ All PDF templates have common settings that can be configured, such as font, sec
 
 ### Sidebar Image 
 * This image is included in the first-page sidebar. The width of the image will be 15% of the overall document width (that's roughly 120px on A4 / Letter sized documents).
-* An image 500px wide will be a suitable resolution. To ensure your PDF generates quickly and the PDF file size stays small we recommend using an image under 1MB.
+* An image 500px wide will be a suitable resolution. To ensure your PDF generates quickly and the PDF file size stays small, we recommend using an image under 1MB.
 * The File Upload field merge tag can be used to display a user-uploaded image. It's recommended you limit the maximum upload size to under 1MB.
 
 ### Sidebar Content 
@@ -70,4 +70,4 @@ Along with the options specific to *Tritan*, the following core settings are als
 
 ## Viewing PDF 
 
-Once you've saved your new PDF you can [view it from the Gravity Forms Entries List page](../users/viewing-pdfs.md). Just remember to fill out and submit your form if the entry list is empty.
+Once you've saved your new PDF, you can [view it from the Gravity Forms Entries List page](../users/viewing-pdfs.md). Just remember to fill out and submit your form if the entry list is empty.
