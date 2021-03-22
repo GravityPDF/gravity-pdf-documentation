@@ -43,7 +43,7 @@ From here you'll be able to control the PDF defaults like paper size, font and t
 * When enable, during form submission and resending notifications PDFs will be processed and emailed in a background task. This is very useful if you've complex PDFs, have multiple PDFs assigned to a form, want to speed up the submission process, or are resending notifications in bulk.
 * When enabled, Gravity Forms Notifications configured to be sent during Form Submission with PDFs attached will be delayed and processed in the background process/task.
 * This functionality requires *Background tasks* and the *WordPress Cron* are functional. [Find out more about Background Processing and its requirements](background-processing.md).
-* By default this option is set to `No`. 
+* By default, this option is set to `No`. 
 
 ### Debug Mode 
 * When enabled, this turns on shortcode debugging and PDF statistics, and turns off template header caching.
@@ -78,7 +78,7 @@ The advanced options focus on PDF security and can be shown by clicking the `Sho
 #### Logged Out Timeout 
 * When a logged out user attempts to view a PDF, the plugin will try and match their current IP address against the one saved with the Gravity Forms entry. If they match they get access. However, this method isn't a secure long-term option [because IP addresses can change](http://whatismyipaddress.com/keeps-changing). To prevent unauthorised access we implemented a timeout feature. After X amount of time, the user no longer has access to the generated PDF.
 * This option has no effect on PDFs sent as attachments in Gravity Form notifications but does effect the `[gravitypdf]` shortcode and PDF merge tags.
-* By default, this timeout is set to 20 minutes. **While it is not recommended** you can disable the timeout functionality by setting the value to zero (0).
+* By default, this timeout is set to 20 minutes. **While it is not recommended**, you can disable the timeout functionality by setting the value to zero (0).
 
 ## License Tab 
 
