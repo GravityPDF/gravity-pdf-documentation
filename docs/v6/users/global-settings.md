@@ -63,7 +63,7 @@ From here you'll be able to control the PDF defaults like paper size, font and t
 
 ![Gravity PDF Advanced Options on the General Tab](https://resources.gravitypdf.com/uploads/2015/10/security-settings-v5.png)
 
-The advanced options focus on PDF security and can be shown by clicking the `Show Advanced Options...` link (just above the *Save Changes* button). The security settings are configured with sane defaults and in most cases you won't need to modify this behaviour. Our [security documentation page](pdf-security.md) focuses or the finer points of the plugin's security protocols and is worth a read before changing these options.
+The advanced options focus on PDF security and can be shown by clicking the `Show Advanced Options...` link (just above the *Save Changes* button). The security settings are configured with sane defaults and, in most cases, you won't need to modify this behaviour. Our [security documentation page](pdf-security.md) focuses or the finer points of the plugin's security protocols and is worth a read before changing these options.
 
 #### User Restriction 
 * Logged in users who do not have the `gravityforms_view_entries` capability are prevented from accessing any PDF if they aren't the original owner – the owner is who filled in the form entry originally. If you leave the setting untouched only site administrators and network super admins (if running a multisite) can view the generated PDFs. To change this behaviour, you can assign capabilities that other roles have access to. For instance, if you wanted the [*Editor* role](https://codex.wordpress.org/Roles_and_Capabilities#Editor) to have access to PDFs you could add the `edit_pages` capability. Alternatively, instead of adding additional capabilities to this field, you could use a role editing plugin like [User Role Editor](https://wordpress.org/plugins/user-role-editor/) to give an existing role the `gravityforms_view_entries` capability. Choose the best solution for your use-case.
@@ -76,7 +76,7 @@ The advanced options focus on PDF security and can be shown by clicking the `Sho
 * The default option is `No`.
 
 #### Logged Out Timeout 
-* When a logged out user attempts to view a PDF, the plugin will try and match their current IP address against the one saved with the Gravity Forms entry. If they match they get access. However, this method isn't a secure long-term option [because IP addresses can change](http://whatismyipaddress.com/keeps-changing). To prevent unauthorised access we implemented a timeout feature. After X amount of time, the user no longer has access to the generated PDF.
+* When a logged out user attempts to view a PDF, the plugin will try and match their current IP address against the one saved with the Gravity Forms entry. If they match they get access. However, this method isn't a secure long-term option [because IP addresses can change](http://whatismyipaddress.com/keeps-changing). To prevent unauthorised access, we implemented a timeout feature. After X amount of time, the user no longer has access to the generated PDF.
 * This option has no effect on PDFs sent as attachments in Gravity Form notifications but does effect the `[gravitypdf]` shortcode and PDF merge tags.
 * By default, this timeout is set to 20 minutes. **While it is not recommended**, you can disable the timeout functionality by setting the value to zero (0).
 

@@ -20,7 +20,7 @@ The REST API must be enabled to use this plugin.
 
 ## Configuring 
 
-This extension adds a new field called **PDF Preview** to the [Gravity Forms Editor](https://www.gravityhelp.com/documentation/article/creating-a-form/), and can be found under the 'Advanced Fields' section. To correctly setup the *Previewer* field, you first need to [configure a PDF on your chosen Gravity Form](../users/setup-pdf.md).
+This extension adds a new field called **PDF Preview** to the [Gravity Forms Editor](https://www.gravityhelp.com/documentation/article/creating-a-form/), and can be found under the 'Advanced Fields' section. To correctly setup, the *Previewer* field, you first need to [configure a PDF on your chosen Gravity Form](../users/setup-pdf.md).
 
 ### PDF Preview Options 
 
@@ -49,19 +49,19 @@ The width of the preview will always be 100% and fill the container the form is 
 
 When enabled, a 'download' button will be included in the PDF Preview so the user can download the generated PDF
 
-After a PDF is downloaded it'll automatically be removed from the server. To download the PDF a second time the user might need to refresh the Previewer (whether they do or not will depend on the browser they're using).
+After a PDF is downloaded, it'll automatically be removed from the server. To download the PDF a second time, the user might need to refresh the Previewer (whether they do or not will depend on the browser they're using).
 
 #### Watermark 
 
 In the preview, text is overlaid diagonally on each page of the generated PDF
 
-You can change the watermark text displayed, and the font.
+You can change the watermark text displayed and the font.
 
 ### Multiple Previews 
 ![Side by side Previews](https://resources.gravitypdf.com/uploads/edd/2017/08/two-previewers-side-by-side.png)
 
-If you've got multiple PDFs configured on a single Gravity Form you may want to allow the end user to preview each of those documents. You can add multiple *PDF Preview* fields to the form and display each of your configured PDFs.
-**Bonus Feature:** Use Gravity Forms [CSS Ready Classes](https://www.gravityhelp.com/css-ready-classes-for-gravity-forms/) – like `gf_left_half` and `gf_right_half` – to display the previews side by side.
+If you've got multiple PDFs configured on a single Gravity Form, you may want to allow the end user to preview each of those documents. You can add multiple *PDF Preview* fields to the form and display each of your configured PDFs.
+**Bonus Feature:** Use Gravity Forms [CSS Ready Classes](https://www.gravityforms.com/css-ready-classes/) – like `gf_left_half` and `gf_right_half` – to display the previews side by side.
 
 ### Conditional Previews 
 
@@ -176,7 +176,7 @@ If you need your user content to expand across multiple pages, and include your 
 
 ### PDF Security in Previewer 
 
-By default, when you've [allowed your user to download the PDF via the Previewer](previewer-add-on.md#download-preview) the PDF Security settings are disabled. To use the security [you've set in the PDF settings](../users/setup-pdf.md#pdf-security), include the following snippet in your active theme's functions.php file:
+By default, when you've [allowed your user to download the PDF via the Previewer](previewer-add-on.md#download-preview) the PDF Security settings are disabled. To use the security [you've set in the PDF settings](user-setup-pdf.md#enable-pdf-security), include the following snippet in your active theme's functions.php file:
 
 ```
 add_filter( 'gfpdf_previewer_enable_pdf_security', '__return_false' );

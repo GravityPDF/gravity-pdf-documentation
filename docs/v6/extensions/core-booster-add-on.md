@@ -24,10 +24,10 @@ Refer to the sections below for information on what each feature does and how to
 
 -   [Customise Fields](#customise-fields)
 -   [Display Notes](#display-notes)
--   [Show All Available Options](#available-options)
--   [Toggle Option Label / Value](#toggle-option-value)
--   [Show Field Descriptions](#show-field-description)
--   [Group / Ungroup Product Fields](#group-ungroup-products)
+-   [Show All Available Options](#show-all-available-options)
+-   [Toggle Option Label / Value](#toggle-option-label--value)
+-   [Show Field Descriptions](#show-field-descriptions)
+-   [Group / Ungroup Product Fields](#group--ungroup-product-fields)
 -   [Toggle Field Labels](#toggle-field-labels)
 
 ### Customise Fields 
@@ -54,11 +54,11 @@ https://www.youtube.com/watch?v=Rj3GdkQv0R4&rel=0
 
 #### Show Field Options 
 * This feature allows you to control if all available options are shown in the PDF for Radio, Checkbox, Select and Multiselect (RCSM) fields.
-* If a user selected an option it'll show up as an ☒, if the option isn't selected it'll be an empty ballot box instead ☐
+* If a user selected an option, it'll show up as an ☒, if the option isn't selected it'll be an empty ballot box instead ☐
 * You can individually enable this functionality for each field type. For example, you can set only Radio fields to show all options, and leave the other fields using the standard Gravity PDF output.
 * If you aren't using a layout column on your RCSM field (usually using the CSS classes, like `gf_left_half`, `gf_left_third` or `gf_first_quarter`) you can create up to five option columns. Use the CSS classes `gf_list_2col`, `gf_list_3col`, `gf_list_4col`, or `gf_list_5col` to enable this functionality.
 * **Note:** Option columns don't work in the templates *Formium*, *Colossus* or *Cellulose* as they utilise layout columns internally.
-* Product fields that utilise an RCSM field are compatible [provided you ungroup the products](#group-ungroup-products).
+* Product fields that utilise an RCSM field are compatible [provided you ungroup the products](#group--ungroup-product-fields).
 * You can find this setting at the bottom of the *Template* tab when [editing the PDF Settings](../users/setup-pdf.md#template) for Core and Universal PDF templates.
 
 ### Toggle Option Label / Value 
@@ -68,7 +68,7 @@ https://www.youtube.com/watch?v=oE7aNOWHndU&rel=0
 #### Option Field Display 
 * This feature allows you to control whether Radio, Checkbox, Select and Multiselect (RCSM) fields will show the selected option label or value in the PDF.
 * This setting will apply to all RCSM fields in your form, including Product fields that utilise RCSM field types.
-* To utilise this feature correctly you need to take advantage of RCSM field's "Use Value" option in the Form Editor. *Values must be unique and cannot contain any HTML markup or special characters*
+* To utilise this feature correctly, you need to take advantage of RCSM field's "Use Value" option in the Form Editor. *Values must be unique and cannot contain any HTML markup or special characters*.
 * You can find this setting at the bottom of the *Template* tab when [editing the PDF Settings](../users/setup-pdf.md#template) for Core and Universal PDF templates.
 
 ### Show Field Descriptions 
@@ -86,7 +86,7 @@ https://www.youtube.com/watch?v=I7KtEI-KHgA&rel=0
 
 #### Group Products? 
 * Disable this feature to prevent products from being grouped at the end of a PDF. Instead, they'll be displayed in the order they appear in your Form Editor. 
-* As of Gravity PDF 5.1, you can completely remove the Product table. Prior to 5.1, to remove you have to ungroup the products and remove them [using the the Customise Field setting](#customise-fields).
+* As of Gravity PDF 5.1, you can completely remove the Product table. Prior to 5.1, to remove you have to ungroup the products and remove them [using the Customise Field setting](#customise-fields).
 * You can find this setting at the bottom of the *Template* tab when [editing the PDF Settings](../users/setup-pdf.md#template) for Core and Universal PDF templates.
 
 ### Toggle Field Labels 
@@ -97,7 +97,7 @@ https://www.youtube.com/watch?v=uKTLW_HsiWs&rel=0
 * This feature gives you four different ways to display the field labels in the PDF:
     1.  Display the Standard/Field Label for all fields
     2.  Display the Admin Field Label for all fields
-    3.  Display the Admin Field Label for fields that have one, otherwise fall back to the Standard/Field Label
+    3.  Display the Admin Field Label for fields that have one, otherwise, fall back to the Standard/Field Label
     4.  Disable the Field Label
 
 * This feature applies to all Gravity Form fields that support an Admin Field label

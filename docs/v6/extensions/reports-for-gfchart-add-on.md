@@ -14,7 +14,7 @@ description: "Beautiful PDF Reports using Gravity Forms and GFChart. Includes 15
 
 ## Prerequisites 
 
-Along with having [Gravity Forms](https://rocketgenius.pxf.io/c/1211356/445235/7938) and [Gravity PDF](../users/installation.md) installed on your website, **to use Reports for GFChart [you need a GFChart ALL license](https://gfchart.com/pricing/?ref=24)** and have the following plugins installed:
+Along with having [Gravity Forms](https://rocketgenius.pxf.io/c/1211356/445235/7938) and [Gravity PDF](../users/installation.md) installed on your website, **to use Reports for GFChart, [you need a GFChart ALL license](https://gfchart.com/pricing/?ref=24)** and have the following plugins installed:
 
 1. [GFChart v1.17+](https://gfchart.com/?ref=24) with active license key
 1. GFChart Image Charts v1.0.0-beta1+
@@ -53,16 +53,16 @@ https://www.youtube.com/watch?v=8PYT5GwWuCk
 
 ## Setup PDF Reports 
 
-Once you've setup your chart(s) it's time to create your PDF reports! Well, almost...
+Once you've setup your chart(s), it's time to create your PDF reports! Well, almost...
 
-Before you do anything you should determine what type of report you need, as this will establish which Gravity Form you configure. For example, if you want to generate a report for every form submission you'll setup your reports directly on the desired form. This setup is useful, but not limited to, the following use-cases:
+Before you do anything, you should determine what type of report you need, as this will establish which Gravity Form you configure. For example, if you want to generate a report for every form submission, you'll setup your reports directly on the desired form. This setup is useful, but not limited to, the following use-cases:
 
-1. **Donation / Charity Auction** - a donation is made via Gravity Forms and the report includes a chart showing the total amount raised. A variation on this is a charity aution where the chart shows the total amount raised / voted for each item.
-1. **Quiz** - after completing a quiz/survey the report contains chart(s) showing the aggregate results.
-1. **Event/Booking/Registration/Subscription** - after compelting the form, a report PDF is sent showing other user's demographics. 
+1. **Donation / Charity Auction** - a donation is made via Gravity Forms, and the report includes a chart showing the total amount raised. A variation on this is a charity aution where the chart shows the total amount raised / voted for each item.
+1. **Quiz** - after completing a quiz/survey, the report contains chart(s) showing the aggregate results.
+1. **Event/Booking/Registration/Subscription** - after completing the form, a report PDF is sent showing other user's demographics. 
 1. **Report on demand** - rather than scheduling reports, you can create a form that will send out the report on submission.
 
-If you'd prefer to get a report once a day/week/month you would create a new Gravity Form for this purpose . [See our Scheduling Reports section for more details about this configuration](#scheduling-reports). Whichever option you decide, you setup the report PDFs like you would any other: [via your form's PDF settings](../users/setup-pdf.md#locating-pdf-settings). 
+If you'd prefer to get a report once a day/week/month you would create a new Gravity Form for this purpose. [See our Scheduling Reports section for more details about this configuration](#scheduling-reports). Whichever option you decide, you setup the report PDFs like you would any other: [via your form's PDF settings](../users/setup-pdf.md#locating-the-pdf-settings). 
 
 All *Reports for GFChart* templates have common settings that can be configured, such as font, security and PDF attachments, and we recommend [reviewing the PDF setup guide](../users/setup-pdf.md) to get a better understanding on all the available options. The individual template-specific configuration is done from the *Template* tab, and below you’ll find detailed information about the available options.
 
@@ -83,19 +83,19 @@ The reports share a set of common *Template* settings which makes it easy to swa
 ![Overlaid with numbers showing where each common setting is placed in Maxwell Standard](https://resources.gravitypdf.com/uploads/2020/05/Reports-for-GFChart-Common-Settings1.png)
 
 #### 1. Main Heading 
-* Give your report a title so the reader knows exactly what the document is about. Merge tags are supported.
+* Give your report a title, so the reader knows exactly what the document is about. Merge tags are supported.
 * Leave the field blank to disable.
 
 #### 2. Introduction 
 * Control what content gets displayed before your charts. Merge tags are supported.
-* GFChart has a [Calculation](https://gfchart.com/documentation/?ref=24#calculations) and [Progress Bar](https://gfchart.com/documentation/?ref=24#progress-bars) type which may not be suitable for the standard chart display. For more control, include the associated shortcode in this setting.
+* GFChart has a [Calculation](https://gfchart.com/documentation/?ref=24#calculations) and [Progress Bar](https://gfchart.com/documentation/?ref=24#progress-bars) type, which may not be suitable for the standard chart display. For more control, include the associated shortcode in this setting.
 * Leave the field blank to disable.
 
 #### 3. Chart 1/2/3/4 
 * Select which GFChart charts you'd like to include in the PDF report. Up to four charts can be included.
 * You aren't limited to including charts from the current form; you can add charts assigned to any of your Gravity Forms. 
-* For optimal display in the PDF you may need to adjust the GFChart height and width under the *Customiser* tab ([refer to the Setup Charts section](#setup-gfchart)). 
-* If you've configured your GFChart to include a Background Colour it will be automatically removed in the PDF. 
+* For optimal display in the PDF, you may need to adjust the GFChart height and width under the *Customiser* tab ([refer to the Setup Charts section](#setup-gfchart)). 
+* If you've configured your GFChart to include a Background Colour, it will be automatically removed in the PDF. 
 * Leave the field blank to disable.
 
 #### 4. Additional Info 
@@ -302,10 +302,10 @@ This template variant **DOES** support the Header setting.
 * If no image is selected, the default "building" image will be used instead.
 
 ##### Primary Colour
-* The primary color is used as a transparent overlay for the Sidebar, divider, and footer accents. The default colour is `#172872` (navy blue).
+* The primary colour is used as a transparent overlay for the Sidebar, divider, and footer accents. The default colour is `#172872` (navy blue).
 
 Secondary Colour
-* The secondary color is used for the Main Heading text and GFChart border. The default colour is `#FF652D` (orange).
+* The secondary colour is used for the Main Heading text and GFChart border. The default colour is `#FF652D` (orange).
 
 #### Stylized Alt
 
@@ -321,10 +321,10 @@ Secondary Colour
 * If no image is selected, the default "building" image will be used instead.
 
 ##### Primary Colour
-* The primary color is used as a transparent overlay for the Sidebar. The default colour is `#FF652D` (orange).
+* The primary colour is used as a transparent overlay for the Sidebar. The default colour is `#FF652D` (orange).
 
 ##### Secondary Colour
-* The secondary color is used for the Main Heading text, GFChart border, divider, and footer accents. The default colour is `#172872` (navy blue).
+* The secondary colour is used for the Main Heading text, GFChart border, divider, and footer accents. The default colour is `#172872` (navy blue).
 
 ### Yuna 
 
@@ -345,7 +345,7 @@ The standard version of Yuna has no additional Template settings.
 :::
 
 ##### Primary Colour
-* The primary color is used as the Main Heading text colour.
+* The primary colour is used as the Main Heading text colour.
 
 #### Stylized Alt
 
@@ -356,11 +356,11 @@ The standard version of Yuna has no additional Template settings.
 :::
 
 ##### Primary Colour
-* The primary color is used as the Main Heading text colour + accent, and Additional Info background colour.
+* The primary colour is used as the Main Heading text colour + accent, and Additional Info background colour.
 
 ## Scheduling Reports 
 
-The ability to get a report emailed to you on a regular schedule is an important feature. GFChart supports this workflow through the use of [relative date filtering in their charts](https://gfchart.com/documentation/?ref=24#relative-date-filtering) and [their new Scheduled Notification add-on](https://gfchart.com/documentation/?ref=24#scheduled-notifications). At the time of writing the Scheduled Notification plugin has very limited schedule controls. For users after robust notification scheduling, [Gravity Flow](https://gravityflow.io/?ref=12) (any license type) or the [Delayed Email Notifications plugin](https://ristrettoapps.com/downloads/gravity-forms-delayed-notifications/) (Doppio or Supremo license) are good alternatives.
+The ability to get a report emailed to you on a regular schedule is an important feature. GFChart supports this workflow through the use of [relative date filtering in their charts](https://gfchart.com/documentation/?ref=24#relative-date-filtering) and [their new Scheduled Notification add-on](https://gfchart.com/documentation/?ref=24#scheduled-notifications). At the time of writing the Scheduled Notification, plugin has very limited schedule controls. For users after robust notification scheduling, [Gravity Flow](https://gravityflow.io/?ref=12) (any license type) or the [Delayed Email Notifications plugin](https://ristrettoapps.com/downloads/gravity-forms-delayed-notifications/) (Doppio or Supremo license) are good alternatives.
 
 ### Scheduling Prerequisite 
 
@@ -373,12 +373,12 @@ The ability to get a report emailed to you on a regular schedule is an important
 
 1. [Create the PDF Report(s)](#setup-pdf-reports) that you want sent out and make sure you configure the PDF to [attach to the Notification(s)](../users/setup-pdf.md#notifications) you setup in the previous step.
 
-1. Update the GFChart graphs and/or calculations to be displayed in the report [with a relative date range](https://gfchart.com/documentation/?ref=24#relative-date-filtering). The common setup is to configure a relative date range with the same value as the notification schedule. For example, if you want the report to go out at the beginning of every month with last month's data you'd set the GFChart's Date Range "Start" date to "first day of last month" and leave the "End" date blank. If the report was going out weekly on a Monday morning with last week's data, use "Monday last week" in GFChart's "Start" date. Or if the report is sent out at the beginning of the day, you could use "yesterday" or "-1 day".
+1. Update the GFChart graphs and/or calculations to be displayed in the report [with a relative date range](https://gfchart.com/documentation/?ref=24#relative-date-filtering). The common setup is to configure a relative date range with the same value as the notification schedule. For example, if you want the report to go out at the beginning of every month with last month's data, you'd set the GFChart's Date Range "Start" date to "first day of last month" and leave the "End" date blank. If the report was going out weekly on a Monday morning with last week's data, use "Monday last week" in GFChart's "Start" date. Or if the report is sent out at the beginning of the day, you could use "yesterday" or "-1 day".
 ![Relative date formatting](https://resources.gravitypdf.com/uploads/2020/06/relative-date-format.png)
 
-1. Once you've go this far it's best to test that the PDF Report(s) are generating correctly and being attached to the Notification(s). Go submit a test entry to the form and then verify the email is received with the PDF Report attached. If you can correctly [view the PDF Report from the Entry List page](../users/viewing-pdfs.md) but are having email delivery issues, [read and impliment our Email Notification Best Practice guide](../users/email-notifications.md) before proceeding with the scheduling setup.
+1. Once you've gone this far, it's best to test that the PDF Report(s) are generating correctly and being attached to the Notification(s). Go submit a test entry to the form and then verify the email is received with the PDF Report attached. If you can correctly [view the PDF Report from the Entry List page](../users/viewing-pdfs.md) but are having email delivery issues, [read and implement our Email Notification Best Practice guide](../users/email-notifications.md) before proceeding with the scheduling setup.
 
-1. **Optional**: all the scheduling plugins make use of [WordPress' in-built Cron mechnasim](https://developer.wordpress.org/plugins/cron/) which relies on traffic to your website to trigger the events. If your website doesn't get the traffic at the scheduled time then your reports will be delayed. If your hosting provided doesn't already include a dedicated cron solution, and you must have these reports at the specific time you've scheduled, [you should disable the default WP Cron and setup a proper system cron instead](https://kinsta.com/knowledgebase/disable-wp-cron/).
+1. **Optional**: all the scheduling plugins make use of [WordPress' in-built Cron mechanism](https://developer.wordpress.org/plugins/cron/) which relies on traffic to your website to trigger the events. If your website doesn't get the traffic at the scheduled time, then your reports will be delayed. If your hosting provided doesn't already include a dedicated cron solution, and you must have these reports at the specific time you've scheduled, [you should disable the default WP Cron and setup a proper system cron instead](https://kinsta.com/knowledgebase/disable-wp-cron/).
 
 ### GFChart's Scheduled Notification 
 
@@ -395,12 +395,12 @@ After installing the plugin, you'll have a new checkbox option on the Notificati
 ![The GFChart Schedule Notifications setting](https://resources.gravitypdf.com/uploads/2020/06/gfchart-schedule-notification-setting.png)
 
 :::caution
-In our testing we found the *Monthly* frequency repeated every 30 days and did not account for months with 28, 29, or 31 days. This means at the end of the year the report will be running 5 days earlier than the original configuration date.
+In our testing, we found the *Monthly* frequency repeated every 30 days and did not account for months with 28, 29, or 31 days. This means at the end of the year the report will be running 5 days earlier than the original configuration date.
 ::: 
 
 Once you select a frequency and save the Notification settings, a new task will be added to the WordPress cron and scheduled to run at the desired interval. The scheduled task time will be set to the Notification settings "save" time. Just remember that the default WordPress Cron works off your site traffic, and reports may be sent late if you don't get traffic at the scheduled time ([set up a system cron if timing is important to you](https://kinsta.com/knowledgebase/disable-wp-cron/)).
 
-If you'd like to change the time that a report will be sent, [you can install and active the free WP Crontrol plugin](https://wordpress.org/plugins/wp-crontrol/). After installation, navigate to *Tools -> Cron Events* and search for Hook Names that begin with `gfcsn_` (these are the GFChart Schedule Notification events). If this is the first Notification you're setting up you should find one event. Edit the event and adjust the "Next Run" setting with the correct time you'd like. Save when finished and your Notification will be automatically sent on the interval you've chosen. 
+If you'd like to change the time that a report will be sent, [you can install and active the free WP Crontrol plugin](https://wordpress.org/plugins/wp-crontrol/). After installation, navigate to *Tools -> Cron Events* and search for Hook Names that begin with `gfcsn_` (these are the GFChart Schedule Notification events). If this is the first Notification you're setting up, you should find one event. Edit the event and adjust the "Next Run" setting with the correct time you'd like. Save when finished, and your Notification will be automatically sent on the interval you've chosen. 
 
 :::caution
 GFChart's scheduled event uses the Notification ID as a unique identifier. You can accidentally override the original form's scheduled event if you duplicate a Gravity Form (the Notification IDs don't change when duplicated) and then update the new form's Notification settings. A workaround is to duplicate the Notification(s) on the new form (getting new IDs), deleting the original notifications and then updating the new Notifications settings to re-enabling scheduling.
@@ -414,11 +414,11 @@ GFChart's scheduled event uses the Notification ID as a unique identifier. You c
 
 [Gravity Flow is a tool used to automate business processes](https://gravityflow.io/?ref=12), and one of its features include the ability to [schedule Steps at defined intervals](https://docs.gravityflow.io/article/67-scheduling-a-step). You can use this scheduling functionality with their Notification workflow step to send out your Gravity Forms Notification(s) at specific intervals.
 
-Before you start the Workflow setup, [have a ready of the Gravity Flow Introduction guide](https://docs.gravityflow.io/article/50-an-introduction-to-the-features) so you've the foundational knowledge you need. To set this up correctly we'll create two Notification steps on the form. The first will include the Schedule delay and then send the Notification, while the second is used to create a loop so the workflow never ends and the schedule repeats indefinitely.
+Before you start the Workflow setup, [have a ready of the Gravity Flow Introduction guide](https://docs.gravityflow.io/article/50-an-introduction-to-the-features), so you've the foundational knowledge you need. To set this up correctly, we'll create two Notification steps on the form. The first will include the Schedule delay and then send the Notification, while the second is used to create a loop so the workflow never ends and the schedule repeats indefinitely.
 
 ![An overview of the Gravity Flow workflow needed to schedule the notification(s)](https://resources.gravitypdf.com/uploads/2020/06/gravity-flow-workflow-overview.png)
 
-When you setup the first Notification step, enable the "Schedule this step" option and and select the appropriate *Delay* interval. Gravity Flow supports delaying by:
+When you setup the first Notification step, enable the "Schedule this step" option and select the appropriate *Delay* interval. Gravity Flow supports delaying by:
 
 * Minute
 * Hour
@@ -435,7 +435,7 @@ In the second Notification step, all you need to do is set the "Next Step" setti
 
 The final step is to submit a form entry to kick off the report scheduling. The first scheduled Notification will be sent using the entry submission time + the delay interval chosen. For example, if you submitted the entry at 9am and have a delay of "1 day" then you'll get the next email at 9am tomorrow. Adjusting the scheduled time manually requires editing the database (**which we do NOT recommend**). The simplest (albeit tedious) approach is to delete the original entry and submit a new entry at your desired time. 
 
-**Summary:** Gravity Flow is a powerhouse piece of software that can help revolutionise your business processes, and offers far more than notification scheduling. But if we only look at the software from the scheduling aspect, Gravity Flow is well-tested and allows interval scheduling – think "send Notification every X days". [Advanced scheduling – like sending on the last day of every month or sending on specific days of the month – can be achieved with developer knowhow](https://docs.gravityflow.io/article/186-gravityflowstepscheduletimestamp), but unfortuantely this is not available via the user interface.
+**Summary:** Gravity Flow is a powerhouse piece of software that can help revolutionise your business processes, and offers far more than notification scheduling. But if we only look at the software from the scheduling aspect, Gravity Flow is well-tested and allows interval scheduling – think "send Notification every X days". [Advanced scheduling – like sending on the last day of every month or sending on specific days of the month – can be achieved with developer knowhow](https://docs.gravityflow.io/article/186-gravityflowstepscheduletimestamp), but unfortunately this is not available via the user interface.
 
 ### Ristretto Apps' Delayed Email Notifications 
 
@@ -447,10 +447,10 @@ Out of all the options, [Ristretto Apps' Delayed Email Notifications plugin](htt
 
 There's an easy-to-use UI for setting up the schedule – including the time, which is missing from the other two options – and the ability to easily view and manage the notifications that have been scheduled without the need for a workaround like the WP Crontrol plugin.
 
-After installing, you'll have a new checkbox option on the Notification settings called *Delayed Notifications* which will allow you to enable this feature. When checked, you'll then be able to select the frequency of the report. If you'd like to send the report daily or weekly we recommend setting the delay option to *Days of the Week* and selecting your appropriate day(s) you want to receive the report.
+After installing, you'll have a new checkbox option on the Notification settings called *Delayed Notifications* which will allow you to enable this feature. When checked, you'll then be able to select the frequency of the report. If you'd like to send the report daily, or weekly we recommend setting the delay option to *Days of the Week* and selecting your appropriate day(s) you want to receive the report.
 
 :::note
-For daily reports select every day of the week.
+For daily reports, select every day of the week.
 :::
 
 Finally, add a time the report should be sent and save the Notification settings.
@@ -479,12 +479,12 @@ If everything has been setup correctly, after submitting the entry to your repor
 
 ### How are the GFCharts generated in the reports?
 
-The aggrigate form data for the GFChart, as well as the chart settings, are sent securely over HTTPS to a GFChart server for processing, and an image is returned. Whether the aggrigate data is [considered annonymised](https://gdpr-info.eu/recitals/no-26/) will depend on what field(s) and chart settings are configured. The rule of thumb is: if you cannot link the standalone GFChart image to an identifiable natural person then that data is considered annonymised and the GDPR does not apply to the aggrigate data sent to the GFChart server. If you're interested in GFChart's privacy policy, [reach our to their support team with your questions](https://gfchart.com/support/?ref=24). 
+The aggregate form data for the GFChart, as well as the chart settings, are sent securely over HTTPS to a GFChart server for processing, and an image is returned. Whether the aggregate data is [considered, annonymised](https://gdpr-info.eu/recitals/no-26/) will depend on what field(s) and chart settings are configured. The rule of thumb is: if you cannot link the standalone GFChart image to an identifiable natural person then that data is considered annonymised, and the GDPR does not apply to the aggregate data sent to the GFChart server. If you're interested in GFChart's privacy policy, [reach out to their support team with your questions](https://gfchart.com/support/?ref=24). 
 
 Once the GFChart image is returned, the PDF generation is completed like normal using Gravity PDF. [Refer to our GDPR for Gravity PDF guide for more information](../users/gdpr-and-gravity-pdf.md).
 
 ### The reports are slow to generate. Is it possible to make it faster?
 
-For each chart you include in the PDF report, an API request has to be made to the GFChart server and we have to await a response. Reports with one or two charts will generate quicker than those with three or four. 
+For each chart you include in the PDF report, an API request has to be made to the GFChart server, and we have to await a response. Reports with one or two charts will generate quicker than those with three or four. 
 
 If the bottleneck is during the form submission process, you can dramatically speed this up [by enabling Gravity PDF's Background Processing feature](../users/global-settings.md#background-processing) which will offload the Notification sending process (and PDF generation) to a background queue.

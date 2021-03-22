@@ -16,7 +16,7 @@ You can purchase the *Watermark* plugin from our [Extension Shop](https://gravit
 
 ## Configuring 
 
-This extension adds a number of new settings to all non-legacy PDF templates (any template designed for Gravity PDF v4 or higher) and [they can be found in the *Appearance* tab](../users/setup-pdf.md#appearance-tab) when [adding/editing the PDF settings](../users/setup-pdf.md#locating-pdf-settings).
+This extension adds a number of new settings to all non-legacy PDF templates (any template designed for Gravity PDF v4 or higher), and [they can be found in the *Appearance* tab](../users/setup-pdf.md#appearance-tab) when [adding/editing the PDF settings](../users/setup-pdf.md#locating-pdf-settings).
 
 ### Watermark Settings
 ![Watermark settings](https://resources.gravitypdf.com/uploads/edd/2019/03/settings1.png)
@@ -30,7 +30,7 @@ Below is the list of settings added by *Watermark*, with a brief description abo
 #### Image Watermark 
 *  Display an image watermark on each page of your PDF, vertically and horizontally centred.
 *  For the best results, use a transparent PNG image the same dimensions as the [PDF Paper Size](../users/setup-pdf.md#paper-size).
-*  To ensure your PDF generates quickly and the PDF file size stays small we recommend using an image under 1MB. [Try run the image through a compression tool like TinyPNG](https://tinypng.com/).
+*  To ensure your PDF generates quickly and the PDF file size stays small, we recommend using an image under 1MB. [Try run the image through a compression tool like TinyPNG](https://tinypng.com/).
 
 #### Text Watermark 
 *  Display a text watermark diagonally-centred on each page of your PDF.
@@ -55,4 +55,4 @@ The [*Previewer* Text Watermark setting](previewer-add-on.md#watermark) takes pr
 * Set the *Watermark* Text Watermark to "Sample"
 * Set the *Previewer* Field's Text Watermark to "Preview"
 
-When viewing the PDF preview the watermark "Preview" will be displayed, and when viewing after form submission the watermark "Sample" will be displayed.
+When viewing the PDF preview, the watermark "Preview" will be displayed, and when viewing after form submission, the watermark "Sample" will be displayed.
