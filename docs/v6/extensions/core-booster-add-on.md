@@ -38,6 +38,7 @@ https://www.youtube.com/watch?v=C_ox0hj3ZHk&rel=0
 *  This feature allows you to control which fields are displayed or excluded in the current PDF. You can create multiple PDFs on the same form with different fields selected.
 *  This setting will override the [rudimentary "exclude" CSS class](../users/hide-form-fields.md).
 *  The fields you included will be displayed in the original order used [in the Form Editor](https://docs.gravityforms.com/form-editor/). You cannot re-order the fields. 
+*  As of v1.3.0, this setting can be toggled on or off (default off). When on, you can pick and choose the fields to display. When off, all form fields will automatically be considered for display in the PDF.
 
 ### Display Notes 
 

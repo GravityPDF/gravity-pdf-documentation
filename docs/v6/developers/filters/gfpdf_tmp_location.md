@@ -33,20 +33,18 @@ The following snippet shows you how you can move the PDF temporary directory to 
 
 ```
 add_filter( 'gfpdf_tmp_location', function( $path, $working_folder, $upload_url ) {
-    /*
-     * On a standard WordPress installation the ABSPATH directory refers to the top-level directory on your web server
-     * where WordPress is located. When that's the case, going up a directory and creating the tmp folder usually means it becomes private.
-     *
-     * Depending on your web server setup you may need to modify this path to ensure it's not accessible through your browser.
-     *
-     * Make sure you include the forward slash at the end!
-     */
-     return ABSPATH . '../GravityPDF/tmp/';
-
-     /*
-      * If the above doesn't work, you can try use the get_temp_dir() function instead
-      */
-     return get_temp_dir() . 'GravityPDF/';
+   /*
+	 * On a standard WordPress installation the ABSPATH directory refers to the top-level directory where WordPress
+	 * is located. Going up a directory and creating the tmp folder there usually means it becomes private (but not always)
+	 *
+	 * Note: your hosting may prevent the ability to write to folders outside the WordPress top-level directory and this
+	 * will not work. Make sure you test PDF Notifications still function after adding this code.
+	 */
+	return dirname( ABSPATH ) . '/GravityPDF/tmp/'; /* <-- make sure you include the foward slash */
+	/*
+	 * If the above doesn't work, you can try use the get_temp_dir() function instead
+	 */
+	return get_temp_dir() . 'GravityPDF/'; /* <-- make sure you include the foward slash */
 
 }, 10, 3 );
 

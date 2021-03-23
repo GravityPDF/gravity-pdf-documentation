@@ -34,7 +34,7 @@ There are only two required fields when creating a PDF: the name and filename op
 ### Filename 
 * The filename field is for external use and is what the generated PDF will actually be called when saved. For example, `My_Personal_Flyer.pdf`.
 * [Gravity Form merge tags](https://docs.gravityforms.com/category/user-guides/merge-tags-getting-started/) are supported in the filename. For example, `{Name:3}'s_Personal_Flyer.pdf`.
-* If you have multiple PDFs configured on a single form, make sure the Filename is unique for each document otherwise PDF Notifications won't work correctly.
+* If you have multiple PDFs configured on a single form, make sure the Filename is unique for each document otherwise PDF Notifications  and the Always Save PDF feature won't work correctly.
 * The `.pdf` extension should be excluded from the filename field (but will be automatically removed if you add it).
 * While the following characters will be saved, they are automatically converted to an underscore when generating the PDF: `/  " * ? | :`. This is to prevent file system problems when saving the PDF to disk.
 
