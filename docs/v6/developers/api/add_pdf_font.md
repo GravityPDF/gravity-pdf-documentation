@@ -6,9 +6,9 @@ description: "This function allows you to add custom fonts to Gravity PDF using 
 
 ## Description 
 
-This function allows you to add custom fonts to Gravity PDF using code. It accepts an associative array and only the `font_name` and `regular` array keys are required.
+This function allows you to add custom fonts to Gravity PDF using code. It accepts an associative array, and only the `font_name` and `regular` array keys are required.
 
-The `font_name` can only contain alphanumeric characters, or a space. Only `.ttf` font files are supported and all fonts should be referenced with the full server path.
+The `font_name` can only contain alphanumeric characters, or a space. Only `.ttf` font files are supported, and all fonts should be referenced with the full server path.
 
 ## Version 
 

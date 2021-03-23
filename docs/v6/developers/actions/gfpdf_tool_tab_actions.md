@@ -51,7 +51,7 @@ add_action( 'gfpdf_tool_tab_actions', function( $settings ) {
 		}
 
 		/**
-		 * If we are here the user has correctly authenticated and they want your action to run
+		 * If we are here the user has correctly authenticated, and they want your action to run
 		 * Include all your action handling code below.
 		 */
 		//unlink( '/path/to/log/files' );

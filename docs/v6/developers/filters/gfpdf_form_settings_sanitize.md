@@ -6,9 +6,9 @@ description: "Gravity PDF does standard sanitisation of form fields but you migh
 
 ## Description 
 
-Gravity PDF does standard sanitisation of form fields but you might like to include your own special processing for any form PDF fields you add. 
+Gravity PDF does standard sanitisation of form fields, but you might like to include your own special processing for any form PDF fields you add. 
 
-You can also use the `gfpdf_form_settings_sanitize_$type` filter, where `$type` refers to the field type – checkbox, select, ect. 
+You can also use the `gfpdf_form_settings_sanitize_$type` filter, where `$type` refers to the field type – checkbox, select, etc. 
 
 ## Parameters 
 

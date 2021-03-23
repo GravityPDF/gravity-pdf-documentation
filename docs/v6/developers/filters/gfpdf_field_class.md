@@ -6,13 +6,13 @@ description: "When rendering PDFs we broke out the functionality which handles t
 
 ## Description 
 
-When rendering PDFs we split the Gravity Form fields display into its own class, which all extend our common abstract class `GFPDF\Helper\Helper_Abstract_Fields` (yes, we use namespaces). This filter makes it easy to customise the output of individual fields types by allowing you to overriding or extend the field's class. 
+When rendering PDFs, we split the Gravity Form fields display into its own class, which all extend our common abstract class `GFPDF\Helper\Helper_Abstract_Fields` (yes, we use namespaces). This filter makes it easy to customise the output of individual fields types by allowing you to overriding or extend the field's class. 
 
-The most likely things you'll want to override in a field's class is the `value()` or `html()` method, as it control the retrieval of the field's entry information and the HTML output, respectively. However, you can completely change all properties of a field if you desire.
+The most likely things you'll want to override in a field's class is the `value()` or `html()` method, as it controls the retrieval of the field's entry information and the HTML output, respectively. However, you can completely change all properties of a field if you desire.
 
 In the [usage](#usage) section we show you how to override an existing field's `value()` method to change the output. But for a more in-depth look at how to extend the `GFPDF\Helper\Helper_Abstract_Fields` class we recommend you review the field classes found in `/src/helper/fields/`.
 
-You can also use the filter `gfpdf_field_class_$type`, where type refers to the Gravity Form field type (textarea, select, signature ect). 
+You can also use the filter `gfpdf_field_class_$type`, where type refers to the Gravity Form field type (textarea, select, signature etc). 
 
 ## Parameters 
 
@@ -68,7 +68,7 @@ And here's the accompanying `Prefix_Allcaps_Textarea_Field.php` file which shoul
 
 /**
  * The following class should be placed in a separate PHP file in the same directory as the file you included the `gfpdf_field_class` filter.
- * We'll override the current Textarea_Field class with out new Prefix_Allcaps_Textarea_Field class.
+ * We'll override the current Textarea_Field class with our new Prefix_Allcaps_Textarea_Field class.
  * This will allow us to force allcaps on all textarea fields in the PDFs
  */
 namespace GFPDF\Helper\Fields;

@@ -8,7 +8,7 @@ description: "Like floats, the PDF software does support fixed and absolute posi
 
 Like [floats](floats.md), the PDF software does support `fixed` and `absolute` positioning of block elements in PDFs, but there are specific restrictions. These include:
 
-1.  Only block elements can `fixed` or `absolute` positioned (remember, [all HTML is hard-coded as either block or inline](supported-html-and-css.md#html-support)).
+1.  Only block elements can be `fixed` or `absolute` positioned (remember, [all HTML is hard-coded as either block or inline](supported-html-and-css.md#html-support)).
 
 2.  The element you want positioned needs to be a top-level tag. Positioning won't work if the element is nested.
 

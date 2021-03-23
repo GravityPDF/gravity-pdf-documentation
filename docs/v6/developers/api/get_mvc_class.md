@@ -6,7 +6,7 @@ description: "If you need direct access to our Model, View or Controller classes
 
 ## Description 
 
-If you need direct access to our Model, View or Controller classes this method will allow you to get the original class. This is useful when you want to remove any action or filters we set, or to call a method we don't provide through the API.
+If you need direct access to our Model, View or Controller classes, this method will allow you to get the original class. This is useful when you want to remove any action or filters we set, or to call a method we don't provide through the API.
 
 ## Version 
 

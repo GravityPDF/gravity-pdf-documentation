@@ -8,7 +8,7 @@ description: ""
 
 ## Description 
 
-This filter can be used to programically enable or disable a PDF configured on the form. By default, Gravity PDF will check if the PDF status is active and the conditional logic is valid. This hook allows you to filter PDFs with advanced logic. 
+This filter can be used to programatically enable or disable a PDF configured on the form. By default, Gravity PDF will check if the PDF status is active and the conditional logic is valid. This hook allows you to filter PDFs with advanced logic. 
 
 ## Version 
 

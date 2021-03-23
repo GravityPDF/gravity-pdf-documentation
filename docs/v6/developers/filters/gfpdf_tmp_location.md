@@ -52,7 +52,7 @@ add_filter( 'gfpdf_tmp_location', function( $path, $working_folder, $upload_url 
 
 ```
 
-Once you've verified the filter works correctly you should manually remove the old directory.
+Once you've verified the filter works correctly, you should manually remove the old directory.
 
 ## Source Code 
 

@@ -8,7 +8,7 @@ description: ""
 
 ## Description 
 
-By default, Gravity PDF will include the aggregate data for Survey / Poll / Quiz fields for all entries in your Gravity Form. When you have a lot of entries this can take considerable time to process. This filter allows you to disable this functionality.
+By default, Gravity PDF will include the aggregate data for Survey / Poll / Quiz fields for all entries in your Gravity Form. When you have a lot of entries, this can take considerable time to process. This filter allows you to disable this functionality.
 
 ## Version 
 

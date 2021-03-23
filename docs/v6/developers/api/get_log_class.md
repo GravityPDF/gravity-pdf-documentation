@@ -6,7 +6,7 @@ description: "Gravity PDF implements the PSR-3 logging library, Monolog, to hand
 
 ## Description 
 
-Gravity PDF implements the [PSR-3](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-3-logger-interface.md) logging library, [Monolog](https://github.com/Seldaek/monolog), to handle all it's logging requirements. When in production the logger doesn't save any logs unless it's enabled through Gravity Forms in-built logging setting, or when using the [Gravity Forms Logging Add-on](https://www.gravityhelp.com/documentation/article/logging-add-on/). Once you've enabled logging we'll save the appropriate logs to disk for later review – errors and higher or notices and higher, depending on the log setting you selected.
+Gravity PDF implements the [PSR-3](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-3-logger-interface.md) logging library, [Monolog](https://github.com/Seldaek/monolog), to handle all it's logging requirements. When in production the logger doesn't save any logs unless it's enabled through Gravity Forms in-built logging setting, or when using the [Gravity Forms Logging Add-on](https://docs.gravityforms.com/logging-add-on/). Once you've enabled logging, we'll save the appropriate logs to disk for later review – errors and higher or notices and higher, depending on the log setting you selected.
 
 When using the logging class all logs will automatically include the following details:
 

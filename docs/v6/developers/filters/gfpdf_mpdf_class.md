@@ -6,7 +6,7 @@ description: "This filter can be used to include additional content directly in 
 
 ## Description 
 
-This filter can be used to include additional content directly in your PDF, or override any existing PDF settings Gravity PDF defaults to. This filter is run after the PDF template's HTML is loaded into mPDF and right before the document is generated. If you want to change any of mPDF's rendering settings you should use the [`gfpdf_mpdf_init_class`](gfpdf_mpdf_init_class.md) filter instead, as it gives you access to the class right after being initialised.
+This filter can be used to include additional content directly in your PDF, or override any existing PDF settings Gravity PDF defaults to. This filter is run after the PDF template's HTML is loaded into mPDF and right before the document is generated. If you want to change any of mPDF's rendering settings, you should use the [`gfpdf_mpdf_init_class`](gfpdf_mpdf_init_class.md) filter instead, as it gives you access to the class right after being initialised.
 
 ## Parameters 
 

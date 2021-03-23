@@ -27,8 +27,8 @@ Text watermarks can be enabled by including the following HTML in your PDF templ
 
 ### content 
 * The text you want watermarked on the PDF. This is a required attribute.
-* If `content` is set to blank it will disable watermarking in the document from that page onwards.
-* The `content` attribute **must have special characters encoded correctly**. This includes the `<`, `>`, `'`, `"` and `&` symbols. To prevent unexpected behaviour use the PHP function `htmlspecialchars`.
+* If `content` is set to blank, it will disable watermarking in the document from that page onwards.
+* The `content` attribute **must have special characters encoded correctly**. This includes the `<`, `>`, `'`, `"` and `&` symbols. To prevent unexpected behaviour, use the PHP function `htmlspecialchars`.
 
 ```
     <watermarktext content="<?= htmlspecialchars( '<CONFIDENTIAL>', ENT_QUOTES ); ?>" />
@@ -54,7 +54,7 @@ The image watermark only requires the `src` attribute. The `alpha`, `size` and `
 * Controls the image transparency and should be a number between 0-1
 
 ### size 
-* Controls the image size that your watermark should be displayed at. By default the image will display at its original size (depending on the PDF DPI settings)
+* Controls the image size that your watermark should be displayed at. By default, the image will display at its original size (depending on the PDF DPI settings)
 * **Values:**
     `D` – Display at original image size (default)
     `P` – Resize image to fit the full page

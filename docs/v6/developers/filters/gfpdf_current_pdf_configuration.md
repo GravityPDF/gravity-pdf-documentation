@@ -6,7 +6,7 @@ description: ""
 
 ## Description 
 
-The Core and Universal have additional configuration options that can be modified with this filter. Usually these should be modified at a higher level, but it can be necessary to dynamically change them at runtime. 
+The Core and Universal have additional configuration options that can be modified with this filter. Usually, these should be modified at a higher level, but it can be necessary to dynamically change them at runtime. 
 
 Special meta options specific to these templates and accessed via `$config['meta']` include:
 

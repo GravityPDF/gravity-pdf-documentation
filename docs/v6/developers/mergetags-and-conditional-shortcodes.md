@@ -6,13 +6,13 @@ description: "Gravity Forms has Merge Tags and conditional shortcodes which you 
 
 ## Introduction 
 
-Gravity Forms has a [powerful macro they call *Merge Tags*](https://www.gravityhelp.com/documentation/article/merge-tags/) which allows you to display form content, user meta data, post data and other information like the entry submission date. There's also [conditional shortcodes](https://www.gravityhelp.com/documentation/article/shortcodes/#conditional-shortcode) which you can use to allow simple *IF* statements. Both merge tags and conditional shortcodes are supported in PDF templates and together they make a powerful combination.
+Gravity Forms has a [powerful macro they call *Merge Tags*](https://docs.gravityforms.com/category/user-guides/merge-tags-getting-started/) which allows you to display form content, user meta data, post data and other information like the entry submission date. There's also [conditional shortcodes](https://docs.gravityforms.com/shortcodes/#conditional-shortcode) which you can use to allow simple *IF* statements. Both merge tags and conditional shortcodes are supported in PDF templates, and together they make a powerful combination.
 
 ## Template Tutorial – Part 2 
 
 ![The Hello World Gravity Forms form](https://resources.gravitypdf.com/uploads/2015/11/hello-world-form.png)
 
-In [Template Tutorial – Part 1](first-custom-pdf.md#template-tutorial) we showed you the very minimum needed to create a PDF template. In part 2 we're going to utilise merge tags and conditional shortcodes in a template. Before you begin you will need to [download the Gravity Forms form](https://resources.gravitypdf.com/uploads/2015/11/hello-world-gravity-form.json) (right click and 'save link as') we'll be working with and [import it into your website](https://www.gravityhelp.com/documentation/article/importing-a-form-into-gravity-forms/). Once done, submit a new entry for the newly-imported *Hello World* form.
+In [Template Tutorial – Part 1](first-custom-pdf.md#template-tutorial--part-1) we showed you the very minimum needed to create a PDF template. In part 2 we're going to utilise merge tags and conditional shortcodes in a template. Before you begin you will need to [download the Gravity Forms form](https://resources.gravitypdf.com/uploads/2015/11/hello-world-gravity-form.json) (right click and 'save link as') we'll be working with and [import it into your website](https://docs.gravityforms.com/importing-a-form-into-gravity-forms/). Once done, submit a new entry for the newly-imported *Hello World* form.
 
 ### Merge Tags 
 
@@ -32,7 +32,7 @@ In our `hello-world.php` template we're going to add a new line below the `<h1>`
 <p>You're from {Where do you live?:3}, {Name (First):1.3}? How cool is that!</p>
 ```    
 
-After uploading the template, when you view the *Hello World* PDF for the entry you created earlier it will include the Gravity Forms data. All Gravity Form fields can be displayed in the PDF this way.
+After uploading the template, when you view the *Hello World* PDF for the entry you created earlier, it will include the Gravity Forms data. All Gravity Form fields can be displayed in the PDF this way.
 
 ### Conditional Shortcodes 
 
@@ -43,7 +43,7 @@ When your `value` contains any of the following characters `<`, `>`, `"`, `'` or
 Example: `condition="is" value="<?php echo esc_html( 'Honey & Spice' ); ?>"]`
 :::
 
-In our `hello-world.php` template we're going to add conditional shortcodes that outputs a small fact about where the user lives. If a user selects `Earth` only the Earth fact will be displayed. Below the line we just added we'll include the following:
+In our `hello-world.php` template, we're going to add conditional shortcodes which will output a small fact about where the user lives. If a user selects `Earth` only the Earth fact will be displayed. Below the line we just added we'll include the following:
 
 ```html
 <p>You're from {Where do you live?:3}, {Name (First):1.3}? How cool is that!</p>
@@ -65,6 +65,6 @@ In our `hello-world.php` template we're going to add conditional shortcodes that
 [/gravityforms]
 ```
 
-When you view the *Hello World* PDF now it will conditionally display one of the four facts. Then [edit the *Hello World* entry](https://www.gravityhelp.com/documentation/article/entry-detail/) and changing the `Where do you live?` field value. When you view the PDF again a different fact will be displayed.
+When you view the *Hello World* PDF, it will now it will conditionally display one of the four facts. Then [edit the *Hello World* entry](https://www.gravityhelp.com/documentation/article/entry-detail/) and changing the `Where do you live?` field value. When you view the PDF again, a different fact will be displayed.
 
 [Download the completed Hello World PDF template for Part 2](https://gist.github.com/jakejackson1/6c0a5268fa23ba51a285).

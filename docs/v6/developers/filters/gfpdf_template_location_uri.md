@@ -8,7 +8,7 @@ description: "By default, the PDF working directory is found in your http://exam
 
 By default, the [PDF working directory](../first-custom-pdf.md#working-directory) is found in your `http://example.com/wp-content/uploads/PDF_EXTENDED_TEMPLATES` folder. This filter allows you to change that location. 
 
-The working directory **MUST be accessible via a URL** and **MUST be used in conjunction with the [`gfpdf_template_location`](gfpdf_template_location.md) filter**. Both the `gfpdf_template_location` and `gfpdf_template_location_uri` filters should point to the same directory – one is the path and one is the URL.
+The working directory **MUST be accessible via a URL** and **MUST be used in conjunction with the [`gfpdf_template_location`](gfpdf_template_location.md) filter**. Both the `gfpdf_template_location` and `gfpdf_template_location_uri` filters should point to the same directory – one is the path, and one is the URL.
 
 *Note:* your web server needs write access to the folder you move the working directory to.
 
