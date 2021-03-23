@@ -10,9 +10,16 @@ We officially added support for the [Gravity Wiz Nested Forms plugin](https://gr
 if ( class_exists( '\GFPDF\Helper\Fields\Field_Form' ) ) {
 	class Field_Form_Original extends \GFPDF\Helper\Fields\Field_Form {
 		public function html( $value = '', $label = true ) {
+		add_filter( 'gpnf_template_args', function( $args ) {
+				$args['template'] = 'nested-entries-detail-simple';
+				return $args;
+			} );
+
 			$html = GFCommon::get_lead_field_display( $this->field, $this->get_value(), $this->entry['currency'] );
 			$html = apply_filters( 'gform_entry_field_value', $html, $this->field, $this->entry, $this->form );
 
+			$html = str_replace( '<th ', '<th align="left" ', $html );
+			
 			return \GFPDF\Helper\Helper_Abstract_Fields::html( $html );
 		}
 	}

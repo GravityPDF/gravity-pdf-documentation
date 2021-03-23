@@ -31,7 +31,7 @@ To keep your code cleaner you could set these values as variables earlier in the
    $name     = $form_data['field'][1]['first'];
 ?>
 
-<p>You're from <?= echo $location; ?>, <?= echo $name; ?>? How cool is that!</p>
+<p>You're from <?= $location; ?>, <?= $name; ?>? How cool is that!</p>
 ```
 
 If you're accessing a lot of fields from `$form_data['field']` you might like to assign it a shorter variable name:
@@ -527,6 +527,35 @@ if ( is_file( $path ) ) {
 }
 ```
 
+#### Image Hopper
+
+You'll need [the Image Hopper add-on](https://imagehopper.tech/) to use this field type.
+
+```
+/* Add images to PDF for Image Hopper field ID 27 */
+if ( is_array( $form_data['field']['27_path'] ) ) {
+    foreach ( $form_data['field']['27_path'] as $path ) {      
+       /* verify path has an image extension and it exists on the server */
+       if( is_file( $path ) ) { 
+            echo '<img src="'. $path .'" width="200" />';
+       }
+    }
+}
+/* Add images to PDF with secure link for Image Hopper field ID 27 */
+if ( is_array( $form_data['field']['27_path'] ) ) {
+    foreach ( $form_data['field']['27_path'] as $key => $path ) {      
+       /* verify path has an image extension and it exists on the server */
+       if( is_file( $path ) ) { 
+            echo '<a href="'. $form_data['field']['27_secured'][$key] .'"><img src="'. $path .'" width="200" /></a>';
+       }
+    }
+}
+/* Output first image uploaded, if it exists */
+if ( isset( $form_data['field']['27_path'][0] ) && is_file( $form_data['field']['27_path'][0] ) ) {
+    echo '<img src="'. $form_data['field']['27_path'][0] .'" width="200" />';
+}
+```
+
 #### Nested Forms 
 
 You'll need [the Gravity Perk Nested Forms add-on](https://gravitywiz.com/documentation/gravity-forms-nested-forms/?ref=78) to use this field type.
@@ -539,7 +568,11 @@ $nested_ids = explode( ',', $form_data['field'][3] );
 foreach ( $nested_ids as $id ) {
     $nested_form_data = GPDFAPI::get_form_data( $id );
     if ( ! is_wp_error( $nested_form_data ) ) {
-        /* Output required content for this entry */
+        /* 
+         * Output required content for this entry using the $nested_form_data array, 
+         * which has the same structure as $form_data (but for the current nested form entry) 
+         */
+         echo $nested_form_data['field'][5]; 
     }
 }
 ```

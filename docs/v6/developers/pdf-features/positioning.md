@@ -10,7 +10,7 @@ Like [floats](floats.md), the PDF software does support `fixed` and `absolute` p
 
 1.  Only block elements can be `fixed` or `absolute` positioned (remember, [all HTML is hard-coded as either block or inline](supported-html-and-css.md#html-support)).
 
-2.  The element you want positioned needs to be a top-level tag. Positioning won't work if the element is nested.
+2.  The element you want positioned needs to be a top-level tag in the template. Positioning won't work if the element is nested inside another.
 
 3.  All positioning is relative to the current PDF page
 
@@ -18,17 +18,21 @@ Like [floats](floats.md), the PDF software does support `fixed` and `absolute` p
 
 5.  Positioning is overridden if it would position the element off the page
 
+:::note
+mPDF can start acting quirky if the page only contains positioned elements. A simple workaround is to add a non-breaking space character `&nbsp;` to the page.
+:::
+
 ## Absolute Positioning 
 
 Absolute positioning treats the whole physical page as the containing element, irrespective of the page margins. That means if we set the top and left CSS attributes to zero your HTML would be at the very top-left corner of the page.
 
 ```html
-<body>
-    <div style="position: absolute; top: 0; left: 0">I'm outside the page margins</div>
-    <div style="position: absolute; top: 0; right: 0">I'm outside the page margins</div>
-    <div style="position: absolute; bottom: 0; left: 0">I'm outside the page margins</div>
-    <div style="position: absolute; bottom: 0; right: 0">I'm outside the page margins</div>
-</body>
+<div style="position: absolute; top: 0; left: 0">I'm outside the page margins</div>
+<div style="position: absolute; top: 0; right: 0">I'm outside the page margins</div>
+<div style="position: absolute; bottom: 0; left: 0">I'm outside the page margins</div>
+<div style="position: absolute; bottom: 0; right: 0">I'm outside the page margins</div>
+
+&nbsp;
 ```
 
 ## Fixed Positioning 
@@ -36,12 +40,11 @@ Absolute positioning treats the whole physical page as the containing element, i
 As oppose to absolute positioning, fixed positioned elements adhere to the page margins (set using the CSS margin attribute in `@page`), using it as the container. That means setting the top and left CSS attributes to zero would show your HTML positioned at the very beginning of the page margins.
 
 ```html
-<body>
-    <div style="position: fixed; top: 0; left: 0">I'm inside the page margins</div>
-    <div style="position: fixed; top: 0; right: 0">I'm inside the page margins</div>
-    <div style="position: fixed; bottom: 0; left: 0">I'm inside the page margins</div>
-    <div style="position: fixed; bottom: 0; right: 0">I'm inside the page margins</div>
-</body>
+<div style="position: fixed; top: 0; left: 0">I'm inside the page margins</div>
+<div style="position: fixed; top: 0; right: 0">I'm inside the page margins</div>
+<div style="position: fixed; bottom: 0; left: 0">I'm inside the page margins</div>
+<div style="position: fixed; bottom: 0; right: 0">I'm inside the page margins</div>
+&nbsp;
 ```
 
 ## Rotated Elements 
@@ -64,6 +67,8 @@ Like tables, fixed or absolute positioned elements can be rotated 90 degrees clo
 </style>
 
 <div id="rotated">Rotated</div>
+
+&nbsp;
 ```
 
 ## Auto Fit Text 
@@ -87,9 +92,13 @@ One of the great features of positioned elements is the ability to have the text
 
 <div id="rotated">My Very Long Text Too Big For Container</div>
 
+&nbsp;
+
 <pagebreak/>
 
 <div id="rotated" style="overflow: auto">My Very Long Text Too Big For Container</div>
+
+&nbsp;
 ```
 
 ## Example 

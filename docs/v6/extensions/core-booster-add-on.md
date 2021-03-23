@@ -39,6 +39,8 @@ https://www.youtube.com/watch?v=C_ox0hj3ZHk&rel=0
 *  This setting will override the [rudimentary "exclude" CSS class](../users/hide-form-fields.md).
 *  The fields you included will be displayed in the original order used [in the Form Editor](https://docs.gravityforms.com/form-editor/). You cannot re-order the fields. 
 *  As of v1.3.0, this setting can be toggled on or off (default off). When on, you can pick and choose the fields to display. When off, all form fields will automatically be considered for display in the PDF.
+*  To control the display of HTML fields you first need to [enable the Show HTML Fields setting](user-setup-pdf.md#show-html-fields).
+* To control the display of Product fields you first need to [set the Group Product setting to "No"](#group--ungroup-product-fields).
 
 ### Display Notes 
 
