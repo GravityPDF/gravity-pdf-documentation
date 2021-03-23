@@ -55,4 +55,4 @@ The [*Previewer* Text Watermark setting](previewer-add-on.md#watermark) takes pr
 * Set the *Watermark* Text Watermark to "Sample"
 * Set the *Previewer* Field's Text Watermark to "Preview"
 
-When viewing the PDF preview, the watermark "Preview" will be displayed, and when viewing after form submission, the watermark "Sample" will be displayed.
+When viewing the PDF preview, the watermark "Preview" will be displayed. And when viewing after form submission, the watermark "Sample" will be displayed.

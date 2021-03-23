@@ -14,7 +14,7 @@ description: "Beautiful PDF Reports using Gravity Forms and GFChart. Includes 15
 
 ## Prerequisites 
 
-Along with having [Gravity Forms](https://rocketgenius.pxf.io/c/1211356/445235/7938) and [Gravity PDF](../users/installation.md) installed on your website, **to use Reports for GFChart, [you need a GFChart ALL license](https://gfchart.com/pricing/?ref=24)** and have the following plugins installed:
+Along with having [Gravity Forms](https://rocketgenius.pxf.io/c/1211356/445235/7938) and [Gravity PDF](../users/installation.md) installed on your website, **to use Reports for GFChart, [you need a GFChart ALL license](https://gfchart.com/pricing/?ref=24)**, and have the following plugins installed:
 
 1. [GFChart v1.17+](https://gfchart.com/?ref=24) with active license key
 1. GFChart Image Charts v1.0.0-beta1+
@@ -57,7 +57,7 @@ Once you've setup your chart(s), it's time to create your PDF reports! Well, alm
 
 Before you do anything, you should determine what type of report you need, as this will establish which Gravity Form you configure. For example, if you want to generate a report for every form submission, you'll setup your reports directly on the desired form. This setup is useful, but not limited to, the following use-cases:
 
-1. **Donation / Charity Auction** - a donation is made via Gravity Forms, and the report includes a chart showing the total amount raised. A variation on this is a charity aution where the chart shows the total amount raised / voted for each item.
+1. **Donation / Charity Auction** - a donation is made via Gravity Forms, and the report includes a chart showing the total amount raised. A variation on this is a charity auction where the chart shows the total amount raised / voted for each item.
 1. **Quiz** - after completing a quiz/survey, the report contains chart(s) showing the aggregate results.
 1. **Event/Booking/Registration/Subscription** - after completing the form, a report PDF is sent showing other user's demographics. 
 1. **Report on demand** - rather than scheduling reports, you can create a form that will send out the report on submission.

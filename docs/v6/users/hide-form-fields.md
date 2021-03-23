@@ -12,7 +12,7 @@ It's important to note that only certain PDF templates have these filtering opti
 
 ## What fields are displayed in the PDF? 
 
-Gravity PDF will adhere to your form's conditional logic when generating a PDF. That means if the conditional logic determines a field (or entire section) should be hidden it won't be displayed on the PDF. Also, if a user doesn't fill in anything for a particular field it won't be displayed either. Both of these settings can be modified – see [*Enable Conditional Logic*](setup-pdf.md#enable-conditional-logic) and [*Show Empty Fields*](setup-pdf.md#show-empty-fields). 
+Gravity PDF will adhere to your form's conditional logic when generating a PDF. That means if the conditional logic determines a field (or entire section) should be hidden it won't be displayed on the PDF. Also, if a user doesn't fill in anything for a particular field, it won't be displayed either. Both of these settings can be modified – see [*Enable Conditional Logic*](setup-pdf.md#enable-conditional-logic) and [*Show Empty Fields*](setup-pdf.md#show-empty-fields). 
 
 HTML and Page fields are also hidden by default, but they can be enabled using the [*Show Page Names*](setup-pdf.md#show-page-names) and [*Show HTML Fields*](setup-pdf.md#show-html-fields) options. 
 
@@ -22,7 +22,7 @@ You can also choose to show or hide the form's title using the [*Show Form Title
 
 ![Add 'exclude' field to Gravity Form Field](https://resources.gravitypdf.com/uploads/2015/10/exclude-field.png) 
 
-In certain cases you may not want a particular form field from displaying in the PDF. When that's the case you can add the CSS class `exclude` to a field in the Gravity Forms editor. You can do this by:
+In certain cases, you may not want a particular form field from displaying in the PDF. To exclude a field, you can add the CSS class `exclude` to that field in the Gravity Forms editor. You can do this by:
 
 1.  Navigating to your form's *Form Editor*
 2.  Select the field you want excluded from the PDF

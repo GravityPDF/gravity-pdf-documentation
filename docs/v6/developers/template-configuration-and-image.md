@@ -97,7 +97,7 @@ Once you have copied the above into your config file, you'll need to rename the 
 2.  Any hyphens (-) should be replaced with underscores (\_)
 3.  The class name should be in sentence case (the first character of each word separated by an underscore (\_) should be upper case)
 
-For instance, if you created a custom template called `business-letter.php` the class name should be `Business_Letter`:
+For instance, if you created a custom template called `business-letter.php` then the class name should be `Business_Letter`:
 
 ```
 class Business_Letter implements Helper_Interface_Config, Helper_Interface_Setup_TearDown {
@@ -135,7 +135,7 @@ public function configuration() {
 Below are details of all the core fields available to you:
 
 ##### show\_form\_title 
-* Adds a Yes/No field to the template section asking users if they want to shows the Gravity Form title at the beginning of the PDF template.
+* Adds a Yes/No field to the template section asking users if they want to show the Gravity Form title at the beginning of the PDF template.
 * Only applicable when template is using `$pdf->process_html_structure()` in your PDF template. Although you can add your own field logic based on this setting. [See custom field support for more details](template-configuration-and-image.md#custom-field-support).
 
 ##### show\_page\_names 
@@ -160,31 +160,31 @@ Below are details of all the core fields available to you:
 
 ##### header 
 * Adds a Rich Text Editor to the template section allowing users to include information in the header of the PDF
-* [Unless you use `@page`](pdf-features/pagebreaks.md#at-page) to set your own header, the core header will automatically be included in your PDF.
+* [Unless you use `@page`](pdf-features/pagebreaks.md#page) to set your own header, the core header will automatically be included in your PDF.
 
 ##### first\_header 
 * Adds a Rich Text Editor to the template section allowing users to include information in a header on the first page of the PDF
-* [Unless you use `@page`](pdf-features/pagebreaks.md#at-page) to set your own header, the core header will automatically be included in your PDF.
+* [Unless you use `@page`](pdf-features/pagebreaks.md#page) to set your own header, the core header will automatically be included in your PDF.
 
 ##### footer 
 * Adds a Rich Text Editor to the template section allowing users to include information in the footer of the PDF
-* [Unless you use `@page`](pdf-features/pagebreaks.md#at-page) to set your own footer, the core footer will automatically be included in your PDF.
+* [Unless you use `@page`](pdf-features/pagebreaks.md#page) to set your own footer, the core footer will automatically be included in your PDF.
 
 ##### first\_footer 
 * Adds a Rich Text Editor to the template section allowing users to include information in a footer on the first page of the PDF
-* [Unless you use `@page`](pdf-features/pagebreaks.md#at-page) to set your own footer, the core footer will automatically be included in your PDF.
+* [Unless you use `@page`](pdf-features/pagebreaks.md#page) to set your own footer, the core footer will automatically be included in your PDF.
 
 ##### background\_color 
 * Adds a colour picker to the template section allowing users to change the PDF background colour.
-* [Unless you use `@page`](pdf-features/pagebreaks.md#at-page) to set your own background(-color), the background colour will automatically be included in your PDF.
+* [Unless you use `@page`](pdf-features/pagebreaks.md#page) to set your own background(-color), the background colour will automatically be included in your PDF.
 
 ##### background\_image 
 * Adds an upload box to the template section allowing users to upload and select a background image for the PDF
-* [Unless you use `@page`](pdf-features/pagebreaks.md#at-page) to set your own background(-image), the background image will automatically be included in your PDF.
+* [Unless you use `@page`](pdf-features/pagebreaks.md#page) to set your own background(-image), the background image will automatically be included in your PDF.
 
 #### Custom Fields 
 
-Adding your own custom fields is where this feature gets really powerful. Using the `fields` sub-key you can define text, paragraph, rich text, radio buttons, select boxes, colour pickers or upload fields with a few lines of code:
+Adding your own custom fields is where this feature gets really powerful. Using the `fields` sub-key, you can define text, paragraph, rich text, radio buttons, select boxes, colour pickers or upload fields with a few lines of code:
 
 ```
 public function configuration() {
@@ -300,7 +300,7 @@ public function configuration() {
 Below are details about the most common field attributes that can be used when defining custom template fields:
 
 ##### id 
-* The field ID. This should be unique and we recommend prefixing it.
+* The field ID. This should be unique, and we recommend prefixing it.
 
 ##### name 
 * The field label displayed to the user.
@@ -320,7 +320,7 @@ Below are details about the most common field attributes that can be used when d
 ##### inputClass 
 * Add class name to field.
 
-Because only certain options apply to certain fields this isn't an exhaustive list of available attributes, but they are the most common. For additional examples, [review the `/src/helper/Helper_Options_Fields.php` file](https://github.com/GravityPDF/gravity-pdf/blob/development/src/helper/Helper_Options_Fields.php).
+Because only certain options apply to certain fields, this isn't an exhaustive list of available attributes, but they are the most common. For additional examples, [review the `/src/helper/Helper_Options_Fields.php` file](https://github.com/GravityPDF/gravity-pdf/blob/development/src/helper/Helper_Options_Fields.php).
 
 ### Custom Field Support 
 
@@ -439,7 +439,7 @@ class Hello_World implements Helper_Interface_Config, Helper_Interface_Setup_Tea
 	}
 
 	/**
-	 * Return the templates configuration structure which control what extra fields will be shown in the "Template" tab when configuring a form's PDF.
+	 * Return the templates configuration structure which controls what extra fields will be shown in the "Template" tab when configuring a form's PDF.
 	 *
 	 * @return array The array, split into core components and custom fields
 	 *
@@ -465,7 +465,7 @@ class Hello_World implements Helper_Interface_Config, Helper_Interface_Setup_Tea
 
 ![Our Hello World template fields](https://resources.gravitypdf.com/uploads/2015/11/hello-world-configuration.png)
 
-Continuing on from our [Part 3 Hello World Tutorial](php-form-data-array.md#template-tutorial), we're going to show you how to create a template configuration with core footer and background image support enabled. We'll also add a new field that will determine if meta data should be included in the document.
+Continuing on from our [Part 3 Hello World Tutorial](php-form-data-array.md#template-tutorial--part-3), we're going to show you how to create a template configuration with core footer and background image support enabled. We'll also add a new field that will determine if meta data should be included in the document.
 
 ### Template Configuration 
 
@@ -523,11 +523,11 @@ public function configuration() {
 }
 ```
 
-We've just told Gravity PDF about a new radio field called *Show Meta Data* that has Yes/No options. By default the *No* value will be selected and a nice description about what the field does is shown just below the radio buttons. We've also prefixed our field ID with `world_` so we don't clash with any other fields. And because we are conscientious developers we've made all our strings translatable by wrapping them [in the `__()` function](https://developer.wordpress.org/reference/functions/__/). Make sure you only translate the `option` array *values*, and not the keys.
+We've just told Gravity PDF about a new radio field called *Show Meta Data* that has Yes/No options. By default, the *No* value will be selected, and a nice description about what the field does is shown just below the radio buttons. We've also prefixed our field ID with `world_`, so we don't clash with any other fields. And because we are conscientious developers we've made all our strings translatable by wrapping them [in the `__()` function](https://developer.wordpress.org/reference/functions/__/). Make sure you only translate the `option` array *values*, and not the keys.
 
 [Read more about the specifics of each field attribute](#custom-fields).
 
-If you go back to the [Template tab](../users/setup-pdf.md#template-tab) you'll now see our two core fields and the *Show Meta Data* field. Go ahead and enable/fill in information for each field then save it.
+If you go back to the [Template tab](../users/setup-pdf.md#template-tab), you'll now see our two core fields and the *Show Meta Data* field. Go ahead and enable/fill in information for each field then save it.
 
 [Download the completed configuration template for our Hello World PDF](https://gist.github.com/jakejackson1/0115bf12f6303e2e400799fc3080245c).
 
@@ -537,7 +537,7 @@ Now we're capturing and saving the footer, background image and meta data toggle
 
 If you haven't been following along with the other tutorials you can [download the current PDF template here](https://gist.github.com/jakejackson1/c7dea5d0953374970f71).
 
-[If you remember from earlier](#template-field-support) the `$settings` array holds all our custom fields and is where we'll find the meta data setting. To keep our PDF template clean we'll set the settings variables at the beginning of the template (before the HTML).
+[If you remember from earlier](#custom-field-support) the `$settings` array holds all our custom fields and is where we'll find the meta data setting. To keep our PDF template clean we'll set the settings variables at the beginning of the template (before the HTML).
 
 ```
 /* Prevent direct access to the template (always good to include this) */
@@ -557,7 +557,7 @@ $show_meta_data = ! empty( $settings['world_show_meta_data'] ) ? $settings['worl
 ?>
 ```
 
-Here we are checking if our our *Show Meta Data* field exists in the settings array before assigning it to the `$show_meta_data` variable. If it doesn't, we'll default to *No*.
+Here we are checking if our *Show Meta Data* field exists in the settings array before assigning it to the `$show_meta_data` variable. If it doesn't, we'll default to *No*.
 
 Now we can do a simple *IF* statement in the body of our template and output the meta data required. We'll add the condition to the statement to the end of our template:
 
@@ -576,6 +576,6 @@ Now we can do a simple *IF* statement in the body of our template and output the
 <?php endif; ?>
 ```
 
-If you've enabled the *View Meta Data* option, when you view the *Hello World* PDF you'll see the meta data included.
+If you've enabled the *View Meta Data* option, when you view the *Hello World* PDF, you'll see the meta data included.
 
 [Download the completed Hello World PDF Template for Part 4](https://gist.github.com/jakejackson1/49ec98ddbb0dd64d42ae).

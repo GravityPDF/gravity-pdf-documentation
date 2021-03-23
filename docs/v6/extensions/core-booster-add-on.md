@@ -97,7 +97,7 @@ https://www.youtube.com/watch?v=uKTLW_HsiWs&rel=0
 * This feature gives you four different ways to display the field labels in the PDF:
     1.  Display the Standard/Field Label for all fields
     2.  Display the Admin Field Label for all fields
-    3.  Display the Admin Field Label for fields that have one, otherwise, fall back to the Standard/Field Label
+    3.  Display the Admin Field Label for fields that have one, otherwise fall back to the Standard/Field Label
     4.  Disable the Field Label
 
 * This feature applies to all Gravity Form fields that support an Admin Field label

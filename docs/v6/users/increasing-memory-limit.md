@@ -8,7 +8,7 @@ description: "WordPress memory is different to server memory. Your VPS may have 
 The following article is technical in nature so if you don't feel comfortable making changes to files via (s)FTP, or from your hosting control panel, you should contact your web hosting provider for assistance.
 :::
 
-When talking about a *memory limit* we're referring to PHP's maximum allowed memory per process. That just means the number of resources your website is allowed to use while processing a request – or in our case, generating a PDF. When we talk about WordPress's maximum memory limit we're really referring to PHP's maximum memory limit. 
+When talking about a *memory limit*, we're referring to PHP's maximum allowed memory per process. That just means the number of resources your website is allowed to use while processing a request – or in our case, generating a PDF. When we talk about WordPress's maximum memory limit, we're really referring to PHP's maximum memory limit. 
 
 It's worth stating that WordPress memory is different to server memory. Your VPS may have 4GB of memory, but WordPress and your web server are only allocated a small portion of this. 
 
@@ -36,10 +36,10 @@ A lot of shared and managed hosting don't allow you to edit the main `php.ini` f
 
 ### .htaccess 
 
-If none of the above two options works you can try changing the memory limit using the `.htaccess` file. Be aware that if this doesn't work **it may cause a 500 Internal Server Error** (remove the line if this happens).
+If none of the above two options works, you can try changing the memory limit using the `.htaccess` file. Be aware that if this doesn't work, **it may cause a 500 Internal Server Error** (remove the line if this happens).
 
     php_value memory_limit 128M
 
 ## Still got a problem? Contact Your Hosting Provider 
 
-If none of the methods above work for you then get in touch with your web hosting provider and ask them for assistance.
+If none of the methods above work for you, then get in touch with your web hosting provider and ask them for assistance.

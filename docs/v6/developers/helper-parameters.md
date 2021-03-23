@@ -10,7 +10,7 @@ We've included a number of techniques to assist you when creating custom PDF tem
 
 ## URL Parameters 
 
-When viewing a Gravity PDF in your browser there's a couple of URL parameters that will assist you. A URL parameter is simply a value added to your URL which Gravity PDF can read. It might look like this:
+When viewing a Gravity PDF in your browser, there's a couple of URL parameters that will assist you. A URL parameter is simply a value added to your URL which Gravity PDF can read. It might look like this:
 
     https://gravitypdf.com/pdf/12i0afjafwijww212/?name=value
 
@@ -33,7 +33,7 @@ The URL parameter is the `name=value` pair after the question mark.
 
 ## Useful Paths and URLs 
 
-When creating custom PDF templates it's often useful to include external CSS files and images, however you don't want to use a fixed path or URL. Instead, you should use a PHP constant or function that contains the correct path or URL.
+When creating custom PDF templates, it's often useful to include external CSS files and images, however you don't want to use a fixed path or URL. Instead, you should use a PHP constant or function that contains the correct path or URL.
 
 ### \_\_DIR\_\_ 
 * [This is a PHP magic constant](http://php.net/manual/en/language.constants.predefined.php) that references the current absolute path to the current file. We use this when referencing images or other PHP files in the PDF template.
@@ -42,7 +42,7 @@ When creating custom PDF templates it's often useful to include external CSS fil
 
 ### PDF\_TEMPLATE\_LOCATION 
 * This is a constant that contains the path to the [PDF working directory](first-custom-pdf.md#working-directory) or, in multisite installations, the path to the [individual multisite working directory](first-custom-pdf.md#multisite-structure).
-* We recommend using [`__DIR__`](#dir) where possible
+* We recommend using [`__DIR__`](#dir) where possible.
 
 ### PDF\_TEMPLATE\_URL\_LOCATION 
 * This is a constant that contains the URL to the [PDF working directory](first-custom-pdf.md#working-directory) or, for multisite installations, the URL to the [individual multisite working directory](first-custom-pdf.md#multisite-structure). This is useful if you want to provide a link to a file on the host machine.
@@ -54,5 +54,5 @@ When creating custom PDF templates it's often useful to include external CSS fil
 * Usage: `<?php $upload_dir = wp_upload_dir(); echo '<img src="' . $upload_dir['path'] . '2015/04/hello-world.png" width="400" />'; ?>`
 
 ### ABSPATH 
-* A WordPress constant that references the directory in which WordPress is installed. This is less useful that the other methods (usually you don't store files in the root directory), but it's good to know about.
+* A WordPress constant that references the directory in which WordPress is installed. This is less useful than the other methods (usually you don't store files in the root directory), but it's good to know about.
 * Usage: `<img src="<?= ABSPATH; ?>logo.png" width="400" />`

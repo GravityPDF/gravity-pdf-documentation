@@ -26,7 +26,7 @@ All PDF templates have common settings that can be configured, such as font, sec
 #### Greeting Salutation (1) 
 * The opening greeting for your letter. If you've set the [Recipient's Name](#recipient-name-7) the following Merge Tags are available for use: `{prefix}`, `{firstname}`, `{surname}`, `{suffix}`.
 * Instead of using the recipient's full name, you can also use `Dear {prefix} {surname}`.
-* If you don't know the recipient's name use `To whom it may concern` or `Dear Sir or Madam`.
+* If you don't know the recipient's name, use `To whom it may concern` or `Dear Sir or Madam`.
 * Note: American English usually uses a colon instead of a comma at the end of the greeting.
 
 #### Letter Subject (2) 

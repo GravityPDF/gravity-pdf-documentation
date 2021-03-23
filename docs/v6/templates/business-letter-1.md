@@ -13,7 +13,7 @@ The *Business Letter #1* premium PDF template is a modern take on the formal bus
 
 ## Limitations 
 
-*Business Letter #1* can be used with all Gravity Forms. You'll have access to your form data for use in the letter through Gravity Forms Merge Tags. For more information see the [Gravity Forms Merge Tags documentation](https://www.gravityhelp.com/documentation/article/merge-tags/).
+*Business Letter #1* can be used with all Gravity Forms. You'll have access to your form data for use in the letter through Gravity Forms Merge Tags. For more information, see the [Gravity Forms Merge Tags documentation](https://www.gravityhelp.com/documentation/article/merge-tags/).
 
 ## Configuring 
 
@@ -24,13 +24,13 @@ All PDF templates have common settings that can be configured, such as font, sec
 ![The field positions in Business Letter 1](https://resources.gravitypdf.com/uploads/2017/04/field-positions-1.png)
 
 #### Greeting Salutation (1) 
-* The opening greeting for your letter. If you've set the [Recipient's Name](#recipient-name) the following Merge Tags are available for use: `{prefix}`, `{firstname}`, `{surname}`, `{suffix}`.
-* Instead of using the recipient's full name you can also use `Dear {prefix} {surname}`.
-* If you don't know the recipient's name use `To whom it may concern` or `Dear Sir or Madam`.
+* The opening greeting for your letter. If you've set the [Recipient's Name](#recipient-name-10) the following Merge Tags are available for use: `{prefix}`, `{firstname}`, `{surname}`, `{suffix}`.
+* Instead of using the recipient's full name, you can also use `Dear {prefix} {surname}`.
+* If you don't know the recipient's name, use `To whom it may concern` or `Dear Sir or Madam`.
 * Note: American English usually uses a colon instead of a comma at the end of the greeting.
 
 #### Letter Subject (2) 
-* Include a brief summary about your letter. The Subject will be included below your [Greetings Salutation](#greeting-salutation) and above your [Letter Body](#letter-body).
+* Include a brief summary about your letter. The Subject will be included below your [Greetings Salutation](#greeting-salutation-1) and above your [Letter Body](#letter-body-3).
 * You might like to append your subject with "Re:" or "Subject:" and/or write it in capital letters.
 * If you leave this setting blank it won't be included in the PDF.
 
@@ -40,7 +40,7 @@ All PDF templates have common settings that can be configured, such as font, sec
 
 #### Closing Salutation (4) 
 * This text appears right after the body of your letter.
-* `Yours sincerely` is a common closing salutation. Outside the US, if you don't know the recipient's name `Yours faithfully` should be used.
+* `Yours sincerely` is a common closing salutation. Outside the US, if you don't know the recipient's name `Yours, faithfully` should be used.
 
 #### Date Format (5) 
 * Select the date format that is shown in the letter. The date shown on the PDF is taken from the entry submission date.
@@ -52,7 +52,7 @@ All PDF templates have common settings that can be configured, such as font, sec
     -   Disable Date
 
 #### Indent Paragraphs 
-* When checked the first line of each paragraph of the [Body](#letter-body) text is indented.
+* When checked the first line of each paragraph of the [Body](#letter-body-3) text is indented.
 
 ![You can optionally indent the body text](https://resources.gravitypdf.com/uploads/2017/04/indent-and-signature-2.png)
 
@@ -62,11 +62,11 @@ All PDF templates have common settings that can be configured, such as font, sec
 
 #### Business Logo (6) 
 * Upload your company / business logo for inclusion in the letter.
-* An image 500px wide will be a suitable resolution in most cases. To ensure your PDF generates quickly and the PDF file size stays small we recommend using an image under 1MB.
+* An image 500px wide will be a suitable resolution in most cases. To ensure your PDF generates quickly and the PDF file size stays small, we recommend using an image under 1MB.
 
 #### Business Address (7) 
 * The business / sender address is split into three separate fields for each line it takes up in the letter.
-* You are usually the sender and your address should be used, but you can also use Merge Tags to include that information from the form.
+* You are usually the sender, and your address should be used, but you can also use Merge Tags to include that information from the form.
 
 #### Business Contact Info (8) 
 * The business / sender contact information is split into two separate fields for each line it takes up in the letter.
@@ -80,10 +80,10 @@ All PDF templates have common settings that can be configured, such as font, sec
 ![The field positions in Business Letter 1](https://resources.gravitypdf.com/uploads/2017/04/field-positions-3.png)
 
 #### Recipient Name (10) 
-* Use Gravity Forms merge tags to include the letter recipient's name. In the settings this is split up between four fields: Prefix, First Name, Last Name and Suffix.
+* Use Gravity Forms merge tags to include the letter recipient's name. In the settings, this is split up between four fields: Prefix, First Name, Last Name and Suffix.
 
 #### Recipient Business/Position (11) 
-* If applicable, include the recipient business and/or position in the company using Merge Tags
+* If applicable, include the recipient business and/or position in the company using Merge Tags.
 
 #### Recipient Address (12) 
 * The recipient address is split into three separate fields for each line it takes up in the letter.
@@ -93,11 +93,11 @@ All PDF templates have common settings that can be configured, such as font, sec
 ![The field positions in Business Letter 1](https://resources.gravitypdf.com/uploads/2017/04/field-positions-4.png)
 
 #### Blank Signature (13) 
-* Tick this checkbox if the letter is to be printed and signed by hand. The PDF will leave a gap between the [Closing Salutation](#closing-salutation) and the Signatory Name.
+* Tick this checkbox if the letter is to be printed and signed by hand. The PDF will leave a gap between the [Closing Salutation](#closing-salutation-4) and the Signatory Name.
 
 #### Signature (13) 
-* Upload an image of your signature. If no image is set a faux signature will be used instead, generated using the [Signatory Name](#signature-name).
-* This templates comes bundled with *Dancing Script*, an open source Google script font (SIL Open Font License, Version 1.1), used for the faux signature.
+* Upload an image of your signature. If no image is set a faux signature will be used instead, generated using the [Signatory Name](#signature-name-14).
+* This template comes bundled with *Dancing Script*, an open source Google script font (SIL Open Font License, Version 1.1), used for the faux signature.
 
 #### Signatory Name (14) 
 * The full name of the signatory (i.e the person who is signing the letter)
@@ -113,7 +113,7 @@ All PDF templates have common settings that can be configured, such as font, sec
 * Additional names you intend to send the letter to. This is included at the bottom of the letter.
 
 #### Carbon Copy Label (17) 
-* The label used in the letter for [Carbon Copy](#carbon-copy).
+* The label used in the letter for [Carbon Copy](#carbon-copy-16).
 
 ## Recommended Font 
 
@@ -121,4 +121,4 @@ All PDF templates have common settings that can be configured, such as font, sec
 
 ## Viewing PDF 
 
-Once you've saved your new PDF you can [view it from the Gravity Forms Entries List page](../users/viewing-pdfs.md). Just remember to fill out and submit your form if the entry list is empty.
+Once you've saved your new PDF, you can [view it from the Gravity Forms Entries List page](../users/viewing-pdfs.md). Just remember to fill out and submit your form if the entry list is empty.

@@ -19,7 +19,7 @@ The [Gravity PDF plugin](https://wordpress.org/plugins/gravity-forms-pdf-extende
 
 Under some circumstances the Gravity PDF plugin or premium extension(s) can send data externally:
 
--   If you [search our knowledge base from the Gravity PDF Settings Help tab](global-settings.md#help) an API request will be made to GravityPDF.com with your search parameters.
--   If you [purchase and install an extension from our online store](https://gravitypdf.com/extension-shop/) the extension plugin will periodically make an API request to GravityPDF.com to validate your license key and/or check for plugin updates. Your website's domain name and license key (if any) are the only identifiable information sent.
+-   If you [search our knowledge base from the Gravity PDF Settings Help tab](global-settings.md#help-tab) an API request will be made to GravityPDF.com with your search parameters.
+-   If you [purchase and install an extension from our online store](https://gravitypdf.com/extension-shop/) then the extension plugin will periodically make an API request to GravityPDF.com to validate your license key and/or check for plugin updates. Your website's domain name and license key (if any) are the only identifiable information sent.
 
-Should you have any questions about the Gravity PDF plugin and the GDPR please email privacy@gravitypdf.com.
+Should you have any questions about the Gravity PDF plugin and the GDPR, please email privacy@gravitypdf.com.

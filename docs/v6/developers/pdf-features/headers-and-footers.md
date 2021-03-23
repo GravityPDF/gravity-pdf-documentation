@@ -57,7 +57,7 @@ There are two different methods to assign headers and footers:
 1.  Using the special CSS selector `@page`
 2.  Using mPDF's custom HTML setter tags `<sethtmlpageheader>` and `<sethtmlpagefooter>`
 
-**Setting your own header or footer in your PDF template [will override the core header and footer fields](../template-configuration-and-image.md#configuration-structure)**.
+**Setting your own header or footer in your PDF template [will override the core header and footer fields](../template-configuration-and-image.md#template-configuration)**.
 
 ### @page 
 
@@ -92,7 +92,7 @@ You can get more specific with named `@page` selectors but [we'll discuss those 
 
 ### Inline HTML 
 
-The use of the `<sethtmlpageheader />` or `<sethtmlpagefooter />` tag will set a header/footer on the current page in the document. While using [@page](#@page) is preferred, these tags do have their usefulness. Because there's currently no `@page :last` pseudo selector we can use them at the end of our PDF template to display a header/footer on the very last page.
+The use of the `<sethtmlpageheader />` or `<sethtmlpagefooter />` tag will set a header/footer on the current page in the document. While using [@page](#page) is preferred, these tags do have their usefulness. Because there's currently no `@page :last` pseudo selector we can use them at the end of our PDF template to display a header/footer on the very last page.
 
 ```html
 <sethtmlpageheader name="html_MyCustomHeader" show-this-page="1" value="on" />

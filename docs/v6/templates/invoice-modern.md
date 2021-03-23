@@ -160,7 +160,7 @@ With that said, you can take advantage of [Gravity PDF's Conditional Logic](../u
 All text in the PDF can easily be changed below. By default, the labels are displayed in English, but you can easily translate them. Many elements in the PDF can be disabled by saving a blank label.
 
 #### Title (1) 
-* The invoice title that is displayed in the top right corner of the invoice by default. If the [Logo Position](#logo-position) is set to right, the label will be displayed on the left instead.
+* The invoice title that is displayed in the top right corner of the invoice by default. If the [Logo Position](#logo-position) is set to “Right”, the label will be displayed on the left instead.
 * Australian businesses registered for GST should change this to "Tax Invoice"
 
 #### Date (2) 

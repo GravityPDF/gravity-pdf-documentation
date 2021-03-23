@@ -20,7 +20,7 @@ The REST API must be enabled to use this plugin.
 
 ## Configuring 
 
-This extension adds a new field called **PDF Preview** to the [Gravity Forms Editor](https://www.gravityhelp.com/documentation/article/creating-a-form/), and can be found under the 'Advanced Fields' section. To correctly setup, the *Previewer* field, you first need to [configure a PDF on your chosen Gravity Form](../users/setup-pdf.md).
+This extension adds a new field called **PDF Preview** to the [Gravity Forms Editor](https://www.gravityhelp.com/documentation/article/creating-a-form/) and can be found under the 'Advanced Fields' section. To correctly setup, the *Previewer* field, you first need to [configure a PDF on your chosen Gravity Form](../users/setup-pdf.md).
 
 ### PDF Preview Options 
 
@@ -47,13 +47,13 @@ The width of the preview will always be 100% and fill the container the form is 
 
 #### Download Preview 
 
-When enabled, a 'download' button will be included in the PDF Preview so the user can download the generated PDF
+When enabled, a 'download' button will be included in the PDF Preview, so the user can download the generated PDF.
 
-After a PDF is downloaded, it'll automatically be removed from the server. To download the PDF a second time, the user might need to refresh the Previewer (whether they do or not will depend on the browser they're using).
+After a PDF is downloaded, it'll automatically be removed from the server. To download the PDF a second time, a user might need to refresh the Previewer (whether they do or not will depend on the browser they're using).
 
 #### Watermark 
 
-In the preview, text is overlaid diagonally on each page of the generated PDF
+In the preview, text will be overlaid diagonally on each page of the generated PDF.
 
 You can change the watermark text displayed and the font.
 

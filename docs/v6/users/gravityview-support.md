@@ -20,10 +20,10 @@ Because of [Gravity PDF's security](pdf-security.md), by default access to the P
 
 1.  Using [GravityView's Advanced Filter extension](https://gravityview.co/extensions/advanced-filter/?ref=186) to [show the entries from the current logged in user](https://docs.gravityview.co/article/203-how-to-show-only-results-submitted-by-the-current-user).
 
-2.  Using a Membership plugin that allows you to show/hide content based on user roles ([Paid Memberships Pro](https://wordpress.org/plugins/paid-memberships-pro/) comes to mind). You can display the GravityView to a user with a Role that includes one of the capabilities found in Gravity PDF's [User Restriction setting](global-settings.md#user-restriction) – by default this is only the Administrator role. Not sure what Roles and Capabilities are? [Here's a great article from WPShout discussing the finer points](https://wpshout.com/working-with-wordpress-user-roles-and-capabilities/).
+2.  Using a Membership plugin that allows you to show/hide content based on user roles ([Paid Memberships Pro](https://wordpress.org/plugins/paid-memberships-pro/) comes to mind). You can display the GravityView to a user with a Role that includes one of the capabilities found in Gravity PDF's [User Restriction setting](global-settings.md#user-restriction) – by default, this is only the Administrator role. Not sure what Roles and Capabilities are? [Here's a great article from WPShout discussing the finer points](https://wpshout.com/working-with-wordpress-user-roles-and-capabilities/).
 
 ## Public Access 
 
-If you'd like anyone with access to your View to securely download the PDF(s), you can [take advantage of signed PDF URLs](shortcodes.md#signed-attribute) introduced in Gravity PDF 5.1. Just amend the [gravitypdf] shortcode added to the Custom Content Field and include the `signed="1"` attribute:
+If you'd like anyone with access to your View to securely download the PDF(s), you can [take advantage of signed PDF URLs](shortcodes.md#signed-optional) introduced in Gravity PDF 5.1. Just amend the [gravitypdf] shortcode added to the Custom Content Field and include the `signed="1"` attribute:
 
 `[gravitypdf name="Default Template" id="56ea5a3b2c684" text="Download PDF" signed="1"]`

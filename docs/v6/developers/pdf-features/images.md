@@ -17,7 +17,7 @@ The PDF engine Gravity PDF uses, [mPDF](http://mpdf.github.io), supports the fol
 
 To display images in your PDF template use the standard `<img src="" />` HTML tag.
 
-The software will accept a URL or absolute path to the image file, although we've found [using an absolute path to the image](../helper-parameters.md#useful-paths-and-urls) offers better cross-server compatibility and it's the recommended solution.
+The software will accept a URL or absolute path to the image file, although we've found [using an absolute path to the image](../helper-parameters.md#useful-paths-and-urls) offers better cross-server compatibility, and it's the recommended solution.
 
 ![Sample of mPDF image support](https://resources.gravitypdf.com/uploads/2015/11/image-support.png)
 
@@ -32,9 +32,9 @@ Images can slow the PDF generation time. If you are rendering an image heavy doc
 
 ## Float Support 
 
-There is partial support for floating images in mPDF, however the following limitations apply:
+There is partial support for floating images in mPDF, however, the following limitations apply:
 
--   You can only have one floated image left and one floated right per container.
+-   You can only have one floated image left, and one floated right per container.
 -   Unlike your browser (which will overflow the image out of the container), the containing HTML element is extended at the bottom if necessary to enclose the floated image.
 -   Floats are ignored if the image is too wide for the container, inside a table, or `page-break-inside: avoid` is set.
 
