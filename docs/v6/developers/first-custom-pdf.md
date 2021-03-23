@@ -84,10 +84,10 @@ The following is a valid PDF template header:
 The following variables are available to all PDF templates:
 
 ### $form 
-* The current [Gravity Form object](https://www.gravityhelp.com/documentation/article/form-object/) being processed. This is the main object in Gravity Forms and contains all properties of a particular form – form title, fields, notification, confirmation etc.
+* The current [Gravity Form object](https://docs.gravityforms.com/form-object/) being processed. This is the main object in Gravity Forms and contains all properties of a particular form – form title, fields, notification, confirmation etc.
 
 ### $entry 
-* The current [Gravity Form entry object](https://www.gravityhelp.com/documentation/article/entry-object/) being processed. This object contains all properties of a particular entry in **raw** format – accessing field data directly from the object should be avoided, where possible. The object is formatted as an associative array, and the field IDs are the array keys.
+* The current [Gravity Form entry object](https://docs.gravityforms.com/entry-object/) being processed. This object contains all properties of a particular entry in **raw** format – accessing field data directly from the object should be avoided, where possible. The object is formatted as an associative array, and the field IDs are the array keys.
 
 ### $form\_data 
 * The formatted [$entry](#entry) data stored in an associative array. [View full documentation on the `$form_data` array](php-form-data-array.md).

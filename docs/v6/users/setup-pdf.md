@@ -33,7 +33,7 @@ There are only two required fields when creating a PDF: the name and filename op
 
 ### Filename 
 * The filename field is for external use and is what the generated PDF will actually be called when saved. For example, `My_Personal_Flyer.pdf`.
-* [Gravity Form merge tags](https://www.gravityhelp.com/documentation/article/merge-tags/) are supported in the filename. For example, `{Name:3}'s_Personal_Flyer.pdf`.
+* [Gravity Form merge tags](https://docs.gravityforms.com/category/user-guides/merge-tags-getting-started/) are supported in the filename. For example, `{Name:3}'s_Personal_Flyer.pdf`.
 * If you have multiple PDFs configured on a single form, make sure the Filename is unique for each document otherwise PDF Notifications won't work correctly.
 * The `.pdf` extension should be excluded from the filename field (but will be automatically removed if you add it).
 * While the following characters will be saved, they are automatically converted to an underscore when generating the PDF: `/  " * ? | :`. This is to prevent file system problems when saving the PDF to disk.
@@ -64,7 +64,7 @@ Below is the list of settings available in the General tab, with a brief descrip
 * If very sensitive user information is included in the PDF, it is recommended you **do not** enable this feature as email can be insecure. Instead [use the `[gravitypdf]` shortcode over HTTPS](shortcodes.md) and enable [*PDF Security*](#enable-pdf-security).
 
 ### Conditional Logic 
-* Conditional logic is a [powerful feature of Gravity Forms](https://www.gravityhelp.com/documentation/article/enable-conditional-logic/) allowing you to show or hide fields in your form based on a user's response. We've extended this behaviour to Gravity PDF, allowing you to enable or disable a PDF if a user responded a specific way.
+* Conditional logic is a [powerful feature of Gravity Forms](https://docs.gravityforms.com/enable-conditional-logic/) allowing you to show or hide fields in your form based on a user's response. We've extended this behaviour to Gravity PDF, allowing you to enable or disable a PDF if a user responded a specific way.
 * If the conditional logic determines a PDF should be disabled, it will not be generated for that entry. The PDF will not be accessible through the `[gravitypdf]` shortcode and will not be attached to notifications. Site administrators won't even be able to access it from the admin area.
 
 ## Appearance Tab 
@@ -111,14 +111,14 @@ Below is a description of the core template settings.
 * Optionally display the form name at the beginning of the PDF document.
 
 ### Show Page Names 
-* When using Gravity Forms' *Page Break* fields you have the option to [name each page using the *Start Paging* field](https://www.gravityhelp.com/documentation/article/page-break/). When this PDF option is enabled, these page names will be displayed in your PDF.
+* When using Gravity Forms' *Page Break* fields you have the option to [name each page using the *Start Paging* field](https://docs.gravityforms.com/page-break/). When this PDF option is enabled, these page names will be displayed in your PDF.
 
 ### Show HTML Fields 
 * Show your form's HTML fields in the PDF.
 * If your HTML has conditional logic, this will be honoured in the PDF. See [*Enable Conditional Logic*](#enable-conditional-logic) to disable this feature.
 
 ### Show Section Break Description 
-* The [*Section Break* field](https://www.gravityhelp.com/documentation/article/section-break/) allows you to enter a label and description. By default, a PDF will only show a section break's *label*. Enabling this option will also show the section break description.
+* The [*Section Break* field](https://docs.gravityforms.com/section-break/) allows you to enter a label and description. By default, a PDF will only show a section break's *label*. Enabling this option will also show the section break description.
 
 ### Enable Conditional Logic 
 * When this option is enabled, the Gravity Form field conditionals you set in your form will be adhered to in the PDF. This means if a field's conditional logic says it should be hidden, then it won't be included in the PDF. 
@@ -167,7 +167,7 @@ Below is the list of settings available in the Advanced tab, with a brief descri
 
 ### Password 
 * When [*PDF Security*](#enable-pdf-security) is enabled, you have the option to password-protect your PDF documents. 
-* [Mergetag](https://www.gravityhelp.com/documentation/article/merge-tags/) usage is allowed in this field.
+* [Mergetag](https://docs.gravityforms.com/category/user-guides/merge-tags-getting-started/) usage is allowed in this field.
 * Leave this field blank if you don't want to set a password (useful if you only want to control the end-user [*Privileges*](#privileges))
 
 ### Privileges 

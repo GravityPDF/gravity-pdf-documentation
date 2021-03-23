@@ -6,7 +6,7 @@ description: "While Gravity Forms provides its own API, we wanted to abstract th
 
 ## Description 
 
-While [Gravity Forms provides its own API](https://www.gravityhelp.com/documentation/article/gravity-forms-api/), we wanted to abstract that functionality and really fine tune the methods we needed (we don't implement everything in the Gravity Forms API). We recommend reviewing the `src/helper/Helper_Form.php` file for full details.
+While [Gravity Forms provides its own API](https://docs.gravityforms.com/api-functions/), we wanted to abstract that functionality and really fine tune the methods we needed (we don't implement everything in the Gravity Forms API). We recommend reviewing the `src/helper/Helper_Form.php` file for full details.
 
 ## Version 
 

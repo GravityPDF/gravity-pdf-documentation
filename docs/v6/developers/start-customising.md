@@ -19,7 +19,7 @@ We've attempted to make Gravity PDF as developer-friendly as possible. That mean
 The majority of our developer documentation will be targeted at creating custom PDF templates. You'll learn how to:
 
 -   Setup Gravity PDF so it utilises custom templates.
--   The different techniques for displaying Gravity Form data in the PDFs – using [merge tags](https://www.gravityhelp.com/documentation/article/merge-tags/) or a PHP array.
+-   The different techniques for displaying Gravity Form data in the PDFs – using [merge tags](https://docs.gravityforms.com/category/user-guides/merge-tags-getting-started/) or a PHP array.
 -   How to [utilise a PDF configuration file](template-configuration-and-image.md) to create template-specific settings.
 -   [Adding a PDF template image](template-configuration-and-image.md#image-preview) so users can see what the custom template looks like.
 -   [How the PDF hierarchy works](template-hierarchy.md) so you can override core templates.

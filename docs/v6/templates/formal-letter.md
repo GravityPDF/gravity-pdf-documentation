@@ -13,7 +13,7 @@ description: ""
 
 ## Limitations 
 
-*Formal Letter* can be used with all Gravity Forms. You'll have access to your form data for use in the letter through Gravity Forms Merge Tags. For more information, see the [Gravity Forms Merge Tags documentation](https://www.gravityhelp.com/documentation/article/merge-tags/).
+*Formal Letter* can be used with all Gravity Forms. You'll have access to your form data for use in the letter through Gravity Forms Merge Tags. For more information, see the [Gravity Forms Merge Tags documentation](https://docs.gravityforms.com/category/user-guides/merge-tags-getting-started/).
 
 ## Configuring 
 

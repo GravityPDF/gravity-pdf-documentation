@@ -77,7 +77,7 @@ https://www.youtube.com/watch?v=F2hANc35XE4&rel=0
 
 #### Show Field Description? 
 * When enabled, a field's description will be displayed alongside the user's response.
-* The description position is [determined by your Form Settings](https://www.gravityhelp.com/documentation/article/form-settings/#form-layout) and can be placed above or below the user's response in the PDF.
+* The description position is [determined by your Form Settings](https://docs.gravityforms.com/form-settings/#form-layout) and can be placed above or below the user's response in the PDF.
 * You can find this setting at the bottom of the *Template* tab when [editing the PDF Settings](../users/setup-pdf.md#template) for Core and Universal PDF templates.
 
 ### Group / Ungroup Product Fields 

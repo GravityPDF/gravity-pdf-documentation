@@ -42,7 +42,7 @@ It's very important you include ALL required route keys and set up appropriate f
 *  Your view will also need to include the `View_Actions::get_action_buttons()` method after your message HTML. See the [usage](#add-one-time-action) instructions below for more details.
 
 ### capability
-*  Add the minimum [WordPress capability](https://codex.wordpress.org/Roles_and_Capabilities) (or [Gravity Form capability](https://www.gravityhelp.com/documentation/article/role-management-guide/)) a user needs to have to see and run the one-time action.
+*  Add the minimum [WordPress capability](https://codex.wordpress.org/Roles_and_Capabilities) (or [Gravity Form capability](https://docs.gravityforms.com/role-management-guide/)) a user needs to have to see and run the one-time action.
 
 ### view_class
 *  Use this key to add a class to the WordPress notice container. 

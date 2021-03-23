@@ -20,7 +20,7 @@ The REST API must be enabled to use this plugin.
 
 ## Configuring 
 
-This extension adds a new field called **PDF Preview** to the [Gravity Forms Editor](https://www.gravityhelp.com/documentation/article/creating-a-form/) and can be found under the 'Advanced Fields' section. To correctly setup, the *Previewer* field, you first need to [configure a PDF on your chosen Gravity Form](../users/setup-pdf.md).
+This extension adds a new field called **PDF Preview** to the [Gravity Forms Editor](https://docs.gravityforms.com/create-a-new-form/) and can be found under the 'Advanced Fields' section. To correctly setup, the *Previewer* field, you first need to [configure a PDF on your chosen Gravity Form](../users/setup-pdf.md).
 
 ### PDF Preview Options 
 

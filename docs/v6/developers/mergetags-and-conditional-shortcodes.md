@@ -20,7 +20,7 @@ In [Template Tutorial – Part 1](first-custom-pdf.md#template-tutorial--part-1)
 
 Gravity Forms *field-type* merge tags use the format `{[Field Name]:[field_id]}`. Keep in mind, the *Field Name* isn't required, so `{:2}` is a valid merge tag, and advanced fields can have a slightly different format – the first name in a Name field is displayed as `{:20.3}`.
 
-When you first start using merge tags, the simplest way to write them is by editing one of your [form's notifications](https://www.gravityhelp.com/documentation/article/configuring-notifications-in-gravity-forms/) and then using the merge tag selector to the right of the *Message* field. Just copy and paste the merge tag to your PDF template.
+When you first start using merge tags, the simplest way to write them is by editing one of your [form's notifications](https://docs.gravityforms.com/configuring-notifications-in-gravity-forms/) and then using the merge tag selector to the right of the *Message* field. Just copy and paste the merge tag to your PDF template.
 
 Once you're comfortable with how certain fields are formatted it becomes easy to write your own: `{Email:5}`, `{:5}`, `{First Name:4.3}` or `{:4.3}`.
 
@@ -65,6 +65,6 @@ In our `hello-world.php` template, we're going to add conditional shortcodes whi
 [/gravityforms]
 ```
 
-When you view the *Hello World* PDF, it will now it will conditionally display one of the four facts. Then [edit the *Hello World* entry](https://www.gravityhelp.com/documentation/article/entry-detail/) and changing the `Where do you live?` field value. When you view the PDF again, a different fact will be displayed.
+When you view the *Hello World* PDF, it will now it will conditionally display one of the four facts. Then [edit the *Hello World* entry](https://docs.gravityforms.com/entry-detail/) and changing the `Where do you live?` field value. When you view the PDF again, a different fact will be displayed.
 
 [Download the completed Hello World PDF template for Part 2](https://gist.github.com/jakejackson1/6c0a5268fa23ba51a285).
