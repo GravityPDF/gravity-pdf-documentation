@@ -1,14 +1,12 @@
 ---
-title: "Gravity PDF 5 Minute Installation (a WordPress plugin)"
+title: "Gravity PDF 5 Minute Installation"
 sidebar_label: "5 Minute Install"
 description: "Gravity PDF is a free WordPress plugin built for the popular premium form builder software, Gravity Forms. Get started in 5 minutes flat!"
 ---
 
-![Gravity PDF 5.x Welcome Screen](https://resources.gravitypdf.com/uploads/2016/04/v5-welcome-screen.png) 
+[Gravity PDF](https://gravitypdf.com) is a **free WordPress plugin** built for the popular premium form builder software, [Gravity Forms](https://rocketgenius.pxf.io/c/1211356/445235/7938). It allows you to generate PDF documents that contain user-data captured with Gravity Forms. 
 
-Gravity PDF is a **free WordPress plugin** built for the popular premium form builder software, [Gravity Forms](https://rocketgenius.pxf.io/c/1211356/445235/7938). It allows you to generate PDF documents that contain user-data captured with Gravity Forms. 
-
-The look and feel of the PDF is controlled through templates. The software comes with **four free designs**, but you can also [purchase additional templates from our template shop](https://gravitypdf.com/template-shop/), [build your own using HTML and CSS](../developers/start-customising.md) or have our team [custom-build one for you](https://gravitypdf.com/integration-services/) – we can even auto-complete existing PDF documents like government forms. 
+The look and feel of the PDF is controlled through templates. The software comes with **four free template designs**, but you can also [purchase additional templates from our template shop](https://gravitypdf.com/template-shop/), [build your own using HTML and CSS](../developers/start-customising.md) or have our team [custom-build one for you](https://gravitypdf.com/integration-services/) – our team can even auto-complete existing PDF documents like government forms (not available in our free edition). 
 
 ## Installation 
 
@@ -28,7 +26,7 @@ After activating the plugin for the first time, you'll be prompted to install th
 
 ## General Settings 
 
-After activating, head to `Form -> Settings -> PDF` and check over the plugin's default settings. The software uses sane defaults but you may want to tweak the PDF paper size, PDF template and font family, size and colour. [You may also want to enable on Background Processing](background-processing.md).
+After activating, head to `Form -> Settings -> PDF` and check over the plugin's default settings. The software uses sane defaults, but you may want to tweak the default paper size, template and font family, size and colour. [You may also want to enable on Background Processing for faster form processing](background-processing.md).
 
 ![The global Gravity PDF settings page](https://resources.gravitypdf.com/uploads/2016/04/v5-general-settings.png) 
 
@@ -36,15 +34,15 @@ After activating, head to `Form -> Settings -> PDF` and check over the plugin's 
 
 ## Creating a PDF 
 
-Next, it's time to setup a PDF for your Gravity Form. Click `Forms` in the main navigation and select the Gravity Form you want integrated. From the form editor page, hover over the form `Settings` menu item and select `PDF` from the sub-navigation. Finally, click the `Add New` button to create a PDF. 
+Next, it's time to setup a PDF for your Gravity Form. Select `Forms` in the main navigation and then choose the Gravity Form you want integrated. From the form editor page that loads, click the `Settings` menu in the horizontal navigation and choose `PDF` from the dropdown menu shown. Finally, select the `Add New` button to create a PDF. 
 
 ![The PDF Form Settings page](https://resources.gravitypdf.com/uploads/2016/04/v5-form-pdf-settings-1.png) 
 
-While there are a lot of options available to you, only the `Name` and `Filename` settings are required. Go ahead and fill those in. If you want the **PDF automatically attached to the email** when your form is submitted select the Gravity Forms Notifications you want to attach it to in the [PDF Notifications setting](setup-pdf.md#notifications). Finally, click *Add PDF* to complete the setup. 
+While there are a lot of options available to you, only the `Name` and `Filename` settings are required. Go ahead and fill those in. You can choose a `Template` from the dropdown or leave it set to the default option. If you want the **PDF automatically attached to the email** when your form is submitted select the [Gravity Forms Notification](https://docs.gravityforms.com/configuring-notifications-in-gravity-forms/) you want to attach it to in the [PDF Notifications setting](setup-pdf.md#notifications). Finally, click *Add PDF* to complete the setup. 
 
 ![Adding a new PDF to a form](https://resources.gravitypdf.com/uploads/2016/04/v5-add-pdf.png) 
 
-Now that you've setup the PDF you can view and download it from the Gravity Form Entries page in your admin area (just make sure you've submitted an entry already). If you configured it in the last step, when you fill out and submit the form the generated PDF will be attached to the email notification. 
+Now that you've setup the PDF you can view and download it from the Gravity Form Entries page in your admin area (just make sure you've submitted an entry already). If you configured it, when a new entry is submitted the generated PDF will be attached to the email notification. 
 
 ![Download the PDFs via the Entries page](https://resources.gravitypdf.com/uploads/2016/04/v5-download-pdf-page.png) 
 
@@ -52,7 +50,7 @@ Now that you've setup the PDF you can view and download it from the Gravity Form
 
 ## PDF Download Link 
 
-If you would like to add a link to the PDF on your form's confirmation page you'll need to use the `[gravitypdf]` shortcode. Read more about it [in our shortcode documentation](shortcodes.md).
+If you would like to add a link to the PDF on your form's [Confirmation page](https://docs.gravityforms.com/configuring-confirmations/) you'll need to use the `[gravitypdf]` shortcode. Read more about it [in our shortcode documentation](shortcodes.md).
 
 ## Help and Support 
 
