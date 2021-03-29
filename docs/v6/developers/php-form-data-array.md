@@ -448,8 +448,8 @@ if ( is_array( $form_data['list'][177] ) ) {
         echo $item . '<br>';
     }
 
-    echo $form_data['list'][177][0]; /* output column 1 */
-    echo $form_data['list'][177][2]; /* output column 3 */
+    echo $form_data['list'][177][0]; /* output row 1 */
+    echo $form_data['list'][177][2]; /* output row 3 */
 }
 
 /* Multi Column List */
