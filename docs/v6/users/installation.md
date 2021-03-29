@@ -1,12 +1,12 @@
 ---
-title: "Gravity PDF Requirements and Installation Instructions"
+title: "Gravity PDF Requirements and Detailed Installation Instructions"
 sidebar_label: "Installation"
-description: "Gravity PDF can be run on most shared web hosting. The easiest way to check if your web server meets the criteria is to install the plugin. Simple!"
+description: "Gravity PDF can be run on modern shared web hosting. The easiest way to check if your web server meets the criteria is to install the plugin. Simple!"
 ---
 
 ## Plugin Requirements 
 
-Gravity PDF can be run on most shared web hosting providers and the easiest way to check if yours is compatible is to [install](#install) the plugin. Gravity PDF has multiple checks in place when activating and will let you know if there are any issues than need addressing.
+Gravity PDF can be run on modern shared web hosting providers, and the easiest way to check if your host can run it is to [install](#install) the plugin. Gravity PDF has checks in place when you first activate it on your WordPress website, and it will let you know if there are any issues than need addressing.
 
 :::info
 While Gravity PDF is a free plugin, it requires Gravity Forms to run. You'll need to [purchase a Gravity Forms license](https://rocketgenius.pxf.io/c/1211356/445235/7938) before you can use Gravity PDF – any license type will work.
@@ -18,12 +18,12 @@ Gravity PDF is a third party extension for Gravity Forms, created by an independ
 
 **Software Requirements**
 
--   [Gravity Forms](https://rocketgenius.pxf.io/c/1211356/445235/7938) 2.3.1+. [Any license type will work](gravity-forms-compatibility.md#gravityforms-licenses).
--   WordPress 4.8+
+-   [Gravity Forms](https://rocketgenius.pxf.io/c/1211356/445235/7938) 2.5.0+. [Any license type will work](gravity-forms-compatibility.md#gravityforms-licenses).
+-   WordPress 5.3+
 
 **Server Requirements**
 
--   PHP 5.6+ (PHP 7.1+ recommended)
+-   PHP 7.3+
 -   [MB String](http://www.php.net/manual/en/mbstring.installation.php) with Regex enabled (`--enable-mbregex`)
 -   [GD Library](http://www.php.net/manual/en/image.installation.php)
 -   [DOM](http://php.net/manual/en/intro.dom.php)
@@ -47,9 +47,9 @@ Search for the plugin directly from your WordPress admin area and install it wit
 
 ### Manual Installation 
 
-You can manually install the plugin by downloading the plugin zip file from WordPress.org and then uploading through your WordPress admin area. The plugin zip file is 4.6MB and most web hosts maximum upload limit should be higher than this (you can check your maximum upload limit by navigating to `Media -> Add New` in your WordPress admin area and reviewing the ​*Maximum upload file size*​ limit).
+You can manually install the plugin by downloading the plugin zip file from WordPress.org and then uploading through your WordPress admin area. The plugin zip file is 4.2MB and most web hosts maximum upload limit should be higher than this (you can check your maximum upload limit by navigating to `Media -> Add New` in your WordPress admin area and reviewing the *Maximum upload file size* limit).
 
-1. [Go to the plugin's WordPress repository](https://wordpress.org/plugins/gravity-forms-pdf-extended/) and select the `Download Version 5.x.x` button. 
+1. [Go to the plugin's WordPress repository](https://wordpress.org/plugins/gravity-forms-pdf-extended/) and select the `Download Version 6.x.x` button. 
 
 2.  In your WordPress admin area, navigate to the `Plugins -> Add New` page then select the `Upload Plugin` button (located to the right of the `Add Plugins` title)
 
@@ -63,7 +63,7 @@ You can manually install the plugin by downloading the plugin zip file from Word
 
 Upload the Gravity PDF plugin files to the WordPress plugins directory using your favourite FTP client.
 
-1. [Go to the plugin's WordPress repository](https://wordpress.org/plugins/gravity-forms-pdf-extended/) and select the `Download Version 5.x.x` button. 
+1. [Go to the plugin's WordPress repository](https://wordpress.org/plugins/gravity-forms-pdf-extended/) and select the `Download Version 6.x.x` button. 
 
 2.  Once downloaded, unzip the plugin folder. A folder called `gravity-forms-pdf-extended` will be extracted and this is what you should upload to your FTP server.
 
