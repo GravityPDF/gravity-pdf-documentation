@@ -4,7 +4,7 @@ sidebar_label: "Setup PDF"
 description: "There are a lot of options available, but the most common settings are up front, with the rest grouped by one-of-four sections: and are split into groups: General, Appearance, Template and Advanced."
 ---
 
-![Adding new PDF Form](https://resources.gravitypdf.com/uploads/2015/10/add-new-pdf-v5.png) 
+![Adding new PDF Form](https://resources.gravitypdf.com/uploads/2021/03/v6-Add-New-PDF.png) 
 
 Creating a PDF for individual Gravity Forms is similar to creating Notifications. There are a lot of options available to you, but we've put the most common settings up front. The rest are hidden; split up between four sections:
 
@@ -15,7 +15,7 @@ Creating a PDF for individual Gravity Forms is similar to creating Notifications
 
 ## Locating the PDF Settings 
 
-![PDF Form Settings List](https://resources.gravitypdf.com/uploads/2015/10/PDF-Settings-v5.png) 
+![PDF Form Settings List](https://resources.gravitypdf.com/uploads/2021/03/v6-PDF-Settings.png) 
 
 The PDF settings for an individual form can be accessed by following these steps:
 
@@ -49,7 +49,7 @@ There are a number of optional fields available which give you granular control 
 
 ## General Section
 
-![PDF Form Settings General Section](https://resources.gravitypdf.com/uploads/2015/10/general-tab-v5.png)
+![PDF Form Settings General Section](https://resources.gravitypdf.com/uploads/2021/03/v6-General-Tab.png)
 
 Below is the list of settings available in the General section, with a brief description about what each is for.
 
@@ -72,7 +72,7 @@ Below is the list of settings available in the General section, with a brief des
 
 ## Appearance Section 
 
-![PDF Form Settings Appearance Section(https://resources.gravitypdf.com/uploads/2015/10/appearance-tab-v5.png) 
+![PDF Form Settings Appearance Section](https://resources.gravitypdf.com/uploads/2021/03/v6-Appearance-Tab.png) 
 
 The Appearance section contains fields that control the general look and feel of your PDF. You have control over the paper size and orientation, as well as the font, font size / colour and RTL support.
 
@@ -109,7 +109,7 @@ The Appearance section contains fields that control the general look and feel of
 
 ## Template Section 
 
-![PDF Form Settings Template Section](https://resources.gravitypdf.com/uploads/2015/10/template-tab-v5.png) 
+![PDF Form Settings Template Section](https://resources.gravitypdf.com/uploads/2021/03/v6-Template-Tab.png) 
 
 The template section contains the current template-specific settings. A template may support dozens of custom settings, or none at all (and the section will be hidden). 
 
@@ -177,7 +177,7 @@ Below is a description of the Core template settings that all **four free templa
 
 ## Advanced Section 
 
-![PDF Form Settings Advanced Section](https://resources.gravitypdf.com/uploads/2015/10/advanced-tab-v5.png) 
+![PDF Form Settings Advanced Section](https://resources.gravitypdf.com/uploads/2021/03/v6-Advanced-Tab.png) 
 
 The Advanced section allows you to control the PDF security (which includes password protection). You can also change the image DPI and the PDF format.
 
