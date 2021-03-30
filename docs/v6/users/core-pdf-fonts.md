@@ -10,9 +10,9 @@ Before Gravity PDF can be used for the first time, the Core font files need to b
 
 ### via Core Font Installer 
 
-![The Core Font Installer Prompt](https://resources.gravitypdf.com/uploads/2017/12/core-fontdownload-prompt.png)
+![The Core Font Installer Prompt](https://resources.gravitypdf.com/uploads/2021/03/Download-Core-Font-Prompt.png)
 
-![The Core Font Installer in action](https://resources.gravitypdf.com/uploads/2017/12/core-font-installer.png) 
+![The Core Font Installer in action](https://resources.gravitypdf.com/uploads/2021/03/Download-Core-Fonts-.png) 
 
 When the plugin is activated, Gravity PDF will detect if the Core Fonts have been installed and show a prompt if they cannot be found. When the prompt is shown, click the `Install Core Fonts` button to begin the installation. If you need to reinstall the Core Fonts for any reason, you can initiate the installation from the [Global Settings Tools tab](global-settings.md#tools-tab). If any fonts fail to download, the installer will ask if you want to retry the installation. Only the failed font downloads will be retried.
 
