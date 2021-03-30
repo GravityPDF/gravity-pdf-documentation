@@ -4,7 +4,7 @@ sidebar_label: "Global Settings"
 description: "Gravity PDF is fully integrated into Gravity Forms. If you've ever used a Gravity Forms add-on you'll feel right at home setting up Gravity PDF."
 ---
 
-![Gravity PDF Global Settings Page](https://resources.gravitypdf.com/uploads/2016/04/v5-general-settings.png) 
+![Gravity PDF Global Settings Page](https://resources.gravitypdf.com/uploads/2021/03/v6-Global-Settings-with-License-tab.png) 
 
 The PDF Global Settings area is where you control a variety of plugin-wide options, can manage templates and fonts, and search our knowledgebase. 
 It integrates seemlessly into Gravity Forms own settings area and can be found by by navigating to `Forms -> Settings -> PDF` in your WordPress admin area. 
@@ -70,7 +70,7 @@ Below is the list of settings available in the General tab, with a brief descrip
 
 ### Security Options 
 
-![Gravity PDF Advanced Options on the General Tab](https://resources.gravitypdf.com/uploads/2015/10/security-settings-v5.png)
+![Gravity PDF Advanced Options on the General Tab](https://resources.gravitypdf.com/uploads/2021/03/v6-Security-Settings.png)
 
 The security settings are configured with sane defaults and, in most cases, you won't need to modify this behaviour. The [security documentation page](pdf-security.md) focuses on the finer points of the plugin's security protocols, and is worth a read before making any changes to this section.
 
@@ -93,13 +93,13 @@ The security settings are hidden by default and can be shown by clicking the _Se
 
 ## License Tab 
 
-![A view of the License tab](https://resources.gravitypdf.com/uploads/2015/10/license-tab.png) 
+![A view of the License tab](https://resources.gravitypdf.com/uploads/2021/03/License-Tab.png) 
 
 If you've [purchased an extension from our store](https://gravitypdf.com/extension-shop/) and have it activated on your website, a new *License* tab will be available. This tab allows you to enter and activate your license key to receive automatic plugin updates.
 
 ## Tools Tab 
 
-![Gravity PDF Tools Settings Page](https://resources.gravitypdf.com/uploads/2015/10/tools-tab-v5-a.png) 
+![Gravity PDF Tools Settings Page](https://resources.gravitypdf.com/uploads/2021/03/Tools-Tab.png) 
 
 The tools tab allows you to install/reinstall Core Fonts and manage your custom fonts. This tab is only available to users with the `gravityforms_edit_settings` capability.
 
