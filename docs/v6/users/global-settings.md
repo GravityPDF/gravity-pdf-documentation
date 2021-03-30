@@ -1,12 +1,12 @@
 ---
-title: "Gravity PDF Settings and What They Do"
+title: "Gravity PDF Global Settings and What They Do"
 sidebar_label: "Global Settings"
 description: "Gravity PDF is fully integrated into Gravity Forms. If you've ever used a Gravity Forms add-on you'll feel right at home setting up Gravity PDF."
 ---
 
 ![Gravity PDF Global Settings Page](https://resources.gravitypdf.com/uploads/2016/04/v5-general-settings.png) 
 
-Gravity PDF is fully integrated into Gravity Forms. The PDF settings are located in a separate section in Gravity Forms own settings area. You can find it by navigating to `Forms -> Settings -> PDF` in your WordPress admin area. The PDF settings are split into three separate tabs out of the box, and two additional tabs if you [purchase and install an extension](https://gravitypdf.com/extension-shop/).
+Gravity PDF is fully integrated into Gravity Forms. The PDF settings are located in a separate section in Gravity Forms own settings area. You can find it by navigating to `Forms -> Settings -> PDF` in your WordPress admin area. The PDF settings are split into three separate tabs out of the box, and an additional _License_ tabs if you [purchase and install an extension](https://gravitypdf.com/extension-shop/).
 
 ## General Tab 
 
