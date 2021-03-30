@@ -26,7 +26,7 @@ After activating the plugin for the first time, you'll be prompted to install th
 
 [View additional information about the Core Fonts that are installed, and alternate installation methods](core-pdf-fonts.md)
 
-## General Settings 
+## Global Settings 
 
 After activating, head to `Form -> Settings -> PDF` and check over the plugin's default settings. The software uses sane defaults, but you may want to tweak the default paper size, template and font family, size and colour. [You may also want to enable on Background Processing for faster form processing](background-processing.md).
 
