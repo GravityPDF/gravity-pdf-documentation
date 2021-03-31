@@ -4,7 +4,7 @@ sidebar_label: "PDF Download Link"
 description: "You can add a Gravity PDF download link to Gravity Forms Confirmation and Notifications with the [gravitypdf] shortcode."
 ---
 
-![The PDF Form List Page](https://resources.gravitypdf.com/uploads/2015/10/shortcode-sample-v5.png)
+![The PDF Form List Page](https://resources.gravitypdf.com/uploads/2021/03/v6-Shortcode-Sample.png)
 
 ## Getting the PDF Download Link 
 
@@ -18,7 +18,7 @@ There are a number of security protocols in place to prevent unauthorised access
 
 ## Using the Shortcode 
 
-![A "Download PDF" column on the PDF list](https://resources.gravitypdf.com/uploads/2015/10/download-pdf-column.png) 
+![A "Download PDF" column on the PDF list](https://resources.gravitypdf.com/uploads/2021/03/v6-Download-PDF-Column.png) 
 
 We wanted to make it as simple as possible to use the `[gravitypdf]` shortcode in your form's confirmations and notifications. With that in mind, we added a *Download PDF* column to the [PDF form list](managing-pdfs.md#download-shortcode), which has a sample shortcode for each PDF you have set up. Just copy and paste the shortcode sample to your confirmation or notification and click save[^1]. The default behaviour is to generate a download link to the PDF with the text *Download PDF*. Simple!
 
@@ -34,19 +34,19 @@ We've ensured the `[gravitypdf]` shortcode works with as little configuration as
 
 #### Text Confirmation
 
-![The \[gravitypdf\] shortcode in the Gravity Forms text confirmation](https://resources.gravitypdf.com/uploads/2015/10/text-confirmation.png) 
+![The \[gravitypdf\] shortcode in the Gravity Forms text confirmation](https://resources.gravitypdf.com/uploads/2021/03/v6-Text-confirmation.png) 
 
 The [text confirmation](https://docs.gravityforms.com/configuring-confirmations-in-gravity-forms/#text-confirmations) is the simplest Gravity Forms confirmation type. When selected, you can enter a message using the WordPress editor. To get it functioning, you just need to copy and paste the sample shortcode found on the [PDF form list](managing-pdfs.md).
 
 #### Page Confirmation
 
-![The \[gravitypdf\] shortcode in the Gravity Forms page confirmation](https://resources.gravitypdf.com/uploads/2015/10/page-redirect.png) 
+![The \[gravitypdf\] shortcode in the Gravity Forms page confirmation](https://resources.gravitypdf.com/uploads/2021/03/v6-Page-Redirect.png) 
 
 The [page confirmation](https://docs.gravityforms.com/configuring-confirmations-in-gravity-forms/#page-confirmations) allows you to redirect users to an existing WordPress page. This method is not quite "copy and paste", but it's close. To get it functioning you need to copy the sample shortcode found on the [PDF form list](managing-pdfs.md) and place it on the WordPress page you're sending your user to. Once done, go back to your confirmation configuration and enable the `Pass Field Data Via Query String` option. Add `entry={entry_id}` to the field that appears and click save.
 
 #### Redirect Confirmation 
 
-![The \[gravitypdf\] shortcode in the Gravity Forms redirect confirmation](https://resources.gravitypdf.com/uploads/2015/10/redirect-confirmation-e1541561008512.png) 
+![The \[gravitypdf\] shortcode in the Gravity Forms redirect confirmation](https://resources.gravitypdf.com/uploads/2021/03/v6-Redirect-Confirmation.png) 
 
 The [redirect confirmation](https://docs.gravityforms.com/configuring-confirmations-in-gravity-forms/#redirect-confirmation) allows you to send the user to another location upon completing their form. If you choose, you can redirect the user straight to a PDF. To get it functioning you need to copy and paste the sample shortcode found on the [PDF form list](managing-pdfs.md).
 
@@ -56,7 +56,7 @@ If using the [signed PDF URL feature](#signed-optional) with the redirect method
 
 ### Usage in Notifications 
 
-![Adding the shortcode to notifications](https://resources.gravitypdf.com/uploads/2015/10/notification-example.png) 
+![Adding the shortcode to notifications](https://resources.gravitypdf.com/uploads/2021/03/v6-Notification-Example.png) 
 
 Gravity Forms [Notifications](https://docs.gravityforms.com/configuring-notifications-in-gravity-forms/) are automated emails sent after the form is submitted. If you would prefer not [sending the PDF as an email attachment](setup-pdf.md#notifications) (usually for security reasons), you can use the `[gravitypdf]` shortcode and create a direct link to the PDF. Because of the default [security protocols](pdf-security.md), this method is very effective when the recipient has a WordPress user account. 
 
@@ -128,7 +128,7 @@ If the [gravitypdf] shortcode doesn't display a link to the PDF, an error likely
 
 ## Using the Mergetag 
 
-![Gravity PDF Mergetags are included in the merge tag selector automatically](https://resources.gravitypdf.com/uploads/2015/10/updating-merge-tags.png) 
+![Gravity PDF Mergetags are included in the merge tag selector automatically](https://resources.gravitypdf.com/uploads/2021/03/v6-Updating-Merge-Tags.png) 
 
 If you don't need a HTML download link to the PDF, but do want to access the raw PDF URL you can use the PDF Mergetags. These are included automatically in the Gravity Forms Merge Tag selector and can be used anywhere merge tags are supported. 
 
