@@ -10,7 +10,7 @@ One of the most common support requests we get is users who aren't getting Gravi
 
 There's a fine art to configuring your website's emails, so they steer clear of spam filters and get delivered to inboxes. The solution involves using the correct settings in Gravity Forms and utilising a dedicated mail delivery service with correctly set up SPF and DKIM DNS records. It sounds complex, but the tools we discuss will make this relatively painless for you to configure.
 
-![Gravity Forms Notification Setup](https://resources.gravitypdf.com/uploads/2015/10/gravityforms.png) 
+![Gravity Forms Notification Setup](https://resources.gravitypdf.com/uploads/2021/03/v2.5-Email-Notifications-Setup.png) 
 
 One of the great things about Gravity Forms is how much freedom and choice the software gives users. But when email is concerned we feel there's not enough guidance, so we've put together this best-practice guide for you. 
 
