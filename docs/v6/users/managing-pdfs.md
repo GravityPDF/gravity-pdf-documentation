@@ -20,7 +20,7 @@ The PDF list contains four columns which provide an overview of the PDFs current
 * This column displays the internal PDF [name](setup-pdf.md#name). It also functions as the "actions" column. By hovering over the row the `Edit`, `Duplicate` and `Delete` actions will appear in this column.
 
 ### Download Shortcode 
-* This column displays a sample shortcode that generates a download link for the PDF. Use it in the Gravity Form confirmations or notifications. [See our shortcode documentation](shortcodes.md) for more details about the `[gravitypdf]` shortcode.
+* This column displays a sample shortcode that generates a download link for the PDF. Use it in the Gravity Form confirmations or notifications. [See our shortcode documentation](shortcodes-and-mergetags.md) for more details about the `[gravitypdf]` shortcode.
 
 ### Template 
 * The selected PDF template will be displayed in this column. Along with the name, the template's group will also be displayed. For instance, any template that ships with the software is apart of the `Core` group. This is useful when you start creating custom PDF templates.

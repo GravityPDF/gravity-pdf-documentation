@@ -24,6 +24,6 @@ Because of [Gravity PDF's security](pdf-security.md), by default access to the P
 
 ## Public Access 
 
-If you'd like anyone with access to your View to securely download the PDF(s), you can [take advantage of signed PDF URLs](shortcodes.md#signed-optional) introduced in Gravity PDF 5.1. Just amend the [gravitypdf] shortcode added to the Custom Content Field and include the `signed="1"` attribute:
+If you'd like anyone with access to your View to securely download the PDF(s), you can [take advantage of signed PDF URLs](shortcodes-and-mergetags.md#signed-optional) introduced in Gravity PDF 5.1. Just amend the [gravitypdf] shortcode added to the Custom Content Field and include the `signed="1"` attribute:
 
 `[gravitypdf name="Default Template" id="56ea5a3b2c684" text="Download PDF" signed="1"]`

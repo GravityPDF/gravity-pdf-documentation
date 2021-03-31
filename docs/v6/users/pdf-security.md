@@ -33,8 +33,8 @@ By default, Gravity Forms will not handle proxy-based IP addresses automatically
 :::
 
 4. An alternative to the IP-based authentication mentioned in #3 above is signed PDF URLs (added in Gravity PDF 5.1), which correctly authenticates a user even if you've disabled IP addresses using Gravity Forms 2.4+ GDPR features.     
-    - Signed URLs are only available using the [gravitypdf] shortcode [with the `signed` attribute](shortcodes.md#signed-optional). Anyone with access to the signed link can view the PDF (regardless of their user privileges, if any), provided the link hasn't expired.
-    - By default, the signed URL will have a 20-minute timeout window. This behaviour can be changed globally using the [Logged Out Timeout](global-settings.md#logged-out-timeout) settings, or per [gravitypdf] shortcode [by including the `expires` attribute](shortcodes.md#expires-attribute).
+    - Signed URLs are only available using the [gravitypdf] shortcode [with the `signed` attribute](shortcodes-and-mergetags.md#signed-optional). Anyone with access to the signed link can view the PDF (regardless of their user privileges, if any), provided the link hasn't expired.
+    - By default, the signed URL will have a 20-minute timeout window. This behaviour can be changed globally using the [Logged Out Timeout](global-settings.md#logged-out-timeout) settings, or per [gravitypdf] shortcode [by including the `expires` attribute](shortcodes-and-mergetags.md#expires-attribute).
     - When the timeout period expires, Gravity PDF will fallback to the standard security policies outlined in #1/2/3 above. 
     - Signed URLs do not work across protocols. For example, you cannot display the shortcode on a HTTP page while the PDF loads over HTTPS (or vice versa). 
 
@@ -67,7 +67,7 @@ If you are collecting sensitive data from your users, there are a number of best
 
 5.  Ensure WordPress and its plugins are regularly updated.
 
-6.  Do not send sensitive user information via email. This includes in the email body or as an attachment. Instead, use the [`[gravitypdf]` shortcode](shortcodes.md) to send a link to the PDF, or place a download link [on the confirmation page](shortcodes.md#confirmation).
+6.  Do not send sensitive user information via email. This includes in the email body or as an attachment. Instead, use the [`[gravitypdf]` shortcode](shortcodes-and-mergetags.md) to send a link to the PDF, or place a download link [on the confirmation page](shortcodes-and-mergetags.md#confirmation).
 
 7.  Enable PDF password protection and use a strong password (the longer, the better). PDFs use 128-bit encryption.
 

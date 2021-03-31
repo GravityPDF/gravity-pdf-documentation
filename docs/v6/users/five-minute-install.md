@@ -52,7 +52,7 @@ Now that you've setup the PDF you can view and download it from the Gravity Form
 
 ## PDF Download Link 
 
-If you would like to add a link to the PDF on your form's [Confirmation page](https://docs.gravityforms.com/configuring-confirmations/) you'll need to use the `[gravitypdf]` shortcode. Read more about it [in our shortcode documentation](shortcodes.md).
+If you would like to add a link to the PDF on your form's [Confirmation page](https://docs.gravityforms.com/configuring-confirmations/) you'll need to use the `[gravitypdf]` shortcode. Read more about it [in our shortcode documentation](shortcodes-and-mergetags.md).
 
 ## Help and Support 
 

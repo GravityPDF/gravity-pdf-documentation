@@ -83,12 +83,12 @@ The security settings are hidden by default and can be shown by clicking the _Se
 
 #### Default Owner Restrictions 
 * This option allows you to prevent the form entry owner – the user who filled out the Gravity Form – from viewing the generated PDF. This included logged out and logged in users – with the exception of a logged in user who has any of the capabilities listed in the [*User Restriction*](#user-restriction) field.
-* This option has no effect on PDFs sent as attachments in Gravity Form notifications, but does affect the unsigned [Gravity PDF shortcode and mergetags](shortcodes.md).
+* This option has no effect on PDFs sent as attachments in Gravity Form notifications, but does affect the unsigned [Gravity PDF shortcode and mergetags](shortcodes-and-mergetags.md).
 * By default, this option is disabled.
 
 #### User Restriction
 * Logged in users who do not have the `gravityforms_view_entries` capability are prevented from accessing any PDF if they aren't the original owner – the owner is who filled in the form entry originally. If you leave the setting untouched only site administrators and network super admins (if running a multisite) can view the generated PDFs. To change this behaviour, you can assign capabilities that other roles have access to. For instance, if you wanted the [*Editor* role](https://codex.wordpress.org/Roles_and_Capabilities#Editor) to have access to all PDFs you could add the `edit_pages` capability. Another option is to use a role editing plugin like [User Role Editor](https://wordpress.org/plugins/user-role-editor/) to give an existing role the `gravityforms_view_entries` capability. Choose the best solution for your use-case.
-* This setting has no effect on PDFs sent as attachments in Gravity Form notifications or [signed PDFs](@TODO), but does affect the unsigned [Gravity PDF shortcode and mergetags](shortcodes.md).
+* This setting has no effect on PDFs sent as attachments in Gravity Form notifications or [signed PDFs](@TODO), but does affect the unsigned [Gravity PDF shortcode and mergetags](shortcodes-and-mergetags.md).
 * More information about WordPress roles and capabilities [can be found in the WordPress codex](https://codex.wordpress.org/Roles_and_Capabilities).
 
 ## License Tab 
