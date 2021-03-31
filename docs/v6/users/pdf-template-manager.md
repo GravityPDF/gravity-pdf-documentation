@@ -4,13 +4,13 @@ sidebar_label: "PDF Template Manager"
 description: "The PDF Template Manager allows you to better view, search and manage your PDF Templates. You can easily search through your installed templates, see what a PDF might look like and view supported features. You can also install PDFs via a zip file and easily delete them, too."
 ---
 
-![The all-new PDF Template Manager](https://resources.gravitypdf.com/uploads/2017/03/updating-advanced-template-selector.png) 
+![The all-new PDF Template Manager](https://resources.gravitypdf.com/uploads/2021/03/v6-Advanced-Template-Selector.png) 
 
 The PDF Template Manager allows you to better view, search and manage your PDF Templates. Modelled after the WordPress Theme Manager, you can easily search through your installed templates, see what a PDF might look like and view supported features – all without a page reload! We've added the ability to install PDFs via a zip file and easily delete them, too. It's now very simple to install and use custom PDF templates – [like the ones you might purchased from our PDF Template Shop](https://gravitypdf.com/template-shop/). 
 
 ## Access Manager 
 
-![Access the PDF Template Manager through the Advanced button next to the Template Dropdown](https://resources.gravitypdf.com/uploads/2017/03/access.png) 
+![Access the PDF Template Manager through the Advanced button next to the Template Dropdown](https://resources.gravitypdf.com/uploads/2021/03/v6-Access-Manager.png) 
 
 You can access the PDF Template Manager through the [Global PDF Settings page](global-settings.md#default-template) or when [configuring a PDF on your form](setup-pdf.md#template). Just look for the *Advanced* button that will appear next to the Template dropdown box. 
 
@@ -18,13 +18,13 @@ More information on each PDF can be viewed by clicking (or navigating with your 
 
 ## Search 
 
-![Search for installed templates](https://resources.gravitypdf.com/uploads/2017/03/search.png) 
+![Search for installed templates](https://resources.gravitypdf.com/uploads/2021/03/v6-Access-Manager.png) 
 
 Once you've accessed the PDF Template Manager, you'll see a prominent search bar at the top of the interface. Use it to filter your **installed** PDF templates – searches are done on the PDF title, description author and group so it's even simpler to find the PDF you're looking for.
 
 ## Install 
 
-![Install zip PDF Templates](https://resources.gravitypdf.com/uploads/2017/03/installing.png) 
+![Install zip PDF Templates](https://resources.gravitypdf.com/uploads/2021/03/v6-Installing-Template.png) 
 
 One of the powerful new features is the ability to install PDF Template `.zip` packages straight from the UI. You'll see an "Add New Template" box below all your installed templates where you can drag and drop your `.zip` package.
 
@@ -36,8 +36,9 @@ If you [purchase a PDF template from our shop](https://gravitypdf.com/shop/) the
 
 ## Delete 
 
-![Delete custom PDF templates](https://resources.gravitypdf.com/uploads/2017/03/details-page-delete.png) 
+![Delete custom PDF templates](https://resources.gravitypdf.com/uploads/2021/03/v6-Details-Page-Delete.png) 
 
 If you ever need to delete a custom PDF template you can easily do so via the Delete button when viewing individual PDFs (click the template image to view an individual PDF). You'll be asked to confirm this action before it deletes anything. 
 
 Core PDF templates (Zadani, Rubix, Focus Gravity and Blank Slate) cannot be deleted. However, if you've modified a core template in the [PDF Working Directory](../developers/first-custom-pdf.md#working-directory), you will get the option to delete your modified version.
+
