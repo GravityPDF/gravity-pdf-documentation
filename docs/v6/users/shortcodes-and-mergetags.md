@@ -61,7 +61,7 @@ The [page confirmation](https://docs.gravityforms.com/configuring-confirmations-
 
 Submit a test entry and verify the PDF link is displayed correct, and you can view the document when selected.
 
-##### Redirect Confirmation 
+##### Redirect Confirmation
 
 ![The \[gravitypdf\] shortcode in the Gravity Forms redirect confirmation](https://resources.gravitypdf.com/uploads/2021/03/v6-Redirect-Confirmations.png)
 
