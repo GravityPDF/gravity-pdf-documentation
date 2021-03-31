@@ -8,7 +8,7 @@ description: "You can add a Gravity PDF download link to Gravity Forms Confirmat
 
 ## Getting the PDF Download Link 
 
-You can add a PDF download link to Gravity Forms [Confirmation](https://docs.gravityforms.com/configuring-confirmations-in-gravity-forms/) and [Notifications](https://docs.gravityforms.com/configuring-notifications-in-gravity-forms/) with the [gravitypdf] shortcode. Using the optional [*Entry Attribute*](#entry-attribute) you can include the shortcode on any WordPress page. If you only need the raw PDF URL, you can [add the `raw` shortcode attribute](shortcodes.md#raw-attribute) or use the [PDF Mergetags](#using-the-mergetag). 
+You can add a PDF download link to Gravity Forms [Confirmation](https://docs.gravityforms.com/configuring-confirmations-in-gravity-forms/) and [Notifications](https://docs.gravityforms.com/configuring-notifications-in-gravity-forms/) with the [gravitypdf] shortcode. Using the optional [*Entry Attribute*](#entry-attribute) you can include the shortcode on any WordPress page. If you only need the raw PDF URL, you can [add the `raw` shortcode attribute](shortcodes-and-mergetags.md#raw-attribute) or use the [PDF Mergetags](#using-the-mergetag). 
 
 ## Security 
 
