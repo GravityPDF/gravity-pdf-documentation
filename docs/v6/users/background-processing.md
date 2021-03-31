@@ -14,6 +14,6 @@ Background Processing is also integrated with [Gravity Forms Resend Notification
 
 Not all websites/servers are able to use the new Background Processing feature. The best way to check is by [heading to Gravity Forms System Status page](https://docs.gravityforms.com/checking-environment-details/), locating the *WordPress Environment* section and verifying **Background tasks** has a green tick. The *WordPress Cron* or *WordPress Alternative Cron* also need to be enabled and will display "Yes" if one of them is active. 
 
-![](https://resources.gravitypdf.com/uploads/2018/09/background-tasks.png)
+![](https://resources.gravitypdf.com/uploads/2021/03/Background-Tasks.png)
 
 If you find that either *Background tasks* or the *WordPress Cron* is disabled, [the Gravity Forms team have put together an excellent guide to assist with troubleshooting](https://docs.gravityforms.com/troubleshooting-background-issues/#admin-ajax-request-fails).
