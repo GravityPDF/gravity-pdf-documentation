@@ -4,7 +4,7 @@ sidebar_label: "Hide Form Fields"
 description: "Only certain form data is important to you. That's why Gravity PDF has a number of ways to filter out the unimportant data in your generated PDF."
 ---
 
-![The Gravity Forms Editor](https://resources.gravitypdf.com/uploads/2015/10/form-editor.png) 
+![The Gravity Forms Editor](https://resources.gravitypdf.com/uploads/2021/03/v2.5-Form-Editor.png) 
 
 Only certain form data is important to you. That's why Gravity PDF has a number of ways to filter out the unimportant fields in your generated PDF. 
 
@@ -20,7 +20,7 @@ You can also choose to show or hide the form's title using the [*Show Form Title
 
 ## Hiding Specific Fields in the PDF 
 
-![Add 'exclude' field to Gravity Form Field](https://resources.gravitypdf.com/uploads/2015/10/exclude-field.png) 
+![Add 'exclude' field to Gravity Form Field](https://resources.gravitypdf.com/uploads/2021/03/v2.5-Exclude-Field.png) 
 
 In certain cases, you may not want a particular form field from displaying in the PDF. To exclude a field, you can add the CSS class `exclude` to that field in the Gravity Forms editor. You can do this by:
 
@@ -33,6 +33,6 @@ This technique works for all fields except the *Hidden* field (which doesn't inc
 
 ## Get more control over fields using the Core Booster Extension
 
-![Customise Fields with Core Booster](https://resources.gravitypdf.com/uploads/edd/2018/10/display-fields.png)
+![Customise Fields with Core Booster](https://resources.gravitypdf.com/uploads/2021/03/v6-Display-Fields.png)
 
 The `exclude` technique is a simple, quick and easy way to remove fields from your PDF, but it does have its limitations. For example, besides not being able to exclude Hidden or Product fields, you cannot create multiple PDFs on a single form and control which fields are shown in each. To overcome these limitations, [take advantage of the Core Booster add-on's *Customise Fields* feature](https://gravitypdf.com/shop/core-booster-add-on/).
