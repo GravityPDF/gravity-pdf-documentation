@@ -46,7 +46,7 @@ The [page confirmation](https://docs.gravityforms.com/configuring-confirmations-
 
 #### Redirect Confirmation 
 
-![The \[gravitypdf\] shortcode in the Gravity Forms redirect confirmation](https://resources.gravitypdf.com/uploads/2021/03/v6-Redirect-Confirmation.png) 
+![The \[gravitypdf\] shortcode in the Gravity Forms redirect confirmation](https://resources.gravitypdf.com/uploads/2021/03/v6-Redirect-Confirmations.png) 
 
 The [redirect confirmation](https://docs.gravityforms.com/configuring-confirmations-in-gravity-forms/#redirect-confirmation) allows you to send the user to another location upon completing their form. If you choose, you can redirect the user straight to a PDF. To get it functioning you need to copy and paste the sample shortcode found on the [PDF form list](managing-pdfs.md).
 
