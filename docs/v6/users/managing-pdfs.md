@@ -4,7 +4,7 @@ sidebar_label: "Managing PDFs"
 description: "Managing your PDFs and performing actions like activate/deactivate, duplicate and deleting is a breeze – and it all can be done without a page reload!"
 ---
 
-![A look at a form's PDF list](https://resources.gravitypdf.com/uploads/2015/10/pdf-list.png) 
+![A look at a form's PDF list](https://resources.gravitypdf.com/uploads/2021/03/v6-PDF-List.png) 
 
 When you begin taking advantage of [conditional logic](setup-pdf.md#conditional-logic), or install a [premium](https://gravitypdf.com/shop/) or [custom](https://gravitypdf.com/integration-services/) template, one PDF per form just isn't enough. That's why we've built an AJAXified PDF list to help you activate / deactivate, duplicate and delete your PDFs – all without a page reload. You can also add new PDFs or edit existing ones (it's not AJAX-powered though). The user interface is similar to the confirmation and notification lists so you should feel right at home. 
 
@@ -12,7 +12,7 @@ To access the *Managing PDFs* page see [Locating Your PDF Settings](setup-pdf.md
 
 ## List Columns 
 
-![The list column names](https://resources.gravitypdf.com/uploads/2015/10/column-list.png) 
+![The list column names](https://resources.gravitypdf.com/uploads/2021/03/v6-Column-List-e1617150263308.png) 
 
 The PDF list contains four columns which provide an overview of the PDFs currently configured for your Gravity Form. These include:
 
@@ -51,18 +51,18 @@ Click a PDFs *Edit* action to modify an existing PDF configuration. [See our Set
 
 ### Activate / Deactivate PDFs 
 
-![Active and deactivated toggles](https://resources.gravitypdf.com/uploads/2015/10/toggles.png) 
+![Active and deactivated toggles](https://resources.gravitypdf.com/uploads/2021/03/v6-Toggles.png) 
 
 PDFs can be **completely disabled** by using the activate/deactivate toggle – located to the left of the `Name` column. Once a PDF has been deactivated, users and administrators will no longer be able to access the document. The PDF will not be attached to email notifications, and its shortcode won't generate a link.
 
 ### Duplicate 
 
-![The UI shown when duplicating PDFs](https://resources.gravitypdf.com/uploads/2015/10/duplcate.png) 
+![The UI shown when duplicating PDFs](https://resources.gravitypdf.com/uploads/2021/03/v6-Duplicates.png) 
 
 You can duplicate an existing PDF configuration by clicking the *Duplicate* action. This action will happen in the background without the page reloading and once done, you'll see a copy of the PDF added to the list.
 
 ### Delete 
 
-![The warning shown when deleting PDFs](https://resources.gravitypdf.com/uploads/2015/10/delete.png) 
+![The warning shown when deleting PDFs](https://resources.gravitypdf.com/uploads/2021/03/v6-Delete-PDF.png) 
 
 You can delete an existing PDF configuration by clicking the *Delete* action. A warning box will pop up asking you to confirm before a PDF is deleted. This action will happen in the background without the page reloading.
