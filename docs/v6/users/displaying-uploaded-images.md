@@ -17,7 +17,7 @@ Out of the box, it isn't possible to display uploaded images in the Core (free) 
 
 To work around this limitation and display / show / embed uploaded images in Gravity PDF, we recommend the [Image Hopper add-on](https://imagehopper.tech/). This plugin can be configured to automatically downsize and rotate images on the client-side, which helps to prevent timeout issues during the PDF generation.
 
-![](https://resources.imagehopper.tech/uploads/2020/11/form-editor-image-hopper-field-open.png) 
+![](https://resources.gravitypdf.com/uploads/2021/03/Image-Hopper-Field.png) 
 _Where to find the Image Hopper field in the Form Editor_
 
 Once installed, add a new Image Hopper field to your Gravity Form. Just make sure to set the *Downscale Images* width and height setting to no more than 1000x1000px to prevent the aforementioned image size issue. Gravity PDF will now automatically display / show the uploaded images in the Core / Universal PDFs.
