@@ -694,7 +694,7 @@ module.exports = {
             'v6/users/global-settings',
             'v6/users/setup-pdf',
             'v6/users/viewing-pdfs',
-            'v6/users/shortcodes',
+            'v6/users/shortcodes-and-mergetags',
             'v6/users/managing-pdfs',
             'v6/users/pdf-template-manager',
             'v6/users/custom-fonts',
