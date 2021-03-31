@@ -4,7 +4,7 @@ sidebar_label: "Custom Fonts"
 description: "Gravity PDF is pre-installed with over 30 different fonts which support a lot of languages worldwide. For those not supported you can use our Font Manager."
 ---
 
-![Font Manager](https://resources.gravitypdf.com/uploads/2015/10/font-manager.png) 
+![Font Manager](https://resources.gravitypdf.com/uploads/2021/03/v6-Font-Manager.png) 
 
 Gravity PDF Core Fonts include characters for a large percentage of languages worldwide. For languages that aren't supported out of the box, additional fonts can be installed to fill the gap. This feature isn't limited to additional language support: you can use it to enhance the overall look and feel of your PDF.
 
@@ -17,7 +17,7 @@ The font installer is found in the plugin setting's [*Tools* tab](global-setting
 
 ### Add Font 
 
-![Add Font Interface](https://resources.gravitypdf.com/uploads/2015/10/add-font.png) 
+![Add Font Interface](https://resources.gravitypdf.com/uploads/2021/03/v6-Add-Font.png) 
 
 Click the *Add Font* "plus" icon, and an empty form will be displayed where you can name and upload your font files. The form fields available include:
 
@@ -46,12 +46,12 @@ Click the *Add Font* "plus" icon, and an empty form will be displayed where you 
 
 ### Edit Font 
 
-![Edit Font Interface](https://resources.gravitypdf.com/uploads/2015/10/edit-font.png) 
+![Edit Font Interface](https://resources.gravitypdf.com/uploads/2021/03/v6-Edit-Font.png) 
 
 Once you've installed a custom font or two, you'll see a list of those fonts when you open the *Font Manager*. You can edit the font by clicking on its name, updating the details and clicking *Save*. Simple!
 
 ### Delete Font 
 
-![Delete Font Interface](https://resources.gravitypdf.com/uploads/2015/10/delete-font.png) 
+![Delete Font Interface](https://resources.gravitypdf.com/uploads/2021/03/v6-Delete-Font.png) 
 
 In the *Font Manager*, there is a blue trash can icon to the right of each installed font. When you hover over the icon, it will turn red and after being clicked a warning box will pop up asking you to confirm before a font is deleted. *Deleting a font from the Font Manager does not delete the font files you've uploaded in your media library.*
