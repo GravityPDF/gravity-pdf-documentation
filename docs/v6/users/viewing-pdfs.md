@@ -26,8 +26,8 @@ When multiple PDFs are configured on the form, the text will change to _View PDF
 
 The PDF widget is displayed below the Entry widget in the sidebar. This widget allows you to view or download any of the PDFs available to the current entry that have been configured on the form. 
 
-As a native widget, you can control its position in the sidebar by dragging and dropping the widget label, or by using the up or down arrow icons. You can collapse the widget by selecting the small triangle icon to the right of the up/down arrows. If you want to hide the widget entirely, use the Screen Options toggle in the top-right corner of the screen and deselect the PDFs checkbox option.
-
 :::note
 In previous versions of Gravity PDF the links to the documents were included in the _Entry_ widget.  
 :::
+
+As a native widget, you can control its position in the sidebar by dragging and dropping the widget label, or by using the up or down arrow icons. You can collapse the widget by selecting the small triangle icon to the right of the up/down arrows. If you want to hide the widget entirely, use the Screen Options toggle in the top-right corner of the screen and deselect the PDFs checkbox option.
