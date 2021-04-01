@@ -6,22 +6,22 @@ description: "You can add a Gravity PDF download link to Gravity Forms Confirmat
 
 ## Before you get started...
 
-There are a number of security protocols in place to prevent unauthorised access to PDF documents. Before using the PDF shortcode or mergetag it's **highly recommended** you [review the documentation detailing PDF security](pdf-security.md) so that your users don't get an `access denied` error when attempting to view or download the PDFs.
+There are a number of security protocols in place to prevent unauthorised access to PDF documents. Before using the PDF shortcode or merge tag it's **highly recommended** you [review the documentation detailing PDF security](pdf-security.md) so that your users don't get an `access denied` error when attempting to view or download the PDFs.
 
 For the best balance between security and access, it is recommended to enable signed PDF URLs so that anyone with access to the link can view the document for a specific time period (which you define).
 
 :::info What are Signed PDF URLs?
-They are special auto-expiring URLs that allow _anyone_ with the link to view the PDF. They are useful if you want to share the URL via email to a third party, don't store IP addresses with entries, or you want to display the links on a page that already authenticates a user. Both Shortcode and Mergetag options support signed URLs, **but the feature has to be enabled** (see below). [Find out more about the PDF security and how Signed PDF URLs fit in the picture](http://localhost:3000/v6/users/pdf-security#default-security).
+They are special auto-expiring URLs that allow _anyone_ with the link to view the PDF. They are useful if you want to share the URL via email to a third party, don't store IP addresses with entries, or you want to display the links on a page that already authenticates a user. Both Shortcode and Merge Tag options support signed URLs, **but the feature has to be enabled** (see below). [Find out more about the PDF security and how Signed PDF URLs fit in the picture](http://localhost:3000/v6/users/pdf-security#default-security).
 :::
 
-## Shortcode or Mergetag?
+## Shortcode or Merge Tag?
 
 You can dynamically display a link or URL to a Gravity Forms entry PDF using one of two options:
 
 1. [Shortcode](#shortcode) (recommended)
-2. [Mergetag](#mergetag)
+2. [Merge Tag](#merge-tag)
 
-We recommend using the Shortcode method when possible because it not only generates the correct URL to the PDF, but it automatically wraps it up in an anchor tag so that it becomes a clickable link. The mergetag has its uses though, especially when you want to include the PDF URL in a HTML attribute (WordPress' security doesn't allow shortcodes to be processed when in HTML attributes).
+We recommend using the Shortcode method when possible because it not only generates the correct URL to the PDF, but it automatically wraps it up in an anchor tag so that it becomes a clickable link. The merge tag has its uses though, especially when you want to include the PDF URL in a HTML attribute (WordPress' security doesn't allow shortcodes to be processed when in HTML attributes).
 
 :::note
 The PDF Link/URL can only be generated once the entry has been created and saved in Gravity Forms. This is because you need a valid entry ID to generate it.
@@ -29,7 +29,7 @@ The PDF Link/URL can only be generated once the entry has been created and saved
 
 ## Shortcode
 
-You can easily add a PDF download link to Gravity Forms [Confirmations](https://docs.gravityforms.com/configuring-confirmations-in-gravity-forms/) and/or [Notifications](https://docs.gravityforms.com/configuring-notifications-in-gravity-forms/) with the `[gravitypdf]` shortcode. Using the optional [*Entry Attribute*](#entry-semi-optional) you can include the shortcode on any WordPress page (good for Page Confirmations). If you only need the raw PDF URL, you can [add the `raw` shortcode attribute](#raw-optional) or use the [PDF Mergetag](#using-the-mergetag) instead.
+You can easily add a PDF download link to Gravity Forms [Confirmations](https://docs.gravityforms.com/configuring-confirmations-in-gravity-forms/) and/or [Notifications](https://docs.gravityforms.com/configuring-notifications-in-gravity-forms/) with the `[gravitypdf]` shortcode. Using the optional [*Entry Attribute*](#entry-semi-optional) you can include the shortcode on any WordPress page (good for Page Confirmations). If you only need the raw PDF URL, you can [add the `raw` shortcode attribute](#raw-optional) or use the [PDF Merge Tag](#using-the-merge-tag) instead.
 
 ### Using the Shortcode 
 
@@ -114,6 +114,7 @@ The `[gravitypdf]` shortcode is customisable and there are a number of attribute
 ##### Expires (optional) 
 * The `expires` attribute works in conjunction [with the `signed` attribute](#signed-optional) and it changes the default signed URL timeout period. 
 * If the attribute isn't included, the signed URL will fallback to the global [Logged Out Timeout](global-settings.md#logged-out-timeout) setting (20-minutes by default).
+* [Valid expires formats can be found in the PHP documentation](https://www.php.net/manual/en/datetime.formats.relative.php).
 * *Example:* `[gravitypdf id="560f2ef799945" signed="1" expires="5 minutes"]`
 * *Example:* `[gravitypdf id="560f2ef799945" signed="1" expires="7 days"]`
 * *Example:* `[gravitypdf id="560f2ef799945" signed="1" expires="2 weeks"]`
@@ -143,16 +144,85 @@ The `[gravitypdf]` shortcode is customisable and there are a number of attribute
 
 If the [gravitypdf] shortcode doesn't display a link to the PDF, an error likely occurred. To verify this, enable [Debug Mode](global-settings.md#debug-mode) in the Global PDF Settings and test again using an Administrator WordPress account. An error message will be displayed on the screen where the shortcode has been rendered and provide more information about why nothing was displayed.
 
-## Mergetag
+## Merge Tag
 
-### Using the Mergetag 
+Gravity Forms merge tags are placeholders that are replaced with dynamic information in notification emails, confirmation pages, PDFs, and more. [Take a look at the Gravity Forms documentation to get a better understanding of them](https://docs.gravityforms.com/category/user-guides/merge-tags-getting-started/).
 
-![Gravity PDF Mergetags are included in the merge tag selector automatically](https://resources.gravitypdf.com/uploads/2021/03/v6-Updating-Merge-Tags.png) 
+### Using the Merge Tag 
 
-If you don't need a HTML download link to the PDF, but do want to access the raw PDF URL you can use the PDF Mergetags. These are included automatically in the Gravity Forms Merge Tag selector and can be used anywhere merge tags are supported. 
+![Gravity PDF Merge Tags are included in the merge tag selector automatically](https://resources.gravitypdf.com/uploads/2021/03/v6-Updating-Merge-Tags.png) 
 
-If you'd like the raw signed PDF URL, [use the `raw` attribute](#raw-optional) with the [gravitypdf] shortcode.
+When you've PDFs configured on a form, Gravity PDF merge tags are automatically included in the merge tag selector on the form settings pages. The merge tag selector is a button denoted by `{..}`. When selected, a list will be displayed with merge tags you can insert into the current setting. You'll find the available PDFs listed under the _Custom_ heading at the bottom and prefixed with the text "PDF:".
 
-### Building the Mergetag
+Unlike the shortcode, the merge tags are converted to a URL only ([akin to using the `raw` shortcode attribute](#raw-optional)). The benefit over shortcodes is they can be placed inside HTML attributes `<a href="{Label:pdf:6063bd0362dda}">...</a>`, and can be used anywhere Gravity Forms supports merge tags in general.
+
+### Building the Merge Tag
+
+While the basic PDF merge tag is available in the selector, it's useful to know what each parameter is and what modifiers are available to change its functionality.  
+
+#### Usage / Structure
+
+```
+{[label]:pdf:[id]} --> {Report:pdf:6063bd0362dda}
+
+{:pdf:[id]} --> {:pdf:6063bd0362dda}
+
+{[label]:pdf:[id]:[modifier]} --> {Report:pdf:6063bd0362dda:download}
+```
+
+* **[label]** (optional): A user-define name used for readability. When using the merge tags selector the [PDF Label](setup-pdf.md#label) will be used.
+* **:pdf:** (required): A static identifier used to determine this tag is for Gravity PDF
+* **[id]** (required): A dynamic identifier assigned to a particular form's PDF. The easiest way to get the ID is to use the merge tag selector. However, you can find a PDF's ID [in the URL when updating the PDF settings](http://localhost:3000/v6/users/viewing-pdfs). This is denoted by the `pid` parameter.
+* **[modifier]** (optional): Optional parameters that change the way the URL is generated (see below)
+
+#### Available Modifiers
+
+All modifiers are optional, and should be included after the `[id]`. They are also stackable – in any order – by separating each modifier with a `:`.
+
+##### Download
+* Generates a URL that forces the PDF to be downloaded, instead of being viewed directly in the browser.
+* _Example:_ `{Report:pdf:6063bd0362dda:download}`
+
+##### Print
+* Generates a URL that forces the print dialog box to open when the PDF is viewed (viewer dependant)
+* _Example:_ `{Report:pdf:6063bd0362dda:print}`
+
+##### Signed
+* Generate a secure PDF URL that auto-expires after a set period. Anyone with access to the signed link can view the PDF (regardless of their user privileges, if any), provided the link hasn't expired.
+* Signed PDF URLs is an alternative authentication method to the default IP-based authentication. It functions correctly even if you've disabled IP addresses using Gravity Forms 2.4+ GDPR feature.
+* Signed URLs do not work across protocols. For example, you cannot display the shortcode on a HTTP page while the PDF loads over HTTPS (or vice versa).
+* You can pass an optional expiration value (separated by a comma `,`) which changes the default signed URL timeout period. [Valid formats can be found in the PHP documentation](https://www.php.net/manual/en/datetime.formats.relative.php).
+* If no expiration value is included, the signed URL will fallback to the global [Logged Out Timeout](global-settings.md#logged-out-timeout) setting (20-minutes by default).
+* _Example:_ `{Report:pdf:6063bd0362dda:signed}`
+* _Example:_ `{Report:pdf:6063bd0362dda:signed,5 minutes}`
+* _Example:_ `{Report:pdf:6063bd0362dda:signed,7 days}`
+* _Example:_ `{Report:pdf:6063bd0362dda:signed,2 weeks}`
+* _Example:_ `{Report:pdf:6063bd0362dda:signed,1 month}`
 
 ### Common Problems 
+
+If a URL isn't displayed when the PDF merge tag is processed it's likely the PDF doesn't exist for the current form, it has been deactivated, or the [conditional logic doesn't pass](setup-pdf.md#conditional-logic). To determine the exact reason it wasn't generated, enable [Gravity Forms logging](https://docs.gravityforms.com/logging-and-debugging/) and then replicate the issue. In the Gravity PDF log file search for `PDF Mergetag is not valid` and review the logged information.
+
+#### PDF ID Invalid
+```log
+2021-04-01 04:29:59 (+00:00) - ERROR --> PDF Mergetag is not valid
+|--> {"error":"You must pass in a valid PDF ID","tag":["{Zadani:pdf:6048493b8acce1}","6048493b8acce1",""]}
+```
+
+In the sample log, the merge tag wasn't displayed because the PDF cannot be found in the current form (denoted by the `error` message). Verify the PDF exists from the [form PDF list page](managing-pdfs#activate--deactivate-pdfs). Then use the merge tag selector to update the merge tag.
+
+#### PDF Not Active
+```log
+2021-04-01 04:26:33 (+00:00) - ERROR --> PDF Mergetag is not valid
+|--> {"error":"PDF is not currently active","tag":["{Zadani:pdf:6048493b8acce}","6048493b8acce",""]}
+```
+
+In the sample log, the merge tag wasn't displayed because the PDF is not currently active (denoted by the `error` message). To fix, go to the [form PDF list page](managing-pdfs#activate--deactivate-pdfs) and reactivate. 
+
+#### Conditional logic did not pass
+```log
+2021-04-01 04:31:53 (+00:00) - ERROR --> PDF Mergetag is not valid
+|--> {"error":"Conditional logic did not pass","tag":["{Zadani:pdf:6048493b8acce}","6048493b8acce",""]}
+```
+
+In the sample log, the merge tag wasn't displayed because the current entry being processed did not pass the PDF's conditional logic (denoted by the `error` message). Provided your conditional logic is correct, this may not be a problem at all. [Double check the PDF Conditional Logic setting](setup-pdf.md#conditional-logic).
