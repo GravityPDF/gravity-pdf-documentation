@@ -9,13 +9,13 @@ description: ""
 Gravity PDF automatically restricts the height of images in headers/footers to prevent them taking up a large portion of a page. You can override this behaviour by including the style attribute in your `img` HTML markup.  
 
 1. Go to [`PDF Settings`](setup-pdf.md), choose the PDF template you want to edit, and click the `Template Tab` 
-![Go to PDF Settings](https://resources.gravitypdf.com/uploads/2019/10/Go-to-PDF-Settings.gif)
+![](https://resources.gravitypdf.com/uploads/2021/03/v6-Gravity-PDF-Template-Tab.png)
 
 2. Scroll down to the header settings, and click the rich **`Text Editor`**
-![Click Rich Text Editor](https://resources.gravitypdf.com/uploads/2019/10/PDF-‹-Forms-‹-testsite-—-WordPress-—-WordPress-2019-10-24-09-14-43.png)
+![](https://resources.gravitypdf.com/uploads/2021/03/v6-Header-Text-Editor.png)
   
 3. Add **`style="max-height: 400px"`** to the code
-![Add style code](https://resources.gravitypdf.com/uploads/2019/10/Add-style.gif)
+![](https://resources.gravitypdf.com/uploads/2021/03/v6-Header-Style.png)
 
 It should look like this in your editor:
 
@@ -26,7 +26,7 @@ It should look like this in your editor:
 **You can adjust 400px to the size you need.**
 
 *Before:*
-![Before header](https://resources.gravitypdf.com/uploads/2019/10/BEFORE-1024x467.png)
+![](https://resources.gravitypdf.com/uploads/2021/03/Header-before-style.png)
 
 *After:*
-![After header](https://resources.gravitypdf.com/uploads/2019/10/AFTER-1024x504.png)
+![](https://resources.gravitypdf.com/uploads/2021/03/Header-after-style.png)
