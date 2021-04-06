@@ -41,7 +41,7 @@ https://www.youtube.com/watch?v=8PYT5GwWuCk
 1. Navigate to `Forms -> Settings -> GFChart` in your admin area and activate your GFChart license key. The GFChart Image Charts plugins **will NOT** work without a valid license key.
 1. Next, head to the `Forms -> Charts/Calculations` page in your admin area.
 1. Click the *Add New* button and in the popup enter a title for your chart and select which Gravity Form will be the data source before saving.
-![Adding a new GFChart](https://resources.gravitypdf.com/uploads/2020/06/gfchart-create-chart.png)
+![Adding a new GFChart](https://resources.gravitypdf.com/uploads/2021/04/v6-Create-GFChart.png)
 1. Under the *Design* tab, select a chart type, and then subsequent style(s) for using a Pie or Bar chart. 
 ![Selecting a chart type for GFChart](https://resources.gravitypdf.com/uploads/2020/06/gfchart-design-page.png)
 1. Under the *Select data* tab, choose the field(s) that you want to include in the chart. Add any other filters you might want. 
@@ -367,7 +367,7 @@ The ability to get a report emailed to you on a regular schedule is an important
 1. In your WordPress Admin area, navigate to *Settings -> General* and confirm your **Timezone** setting is configured correctly.
 
 1. Create a new Gravity Form specifically for your scheduled reports. Since all the data is pulled from the [configured GFChart graphs and calculations](#setup-gfchart), your form doesn't need to capture any information of importance. However, Gravity Forms won't allow you to submit a new entry unless some data is saved, so add a Single Line Text field to your form – the field label doesn't matter. 
-![A basic Gravity Form with one Single Line Text field](https://resources.gravitypdf.com/uploads/2020/06/scheduled-report-basic-form.png)
+![A basic Gravity Form with one Single Line Text field](https://resources.gravitypdf.com/uploads/2021/04/v6-Scheduled-Report-Basic-Form.png)
 
 1. [Create a Notification (or Notifications) that will be emailed on your schedule](https://docs.gravityforms.com/configuring-notifications-in-gravity-forms/).
 
@@ -406,7 +406,7 @@ If you'd like to change the time that a report will be sent, [you can install an
 GFChart's scheduled event uses the Notification ID as a unique identifier. You can accidentally override the original form's scheduled event if you duplicate a Gravity Form (the Notification IDs don't change when duplicated) and then update the new form's Notification settings. A workaround is to duplicate the Notification(s) on the new form (getting new IDs), deleting the original notifications and then updating the new Notifications settings to re-enabling scheduling.
 ::: 
 
-![How to manually adjust the date and time of the next GFChart Scheduled Notification event](https://resources.gravitypdf.com/uploads/2020/06/wp-crontrol-event-runtime.png)
+![How to manually adjust the date and time of the next GFChart Scheduled Notification event](https://resources.gravitypdf.com/uploads/2021/04/v6-WP-Crontrol-Event-Time.png)
 
 **Summary:** This option is best when you want a simple solution to easily send reports daily, weekly, or every 30 days. It lacks advanced scheduling features, but is included in the GFChart All  license (which is required to use the Gravity PDF Reports for GFChart plugin) and so you don't have any additional costs. 
 
@@ -416,7 +416,7 @@ GFChart's scheduled event uses the Notification ID as a unique identifier. You c
 
 Before you start the Workflow setup, [have a ready of the Gravity Flow Introduction guide](https://docs.gravityflow.io/article/50-an-introduction-to-the-features), so you've the foundational knowledge you need. To set this up correctly, we'll create two Notification steps on the form. The first will include the Schedule delay and then send the Notification, while the second is used to create a loop so the workflow never ends and the schedule repeats indefinitely.
 
-![An overview of the Gravity Flow workflow needed to schedule the notification(s)](https://resources.gravitypdf.com/uploads/2020/06/gravity-flow-workflow-overview.png)
+![An overview of the Gravity Flow workflow needed to schedule the notification(s)](https://resources.gravitypdf.com/uploads/2021/04/v6-Gravity-Flow-Workflow-Overview.png)
 
 When you setup the first Notification step, enable the "Schedule this step" option and select the appropriate *Delay* interval. Gravity Flow supports delaying by:
 
@@ -425,13 +425,13 @@ When you setup the first Notification step, enable the "Schedule this step" opti
 * Day
 * Week
 
-![Configuring the delayed Notification step in Gravity Flow](https://resources.gravitypdf.com/uploads/2020/06/gravity-flow-scheduled-notification.png)
+![Configuring the delayed Notification step in Gravity Flow](https://resources.gravitypdf.com/uploads/2021/04/v6-Gravity-Flow-Scheduled-Notification.png)
 
-Once you've setup the correct interval, enable the appropriate "Gravity Forms Notifications" that you want to schedule. 
+Once you've setup the correct interval, enable the  appropriate "Gravity Forms Notifications" that you want to schedule. 
 
 In the second Notification step, all you need to do is set the "Next Step" setting to the *Start* option so that the workflow will repeat (all the other non-required settings in this step can be left as is). 
 
-![Configuring the loop Notification step in Gravity Flow](https://resources.gravitypdf.com/uploads/2020/06/gravity-flow-loop-notification.png)
+![Configuring the loop Notification step in Gravity Flow](https://resources.gravitypdf.com/uploads/2021/04/v6-Gravity-Flow-Loop-Notification.png)
 
 The final step is to submit a form entry to kick off the report scheduling. The first scheduled Notification will be sent using the entry submission time + the delay interval chosen. For example, if you submitted the entry at 9am and have a delay of "1 day" then you'll get the next email at 9am tomorrow. Adjusting the scheduled time manually requires editing the database (**which we do NOT recommend**). The simplest (albeit tedious) approach is to delete the original entry and submit a new entry at your desired time. 
 
