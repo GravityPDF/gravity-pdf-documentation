@@ -1,29 +1,62 @@
 ---
 title: "Using the Font Manager to Install Custom PDF Fonts"
 sidebar_label: "Custom Fonts"
-description: "Gravity PDF is pre-installed with over 30 different fonts which support a lot of languages worldwide. For those not supported you can use our Font Manager."
+description: "Gravity PDF is pre-installed with over 30 different fonts which support a lot of languages worldwide. For those not supported you can use the Font Manager."
 ---
 
 ![Font Manager](https://resources.gravitypdf.com/uploads/2021/03/v6-Font-Manager.png) 
 
-Gravity PDF Core Fonts include characters for a large percentage of languages worldwide. For languages that aren't supported out of the box, additional fonts can be installed to fill the gap. This feature isn't limited to additional language support: you can use it to enhance the overall look and feel of your PDF.
+Use the Font Manager to add, update, search, select, and delete custom fonts that can be used in your Gravity PDF documents. While Gravity PDF [ships with a variety of fonts that support most languages](core-pdf-fonts.md), installing and using custom fonts allow you to match your branding, and enhance the overall look and feel of your PDFs. 
 
+:::info
+Looking for open-source fonts to use with Gravity PDF? [Google Fonts has a large directory of free fonts available for commercial use](https://fonts.google.com).
+:::
 
-## Font Installer 
+## Open the Font Manager
 
-The font installer is found in the plugin setting's [*Tools* tab](global-settings.md#tools) – navigate to `Forms -> Settings -> PDF -> Tools` in your WordPress admin area – and is accessed by selecting the *Manage Fonts* button. Only `.ttf` fonts can be used, and all fonts *must* be uploaded through your media library. 
+You can access the Font Manager from the Global PDF Settings page via the [Default Font setting](global-settings.md#default-font-type), or [on the Tools tab](global-settings.md#fonts). You'll also find it when [configuring a PDF on a form](setup-pdf.md#font); just look for the *Manage* button that will appear next to the font dropdown box.
 
-## Managing Fonts
+The manager is split into two panes. On the left is the list of installed custom fonts, and on the right is where you add a new font, or update an existing font.
 
-### Add Font 
+## Font List
 
-![Add Font Interface](https://resources.gravitypdf.com/uploads/2021/03/v6-Add-Font.png) 
+The left pane shows all the installed custom fonts, and whether a file has been associated with each of the four font variants, denoted by a ✅ or ❌. 
 
-Click the *Add Font* "plus" icon, and an empty form will be displayed where you can name and upload your font files. The form fields available include:
+### Searching
+
+At the top of the left pane is a search bar that will show you live results in the list below. The search will match both the name you've given to the font, and any of the uploaded font file names. 
+
+### Selecting
+
+If the Font Manager is accessed via the _Default Font_ or _Font_ setting, you'll have the option to select a font using the radio button found to the left of each name in the list. This will automatically update the associated font dropdown setting (don't forget to save afterwards).
+
+### Editing
+
+Clicking on the font name in the list will open a new pane on the right where you can modify any of the font settings. Refer to the [Add/Update Font documentation](#add--update-font) for details about the available settings and actions. 
+
+### Deleting
+
+On the right side of the list is a trash icon for each font. This action allows you to delete the font and its associated files. An alert prompt will be displayed, asking you to confirm, before the deletion occurs.
+
+:::caution
+@TODO What happens to existing PDFs that use this font???
+:::
+
+## Add Font
+
+![Add Font Interface](https://resources.gravitypdf.com/uploads/2021/03/v6-Add-Font.png)
+
+The right pane is where you add or update the font settings. By default the add pane is shown, allowing you to quickly install new fonts. 
+
+:::note 
+The update pane will be displayed if you [click on an installed fonts in the Font List](#editing). Clicking on the `← Cancel` button will reopen the add pane.
+:::
+
+When adding a new font (or updating an existing one), the following options are available: 
 
 #### Font Name (required) 
-* This is the name that gets displayed through all Gravity PDF's interfaces and is used when setting the font in your PDF. It doesn't have to be the same name as your font, but it's a good idea to keep them similar.
-* Due to how the PDF software handles fonts, only alphanumeric characters and spaces are allowed in the name (A-Z / 0-9).
+* This is the name that gets displayed through all Gravity PDF's interfaces . It doesn't have to be the same name as your font, but it's a good idea to keep them similar.
+* Only alphanumeric characters and spaces are allowed in the font name (A-Z / 0-9).
 
 #### Regular (required) 
 * This field references the main font file for your [typeface](https://en.wikipedia.org/wiki/Typeface). Use the *Select Font* button to open your media library and upload a `.ttf` font file. Once uploaded, select your font and press the blue *Select Font* button in the bottom right hand corner of your screen.
