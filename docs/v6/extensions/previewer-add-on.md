@@ -24,7 +24,7 @@ This extension adds a new field called **PDF Preview** to the [Gravity Forms Edi
 
 ### PDF Preview Options 
 
-![Preview Options](https://resources.gravitypdf.com/uploads/2017/08/previewer1.1.png)
+![Preview Options](https://resources.gravitypdf.com/uploads/2021/04/v6-Previewer.png)
 
 Once you've added the *PDF Preview* field to the form, you have a number of options that can be configured. The field supports the following standard Gravity Forms options:
 

@@ -24,7 +24,7 @@ If your browser auto-extracts zip files when downloaded, you'll need to temporar
 2.  In your WordPress admin area, navigate to the `Plugins -> Add New` page then select the Upload Plugin button (located to the right of the Add Plugins title)
 
 3.  Click the `Browse` button and select the zip file downloaded in step one.
-    ![Uploading plugin zip file manually](https://resources.gravitypdf.com/uploads/2017/06/manual-plugin-installation-premium.png)
+    ![Uploading plugin zip file manually](https://resources.gravitypdf.com/uploads/2021/04/Manual-Plugin-Installation.png)
 
 4.  Click the `Install Now` button and wait. Depending on your internet speed, it could take some time to upload.
 
@@ -33,10 +33,10 @@ If your browser auto-extracts zip files when downloaded, you'll need to temporar
 6.  To enable one-click updates, locate the newly-installed plugin in the list and click the "Register your copy of *PLUGIN\_NAME*" link.
 
 7.  Enter then save your license key (found in your Receipt email). If the registration is successful, a tick will be displayed next to the license.
-    ![Registering plugin for one-click updates](https://resources.gravitypdf.com/uploads/2017/06/plugin-licensing.png)
+    ![Registering plugin for one-click updates](https://resources.gravitypdf.com/uploads/2021/04/v6-Plugin-Licensing.png)
 
 ## One Click Updates 
 
 As long as you've registered your license key (as outlined in the [Install Steps](#install-steps)) and it's still valid (all keys are valid for 12 months after purchase), your extension will periodically check GravityPDF.com for a new version. If there is a new version, it'll be shown on the [Dashboard Updates Screen](https://wordpress.org/support/article/dashboard-updates-screen/) or the Plugins page, and you can one-click update the software.
 
-![One-click updates](https://resources.gravitypdf.com/uploads/2017/06/core-booster-update.png)
+![One-click updates](https://resources.gravitypdf.com/uploads/2021/04/Core-Booster-Update-1.3.6.png)
