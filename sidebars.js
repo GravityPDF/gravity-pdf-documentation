@@ -710,7 +710,7 @@ module.exports = {
             'v6/users/pdf-security',
             'v6/users/hide-form-fields',
             'v6/users/adding-page-breaks',
-            'v6/users/css-ready-classes',
+            'v6/users/columns',
             'v6/users/displaying-uploaded-images',
             'v6/users/background-processing',
             'v6/users/gravityview-support',

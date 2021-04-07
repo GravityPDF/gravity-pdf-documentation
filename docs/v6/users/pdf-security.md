@@ -4,7 +4,7 @@ sidebar_label: "PDF Security"
 description: "Ensuring your data is protected is top priority and we've implemented security protocols to prevent unauthorised access to PDF documents."
 ---
 
-![Access Denied to PDF](https://resources.gravitypdf.com/uploads/2015/10/access-denied.png) 
+[pic]
 
 Ensuring your data is protected is our *top priority*, and we've implemented a number of security protocols to prevent unauthorised access to PDF documents generated with Gravity PDF. **All PDF rendering is done directly on your web server**, and no third-party service has access to your data. 
 
@@ -13,7 +13,7 @@ Once you've installed the plugin, it's **strongly recommended** you review the s
 ## Default Security 
 
 :::note tl;dr
-The default security settings allow the user who submits the entry to view their own PDF. Site Administrators and Network Super Administrators can view all PDFs.
+The default security settings allow the user who submits the entry to view their own PDF using user-account authentication or IP-matching. Site Administrators and Network Super Administrators can view all PDFs.
 :::
 
 The software ships with conservative defaults that provides a well-balanced mix of PDF access and security. By default, the following users will be able to access PDFs:
@@ -29,12 +29,12 @@ The software ships with conservative defaults that provides a well-balanced mix 
     - To correctly test the owner security policy, you'll need to submit a new entry using a web proxy like [hide.me](https://hide.me/en/proxy) so that the IP address differs from your own.
 
 :::caution
-By default, Gravity Forms will not handle proxy-based IP addresses automatically (Cloudflare, Load Balancer and WAF Firewalls are affected). In such cases our IP-based access policy mentioned below will not work. If you are affected you can [use the `gform_ip_address` filter](https://docs.gravityforms.com/gform_ip_address/) to return the correct user IP.
+By default, Gravity Forms will not handle proxy-based IP addresses automatically (Cloudflare, Load Balancer and WAF Firewalls are affected). In such cases our IP-based access policy mentioned below will not work. If you are affected you can [use the `gform_ip_address` filter](https://docs.gravityforms.com/gform_ip_address/) to return the correct user IP, or utilise Signed PDF URLs instead (see below).
 :::
 
-4. An alternative to the IP-based authentication mentioned in #3 above is signed PDF URLs (added in Gravity PDF 5.1), which correctly authenticates a user even if you've disabled IP addresses using Gravity Forms 2.4+ GDPR features.     
-    - Signed URLs are only available using the [gravitypdf] shortcode [with the `signed` attribute](shortcodes-and-mergetags.md#signed-optional). Anyone with access to the signed link can view the PDF (regardless of their user privileges, if any), provided the link hasn't expired.
-    - By default, the signed URL will have a 20-minute timeout window. This behaviour can be changed globally using the [Logged Out Timeout](global-settings.md#logged-out-timeout) settings, or per [gravitypdf] shortcode [by including the `expires` attribute](shortcodes-and-mergetags.md#expires-attribute).
+4. An alternative to the IP-based authentication is signed PDF URLs, which correctly authenticates any user with the link even if you've disabled IP addresses using [Gravity Forms Personal Data settings](https://docs.gravityforms.com/personal-data-settings/).     
+    - Signed URLs are available using the [[gravitypdf] shortcode with the `signed` attribute](shortcodes-and-mergetags.md#signed-optional) or the [PDF Merge tag with the `:signed` merge tag modifier](shortcodes-and-mergetags#signed). Anyone with access to the signed link can view the PDF (regardless of their user privileges, if any), provided the link hasn't expired.
+    - By default, the signed URL will have a 20-minute timeout window. This behaviour can be changed globally using the [Logged Out Timeout](global-settings.md#logged-out-timeout) settings, or per PDF link by including the `expires` attribute/modifier.
     - When the timeout period expires, Gravity PDF will fallback to the standard security policies outlined in #1/2/3 above. 
     - Signed URLs do not work across protocols. For example, you cannot display the shortcode on a HTTP page while the PDF loads over HTTPS (or vice versa). 
 
