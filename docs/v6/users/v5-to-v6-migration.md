@@ -1,8 +1,10 @@
 ---
-title: "How to successfully upgrade to Gravity PDF 5.0"
-sidebar_label: "v4 to v5 Migration"
-description: "Gravity PDF 5.0 is a major update which sees the minimum version requirements for PHP, WordPress and Gravity Forms increased. The PDF library we use has been updated from v6 to v7, we've removed a legacy directory used in v3, and we no longer bundle the PDF fonts directly in the plugin."
+title: "How to successfully upgrade to Gravity PDF 6.0"
+sidebar_label: "v5 to v6 Migration"
+description: "Gravity PDF 6.0 is a major update which sees the minimum version requirements for PHP, WordPress and Gravity Forms increased."
 ---
+
+@TODO - entire article
 
 Gravity PDF 5.0 is a major update that sees the minimum version requirements for PHP, WordPress and Gravity Forms increased. We have updated the PDF library we use (mPDF) from v6 to v7, we've removed a legacy directory used in v3 and we no longer bundle the PDF fonts directly in the plugin. 
 

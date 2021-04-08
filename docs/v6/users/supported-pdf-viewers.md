@@ -1,10 +1,10 @@
 ---
 title: "Gravity PDF's Officially Supported PDF Viewers"
 sidebar_label: "Supported PDF Viewers"
-description: "Gravity PDF officially supports the free Adobe Reader software. After all, Adobe is the company who developed the PDF specification."
+description: "Gravity PDF officially supports the free Adobe Reader software. After all, Adobe is the company who originally developed the PDF specification."
 ---
 
-Gravity PDF officially supports [Adobe Acrobat Reader](https://get.adobe.com/reader/) and Adobe Acrobat Pro – Adobe is the company who developed the [PDF specification](http://www.adobe.com/devnet/pdf/pdf_reference.html). This means if a PDF generated with Gravity PDF has display issues in your PDF reader, but shows correctly in Adobe Reader, we won't consider it a bug. 
+Gravity PDF officially supports [Adobe Acrobat Reader](https://get.adobe.com/reader/) and Adobe Acrobat Pro – Adobe is the company who originally developed the [PDF specification](http://www.adobe.com/devnet/pdf/pdf_reference.html). This means if a PDF generated with Gravity PDF has display issues in your PDF reader, but shows correctly in Adobe Reader, we won't consider it a bug. 
 
 ![FireFox PDF Rendering Issues](https://resources.gravitypdf.com/uploads/2015/10/Firefox-PDF-viewer-warning.png) 
 

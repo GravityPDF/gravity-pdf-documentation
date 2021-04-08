@@ -16,9 +16,9 @@ If you are experiencing the "white screen of death", or when submitting Gravity 
 
     1.  FTP into your website and download the `wp-config.php` file.
     2.  Look for the line `define('WP_DEBUG', false);` and change `false` to `true`. If the line is not present in the file you can add it to the top of the file (on the line after `<?php`).
-    3.  Save and then upload the file back to your server. If it worked ,you'll start seeing PHP errors at the top of your browser window which can help you debug the issue.
+    3.  Save and then upload the file back to your server. If it worked, you'll start seeing PHP errors at the top of your browser window which can help you debug the issue.
 
-4.  If the problem occurs when submitting a Gravity Form first ensure AJAX is disabled by removing `ajax="true"` from the *[[gravityform]]* shortcode. Once done, submit the form and review the error messages to help you debug the problem.
+4.  If the problem occurs when submitting a Gravity Form first ensure AJAX is disabled by removing `ajax="true"` from the [gravityform] shortcode. Once done, submit the form and review the error messages to help you debug the problem.
 
 5.  If the problem occurs while trying to open the PDF, try view the PDF from your admin area and review the error messages to help you debug the problem.
 

@@ -14,9 +14,7 @@ Here are some important details about Gravity Forms/Gravity PDF's compatibility 
 
 ## About Gravity Forms
 
-[Gravity Forms](https://rocketgenius.pxf.io/c/1211356/445235/7938) is a premium WordPress extension that allows you to create advanced forms using an easy-to-use drag and drop editor. You can build and publish complex forms with minimal effort and create automated email notifications. There are also over 30 add-ons that can be used to enhance its features.
-
-While you do have to pay for the software, it's one of those must-have plugins that will revolutionise how you collect and process data online.
+[Gravity Forms](https://rocketgenius.pxf.io/c/1211356/445235/7938) is a premium WordPress extension that allows you to create advanced forms using an easy-to-use drag and drop editor. You can build and publish complex forms with minimal effort and create automated email notifications. There are also over 30+ add-ons that can be used to enhance its features.
 
 ## Gravity Forms Licenses
 
@@ -36,7 +34,7 @@ As long as the [minimum requirements are met](installation.md#requirements), Gra
 
 ## Gravity PDF Add-Ons Compatibility
 
-Our official policy is to support the latest major Gravity Forms release (2.X) and the latest version of all [official Gravity Forms add-ons](https://rocketgenius.pxf.io/c/1211356/445235/7938?u=https%3A%2F%2Fwww.gravityforms.com%2Fadd-ons%2F). We'll attempt to support the previous major Gravity Forms release as well, but sometimes breaking changes are introduced which prevents us doing so (we highly recommend you keep WordPress and all your plugins / themes fully up to date).
+Our official policy is to support the latest major Gravity Forms release (2.X) and the latest version of all [official Gravity Forms add-ons](https://rocketgenius.pxf.io/c/1211356/445235/7938?u=https%3A%2F%2Fwww.gravityforms.com%2Fadd-ons%2F). We'll attempt to support the previous major Gravity Forms release as well, but sometimes breaking changes are introduced which prevents us doing so. This has been the case with Gravity Forms 2.5 and why we've opted to make that version the minimum requirements for Gravity PDF 6.0+.
 
 We also actively test our Gravity Flow and GravityView integration to ensure Gravity PDF works well with both.
 

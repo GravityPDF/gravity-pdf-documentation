@@ -718,7 +718,7 @@ module.exports = {
             'v6/users/additional-templates',
             'v6/users/gdpr-and-gravity-pdf',
             'v6/users/gravity-forms-compatibility',
-            'v6/users/v4-to-v5-migration',
+            'v6/users/v5-to-v6-migration',
           ]
         },
 
