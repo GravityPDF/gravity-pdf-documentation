@@ -4,7 +4,7 @@ sidebar_label: "Increasing Memory Limit"
 description: "WordPress memory is different to server memory. Your VPS may have 4GB of memory, but WordPress and PHP are only allocated a small portion of this."
 ---
 
-:::info 
+:::caution
 The following article is technical in nature so if you don't feel comfortable making changes to files via (s)FTP, or from your hosting control panel, you should contact your web hosting provider for assistance.
 :::
 

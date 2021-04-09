@@ -729,17 +729,15 @@ module.exports = {
             'v6/users/500-internal-server-error',
             'v6/users/white-screen-of-death',
             'v6/users/increasing-memory-limit',
+            'v6/users/activation-errors',
+            'v6/users/why-arent-columns-showing-in-pdf',
+            'v6/users/adjust-size-of-header-footer-images',
             'v6/users/cannot-find-ttf-truetype-font-file',
             'v6/users/supported-pdf-viewers',
-            'v6/users/activation-errors',
             'v6/users/generated-in-x-seconds',
-            'v6/users/why-arent-columns-showing-in-pdf',
             'v6/users/weird-characters-showing-instead-of-pdf',
             'v6/users/no-gravity-form-entry-id-passed-to-gravity-pdf',
-            'v6/users/how-to-display-the-nested-forms-table-shown-prior-to-v5-1',
-            'v6/users/columns-in-nested-forms-do-not-work-in-the-pdf',
-            'v6/users/setup_ids-depreciated-gravity-pdf-4-0',
-            'v6/users/adjust-size-of-header-footer-images'
+            'v6/users/how-to-display-the-nested-forms-table-shown-prior-to-v5-1'
           ]
         },
       ]

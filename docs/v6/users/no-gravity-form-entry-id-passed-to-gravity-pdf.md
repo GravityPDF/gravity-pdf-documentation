@@ -1,11 +1,17 @@
 ---
-title: "No Gravity Forms entry ID passed to Gravity PDF"
-sidebar_label: "No Gravity Forms entry ID passed to Gravity PDF"
+title: "No Gravity Forms Entry ID passed to Gravity PDF"
+sidebar_label: "No Entry ID Passed"
 description: ""
 ---
 
-This error occurs when you [use the `[gravitypdf]` shortcode](shortcodes-and-mergetags.md#building-the-shortcode) outside of Gravity Forms AND don't pass the [entry ID to the shortcode](shortcodes-and-mergetags.md#entry-semi-optional) or the page.
+If you've [Debug Mode enabled](global-settings.md#debug-mode) and are using the `[gravitypdf]` shortcode on a Post or Page on your website, you might come across the error:
 
-The most common occurrence is when using [Gravity Forms Page Confirmation](https://docs.gravityforms.com/configuring-confirmations/#page-confirmations) (which redirects a user to an existing WordPress page). If this occurs, [please follow our guide for using the shortcode with the Page Confirmation](shortcodes-and-mergetags.md#page-confirmation).
+```text
+No Gravity Forms Entry ID passed to Gravity PDF
+```
 
-If you want to use the shortcode outside of Gravity Forms entirely, you need to [include the `entry` attribute](shortcodes-and-mergetags.md#entry-semi-optional) with the shortcode so that Gravity PDF knows what entry it should use.
+This is displayed when you [use the `[gravitypdf]` shortcode](shortcodes-and-mergetags.md#building-the-shortcode) outside of Gravity Forms and don't pass the [entry ID direct to the shortcode or via a URL parameter](shortcodes-and-mergetags.md#entry-semi-optional).
+
+This commonly occurs when using [Page Confirmations](https://docs.gravityforms.com/configuring-confirmations/#page-confirmations), and you should [follow our shortcode Page Confirmation guide](shortcodes-and-mergetags.md#page-confirmation) to resolve.
+
+If you want to use the shortcode outside of Gravity Forms entirely, you need to [include the `entry` attribute](shortcodes-and-mergetags.md#entry-semi-optional) so that Gravity PDF knows what entry it should use when processing the shortcode.

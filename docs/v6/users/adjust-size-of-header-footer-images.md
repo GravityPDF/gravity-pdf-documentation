@@ -1,32 +1,32 @@
 ---
-title: "Adjust Size of Header / Footer Images"
-sidebar_label: "Adjust Size of Header / Footer Images"
+title: "How do I adjust the size of images in the Header / Footer of Core and Universal templates?"
+sidebar_label: "Adjust Size of Header / Footer Images"
 description: ""
 ---
 
-## How do I adjust the size of images in the Header / Footer of Core and Universal templates?
+Gravity PDF automatically restricts the height of images in headers/footers to prevent them taking up a large portion of a page. You can override this behaviour by including a style attribute in your `img` HTML markup with the `max-height` property.
 
-Gravity PDF automatically restricts the height of images in headers/footers to prevent them taking up a large portion of a page. You can override this behaviour by including the style attribute in your `img` HTML markup.  
+Follow these steps to make the adjustment:
 
-1. Go to [`PDF Settings`](setup-pdf.md), choose the PDF template you want to edit, and click the `Template Tab` 
+1. Go to [PDF List Page](managing-pdfs.md) and edit the PDF you want to adjust. Scroll down until you locate the _Template_ section. 
 ![](https://resources.gravitypdf.com/uploads/2021/03/v6-Gravity-PDF-Template-Tab.png)
 
-2. Scroll down to the header settings, and click the rich **`Text Editor`**
+2. Scroll down to the Header/Footer Rich Text Editor you are interested in and select the _Text_ tab to show the raw HTML markup.
 ![](https://resources.gravitypdf.com/uploads/2021/03/v6-Header-Text-Editor.png)
   
-3. Add **`style="max-height: 400px"`** to the code
+3. Add `style="max-height: 400px"` to the `<img />` tag and then save/update.
 ![](https://resources.gravitypdf.com/uploads/2021/03/v6-Header-Style.png)
-
 It should look like this in your editor:
-
 ```
 <img class="alignnone size-full wp-image-12 aligncenter" src="http://testsite.local/wp-content/uploads/2019/10/Group82InternshipProgramHeaderBanner.png" alt="" width="1030" height="250" style="max-height: 400px" />
 ```
 
-**You can adjust 400px to the size you need.**
+:::info
+To get the size you need the image displayed at, you may have to increase or decrease 400px until you get the desired result.
+:::
 
-*Before:*
-![](https://resources.gravitypdf.com/uploads/2021/03/Header-before-style.png)
+**Before**
+![A screenshot of a PDF with a logo constrained to a fixed height](https://resources.gravitypdf.com/uploads/2021/03/Header-before-style.png)
 
-*After:*
-![](https://resources.gravitypdf.com/uploads/2021/03/Header-after-style.png)
+**After**
+![A screenshot of a PDF with the logo size increased to the max-height specified](https://resources.gravitypdf.com/uploads/2021/03/Header-after-style.png)
