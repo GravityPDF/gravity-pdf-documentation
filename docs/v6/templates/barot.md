@@ -17,7 +17,7 @@ As a *Universal* PDF template, *Barot* can be used with all Gravity Forms and wi
 
 ## Configuring 
 
-All PDF templates have common settings that can be configured, such as font, security and PDF attachments, and we recommend [reviewing the PDF setup guide](../users/setup-pdf.md) to get a better understanding on all the available settings. All template-specific configuration is done from the *Template* tab and below you'll find detailed information about each option available in *Barot*, what it does and how it alters the generated PDF.
+All PDF templates have common settings that can be configured, such as font, security and PDF attachments, and we recommend [reviewing the PDF setup guide](../users/setup-pdf.md) to get a better understanding on all the available settings. All template-specific configuration is done from the *Template* section and below you'll find detailed information about each option available in *Barot*, what it does and how it alters the generated PDF.
 
 ### Main Heading 
 * The main heading is included at the very start of your PDF, before any other content. Merge tags are supported.
@@ -41,7 +41,7 @@ All PDF templates have common settings that can be configured, such as font, sec
 * The default footer background colour used in *Barot* is a Gallery (hex `#eeeeee`).
 
 ### Footer Font Color 
-* This setting controls the colour of the [footer text / content](#footer-content) independent of the [font colour selected in the Appearance tab](../users/setup-pdf.md#font-colour).
+* This setting controls the colour of the [footer text / content](#footer-content) independent of the [font colour selected in the Appearancesection](../users/setup-pdf.md#font-colour).
 * Pick a suitable contrasting colour for the [Footer Background Color](#footer-background-color).
 
 ### Footer Content 
@@ -59,8 +59,8 @@ Along with the options specific to *Barot*, the following core settings are also
 
 ## Recommended Font 
 
-*Barot* comes bundled with *Droid Serif*, an open source licensed font (Apache License, Version 2.0). *Droid Serif* is a highly readable font that works great at 10pt with Sabre. Set the PDF font in the [Appearance tab](../users/setup-pdf.md#appearance-tab).
+*Barot* comes bundled with *Droid Serif*, an open source licensed font (Apache License, Version 2.0). *Droid Serif* is a highly readable font that works great at 10pt with Sabre. Set the PDF font in the [Appearancesection](../users/setup-pdf.md#appearance-tab).
 
 ## Viewing PDF 
 
-Once you've saved your new PDF, you can [view it from the Gravity Forms Entries List page](../users/viewing-pdfs.md). Just remember to fill out and submit your form if the entry list is empty.
+Once you've saved your new PDF, you can [view it from the Gravity Forms Entries List page](../users/viewing-pdfs.md).

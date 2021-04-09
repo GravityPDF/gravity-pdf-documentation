@@ -17,7 +17,7 @@ As a *Universal* PDF template, *Formium* can be used with all Gravity Forms and 
 
 ## Configuring 
 
-All PDF templates have common settings that can be configured, such as font, security and PDF attachments, and we recommend [reviewing the PDF setup guide](../users/setup-pdf.md) to get a better understanding on all the available settings. All template-specific configuration is done from the *Template* tab, and below you'll find detailed information about each option available in *Formium*, what it does and how it alters the generated PDF.
+All PDF templates have common settings that can be configured, such as font, security and PDF attachments, and we recommend [reviewing the PDF setup guide](../users/setup-pdf.md) to get a better understanding on all the available settings. All template-specific configuration is done from the *Template* section, and below you'll find detailed information about each option available in *Formium*, what it does and how it alters the generated PDF.
 
 ### Main Heading 
 * The main heading is included at the very start of your PDF, before any other content. Merge tags are supported.
@@ -28,7 +28,7 @@ All PDF templates have common settings that can be configured, such as font, sec
 * Set the background colour used in the form data blocks. The default colour is Gallery (hex `#EEEEEE`).
 
 ### Field Color 
-* Control the font colour of the form data blocks. This overrides the font colour set in the [Appearance tab](../users/setup-pdf.md#appearance-tab).
+* Control the font colour of the form data blocks. This overrides the font colour set in the [Appearancesection](../users/setup-pdf.md#appearance-tab).
 
 ## Additional Settings 
 
@@ -46,8 +46,8 @@ Along with the options specific to *Formium*, the following core settings are al
 
 ## Recommended Font 
 
-*Formium* comes bundled with *Arimo*, an open source Google web font (Apache License, Version 2.0). *Arimo* is an innovative, refreshing sans serif font that works great with *Formium* at 10pt. Set the PDF font [in the Appearance tab](../users/setup-pdf.md#appearance-tab).
+*Formium* comes bundled with *Arimo*, an open source Google web font (Apache License, Version 2.0). *Arimo* is an innovative, refreshing sans serif font that works great with *Formium* at 10pt. Set the PDF font [in the Appearancesection](../users/setup-pdf.md#appearance-tab).
 
 ## Viewing PDF 
 
-Once you've saved your new PDF, you can [view it from the Gravity Forms Entries List page](../users/viewing-pdfs.md). Just remember to fill out and submit your form if the entry list is empty.
+Once you've saved your new PDF, you can [view it from the Gravity Forms Entries List page](../users/viewing-pdfs.md).

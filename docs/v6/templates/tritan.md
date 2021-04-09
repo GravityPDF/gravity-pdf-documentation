@@ -18,7 +18,7 @@ As a *Universal* PDF template *Tritan* can be used with all Gravity Forms and wi
 
 ## Configuring 
 
-All PDF templates have common settings that can be configured, such as font, security and PDF attachments, and we recommend [reviewing the PDF setup guide](../users/setup-pdf.md) to get a better understanding on all the available settings. All template-specific configuration is done from the *Template* tab and below you'll find detailed information about each option available in *Tritan*, what it does and how it alters the generated PDF.
+All PDF templates have common settings that can be configured, such as font, security and PDF attachments, and we recommend [reviewing the PDF setup guide](../users/setup-pdf.md) to get a better understanding on all the available settings. All template-specific configuration is done from the *Template* section and below you'll find detailed information about each option available in *Tritan*, what it does and how it alters the generated PDF.
 
 ### Main Heading 
 * The main heading is included at the very start of your PDF, before any other content. Merge tags are supported.
@@ -66,8 +66,8 @@ Along with the options specific to *Tritan*, the following core settings are als
 
 ## Recommended Font 
 
-*Tritan* comes bundled with both *Fira Sans Regular* and *Fira Sans Light* which are both open source fonts (SIL Open Font License 1.1). *Fira Sans* is a highly legible sans serif font that works great at 10pt with *Tritan*. Set the PDF font in the [Appearance tab](../users/setup-pdf.md#appearance-tab).
+*Tritan* comes bundled with both *Fira Sans Regular* and *Fira Sans Light* which are both open source fonts (SIL Open Font License 1.1). *Fira Sans* is a highly legible sans serif font that works great at 10pt with *Tritan*. Set the PDF font in the [Appearancesection](../users/setup-pdf.md#appearance-tab).
 
 ## Viewing PDF 
 
-Once you've saved your new PDF, you can [view it from the Gravity Forms Entries List page](../users/viewing-pdfs.md). Just remember to fill out and submit your form if the entry list is empty.
+Once you've saved your new PDF, you can [view it from the Gravity Forms Entries List page](../users/viewing-pdfs.md).

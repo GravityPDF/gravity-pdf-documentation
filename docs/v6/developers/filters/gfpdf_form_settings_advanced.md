@@ -1,12 +1,12 @@
 ---
 title: "gfpdf_form_settings_advanced"
 sidebar_label: "gfpdf_form_settings_advanced"
-description: "This filter is used to add new fields to the Advanced tab of the contextual PDF form settings."
+description: "This filter is used to add new fields to the Advanced section of the contextual PDF form settings."
 ---
 
 ## Description 
 
-This filter can be used to add new fields to the [Advanced settings tab for individual PDFs](../../users/setup-pdf.md#advanced-tab). It's basically a Fields API and all validation, sanitising and saving is handled automatically for you.
+This filter can be used to add new fields to the [Advanced settings section for individual PDFs](../../users/setup-pdf.md#advanced-section). It's basically a Fields API and all validation, sanitising and saving is handled automatically for you.
 
 ## Parameters 
 
@@ -15,7 +15,7 @@ This filter can be used to add new fields to the [Advanced settings tab for indi
 
 ## Usage 
 
-The following sample shows you how to add two new fields to the Advanced tab of the contextual PDF settings pages:
+The following sample shows you how to add two new fields to the Advanced section of the contextual PDF settings pages:
 
 ```
 add_filter( 'gfpdf_form_settings_advanced', function( $fields ) {

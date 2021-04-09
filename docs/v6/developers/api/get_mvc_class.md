@@ -19,7 +19,7 @@ This method was introduced in Gravity PDF 4.0.
 
 ## Usage 
 
-This snippet will show you how to use our method to remove an action we set in the controller:
+This snippet will show you how to... @TODO
 
 ```
 add_action( 'admin_init', function() {
@@ -28,7 +28,6 @@ add_action( 'admin_init', function() {
         $controller = GPDFAPI::get_mvc_class( 'Controller_Settings' );
 
         /* Remove the uninstaller HTML from our tools tab */
-        remove_action( 'gfpdf_post_tools_settings_page', array( $controller->view, 'uninstaller' ), 5 );
     }
 } );
 ```

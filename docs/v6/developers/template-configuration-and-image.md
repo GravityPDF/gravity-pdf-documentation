@@ -69,7 +69,7 @@ class Hello_World implements Helper_Interface_Config, Helper_Interface_Setup_Tea
 	}
 
 	/**
-	 * Return the templates configuration structure which control what extra fields will be shown in the "Template" tab when configuring a form's PDF.
+	 * Return the templates configuration structure which control what extra fields will be shown in the "Template" section when configuring a form's PDF.
 	 *
 	 * @return array The array, split into core components and custom fields
 	 *
@@ -439,7 +439,7 @@ class Hello_World implements Helper_Interface_Config, Helper_Interface_Setup_Tea
 	}
 
 	/**
-	 * Return the templates configuration structure which controls what extra fields will be shown in the "Template" tab when configuring a form's PDF.
+	 * Return the templates configuration structure which controls what extra fields will be shown in the "Template" section when configuring a form's PDF.
 	 *
 	 * @return array The array, split into core components and custom fields
 	 *
@@ -492,7 +492,7 @@ public function configuration() {
 
 The [core fields can easily be enabled](#core-fields) by passing their name as the array key with a `true` value.
 
-We've just told the system we want to enable the footer field and our background image field. If you edit your Hello World PDF settings in WordPress, [you'll see a new Template tab](../users/setup-pdf.md#template-tab) with our two core fields included. The system will automatically parse and store these fields when the PDF settings are saved.
+We've just told the system we want to enable the footer field and our background image field. If you edit your Hello World PDF settings in WordPress, [you'll see a new Template section](../users/setup-pdf.md#template-section) with our two core fields included. The system will automatically parse and store these fields when the PDF settings are saved.
 
 Including a custom field is a little trickier, but we're just defining array key/value pairs that tell Gravity PDF how to display a field:
 
@@ -527,7 +527,7 @@ We've just told Gravity PDF about a new radio field called *Show Meta Data* that
 
 [Read more about the specifics of each field attribute](#custom-fields).
 
-If you go back to the [Template tab](../users/setup-pdf.md#template-tab), you'll now see our two core fields and the *Show Meta Data* field. Go ahead and enable/fill in information for each field then save it.
+If you go back to the [Template section](../users/setup-pdf.md#template-section), you'll now see our two core fields and the *Show Meta Data* field. Go ahead and enable/fill in information for each field then save it.
 
 [Download the completed configuration template for our Hello World PDF](https://gist.github.com/jakejackson1/0115bf12f6303e2e400799fc3080245c).
 

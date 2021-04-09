@@ -18,7 +18,7 @@ As a *Universal* PDF template, *Leo* can be used with all Gravity Forms and will
 
 ## Configuring 
 
-All PDF templates have common settings that can be configured, such as font, security and PDF attachments, and we recommend [reviewing the PDF setup guide](../users/setup-pdf.md) to get a better understanding on all the available settings. All template-specific configuration is done from the *Template* tab, and below you'll find detailed information about each option available in *Leo*, what it does and how it alters the generated PDF.
+All PDF templates have common settings that can be configured, such as font, security and PDF attachments, and we recommend [reviewing the PDF setup guide](../users/setup-pdf.md) to get a better understanding on all the available settings. All template-specific configuration is done from the *Template* section, and below you'll find detailed information about each option available in *Leo*, what it does and how it alters the generated PDF.
 
 ### Main Heading 
 * The main heading is included on the first page of your PDF, before any other content, on the top-left side (adjacent to the [Logo](#logo)). Merge tags are supported.
@@ -56,8 +56,8 @@ Along with the options specific to *Leo*, the following core settings are also s
 
 ## Recommended Font 
 
-*Leo* comes bundled with *Montserrat*, an open source Google web font (SIL Open Font License Version 1.1). *Montserrat* is an ode to the old posters and signs in the traditional Montserrat neighbourhood of Buenos Aires and works great at 10pt with *Leo*. Set the PDF font [in the Appearance tab](../users/setup-pdf.md#appearance-tab).
+*Leo* comes bundled with *Montserrat*, an open source Google web font (SIL Open Font License Version 1.1). *Montserrat* is an ode to the old posters and signs in the traditional Montserrat neighbourhood of Buenos Aires and works great at 10pt with *Leo*. Set the PDF font [in the Appearancesection](../users/setup-pdf.md#appearance-tab).
 
 ## Viewing PDF 
 
-Once you've saved your new PDF, you can [view it from the Gravity Forms Entries List page](../users/viewing-pdfs.md). Just remember to fill out and submit your form if the entry list is empty.
+Once you've saved your new PDF, you can [view it from the Gravity Forms Entries List page](../users/viewing-pdfs.md).

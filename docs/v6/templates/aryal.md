@@ -18,7 +18,7 @@ As a *Universal* PDF template, *Aryal* can be used with all Gravity Forms and wi
 
 ## Configuring 
 
-All PDF templates have common settings that can be configured, such as font, security and PDF attachments, and we recommend [reviewing the PDF setup guide](../users/setup-pdf.md) to get a better understanding on all the available settings. All template-specific configuration is done from the *Template* tab, and below you'll find detailed information about each option available in *Aryal*, what it does and how it alters the generated PDF.
+All PDF templates have common settings that can be configured, such as font, security and PDF attachments, and we recommend [reviewing the PDF setup guide](../users/setup-pdf.md) to get a better understanding on all the available settings. All template-specific configuration is done from the *Template* section, and below you'll find detailed information about each option available in *Aryal*, what it does and how it alters the generated PDF.
 
 ### Main Heading 
 * The main heading is left-aligned and included on the first page of your PDF, [below the Logo](#logo--image) (if present), and before any of your Gravity Forms fields. Merge tags are supported.
@@ -66,4 +66,4 @@ Along with the options specific to *Aryal*, the following core settings are also
 
 ## Viewing PDF 
 
-Once you've saved your new PDF, you can [view it from the Gravity Forms Entries List page](../users/viewing-pdfs.md). Just remember to fill out and submit your form if the entry list is empty.
+Once you've saved your new PDF, you can [view it from the Gravity Forms Entries List page](../users/viewing-pdfs.md).

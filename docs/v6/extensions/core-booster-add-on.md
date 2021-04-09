@@ -16,7 +16,7 @@ You can purchase the Core Booster plugin from our [Extension Shop](https://gravi
 
 ## Configuring 
 
-This extension adds a number of new features to Core and Universal templates. All functionality can be enabled from the *Template* tab when [editing the PDF settings](../users/setup-pdf.md#template-tab).
+This extension adds a number of new features to Core and Universal templates. All functionality can be enabled from the *Template* section when [editing the PDF settings](../users/setup-pdf.md#template-tab).
 
 ![The new options this extension adds to Core and Universal templates](https://resources.gravitypdf.com/uploads/2021/04/v6-Core-Booster-options.png)
 
@@ -62,7 +62,7 @@ https://www.youtube.com/watch?v=Rj3GdkQv0R4&rel=0
 * If you aren't using a layout column on your RCSM field (usually using the CSS classes, like `gf_left_half`, `gf_left_third` or `gf_first_quarter`) you can create up to five option columns. Use the CSS classes `gf_list_2col`, `gf_list_3col`, `gf_list_4col`, or `gf_list_5col` to enable this functionality.
 * **Note:** Option columns don't work in the templates *Formium*, *Colossus* or *Cellulose* as they utilise layout columns internally.
 * Product fields that utilise an RCSM field are compatible [provided you ungroup the products](#group--ungroup-product-fields).
-* You can find this setting at the bottom of the *Template* tab when [editing the PDF Settings](../users/setup-pdf.md#template) for Core and Universal PDF templates.
+* You can find this setting at the bottom of the *Template* section when [editing the PDF Settings](../users/setup-pdf.md#template) for Core and Universal PDF templates.
 
 ### Toggle Option Label / Value 
 
@@ -72,7 +72,7 @@ https://www.youtube.com/watch?v=oE7aNOWHndU&rel=0
 * This feature allows you to control whether Radio, Checkbox, Select and Multiselect (RCSM) fields will show the selected option label or value in the PDF.
 * This setting will apply to all RCSM fields in your form, including Product fields that utilise RCSM field types.
 * To utilise this feature correctly, you need to take advantage of RCSM field's "Use Value" option in the Form Editor. *Values must be unique and cannot contain any HTML markup or special characters*.
-* You can find this setting at the bottom of the *Template* tab when [editing the PDF Settings](../users/setup-pdf.md#template) for Core and Universal PDF templates.
+* You can find this setting at the bottom of the *Template* section when [editing the PDF Settings](../users/setup-pdf.md#template) for Core and Universal PDF templates.
 
 ### Show Field Descriptions 
 
@@ -81,7 +81,7 @@ https://www.youtube.com/watch?v=F2hANc35XE4&rel=0
 #### Show Field Description? 
 * When enabled, a field's description will be displayed alongside the user's response.
 * The description position is [determined by your Form Settings](https://docs.gravityforms.com/form-settings/#form-layout) and can be placed above or below the user's response in the PDF.
-* You can find this setting at the bottom of the *Template* tab when [editing the PDF Settings](../users/setup-pdf.md#template) for Core and Universal PDF templates.
+* You can find this setting at the bottom of the *Template* section when [editing the PDF Settings](../users/setup-pdf.md#template) for Core and Universal PDF templates.
 
 ### Group / Ungroup Product Fields 
 
@@ -90,7 +90,7 @@ https://www.youtube.com/watch?v=I7KtEI-KHgA&rel=0
 #### Group Products? 
 * Disable this feature to prevent products from being grouped at the end of a PDF. Instead, they'll be displayed in the order they appear in your Form Editor. 
 * As of Gravity PDF 5.1, you can completely remove the Product table. Prior to 5.1, to remove you have to ungroup the products and remove them [using the Customise Field setting](#customise-fields).
-* You can find this setting at the bottom of the *Template* tab when [editing the PDF Settings](../users/setup-pdf.md#template) for Core and Universal PDF templates.
+* You can find this setting at the bottom of the *Template* section when [editing the PDF Settings](../users/setup-pdf.md#template) for Core and Universal PDF templates.
 
 ### Toggle Field Labels 
 
@@ -104,4 +104,4 @@ https://www.youtube.com/watch?v=uKTLW_HsiWs&rel=0
     4.  Disable the Field Label
 
 * This feature applies to all Gravity Form fields that support an Admin Field label
-* You can find this setting at the bottom of the *Template* tab when [editing the PDF Settings](../users/setup-pdf.md#template) for Core and Universal PDF templates.
+* You can find this setting at the bottom of the *Template* section when [editing the PDF Settings](../users/setup-pdf.md#template) for Core and Universal PDF templates.

@@ -1,12 +1,12 @@
 ---
 title: "gfpdf_form_settings_appearance"
 sidebar_label: "gfpdf_form_settings_appearance"
-description: "This filter is used to add new fields to the Appearance tab of the contextual PDF form settings."
+description: "This filter is used to add new fields to the Appearance section of the contextual PDF form settings."
 ---
 
 ## Description 
 
-This filter can be used to add new fields to the [Appearance settings tab for individual PDFs](../../users/setup-pdf.md#appearance-tab). It's basically a Fields API and all validation, sanitising and saving is handled automatically for you.
+This filter can be used to add new fields to the [Appearance settings section for individual PDFs](../../users/setup-pdf.md#appearance-section). It's basically a Fields API and all validation, sanitising and saving is handled automatically for you.
 
 ## Parameters 
 
@@ -15,7 +15,7 @@ This filter can be used to add new fields to the [Appearance settings tab for in
 
 ## Usage 
 
-The following sample shows you how to add two new fields to the Appearance tab of the contextual PDF settings pages:
+The following sample shows you how to add two new fields to the Appearance section of the contextual PDF settings pages:
 
 ```
 add_filter( 'gfpdf_form_settings_appearance', function( $fields ) {

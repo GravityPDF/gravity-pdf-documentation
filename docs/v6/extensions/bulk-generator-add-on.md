@@ -142,13 +142,13 @@ Errors are shown in the activity log if, after three attempts, the PDF was unabl
 * PHP Error / Warning / Notice triggered
 * Bulk Generator session becomes invalid
 
-The activity log only shows a generic error that a problem occurred. You will need to enable [Gravity Forms logging](https://docs.gravityforms.com/logging-and-debugging/) and run the Bulk Generator process again to get more details about what specifically went wrong, and have them saved into the log file. The log is verbose and can be hard to read, so if you'd like help, leave logged enabled on your website and [open a support ticket](https://gravitypdf.com/support/).
+The activity log only shows a generic error that a problem occurred. You will need to enable [Gravity Forms logging](https://docs.gravityforms.com/logging-and-debugging/) and run the Bulk Generator process again to get more details about what specifically went wrong. The log is verbose and can be hard to read, so if you'd like help please leave logging enabled and [open a support ticket](https://gravitypdf.com/support/).
 
 ### During the Build step a fatal error occurred. What now? 
 
 ![The Fatal Error screen](https://resources.gravitypdf.com/uploads/2020/04/bulk-generator-fatal-error.png)
 
-If a fatal error occurs, it could be a temporary filesystem or network error. First, reload the page in your browser and run the Bulk Generator again. If it occurs a second time, enable [Gravity Forms logging](https://docs.gravityforms.com/logging-and-debugging/) and re-run the Bulk Generator. This will save the specific errors in the log file and can be used to debug the issue. The log is verbose and can be hard to read, so if you'd like help, leave logged enabled on your website and [open a support ticket](https://gravitypdf.com/support/).
+If a fatal error occurs, it could be a temporary filesystem or network error. First, reload the page in your browser and run the Bulk Generator again. If it occurs a second time, enable [Gravity Forms logging](https://docs.gravityforms.com/logging-and-debugging/) and re-run the Bulk Generator. This will save the specific errors in the log file and can be used to debug the issue. The log is verbose and can be hard to read, so if you'd like help please leave logging enabled and [open a support ticket](https://gravitypdf.com/support/).
 
 ### I'm a developer. How exactly does the Build process works? 
 
