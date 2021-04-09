@@ -1,10 +1,10 @@
 ---
-title: "How to display the Nested Forms table shown prior to v5.1?"
-sidebar_label: "How to display the Nested Forms table shown prior to v5.1?"
+title: "How to display the Gravity Perks Nested Forms table in PDFs?"
+sidebar_label: "How to display Nested Forms as a table?"
 description: ""
 ---
 
-We officially added support for the [Gravity Wiz Nested Forms plugin](https://gravitywiz.com/documentation/gravity-forms-nested-forms/?ref=78) to Core and Universal PDF templates in Gravity PDF 5.1, but to do that we had to change the layout. If you'd like to re-enable the table-based layout that was shown prior to this, add the following snippet to your active theme's `functions.php` file:
+You can output the [Gravity Wiz Nested Forms](https://gravitywiz.com/documentation/gravity-forms-nested-forms/?ref=78) field in Core and Universal PDF templates as a table using the following snippet (add to your theme's `functions.php` file):
 
 ```
 if ( class_exists( '\GFPDF\Helper\Fields\Field_Form' ) ) {
@@ -29,3 +29,5 @@ if ( class_exists( '\GFPDF\Helper\Fields\Field_Form' ) ) {
 	}, 10, 3 );
 }
 ```
+
+The table columns used are those selected in the _Summary Fields_ setting for the Nested Form field in the Form Editor.
