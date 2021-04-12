@@ -12,17 +12,15 @@ Before we jump right into the code, we're going to discuss the architecture Grav
 
 ![The PDF_EXTENDED_TEMPLATES Working Directory](https://resources.gravitypdf.com/uploads/2015/10/v5-pdf-working-directory.png)
 
-When Gravity PDF is installed, it automatically creates a folder called `PDF_EXTENDED_TEMPLATES` in your WordPress upload directory. This folder is used to store temporary files, fonts and custom PDF templates. Any PHP files in the root of this folder will be classified as a PDF template[^1], and the system will automatically register it.
+When Gravity PDF is installed, it automatically creates a folder called `PDF_EXTENDED_TEMPLATES` in your WordPress upload directory. This folder is used to store temporary files, fonts and custom PDF templates. Any PHP files in the root of this folder will be classified as a PDF template, and the system will automatically register it.
 
-:::info
+:::note
 On a vanilla WordPress installation the full path to the `PDF_EXTENDED_TEMPLATES` directory is `/wp-content/uploads/PDF_EXTENDED_TEMPLATES`. Your installation may be different if defining the `WP_CONTENT_DIR` or `UPLOADS` constants, or if you've used the [`gfpdf_template_location`](filters/gfpdf_template_location.md) and [`gfpdf_template_location_uri`](filters/gfpdf_template_location_uri.md) filters.
 :::
 
-## Preparing the Infrastructure 
+### Template Hierarchy
 
-![How to get your server ready for custom PDF templates](https://resources.gravitypdf.com/uploads/2015/10/custom-templates-v5-1.png)
-
-Running the [`Setup Custom Templates` tool function](../users/global-settings.md#setup-custom-templates) from `Forms -> Settings -> PDF -> Tools` in your admin area will automatically copy all the core templates to the `PDF_EXTENDED_TEMPLATES` directory so you can easily begin templating. We recommend you copy and rename one of the core templates in `PDF_EXTENDED_TEMPLATES` to use as a starting point for your custom template.
+[Gravity PDF template system is modelled on the Theme hierarchy](template-hierarchy.md). The plugin's core templates are like the parent theme, while the `PDF_EXTENDED_TEMPLATES` directory acts like a child theme. All core template can be overridden by placing a file with the same name in `PDF_EXTENDED_TEMPLATES`. This information is important to know when you want to modify a Core template file, as you can easily copy any files from `/src/templates/` into the Working Directory and Gravity PDF will use it. 
 
 ### Multisite Structure 
 
@@ -34,15 +32,9 @@ To correctly handle multisite installations, the plugin creates a directory in `
 
 The site ID can be found by looking at each site's `Edit` URL in the `Network Admin -> Sites` section of your admin area (you'll need to be logged in as a network administrator). Alternatively, the site ID column is automatically added to this page when using the [Multisite Enhancements](https://wordpress.org/plugins/multisite-enhancements/) plugin.
 
-### Template Hierarchy 
+[The hierarchy in Multisite installations has an extra tier](template-hierarchy.md#multisite-wordpress-installation). In a Multisite network, the Core templates and `PDF_EXTENDED_TEMPLATES` directory still act like parent and child themes, but [the sub-site folders](#multisite-structure) act like a child "child theme".
 
-[Gravity PDF template system is modelled on the Theme hierarchy](https://resources.gravitypdf.com/uploads/2015/10/custom-templates-v5-1.png). The plugin's core templates are like the parent theme, while the `PDF_EXTENDED_TEMPLATES` directory acts like a child theme. All core template can be overridden by placing a file with the same name in `PDF_EXTENDED_TEMPLATES` – which is what happens automatically when you follow the [preparing the infrastructure](#preparing-the-infrastructure) step.
-
-#### Multisite 
-
-[The hierarchy in Multisite installations has an extra tier](template-hierarchy.md#multisite-wordpress-installation). In a Multisite network, the core templates and `PDF_EXTENDED_TEMPLATES` directory still act like parent and child themes, but [the sub-site folders](#multisite-structure) act like a child "child theme".
-
-The templates places in the root `PDF_EXTENDED_TEMPLATES` directory are loaded by all sites in the network. While templates in a sub-site directory – like `PDF_EXTENDED_TEMPLATES/5/` – are site specific. This setup can be very useful when duplicating sites in your network, but most of the time you'll add your custom template to the sub-site folders.
+The templates placed in the root `PDF_EXTENDED_TEMPLATES` directory are loaded by all sites in the network. While templates in a sub-site directory – like `PDF_EXTENDED_TEMPLATES/5/` – are site specific. Placing templates directly in the `PDF_EXTENDED_TEMPLATES` directory can be useful when duplicating sites in your network, but most of the time you'll add the custom template to the sub-site folder (which is where the [PDF Template Manager](../users/pdf-template-manager.md) will install them).
 
 ## Template Structure 
 
@@ -98,6 +90,12 @@ The following variables are available to all PDF templates:
 ### $fields 
 * An array of the current Gravity Forms fields which can be accessed using their field ID number – `print_r( $fields[20] );`. This is just a formatted version of the `$form['fields']` array.
 
+## Supported HTML / CSS
+
+The PDF engine used by Gravity PDF is powerful, but there are limitations when it comes to the available CSS you can use to build advanced layouts. **Modern styles like grid or flexbox are not supported**, and layouts need to be done with floats / positioning / tables (and each of those has its own quirks). Keep that in mind when building custom templates.
+
+[Refer to the supported HTML or CSS for more information](pdf-features/supported-html-and-css.md).
+
 ## Template Tutorial – Part 1 
 
 ![The basic Hello World PDF template](https://resources.gravitypdf.com/uploads/2015/11/basic-hello-world-template.png)
@@ -125,15 +123,26 @@ To get started, create a new PHP file in your IDE of choice and call it `hello-w
 if ( ! class_exists( 'GFForms' ) ) {
     return;
 }
+
+/**
+ * All Gravity PDF v4/v5/v6 templates have access to the following variables:
+ *
+ * @var array  $form      The current Gravity Form array
+ * @var array  $entry     The raw entry data
+ * @var array  $form_data The processed entry data stored in an array
+ * @var object $settings  The current PDF configuration
+ * @var array  $fields    An array of Gravity Form fields which can be accessed with their ID number
+ * @var array  $config    The initialised template config class – eg. /config/zadani.php
+ */
+ 
+ ?>
 ```
 
 As you can see, it's very simple to let Gravity PDF know about your PDF template. More information about each individual header is available in the [Template Structure](#template-structure) section.
 
 Next, we're going to layout the basic structure. Go ahead and add the following below the header section:
 
-```
-?>
-
+```html
 <!-- Any PDF CSS styles can be placed in the style tag below -->
 <style>
 
@@ -142,9 +151,9 @@ Next, we're going to layout the basic structure. Go ahead and add the following 
 <!-- The PDF content should be placed in here -->
 ```
 
-Think of Gravity PDF templates as HTML that is automatically included inside the `<body>` tag. Any [supported CSS](pdf-features/supported-html-and-css.md#css-support) can be placed in the `<style>` tags, while your actual content should be included below that. Simple!
+Think of Gravity PDF templates as HTML that is automatically included inside the `<body>` tag. Any [supported CSS](pdf-features/supported-html-and-css.md#css-support) can be placed in the `<style>` tags, while your actual content should be included below that.
 
-To finish off our example, we've going to replace `<!-- The PDF content should be placed in here -->` with `<h1>Hello World</h1>`. Once done, save the example and upload it to your [PDF working directory](#working-directory).
+To finish off our example, we've going to replace `<!-- The PDF content should be placed in here -->` with `<h1>Hello World</h1>`. Once done, save the example and upload it to your [PDF working directory](#working-directory) using an (S)FTP client or by [zipping up the template and uploading via the PDF Template Manager](install-template-via-template-manager.md).
 
 [Download a completed copy of the Hello World template](https://gist.github.com/jakejackson1/d98b99fd504a5a300f1a).
 
@@ -152,27 +161,21 @@ To finish off our example, we've going to replace `<!-- The PDF content should b
 
 ![The new Sol System PDF group](https://resources.gravitypdf.com/uploads/2015/11/sol-system-group.png)
 
-Once you've uploaded the template, you'll be able to see your new *Sol System* group added to the [template](../users/setup-pdf.md#template) field when configuring new form PDF templates. Go ahead and [configure a new form PDF](../users/setup-pdf.md) with your Hello World template and then [view the PDF](../users/viewing-pdfs.md). You should see a PDF with "Hello World" written in large text.
+Once you've uploaded the template, you'll be able to see your new *Sol System* group added to the [template](../users/setup-pdf.md#template) field of the PDF settings. Go ahead and [configure a new form PDF](../users/setup-pdf.md) with your Hello World template and then [view the PDF](../users/viewing-pdfs.md). You should see a PDF with "Hello World" written in large text.
 
 ### Adding Styles 
 
 If you would like to change the appearance of the PDF we can add new styles to the document. We're going to change the `<h1>` tag appearance by adding the following CSS inside the `<style>` tag:
 
 ```css
-    h1 {
-        text-align: center;
-        text-transform: uppercase;
-        color: #a62828; 
-        border-bottom: 1px solid #999;
-    }
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    color: #a62828; 
+    border-bottom: 1px solid #999;
+}
 ```
 
-Save and upload the template again. When you view it you'll see the heading is now centre-aligned, burgundy in colour, with a bottom border. How easy is that!
+Save and upload the template again. When you view it you'll see the heading is now centre-aligned, burgundy in colour, with a bottom border.
 
 [Download a completed copy of the Hello World template with the styling added](https://gist.github.com/jakejackson1/2822bd311df289684840).
-
----
-
-Just keep in mind that the PDF software doesn't function exactly like a web browser. Not all [HTML or CSS is supported](pdf-features/supported-html-and-css.md) in PDFs and [cascading CSS support is limited](pdf-features/supported-html-and-css.md#cascading-limitations).
-
-[^1]: For legacy reasons, ensure you don't name your template `configuration.php` or `configuration.archive.php`.

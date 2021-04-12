@@ -18,7 +18,7 @@ In [Template Tutorial – Part 1](first-custom-pdf.md#template-tutorial--part-1)
 
 ![Mergetags in a Gravity Forms Notification](https://resources.gravitypdf.com/uploads/2021/04/v6-Merge-Tags.png)
 
-Gravity Forms *field-type* merge tags use the format `{[Field Name]:[field_id]}`. Keep in mind, the *Field Name* isn't required, so `{:2}` is a valid merge tag, and advanced fields can have a slightly different format – the first name in a Name field is displayed as `{:20.3}`.
+Gravity Forms *field* merge tags use the format `{[Field Name]:[field_id]}`. Keep in mind, the *Field Name* isn't required, so `{:2}` is a valid merge tag, and advanced fields can have a slightly different format – to display the first name in a Name field you use `{:20.3}`.
 
 When you first start using merge tags, the simplest way to write them is by editing one of your [form's notifications](https://docs.gravityforms.com/configuring-notifications-in-gravity-forms/) and then using the merge tag selector to the right of the *Message* field. Just copy and paste the merge tag to your PDF template.
 
@@ -38,7 +38,7 @@ After uploading the template, when you view the *Hello World* PDF for the entry 
 
 Conditional Shortcodes allow you to output different content in the PDF based on a user's response. The structure of the shortcode is relatively simple, with four required attributes including: `action`, `merge_tag`, `condition` and `value`. [See the Gravity Forms documentation for full details on its usage](https://docs.gravityforms.com/conditional-shortcode/).
 
-:::info
+:::note
 When your `value` contains any of the following characters `<`, `>`, `"`, `'` or `&` you'll need to use the WordPress function `esc_html()` to get the desired result.
 Example: `condition="is" value="<?php echo esc_html( 'Honey & Spice' ); ?>"]`
 :::

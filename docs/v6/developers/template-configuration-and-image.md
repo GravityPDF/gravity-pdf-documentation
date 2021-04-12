@@ -34,6 +34,7 @@ namespace GFPDF\Templates\Config;
 
 use GFPDF\Helper\Helper_Interface_Config;
 use GFPDF\Helper\Helper_Interface_Setup_TearDown;
+use GFPDF\Helper\Helper_Abstract_Config_Settings;
 
 /* Exit if accessed directly */
 if ( ! defined( 'ABSPATH' ) ) {
@@ -43,15 +44,13 @@ if ( ! defined( 'ABSPATH' ) ) {
 /**
  * @package  GFPDF\Templates\Config
  */
-class Hello_World implements Helper_Interface_Config, Helper_Interface_Setup_TearDown {
+class Hello_World extends Helper_Abstract_Config_Settings implements Helper_Interface_Config, Helper_Interface_Setup_TearDown {
 
 	/**
 	 * Runs when the template is initially installed via the PDF Template Manager
 	 *
 	 * @Internal Great for installing custom fonts you've shipped with your template.
 	 * @Internal Recommend creating the directory structure /install/Hello_World/ for bundled fonts
-	 *
-	 * @since    1.0
 	 */
 	public function setUp() {
 
@@ -61,8 +60,6 @@ class Hello_World implements Helper_Interface_Config, Helper_Interface_Setup_Tea
 	 * Runs when the template is deleted via the PDF Template Manager
 	 *
 	 * @Internal Great for cleaning up any additional directories
-	 *
-	 * @since    1.0
 	 */
 	public function tearDown() {
 
@@ -72,8 +69,6 @@ class Hello_World implements Helper_Interface_Config, Helper_Interface_Setup_Tea
 	 * Return the templates configuration structure which control what extra fields will be shown in the "Template" section when configuring a form's PDF.
 	 *
 	 * @return array The array, split into core components and custom fields
-	 *
-	 * @since 1.0
 	 */
 	public function configuration() {
 		return [
@@ -97,10 +92,10 @@ Once you have copied the above into your config file, you'll need to rename the 
 2.  Any hyphens (-) should be replaced with underscores (\_)
 3.  The class name should be in sentence case (the first character of each word separated by an underscore (\_) should be upper case)
 
-For instance, if you created a custom template called `business-letter.php` then the class name should be `Business_Letter`:
+For instance, if you created a custom template called `business-letter.php` then the class name needs to be `Business_Letter`:
 
 ```
-class Business_Letter implements Helper_Interface_Config, Helper_Interface_Setup_TearDown {
+class Business_Letter extends Helper_Abstract_Config_Settings implements Helper_Interface_Config, Helper_Interface_Setup_TearDown {
 ```
 
 ### configuration() 
@@ -135,27 +130,27 @@ public function configuration() {
 Below are details of all the core fields available to you:
 
 ##### show\_form\_title 
-* Adds a Yes/No field to the template section asking users if they want to show the Gravity Form title at the beginning of the PDF template.
+* Adds a Toggle field to the template section asking users if they want to show the Gravity Forms title at the beginning of the PDF template.
 * Only applicable when template is using `$pdf->process_html_structure()` in your PDF template. Although you can add your own field logic based on this setting. [See custom field support for more details](template-configuration-and-image.md#custom-field-support).
 
 ##### show\_page\_names 
-* Adds a Yes/No field to the template section asking users if they want to show Gravity Form page names in the appropriate location within the PDF.
+* Adds a Toggle field to the template section asking users if they want to show Gravity Form page names in the appropriate location within the PDF.
 * Only applicable when template is using `$pdf->process_html_structure()` in your PDF template.
 
 ##### show\_html 
-* Adds a Yes/No field to the template section asking users if they want to show Gravity Form HTML fields in the PDF.
+* Adds a Toggle field to the template section asking users if they want to show Gravity Form HTML fields in the PDF.
 * Only applicable when template is using `$pdf->process_html_structure()` in your PDF template.
 
 ##### show\_section\_content 
-* Adds a Yes/No field to the template section asking users if they want to show Section break content in the PDF.
+* Adds a Toggle field to the template section asking users if they want to show Section break content in the PDF.
 * Only applicable when template is using `$pdf->process_html_structure()` in your PDF template.
 
 ##### enable\_conditional 
-* Adds a Yes/No field to the template section asking users if they want to enable conditional logic in the PDF
+* Adds a Toggle field to the template section asking users if they want to enable conditional logic in the PDF
 * Only applicable when template is using `$pdf->process_html_structure()` in your PDF template.
 
 ##### show\_empty 
-* Adds a Yes/No field to the template section asking users if they want to show fields that haven't been filled in by the user.
+* Adds a Toggle field to the template section asking users if they want to show fields that haven't been filled in by the user.
 * Only applicable when template is using `$pdf->process_html_structure()` in your PDF template.
 
 ##### header 
@@ -335,16 +330,16 @@ To do this, you'll have to access a variable named `$settings` in the PDF templa
 ```
 $gform = GPDFAPI::get_form_class();
 
-$text        = isset( $settings['prefix_text'] ) ? $settings['prefix_text'] : '';
-$number      = isset( $settings['prefix_number'] ) ? $settings['prefix_number'] : '';
-$password    = isset( $settings['prefix_password'] ) ? $settings['prefix_password'] : '';
+$text        = $settings['prefix_text'] ?? '';
+$number      = $settings['prefix_number'] ?? '';
+$password    = $settings['prefix_password'] ?? '';
 $textarea    = isset( $settings['prefix_textarea'] ) ? wpautop( $settings['prefix_textarea'] ) : ''; /* format the text */
 $rich_editor = isset( $settings['prefix_rich_editor'] ) ? wpautop( wp_kses_post( $gform->process_tags( $settings['prefix_rich_editor'], $form, $entry ) ) ) : ''; /* for security, pre-process the merge tags, run through default post HTML filters, then format. Delete `wpautop` if required. */
-$select      = isset( $settings['prefix_select'] ) ? $settings['prefix_select'] : '';
+$select      = $settings['prefix_select'] ?? '';
 $checkbox    = isset( $settings['prefix_checkbox'] ) ? true : false;
-$multicheck  = isset( $settings['prefix_multicheck'] ) ? $settings['prefix_multicheck'] : [];
-$radio       = isset( $settings['prefix_radio'] ) ? $settings['prefix_radio'] : '';
-$color       = isset( $settings['prefix_color'] ) ? $settings['prefix_color'] : '#000'; /* default to black when doesn't exist */
+$multicheck  = $settings['prefix_multicheck'] ?? [];
+$radio       = $settings['prefix_radio'] ?? '';
+$color       = $settings['prefix_color'] ?? '#000'; /* default to black when doesn't exist */
 
 ?>
 
@@ -376,8 +371,8 @@ The `setUp()` method will be triggered when your template is [installed via the 
 
 We like to use these methods to automatically install custom fonts (`setUp()`), and then clean-up additional template-related files when deleted (`tearDown()`).
 
-:::info
-The *Delete* function of the PDF Template Manager will only delete the template file, the configuration file and the template image. Any additional files included will not be removed automatically.
+:::note
+The PDF Template Manager *Delete* function will only remove the template file, the configuration file and the template image by default. Any additional files need to be cleaned up in `tearDown()`.
 ::: 
 
 If you need to include additional files with your template, we recommend saving them to `/install/Template_Name/` (substitute `Template_Name`). This will make it easy for you to clean-up when writing `tearDown()`. 
@@ -385,12 +380,13 @@ If you need to include additional files with your template, we recommend saving 
 Below is a sample showing you how you can auto-install a font and clean-up your template's files on delete. This assumes you've created the directory structure `/install/Hello_World/font-fira-sans/` in your [PDF working directory](first-custom-pdf.md#working-directory) and have the listed fonts included.
 
 ```
- <?php
+<?php
 
 namespace GFPDF\Templates\Config;
 
 use GFPDF\Helper\Helper_Interface_Config;
 use GFPDF\Helper\Helper_Interface_Setup_TearDown;
+use GFPDF\Helper\Helper_Abstract_Config_Settings;
 
 /* Exit if accessed directly */
 if ( ! defined( 'ABSPATH' ) ) {
@@ -402,15 +398,13 @@ if ( ! defined( 'ABSPATH' ) ) {
  *
  * @package  GFPDF\Templates\Config
  */
-class Hello_World implements Helper_Interface_Config, Helper_Interface_Setup_TearDown {
+class Hello_World extends Helper_Abstract_Config_Settings implements Helper_Interface_Config, Helper_Interface_Setup_TearDown {
 
 	/**
 	 * Runs when the template is initially installed via the PDF Template Manager
 	 *
 	 * @Internal Great for installing custom fonts you've shipped with your template.
 	 * @Internal Recommend creating the directory structure /install/Hello_World/ for bundled fonts
-	 *
-	 * @since    1.0
 	 */
 	public function setUp() {
 		$font_data = [
@@ -428,8 +422,6 @@ class Hello_World implements Helper_Interface_Config, Helper_Interface_Setup_Tea
 	 * Runs when the template is deleted via the PDF Template Manager
 	 *
 	 * @Internal Great for cleaning up any additional directories
-	 *
-	 * @since    1.0
 	 */
 	public function tearDown() {
 		$misc = \GPDFAPI::get_misc_class();
@@ -442,8 +434,6 @@ class Hello_World implements Helper_Interface_Config, Helper_Interface_Setup_Tea
 	 * Return the templates configuration structure which controls what extra fields will be shown in the "Template" section when configuring a form's PDF.
 	 *
 	 * @return array The array, split into core components and custom fields
-	 *
-	 * @since 1.0
 	 */
 	public function configuration() {
 		return [
@@ -461,6 +451,28 @@ class Hello_World implements Helper_Interface_Config, Helper_Interface_Setup_Tea
 }
 ```
 
+### Helper_Abstract_Config_Settings
+
+By extending the `Helper_Abstract_Config_Settings` you'll automatically have access to the current PDF settings when a PDF is generated. These settings are available using the syntax `$this->get_settings()`. 
+
+This is a useful shortcut when you want to call a method in the configuration class directly from your template file:
+
+```
+/* Partial from config file /config/hello-world.php */
+public function do_something() {
+    // get all PDF settings
+    $settings = $this->get_settings();
+    echo $settings['name'];
+    
+    // or get selected PDF settings
+    [ 'id' => $id, 'name' => $name, 'filename' => $filename ] = $this->get_settings();
+    echo $name;
+}
+
+/* Partial from template file /hello-world.php
+echo $config->do_something();
+```
+
 ## Template Tutorial – Part 4 
 
 ![Our Hello World template fields](https://resources.gravitypdf.com/uploads/2015/11/hello-world-configuration.png)
@@ -469,7 +481,7 @@ Continuing on from our [Part 3 Hello World Tutorial](php-form-data-array.md#temp
 
 ### Template Configuration 
 
-First, let's [grab a copy of the basic PDF template PHP mark-up](https://gist.github.com/jakejackson1/903c607beab274619ab19f508d65ce74) and save it in the `config` folder of our [PDF working directory](first-custom-pdf.md#working-directory). Remember to save the file as `hello-world.php` – the same name we used for our template file. This sample code already has the class name changed to `Hello_World`, but you would normally update this to match your template's file name.
+First, let's [grab a copy of the basic PDF template PHP mark-up](https://gist.github.com/jakejackson1/0c6092dbd0b18c098c39bdacff18bc99) and save it in the `config` folder of our [PDF working directory](first-custom-pdf.md#working-directory). Remember to save the file as `hello-world.php` – the same name we used for our template file. This sample code already has the class name changed to `Hello_World`, but you would normally update this to match your template's file name.
 
 The only area we'll be focusing on is the empty array being returned in the `configuration` method. We'll need to update this to include our two core fields and create our custom field. Let's do the core fields first:
 
@@ -529,7 +541,7 @@ We've just told Gravity PDF about a new radio field called *Show Meta Data* that
 
 If you go back to the [Template section](../users/setup-pdf.md#template-section), you'll now see our two core fields and the *Show Meta Data* field. Go ahead and enable/fill in information for each field then save it.
 
-[Download the completed configuration template for our Hello World PDF](https://gist.github.com/jakejackson1/0115bf12f6303e2e400799fc3080245c).
+[Download the completed configuration template for our Hello World PDF](https://gist.github.com/jakejackson1/3ea8c558084fe196ae813925f3b6c946).
 
 ### PDF Custom Field Support 
 
@@ -545,12 +557,12 @@ if ( ! class_exists( 'GFForms' ) ) {
 	return;
 }
 
-/**
+/*
  * Load our template-specific settings
  */
-$show_meta_data = ! empty( $settings['world_show_meta_data'] ) ? $settings['world_show_meta_data'] : 'No';
+$show_meta_data = $settings['world_show_meta_data'] ?? 'No';
 
-/**
+/*
  * Include your PHP variables in this section
  */
 
@@ -561,21 +573,21 @@ Here we are checking if our *Show Meta Data* field exists in the settings array 
 
 Now we can do a simple *IF* statement in the body of our template and output the meta data required. We'll add the condition to the statement to the end of our template:
 
-```
+```html
 <?php if ( $location === 'Titan' ): ?>
     <p>Titan's colony is only recently established. You're one of only 500 people currently living there!</p>
 <?php endif; ?>     
 
 <?php if ( $show_meta_data === 'Yes' ): ?>
     <p>
-        <strong>User IP:</strong> <?php echo $form_data['misc']['ip']; ?><br>
-        <strong>Submission Timestamp:</strong> <?php echo $form_data['misc']['date_time']; ?><br>
-        <strong>User Agent:</strong> <?php echo $form_data['misc']['user_agent']; ?><br>
-        <strong>Source URL:</strong> <?php echo $form_data['misc']['source_url']; ?>
+        <strong>User IP:</strong> <?= $form_data['misc']['ip']; ?><br>
+        <strong>Submission Timestamp:</strong> <?= $form_data['misc']['date_time']; ?><br>
+        <strong>User Agent:</strong> <?= $form_data['misc']['user_agent']; ?><br>
+        <strong>Source URL:</strong> <?= $form_data['misc']['source_url']; ?>
     </p>
 <?php endif; ?>
 ```
 
 If you've enabled the *View Meta Data* option, when you view the *Hello World* PDF, you'll see the meta data included.
 
-[Download the completed Hello World PDF Template for Part 4](https://gist.github.com/jakejackson1/49ec98ddbb0dd64d42ae).
+[Download the completed Hello World PDF Template for Part 4](https://gist.github.com/jakejackson1/c042b5c80b393a13b6eddd165d674258).

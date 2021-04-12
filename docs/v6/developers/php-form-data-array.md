@@ -6,21 +6,23 @@ description: "Take full control over your custom PDF templates for Gravity PDF b
 
 ## Introduction 
 
-[Gravity Forms merge tags and conditional shortcodes](mergetags-and-conditional-shortcodes.md) are useful PDF-building tools, but there are drawbacks. For instance, *you cannot create nested conditionals* or do any *post-processing to the entry data* – you aren't able to determine the age of someone by their date of birth, or convert a field to upper case. To achieve this behaviour we need to utilise PHP and the `$form_data` associative array – a formatted version of the `$entry` object.
+[Gravity Forms merge tags and conditional shortcodes](mergetags-and-conditional-shortcodes.md) are useful PDF-building tools, but there are drawbacks. For instance, *you cannot create nested conditionals* or do any *post-processing to the entry data*. For example, you cannot determine the age of someone by their date of birth, or convert a field to upper case using the standard merge tags. To achieve this behaviour we need to utilise PHP and the `$form_data` associative array – a processed version of the `$entry` object specific to Gravity PDF.
 
 ## Template Tutorial – Part 3 
 
 ![Gravity PDF PHP template](https://resources.gravitypdf.com/uploads/2015/11/pdf-template-sample.png)
-First, we're going to convert the template we did in the [Part 2 exercise](mergetags-and-conditional-shortcodes.md#template-tutorial) from merge tags/conditional shortcodes to PHP. Then we'll look at the two post-processing use-cases we discussed [in the introduction](#introduction). Finally, we'll take a closer look at the `$form_data` array.
+First, we're going to convert the template we did in the [Part 2 exercise](mergetags-and-conditional-shortcodes.md#template-tutorial) from merge tags/conditional shortcodes to PHP. Then we'll look at the two post-processing use-cases we discussed in the introduction. Finally, we'll take a closer look at the `$form_data` array.
 
 ### Convert Merge tags to PHP 
 
 Our [*Hello World* template](https://gist.github.com/jakejackson1/6c0a5268fa23ba51a285) included merge tags for field #1 and field #3 – our name field and drop down, respectively. Their equivalent access keys in the `$form_data` array are `$form_data['field'][1]['first']` and `form_data['field'][3]`. So we'll update the PDF template to:
 
-    <p>You're from <?= $form_data['field'][3]; ?>, <?= $form_data['field'][1]['first']; ?>? How cool is that!</p>
+```html
+<p>You're from <?= $form_data['field'][3]; ?>, <?= $form_data['field'][1]['first']; ?>? How cool is that!</p>
+```
 
-:::info
-The `$form_data` array is grouped into a number of different sub-arrays, but the most common is `$form_data['field']`. As the name suggests, it contains the field data for *most* Gravity Forms field – add-ons that add new fields are stored in separate sub-arrays.
+:::note
+The `$form_data` array is grouped into a number of different sub-arrays, but the most common is `$form_data['field']`. As the name suggests, it contains the field data for *most* Gravity Forms field – add-ons that add new fields may be stored in a separate sub-array.
 :::
 
 To keep your code cleaner you could set these values as variables earlier in the template and output the variable names in the template instead:
@@ -38,7 +40,8 @@ If you're accessing a lot of fields from `$form_data['field']` you might like to
 
 ```
 <?php 
-   $f        = $form_data['field'];
+   $f = $form_data['field'];
+   
    $location = $f[3];
    $name     = $f[1]['first'];
 ?>
@@ -48,14 +51,14 @@ If you're accessing a lot of fields from `$form_data['field']` you might like to
 
 ### Convert Conditional Shortcode to PHP 
 
-:::info
+:::note
 When doing conditionals with the `$form_data` array, if your string comparison contains any of the following characters `<`, `>`, `"`, `'` or `&` you'll need to use the WordPress function `esc_html()` to get the desired result.
 Example: `if ( $form_data['field'][5] === esc_html( 'Honey & Spice' ) ):'`
 :::
 
 The conditional shortcodes we used in our *Hello World* template are basic `IF x = y THEN` logic. Now we have access to the location field in PHP it's trivial to replace in PHP:
 
-```
+```html
 <?php if ( $location === 'Earth' ): ?>
     <p>The birth-rate on Earth has dropped almost 25% in the past 50 years due to colonisation of the solar system.</p>
 <?php endif; ?>
@@ -73,7 +76,7 @@ The conditional shortcodes we used in our *Hello World* template are basic `IF x
 <?php endif; ?>
 ```
 
-You could have also use a `switch` statement if you wanted:
+You could have also used a `switch` statement to get the same result:
 
 ```
 switch ( $location ) {
@@ -97,7 +100,7 @@ switch ( $location ) {
 
 And IF/ELSE conditions are simple too:
 
-```
+```html
 <?php if ( $location === 'Earth'  ): ?>
     <p>The birth-rate on Earth has dropped almost 25% in the past 50 years due to colonisation of the solar system.</p>
 <?php else: ?>
@@ -109,9 +112,9 @@ And IF/ELSE conditions are simple too:
 
 ## Doing More With PHP 
 
-With the full power of PHP at your fingertips post-processing Gravity Form data becomes easy. Case in point, it's relatively simple to determine the age of someone using their date of birth.
+With the full power of PHP at your fingertips post-processing Gravity Forms data becomes easy. Case in point, it's relatively simple to determine the age of someone using their date of birth.
 
-Let's go back to the *Hello World* sample form and add a date field. For simplicities sake, name it *Date of Birth* and change the *Date Format* to `dd-mm-yyyy` then save your form (the date format is important to prevent ambiguity when using PHP's `strtotime()` function). Finally, submit a new entry and enter a date of birth.
+Let's go back to the *Hello World* sample form and add a date field. For simplicities sake, name it *Date of Birth* and change the *Date Format* to `dd-mm-yyyy` then save your form. Finally, submit a new entry and enter a date of birth.
 
 Now let's add our PHP logic to display the age in your PDF template:
 
@@ -513,6 +516,10 @@ echo implode( ', ', $form_data['field'][3] );
 
 #### Slim Image Cropper 
 
+:::note
+The Slim Image Cropper for Gravity Forms add-on has been discontinued and [Image Hopper is the recommended replacement](https://imagehopper.tech).
+:::
+
 You'll need [the Slim Image Cropper for Gravity Forms add-on](https://codecanyon.net/item/slim-image-cropper-for-gravity-forms/19606752) to use this field type.
 
 ```
@@ -541,6 +548,7 @@ if ( is_array( $form_data['field']['27_path'] ) ) {
        }
     }
 }
+
 /* Add images to PDF with secure link for Image Hopper field ID 27 */
 if ( is_array( $form_data['field']['27_path'] ) ) {
     foreach ( $form_data['field']['27_path'] as $key => $path ) {      
@@ -550,6 +558,7 @@ if ( is_array( $form_data['field']['27_path'] ) ) {
        }
     }
 }
+
 /* Output first image uploaded, if it exists */
 if ( isset( $form_data['field']['27_path'][0] ) && is_file( $form_data['field']['27_path'][0] ) ) {
     echo '<img src="'. $form_data['field']['27_path'][0] .'" width="200" />';
@@ -677,8 +686,7 @@ if ( is_array( $form_data['field']['5_name'] ) ) {
 
 ```
 /* 15 is the ID of our field */
-
-if ( sizeof( $form_data['field'][32] ) > 0 ) {
+if ( count( $form_data['field'][32] ) > 0 ) {
     echo $form_data['field'][32]['url'];
     echo $form_data['field'][32]['path'];
     echo $form_data['field'][32]['title'];
