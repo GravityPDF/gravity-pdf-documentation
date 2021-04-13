@@ -8,7 +8,7 @@ description: "This action is fired right after a PDF is saved to disk. It allows
 
 This action is run right after a PDF is saved to disk. It allows you to **copy the PDF** to another location (*do not move the PDF otherwise you'll break the PDF notifications*). 
 
-It will be triggered when a Gravity Forms notification is sent AND the [PDF is configured to be attached to it](../../users/setup-pdf.md#notifications) – this includes during the initial form submission and when resending notifications. It will also be triggered during the form submission when the [*Always Save PDF*](../../users/setup-pdf.md#always-save-pdf) setting is enabled or when using [`GPDFAPI::create_pdf( $entry_id, $pdf_id )`](../api/create_pdf.md) method in our API. 
+The action is triggered during form submission, when the [`GPDFAPI::create_pdf( $entry_id, $pdf_id )`](../api/create_pdf.md) API is used, or when the [Previewer add-on](http://gravitypdf.com/shop/previewer-add-on/) is used.
 
 You can also use the `gfpdf_post_save_pdf_$form_id` action if needed.
 
@@ -28,7 +28,6 @@ You can also use the `gfpdf_post_save_pdf_$form_id` action if needed.
 
 ### $form | array
 *  The current Gravity Form array
-
 
 ## Usage 
 
@@ -96,6 +95,38 @@ add_action( 'gfpdf_post_save_pdf', function( $pdf_path, $filename, $settings, $e
 	copy( $pdf_path, $copy_to_dir . $filename );
 }, 10, 5 );
 
+```
+
+If you don't want to run the action when the Previewer add-on is triggered, you can skip over it with the following:
+
+```
+```
+add_action( 'gfpdf_post_save_pdf', function( $pdf_path, $filename, $settings, $entry, $form ) {
+
+    /* Don't copy the PDF when the PDF Previewer is being used */
+    if ( defined( 'DOING_PDF_PREVIEWER' ) && DOING_PDF_PREVIEWER ) {
+        return;
+    }
+
+	/* Only move PDFs from form #2 */
+	if ( '2' == $form['id'] ) {
+		/* The directory we want to copy our PDF to */
+		$copy_to_dir = ABSPATH . 'PDFs/';
+
+	        /* Create the directory if it doesn't exist */
+	        if( ! is_dir( $copy_to_dir ) ) {
+	        	wp_mkdir_p( $copy_to_dir );
+	        }
+
+		/* Ensure we get a unique filename for the directory we are copying to */
+		$filename = wp_unique_filename( $copy_to_dir, $filename );
+
+		/* Copy the PDF to the new directory */
+		copy( $pdf_path, $copy_to_dir . $filename );
+	}
+
+}, 10, 5 );
+```
 ```
 
 ## Source Code 

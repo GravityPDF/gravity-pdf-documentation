@@ -219,8 +219,9 @@ Do not rely on privileges to restrict what a user can do with the PDF, as they a
 ### Image DPI 
 * Adjust the image DPI (Dots Per Inch). By default this is set to 96. If professionally printing you should set this to *300* and change the [*Format*](#format) to *PDF/X-1a*.
 
-### Always Save PDF 
-* By default, when a new Gravity Form entry is submitted a PDF is only ever saved to disk when the [*Notifications*](#notifications) feature is enabled. When active, this option is very useful in conjunction [with the `gfpdf_post_save_pdf` filter](../developers/actions/gfpdf_post_save_pdf.md), which can be used to copy the generated PDF to a permanent location on your server.
+:::info
+The _Always Save PDF_ setting has been removed from the UI. As the sole reason for this setting was to allow developers to use [the `gfpdf_post_save_pdf` action](../developers/actions/gfpdf_post_save_pdf.md), we now automatically enable this functionality when the action is hooked into. 
+:::
 
 ### Enable Public Access 
 * Enabling public access to the PDF will **disable all security protocols** and give anonymous users access to the PDF. This means anyone worldwide can view the PDF document for all your form's entries. 
