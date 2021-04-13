@@ -712,19 +712,22 @@ module.exports = {
             'v6/users/adding-page-breaks',
             'v6/users/columns',
             'v6/users/displaying-uploaded-images',
+            'v6/users/include-pdfs-in-entry-export',
             'v6/users/background-processing',
+            'v6/users/webhook-support',
             'v6/users/gravityview-support',
             'v6/users/gravity-flow-support',
             'v6/users/additional-templates',
             'v6/users/gdpr-and-gravity-pdf',
             'v6/users/gravity-forms-compatibility',
+            'v6/users/uninstall-gravitypdf',
             'v6/users/v5-to-v6-migration',
           ]
         },
 
         {
           'type': 'category',
-          'label': 'Common Problems',
+          'label': 'Common Questions',
           'items': [
             'v6/users/500-internal-server-error',
             'v6/users/white-screen-of-death',

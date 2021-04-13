@@ -1,6 +1,6 @@
 ---
 title: "How to display the Gravity Perks Nested Forms table in PDFs?"
-sidebar_label: "How to display Nested Forms as a table?"
+sidebar_label: "Display Nested Forms Table"
 description: ""
 ---
 
