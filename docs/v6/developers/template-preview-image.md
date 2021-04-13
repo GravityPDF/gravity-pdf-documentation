@@ -12,7 +12,9 @@ To add support for your custom PDF template, save a 768x576 PNG to the `images` 
 
 For example, if the PDF template is called `hello-world.php`, you'd save `/images/hello-world.png` in the PDF Working Directory.
 
-    +-- /PDF_EXTENDED_TEMPLATES/
-    |   +-- hello-world.php
-    |   +-- /images/
-    |       +-- hello-world.png
+```text
++-- /PDF_EXTENDED_TEMPLATES/
+|   +-- hello-world.php
+|   +-- /images/
+|       +-- hello-world.png
+```

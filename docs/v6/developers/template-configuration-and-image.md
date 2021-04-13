@@ -457,8 +457,8 @@ By extending the `Helper_Abstract_Config_Settings` you'll automatically have acc
 
 This is a useful shortcut when you want to call a method in the configuration class directly from your template file:
 
+**Partial from config file `/config/hello-world.php`**
 ```
-/* Partial from config file /config/hello-world.php */
 public function do_something() {
     // get all PDF settings
     $settings = $this->get_settings();
@@ -468,8 +468,10 @@ public function do_something() {
     [ 'id' => $id, 'name' => $name, 'filename' => $filename ] = $this->get_settings();
     echo $name;
 }
+```
 
-/* Partial from template file /hello-world.php
+**Partial from template file `/hello-world.php`**
+```
 echo $config->do_something();
 ```
 

@@ -8,7 +8,7 @@ description: "Learn the theory behind Gravity PDF's template system and dive int
 
 Before we jump right into the code, we're going to discuss the architecture Gravity PDF uses to register and load custom templates, how multisite sites differ from standard WordPress installations and briefly touch on the template hierarchy.
 
-## Working Directory 
+## PDF Working Directory 
 
 ![The PDF_EXTENDED_TEMPLATES Working Directory](https://resources.gravitypdf.com/uploads/2015/10/v5-pdf-working-directory.png)
 

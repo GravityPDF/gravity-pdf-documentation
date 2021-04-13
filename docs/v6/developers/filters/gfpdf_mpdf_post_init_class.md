@@ -1,14 +1,16 @@
 ---
 title: "gfpdf_mpdf_post_init_class"
 sidebar_label: "gfpdf_mpdf_post_init_class"
-description: "This filter can be used to modify the mPDF settings before any HTML has been processed, but after Gravity PDF sets up the initial object."
+description: "Modify the mPDF settings when the object is initialised. Use this filter to change the default configuration settings for mPDF."
 ---
-
-
 
 ## Description 
 
-This filter can be used to modify the mPDF settings before any HTML has been processed, but after Gravity PDF sets up the initial object. 
+This filter gives you access to the mPDF object after the initial PDF setup code has finished running, and before the template HTML has been generated/loaded.
+
+:::caution
+If using a Core or Universal PDF template, writing content directly to the PDF using this filter can break the Header and Footer display.
+:::
 
 ## Version 
 
@@ -33,15 +35,14 @@ This filter was introduced in Gravity PDF 5.1.5.
 
 ## Usage 
 
-Use this filter to override any of the Gravity PDF default mPDF settings.
-
-Below is a snippet to override the text direction in mPDF:
+Write content directly to the PDF:
 
 ``` 
 add_filter( 'gfpdf_mpdf_init_class', function( $mpdf, $form, $entry, $settings, $Helper_PDF ) {
-	$mpdf->SetDirectionality( 'ltr' );
+    $mpdf->WriteHTML( 'This is included right at the beginning of the document...' );
 
 	return $mpdf;
+
 }, 10, 5 );
 ```
 

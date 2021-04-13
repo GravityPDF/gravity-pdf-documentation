@@ -14,23 +14,29 @@ Gravity PDF 5.1+ caches the [template header data](first-custom-pdf.md#template-
 
 To create a `.zip` package just zip up your PDF template file(s) in the root of the zip archive:
 
-    +-- PACKAGE.zip
-    |   +-- hello-world.php
+```text
++-- PACKAGE.zip
+|   +-- hello-world.php
+```
 
 Multiple templates can be installed via a single zip archive:
 
-    +-- PACKAGE.zip
-    |   +-- hello-world.php
-    |   +-- hello-moon.php
+```text
++-- PACKAGE.zip
+|   +-- hello-world.php
+|   +-- hello-moon.php
+```
 
 If you've created a [configuration](template-configuration-and-image.md) and/or [image](template-preview-image.md) file for your template, include them in their correct directories (`config`/`images`):
 
-    +-- PACKAGE.zip
-    |   +-- hello-world.php
-    |   +-- /config/
-    |       +-- hello-world.php
-    |   +-- /images/
-    |       +-- hello-world.png
+```text
++-- PACKAGE.zip
+|   +-- hello-world.php
+|   +-- /config/
+|       +-- hello-world.php
+|   +-- /images/
+|       +-- hello-world.png
+```
 
 ## Common Problems 
 

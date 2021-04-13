@@ -1,12 +1,16 @@
 ---
 title: "gfpdf_mpdf_init_class"
 sidebar_label: "gfpdf_mpdf_init_class"
-description: "Modify the mPDF settings before any HTML has been processed. Usually you'll want to use this filter to change the default configuration settings for mPDF."
+description: "Get access to the mPDF object after the initial PDF setup code has finished running, and before the template HTML has been generated/loaded."
 ---
 
 ## Description 
 
-This filter can be used to modify the mPDF settings before any HTML has been processed. Usually you'll want to use this filter to [change the default configuration settings for mPDF](https://github.com/mpdf/mpdf/blob/development/src/Config/ConfigVariables.php). If you want to write directly to the PDF (`$pdf->WriteHTML()`), it's recommended to use the [gfpdf_mpdf_class filter](gfpdf_mpdf_class.md) instead as doing so in this filter can break the automated header/footer support. 
+This filter gives you access to the mPDF object right after it has been initialised and before the rest of the initial setup has been done (RTL mode, PDF format, security, and display mode).
+
+:::caution
+If using a Core or Universal PDF template, writing content directly to the PDF using this filter can break the Header and Footer display. 
+:::
 
 ## Parameters 
 
@@ -27,34 +31,11 @@ This filter can be used to modify the mPDF settings before any HTML has been pro
 
 ## Usage 
 
-Gravity PDF has some very sane defaults for mPDF, but you may want to utilise one of their more advanced features or change the default settings. If so, this is the filter to use. 
-
-Below is a snippet to disable SSL verification while requesting images (and other assets) for inclusion within the PDF. You might do this if your host is running an outdated version of cURL or the OpenSSL library and the images aren't displaying:
-
-``` 
-add_filter( 'gfpdf_mpdf_init_class', function( $mpdf ) {
-	$mpdf->curlAllowUnsafeSslRequests = true;
-
-	return $mpdf;
-} );
-```
-
-Another example is enabling the use of active form fields in PDFs. Keep in mind Gravity PDF does NOT support this feature and our support team will not be able to assist you with any problems you encounter.
+Write content directly to the PDF:
 
 ``` 
 add_filter( 'gfpdf_mpdf_init_class', function( $mpdf, $form, $entry, $settings, $Helper_PDF ) {
-
-	/**
-	 * Due to the large number of compatibility problems with active form fields in mPDF,
-	 * Gravity PDF does not support them and they are disabled by default.
-	 *
-	 * Below is how you can turn this feature back on. Keep in mind our support team will not
-	 * be able to assist if with any problems when this setting is active.
-	 *
-	 * For more information about active form fields in mPDF review the documentation
-	 * http://mpdf.github.io/what-else-can-i-do/forms.html
-	 */
-	$mpdf->useActiveForms = true;
+    $mpdf->WriteHTML( 'This is included right at the beginning of the document...' );
 
 	return $mpdf;
 
