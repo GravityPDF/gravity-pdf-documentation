@@ -1,25 +1,25 @@
 ---
 title: "Supported HTML and CSS in Custom Templates"
 sidebar_label: "Supported HTML and CSS"
-description: "The PDF software we use to generate documents, mPDF, is quite good with its HTML and CSS support but it does have its limitations and quirks."
+description: "The PDF software used generate documents, mPDF, has decent legacy HTML and CSS support, but it does have its limitations and quirks."
 ---
 
 ## Introduction 
 
-The PDF software we use to generate documents, [mPDF](http://mpdf.github.io/), is quite good with its HTML and CSS support, but it does have its limitations and quirks. Areas it falls down in are floats and positioning, cascading styles and widow and orphan support.
+The PDF software used to generate documents, [mPDF](http://mpdf.github.io/), has decent legacy HTML and CSS support, but it does have its limitations and quirks. The major consideration is that modern styles like grid or flexbox are not supported, and layouts need to be done with floats / positioning / tables. There are also restrictions on floats, positioning, cascading styles and widow and orphan support.
 ![Example of mPDFs background and borders features](https://resources.gravitypdf.com/uploads/2015/11/supported-html-and-css.png)
 
 ## HTML Support 
 
 Most HTML 4 and 5 tags are recognised and, to some extent, supported in mPDF – including nested tables. For the best results, you should [follow the XHTML specification](http://www.w3.org/TR/xhtml1/) and create valid HTML when building your PDF templates. A lot of display issues arise from a missing closing tag, or incorrectly nested HTML.
 
-Along with the standardised HTML tag support, there is also [custom HTML tags which mPDF introduced](http://mpdf.github.io/reference/html-control-tags/overview.html) to give you more control over your PDF. These include header and footers, page breaks, bookmarks, table of contents and annotations. One of the biggest quirks you'll need to get used to is that all HTML elements are hard coded as either `block` or `inline` elements and they cannot be changed using the CSS `display` property.
+Along with the standardised HTML tag support, there is also [custom HTML tags which mPDF introduced](http://mpdf.github.io/reference/html-control-tags/overview.html) to give you more control over your PDF. These include header and footers, page breaks, bookmarks, table of contents and annotations. One of the biggest quirks you'll need to get used to is that all HTML elements are hard coded as either `block` or `inline` elements, and they cannot be changed using the CSS `display` property.
 
 For full details on supported HTML tags and attributes, [we recommend you review the mPDF manual](http://mpdf.github.io/html-support/html-tags.html).
 
 ## CSS Support 
 
-CSS styles can be declared in an external stylesheet and included via `<link />` or `@media`, included inline using `<style></style>` tags or using the `style` attribute directly on a HTML element: `<div style="background: #EEE;">`.
+CSS styles can be declared in an external stylesheet and added via `<link />` or `@media`, inline using `<style></style>` tags or using the `style` attribute directly on a HTML element: `<div style="background: #EEE;">`.
 
 Because HTML elements are hard coded to `block` or `inline` only certain CSS can be applied to particular HTML. If you're creating a custom template, we strongly recommend you review the mPDF manual [on supported CSS for each HTML element](http://mpdf.github.io/css-stylesheets/supported-css.html).
 
