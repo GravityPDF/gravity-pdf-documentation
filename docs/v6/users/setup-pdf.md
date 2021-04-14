@@ -50,7 +50,7 @@ There are a number of optional fields available which give you granular control 
 
 ## General Section
 
-![PDF Form Settings General Section](https://resources.gravitypdf.com/uploads/2021/03/v6-General-Tab.png)
+![PDF Form Settings General Section](https://resources.gravitypdf.com/uploads/2021/04/v6-PDF-General-Tab.png)
 
 Below is the list of settings available in the General section, with a brief description about what each is for.
 
@@ -73,7 +73,7 @@ Below is the list of settings available in the General section, with a brief des
 
 ## Appearance Section 
 
-![PDF Form Settings Appearance Section](https://resources.gravitypdf.com/uploads/2021/03/v6-Appearance-Tab.png) 
+![PDF Form Settings Appearance Section](https://resources.gravitypdf.com/uploads/2021/04/v6-PDF-Appearance-Tab.png) 
 
 The Appearance section contains fields that control the general look and feel of your PDF. You have control over the paper size and orientation, as well as the font, font size / colour and RTL support.
 
@@ -110,7 +110,7 @@ The Appearance section contains fields that control the general look and feel of
 
 ## Template Section 
 
-![PDF Form Settings Template Section](https://resources.gravitypdf.com/uploads/2021/03/v6-Template-Tab.png) 
+![PDF Form Settings Template Section](https://resources.gravitypdf.com/uploads/2021/04/v6-PDF-Template-Tab.png) 
 
 The template section contains the current template-specific settings. A template may support dozens of custom settings, or none at all (and the section will be hidden). 
 
@@ -178,7 +178,7 @@ Below is a description of the Core template settings that all **four free templa
 
 ## Advanced Section 
 
-![PDF Form Settings Advanced Section](https://resources.gravitypdf.com/uploads/2021/03/v6-Advanced-Tab.png) 
+![PDF Form Settings Advanced Section](https://resources.gravitypdf.com/uploads/2021/04/v6-PDF-Advanced-Tab.png) 
 
 The Advanced section allows you to control the PDF security (which includes password protection). You can also change the image DPI and the PDF format.
 
