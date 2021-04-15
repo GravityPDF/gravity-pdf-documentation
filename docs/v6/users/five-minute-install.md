@@ -30,7 +30,7 @@ After activating the plugin for the first time, you'll be prompted to install th
 
 After activating, head to `Form -> Settings -> PDF` and check over the plugin's default settings. The software uses sane defaults, but you may want to tweak the default paper size, template and font family, size and colour. [You may also want to enable on Background Processing for faster form processing](background-processing.md).
 
-![The global Gravity PDF settings page](https://resources.gravitypdf.com/uploads/2021/03/v6-Global-PDF-Settings.png) 
+![The global Gravity PDF settings page](https://resources.gravitypdf.com/uploads/2021/04/v6-PDF-Global-Settings.png) 
 
 [View more information about the general PDF settings](global-settings.md).
 
