@@ -4,8 +4,6 @@ sidebar_label: "Hide Form Fields"
 description: "Only certain form data is important to you. That's why Gravity PDF has a number of ways to filter out the unimportant data in your generated PDF."
 ---
 
-![The Gravity Forms Editor](https://resources.gravitypdf.com/uploads/2021/03/v2.5-Form-Editor.png) 
-
 Only certain form data is important to you. That's why Gravity PDF has a number of ways to filter out the unimportant fields in your generated PDF. 
 
 It's important to note that only certain PDF templates have these filtering options. All the core PDF templates will support the features discussed below, but [premium](https://gravitypdf.com/shop/), [custom templates](https://gravitypdf.com/integration-services/) or [your own DIY templates](../developers/start-customising.md) may not.
@@ -20,7 +18,7 @@ You can also choose to show or hide the form's title using the [*Show Form Title
 
 ## Hiding Specific Fields in the PDF 
 
-![Add 'exclude' field to Gravity Form Field](https://resources.gravitypdf.com/uploads/2021/03/v2.5-Exclude-Field.png) 
+![Add 'exclude' field to Gravity Form Field](https://resources.gravitypdf.com/uploads/2021/04/v6-Exclude-Field.png) 
 
 In certain cases, you may not want a particular form field from displaying in the PDF. To exclude a field, you can add the CSS class `exclude` to that field in the Gravity Forms editor. You can do this by:
 

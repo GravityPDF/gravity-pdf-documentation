@@ -4,7 +4,7 @@ sidebar_label: "PDF Security"
 description: "Ensuring your data is protected is top priority and we've implemented security protocols to prevent unauthorised access to PDF documents."
 ---
 
-[pic]
+![Password Protected PDF](https://resources.gravitypdf.com/uploads/2021/04/v6-PDF-Security.png)
 
 Ensuring your data is protected is our *top priority*, and we've implemented a number of security protocols to prevent unauthorised access to PDF documents generated with Gravity PDF. **All PDF rendering is done directly on your web server**, and no third-party service has access to your data. 
 

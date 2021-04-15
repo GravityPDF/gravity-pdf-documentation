@@ -24,31 +24,31 @@ The manager is split into two panes. On the left is the list of installed custom
 
 ## Font List
 
-[pic]
+![Font List](https://resources.gravitypdf.com/uploads/2021/04/v6-Font-List.png)
 
 The left pane shows all the installed custom fonts, and whether a file has been associated with each of the four font variants, denoted by a ✅ or ❌. 
 
 ### Searching
 
-[pic]
+![Search Font](https://resources.gravitypdf.com/uploads/2021/04/v6-Search-Font.png)
 
 At the top of the left pane is a search bar that will show you live results in the list below. The search will match both the name you've given to the font, and any of the uploaded font file names. 
 
 ### Selecting
 
-[pic]
+![Select Font](https://resources.gravitypdf.com/uploads/2021/04/v6-Select-a-Font.png)
 
 If the Font Manager is accessed via the [Default Font](global-settings.md#default-font-type) or [Font setting](setup-pdf.md#font] setting, you'll have the option to select a font using the radio button found to the left of each name in the list. This will automatically update the associated font dropdown setting (don't forget to save afterwards).
 
 ### Editing
 
-[pic]
+![Edit Font](https://resources.gravitypdf.com/uploads/2021/04/v6-Edit-Font.png)
 
 Clicking on the font name in the list will open a new pane on the right where you can modify any of the font settings. Refer to the [Add/Update Font documentation](#add--update-font) for details about the available settings and actions. 
 
 ### Deleting
 
-[pic]
+![Delete Font](https://resources.gravitypdf.com/uploads/2021/04/v6-Delete-Font.png)
 
 On the right side of the list is a trash icon for each font. This action allows you to delete the font and its associated files. An alert prompt will be displayed, asking you to confirm, before the deletion occurs.
 
@@ -58,7 +58,7 @@ If you delete a font that has been assigned to a PDF, any newly-generated docume
 
 ## Add Font
 
-![Add Font Interface](https://resources.gravitypdf.com/uploads/2021/03/v6-Add-Font.png)
+![Add Font Interface](https://resources.gravitypdf.com/uploads/2021/04/v6-Adding-a-Font.png)
 
 The right pane is where you add or update the font settings. By default the add pane is shown, allowing you to quickly install new fonts. 
 
@@ -94,23 +94,28 @@ Bold, Italics, and Bold Italics are usually different variants of the same font,
 :::
 
 #### Custom Template Usage
+
+![Use font in custom PDF templates](https://resources.gravitypdf.com/uploads/2021/04/v6-Custom-Template-Usage.png)
+
 * This is a read-only field which displays a simple CSS example for use in [custom PDF templates](../developers/start-customising.md). Use this if you need to use multiple fonts in a single PDF. If you want the entire PDF to use your custom font then change the [Font setting](setup-pdf.md#font) when you setup your PDF.
 
 ## Edit Font 
 
-![Edit Font Interface](https://resources.gravitypdf.com/uploads/2021/03/v6-Edit-Font.png) 
+![Edit Font Interface](https://resources.gravitypdf.com/uploads/2021/04/v6-Edit-a-Font.png) 
 
 Once you've installed a custom font or two, you'll see a list of fonts in the left pane when you open the *Font Manager*. You can edit the font [by selecting the font name in the list](#editing), updating the details in the right pane and clicking the `Update Font` button when done. Simple!
 
 ### Selecting
 
+![Select Font Interface](https://resources.gravitypdf.com/uploads/2021/04/v6-Edit-Font-Select.png)
+
 If the Font Manager is accessed via the [Default Font](global-settings.md#default-font-type) or [Font setting](setup-pdf.md#font), you'll have the option to select a font using the ✅ button found to the right of the `Update Font` button in the update pane. This will automatically select this font in the associated font dropdown setting (don't forget to save afterwards).
 
 The font is deselected when the ✅ button is grey and selected when it is green.
 
-### Deleteing
+### Deleting
 
-![Delete Font Interface](https://resources.gravitypdf.com/uploads/2021/03/v6-Delete-Font.png) 
+![Delete Font Interface](https://resources.gravitypdf.com/uploads/2021/04/v6-Edit-Font-Delete.png) 
 
 You can delete the currently-edited font by selecting the red trash can icon to the right of the ✅ button in the update pane. When you hover over the icon, it will turn red and after being clicked a warning box will pop up asking you to confirm before a font is deleted.
 

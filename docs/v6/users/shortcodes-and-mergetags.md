@@ -55,7 +55,7 @@ Submit a test entry and verify the PDF link is displayed correct, and you can vi
 
 ##### Page Confirmation
 
-![The \[gravitypdf\] shortcode in the Gravity Forms page confirmation](https://resources.gravitypdf.com/uploads/2021/03/v6-Page-Redirect.png) 
+![The \[gravitypdf\] shortcode in the Gravity Forms page confirmation](https://resources.gravitypdf.com/uploads/2021/04/v6-Page-Confirmation.png) 
 
 The [page confirmation](https://docs.gravityforms.com/configuring-confirmations-in-gravity-forms/#page-confirmations) allows you to redirect users to an existing WordPress page. First, copy the Gravity PDF shortcode found on the [PDF form list](managing-pdfs.md) and place it on the WordPress page you're sending the users to. Once done, go back to your page confirmation configuration and enable the `Pass Field Data Via Query String` option. Add `entry={entry_id}` to the field that appears and click save. This method isn't quite copy-paste-save, but it's close!
 

@@ -22,7 +22,7 @@ More information on each PDF can be viewed by clicking (or navigating with your 
 
 ## Search 
 
-![Search for installed templates](https://resources.gravitypdf.com/uploads/2021/03/v6-Access-Manager.png) 
+![Search for installed templates](https://resources.gravitypdf.com/uploads/2021/03/v6-Search-Templates.png) 
 
 Once you've accessed the PDF Template Manager, you'll see a prominent search bar at the top of the interface. Use it to filter your **installed** PDF templates – searches are done on the PDF title, description author and group.
 
