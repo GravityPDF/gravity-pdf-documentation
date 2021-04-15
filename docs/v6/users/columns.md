@@ -4,7 +4,7 @@ sidebar_label: "Column Support"
 description: "Gravity PDF supports columns in Core and the majority of Universal templates through the use of Gravity Forms 2.5+ Drag and Drop Columns."
 ---
 
-[pic]
+![PDF Zadani with two, three, and four column support](https://resources.gravitypdf.com/uploads/2021/04/v6-Zadani-PDF-with-Column-Support.png)
 
 In the Core PDF templates (and the majority of [Universal templates](https://gravitypdf.com/template-shop/#universal)), column layouts are supported when using [Gravity Forms Drag and Drop column feature in the Form Editor](https://docs.gravityforms.com/working-with-columns/).
 
@@ -16,11 +16,11 @@ In the Form Editor you to easily build advanced form layouts visually. Fields ca
 * Section
 * Hidden
 
-[pic]
+![Gravity Forms Form Editor with Column Support](https://resources.gravitypdf.com/uploads/2021/04/v6-Gravity-Forms-Column-Support-1.png)
 
 You can create up to four columns per row in the Form Editor. The default output is for each column is to be of equal width, but you can resize individual columns to suit your needs eg. `25% / 25% / 50%` or `20% / 80%`.
 
-[pic]
+![Rubix PDF with 100%, 50%, and 25% Column Support](https://resources.gravitypdf.com/uploads/2021/04/v6-Rubix-PDF-with-Column-Support.png)
 
 You don't need each column to equal 100% of the row width. You could have two columns only taking up 25% each and then begin a new row. **Bonus:** this works for single column rows too! 
 
