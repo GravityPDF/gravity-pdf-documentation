@@ -4,6 +4,8 @@ sidebar_label: "System Status"
 description: ""
 ---
 
+![Gravity Forms System Status page](https://resources.gravitypdf.com/uploads/2021/04/v6-System-Status-Page.png)
+
 [Gravity Forms System Status page](https://docs.gravityforms.com/checking-environment-details/) lists environmental details about your WordPress installation and hosting. Gravity PDF-related environment details are included in this list, and provide vital information to help with troubleshooting problems.
 
 ## Gravity PDF Environment
