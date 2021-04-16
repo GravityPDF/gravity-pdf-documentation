@@ -4,7 +4,7 @@ sidebar_label: "Gravity Forms Compatibility"
 description: "Our official policy is to support the latest major Gravity Forms release (1.x) and the latest version of all official Gravity Forms add-ons."
 ---
 
-![Gravity Forms list page](https://resources.gravitypdf.com/uploads/2015/10/forms-page.png)
+![Gravity Forms list page](https://resources.gravitypdf.com/uploads/2021/04/v6-Gravity-Forms-Page.png)
 
 Gravity PDF is a *third party extension* for Gravity Forms. The company who builds Gravity PDF, [Blue Liquid Designs](http://www.blueliquiddesigns.com.au/), is an *independent third party* who has no control over Gravity Forms, its pricing model or its support.
 

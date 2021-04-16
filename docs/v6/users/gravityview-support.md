@@ -10,7 +10,7 @@ description: "GravityView is the best way to display Gravity Forms entries on yo
 
 You can easily add PDF Download links to your View. To do this you'll need to use [GravityView's Custom Content Field](http://docs.gravityview.co/article/111-using-the-custom-content-field). Go edit your View in the admin area, click the `+ Add Field` button in the *Multiple Entries* or *Single Entry* tab, and click *Custom Content*. Next, go to your form's [Manage PDF page](managing-pdfs.md), copy the `[gravitypdf]` shortcode in the list and paste it into the View's Custom Content Field. Save the View and go check if it's working. 
 
-![Adding a Gravity PDF shortcode to GravityView's Custom Content field](https://resources.gravitypdf.com/uploads/2016/06/GravityViewCustomContent.png)
+![Adding a Gravity PDF shortcode to GravityView's Custom Content field](https://resources.gravitypdf.com/uploads/2021/04/v6-GravityView-Custom-Content.png)
 _Adding a Gravity PDF shortcode to GravityView's Custom Content field._
 
 ![The PDF Download links added to a GravityView table](https://resources.gravitypdf.com/uploads/2016/06/GravityViewList.png) 

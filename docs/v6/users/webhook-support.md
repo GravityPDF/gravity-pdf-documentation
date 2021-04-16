@@ -4,7 +4,7 @@ sidebar_label: "Webhook Support"
 description: ""
 ---
 
-[pic]
+![Gravity Forms Webhooks Add-On](https://resources.gravitypdf.com/uploads/2021/04/v6-GF-Webhook-Add-On.png)
 
 [Gravity Forms Webhook add-on](https://www.gravityforms.com/add-ons/webhooks/) allows you to configure and send form data to external APIs. Gravity PDF fully integrates with the Webhook add-on so you can include the PDF URL(s) with your API calls.
 
@@ -14,7 +14,7 @@ description: ""
 
 ## All Fields
 
-[pic]
+![All Fields enabled](https://resources.gravitypdf.com/uploads/2021/04/v6-Request-Body-All-Fields.png)
 
 Gravity Forms will send the entire unformatted entry with the request. Any active PDFs configured on the form, which also passes [the current entry conditional logic](setup-pdf.md#conditional-logic), will be added to the request body.
 
@@ -29,7 +29,7 @@ array (
 
 ## Select Fields
 
-[pic]
+![Select Fields enabled](https://resources.gravitypdf.com/uploads/2021/04/v6-Request-Body-Select-Fields.png)
 
 Gravity Forms will only send the data you configure under the _Field Values_ setting. You can include Gravity PDF URLs by selecting the _Add Custom Value_ option in the Value select box and then adding an appropriate [PDF merge tag](shortcodes-and-mergetags.md#merge-tag). All [merge tag modifiers](shortcodes-and-mergetags.md#available-modifiers) are supported.
 
