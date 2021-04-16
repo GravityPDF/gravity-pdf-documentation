@@ -4,7 +4,7 @@ sidebar_label: "Setup PDF"
 description: "There are a lot of options available, but the most common settings are up front, with the rest grouped by one-of-four sections: and are split into groups: General, Appearance, Template and Advanced."
 ---
 
-![Adding new PDF Form](https://resources.gravitypdf.com/uploads/2021/03/v6-Add-New-PDF.png) 
+![Adding new PDF Form](https://resources.gravitypdf.com/uploads/2021/04/v6-Add-a-PDF.png) 
 
 Creating a PDF for individual Gravity Forms is similar to creating Notifications. There are a lot of options available to you, but we've put the most common settings up front. The rest are hidden; split up between four sections:
 
