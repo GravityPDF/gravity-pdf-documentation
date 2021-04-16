@@ -151,7 +151,7 @@ PDF templates are just PHP files that are loaded in WordPress. Anything you can 
 
 ## Form Data Array Up Close 
 
-The `$form_data` array is used to access the Gravity Form entry information, but, unlike merge tags, there's no selector to show you what's actually in the array. That's why we've added a `data` URL parameter which shows you the complete contents of the `$form_data` array.
+The `$form_data` array is used to access the Gravity Forms entry information, but, unlike merge tags, there's no selector to show you what's actually in the array. That's why we've added a `data` URL parameter which shows you the complete contents of the `$form_data` array.
 
 To see the array, first view a PDF in your admin area. When it loads add `?data=1` to the URL and reload. The address should look similar to this:
 
@@ -228,7 +228,7 @@ If we take a look at the `$form_data` array from the [tutorial](#template-tutori
             )
     )
 
-As we mentioned earlier, our main sub-key is `$form_data['field']`, but there are other important details like the submission date `$form_data['date_created']` and the entry owner's user ID `$form_data['misc']['created_by']`. Each Gravity Form is unique and will create a different `$form_data` array. Gravity Form Add-Ons like Survey and Signature also add their own unique sub-keys in the array.
+As we mentioned earlier, our main sub-key is `$form_data['field']`, but there are other important details like the submission date `$form_data['date_created']` and the entry owner's user ID `$form_data['misc']['created_by']`. Each Gravity Forms is unique and will create a different `$form_data` array. Gravity Forms Add-Ons like Survey and Signature also add their own unique sub-keys in the array.
 
 You will also notice in our `$form_data['field']` array there are three different references (array keys) for the same field. The keys without any ID are present for legacy reasons, while keys with the ID-and-field-combination make it easier to distinguish what field you are trying to reference. With that said, we recommend accessing the field data using the ID in your templates.
 

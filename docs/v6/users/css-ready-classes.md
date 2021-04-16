@@ -33,7 +33,7 @@ When not already in a column the following *List* classes are also supported:
 
 [This four-column CSS code](https://gist.github.com/WebEndevSnippets/5555354) has become increasingly popular for Gravity Forms users and so we have added full support for these classes in Gravity PDF (make sure to include the custom CSS with your theme to get the same effect on the front end). 
 
-To start using in your PDF, add the classes `gf_first_quarter`, `gf_second_quarter`, `gf_third_quarter` and `gf_fourth_quarter` to your Gravity Form fields and supported PDF templates will automatically create a four column layout to match.
+To start using in your PDF, add the classes `gf_first_quarter`, `gf_second_quarter`, `gf_third_quarter` and `gf_fourth_quarter` to your Gravity Forms fields and supported PDF templates will automatically create a four column layout to match.
 
 ## Adding to Form
 

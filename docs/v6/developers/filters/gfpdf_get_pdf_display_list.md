@@ -20,7 +20,7 @@ This filter was introduced in Gravity PDF 4.2.
 *  An associative array containing the keys `name`, `view` and `download` which signify the name of the PDF and the URLs to view or download the document.
 
 ### $entry | array
-*  The raw Gravity Form Entry array.
+*  The raw Gravity Forms Entry array.
 
 ### $form | array
 *  The Gravity Forms array

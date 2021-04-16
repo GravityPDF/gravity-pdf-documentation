@@ -18,10 +18,10 @@ This filter was added in Gravity PDF 5.2.
 *  The mPDF configuration settings
 
 ### $form | array
-*  The current Gravity Form array
+*  The current Gravity Forms array
 
 ### $entry | array 
-*  The raw Gravity Form Entry array.
+*  The raw Gravity Forms Entry array.
 
 ### $settings | array
 *  The current PDF settings being processed

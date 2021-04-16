@@ -22,7 +22,7 @@ The important part to remember about working with our middleware is that filters
 *  A `WP_Error` is returned on failure. Anything else is considered valid.
 
 ### $entry | array
-*  The raw Gravity Form Entry array.
+*  The raw Gravity Forms Entry array.
 
 ### $settings | array
 *  The current PDF settings being processed

@@ -18,7 +18,7 @@ You can also choose to show or hide the form's title using the [*Show Form Title
 
 ## Hiding Specific Fields in the PDF 
 
-![Add 'exclude' field to Gravity Form Field](https://resources.gravitypdf.com/uploads/2021/04/v6-Exclude-Field.png) 
+![Add 'exclude' field to Gravity Forms Field](https://resources.gravitypdf.com/uploads/2021/04/v6-Exclude-Field.png) 
 
 In certain cases, you may not want a particular form field from displaying in the PDF. To exclude a field, you can add the CSS class `exclude` to that field in the Gravity Forms editor. You can do this by:
 

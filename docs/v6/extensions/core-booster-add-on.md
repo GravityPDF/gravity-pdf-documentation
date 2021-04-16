@@ -103,5 +103,5 @@ https://www.youtube.com/watch?v=uKTLW_HsiWs&rel=0
     3.  Display the Admin Field Label for fields that have one, otherwise fall back to the Standard/Field Label
     4.  Disable the Field Label
 
-* This feature applies to all Gravity Form fields that support an Admin Field label
+* This feature applies to all Gravity Forms fields that support an Admin Field label
 * You can find this setting at the bottom of the *Template* section when [editing the PDF Settings](../users/setup-pdf.md#template) for Core and Universal PDF templates.

@@ -14,10 +14,10 @@ Use this filter to dynamically change the name of your saved PDF file. This is u
 *  The current PDF filename
 
 ### $form | array
-*  The current Gravity Form array
+*  The current Gravity Forms array
 
 ### $entry | array
-*  The raw Gravity Form Entry array.
+*  The raw Gravity Forms Entry array.
 
 ### $settings | array
 *  The current PDF settings being processed

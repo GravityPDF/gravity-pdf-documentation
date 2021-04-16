@@ -134,11 +134,11 @@ Below are details of all the core fields available to you:
 * Only applicable when template is using `$pdf->process_html_structure()` in your PDF template. Although you can add your own field logic based on this setting. [See custom field support for more details](template-configuration-and-image.md#custom-field-support).
 
 ##### show\_page\_names 
-* Adds a Toggle field to the template section asking users if they want to show Gravity Form page names in the appropriate location within the PDF.
+* Adds a Toggle field to the template section asking users if they want to show Gravity Forms page names in the appropriate location within the PDF.
 * Only applicable when template is using `$pdf->process_html_structure()` in your PDF template.
 
 ##### show\_html 
-* Adds a Toggle field to the template section asking users if they want to show Gravity Form HTML fields in the PDF.
+* Adds a Toggle field to the template section asking users if they want to show Gravity Forms HTML fields in the PDF.
 * Only applicable when template is using `$pdf->process_html_structure()` in your PDF template.
 
 ##### show\_section\_content 

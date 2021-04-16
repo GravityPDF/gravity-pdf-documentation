@@ -6,7 +6,7 @@ description: ""
 
 ![Tritan is a fancy template](https://resources.gravitypdf.com/uploads/edd/2018/02/tritan-cover-image-v2.jpg)
 
-*Tritan* is a fancy Universal PDF template that integrates seamlessly into any Gravity Form you might create. You can [purchase from our PDF Template Shop](https://gravitypdf.com/shop/tritan/). It's ideally suited for short forms with a limited number of pages (resumès instantly come to mind), but can be scaled to larger forms by disabling the first-page sidebar.
+*Tritan* is a fancy Universal PDF template that integrates seamlessly into any Gravity Forms you might create. You can [purchase from our PDF Template Shop](https://gravitypdf.com/shop/tritan/). It's ideally suited for short forms with a limited number of pages (resumès instantly come to mind), but can be scaled to larger forms by disabling the first-page sidebar.
 
 ## Installation 
 

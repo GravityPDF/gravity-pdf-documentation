@@ -15,7 +15,7 @@ This method was introduced in Gravity PDF 4.0.
 ## Parameters 
 
 ### $form\_id \| integer
-* The Gravity Form ID
+* The Gravity Forms ID
 
 ## Return 
 
@@ -24,7 +24,7 @@ This method was introduced in Gravity PDF 4.0.
 
 ## Usage 
 
-This snippet will show you how to get the current list of PDFs setup on a particular Gravity Form and loop through the results:
+This snippet will show you how to get the current list of PDFs setup on a particular Gravity Forms and loop through the results:
 
 ```
 add_action( 'init', function() {

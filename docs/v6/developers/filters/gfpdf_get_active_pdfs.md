@@ -23,7 +23,7 @@ This filter was introduced in Gravity PDF 4.2.
 *  The unfiltered list of PDF settings
 
 ### $entry | array
-*  The raw Gravity Form Entry array.
+*  The raw Gravity Forms Entry array.
 
 ### $form | array
 *  The Gravity Forms array

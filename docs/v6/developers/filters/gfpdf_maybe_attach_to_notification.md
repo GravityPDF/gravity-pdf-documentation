@@ -26,7 +26,7 @@ This filter was introduced in Gravity PDF 4.2.
 *  The current PDF settings being processed
 
 ### $entry | array
-*  The raw Gravity Form Entry array.
+*  The raw Gravity Forms Entry array.
 
 ### $form | array
 *  The Gravity Forms array
@@ -41,7 +41,7 @@ add_filter( 'gfpdf_maybe_attach_to_notification', function( $attach, $notificati
 }, 10, 5 );
 ```
 
-The above isn't really useful though. The below sample will attach any PDF with a name containing the word 'Submission' to any Gravity Form notification on form #5:
+The above isn't really useful though. The below sample will attach any PDF with a name containing the word 'Submission' to any Gravity Forms notification on form #5:
 
 ```
 add_filter( 'gfpdf_maybe_attach_to_notification', function( $attach, $notification, $settings, $entry, $form ) {

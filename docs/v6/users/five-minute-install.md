@@ -36,7 +36,7 @@ After activating, head to `Form -> Settings -> PDF` and check over the plugin's 
 
 ## Creating a PDF 
 
-Next, it's time to setup a PDF for your Gravity Form. Select `Forms` in the main navigation and then choose the Gravity Form you want integrated. From the form editor page that loads, click the `Settings` menu in the horizontal navigation and choose `PDF` from the dropdown menu shown. Finally, select the `Add New` button to create a PDF. 
+Next, it's time to setup a PDF for your Gravity Form. Select `Forms` in the main navigation and then choose the Gravity Forms you want integrated. From the form editor page that loads, click the `Settings` menu in the horizontal navigation and choose `PDF` from the dropdown menu shown. Finally, select the `Add New` button to create a PDF. 
 
 ![The PDF Form Settings page](https://resources.gravitypdf.com/uploads/2021/04/v6-PDF-Settings-Form.png) 
 
@@ -44,7 +44,7 @@ While there are a lot of options available to you, only the `Name` and `Filename
 
 ![Adding a new PDF to a form](https://resources.gravitypdf.com/uploads/2021/04/v6-Add-a-PDF.png) 
 
-Now that you've setup the PDF you can view and download it from the Gravity Form Entries page in your admin area (just make sure you've submitted an entry already). If you configured it, when a new entry is submitted the generated PDF will be attached to the email notification. 
+Now that you've setup the PDF you can view and download it from the Gravity Forms Entries page in your admin area (just make sure you've submitted an entry already). If you configured it, when a new entry is submitted the generated PDF will be attached to the email notification. 
 
 ![Download the PDFs via the Entries page](https://resources.gravitypdf.com/uploads/2021/04/v6-Download-PDF.png) 
 

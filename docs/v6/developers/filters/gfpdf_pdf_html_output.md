@@ -16,10 +16,10 @@ If you do use this filter we recommend making your changes using a DOM parser. G
 *  The PDF template HTML in string format
 
 ### $form | array 
-*  The current Gravity Form array
+*  The current Gravity Forms array
 
 ### $entry | array 
-*  The raw Gravity Form Entry array.
+*  The raw Gravity Forms Entry array.
 
 ### $settings | array
 *  The current PDF configuration array.
@@ -70,7 +70,7 @@ As you can see the Query Path library is very powerful and we *strongly recommen
 If you need to, you also have the option to specifically target PDF templates assigned to individual Gravity Forms:
 
 ```
-/* Only run this filter on Gravity Form #5 */
+/* Only run this filter on Gravity Forms #5 */
 add_filter( 'gfpdf_pdf_html_output_5', function( $html, $form, $entry, $settings, $Helper_PDF ) { }, 10, 5 )
 ```
 

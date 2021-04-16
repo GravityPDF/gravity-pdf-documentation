@@ -8,7 +8,7 @@ description: "When Gravity Forms is in No-Conflict mode, along with enqueuing JS
 
 When Gravity Forms is in [No-Conflict mode](https://docs.gravityforms.com/enabling-no-conflict-mode/), along with [enqueuing JS](https://developer.wordpress.org/reference/functions/wp_enqueue_script/) using `wp_enqueue_script()` you also need to specifically register scripts so they are loaded on Gravity Forms pages. 
 
-We've ensured any enqueued scripts with a handle beginning with "gfpdf_js" are automatically registered, but you may need to register other WordPress scripts. This filter allows you to easily register a WordPress JS handler, so it's included on No Conflict Gravity Form pages. 
+We've ensured any enqueued scripts with a handle beginning with "gfpdf_js" are automatically registered, but you may need to register other WordPress scripts. This filter allows you to easily register a WordPress JS handler, so it's included on No Conflict Gravity Forms pages. 
 
 ## Parameters 
 

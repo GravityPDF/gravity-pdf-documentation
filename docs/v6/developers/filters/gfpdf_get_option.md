@@ -16,7 +16,7 @@ You also have the option to use the `gfpdf_get_option_$option` filter, where `$o
 *  The PDF settings
 
 ### $key | string
-*  The current Gravity Form ID the PDF is being added to
+*  The current Gravity Forms ID the PDF is being added to
 
 ### $default | mixed
 *  The ID of the current PDF being processed

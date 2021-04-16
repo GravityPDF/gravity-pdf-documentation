@@ -76,10 +76,10 @@ The following is a valid PDF template header:
 The following variables are available to all PDF templates:
 
 ### $form 
-* The current [Gravity Form object](https://docs.gravityforms.com/form-object/) being processed. This is the main object in Gravity Forms and contains all properties of a particular form – form title, fields, notification, confirmation etc.
+* The current [Gravity Forms object](https://docs.gravityforms.com/form-object/) being processed. This is the main object in Gravity Forms and contains all properties of a particular form – form title, fields, notification, confirmation etc.
 
 ### $entry 
-* The current [Gravity Form entry object](https://docs.gravityforms.com/entry-object/) being processed. This object contains all properties of a particular entry in **raw** format – accessing field data directly from the object should be avoided, where possible. The object is formatted as an associative array, and the field IDs are the array keys.
+* The current [Gravity Forms entry object](https://docs.gravityforms.com/entry-object/) being processed. This object contains all properties of a particular entry in **raw** format – accessing field data directly from the object should be avoided, where possible. The object is formatted as an associative array, and the field IDs are the array keys.
 
 ### $form\_data 
 * The formatted [$entry](#entry) data stored in an associative array. [View full documentation on the `$form_data` array](php-form-data-array.md).
@@ -127,11 +127,11 @@ if ( ! class_exists( 'GFForms' ) ) {
 /**
  * All Gravity PDF v4/v5/v6 templates have access to the following variables:
  *
- * @var array  $form      The current Gravity Form array
+ * @var array  $form      The current Gravity Forms array
  * @var array  $entry     The raw entry data
  * @var array  $form_data The processed entry data stored in an array
  * @var object $settings  The current PDF configuration
- * @var array  $fields    An array of Gravity Form fields which can be accessed with their ID number
+ * @var array  $fields    An array of Gravity Forms fields which can be accessed with their ID number
  * @var array  $config    The initialised template config class – eg. /config/zadani.php
  */
  

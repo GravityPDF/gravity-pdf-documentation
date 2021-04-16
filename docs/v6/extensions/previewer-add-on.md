@@ -1,7 +1,7 @@
 ---
 title: "Previewer Document: How to Install and Configure"
 sidebar_label: "Previewer"
-description: "Previewer allows generated PDFs to be previewed on-screen before a Gravity Form has been submitted. It includes live reloading and watermark support."
+description: "Previewer allows generated PDFs to be previewed on-screen before a Gravity Forms has been submitted. It includes live reloading and watermark support."
 ---
 
 ![Previewer add-on](https://resources.gravitypdf.com/uploads/edd/2017/08/cover-artwork-1.png)

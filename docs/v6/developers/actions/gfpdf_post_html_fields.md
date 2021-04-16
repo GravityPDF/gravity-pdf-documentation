@@ -17,7 +17,7 @@ This action was introduced in Gravity PDF 4.1.
 ## Parameters 
 
 ### $entry | array
-*  The Gravity Form entry array
+*  The Gravity Forms entry array
 
 ### $config | array
 *  The current Gravity PDF settings array
