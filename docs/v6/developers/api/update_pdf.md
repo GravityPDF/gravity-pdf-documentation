@@ -15,7 +15,7 @@ This method was introduced in Gravity PDF 4.0.
 ## Parameters 
 
 ### $form\_id \| integer
-* The Gravity Form ID
+* The Gravity Forms ID
 
 ### $pdf\_id \| string
 * The PDF internal identifier (found in the `pid` URL parameter when viewing individual PDF settings in the admin area)

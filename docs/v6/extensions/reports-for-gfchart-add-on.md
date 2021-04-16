@@ -40,7 +40,7 @@ https://www.youtube.com/watch?v=8PYT5GwWuCk
 
 1. Navigate to `Forms -> Settings -> GFChart` in your admin area and activate your GFChart license key. The GFChart Image Charts plugins **will NOT** work without a valid license key.
 1. Next, head to the `Forms -> Charts/Calculations` page in your admin area.
-1. Click the *Add New* button and in the popup enter a title for your chart and select which Gravity Form will be the data source before saving.
+1. Click the *Add New* button and in the popup enter a title for your chart and select which Gravity Forms will be the data source before saving.
 ![Adding a new GFChart](https://resources.gravitypdf.com/uploads/2021/04/v6-Create-GFChart.png)
 1. Under the *Design* tab, select a chart type, and then subsequent style(s) for using a Pie or Bar chart. 
 ![Selecting a chart type for GFChart](https://resources.gravitypdf.com/uploads/2020/06/gfchart-design-page.png)
@@ -55,14 +55,14 @@ https://www.youtube.com/watch?v=8PYT5GwWuCk
 
 Once you've setup your chart(s), it's time to create your PDF reports! Well, almost...
 
-Before you do anything, you should determine what type of report you need, as this will establish which Gravity Form you configure. For example, if you want to generate a report for every form submission, you'll setup your reports directly on the desired form. This setup is useful, but not limited to, the following use-cases:
+Before you do anything, you should determine what type of report you need, as this will establish which Gravity Forms you configure. For example, if you want to generate a report for every form submission, you'll setup your reports directly on the desired form. This setup is useful, but not limited to, the following use-cases:
 
 1. **Donation / Charity Auction** - a donation is made via Gravity Forms, and the report includes a chart showing the total amount raised. A variation on this is a charity auction where the chart shows the total amount raised / voted for each item.
 1. **Quiz** - after completing a quiz/survey, the report contains chart(s) showing the aggregate results.
 1. **Event/Booking/Registration/Subscription** - after completing the form, a report PDF is sent showing other user's demographics. 
 1. **Report on demand** - rather than scheduling reports, you can create a form that will send out the report on submission.
 
-If you'd prefer to get a report once a day/week/month you would create a new Gravity Form for this purpose. [See our Scheduling Reports section for more details about this configuration](#scheduling-reports). Whichever option you decide, you setup the report PDFs like you would any other: [via your form's PDF settings](../users/setup-pdf.md#locating-the-pdf-settings). 
+If you'd prefer to get a report once a day/week/month you would create a new Gravity Forms for this purpose. [See our Scheduling Reports section for more details about this configuration](#scheduling-reports). Whichever option you decide, you setup the report PDFs like you would any other: [via your form's PDF settings](../users/setup-pdf.md#locating-the-pdf-settings). 
 
 All *Reports for GFChart* templates have common settings that can be configured, such as font, security and PDF attachments, and we recommend [reviewing the PDF setup guide](../users/setup-pdf.md) to get a better understanding on all the available options. The individual template-specific configuration is done from the *Template* tab, and below you’ll find detailed information about the available options.
 
@@ -366,8 +366,8 @@ The ability to get a report emailed to you on a regular schedule is an important
 
 1. In your WordPress Admin area, navigate to *Settings -> General* and confirm your **Timezone** setting is configured correctly.
 
-1. Create a new Gravity Form specifically for your scheduled reports. Since all the data is pulled from the [configured GFChart graphs and calculations](#setup-gfchart), your form doesn't need to capture any information of importance. However, Gravity Forms won't allow you to submit a new entry unless some data is saved, so add a Single Line Text field to your form – the field label doesn't matter. 
-![A basic Gravity Form with one Single Line Text field](https://resources.gravitypdf.com/uploads/2021/04/v6-Scheduled-Report-Form.png)
+1. Create a new Gravity Forms specifically for your scheduled reports. Since all the data is pulled from the [configured GFChart graphs and calculations](#setup-gfchart), your form doesn't need to capture any information of importance. However, Gravity Forms won't allow you to submit a new entry unless some data is saved, so add a Single Line Text field to your form – the field label doesn't matter. 
+![A basic Gravity Forms with one Single Line Text field](https://resources.gravitypdf.com/uploads/2021/04/v6-Scheduled-Report-Form.png)
 
 1. [Create a Notification (or Notifications) that will be emailed on your schedule](https://docs.gravityforms.com/configuring-notifications-in-gravity-forms/).
 
@@ -403,7 +403,7 @@ Once you select a frequency and save the Notification settings, a new task will 
 If you'd like to change the time that a report will be sent, [you can install and active the free WP Crontrol plugin](https://wordpress.org/plugins/wp-crontrol/). After installation, navigate to *Tools -> Cron Events* and search for Hook Names that begin with `gfcsn_` (these are the GFChart Schedule Notification events). If this is the first Notification you're setting up, you should find one event. Edit the event and adjust the "Next Run" setting with the correct time you'd like. Save when finished, and your Notification will be automatically sent on the interval you've chosen. 
 
 :::caution
-GFChart's scheduled event uses the Notification ID as a unique identifier. You can accidentally override the original form's scheduled event if you duplicate a Gravity Form (the Notification IDs don't change when duplicated) and then update the new form's Notification settings. A workaround is to duplicate the Notification(s) on the new form (getting new IDs), deleting the original notifications and then updating the new Notifications settings to re-enabling scheduling.
+GFChart's scheduled event uses the Notification ID as a unique identifier. You can accidentally override the original form's scheduled event if you duplicate a Gravity Forms (the Notification IDs don't change when duplicated) and then update the new form's Notification settings. A workaround is to duplicate the Notification(s) on the new form (getting new IDs), deleting the original notifications and then updating the new Notifications settings to re-enabling scheduling.
 ::: 
 
 ![How to manually adjust the date and time of the next GFChart Scheduled Notification event](https://resources.gravitypdf.com/uploads/2021/04/v6-WP-Crontrol-Event-Time.png)

@@ -14,10 +14,10 @@ This filter is run after the PDF template's HTML is loaded into mPDF and right b
 *  The initialised `mPDF` class that handles the PDF generation
 
 ### $form | array
-*  The current Gravity Form array
+*  The current Gravity Forms array
 
 ### $entry | array 
-*  The raw Gravity Form Entry array.
+*  The raw Gravity Forms Entry array.
 
 ### $settings | array
 *  The current PDF settings being processed

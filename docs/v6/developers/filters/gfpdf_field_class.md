@@ -1,18 +1,18 @@
 ---
 title: "gfpdf_field_class"
 sidebar_label: "gfpdf_field_class"
-description: "When rendering PDFs we broke out the functionality which handles the display of Gravity Form fields. Each field is now handled by it's own class."
+description: "When rendering PDFs we broke out the functionality which handles the display of Gravity Forms fields. Each field is now handled by it's own class."
 ---
 
 ## Description 
 
-When rendering PDFs, we split the Gravity Form fields display into its own class, which all extend our common abstract class `GFPDF\Helper\Helper_Abstract_Fields` (yes, we use namespaces). This filter makes it easy to customise the output of individual fields types by allowing you to overriding or extend the field's class. 
+When rendering PDFs, we split the Gravity Forms fields display into its own class, which all extend our common abstract class `GFPDF\Helper\Helper_Abstract_Fields` (yes, we use namespaces). This filter makes it easy to customise the output of individual fields types by allowing you to overriding or extend the field's class. 
 
 The most likely things you'll want to override in a field's class is the `value()` or `html()` method, as it controls the retrieval of the field's entry information and the HTML output, respectively. However, you can completely change all properties of a field if you desire.
 
 In the [usage](#usage) section we show you how to override an existing field's `value()` method to change the output. But for a more in-depth look at how to extend the `GFPDF\Helper\Helper_Abstract_Fields` class we recommend you review the field classes found in `/src/helper/fields/`.
 
-You can also use the filter `gfpdf_field_class_$type`, where type refers to the Gravity Form field type (textarea, select, signature etc). 
+You can also use the filter `gfpdf_field_class_$type`, where type refers to the Gravity Forms field type (textarea, select, signature etc). 
 
 ## Parameters 
 
@@ -20,13 +20,13 @@ You can also use the filter `gfpdf_field_class_$type`, where type refers to the 
 *  The current field class loaded. These classes are located in `src/helper/fields/`
 
 ### $field | array
-*  The current Gravity Form field being processed.
+*  The current Gravity Forms field being processed.
 
 ### $entry | array
-*  The raw Gravity Form Entry array.
+*  The raw Gravity Forms Entry array.
 
 ### $form | array
-*  The current Gravity Form array
+*  The current Gravity Forms array
 
 ## Usage 
 

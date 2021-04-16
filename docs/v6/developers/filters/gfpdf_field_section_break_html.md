@@ -29,13 +29,13 @@ This filter was introduced in Gravity PDF 4.1.
 *  An associative array containing the 'title' and 'description' keys
 
 ### $field | array
-*  The Gravity Form field currently being processed
+*  The Gravity Forms field currently being processed
 
 ### $form | array
-*  The current Gravity Form array
+*  The current Gravity Forms array
 
 ### $entry | array
-*  The raw Gravity Form Entry array.
+*  The raw Gravity Forms Entry array.
 
 ### $class | object
 *  The Gravity PDF Section Break field wrapper class
@@ -58,7 +58,7 @@ add_action( 'gfpdf_field_section_break_html', function( $html, $title, $descript
 }, 10, 8 );
 ```
 
-If you wanted to restrict this to a particular Gravity Form you could use this snippet:
+If you wanted to restrict this to a particular Gravity Forms you could use this snippet:
 
 ```
 add_action( 'gfpdf_field_section_break_html', function( $html, $title, $description, $value, $field, $form, $entry, $class ) {

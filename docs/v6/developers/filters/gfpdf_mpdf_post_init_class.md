@@ -22,10 +22,10 @@ This filter was introduced in Gravity PDF 5.1.5.
 *  The initialised `mPDF` class that handles the PDF generation
 
 ### $form | array
-*  The current Gravity Form array
+*  The current Gravity Forms array
 
 ### $entry | array 
-*  The raw Gravity Form Entry array.
+*  The raw Gravity Forms Entry array.
 
 ### $settings | array
 *  The current PDF settings being processed

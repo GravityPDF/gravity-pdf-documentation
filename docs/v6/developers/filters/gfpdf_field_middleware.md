@@ -21,7 +21,7 @@ This filter allows you to remove any of the existing middleware or add new condi
 *  The current field being processed
 
 ### $entry | array
-*  The raw Gravity Form Entry array.
+*  The raw Gravity Forms Entry array.
 
 ### $form | array
 *  The Gravity Forms array

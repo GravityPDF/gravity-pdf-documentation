@@ -14,13 +14,13 @@ This filter can be used to add to or modify [the variables passed directly to PD
 *  An associative array that includes all variables passed to PDF templates. The array gets passed to the PHP `extract()` function when your template is included so they are available as standard variables. 
 
 ### $entry | array
-*  The raw Gravity Form Entry array.
+*  The raw Gravity Forms Entry array.
 
 ### $settings | array
 *  The current PDF configuration array.
 
 ### $form | array
-*  The current Gravity Form array
+*  The current Gravity Forms array
 
 ## Usage 
 

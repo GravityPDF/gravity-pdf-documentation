@@ -78,17 +78,17 @@ The security settings are hidden by default and can be shown by clicking the _Se
 
 #### Logged Out Timeout
 * When a logged out user attempts to view a PDF, the plugin will try and match their current IP address against the one saved with the Gravity Forms entry. If they match, they get access. However, this method isn't a secure long-term option [because IP addresses can change](http://whatismyipaddress.com/keeps-changing). To prevent unauthorised access, we implemented a timeout feature. After X amount of time, the user no longer has access to the generated PDF.
-* This option has no effect on PDFs sent as attachments in Gravity Form notifications but does affect the `[gravitypdf]` shortcode and PDF merge tags.
+* This option has no effect on PDFs sent as attachments in Gravity Forms notifications but does affect the `[gravitypdf]` shortcode and PDF merge tags.
 * By default, this timeout is set to 20 minutes. **While it is not recommended**, you can disable the timeout functionality by setting the value to zero (0).
 
 #### Default Owner Restrictions 
-* This option allows you to prevent the form entry owner – the user who filled out the Gravity Form – from viewing the generated PDF. This included logged out and logged in users – with the exception of a logged in user who has any of the capabilities listed in the [*User Restriction*](#user-restriction) field.
-* This option has no effect on PDFs sent as attachments in Gravity Form notifications, but does affect the unsigned [Gravity PDF shortcode and mergetags](shortcodes-and-mergetags.md).
+* This option allows you to prevent the form entry owner – the user who filled out the Gravity Forms – from viewing the generated PDF. This included logged out and logged in users – with the exception of a logged in user who has any of the capabilities listed in the [*User Restriction*](#user-restriction) field.
+* This option has no effect on PDFs sent as attachments in Gravity Forms notifications, but does affect the unsigned [Gravity PDF shortcode and mergetags](shortcodes-and-mergetags.md).
 * By default, this option is disabled.
 
 #### User Restriction
 * Logged in users who do not have the `gravityforms_view_entries` capability are prevented from accessing any PDF if they aren't the original owner – the owner is who filled in the form entry originally. If you leave the setting untouched only site administrators and network super admins (if running a multisite) can view the generated PDFs. To change this behaviour, you can assign capabilities that other roles have access to. For instance, if you wanted the [*Editor* role](https://codex.wordpress.org/Roles_and_Capabilities#Editor) to have access to all PDFs you could add the `edit_pages` capability. Another option is to use a role editing plugin like [User Role Editor](https://wordpress.org/plugins/user-role-editor/) to give an existing role the `gravityforms_view_entries` capability. Choose the best solution for your use-case.
-* This setting has no effect on PDFs sent as attachments in Gravity Form notifications or [signed PDFs](@TODO), but does affect the unsigned [Gravity PDF shortcode and mergetags](shortcodes-and-mergetags.md).
+* This setting has no effect on PDFs sent as attachments in Gravity Forms notifications or [signed PDFs](@TODO), but does affect the unsigned [Gravity PDF shortcode and mergetags](shortcodes-and-mergetags.md).
 * More information about WordPress roles and capabilities [can be found in the WordPress codex](https://codex.wordpress.org/Roles_and_Capabilities).
 
 ## License Tab 

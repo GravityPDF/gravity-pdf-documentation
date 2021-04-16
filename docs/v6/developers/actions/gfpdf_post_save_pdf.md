@@ -24,10 +24,10 @@ You can also use the `gfpdf_post_save_pdf_$form_id` action if needed.
 *  The current PDF's settings 
 
 ### $entry | array
-*  The raw Gravity Form Entry array.
+*  The raw Gravity Forms Entry array.
 
 ### $form | array
-*  The current Gravity Form array
+*  The current Gravity Forms array
 
 ## Usage 
 

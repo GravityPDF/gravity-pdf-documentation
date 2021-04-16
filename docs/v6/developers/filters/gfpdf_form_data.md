@@ -20,7 +20,7 @@ This filter was introduced in Gravity PDF 4.2.
 *  The processed Gravity Forms data in array format
 
 ### $entry | array
-*  The raw Gravity Form Entry array.
+*  The raw Gravity Forms Entry array.
 
 ### $form | array
 *  The Gravity Forms array

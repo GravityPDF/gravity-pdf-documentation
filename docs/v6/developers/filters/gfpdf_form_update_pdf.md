@@ -16,7 +16,7 @@ You also have the option to use the `gfpdf_form_update_pdf_$form_id` filter.
 *  The PDF settings
 
 ### $form_id | integer 
-*  The current Gravity Form ID the PDF is being added to
+*  The current Gravity Forms ID the PDF is being added to
 
 ### $pdf_id | string
 *  The ID of the current PDF being processed

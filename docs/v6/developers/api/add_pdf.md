@@ -15,7 +15,7 @@ This method was introduced in Gravity PDF 4.0.
 ## Parameters 
 
 ### $form\_id \| integer
-* The Gravity Form ID
+* The Gravity Forms ID
 
 ### $settings \| array
 * The PDF settings that should be added

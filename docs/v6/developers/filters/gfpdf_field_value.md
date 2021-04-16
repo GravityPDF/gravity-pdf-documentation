@@ -14,13 +14,13 @@ Use this filter to non-permanently manipulate the entry information that's provi
 *  The user's response to the current field
 
 ### $field | array
-*  The Gravity Form field currently being processed
+*  The Gravity Forms field currently being processed
 
 ### $entry | array
-*  The raw Gravity Form Entry array.
+*  The raw Gravity Forms Entry array.
 
 ### $form | array
-*  The raw Gravity Form form array.
+*  The raw Gravity Forms form array.
 *  Added in Gravity PDF 4.4
 
 ### $class | array

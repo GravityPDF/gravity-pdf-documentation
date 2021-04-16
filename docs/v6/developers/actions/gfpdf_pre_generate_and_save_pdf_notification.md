@@ -20,7 +20,7 @@ This action was introduced in Gravity PDF 4.5.
 *  The Gravity Forms form array
 
 ### $entry | array
-*  The Gravity Form entry array
+*  The Gravity Forms entry array
 
 ### $settings | array
 *  The current Gravity PDF settings array

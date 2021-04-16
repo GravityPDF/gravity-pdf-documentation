@@ -32,7 +32,7 @@ In our `hello-world.php` template we're going to add a new line below the `<h1>`
 <p>You're from {Where do you live?:3}, {Name (First):1.3}? How cool is that!</p>
 ```    
 
-After uploading the template, when you view the *Hello World* PDF for the entry you created earlier, it will include the Gravity Forms data. All Gravity Form fields can be displayed in the PDF this way.
+After uploading the template, when you view the *Hello World* PDF for the entry you created earlier, it will include the Gravity Forms data. All Gravity Forms fields can be displayed in the PDF this way.
 
 ### Conditional Shortcodes 
 

@@ -19,7 +19,7 @@ Special meta options specific to these templates and accessed via `$config['meta
 * `page_names | boolean`: Whether Page fields should be included in the PDF. Default `false`.
 * `html_field | boolean`: Whether to show HTML fields in the PDF. Default `false`.
 * `individual_products | boolean`: Whether to group products at the end of the PDF. Default `true`.
-* `enable_css_ready_classes | boolean`: Whether to enable column support with special Gravity Form CSS classes. Default `true`
+* `enable_css_ready_classes | boolean`: Whether to enable column support with special Gravity Forms CSS classes. Default `true`
 
 Alone with the meta options, the standard PDF settings can be manipulated via `$config['settings']`.
 
@@ -33,7 +33,7 @@ This filter was introduced in Gravity PDF 4.2.
 *  The full configuration for Core and Universal PDF templates. Data is stored in the `$config['meta']` and `$config['settings']` keys.
 
 ### $entry | array
-*  The raw Gravity Form Entry array.
+*  The raw Gravity Forms Entry array.
 
 ### $form | array
 *  The Gravity Forms array

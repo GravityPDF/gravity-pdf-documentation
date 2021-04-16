@@ -25,13 +25,13 @@ In most cases, [the `gfpdf_pdf_field_content` filter](gfpdf_pdf_field_content.md
 *  The field label currently being processed
 
 ### $field | array
-*  The Gravity Form field currently being processed
+*  The Gravity Forms field currently being processed
 
 ### $form | array
-*  The current Gravity Form array
+*  The current Gravity Forms array
 
 ### $entry | array
-*  The raw Gravity Form Entry array.
+*  The raw Gravity Forms Entry array.
 
 ### $class | object
 *  The Gravity PDF field wrapper class
@@ -64,7 +64,7 @@ add_filter( 'gfpdf_field_html_value', function( $html, $value, $show_label, $lab
 }, 10, 8 );
 ```
 
-This snippet simplifies the mark-up for most Gravity Form fields ([see notes in the description above](#description) about unsupported fields):
+This snippet simplifies the mark-up for most Gravity Forms fields ([see notes in the description above](#description) about unsupported fields):
 
 ```
 add_filter( 'gfpdf_field_html_value', function( $html, $value, $show_label, $label, $field, $form, $entry, $class ) {
@@ -80,7 +80,7 @@ add_filter( 'gfpdf_field_html_value', function( $html, $value, $show_label, $lab
 }, 10, 8 );
 ```
 
-If you wanted to restrict this to a particular Gravity Form you could use this snippet:
+If you wanted to restrict this to a particular Gravity Forms you could use this snippet:
 
 ```
 add_filter( 'gfpdf_field_html_value', function( $html, $value, $show_label, $label, $field, $form, $entry, $class ) {
