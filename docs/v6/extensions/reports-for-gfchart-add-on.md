@@ -367,7 +367,7 @@ The ability to get a report emailed to you on a regular schedule is an important
 1. In your WordPress Admin area, navigate to *Settings -> General* and confirm your **Timezone** setting is configured correctly.
 
 1. Create a new Gravity Form specifically for your scheduled reports. Since all the data is pulled from the [configured GFChart graphs and calculations](#setup-gfchart), your form doesn't need to capture any information of importance. However, Gravity Forms won't allow you to submit a new entry unless some data is saved, so add a Single Line Text field to your form – the field label doesn't matter. 
-![A basic Gravity Form with one Single Line Text field](https://resources.gravitypdf.com/uploads/2021/04/v6-Scheduled-Report-Basic-Form.png)
+![A basic Gravity Form with one Single Line Text field](https://resources.gravitypdf.com/uploads/2021/04/v6-Scheduled-Report-Form.png)
 
 1. [Create a Notification (or Notifications) that will be emailed on your schedule](https://docs.gravityforms.com/configuring-notifications-in-gravity-forms/).
 

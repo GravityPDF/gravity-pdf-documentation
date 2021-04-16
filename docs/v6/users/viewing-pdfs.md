@@ -12,11 +12,11 @@ If you have no entries for your form, you'll first need to create one before you
 
 ## Entry List 
 
-![The Gravity Forms Entry List page with View PDF link](https://resources.gravitypdf.com/uploads/2021/03/v6-Entry-List-Single-PDF.png)
+![The Gravity Forms Entry List page with View PDF link](https://resources.gravitypdf.com/uploads/2021/04/v6-View-Single-PDF.png)
 
 A _View PDF_ or _Download PDF_ link is added to each entry's quick toolbar. Hover or provide focus to the first cell of an entry row to see the quick toolbar. The action (view or download) for the PDF will be determined by the global [*Entry View*](global-settings.md#entry-view) setting. 
 
-![The Gravity Forms Entry List page with multiple PDF links under the submenu](https://resources.gravitypdf.com/uploads/2021/03/v6-Entry-List-Multiple-PDFs.png) 
+![The Gravity Forms Entry List page with multiple PDF links under the submenu](https://resources.gravitypdf.com/uploads/2021/04/v6-View-Multiple-PDF.png) 
 
 When multiple PDFs are configured on the form, the text will change to _View PDFs_ or _Download PDFs_, and upon hover/focus+enter a submenu will be shown that allows you to select one of the PDFs. 
 

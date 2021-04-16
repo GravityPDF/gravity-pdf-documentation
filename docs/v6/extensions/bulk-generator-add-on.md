@@ -38,7 +38,7 @@ The `Download PDF` option will only be listed in the Bulk Action select box [if 
 
 ### Bulk Generator 
 
-![Initialising a Bulk Generator action from the Entry List page](https://resources.gravitypdf.com/uploads/2021/04/v6-Bulk-Generator-Download-PDF.png)
+![Initialising a Bulk Generator action from the Entry List page](https://resources.gravitypdf.com/uploads/2021/04/v6-Bulk-Download-PDFs.png)
 
 Once you've picked your entries, selected the *Download PDF* Bulk Action option and clicked the **Apply** button. A new window will appear to take you through the rest of the process.
 

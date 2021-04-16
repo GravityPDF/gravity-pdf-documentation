@@ -33,7 +33,7 @@ If your browser auto-extracts zip files when downloaded, you'll need to temporar
 6.  To enable one-click updates, locate the newly-installed plugin in the plugins list and follow the "Register your copy of *PLUGIN\_NAME*" link.
 
 7.  On the page that loads, enter your license key (found in your Receipt email) and save. A success or error message will be displayed next to the license key to signify how the registration went.
-    ![Registering plugin for one-click updates](https://resources.gravitypdf.com/uploads/2021/04/v6-Plugin-Licensing.png)
+    ![Registering plugin for one-click updates](https://resources.gravitypdf.com/uploads/2021/04/v6-Plugin-License.png)
 
 ## One Click Updates 
 

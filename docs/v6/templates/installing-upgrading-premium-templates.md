@@ -33,7 +33,7 @@ If your browser auto-extracts zip files when downloaded, **you'll need to tempor
 2.  Login to your WordPress admin area and [locate the form PDF settings by following these instructions](../users/setup-pdf.md#locating-pdf-settings).
 
 3.  You should now be on the *Add PDF Settings Page* and will see an option under the *General* section called *Template* – the option includes a dropdown of all your installed templates, and a button labelled *Manage*. Select the button to open the *PDF Template Manager*.
-    ![Access the Template Manager through the Manage button](https://resources.gravitypdf.com/uploads/2021/04/v6-Manage-PDF-Templates-1.png)
+    ![Access the Template Manager through the Manage button](https://resources.gravitypdf.com/uploads/2021/04/v6-Manage-PDF-Template.png)
 
 4.  A new window will open, showing a graphical view of all your installed PDF templates. Scroll to the bottom of the window until you see a box with the text *Add New Template*. Either drag and drop the zip file you downloaded during step 1 into this box, or click the box and locate the zip file in the *File Upload* window that appears. 
 ![Drag and drop your purchase into the install section of the PDF Template Manager](https://resources.gravitypdf.com/uploads/2017/03/installing.png)
@@ -43,7 +43,7 @@ If your browser auto-extracts zip files when downloaded, **you'll need to tempor
 6.  Fill in the required Name and Filename fields, then go through the other available settings and adjust as needed..
 
 7.  Click the *Add PDF* button when you're done! 
-![The Template section is where you customise your PDF](https://resources.gravitypdf.com/uploads/2021/04/v6-Template-Settings-e1617680528567.png)
+![The Template section is where you customise your PDF](https://resources.gravitypdf.com/uploads/2021/04/v6-PDF-Template-Settings.png)
 
 8.  Finally, [view your PDF from the entries list page](../users/viewing-pdfs.md#entry-list) by hovering over an entry and selecting the *View PDF* link. If the list is empty, you'll need to submit an entry first.
 
