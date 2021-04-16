@@ -33,7 +33,7 @@ You can easily add a PDF download link to Gravity Forms [Confirmations](https://
 
 ### Using the Shortcode 
 
-![A "Download PDF" column on the PDF list](https://resources.gravitypdf.com/uploads/2021/03/v6-Download-PDF-Column.png) 
+![A "Download PDF" column on the PDF list](https://resources.gravitypdf.com/uploads/2021/04/v6-PDF-Download-Column.png) 
 
 A *Download Shortcode* column can be found on the [PDF form list](managing-pdfs.md#download-shortcode) page, which includes each PDF's shortcode. Just copy and paste the shortcode sample to your confirmation or notification and click save. The default behaviour is to generate a download link to the PDF with the text `Download PDF`. Simple!
 

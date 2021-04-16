@@ -15,7 +15,7 @@ Creating a PDF for individual Gravity Forms is similar to creating Notifications
 
 ## Locating the PDF Settings 
 
-![PDF Form Settings List](https://resources.gravitypdf.com/uploads/2021/03/v6-PDF-Settings.png) 
+![PDF Form Settings List](https://resources.gravitypdf.com/uploads/2021/04/v6-PDF-Settings-Form.png) 
 
 The PDF settings for an individual form can be accessed by following these steps:
 

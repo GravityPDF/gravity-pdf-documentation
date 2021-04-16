@@ -14,7 +14,7 @@ When you begin taking advantage of [conditional logic](setup-pdf.md#conditional-
 
 ## How to I find the PDF List page
 
-![PDF Form Settings List](https://resources.gravitypdf.com/uploads/2021/03/v6-PDF-Settings.png)
+![PDF Form Settings List](https://resources.gravitypdf.com/uploads/2021/04/v6-GPDF-Settings.png)
 
 The PDF settings for an individual form can be accessed by following these steps:
 
@@ -24,7 +24,7 @@ The PDF settings for an individual form can be accessed by following these steps
 
 ## List Columns 
 
-![The list column names](https://resources.gravitypdf.com/uploads/2021/03/v6-Column-List-e1617150263308.png) 
+![The list column names](https://resources.gravitypdf.com/uploads/2021/04/v6-List-Columns.png) 
 
 The PDF list contains four columns which provide an overview of the PDFs currently configured for your Gravity Form. These include:
 
@@ -63,13 +63,13 @@ Click a PDFs *Edit* action to modify an existing PDF configuration. [See our Set
 
 ### Activate / Deactivate PDFs 
 
-![Active and deactivated toggles](https://resources.gravitypdf.com/uploads/2021/03/v6-Toggles.png) 
+![Active and deactivated toggles](https://resources.gravitypdf.com/uploads/2021/04/v6-Toggle-PDF-On-Off.png) 
 
 PDFs can be **completely disabled** by using the active/inactive toggle – located to the left of the _Label_ column. Once a PDF has been set to inactive, users and administrators will no longer be able to access the document. The PDF will not be attached to email notifications, and its shortcode/mergetag won't generate a link.
 
 ### Duplicate 
 
-![The UI shown when duplicating PDFs](https://resources.gravitypdf.com/uploads/2021/03/v6-Duplicates.png) 
+![The UI shown when duplicating PDFs](https://resources.gravitypdf.com/uploads/2021/04/v6-Duplicate-PDF.png) 
 
 You can duplicate an existing PDF configuration by clicking the *Duplicate* action. This action will happen in the background without a page reload. The newly-duplicated PDF will have the label appended with "(copy)" and be inactive by default.
 

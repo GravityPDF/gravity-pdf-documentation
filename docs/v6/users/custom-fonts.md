@@ -18,6 +18,8 @@ The Font Manager will only display custom fonts you've installed, and doesn't li
 
 ## Open the Font Manager
 
+![Manage Font via Global PDF Settings page](https://resources.gravitypdf.com/uploads/2021/04/v6-Open-Font-Manager.png)
+
 You can access the Font Manager from the Global PDF Settings page via the [Default Font setting](global-settings.md#default-font-type), or [on the Tools tab](global-settings.md#fonts). You'll also find it when [configuring a PDF on a form](setup-pdf.md#font); just look for the *Manage* button that will appear next to the font dropdown box.
 
 The manager is split into two panes. On the left is the list of installed custom fonts, and on the right is where you add a new font, or update an existing font.
