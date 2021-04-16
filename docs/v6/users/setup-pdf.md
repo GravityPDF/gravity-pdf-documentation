@@ -219,10 +219,6 @@ Do not rely on privileges to restrict what a user can do with the PDF, as they a
 ### Image DPI 
 * Adjust the image DPI (Dots Per Inch). By default this is set to 96. If professionally printing you should set this to *300* and change the [*Format*](#format) to *PDF/X-1a*.
 
-:::info
-The _Always Save PDF_ setting has been removed from the UI. As the sole reason for this setting was to allow developers to use [the `gfpdf_post_save_pdf` action](../developers/actions/gfpdf_post_save_pdf.md), we now automatically enable this functionality when the action is hooked into. 
-:::
-
 ### Enable Public Access 
 * Enabling public access to the PDF will **disable all security protocols** and give anonymous users access to the PDF. This means anyone worldwide can view the PDF document for all your form's entries. 
 * For most users, the [standard security measures](pdf-security.md) will be adequate, and public access should remain disabled.
@@ -233,3 +229,7 @@ The _Always Save PDF_ setting has been removed from the UI. As the sole reason f
 * This option defaults to the [global Default Owner Restrictions](global-settings.md#default-owner-restrictions) value, but you have the option to override that behaviour on a per-PDF basis.
 * Logged-in users who have one of the capabilities enabled in the [User Restriction](global-settings.md#user-restriction) setting will still be able to access the PDF
 * [Signed PDF URLs](@TODO) will ignore this setting.
+
+:::info
+The _Always Save PDF_ setting has been removed from the UI. As the sole reason for this setting was to allow developers to use [the `gfpdf_post_save_pdf` action](../developers/actions/gfpdf_post_save_pdf.md), we now automatically enable this functionality when the action is hooked into.
+:::

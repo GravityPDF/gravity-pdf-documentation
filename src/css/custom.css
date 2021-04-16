@@ -61,6 +61,10 @@ article .markdown a {
   text-decoration: underline;
 }
 
+article .markdown img {
+  display: block;
+}
+
 /* Caption */
 img + em {
   font-size: 0.9rem;

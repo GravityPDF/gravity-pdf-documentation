@@ -5,7 +5,6 @@ description: "Discover why Core / Universal templates may not display fields in 
 ---
 
 ![Gravity PDF Three Column Layout Support using CSS Ready Classes](https://resources.gravitypdf.com/uploads/2016/05/three-column-layout.png)
-_Gravity PDF Three Column Layout Support using CSS Ready Classes_
 
 ## Drag and Drop
 
