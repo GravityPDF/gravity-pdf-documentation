@@ -186,7 +186,7 @@ The HTML mark-up used on all Gravity PDF pages in the WordPress Admin area has b
 
 ### Removed Files
 
-The following files have been removed from Gravity PDF:
+The following files have been removed from Gravity PDF and may affect developers who've manually included functionality from them:
 
 ```text 
 bower_components/backbone.modelbinder/Backbone.ModelBinder.min.js
@@ -228,7 +228,7 @@ src/assets/js/react/sagas/help.js
 
 ### Removed Class Methods
 
-The following public class methods have been removed from Gravity PDF:
+The following public class methods have been removed from Gravity PDF and may affect developers who've used them in their custom code:
 
 ```text
 Controller_Settings::process_tool_tab_actions()
@@ -257,7 +257,7 @@ View_Settings::system_status();
 
 ### Modified Class Method Signatures
 
-The following class method signatures have been changed:
+The following class method signatures have been changed and may affect developers who've written code that calls them:
 
 ```text
 GPDFAPI::delete_pdf_font( $font_name ) -> GPDFAPI::delete_pdf_font( $font_id )
