@@ -100,7 +100,6 @@ add_action( 'gfpdf_post_save_pdf', function( $pdf_path, $filename, $settings, $e
 If you don't want to run the action when the Previewer add-on is triggered, you can skip over it with the following:
 
 ```
-```
 add_action( 'gfpdf_post_save_pdf', function( $pdf_path, $filename, $settings, $entry, $form ) {
 
     /* Don't copy the PDF when the PDF Previewer is being used */
@@ -126,7 +125,6 @@ add_action( 'gfpdf_post_save_pdf', function( $pdf_path, $filename, $settings, $e
 	}
 
 }, 10, 5 );
-```
 ```
 
 ## Source Code 

@@ -133,47 +133,145 @@ Modifiers can also be used together, in any order:
 
 [The powerful Webhooks Add-On is now supported by Gravity PDF](webhooks-support.md), so you can send your PDF URLs to external services. This works really nicely with the new PDF merge tag modifiers feature, so that you've greater control over what kind of PDF URL you want to include with the webhook.
 
-## Breaking Changes / Removed Features
+## Breaking Changes / Removed Components
 
 Along with the bump in the minimum software requirements, below is a list of changes to the Gravity PDF plugin that may affect some users.
 
 ### Always Save PDF
 
+Because Gravity PDF [doesn't permanently store PDFs on disk](pdf-security.md#pdfs-and-the-file-system), this has always been [a confusion setting for users](../../v5/user-setup-pdf.md#always-save-pdf). The reason it existed was so the `gfpdf_post_save_pdf` hook would always be triggered on form submission, even if no notifications were configured. 
+
+We've removed the setting from the UI entirely, and will determine whether to temporarily save the PDF to disk based on if an action is hooked into `gfpdf_post_save_pdf`.
+
 ### Setup Template Tool
 
-The Setup Template tool has been removed from the [PDF Tools page](global-settings.md#tools-tab). This feature was used by developers to automatically copy all Core templates to the [PDF Working Directory](../developers/first-custom-pdf.md#pdf-working-directory), so they could be modified.
+The [Setup Template tool](../../v5/user-global-settings.md#setup-custom-templates) has been removed from Gravity PDF (previously located on the PDF Tools page). This feature was used by developers to automatically copy all Core templates to the [PDF Working Directory](../developers/first-custom-pdf.md#pdf-working-directory) so they could be modified, and it [was the recommended first step for creating a custom PDF template](../../v5/developer-first-custom-pdf.md#preparing-the-infrastructure). The problem with this is most (if not all) the files copied over never got changed, and when an update is made to the Core templates you're stuck with an outdated version and need to manually intervene (as is the case with [Drag and Drop Column support for this release](#core-templates)).
 
-Instead, [developers should manually copy the individual Core template(s)](../developers/template-hierarchy.md#how-do-i-modify-core-templates) they plan to modify using an (S)FTP client or a web hosts File Manager.
+Going forward, [developers will need to manually copy the individual Core template(s)](../developers/template-hierarchy.md#how-do-i-modify-core-templates) they plan to modify using an (S)FTP client, or a hosts File Manager (exactly like theme template overrides). A warning prompt has been added [to Gravity PDF's System Status section](system-status.md) that'll inform you if you've an outdated template override that needs to be manually updated.
 
 ### Removed Legacy CSS File
 
-The v3 legacy CSS file `/initialisation/template.css` has been removed from the plugin. This file was referenced by v3 templates, which [were deprecated in v4 and users were recommended to swap to one of the Core templates](../../v4/v3-to-v4-migration.md#upgrading-to-gravity-pdf-v4).
+The v3 legacy CSS file `/initialisation/template.css` has been removed from the plugin. This file was referenced by v3 templates, which [were deprecated in v4 and users were encouraged to upgrade to one of the Core templates](../../v4/v3-to-v4-migration.md#upgrading-to-gravity-pdf-v4). If you are still using one of the v3 templates, now is the time to make the switch. If your custom template is loading/referencing `/initialisation/template.css` you should remove that line, or, if you rely on those styles, [add them directly in your template file](https://github.com/GravityPDF/gravity-pdf/blob/3.7.8/initialisation/template.css).
 
 ### Removed Legacy v3 Migration Code
 
-The v3 migration code has been removed from Gravity PDF. If you are still running Gravity PDF v3, you should use the [WP Rollback plugin](https://wordpress.org/plugins/wp-rollback/) to roll forward through major versions when following the respective migration guides ([v4](../../v4/v3-to-v4-migration.md) and [v5](../../v5/v4-to-v5-migration.md)).
+The v3 to v4 migration code has been removed from Gravity PDF. If you are one of the few still running Gravity PDF v3 and want to upgrade, you should use the [WP Rollback plugin](https://wordpress.org/plugins/wp-rollback/) to roll forward through each major version and follow the respective migration guides ([v4](../../v4/v3-to-v4-migration.md) and [v5](../../v5/v4-to-v5-migration.md)).
 
-### Welcome Screen
+### Changed Namespace for Composer Packages
 
-### Prefixed Composer Packages
+Gravity PDF includes a number of third party libraries for its functionality, which [is managed through Composer](https://getcomposer.org/doc/00-intro.md). A problem with this approach is when another plugin includes a different version of the same library, and this can cause unexpected bugs. To prevent this, we've moved all Composer-managed libraries to a new namespace. For most users this won't cause any problems when you upgrade (even if you are using a custom template).
 
-#### Setasign FPDI
+If you've developed custom functionality for Gravity PDF and needed to directly access any of the following namespaced classes, you'll need to update your code:
+
+* `\League\Uri` -> `\GFPDF_Vendor\League\Uri`
+* `\Masterminds` -> `\GFPDF_Vendor\Masterminds`
+* `\Monolog` -> `\GFPDF_Vendor\Monolog`
+* `\Mpdf` -> `\GFPDF_Vendor\Mpdf`
+* `\DeepCopy` -> `\GFPDF_Vendor\DeepCopy`
+* `\QueryPath` -> `\GFPDF_Vendor\QueryPath`
+* `qp()` -> `\GFPDF_Vendor\qp()`
+* `htmlqp()` -> `\GFPDF_Vendor\htmlqp()`
+* `html5qp()` -> `\GFPDF_Vendor\html5qp()`
+* `\setasign\Fpdi` -> `\GFPDF_Vendor\setasign\Fpdi`
+* `\Spatie\UrlSigner` -> `\GFPDF_Vendor\Spatie\UrlSigner`
+* `\Upload` -> `\GFPDF_Vendor\Upload`
+
+#### Setasign PDF-Parser
+
+If you've [integrated the commercial FPDI PDF-Parser from Setasign](https://www.setasign.com/products/fpdi-pdf-parser/details/) with Gravity PDF, [you'll need to update your code](../developers/setasign-fpdi-pdf-parser.md) to support Gravity PDF's new Composer namespaces.
 
 ### Admin Pages
 
-The HTML mark-up used on all Gravity PDF pages in the WordPress Admin area has been updated to match Gravity Forms (as much as possible). If you've written custom CSS to change the look and feel of one of these pages, you'll likely need to update your CSS selectors.
+The HTML mark-up used on all Gravity PDF pages in the WordPress Admin area has been updated to match Gravity Forms (as much as possible). If you've written custom CSS to change the look and feel of one of these pages, you'll likely need to update your code to support this new structure.
 
 ### Removed Files
 
 The following files have been removed from Gravity PDF:
 
-### Removed Functions/Methods
+```text 
+bower_components/backbone.modelbinder/Backbone.ModelBinder.min.js
+src/Controller/Controller_Welcome_Screen.php
+src/Helper/Helper_Migration.php
+src/Model/Model_Welcome_Screen.php
+src/View/View_Save_Core_Fonts.php
+src/View/View_Welcome_Screen.php
+src/View/html/Actions/begin_multisite_migration.php
+src/View/html/Actions/migration.php
+src/View/html/Settings/license.php
+src/View/html/Settings/system_status.php
+src/View/html/Settings/uninstaller.php
+src/View/html/Welcome/more.php
+src/View/html/Welcome/welcome.php
+src/assets/css/gfpdf-styles.css
+src/assets/js/admin/helper/resizeDialogIfNeeded.js
+src/assets/js/admin/helper/wpDialog.js
+src/assets/js/admin/settings/common/setupSelectBoxes.js
+src/assets/js/admin/settings/common/showTooltips.js
+src/assets/js/admin/settings/global/runPDFAccessCheck.js
+src/assets/js/admin/settings/global/setupAdvancedOptions.js
+src/assets/js/admin/settings/global/tools/setupToolsFontsDialog.js
+src/assets/js/admin/settings/global/tools/setupToolsTemplateInstallerDialog.js
+src/assets/js/admin/settings/global/tools/setupToolsUninstallDialog.js
+src/assets/js/admin/settings/global/toolsSettings.js
+src/assets/js/admin/settings/pdf/setupPdfTabs.js
+src/assets/js/legacy/gfpdf-backbone.js
+src/assets/js/legacy/gfpdf-migration.js
+src/assets/js/react/actions/help.js
+src/assets/js/react/components/CoreFonts/CoreFontButton.js
+src/assets/js/react/components/Help/DisplayError.js
+src/assets/js/react/components/Help/DisplayResultEmpty.js
+src/assets/js/react/components/Help/DisplayResultItem.js
+src/assets/js/react/components/Template/TemplateCloseDialog.js
+src/assets/js/react/reducers/helpReducer.js
+src/assets/js/react/sagas/help.js
+```
 
-The following functions/class methods have been removed from Gravity PDF:
+### Removed Class Methods
+
+The following public class methods have been removed from Gravity PDF:
+
+```text
+Controller_Settings::process_tool_tab_actions()
+Controller_Settings::allow_font_uploads()
+Controller_Settings::validate_font_uploads()
+Model_Actions::migration_condition()
+Model_Actions::begin_migration()
+Model_Actions::migrate_v3()
+Model_Actions::handle_multisite_migration()
+Model_Actions::ajax_multisite_v3_migration()
+Model_Settings::install_templates()
+Model_Settings::remove_font_file() // Use Use GPDFAPI::delete_pdf_font()
+Model_Settings::is_font_name_valid() // Moved to Model_Custom_Fonts::check_font_name_valid()
+Model_Settings::if_font_name_unique()
+Model_Settings::install_fonts() // Moved to Model_Custom_Fonts::add_font()
+Model_Settings::save_font() // Use GPDFAPI::add_pdf_font()
+Model_Settings::delete_font() // Use GPDFAPI::delete_pdf_font()
+Model_Settings::process_font() // Use GPDFAPI::add_pdf_font()
+Model_Settings::get_font_id_by_name() // Font names no longer linked to IDs.
+Model_Settings::check_tmp_pdf_security()
+View_Actions::migration()
+View_Save_Core_Fonts::core_fonts_setting() 
+View_Settings::get_avaliable_tabs(); // Renamed View_Settings::get_available_tabs()
+View_Settings::system_status();
+```
+
+### Modified Class Method Signatures
+
+The following class method signatures have been changed:
+
+```text
+GPDFAPI::delete_pdf_font( $font_name ) -> GPDFAPI::delete_pdf_font( $font_id )
+Controller_Save_Core_Fonts::__construct( Helper_Abstract_View $view, LoggerInterface $log, Helper_Data $data, Helper_Misc $misc ) -> Controller_Save_Core_Fonts::__construct( LoggerInterface $log, Helper_Data $data, Helper_Misc $misc )
+Controller_System_Report::__construct( $allow_url_fopen ) -> Controller_System_Report::__construct( Helper_Abstract_Model $model, Helper_Abstract_View $view ) 
+Model_Install::__construct( Helper_Abstract_Form $gform, LoggerInterface $log, Helper_Data $data, Helper_Misc $misc, Helper_Notices $notices, Helper_Pdf_Queue $queue ) -> Model_Install::__construct( LoggerInterface $log, Helper_Data $data, Helper_Misc $misc, Helper_Notices $notices, Helper_Pdf_Queue $queue, Model_Uninstall $uninstall )
+Model_Mergetags::__construct( Helper_Abstract_Options $options, Model_PDF $pdf, LoggerInterface $log, Helper_Misc $misc ) -> Model_Mergetags::__construct( Helper_Abstract_Options $options, Model_PDF $pdf, LoggerInterface $log, Helper_Misc $misc, Helper_Interface_Url_Signer $url_signer )
+```
 
 ## Downgrade Plugin
 
-If something broke during the v5 update all is not lost and you can rollback to v4 without much difficulty. First, if you are experiencing the "white screen of death" [please follow these instructions](white-screen-of-death.md) to help resolve the problem. If you still have full control over your website, but there's some compatibility issues with v5, we recommend [installing the WP Rollback plugin](https://wordpress.org/plugins/wp-rollback/). With little effort on your behalf you can downgrade from v5 to v4. Once installed, just click the 1.Rollback1. link on the Gravity PDF row on the plugin's page, then select the latest stable release of v4 and rollback. ![Rolling back Gravity PDF to v4](https://resources.gravitypdf.com/uploads/2018/08/rollback-v4.png)
+If something broke during the v6 update all is not lost and you can rollback to v5 without much difficulty. First, if you are experiencing the "white screen of death" [please follow these instructions](white-screen-of-death.md) to help resolve the problem. If you still have full control over your website, but there's some compatibility issues with v6, we recommend [installing the WP Rollback plugin](https://wordpress.org/plugins/wp-rollback/). With little effort on your behalf you can downgrade from v6 to v5. Once installed, just click the *Rollback8 link on the Gravity PDF row on the plugin's page, then select the latest stable release of v4 and rollback. 
+
+![Rolling back Gravity PDF to v5](https://resources.gravitypdf.com/uploads/2018/08/rollback-v4.png)
 
 ## Help and Support 
 
