@@ -16,6 +16,10 @@ In the Form Editor you to easily build advanced form layouts visually. Fields ca
 * Section
 * Hidden
 
+:::caution
+If you upgraded from Gravity PDF v5 or earlier, had previously run the [Setup Custom Template tool](../../v5/user-global-settings.md#setup-custom-templates), and didn't complete the [v5 to v6 migration steps](@TODO), the Core templates may be outdated and won't support drag-and-drop columns. You can check if this affects you by viewing the [Gravity Forms System Status page](@TODO).
+:::
+
 ![Gravity Forms Form Editor with Column Support](https://resources.gravitypdf.com/uploads/2021/04/v6-Gravity-Forms-Column-Support-1.png)
 
 You can create up to four columns per row in the Form Editor. The default output is for each column is to be of equal width, but you can resize individual columns to suit your needs eg. `25% / 25% / 50%` or `20% / 80%`.
@@ -28,6 +32,6 @@ You don't need each column to equal 100% of the row width. You could have two co
 Prior to Gravity Forms 2.5 columns were handled using CSS Ready Classes. They are still [supported in PDFs](css-ready-classes.md), but **only when the [form is in Legacy Mode](https://docs.gravityforms.com/guide-to-gravity-forms-2-5-for-theme-developers/#legacy-mode)**.
 :::
 
-:::caution
-If you upgraded from Gravity PDF v5 or earlier, had previously run the [Setup Custom Template tool](../../v5/user-global-settings.md#setup-custom-templates), and didn't complete the [v5 to v6 migration steps](@TODO), the Core templates may be outdated and won't support drag-and-drop columns. You can check if this affects you by viewing the [Gravity Forms System Status page](@TODO).
-:::
+## Gravity Wiz / Gravity Perks Nested Forms Support
+
+Gravity PDF supports columns when rendering [Nested Forms fields](https://gravitywiz.com/documentation/gravity-forms-nested-forms/?ref=78) in Core/Universal templates. Provided you've taken advantage of Drag and Drop Columns when building the Nested Form, this feature is enabled automatically in your PDF. 

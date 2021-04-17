@@ -1,16 +1,16 @@
 ---
-title: "Webhook Support"
-sidebar_label: "Webhook Support"
-description: "Gravity PDF fully integrates with the Webhook add-on so you can include the PDF URL(s) with your API calls."
+title: "Webhooks Add-On Support"
+sidebar_label: "Webhooks Support"
+description: "Gravity PDF fully integrates with Gravity Forms Webhooks add-on, so you can include the PDF URL(s) with your API calls."
 ---
 
 ![Gravity Forms Webhooks Add-On](https://resources.gravitypdf.com/uploads/2021/04/v6-GF-Webhook-Add-On.png)
 
-[Gravity Forms Webhook add-on](https://www.gravityforms.com/add-ons/webhooks/) allows you to configure and send form data to external APIs. Gravity PDF fully integrates with the Webhook add-on so you can include the PDF URL(s) with your API calls.
+[Gravity Forms Webhooks add-on](https://www.gravityforms.com/add-ons/webhooks/) allows you to configure and send form data to external APIs. Gravity PDF fully integrates with the Webhooks Add-On so you can include the PDF URL(s) with your API calls.
 
 ## Request Body
 
-[A key setting of the Webhook add-on is _Request Body_](https://docs.gravityforms.com/triggering-webhooks-form-submissions/#request-body), which is how you refine what data is sent with a request. You've the option to include all fields or select individual fields, and Gravity PDF works with both options.
+[A key setting of the Webhooks add-on is _Request Body_](https://docs.gravityforms.com/triggering-webhooks-form-submissions/#request-body), which is how you refine what data is sent with a request. You've the option to include all fields or select individual fields, and Gravity PDF works with both options.
 
 ## All Fields
 

@@ -6,7 +6,7 @@ description: "Gravity PDF is pre-installed with over 30 different fonts which su
 
 ![Font Manager](https://resources.gravitypdf.com/uploads/2021/03/v6-Font-Manager.png) 
 
-Use the Font Manager to add, update, search, select, and delete custom fonts that can be used in your Gravity PDF documents. While Gravity PDF [ships with a variety of fonts that support most languages](core-pdf-fonts.md), installing and using custom fonts allow you to match your branding, and enhance the overall look and feel of your PDFs. 
+Use the Font Manager to add, update, search, select, and delete custom fonts that can be used in your Gravity PDF documents. While Gravity PDF [ships with a variety of fonts that support most languages](core-pdf-fonts.md), installing and using custom fonts allow you to match your branding, and enhance the overall look and feel of your PDFs.
 
 :::info
 Looking for open-source fonts to use with Gravity PDF? [Google Fonts has a large directory of free fonts available for commercial use](https://fonts.google.com).

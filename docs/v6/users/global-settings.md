@@ -74,7 +74,7 @@ Below is the list of settings available in the General tab, with a brief descrip
 
 The security settings are configured with sane defaults and, in most cases, you won't need to modify this behaviour. The [security documentation page](pdf-security.md) focuses on the finer points of the plugin's security protocols, and is worth a read before making any changes to this section.
 
-The security settings are hidden by default and can be shown by clicking the _Security_ label.
+The security settings are hidden by default and can be shown by clicking the _Security_ label or associated toggle button.
 
 #### Logged Out Timeout
 * When a logged out user attempts to view a PDF, the plugin will try and match their current IP address against the one saved with the Gravity Forms entry. If they match, they get access. However, this method isn't a secure long-term option [because IP addresses can change](http://whatismyipaddress.com/keeps-changing). To prevent unauthorised access, we implemented a timeout feature. After X amount of time, the user no longer has access to the generated PDF.

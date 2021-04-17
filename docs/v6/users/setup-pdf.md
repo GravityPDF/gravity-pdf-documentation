@@ -13,6 +13,8 @@ Creating a PDF for individual Gravity Forms is similar to creating Notifications
 1. **Template** - Template-specific settings: different templates can have different options
 1. **Advanced** - Advanced settings like document format and security options
 
+To aid you in managing your PDF settings, an Add/Update button is included below every section, and you can collapse/hide sections by selecting the section title or associated toggle.
+
 ## Locating the PDF Settings 
 
 ![PDF Form Settings List](https://resources.gravitypdf.com/uploads/2021/04/v6-PDF-Settings-Form.png) 

@@ -199,6 +199,15 @@ All modifiers are optional, and should be included after the `[id]`. They are al
 * _Example:_ `{Report:pdf:6063bd0362dda:signed,2 weeks}`
 * _Example:_ `{Report:pdf:6063bd0362dda:signed,1 month}`
 
+##### Multiple Modifiers
+
+Include multiple modifiers (in any order):
+
+* _Example:_ `{Report:pdf:6063bd0362dda:signed:download}`
+* _Example:_ `{Report:pdf:6063bd0362dda:signed:print:download}`
+* _Example:_ `{Report:pdf:6063bd0362dda:print:signed,5 minutes}`
+* _Example:_ `{Report:pdf:6063bd0362dda:download:print:signed,2 weeks}`
+
 ### Common Problems 
 
 If a URL isn't displayed when the PDF merge tag is processed it's likely the PDF doesn't exist for the current form, it has been deactivated, or the [conditional logic doesn't pass](setup-pdf.md#conditional-logic). To determine the exact reason it wasn't generated, enable [Gravity Forms logging](https://docs.gravityforms.com/logging-and-debugging/) and then replicate the issue. In the Gravity PDF log file search for `PDF Mergetag is not valid` and review the logged information.
