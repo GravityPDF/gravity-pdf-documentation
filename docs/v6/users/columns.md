@@ -17,7 +17,7 @@ In the Form Editor you to easily build advanced form layouts visually. Fields ca
 * Hidden
 
 :::caution
-If you upgraded from Gravity PDF v5 or earlier, had previously run the [Setup Custom Template tool](../../v5/user-global-settings.md#setup-custom-templates), and didn't complete the [v5 to v6 migration steps](@TODO), the Core templates may be outdated and won't support drag-and-drop columns. You can check if this affects you by viewing the [Gravity Forms System Status page](@TODO).
+If you upgraded from Gravity PDF v5 or earlier, had previously run the [Setup Custom Template tool](../../v5/user-global-settings.md#setup-custom-templates), and didn't complete the [v5 to v6 migration steps](v5-to-v6-migration.md#drag-and-drop-columns), the Core templates may be outdated and won't support drag-and-drop columns. You can check if this affects you by viewing the [Gravity Forms System Status page](system-status.md).
 :::
 
 ![Gravity Forms Form Editor with Column Support](https://resources.gravitypdf.com/uploads/2021/04/v6-Gravity-Forms-Column-Support-1.png)

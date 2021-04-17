@@ -158,25 +158,25 @@ Below is a description of the Core template settings that all **four free templa
 * Add a header to your PDF document using the WordPress Classic Editor. You can use the media library to include a simple logo. Or add a more robust three-column table ([try this code snippet](https://gist.github.com/jakejackson1/997b5dedf0a5e665e8ef)).
 * Gravity Forms merge tags can be used in the header.
 * The special tags `{PAGENO}` – which displays the current page number – and `{nbpg}` – which displays the total number of pages in the document – can be used in the header.
-* Images will have their height restricted, so they don't take up too much of the page. [Learn how to override this behaviour](@TODO).
+* Images will have their height restricted, so they don't take up too much of the page. [Learn how to override this behaviour](adjust-size-of-header-footer-images.md).
 
 ### First Page Header 
 * When enabled, you can add a different header to the first page of your PDF document.
 * Gravity Forms merge tags can be used in the header.
 * The special tags `{PAGENO}` – which displays the current page number – and `{nbpg}` – which displays the total number of pages in the document – can be used in the header.
-* Images will have their height restricted, so they don't take up too much of the page. [Learn how to override this behaviour](@TODO).
+* Images will have their height restricted, so they don't take up too much of the page. [Learn how to override this behaviour](adjust-size-of-header-footer-images.md).
 
 ### Footer 
 * Add a footer to your PDF document using the WordPress Classic Editor. You can use the media library to include images. Or add a more robust three-column table that includes the page number and date ([try this code snippet](https://gist.github.com/jakejackson1/e6179a96cd97ef0a8457)).
 * Gravity Forms merge tags can be used in the footer.
 * The special tags `{PAGENO}` – which displays the current page number – and `{nbpg}` – which displays the total number of pages in the document – can be used in the footer.
-* Images will have their height restricted, so they don't take up too much of the page. [Learn how to override this behaviour](@TODO).
+* Images will have their height restricted, so they don't take up too much of the page. [Learn how to override this behaviour](adjust-size-of-header-footer-images.md).
 
 ### First Page Footer 
 * When enabled, you can add a different footer to the first page of your PDF document.
 * Gravity Forms merge tags can be used in the footer.
 * The special tags `{PAGENO}` – which displays the current page number – and `{nbpg}` – which displays the total number of pages in the document – can be used in the footer.
-* Images will have their height restricted, so they don't take up too much of the page. [Learn how to override this behaviour](@TODO).
+* Images will have their height restricted, so they don't take up too much of the page. [Learn how to override this behaviour](adjust-size-of-header-footer-images.md).
 
 ## Advanced Section 
 
@@ -224,13 +224,13 @@ Do not rely on privileges to restrict what a user can do with the PDF, as they a
 ### Enable Public Access 
 * Enabling public access to the PDF will **disable all security protocols** and give anonymous users access to the PDF. This means anyone worldwide can view the PDF document for all your form's entries. 
 * For most users, the [standard security measures](pdf-security.md) will be adequate, and public access should remain disabled.
-* A good middleground between the default security and public access [is Signed PDF URLs](@TODO), as it allows anyone with access to the secure signed PDF URL to view the document.
+* A good middleground between the default security and public access [is Signed PDF URLs](shortcodes-and-mergetags.md#before-you-get-started), as it allows anyone with access to the secure signed PDF URL to view the document.
 
 ### Restrict Owner 
 * This option is used to prevent the original entry owner (the person who submitted the form) from viewing the generated PDF.
 * This option defaults to the [global Default Owner Restrictions](global-settings.md#default-owner-restrictions) value, but you have the option to override that behaviour on a per-PDF basis.
 * Logged-in users who have one of the capabilities enabled in the [User Restriction](global-settings.md#user-restriction) setting will still be able to access the PDF
-* [Signed PDF URLs](@TODO) will ignore this setting.
+* [Signed PDF URLs](shortcodes-and-mergetags.md#before-you-get-started) will ignore this setting.
 
 :::info
 The _Always Save PDF_ setting has been removed from the UI. As the sole reason for this setting was to allow developers to use [the `gfpdf_post_save_pdf` action](../developers/actions/gfpdf_post_save_pdf.md), we now automatically enable this functionality when the action is hooked into.

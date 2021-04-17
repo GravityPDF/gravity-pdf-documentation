@@ -18,11 +18,11 @@ The primary reason for Drag and Drop columns not working in PDFs (aside from tho
 
 If it's a Universal template, [login to your GravityPDF.com account](https://gravitypdf.com/account/), download the latest version of that template, and reinstall [via the Template Manager](pdf-template-manager.md#install). If your license has lapsed, you will need to purchase a new one. 
 
-If you're using a Core PDF, your [template overrides](@TODO) are outdated and don't include the new CSS required to support Gravity Forms 2.5 columns. You can double check this in the [Gravity PDF-section of the System Status page](@TODO). The solution is to either:
+If you're using a Core PDF, your [template overrides](../developers/template-hierarchy.md) are outdated and don't include the new CSS required to support Gravity Forms 2.5 columns. You can double check this in the [Gravity PDF-section of the System Status page](system-status.md). The solution is to either:
 
 1. [Delete the template override file via the PDF Template Manager](pdf-template-manager.md#delete). Gravity PDF will then load the new Core template shipped with version 6. **Only use this method if you haven't made any direct modifications to the Core template you are deleting.**
 
-2. Using FTP, or your host's File Manager, modify the Core template override file(s) [in the PDF Working Directory](@TODO) and add in this new CSS: https://github.com/GravityPDF/gravity-pdf/blob/development/src/templates/zadani.php#L49-L97
+2. Using FTP, or your host's File Manager, modify the Core template override file(s) [in the PDF Working Directory](../developers/first-custom-pdf.md#pdf-working-directory) and add in this new CSS: https://github.com/GravityPDF/gravity-pdf/blob/development/src/templates/zadani.php#L49-L97
 
 ## Legacy Mode
 

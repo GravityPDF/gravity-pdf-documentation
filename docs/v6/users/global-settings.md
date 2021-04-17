@@ -88,7 +88,7 @@ The security settings are hidden by default and can be shown by clicking the _Se
 
 #### User Restriction
 * Logged in users who do not have the `gravityforms_view_entries` capability are prevented from accessing any PDF if they aren't the original owner – the owner is who filled in the form entry originally. If you leave the setting untouched only site administrators and network super admins (if running a multisite) can view the generated PDFs. To change this behaviour, you can assign capabilities that other roles have access to. For instance, if you wanted the [*Editor* role](https://codex.wordpress.org/Roles_and_Capabilities#Editor) to have access to all PDFs you could add the `edit_pages` capability. Another option is to use a role editing plugin like [User Role Editor](https://wordpress.org/plugins/user-role-editor/) to give an existing role the `gravityforms_view_entries` capability. Choose the best solution for your use-case.
-* This setting has no effect on PDFs sent as attachments in Gravity Forms notifications or [signed PDFs](@TODO), but does affect the unsigned [Gravity PDF shortcode and mergetags](shortcodes-and-mergetags.md).
+* This setting has no effect on PDFs sent as attachments in Gravity Forms notifications or [signed PDFs](shortcodes-and-mergetags.md#before-you-get-started), but does affect the unsigned [Gravity PDF shortcode and mergetags](shortcodes-and-mergetags.md#shortcode-or-merge-tag).
 * More information about WordPress roles and capabilities [can be found in the WordPress codex](https://codex.wordpress.org/Roles_and_Capabilities).
 
 ## License Tab 
@@ -124,11 +124,11 @@ The tools tab allows you to install/reinstall Core Fonts and manage your custom 
 * Review the [Font Manager documentation](custom-fonts.md) for more in-depth details on managing PDF fonts.
 
 :::note Where is the Setup Custom Templates tool?
-This has been removed from Gravity PDF in favour of developers manually copying Core templates they want to modify to the [PDF Working Directory](@TODO), much like you do with themes. [Read more about overriding templates](@TODO). 
+This has been removed from Gravity PDF in favour of developers manually copying Core templates they want to modify to the [PDF Working Directory](../developers/first-custom-pdf.md#pdf-working-directory), much like you do with themes. [Read more about overriding templates](../developers/template-hierarchy.md). 
 :::
 
 :::info Where is the Uninstaller?
-Gravity PDF's uninstaller has been moved to the [Gravity Forms Uninstall page](@TODO). 
+Gravity PDF's uninstaller has been moved to the [Gravity Forms Uninstall page](uninstall-gravitypdf.md). 
 :::
 
 ## Help Tab 

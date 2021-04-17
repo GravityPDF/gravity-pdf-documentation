@@ -8,8 +8,6 @@ Gravity PDF has the ability to generate and email PDFs in a background process w
 
 https://www.youtube.com/watch?v=BbhVfv2AD0M
 
-@TODO - new video required
-
 Background Processing is also integrated with [Gravity Forms Resend Notification feature](https://docs.gravityforms.com/resend-notifications/) so you can bulk send Notifications with PDF attachments without your server suffering timeout or memory-related problems.
 
 ### Is your Website Compatible?

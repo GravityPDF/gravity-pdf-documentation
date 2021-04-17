@@ -6,7 +6,7 @@ description: "If you need direct access to our Model, View or Controller classes
 
 ## Description 
 
-If you need direct access to our Model, View or Controller classes, this method will allow you to get the original class. This is useful when you want to remove any action or filters we set, or to call a method we don't provide through the API.
+If you need direct access to our Model, View or Controller classes, this method will allow you to get the original class. This is useful when you want to remove any action or filters set, or to call a method not provided through the API.
 
 ## Version 
 
@@ -19,15 +19,13 @@ This method was introduced in Gravity PDF 4.0.
 
 ## Usage 
 
-This snippet will show you how to... @TODO
+This snippet shows you how to remove an action or filter registered by Gravity PDF:
 
 ```
 add_action( 'admin_init', function() {
     if ( class_exists( 'GPDFAPI' ) ) {
-        /* Get the Controller_Settings class so we can remove the  */
-        $controller = GPDFAPI::get_mvc_class( 'Controller_Settings' );
-
-        /* Remove the uninstaller HTML from our tools tab */
+        $model = GPDFAPI::get_mvc_class( 'Model_PDF' );
+        remove_filter( 'gfpdf_pdf_middleware', [ $model, 'middle_public_access' ] );
     }
 } );
 ```
