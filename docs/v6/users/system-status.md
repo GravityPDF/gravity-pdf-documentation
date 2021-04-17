@@ -1,7 +1,7 @@
 ---
 title: "Gravity PDF System Status Information"
 sidebar_label: "System Status"
-description: ""
+description: "Gravity PDF includes environmental details in Gravity Forms System Status page to help with diagnostic and troubleshooting."
 ---
 
 ![Gravity Forms System Status page](https://resources.gravitypdf.com/uploads/2021/04/v6-System-Status-Page.png)
