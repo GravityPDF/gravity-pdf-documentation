@@ -4,7 +4,7 @@ sidebar_label: "Managing PDFs"
 description: "Managing your PDFs and performing actions like activate/deactivate, duplicate and deleting is a breeze – and it all can be done without a page reload!"
 ---
 
-![A look at a form's PDF list](https://resources.gravitypdf.com/uploads/2021/03/v6-PDF-List.png) 
+![A look at a form's PDF list](https://resources.gravitypdf.com/uploads/2021/04/v6-PDF-Settings-PDF-List.png) 
 
 You can configure more than one PDF on a Gravity Forms form, and the _PDF List Page_ is where you go to manage these configurations. You can easily add new PDFs, edit existing ones, temporarily disable, duplicate, or even delete individual PDFs. 
 
@@ -69,7 +69,7 @@ PDFs can be **completely disabled** by using the active/inactive toggle – loca
 
 ### Duplicate 
 
-![The UI shown when duplicating PDFs](https://resources.gravitypdf.com/uploads/2021/04/v6-Duplicate-PDF.png) 
+![The UI shown when duplicating PDFs](https://resources.gravitypdf.com/uploads/2021/04/PDF-Settings-Duplicate-PDF-e1618786535603.png) 
 
 You can duplicate an existing PDF configuration by clicking the *Duplicate* action. This action will happen in the background without a page reload. The newly-duplicated PDF will have the label appended with "(copy)" and be inactive by default.
 

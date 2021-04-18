@@ -50,7 +50,7 @@ Clicking on the font name in the list will open a new pane on the right where yo
 
 ### Deleting
 
-![Delete Font](https://resources.gravitypdf.com/uploads/2021/04/v6-Delete-Font.png)
+![Delete Font](https://resources.gravitypdf.com/uploads/2021/04/v6-PDF-Delete-a-Font.png)
 
 On the right side of the list is a trash icon for each font. This action allows you to delete the font and its associated files. An alert prompt will be displayed, asking you to confirm, before the deletion occurs.
 

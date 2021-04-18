@@ -29,7 +29,7 @@ array (
 
 ## Select Fields
 
-![Select Fields enabled](https://resources.gravitypdf.com/uploads/2021/04/v6-Request-Body-Select-Fields.png)
+![Select Fields enabled](https://resources.gravitypdf.com/uploads/2021/04/v6-Webhooks-Request-Body-Select-Fields-e1618790189623.png)
 
 Gravity Forms will only send the data you configure under the _Field Values_ setting. You can include Gravity PDF URLs by selecting the _Add Custom Value_ option in the Value select box and then adding an appropriate [PDF merge tag](shortcodes-and-mergetags.md#merge-tag). All [merge tag modifiers](shortcodes-and-mergetags.md#available-modifiers) are supported.
 

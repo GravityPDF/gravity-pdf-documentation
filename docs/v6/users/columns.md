@@ -24,7 +24,7 @@ If you upgraded from Gravity PDF v5 or earlier, had previously run the [Setup Cu
 
 You can create up to four columns per row in the Form Editor. The default output is for each column is to be of equal width, but you can resize individual columns to suit your needs eg. `25% / 25% / 50%` or `20% / 80%`.
 
-![Rubix PDF with 100%, 50%, and 25% Column Support](https://resources.gravitypdf.com/uploads/2021/04/v6-Rubix-PDF-with-Column-Support.png)
+![Rubix PDF with 100% column, 20%/80% columns, 25%/25%/50% columns, 50% column, and 25%/25% columns support](https://resources.gravitypdf.com/uploads/2021/04/v6-PDF-Rubix-with-Column-Support.png)
 
 You don't need each column to equal 100% of the row width. You could have two columns only taking up 25% each and then begin a new row. **Bonus:** this works for single column rows too! 
 

@@ -75,7 +75,7 @@ Below is the list of settings available in the General section, with a brief des
 
 ## Appearance Section 
 
-![PDF Form Settings Appearance Section](https://resources.gravitypdf.com/uploads/2021/04/v6-PDF-Appearance-Tab.png) 
+![PDF Form Settings Appearance Section](https://resources.gravitypdf.com/uploads/2021/04/v6-PDF-Settings-Appearance-Tab.png) 
 
 The Appearance section contains fields that control the general look and feel of your PDF. You have control over the paper size and orientation, as well as the font, font size / colour and RTL support.
 
