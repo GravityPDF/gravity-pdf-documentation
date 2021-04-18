@@ -7,7 +7,7 @@ description: "Gravity PDF is fully integrated into Gravity Forms. If you've ever
 ![Gravity PDF Global Settings Page](https://resources.gravitypdf.com/uploads/2021/04/v6-PDF-Global-with-License.png) 
 
 The PDF Global Settings area is where you control a variety of plugin-wide options, can manage templates and fonts, and search our knowledgebase. 
-It integrates seemlessly into Gravity Forms own settings area and can be found by by navigating to `Forms -> Settings -> PDF` in your WordPress admin area. 
+It integrates seemlessly into Gravity Forms own settings area and can be found by navigating to `Forms -> Settings -> PDF` in your WordPress admin area. 
 
 The PDF settings are split into three separate tabs out of the box:
 
@@ -15,18 +15,18 @@ The PDF settings are split into three separate tabs out of the box:
 * [Tools](#tools-tab)
 * [Help](#help-tab)
 
-An additional [_License_ tab](#license-tab) is available if you [purchase and install an extension](https://gravitypdf.com/extension-shop/).
+An additional [_License_ tab](#license-tab) is available if you [purchase and install an extension](https://gravitypdf.com/store/#extensions).
 
 ## General Tab 
 
-You can control what the PDF defaults will be [when you create new PDFs on forms](setup-pdf.md). You also have control over more advance options like Background Processing and Security policies. This tab is only available to users with the `gravityforms_view_settings` capability.
+You can control what the PDF defaults will be [when you create new PDFs on forms](setup-pdf.md). You also have control over more advanced options like Background Processing and Security policies. This tab is only available to users with the `gravityforms_view_settings` capability.
 
 Below is the list of settings available in the General tab, with a brief description about what each is for.
 
 ### Default Template
 * Use this option to set the default template for all [individual PDFs](setup-pdf.md) (templates control the PDF design and layout). Gravity PDF comes with **four completely-free templates** for you to choose from. Click the `Manage` button to view a preview of all available designs.
-* The default template is *Zadani* – a minimalist business-style template that will generate a well-spaced document great for printing. Additional templates can be purchased from the [template shop](https://gravitypdf.com/template-shop/) and [installed through the PDF Template Manager](pdf-template-manager.md).
-* Developers with HTML, CSS and PHP knowledge can [create their own designs and layouts](../developers/start-customising.md). Alternatively, the Gravity PDF team offers [a Bespoke PDF service](http://gravitypdf.com/integration-services/) for those who want us to build it for them – we can even populate existing PDF documents (not available in the free plugin).
+* The default template is *Zadani* – a minimalist business-style template that will generate a well-spaced document great for printing. Additional templates can be purchased from the [template shop](https://gravitypdf.com/store/#templates) and [installed through the PDF Template Manager](pdf-template-manager.md).
+* Developers with HTML, CSS and PHP knowledge can [create their own designs and layouts](../developers/start-customising.md). Alternatively, the Gravity PDF team offers [a Bespoke PDF service](http://gravitypdf.com/bespoke/) for those who want us to build it for them – we can even populate existing PDF documents (not available in the free plugin).
 
 ### Default Font Type
 * Use this option to set the default font for all [individual PDFs](setup-pdf.md). Gravity PDF ships with fonts for the majority of languages worldwide and uses the unicode typeface *DejaVu Sans Condensed* by default. For languages that aren't supported out of the box, you can use our [*Font Installer*](#fonts) to upload TTF font files for use in PDFs.
@@ -83,7 +83,7 @@ The security settings are hidden by default and can be shown by clicking the _Se
 
 #### Default Owner Restrictions 
 * This option allows you to prevent the form entry owner – the user who filled out the Gravity Forms – from viewing the generated PDF. This included logged out and logged in users – with the exception of a logged in user who has any of the capabilities listed in the [*User Restriction*](#user-restriction) field.
-* This option has no effect on PDFs sent as attachments in Gravity Forms notifications, but does affect the unsigned [Gravity PDF shortcode and mergetags](shortcodes-and-mergetags.md).
+* This option has no effect on PDFs sent as attachments in Gravity Forms notifications, but does affect the unsigned [Gravity PDF shortcode and merge tags](shortcodes-and-mergetags.md).
 * By default, this option is disabled.
 
 #### User Restriction
@@ -95,7 +95,7 @@ The security settings are hidden by default and can be shown by clicking the _Se
 
 ![A view of the License tab](https://resources.gravitypdf.com/uploads/2021/04/v6-License-Tab.png) 
 
-If you've [purchased an extension from our store](https://gravitypdf.com/extension-shop/) and have it activated on your website, a new *License* tab will be available. This tab allows you to enter and activate your license key to receive automatic plugin updates.
+If you've [purchased an extension from our store](https://gravitypdf.com/store/#extensions) and have it activated on your website, a new *License* tab will be available. This tab allows you to enter and activate your license key to receive automatic plugin updates.
 
 ## Tools Tab 
 
@@ -135,4 +135,4 @@ Gravity PDF's uninstaller has been moved to the [Gravity Forms Uninstall page](u
 
 ![Gravity PDF Help Settings Page](https://resources.gravitypdf.com/uploads/2021/04/v6-PDF-Help-Tab.png) 
 
-If you've got a problem or aren't sure how to accomplish a task for Gravity PDF, the Help tab will allow you to search our extensive knowledgebase direct from your admin area. If you can't find what you're looking for, we also include a link [to our support ticket system](https://gravitypdf.com/support/).
+If you've got a problem or aren't sure how to accomplish a task for Gravity PDF, the Help tab will allow you to search our extensive knowledgebase direct from your admin area. If you can't find what you're looking for, [submit a new ticket via our support system](https://gravitypdf.com/support/).

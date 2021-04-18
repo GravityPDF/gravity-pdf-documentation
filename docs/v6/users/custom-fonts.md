@@ -1,5 +1,5 @@
 ---
-title: "Using the Font Manager to Install New PDF Fonts"
+title: "Using the Font Manager to Install Fonts for Gravity PDF"
 sidebar_label: "Custom Fonts"
 description: "Gravity PDF is pre-installed with over 30 different fonts which support the majority of languages worldwide. For those not supported you can use the Font Manager."
 ---
@@ -40,7 +40,7 @@ At the top of the left pane is a search bar that will show you live results in t
 
 ![Select Font](https://resources.gravitypdf.com/uploads/2021/04/v6-Select-a-Font.png)
 
-If the Font Manager is accessed via the [Default Font](global-settings.md#default-font-type) or [Font setting](setup-pdf.md#font] setting, you'll have the option to select a font using the radio button found to the left of each name in the list. This will automatically update the associated font dropdown setting (don't forget to save afterwards).
+If the Font Manager is accessed via the [Default Font](global-settings.md#default-font-type) or [Font setting](setup-pdf.md#font) setting, you'll have the option to select a font using the radio button found to the left of each name in the list. This will automatically update the associated font dropdown setting (don't forget to save afterwards).
 
 ### Editing
 
@@ -76,19 +76,18 @@ When adding a new font (or updating an existing one), the following options are 
 * The font name doesn't have to be unique and multiple fonts can share the same name (although it isn't recommended).
 
 #### Regular (required) 
-* This field references the main font file for your [typeface](https://en.wikipedia.org/wiki/Typeface). Use the *Select Font* button to open your media library and upload a `.ttf` font file. Once uploaded, select your font and press the blue *Select Font* button in the bottom right hand corner of your screen.
-* While the field accepts a URL to the font, the file **must** be uploaded through your media library for it to be correctly loaded in the PDF software. External font links will not work. This rule also applies to the [*Bold*](#bold-optional), [*Italics*](#italics-optional) and [*Bold Italics*](#bold-italics-optional) fields.
+* This field references the main font file for your [typeface](https://en.wikipedia.org/wiki/Typeface). Drag and drop your font to this box, or click the box and select your font from the dialog box that appears.
 
 #### Bold (optional) 
-* If your [typeface](https://en.wikipedia.org/wiki/Typeface) includes a bold version of your font, you can add it here. Use the *Select Font* button to open your media library and select the font.
+* If your [typeface](https://en.wikipedia.org/wiki/Typeface) includes a bold version of your font, you can add it here. Drag and drop your font to this box, or click the box and select your font from the dialog box that appears.
 * This field is optional and if not provided the PDF software will mimic bold when referenced. However, you will get a better result if a bold font file is installed.
 
 #### Italics (optional) 
-* If your [typeface](https://en.wikipedia.org/wiki/Typeface) includes an italics version of your font, you can add it here. Use the *Select Font* button to open your media library and select the font.
+* If your [typeface](https://en.wikipedia.org/wiki/Typeface) includes an italics version of your font, you can add it here. Drag and drop your font to this box, or click the box and select your font from the dialog box that appears.
 * This field is optional and if not provided the PDF software will mimic italics when referenced. However, you will get a better result if an italics font file is installed.
 
 #### Bold Italics (optional) 
-* If your [typeface](https://en.wikipedia.org/wiki/Typeface) includes a bold-italics version of your font, you can add it here. Use the *Select Font* button to open your media library and select the font.
+* If your [typeface](https://en.wikipedia.org/wiki/Typeface) includes a bold-italics version of your font, you can add it here. Drag and drop your font to this box, or click the box and select your font from the dialog box that appears.
 * This field is optional and if not provided the PDF software will mimic bold-italics when referenced. However, you will get a better result if a bold-italics font file is installed.
 
 :::tip
@@ -99,19 +98,19 @@ Bold, Italics, and Bold Italics are usually different variants of the same font,
 
 ![Use font in custom PDF templates](https://resources.gravitypdf.com/uploads/2021/04/v6-Custom-Template-Usage.png)
 
-* This is a read-only field which displays a simple CSS example for use in [custom PDF templates](../developers/start-customising.md). Use this if you need to use multiple fonts in a single PDF. If you want the entire PDF to use your custom font then change the [Font setting](setup-pdf.md#font) when you setup your PDF.
+* This is a read-only field which displays a simple CSS example for use in [custom PDF templates](../developers/start-customising.md). Use this if you would like to utilise multiple fonts in a single PDF. If you only need the entire PDF to use your custom font then change the [Font setting](setup-pdf.md#font) when you setup your PDF.
 
 ## Edit Font 
 
 ![Edit Font Interface](https://resources.gravitypdf.com/uploads/2021/04/v6-Edit-a-Font.png) 
 
-Once you've installed a custom font or two, you'll see a list of fonts in the left pane when you open the *Font Manager*. You can edit the font [by selecting the font name in the list](#editing), updating the details in the right pane and clicking the `Update Font` button when done. Simple!
+Once you've installed a custom font or two, you'll see a list of fonts in the left pane when you open the *Font Manager*. You can edit the font [by selecting the font name in the list](#editing), updating the details in the right pane and clicking the `Update Font →` button when done. Simple!
 
 ### Selecting
 
 ![Select Font Interface](https://resources.gravitypdf.com/uploads/2021/04/v6-Edit-Font-Select.png)
 
-If the Font Manager is accessed via the [Default Font](global-settings.md#default-font-type) or [Font setting](setup-pdf.md#font), you'll have the option to select a font using the ✅ button found to the right of the `Update Font` button in the update pane. This will automatically select this font in the associated font dropdown setting (don't forget to save afterwards).
+If the Font Manager is accessed via the [Default Font](global-settings.md#default-font-type) or [Font setting](setup-pdf.md#font), you'll have the option to select a font using the ✅ button found to the right of the `Update Font →` button in the update pane. This will automatically select this font in the associated font dropdown setting (don't forget to save afterwards).
 
 The font is deselected when the ✅ button is grey and selected when it is green.
 

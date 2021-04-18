@@ -10,7 +10,7 @@ You can configure more than one PDF on a Gravity Forms form, and the _PDF List P
 
 ## Why would you need multiple PDFs on a form?
 
-When you begin taking advantage of [conditional logic](setup-pdf.md#conditional-logic), use the [Core Booster add-on to control which fields are displayed in each PDF](../extensions/core-booster-add-on.md#customise-fields), or install a [premium](https://gravitypdf.com/store/#templates) or [Bespoke](https://gravitypdf.com/integration-services/) template, one PDF per form just isn't enough. A simple example of this would be sending customer info to the onboarding team, and also an invoice to the accounting team (plus a copy for the customer).
+When you begin taking advantage of [conditional logic](setup-pdf.md#conditional-logic), use the [Core Booster add-on to control which fields are displayed in each PDF](../extensions/core-booster-add-on.md#customise-fields), or install a [premium](https://gravitypdf.com/store/#templates) or [Bespoke](https://gravitypdf.com/bespoke/) template, one PDF per form just isn't enough. A simple example of this would be sending customer info to the onboarding team, and also an invoice to the accounting team (plus a copy for the customer).
 
 ## How to I find the PDF List page
 
@@ -65,7 +65,7 @@ Click a PDFs *Edit* action to modify an existing PDF configuration. [See our Set
 
 ![Active and deactivated toggles](https://resources.gravitypdf.com/uploads/2021/04/v6-Toggle-PDF-On-Off.png) 
 
-PDFs can be **completely disabled** by using the active/inactive toggle – located to the left of the _Label_ column. Once a PDF has been set to inactive, users and administrators will no longer be able to access the document. The PDF will not be attached to email notifications, and its shortcode/mergetag won't generate a link.
+PDFs can be **completely disabled** by using the active/inactive toggle – located to the left of the _Label_ column. Once a PDF has been set to inactive, users and administrators will no longer be able to access the document. The PDF will not be attached to email notifications, and its shortcode/merge tag won't generate a link.
 
 ### Duplicate 
 

@@ -6,7 +6,7 @@ description: "Get more out of Gravity PDF with premium templates from the templa
 
 While Gravity PDF ships with **four free customisable PDF templates**, they may not suit your specific purpose or use-case. That's why we built a [premium template shop](https://gravitypdf.com/store/#templates) to give you more layout and design choices. 
 
-If you can't find anything you like in the shop, we also offer [a Bespoke PDF template creation and installation services](https://gravitypdf.com/bespoke/). This service offers unique PDF templates crafted and installed to your specifications by our skilled team of developers. We team can also **auto-fill existing PDF documents**, which is perfect when you need to integrate legal or government forms (this feature isn't available in our free or DIY offering). 
+If you can't find anything you like in the shop, we also offer [a Bespoke PDF template creation and installation services](https://gravitypdf.com/bespoke/). This service offers unique PDF templates crafted and installed to your specifications by our skilled team of developers. Our team can also **auto-fill existing PDF documents**, which is perfect when you need to integrate legal or government forms (this feature isn't available in our free or DIY offering). 
 
 Finally, for those DIY aficionados with HTML/CSS/PHP knowledge we've got [extensive documentation](../developers/start-customising.md) on how you can build, configure and install your own templates. 
 

@@ -11,7 +11,7 @@ There are a number of security protocols in place to prevent unauthorised access
 For the best balance between security and access, it is recommended to enable signed PDF URLs so that anyone with access to the link can view the document for a specific time period (which you define).
 
 :::info What are Signed PDF URLs?
-They are special auto-expiring URLs that allow _anyone_ with the link to view the PDF. They are useful if you want to share the URL via email to a third party, don't want to store IP addresses with entries, or would like to display the link on a page that already authenticates a user. Both Shortcode and Merge Tag options support signed URLs, **but the feature has to be enabled** (see below). [Find out more about the PDF security and how Signed PDF URLs fit in the picture](http://localhost:3000/v6/users/pdf-security#default-security).
+They are special auto-expiring URLs that allow _anyone_ with the link to view the PDF. They are useful if you want to share the URL via email to a third party, don't want to store IP addresses with entries, or would like to display the link on a page restricted to specific user role(s). Both Shortcode and Merge Tag options support signed URLs, **but the feature has to be enabled** (see below). [Find out more about the PDF security and how Signed PDF URLs fit in the picture](http://localhost:3000/v6/users/pdf-security#default-security).
 :::
 
 ## Shortcode or Merge Tag?
@@ -49,7 +49,7 @@ A *Download Shortcode* column can be found on the [PDF form list](managing-pdfs.
 
 ![The \[gravitypdf\] shortcode in the Gravity Forms text confirmation](https://resources.gravitypdf.com/uploads/2021/03/v6-Text-confirmation.png) 
 
-The [text confirmation](https://docs.gravityforms.com/configuring-confirmations-in-gravity-forms/#text-confirmations) is the simplest Gravity Forms confirmation type and allows you to add a message using the WordPress classic editor that gets shown right after submission. Copy and paste the Gravity PDF shortcode found on the [PDF form list](managing-pdfs.md) and save the confirmation. 
+The [text confirmation](https://docs.gravityforms.com/configuring-confirmations-in-gravity-forms/#text-confirmations) is the simplest Gravity Forms confirmation type and allows you to add a message using the WordPress classic editor, which is then shown to the user right after submission. Copy and paste the Gravity PDF shortcode found on the [PDF form list](managing-pdfs.md) and save the confirmation. 
 
 Submit a test entry and verify the PDF link is displayed correct, and you can view the document when selected.
 
@@ -57,7 +57,7 @@ Submit a test entry and verify the PDF link is displayed correct, and you can vi
 
 ![The \[gravitypdf\] shortcode in the Gravity Forms page confirmation](https://resources.gravitypdf.com/uploads/2021/04/v6-Page-Confirmation.png) 
 
-The [page confirmation](https://docs.gravityforms.com/configuring-confirmations-in-gravity-forms/#page-confirmations) allows you to redirect users to an existing WordPress page. First, copy the Gravity PDF shortcode found on the [PDF form list](managing-pdfs.md) and place it on the WordPress page you're sending the users to. Once done, go back to your page confirmation configuration and enable the `Pass Field Data Via Query String` option. Add `entry={entry_id}` to the field that appears and click save. This method isn't quite copy-paste-save, but it's close!
+The [page confirmation](https://docs.gravityforms.com/configuring-confirmations-in-gravity-forms/#page-confirmations) allows you to redirect users to an existing WordPress page. First, copy the Gravity PDF shortcode found on the [PDF form list](managing-pdfs.md) and place it on the WordPress page you're sending the users to. Once done, go back to your page confirmation configuration and enable the `Pass Field Data Via Query String` option. Add `entry={entry_id}` to the field that appears and click save.
 
 Submit a test entry and verify the PDF link is displayed correct, and you can view the document when selected.
 
@@ -107,8 +107,7 @@ The `[gravitypdf]` shortcode is customisable and there are a number of attribute
 
 ##### Signed (optional) 
 * The `signed` attribute tells Gravity PDF to generate a secure PDF URL that auto-expires after a set period. Anyone with access to the signed link can view the PDF (regardless of their user privileges, if any), provided the link hasn't expired. 
-* Signed PDF URLs is an alternative authentication method to the default IP-based authentication. It functions correctly even if you've disabled IP addresses using Gravity Forms 2.4+ GDPR feature.
-* Signed URLs do not work across protocols. For example, you cannot display the shortcode on a HTTP page while the PDF loads over HTTPS (or vice versa). 
+* Signed PDF URLs is an alternative authentication method to the default IP-based authentication. It functions correctly even if you've [disabled IP addresses using Gravity Forms Personal Data feature](https://docs.gravityforms.com/personal-data-settings/).
 * *Example:* `[gravitypdf id="560f2ef799945" signed="1"]`
 
 ##### Expires (optional) 
@@ -124,7 +123,6 @@ The `[gravitypdf]` shortcode is customisable and there are a number of attribute
 * The `class` attribute allows you to set a specific class on the generated PDF anchor tag (`<a></a>`). This is useful when you want to style the link a certain way.
 * If the `class` attribute isn't present it will default to `gravitypdf-download-link`.
 * *Example:* `[gravitypdf id="560f2ef799945" class="my-custom-button-class"]` or `[gravitypdf id="560f2ef799945" class="my-custom-button-class a-second-class"]`
-  and click save
   
 ##### Print (optional) 
 * The `print` attribute will automatically open a print dialog box when the PDF is opened.
@@ -134,7 +132,7 @@ The `[gravitypdf]` shortcode is customisable and there are a number of attribute
 * When the shortcode is used in Gravity Forms Confirmations or Notifications this attribute can be omitted (as we already know which entry is being processed). 
 * If you want to use the shortcode outside of Gravity Forms you need to use this attribute and include the appropriate entry ID.
 * You can also set the entry ID via a URL parameters (the "query string") and omit this attribute. If the `entry` or `lid` URL parameter exist, its value will be used to lookup the entry (see [*Page Confirmation*](#page-confirmation) for more details).
-* *Example:* `[gravitypdf id="560f2ef799945" entry="250"]` or `[gravitypdf id="560f2ef799945"]` with a URL like `http://test.com/?entry=250`
+* *Example:* `[gravitypdf id="560f2ef799945" entry="250"]` or `[gravitypdf id="560f2ef799945"]` with a URL like `https://example.com/?entry=250`
 
 ##### Raw (optional) 
 * Instead of generating a link to the PDF, when the `raw` attribute is enabled a URL will be displayed.
@@ -158,7 +156,7 @@ Unlike the shortcode, the merge tags are converted to a URL only ([akin to using
 
 ### Building the Merge Tag
 
-While the basic PDF merge tag is available in the selector, it's useful to know what each parameter is and what modifiers are available to change its functionality.  
+While the basic PDF merge tag is available in the selector, it's useful to know what each parameter is, and what modifiers are available to change the functionality.  
 
 #### Usage / Structure
 
@@ -189,8 +187,7 @@ All modifiers are optional, and should be included after the `[id]`. They are al
 
 ##### Signed
 * Generate a secure PDF URL that auto-expires after a set period. Anyone with access to the signed link can view the PDF (regardless of their user privileges, if any), provided the link hasn't expired.
-* Signed PDF URLs is an alternative authentication method to the default IP-based authentication. It functions correctly even if you've disabled IP addresses using Gravity Forms 2.4+ GDPR feature.
-* Signed URLs do not work across protocols. For example, you cannot display the shortcode on a HTTP page while the PDF loads over HTTPS (or vice versa).
+* Signed PDF URLs is an alternative authentication method to the default IP-based authentication. It functions correctly even if you've [disabled IP addresses using Gravity Forms Personal Data feature](https://docs.gravityforms.com/personal-data-settings/).
 * You can pass an optional expiration value (separated by a comma `,`) which changes the default signed URL timeout period. [Valid formats can be found in the PHP documentation](https://www.php.net/manual/en/datetime.formats.relative.php).
 * If no expiration value is included, the signed URL will fallback to the global [Logged Out Timeout](global-settings.md#logged-out-timeout) setting (20-minutes by default).
 * _Example:_ `{Report:pdf:6063bd0362dda:signed}`
@@ -210,7 +207,7 @@ Include multiple modifiers (in any order):
 
 ### Common Problems 
 
-If a URL isn't displayed when the PDF merge tag is processed it's likely the PDF doesn't exist for the current form, it has been deactivated, or the [conditional logic doesn't pass](setup-pdf.md#conditional-logic). To determine the exact reason it wasn't generated, enable [Gravity Forms logging](https://docs.gravityforms.com/logging-and-debugging/) and then replicate the issue. In the Gravity PDF log file search for `PDF Mergetag is not valid` and review the logged information.
+If a URL isn't displayed when the PDF merge tag is processed it's likely the PDF doesn't exist for the current form, it has been deactivated, or the [conditional logic doesn't pass](setup-pdf.md#conditional-logic). To determine the exact reason it wasn't generated, enable [Gravity Forms logging](https://docs.gravityforms.com/logging-and-debugging/) and then replicate the issue. In the Gravity PDF log file search for `PDF Merge tag is not valid` and review the logged information.
 
 #### PDF ID Invalid
 ```log

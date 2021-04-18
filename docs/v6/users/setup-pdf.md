@@ -31,8 +31,8 @@ The PDF settings for an individual form can be accessed by following these steps
 There are only two required fields when creating a PDF: _Label_ and _Filename_. The rest of the settings will either use sane defaults, those [configured in the Global Settings](global-settings.md), or be disabled / empty. These settings can be found in the General section.
 
 ### Label
-* The name is only used for internal administrative tasks. Its sole purpose is to provide a human-readable identifier for the particular PDF.
-* The name can help you distinguish between multiple PDFs in your WordPress admin area. It's best to choose something meaningful and easy to remember.
+* The label is only used for internal administrative tasks. Its sole purpose is to provide a human-readable identifier for the particular PDF.
+* The label can help you distinguish between multiple PDFs in your WordPress admin area. It's best to choose something meaningful and easy to remember.
 
 :::info
 In previous versions of Gravity PDF this setting was know as the _Name_.
@@ -40,9 +40,9 @@ In previous versions of Gravity PDF this setting was know as the _Name_.
 
 ### Filename 
 * The filename is what the generated PDF will be called when saved. For example, `My_Personal_Flyer.pdf`.
-* [Gravity Forms merge tags](https://docs.gravityforms.com/category/user-guides/merge-tags-getting-started/) are supported in the filename. Any mergetags will be converted to the appropriate value when the PDF is saved. For example, `{Name:3}_Personal_Flyer.pdf` will become `Gravity PDF_Personal_Flyer.pdf` if _Gravity PDF_ was entered into field 3 for the current entry.
+* [Gravity Forms merge tags](https://docs.gravityforms.com/category/user-guides/merge-tags-getting-started/) are supported in the filename. Any merge tags will be converted to the appropriate value when the PDF is saved. For example, `{Name:3}_Personal_Flyer.pdf` will become `Gravity PDF_Personal_Flyer.pdf` if _Gravity PDF_ was entered into field 3 for the current entry.
 * If you use merge tags, either use a field marked required or include static text alongside the merge tag to prevent empty filenames.
-* If you have multiple PDFs configured on a single form, make sure the Filename is unique for each document, otherwise the [PDF Notification attachments]#notifications] and the [Always Save PDF](#always-save-pdf) feature won't work correctly.
+* If you have multiple PDFs configured on a single form, make sure the Filename is unique for each document, otherwise the [PDF Notification attachments](#notifications) feature and [`gfpdf_post_save_pdf` hook](../developers/actions/gfpdf_post_save_pdf.md) won't work correctly.
 * The `.pdf` extension should be excluded from the filename field (but will be automatically removed if you add it).
 * While the following characters will be saved, they are automatically converted to an underscore when generating the PDF: `/ " * ? | :`. This is to prevent problems saving the PDFs to disk on some operating systems.
 
@@ -59,7 +59,7 @@ Below is the list of settings available in the General section, with a brief des
 ### Template 
 * Select the PDF template that should be used to generate the document. The [global Default Template setting](global-settings.md#default-template) controls which template will be preselected.
 * Gravity PDF comes with **four free templates** for you to choose from. Upon changing your selection (using the drop down or selecting the Manage button to get a more graphical overview), the [Template section](#template-section) will be updated (or removed if it has no options) to reflect the template-specific options.
-* Additional templates can be purchased from our [template shop](https://gravitypdf.com/template-shop/) and then installed through the [PDF Template Manager](pdf-template-manager.md).
+* Additional templates can be purchased from our [template shop](https://gravitypdf.com/store/#templates) and then installed through the [PDF Template Manager](pdf-template-manager.md).
 * Developers with HTML, CSS and a little PHP knowledge can also [create their own designs and layouts](../developers/start-customising.md). Alternatively, the Gravity PDF team offers [a Bespoke PDF service](https://gravitypdf.com/bespoke/) for those wanting us to build it for them – we can even populate existing PDF documents (not available in the free plugin).
 
 ### Notifications 
@@ -71,7 +71,7 @@ Below is the list of settings available in the General section, with a brief des
 
 ### Conditional Logic 
 * Conditional logic is a [powerful feature of Gravity Forms](https://docs.gravityforms.com/enable-conditional-logic/) allowing you to show or hide fields in your form based on a user's response. We've extended this behaviour to Gravity PDF, allowing you to enable or disable a PDF if a user responded a specific way.
-* If the conditional logic determines a PDF should be disabled, it will not be generated for that entry. The PDF will not be accessible through the `[gravitypdf]` shortcode and will not be attached to notifications. Site administrators won't be able to access it from the admin area either.
+* If the conditional logic determines a PDF should be disabled, it will not be generated for that entry. The PDF will not be accessible through the `[gravitypdf]` shortcode or PDF merge tags, and will not be attached to notifications. Site administrators won't be able to access it from the admin area either.
 
 ## Appearance Section 
 
@@ -123,7 +123,7 @@ Below is a description of the Core template settings that all **four free templa
 * This is disabled by default.
 
 ### Show Page Names 
-* When using Gravity Forms' *Page Break* fields you have the option to [name each page using the *Start Paging* field](https://docs.gravityforms.com/page-break/). When this PDF option is enabled, these page names will be displayed in your PDF.
+* When using Gravity Forms *Page Break* field you have the option to [name each page using the *Start Paging* field](https://docs.gravityforms.com/page-break/). When this PDF option is enabled, thee page names will be displayed in your PDF.
 * This is disabled by default.
 
 ### Show HTML Fields 
@@ -132,7 +132,7 @@ Below is a description of the Core template settings that all **four free templa
 * This is disabled by default.
 
 ### Show Section Break Description 
-* The [*Section Break* field](https://docs.gravityforms.com/section-break/) allows you to enter a label and description. By default, a PDF will only show a section break's *label* but enabling this option will also show the description.
+* The [*Section Break* field](https://docs.gravityforms.com/section-break/) allows you to enter a label and description. By default, a PDF will only show a section break's *label*. Enabling this option will also show the description.
 * This is disabled by default.
 
 ### Enable Conditional Logic 
@@ -195,7 +195,7 @@ The Advanced section allows you to control the PDF security (which includes pass
 
 ### Password 
 * When [*PDF Security*](#enable-pdf-security) is enabled, you have the option to password-protect your PDF documents. 
-* [Mergetag](https://docs.gravityforms.com/category/user-guides/merge-tags-getting-started/) usage is allowed in this field.
+* [Merge tag](https://docs.gravityforms.com/category/user-guides/merge-tags-getting-started/) usage is allowed in this field.
 * Leave this field blank if you don't want to set a password (useful if you only want to control the end-user [*Privileges*](#privileges))
 
 :::note

@@ -36,7 +36,7 @@ add_action( 'gfpdf_pdf_filename', function( $name, $form, $entry, $settings ) {
 
 		/**
 		 * Do NOT include the .pdf extension
-		 * Note: Mergetags will not be processed if included at this stage. Use the $entry array instead.
+		 * Note: Merge tags will not be processed if included at this stage. Use the $entry array instead.
 		 */
 		return "Filename_{$entry[1]}_{$year_month_date}";
 	}

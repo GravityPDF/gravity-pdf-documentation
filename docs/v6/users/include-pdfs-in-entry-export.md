@@ -17,5 +17,5 @@ Towards the bottom of the available options for the _Select Fields_ setting will
 There are a number of security protocols in place to prevent unauthorised access to PDF documents. Before using this feature it's recommended you [review the documentation detailing PDF security](pdf-security.md). 
 
 :::info
-Signed PDF URLs are not supported.
+Signed PDF URLs are not available to be included in the Entry Export.
 :::

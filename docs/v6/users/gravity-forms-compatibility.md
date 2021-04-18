@@ -6,7 +6,7 @@ description: "Our official policy is to support the latest major Gravity Forms r
 
 ![Gravity Forms list page](https://resources.gravitypdf.com/uploads/2021/04/v6-Gravity-Forms-Page.png)
 
-Gravity PDF is a *third party extension* for Gravity Forms. The company who builds Gravity PDF, [Blue Liquid Designs](http://www.blueliquiddesigns.com.au/), is an *independent third party* who has no control over Gravity Forms, its pricing model or its support.
+Gravity PDF is a *third party extension* for Gravity Forms. The company who builds Gravity PDF, [Blue Liquid Designs](https://blueliquiddesigns.com.au), is an *independent third party* who has no control over Gravity Forms, its pricing model or its support.
 
 However, as Gravity PDF is an add-on for Gravity Forms, confusion about the two products does happen (and that's okay; our friendly support staff are happy to guide you in the right direction).
 

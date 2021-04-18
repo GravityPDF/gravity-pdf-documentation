@@ -6,7 +6,7 @@ description: "Only certain form data is important to you. That's why Gravity PDF
 
 Only certain form data is important to you. That's why Gravity PDF has a number of ways to filter out the unimportant fields in your generated PDF. 
 
-It's important to note that only certain PDF templates have these filtering options. All the core PDF templates will support the features discussed below, but [premium](https://gravitypdf.com/shop/), [custom templates](https://gravitypdf.com/integration-services/) or [your own DIY templates](../developers/start-customising.md) may not.
+It's important to note that only certain PDF templates have these filtering options. All the core PDF templates will support the features discussed below, but [premium](https://gravitypdf.com/store/#templates), [custom templates](https://gravitypdf.com/bespoke/) or [your own DIY templates](../developers/start-customising.md) may not.
 
 ## What fields are displayed in the PDF? 
 
@@ -24,7 +24,7 @@ In certain cases, you may not want a particular form field from displaying in th
 
 1.  Navigating to your form's *Form Editor*
 2.  Select the field you want excluded from the PDF
-3.  Open the `Appearance` tab and add `exclude` to the `Custom CSS Class` field. If a class is already included ensure you add a space between it and `exclude`
+3.  Open the `Appearance` section in the sidebar and add `exclude` to the `Custom CSS Class` field. If a class is already included ensure you add a space between it and `exclude`
 4.  Save your form
 
 This technique works for all fields except the *Hidden* field (which doesn't include the *Custom CSS Class* field) and *Product* fields when included in the product table. 

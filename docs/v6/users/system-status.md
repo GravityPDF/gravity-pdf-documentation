@@ -10,7 +10,7 @@ description: "Gravity PDF includes environmental details in Gravity Forms System
 
 ## Gravity PDF Environment
 
-This is the group of environment information added by Gravity PDF that can be used to help diagnose issues (usually by the [Gravity PDF support team](https://gravitypdf.com/support/)).
+This is the group of environment information added by Gravity PDF that can be used to help diagnose issues (usually by [our support team](https://gravitypdf.com/support/)).
 
 ### PHP
 
