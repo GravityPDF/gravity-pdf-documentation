@@ -86,7 +86,7 @@ A lot of new features and refinements went into this release. Below is the big t
 
 ![Gravity Forms Form Editor with Column Support](https://resources.gravitypdf.com/uploads/2021/04/v6-Gravity-Forms-Column-Support-1.png)
 
-Gravity Forms have revamped their Form Builder and it now includes [Drag and Drop column support]((https://docs.gravityforms.com/working-with-columns/)). To support this feature individual templates have to be updated with new CSS.
+Gravity Forms have revamped their Form Builder and it now includes [Drag and Drop column support](https://docs.gravityforms.com/working-with-columns/). To support this feature individual templates have to be updated with new CSS.
 
 #### Core Templates
 

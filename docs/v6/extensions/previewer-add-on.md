@@ -176,7 +176,7 @@ If you need your user content to expand across multiple pages, and include your 
 
 ### PDF Security in Previewer 
 
-By default, when you've [allowed your user to download the PDF via the Previewer](previewer-add-on.md#download-preview) the PDF Security settings are disabled. To use the security [you've set in the PDF settings](user-setup-pdf.md#enable-pdf-security), include the following snippet in your active theme's functions.php file:
+By default, when you've [allowed your user to download the PDF via the Previewer](previewer-add-on.md#download-preview) the PDF Security settings are disabled. To use the security [you've set in the PDF settings](../users/setup-pdf.md#enable-pdf-security), include the following snippet in your active theme's functions.php file:
 
 ```
 add_filter( 'gfpdf_previewer_enable_pdf_security', '__return_false' );
