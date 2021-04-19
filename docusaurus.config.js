@@ -23,6 +23,11 @@ module.exports = {
           position: 'left',
           items: [
             {
+              label: 'v6',
+              to: 'v6/users/five-minute-install/',
+            },
+
+            {
               label: 'v5',
               to: 'v5/five-minute-install/',
             },

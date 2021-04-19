@@ -61,6 +61,10 @@ article .markdown a {
   text-decoration: underline;
 }
 
+article .markdown img {
+  display: block;
+}
+
 /* Caption */
 img + em {
   font-size: 0.9rem;
@@ -89,4 +93,19 @@ div[class^="announcementBar"] a {
 
 div[class^="announcementBar"] a:hover {
   background: #FF1B46;
+}
+
+/* oembed */
+iframe[src*="youtube.com"],
+iframe[src*="vimeo.com"] {
+  width: 600px !important;
+  height: 400px !important;
+}
+
+@media (max-width: 550px) {
+  iframe[src*="youtube.com"],
+  iframe[src*="vimeo.com"] {
+    width: 300px !important;
+    height: 200px !important;
+  }
 }
