@@ -22,11 +22,11 @@ If you upgraded from Gravity PDF v5 or earlier, had previously run the [Setup Cu
 
 ![Gravity Forms Form Editor with Column Support](https://resources.gravitypdf.com/uploads/2021/04/v6-Gravity-Forms-Column-Support-1.png)
 
-You can create up to four columns per row in the Form Editor. The default output is for each column is to be of equal width, but you can resize individual columns to suit your needs eg. `25% / 25% / 50%` or `20% / 80%`.
+You can create up to four columns per row in the Form Editor. The default output is for each column is to be of equal width, but you can resize individual columns to suit your needs eg. `20% / 80%` or `25% / 25% / 50%`.
 
 ![Rubix PDF with 100% column, 20%/80% columns, 25%/25%/50% columns, 50% column, and 25%/25% columns support](https://resources.gravitypdf.com/uploads/2021/04/v6-PDF-Rubix-with-Column-Support.png)
 
-You don't need each column to equal 100% of the row width. You could have two columns only taking up 25% each and then begin a new row. **Bonus:** this works for single column rows too! 
+You don't need each column to equal 100% of the row width. You could have a single column take up 50% and then start a new row, or display two columns at 25% each.
 
 :::note
 Prior to Gravity Forms 2.5 columns were handled using CSS Ready Classes. They are still [supported in PDFs](css-ready-classes.md), but **only when the [form is in Legacy Mode](https://docs.gravityforms.com/guide-to-gravity-forms-2-5-for-theme-developers/#legacy-mode)**.
