@@ -866,6 +866,7 @@ module.exports = {
             'v6/developers/api/get_options_class',
             'v6/developers/api/get_misc_class',
             'v6/developers/api/get_form_class',
+            'v6/developers/api/get_templates_class',
             'v6/developers/api/get_mvc_class',
             'v6/developers/api/get_form_pdfs',
             'v6/developers/api/get_entry_pdfs',
