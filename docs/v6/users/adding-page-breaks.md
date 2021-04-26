@@ -4,7 +4,7 @@ sidebar_label: "Adding Page Breaks"
 description: "You can force a page breaks before certain fields in Core and Universal PDF templates using a special CSS class in the Gravity Forms Editor."
 ---
 
-You can force a page breaks before certain fields in Core and [Universal PDF templates](https://gravitypdf.com/template-shop/#universal) using a special CSS class in the Gravity Forms Editor.
+You can force a page breaks before certain fields in Core and [Universal PDF templates](https://gravitypdf.com/store/#universal) using a special CSS class in the Gravity Forms Editor.
 
 ## Add Pagebreak before Field
 

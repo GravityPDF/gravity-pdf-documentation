@@ -6,7 +6,7 @@ description: "Gravity PDF supports columns in Core and Universal templates throu
 
 ![Snapshot of the CSS Ready PDF Classes](https://resources.gravitypdf.com/uploads/2015/10/css-ready.png) 
 
-In the Core PDF templates (and some [Universal templates](https://gravitypdf.com/template-shop/#universal)), two/three/four legacy column support is provided [through the use of CSS Ready Classes](https://docs.gravityforms.com/css-ready-classes/).
+In the Core PDF templates (and some [Universal templates](https://gravitypdf.com/store/#universal)), two/three/four legacy column support is provided [through the use of CSS Ready Classes](https://docs.gravityforms.com/css-ready-classes/).
 
 :::caution
 CSS Ready Classes are only supported in PDFs when [Gravity Forms Legacy mode is enabled](https://docs.gravityforms.com/guide-to-gravity-forms-2-5-for-theme-developers/#legacy-mode) via `Form Settings -> Enable legacy markup`.

@@ -6,7 +6,7 @@ description: "Previewer allows generated PDFs to be previewed on-screen before a
 
 ![Previewer add-on](https://resources.gravitypdf.com/uploads/edd/2017/08/cover-artwork-1.png)
 
-*Previewer* is a premium plugin for Gravity PDF that allows the user to review the PDF(s) before the form has been submitted. The extension goes hand-in-hand [with a bespoke PDF](https://gravitypdf.com/integration-services/) or one of [our premium PDF templates](https://gravitypdf.com/template-shop/).
+*Previewer* is a premium plugin for Gravity PDF that allows the user to review the PDF(s) before the form has been submitted. The extension goes hand-in-hand [with a bespoke PDF](https://gravitypdf.com/integration-services/) or one of [our premium PDF templates](https://gravitypdf.com/store/#templates).
 
 You can purchase the *Previewer* plugin from our [Extension Shop](https://gravitypdf.com/shop/previewer-add-on/). This guide will walk you through installing and configuring *Previewer* to its full potential.
 
