@@ -10,6 +10,12 @@ Ensuring your data is protected is our *top priority*, and we've implemented a n
 
 Once you've installed the plugin, it's **strongly recommended** you review the security settings and **thoroughly test** they are working correctly.
 
+If you'd like to know specifics about the settings that control security features in Gravity PDF, and see those protocols in action, Gravity PDF's lead developer has put together a 12-minute video:
+
+https://www.youtube.com/watch?v=EuzQiHZKQAM
+
+**Note: the video doesn't cover every security feature, and you should still review the documentation below.**
+
 ## Default Security 
 
 :::note tl;dr

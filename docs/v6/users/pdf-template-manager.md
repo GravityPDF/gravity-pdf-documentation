@@ -12,6 +12,10 @@ The PDF Template Manager allows you to view, search and manage your PDF Template
 Templates are the backbone of Gravity PDF and **what give it so much power**. They control the design and layout of the PDF and can add unique settings to the UI to create highly dynamic documents. Out of the box you get four free templates, and additional [pre-built templates can be purchased from our store](https://gravitypdf.com/store/#templates). For those DIY aficionados, you can [create your own using HTML/CSS/PHP](../developers/first-custom-pdf.md), which allows you to include advanced logic and pull data from multiple sources (inside and outside Gravity Forms). We also [offer a Bespoke PDF service for those who need a helping hand](https://gravitypdf.com/bespoke/).
 :::
 
+In this 6-minute video, Gravity PDF's lead developer takes you through opening and installing custom PDF templates via the PDF Template Manager, how to delete templates, and how to search and select them.
+
+https://www.youtube.com/watch?v=Ktx1uswGYZI
+
 ## Open the PDF Template Manager 
 
 ![Access the PDF Template Manager through the Advanced button next to the Template Dropdown](https://resources.gravitypdf.com/uploads/2021/03/v6-Access-Manager.png) 

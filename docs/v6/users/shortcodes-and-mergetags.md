@@ -45,6 +45,10 @@ A *Download Shortcode* column can be found on the [PDF form list](managing-pdfs.
 2.  [Page Confirmations](#page-confirmation)
 3.  [Redirect Confirmations](#redirect-confirmation)
 
+If you enjoy video tutorials, watch this 14-minute video with Gravity PDF's lead developer as he takes you through using the [gravitypdf] shortcode with all three confirmation types. 
+
+https://www.youtube.com/watch?v=4NPsz_f9iGI
+
 ##### Text Confirmation
 
 ![The \[gravitypdf\] shortcode in the Gravity Forms text confirmation](https://resources.gravitypdf.com/uploads/2021/03/v6-Text-confirmation.png) 

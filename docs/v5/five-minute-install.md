@@ -12,9 +12,7 @@ The look and feel of the PDF is controlled through templates. The software comes
 
 ## Installation 
 
-Assuming you [meet the software minimum requirements](user-installation.md), the installation is a breeze. Head to `Plugins -> Add New` in your WordPress admin area, search *Gravity PDF*, click **Install Now** and activate. It's that simple! 
-
-![Installing Gravity PDF via the WordPress admin area](https://resources.gravitypdf.com/uploads/2015/10/automatic-install.png)
+Assuming you [meet the software minimum requirements](user-installation.md), you can download the version 5 zip from the [Download Previous Version section in the plugin's WordPress repository](https://wordpress.org/plugins/gravity-forms-pdf-extended/advanced/#download-previous-link). Use the dropdown and select the latest version 5 release, then use the download button to get the zip. In your WordPress admin area, navigate to the `Plugins -> Add New` page, select the `Upload Plugin` button, and select and install the zip.
 
 [View additional information about the software requirements and other installation procedures](user-installation.md).
 
