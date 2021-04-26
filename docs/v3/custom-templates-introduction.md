@@ -5,8 +5,6 @@ description: ""
 ---
 
 Creating a custom template allows you to control exactly how you want the generated PDF document to look. Our software uses HTML and CSS to generate the PDF documents, so you can use a language you already know to automate the document creation process with Gravity Forms. You also have full access to all PHP and WordPress functions and APIs to create advanced PDFs, and pull data from multiple sources.
-<h3>Before You Begin</h3>
-If you haven’t <a href="/v3/getting-started-with-gravity-pdf-configuration/">reviewed our five part installation and configuration guide</a> yet we recommend taking a look. You should also be familiar with (S)FTPing into your website.
 <h3>Getting Started</h3>
 (S)FTP into your web server and navigate to the PDF_EXTENDED_TEMPLATES folder, which is in your uploads directory. Inside you'll find a directory labelled with your site name. If running a multisite you'll see multiple directories. Select the appropriate folder.
 <div class="message">The upload directory on a standard WordPress website is located in the <code>/wp-content/</code> folder.</div>
@@ -38,7 +36,6 @@ There are two methods you can use to access Gravity Forms data in your custom PD
 </ol>
 Which method you use depends on your technical knowledge. If you are confident using PHP we recommend the $form_data array as you’ll be able to use and manipulate the entry data. While merge tags are easier to use they are rendered right before the PDF is processed which means you cannot manipulate or change the data. Anyone <strong>unfamiliar</strong> with PHP should stick with using merge tags.
 <h3>Configure the Plugin</h3>
-Once you create your PDF template you need to tell the software to use it. If you aren't familiar with configuring the software we recommend you review <a href="/v3/getting-started-with-gravity-pdf-configuration/">our five-part video series</a> on configuration, and <a href="/v3/configuration-options-examples/">all the configuration options available</a> to you.
 
 Open your <code>configuration.php</code> file and create a configuration node using the <code>template</code> config option.
 

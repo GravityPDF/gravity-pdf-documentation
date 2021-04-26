@@ -4,7 +4,6 @@ sidebar_label: "Display PDF in Browser"
 description: ""
 ---
 
-<div class="message">We've put together a video tutorial showing off this feature. <a href="/v3/getting-started-with-gravity-pdf-configuration/how-to-allow-user-pdf-downloads-video-part-three/">Watch it now</a>.</div>
 The generated PDF can easily and securely be displayed in a users browser once the form has been submitted using the Gravity Form redirect setting.
 <h3>Security</h3>
 Before we discuss these methods just a note on security. To prevent unwanted users accessing sensitive data each PDF displayed using this method will check three things:
