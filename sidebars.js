@@ -19,7 +19,6 @@ module.exports = {
           'label': 'Configuration',
           'items': [
             'v3/display-pdf-in-browser',
-            'v3/getting-started-with-gravity-pdf-configuration',
             'v3/configuration-options-examples',
             'v3/wheres-configuration-folder'
           ]
