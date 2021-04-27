@@ -30,13 +30,13 @@ Gravity PDF is a third party extension for Gravity Forms, created by an independ
 -   [allow_url_fopen](https://www.php.net/manual/en/filesystem.configuration.php#ini.allow-url-fopen) (optional) - If you have image display problems make sure this option is enabled.
 -   128MB+ WP Memory (**256MB+ recommended**)
 
+:::success Info
+If you are unable to meet the v6 minimum software requirements, Gravity PDF will continue [supporting users on v5](../../v5/five-minute-install.md) with bug and security fixes until at least 27 April 2022.
+:::
+
 ## Installation
 
-### Automatic Installation 
-
-:::warning
-Gravity PDF 6.0 will officially be released alongside Gravity Forms 2.5 on Tuesday April 27, 2021 (USD EST). A pre-release version is currently available for testing, and [you can find out how to try this out in the RC2 announcement post](https://gravitypdf.com/news/gravity-pdf-6-0-0-rc-2/). Until the official release, the installation instructions below will not work.
-:::
+### Automatic Installation
 
 Search for the plugin directly from your WordPress admin area and install it with a single click.
 

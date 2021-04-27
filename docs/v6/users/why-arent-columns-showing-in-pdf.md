@@ -18,7 +18,7 @@ The primary reason for Drag and Drop columns not working in PDFs (aside from tho
 
 If it's a Universal template, [login to your GravityPDF.com account](https://gravitypdf.com/account/), download the latest version of that template, and reinstall [via the Template Manager](pdf-template-manager.md#install). If your license has lapsed, you will need to purchase a new one. 
 
-If you're using a Core PDF, your [template overrides](../developers/template-hierarchy.md) are outdated and don't include the new CSS required to support Gravity Forms 2.5 columns. You can double check this in the [Gravity PDF-section of the System Status page](system-status.md). The solution is to either:
+If you're using a Core PDF, your [template overrides](../developers/template-hierarchy.md) are outdated and don't include the new CSS required to support Gravity Forms 2.5 columns. You can double-check this in the [Gravity PDF-section of the System Status page](system-status.md). The solution is to either:
 
 1. [Delete the template override file via the PDF Template Manager](pdf-template-manager.md#delete). Gravity PDF will then load the new Core template shipped with version 6. **Only use this method if you haven't made any direct modifications to the Core template you are deleting.**
 
@@ -48,6 +48,4 @@ Columns are usually enabled by default (depending on the template), but can be d
    
 2. Use the filter `gfpdf_field_container_class` to override the default HTML container wrapper. The associated column CSS in the template may also be deleted. **Note: the filter may not be located directly in the template file, and could be added anywhere WordPress hooks are supported.**
 
-If any of the above is implimented, you need to rollback those changes to get columns working again in the associated Core/Universal template file(s).
-
-
+If any of the above is implemented, you need to rollback those changes to get columns working again in the associated Core/Universal template file(s).

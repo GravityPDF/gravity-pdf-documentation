@@ -43,7 +43,8 @@ html[data-theme="dark"] {
   padding: 0 var(--ifm-pre-padding);
 }
 
-.admonition.alert--warning {
+.admonition.alert--warning,
+.alert.alert--warning {
   --ifm-alert-color: var(--ifm-color-gray-900);
 }
 

@@ -32,24 +32,11 @@ Gravity PDF is a third party extension for Gravity Forms, created by an independ
 
 ## Installation
 
-### Automatic Installation 
-
-Search for the plugin directly from your WordPress admin area and install it with a single click.
-
-1. Login to your WordPress admin area and navigate to the `Plugins -> Add New` page.
-
-1. Use the search bar in the top right-hand corner of the plugins page to search for `Gravity PDF`. 
-    ![Plugin Installation Screen](https://resources.gravitypdf.com/uploads/2015/10/automatic-install.png)
-
-1. Click the `Install Now` button on the Gravity PDF plugin to confirm the installation.
-
-1. Once the installation has completed select the `Activate` link. 
-
 ### Manual Installation 
 
 You can manually install the plugin by downloading the plugin zip file from WordPress.org and then uploading through your WordPress admin area. The plugin zip file is 4.6MB and most web hosts maximum upload limit should be higher than this (you can check your maximum upload limit by navigating to `Media -> Add New` in your WordPress admin area and reviewing the ​*Maximum upload file size*​ limit).
 
-1. [Go to the plugin's WordPress repository](https://wordpress.org/plugins/gravity-forms-pdf-extended/) and select the `Download Version 5.x.x` button. 
+1. [Go to the Download Previous Version section in the plugin's WordPress repository](https://wordpress.org/plugins/gravity-forms-pdf-extended/advanced/#download-previous-link), use the dropdown and select the latest version 5 release, then use the download button.
 
 2.  In your WordPress admin area, navigate to the `Plugins -> Add New` page then select the `Upload Plugin` button (located to the right of the `Add Plugins` title)
 
@@ -63,7 +50,7 @@ You can manually install the plugin by downloading the plugin zip file from Word
 
 Upload the Gravity PDF plugin files to the WordPress plugins directory using your favourite FTP client.
 
-1. [Go to the plugin's WordPress repository](https://wordpress.org/plugins/gravity-forms-pdf-extended/) and select the `Download Version 5.x.x` button. 
+1. [Go to the Download Previous Version section in the plugin's WordPress repository](https://wordpress.org/plugins/gravity-forms-pdf-extended/advanced/#download-previous-link), use the dropdown and select the latest version 5 release, then use the download button.
 
 2.  Once downloaded, unzip the plugin folder. A folder called `gravity-forms-pdf-extended` will be extracted and this is what you should upload to your FTP server.
 

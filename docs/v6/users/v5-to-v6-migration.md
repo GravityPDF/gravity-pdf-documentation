@@ -38,6 +38,10 @@ Verify you meet these requirements [by viewing the System Status page](https://d
 While the official release date for Gravity Forms 2.5 is Tuesday 27 April 2021, [they are doing a staggered rollout](https://www.gravityforms.com/2-5-announcement/) and you may not be prompted to update from within WordPress yet. If that's the case, you can still download the release from your GravityForms.com account and install manually.
 :::
 
+:::success Info
+If you are unable to meet the v6 minimum software requirements, Gravity PDF will continue [supporting users on v5](../../v5/five-minute-install.md) with bug and security fixes until at least 27 April 2022.
+:::
+
 ## New User Interface
 
 Gravity Forms 2.5 sees a completely redesigned admin experience. So it doesn't stick out like a sore thumb, Gravity PDF has been updated to match the new user interface. 

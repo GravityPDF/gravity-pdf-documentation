@@ -8,13 +8,13 @@ description: "Gravity PDF is a free WordPress plugin built for the popular premi
 
 [Gravity PDF](https://gravitypdf.com) is a **free WordPress plugin** built for the popular premium form builder software, [Gravity Forms](https://rocketgenius.pxf.io/c/1211356/445235/7938). Gravity PDF allows you to generate PDF documents that contain user-data captured with Gravity Forms. 
 
-The look and feel of the PDF is controlled through templates. The software comes with **four free template designs**, but you can also [purchase additional templates from the template shop](https://gravitypdf.com/template-shop/), [build your own using HTML and CSS](../developers/start-customising.md) or have our team [custom-build one for you](https://gravitypdf.com/bespoke/) – our team can even auto-populate existing PDF documents like government forms (not available in our free edition). 
+The look and feel of the PDF is controlled through templates. The software comes with **four free template designs**, but you can also [purchase additional templates from the template shop](https://gravitypdf.com/store/#templates), [build your own using HTML and CSS](../developers/start-customising.md) or have our team [custom-build one for you](https://gravitypdf.com/bespoke/) – our team can even auto-populate existing PDF documents like government forms (not available in our free edition). 
 
-## Installation 
+If you enjoy video tutorials, you can watch a 13-minute Getting Started video for Gravity PDF where Gravity PDF's lead developer takes you through the installation and basic setup process, but also goes into more detail about the various Gravity PDF features and settings available.
 
-:::warning
-Gravity PDF 6.0 will officially be released alongside Gravity Forms 2.5 on Tuesday April 27, 2021 (USD EST). A pre-release version is currently available for testing, and [you can find out how to try this out in the RC2 announcement post](https://gravitypdf.com/news/gravity-pdf-6-0-0-rc-2/). Until the official release, the installation instructions below will not work.
-:::
+https://www.youtube.com/watch?v=t7_dNNxmuV4
+
+## Installation
 
 Assuming you [meet the software minimum requirements](installation.md), the installation is a breeze. Head to `Plugins -> Add New` in your WordPress admin area, search *Gravity PDF*, click **Install Now** and activate. It's that simple! 
 

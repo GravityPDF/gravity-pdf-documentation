@@ -16,6 +16,10 @@ Looking for open-source fonts to use with Gravity PDF? [Google Fonts has a large
 The Font Manager will only display custom fonts you've installed, and doesn't list or display the [Core PDF fonts](core-pdf-fonts.md). 
 :::
 
+If you enjoy learning through video, you can watch this 9-minute video with Gravity PDF's lead developer showing you the ropes:
+
+https://www.youtube.com/watch?v=f7Z44PzJzDk
+
 ## Open the Font Manager
 
 ![Manage Font via Global PDF Settings page](https://resources.gravitypdf.com/uploads/2021/04/v6-Open-Font-Manager.png)

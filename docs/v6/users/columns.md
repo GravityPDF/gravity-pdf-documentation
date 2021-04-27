@@ -6,9 +6,11 @@ description: "Gravity PDF supports columns in Core and the majority of Universal
 
 ![PDF Zadani with two, three, and four column support](https://resources.gravitypdf.com/uploads/2021/04/v6-Zadani-PDF-with-Column-Support.png)
 
-In the Core PDF templates (and the majority of [Universal templates](https://gravitypdf.com/template-shop/#universal)), column layouts are supported when using [Gravity Forms Drag and Drop column feature in the Form Editor](https://docs.gravityforms.com/working-with-columns/).
+In the Core PDF templates (and the majority of [Universal templates](https://gravitypdf.com/store/#universal)), column layouts are supported when using [Gravity Forms Drag and Drop column feature in the Form Editor](https://docs.gravityforms.com/working-with-columns/).
 
 In the Form Editor you to easily build advanced form layouts visually. Fields can be placed into columns  and then resize to varying widths. Gravity PDF will automatically mimic your form column behaviour (when a template supports it).
+
+https://www.youtube.com/watch?v=ywjVkJ7WoJU
 
 [Gravity Forms doesn't allow the following fields to be used in drag-and-drop columns](https://docs.gravityforms.com/working-with-columns/#known-issues-or-limitations) and Gravity PDF will match this behaviour:
 

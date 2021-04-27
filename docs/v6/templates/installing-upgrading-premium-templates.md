@@ -6,7 +6,7 @@ description: ""
 
 ## Installing a Premium Template 
 
-You've purchased a [premium PDF template through our online store](https://gravitypdf.com/template-shop/). The next step is to install it on your website.
+You've purchased a [premium PDF template through our online store](https://gravitypdf.com/store/#templates). The next step is to install it on your website.
 
 :::info
 Before you begin, please ensure you have the [Gravity Forms](https://rocketgenius.pxf.io/c/1211356/445235/7938) and [Gravity PDF](../users/five-minute-install.md) plugins both active on your WordPress website. Done? Good! Now let's get you up and running with your new premium template.

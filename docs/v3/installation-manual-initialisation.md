@@ -22,5 +22,3 @@ Initialising is as simple as selecting the <em>Initialise Plugin</em> button. As
 
 Once you’ve completed the initialisation process you will be able to view the default PDF template in all your form entries.
 
-To configure the plugin please see our <a href="/v3/installation-requirements/">configuration video series</a><a href="/v3/getting-started-with-gravity-pdf-configuration/">,</a> the documentation on the <a href="/v3/configuration-options-examples/">complete list of configuration options</a> and our <a href="/v3/custom-templates-introduction/">section on creating custom PDF templates</a>.
-

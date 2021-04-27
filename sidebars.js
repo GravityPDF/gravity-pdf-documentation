@@ -19,20 +19,8 @@ module.exports = {
           'label': 'Configuration',
           'items': [
             'v3/display-pdf-in-browser',
-            'v3/getting-started-with-gravity-pdf-configuration',
             'v3/configuration-options-examples',
             'v3/wheres-configuration-folder'
-          ]
-        },
-        {
-          'type': 'category',
-          'label': 'Config Video Series',
-          'items': [
-            'v3/getting-started-with-gravity-pdf-configuration/basic-configuration-video-part-one',
-            'v3/getting-started-with-gravity-pdf-configuration/how-to-automated-pdf-email-part-two',
-            'v3/getting-started-with-gravity-pdf-configuration/how-to-allow-user-pdf-downloads-video-part-three',
-            'v3/getting-started-with-gravity-pdf-configuration/how-to-manual-review-before-pdf-email-part-four',
-            'v3/getting-started-with-gravity-pdf-configuration/send-pdf-after-accepting-payment-video-part-five'
           ]
         },
         {
