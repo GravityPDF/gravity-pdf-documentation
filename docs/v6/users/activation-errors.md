@@ -20,6 +20,10 @@ Gravity PDF is an add-on for the form builder plugin Gravity Forms, and cannot b
 
 ### Gravity Forms version X is required 
 
+:::caution
+[Gravity Forms is currently doing a staged rollout for version 2.5](https://www.gravityforms.com/gravity-forms-v2-5-release/) and you may not be able to update from your admin area. If that's the case, you can [manually download the release from your Gravity Forms account](https://www.gravityforms.com/my-account/downloads/). 
+:::
+
 This error means the version of Gravity Forms you are running doesn't meet [the minimum software requirements](installation.md). To resolve, use Gravity Forms' automatic updater on the `Forms -> Updates` page in your admin area to get the latest version. **Note: One-click updates require an active Gravity Forms license key**.
 
 If you aren't ready to upgrade and your server meets the minimum requirements needed to run Gravity PDF v5, a prompt will show up allowing you to easily downgrade back to the latest release of the v5 branch (still actively supported).
