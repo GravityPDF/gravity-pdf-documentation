@@ -210,7 +210,7 @@ The Shipping Label is taken from the Gravity Forms Shipping Field.
 
 ## Recommended Font 
 
-*Invoice Iconic* comes bundled with Roboto Condensed which is an open source licensed font (Apache License, Version 2). Roboto Condensed is a geometric typeface with condensed lettering. For the best results, we recommend using Roboto Condensed at 10pt. Set the PDF font in the [Appearancesection](../users/setup-pdf.md#appearance-tab).
+*Invoice Iconic* comes bundled with Roboto Condensed which is an open source licensed font (Apache License, Version 2). Roboto Condensed is a geometric typeface with condensed lettering. For the best results, we recommend using Roboto Condensed at 10pt. Set the PDF font in the [Appearance section](../users/setup-pdf.md#appearance-tab).
 
 ## Viewing PDF 
 
