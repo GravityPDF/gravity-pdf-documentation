@@ -62,3 +62,12 @@ Once done, you're free to modify the CSS in the Core template – [`?html=1` hel
 * [`gfpdf_show_field_value`](filters/gfpdf_show_field_value.md)
 * [`gfpdf_signature_width`](filters/gfpdf_signature_width.md)
 * [`gfpdf_disable_product_table`](filters/gfpdf_disable_product_table.md)
+
+### How do I update outdated templates?
+
+If you get a warning on the [System Status page](../users/system-status.md) about having an outdated PDF template, it means the version of the template shipped with in Gravity PDF core is higher than the version of your template override stored in the PDF Working Directory. You could ignore the warning, but you may miss out on new features that get added ([like Drag and Drop column support in Gravity Forms 2.5](../users/why-arent-columns-showing-in-pdf.md)). 
+
+To resolve the warning you've two options available:
+
+1. If you are certain you haven't made any modifications to the Core template(s), you can delete those template files via the [PDF Template Manager](../users/pdf-template-manager.md#delete) and your site will go back to using the template shipped with the plugin.
+1. If you did modify a Core template, you will need to manually copy the changes over to your override file. For the Gravity PDF 6.0 update, [this CSS was added to each Core template to support Drag and Drop columns](https://github.com/GravityPDF/gravity-pdf/blob/6.0.0-RC2/src/templates/zadani.php#L49-L97).
