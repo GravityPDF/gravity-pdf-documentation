@@ -8,6 +8,10 @@ description: ""
 
 When provided the Gravity Forms entry ID and PDF ID, this method will correctly generate the PDF, save it to disk, [trigger the `gpdf_post_save_pdf` action](../actions/gfpdf_post_save_pdf.md) and return the absolute path to the PDF.
 
+:::note
+When using this method, the PDF will be cached in the temporary directory for up to 24 hours and the cached copy used for sending future notifications. To prevent this behaviour you should delete the PDF from the temporary location when you've finished with it.
+:::
+
 ## Version 
 
 This method was introduced in Gravity PDF 4.0.
@@ -36,7 +40,10 @@ add_action( 'init', function() {
         $pdf_path = GPDFAPI::create_pdf( 171, '56d5338fae865');
 
         if ( ! is_wp_error( $pdf_path ) && is_file( $pdf_path ) ) {
-            //Do something with your PDF
+            // Do something with your PDF
+            
+            // Cleanup the PDF from the tmp path
+            unlink( $pdf_path );
         }
     }
 } );
