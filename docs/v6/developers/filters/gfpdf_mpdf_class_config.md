@@ -36,7 +36,7 @@ Gravity PDF has some very sane defaults for mPDF, but you may want to utilise on
 Below is a snippet to disable SSL verification while requesting images (and other assets) for inclusion within the PDF. You might do this if your host is running an outdated version of cURL or the OpenSSL library and the images aren't displaying:
 
 ``` 
-add_filter( 'gfpdf_mpdf_init_class', function( $config, $form, $entry, $settings, $Helper_PDF ) {
+add_filter( 'gfpdf_mpdf_class_config', function( $config, $form, $entry, $settings, $Helper_PDF ) {
 	$config['curlAllowUnsafeSslRequests'] = true;
 
 	return $config;
@@ -46,7 +46,7 @@ add_filter( 'gfpdf_mpdf_init_class', function( $config, $form, $entry, $settings
 Another example is enabling the use of active form fields in PDFs. Keep in mind Gravity PDF does NOT support this feature, and our support team will not be able to assist you with any problems you encounter.
 
 ``` 
-add_filter( 'gfpdf_mpdf_init_class', function( $config, $form, $entry, $settings, $Helper_PDF ) {
+add_filter( 'gfpdf_mpdf_class_config', function( $config, $form, $entry, $settings, $Helper_PDF ) {
 
 	/**
 	 * Due to the large number of compatibility problems with active form fields in mPDF,
