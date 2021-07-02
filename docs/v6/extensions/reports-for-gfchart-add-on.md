@@ -29,7 +29,7 @@ To add additional features to GFChart that enhances *Gravity PDF Reports for GFC
 1. GFChart Survey Customiser (control chart segment colours and order)
 
 :::info
-GFChart Image Charts does not currently support the Charting vs Time or DIY extensions. If this is a feature you're interested in, [contact GFChart and let them know](https://gfchart.com/support/?ref=24).
+GFChart Image Charts does not currently support the GFChart Charting vs Time, GravityView, or DIY add-ons. If this is a feature you're interested in, [contact GFChart and let them know](https://gfchart.com/support/?ref=24).
 :::
 
 ## Setup GFChart 
