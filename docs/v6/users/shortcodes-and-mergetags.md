@@ -11,7 +11,7 @@ There are a number of security protocols in place to prevent unauthorised access
 For the best balance between security and access, it is recommended to enable signed PDF URLs so that anyone with access to the link can view the document for a specific time period (which you define).
 
 :::info What are Signed PDF URLs?
-They are special auto-expiring URLs that allow _anyone_ with the link to view the PDF. They are useful if you want to share the URL via email to a third party, don't want to store IP addresses with entries, or would like to display the link on a page restricted to specific user role(s). Both Shortcode and Merge Tag options support signed URLs, **but the feature has to be enabled** (see below). [Find out more about the PDF security and how Signed PDF URLs fit in the picture](http://localhost:3000/v6/users/pdf-security#default-security).
+They are special auto-expiring URLs that allow _anyone_ with the link to view the PDF. They are useful if you want to share the URL via email to a third party, don't want to store IP addresses with entries, or would like to display the link on a page restricted to specific user role(s). Both Shortcode and Merge Tag options support signed URLs, **but the feature has to be enabled** (see below). [Find out more about the PDF security and how Signed PDF URLs fit in the picture](pdf-security.md#default-security).
 :::
 
 ## Shortcode or Merge Tag?
@@ -174,7 +174,7 @@ While the basic PDF merge tag is available in the selector, it's useful to know 
 
 * **[label]** (optional): A user-define name used for readability. When using the merge tags selector the [PDF Label](setup-pdf.md#label) will be used.
 * **:pdf:** (required): A static identifier used to determine this tag is for Gravity PDF
-* **[id]** (required): A dynamic identifier assigned to a particular form's PDF. The easiest way to get the ID is to use the merge tag selector. However, you can find a PDF's ID [in the URL when updating the PDF settings](http://localhost:3000/v6/users/viewing-pdfs). This is denoted by the `pid` parameter.
+* **[id]** (required): A dynamic identifier assigned to a particular form's PDF. The easiest way to get the ID is to use the merge tag selector. However, you can find a PDF's ID [in the URL when updating the PDF settings](viewing-pdfs.md). This is denoted by the `pid` parameter.
 * **[modifier]** (optional): Optional parameters that change the way the URL is generated (see below)
 
 #### Available Modifiers

@@ -18,7 +18,7 @@ description: "Gravity PDF fully integrates with Gravity Forms Webhooks add-on, s
 
 Gravity Forms will send the entire unformatted entry with the request. Any active PDFs configured on the form, which also passes [the current entry conditional logic](setup-pdf.md#conditional-logic), will be added to the request body.
 
-The key used for the individual PDFs uses the format `gpdf_{ID}`, where `{ID}` is the [PDF Setting ID](http://localhost:3000/v6/users/shortcodes-and-mergetags#id-required). 
+The key used for the individual PDFs uses the format `gpdf_{ID}`, where `{ID}` is the [PDF Setting ID](shortcodes-and-mergetags.md#id-required). 
 
 ```
 array (
