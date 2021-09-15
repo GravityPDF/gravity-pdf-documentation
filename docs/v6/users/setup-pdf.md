@@ -17,7 +17,7 @@ To aid you in managing your PDF settings, an Add/Update button is included below
 
 ## Locating the PDF Settings 
 
-![PDF Form Settings List](https://resources.gravitypdf.com/uploads/2021/04/v6-PDF-Settings-Form.png) 
+![PDF Form Settings List](https://resources.gravitypdf.com/uploads/2021/08/v6-PDF-Settings.png) 
 
 The PDF settings for an individual form can be accessed by following these steps:
 
@@ -180,7 +180,7 @@ Below is a description of the Core template settings that all **four free templa
 
 ## Advanced Section 
 
-![PDF Form Settings Advanced Section](https://resources.gravitypdf.com/uploads/2021/04/v6-PDF-Advanced-Tab.png) 
+![PDF Form Settings Advanced Section](https://resources.gravitypdf.com/uploads/2021/04/v6-Advanced-Tab-PDF.png) 
 
 The Advanced section allows you to control the PDF security (which includes password protection). You can also change the image DPI and the PDF format.
 
