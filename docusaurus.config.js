@@ -132,7 +132,7 @@ module.exports = {
       v5: `<div class="admonition admonition-caution alert alert--warning" role="alert"><h5><span class="admonition-icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg></span>CAUTION</h5>️Version 5 of Gravity PDF does not have full support for Gravity Forms 2.5 and <a href="/v6/users/v5-to-v6-migration">you should consider upgrading to version 6</a>. If you cannot, version 5 will still function but have a degraded admin experience. Support and bug/security fixes will be provided until at least 27 April 2022.</div>`,
       v6: ``
     },
-    latestVersion: 'v5',
+    latestVersion: 'v6',
 
     googleAnalytics: {
       trackingID: 'UA-58177521-3',
