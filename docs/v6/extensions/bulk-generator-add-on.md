@@ -153,3 +153,7 @@ If a fatal error occurs, it could be a temporary filesystem or network error. Fi
 ### I'm a developer. How exactly does the Build process works? 
 
 The front-end UI is powered by ReactJS and it communicates with your server using the REST API. When you click the *Build* button, an API request is made that returns a unique session ID and links your configuration to that ID. Next, five concurrent API requests are made to generate individual PDFs for an entry. For every five PDFs that are generated, a separate zip API request is made to move those documents into the zip archive (this is more memory efficient that zipping everything up at the end). This process repeats until the PDFs for all your entries are generated. The Zip API call returns a secure URL which can be used to download the zip file. We redirect the browser to that URL upon completion. There's also a lot of error handling built into the process, e.g., retry API calls if they fail and continue on error.
+
+### I'm a developer and want to trigger an action after the Build process is complete
+
+The Build process is powered by Javascript and you'll need to tap into the `gform.doAction('gpdf-bulk-generator-redux-store', store)` hook so you can subscribe to Redux `store` events. [This basic plugin shows how to correctly set this up](https://github.com/GravityPDF/gravity-pdf-bulk-generator-store-example) and access all the entry IDs that were processed during the build.
