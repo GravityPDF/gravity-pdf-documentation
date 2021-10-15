@@ -181,3 +181,14 @@ By default, when you've [allowed your user to download the PDF via the Previewer
 ```
 add_filter( 'gfpdf_previewer_enable_pdf_security', '__return_false' );
 ```
+
+### Load Previewer Automatically
+
+The plugin currently only loads the Previewer when it comes into the user's viewport via scrolling. If you want it to load as soon as Gravity Forms loads you can use the following JavaScript:
+
+```
+/* Automatically trigger a manual refresh of the Gravity PDF Previewer */
+jQuery(document).on('gform_post_conditional_logic', function () {
+  jQuery('.gpdf-manually-load-preview a').trigger('click')
+})
+```
