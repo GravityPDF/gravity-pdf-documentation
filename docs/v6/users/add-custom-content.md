@@ -6,7 +6,7 @@ description: "Learn how to add your own custom HTML content to Core and Universa
 
 Gravity PDF will automatically display user-submitted content in Core ([and Universal](https://gravitypdf.com/store/#universal)) PDFs. But what if you need to include additional text, images, links, or disclaimers alongside the user content? Gravity Forms and Gravity PDF make this easy...
 
-https://vimeo.com/637697049
+https://www.youtube.com/watch?v=J3X7yrmsxwU
 
 ## HTML Field
 
