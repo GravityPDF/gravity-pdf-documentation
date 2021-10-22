@@ -696,6 +696,7 @@ module.exports = {
           'label': 'Under The Hood',
           'items': [
             'v6/users/pdf-security',
+            'v6/users/add-custom-content',
             'v6/users/hide-form-fields',
             'v6/users/adding-page-breaks',
             'v6/users/columns',
