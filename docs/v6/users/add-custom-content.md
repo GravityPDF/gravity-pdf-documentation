@@ -20,7 +20,7 @@ Gravity PDF will respect conditional logic you apply to HTML fields (provided yo
 
 ## PDF 
 
-![Showing off Gravity PDF's Enable HTML Fields setting in the Form PDF settings](https://resources.gravitypdf.com/uploads/2021/10/gravity-pdf-show-html-fields-setting-2.png)
+![Showing off Gravity PDF's Enable HTML Fields setting in the Form PDF settings](https://resources.gravitypdf.com/uploads/2021/10/gravity-pdf-show-html-fields-setting-3-2.png)
 
 When [configuring your PDF on the form](setup-pdf.md), make sure to enable the [Show HTML Fields](setup-pdf.md#show-html-fields) setting.
 
