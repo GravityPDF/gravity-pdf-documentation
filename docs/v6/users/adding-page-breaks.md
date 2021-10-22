@@ -6,6 +6,8 @@ description: "You can force a page breaks before certain fields in Core and Univ
 
 You can force a page breaks before certain fields in Core and [Universal PDF templates](https://gravitypdf.com/store/#universal) using a special CSS class in the Gravity Forms Editor.
 
+https://www.youtube.com/watch?v=QAjW8yKzpOk
+
 ## Add Pagebreak before Field
 
 ![Add 'pagebreak' class to Gravity Forms Field](https://resources.gravitypdf.com/uploads/2021/04/v6-Add-Pagebreak.png)
