@@ -12,24 +12,24 @@ We've included a number of techniques to assist you when creating custom PDF tem
 
 When viewing a Gravity PDF in your browser, there's a couple of URL parameters that will assist you. A URL parameter is simply a value added to your URL which Gravity PDF can read. It might look like this:
 
-    https://gravitypdf.com/pdf/12i0afjafwijww212/?name=value
+    https://gravitypdf.com/pdf/60b71344af2fd/235/?name=value
 
 The URL parameter is the `name=value` pair after the question mark.
 
 ### data=1 
 * ![Preview of the 'data' attribute](https://resources.gravitypdf.com/uploads/2015/11/data.png)
 * The data URL parameter is used to display the full output of the `$form_data` array in your browser. This is very useful when [creating your PDF template using PHP only](php-form-data-array.md).
-* Usage: `https://gravitypdf.com/pdf/12i0afjafwijww212/?data=1`
+* Usage: `https://gravitypdf.com/pdf/60b71344af2fd/235/?data=1`
 
 ### html=1 
 * ![Preview of the 'html' attribute](https://resources.gravitypdf.com/uploads/2015/11/html.png)
 * The HTML URL parameter is used to display the generated PDF template's HTML mark-up. What you'll see is the HTML that gets sent to the PDF software with all the PHP and merge tag formatting complete. This is very useful when debugging layout issues in your custom templates.
-* Usage: `https://gravitypdf.com/pdf/12i0afjafwijww212/?html=1`
+* Usage: `https://gravitypdf.com/pdf/60b71344af2fd/235/?html=1`
 
 ### template={name} 
 * ![Preview of the 'template' attribute](https://resources.gravitypdf.com/uploads/2015/11/template.png)
 * The template URL parameter allows you to quickly swap between different PDF template files. The `{name}` value needs to be substituted for the PHP template name (with the `.php` extension removed).
-* Usage: `https://gravitypdf.com/pdf/12i0afjafwijww212/?template=hello-world`
+* Usage: `https://gravitypdf.com/pdf/60b71344af2fd/235/?template=hello-world`
 
 ## Useful Paths and URLs 
 
