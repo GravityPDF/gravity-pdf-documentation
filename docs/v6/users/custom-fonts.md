@@ -4,6 +4,8 @@ sidebar_label: "Custom Fonts"
 description: "Gravity PDF is pre-installed with over 30 different fonts which support the majority of languages worldwide. For those not supported you can use the Font Manager."
 ---
 
+import ResponsiveEmbed from 'react-responsive-embed'
+
 ![Font Manager](https://resources.gravitypdf.com/uploads/2021/03/v6-Font-Manager.png) 
 
 Use the Font Manager to add, update, search, select, and delete custom fonts that can be used in your Gravity PDF documents. While Gravity PDF [ships with a variety of fonts that support most languages](core-pdf-fonts.md), installing and using custom fonts allow you to match your branding, and enhance the overall look and feel of your PDFs.
@@ -18,7 +20,7 @@ The Font Manager will only display custom fonts you've installed, and doesn't li
 
 If you enjoy learning through video, you can watch this 9-minute video with Gravity PDF's lead developer showing you the ropes:
 
-https://www.youtube.com/watch?v=f7Z44PzJzDk
+<ResponsiveEmbed src="https://player.vimeo.com/video/665416313" allowfullscreen />
 
 ## Open the Font Manager
 

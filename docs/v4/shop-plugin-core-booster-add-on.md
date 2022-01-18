@@ -4,6 +4,8 @@ sidebar_label: "Core Booster"
 description: "Core Booster is a premium plugin for Gravity PDF that adds a number of enhancements to the Core (free) and Universal PDF templates (premium)."
 ---
 
+import ResponsiveEmbed from 'react-responsive-embed'
+
 ![Core Booster add-on](https://resources.gravitypdf.com/uploads/edd/2017/06/cover-artwork-2.png)
 
 *Core Booster* is a premium plugin for Gravity PDF that adds a number of enhancements to the Core and Universal PDF templates. The Core PDF templates are the free designs that [ship with Gravity PDF](https://wordpress.org/plugins/gravity-forms-pdf-extended/), and the Universal templates are the [premium designs from our Template Shop](https://gravitypdf.com/template-shop/#universal). 
@@ -29,7 +31,7 @@ Refer to the sections below for information on what each feature does and how to
 * [Toggle Field Labels](#toggle-field-labels)
 
 #### Show All Available Options 
-https://www.youtube.com/watch?v=Rj3GdkQv0R4&rel=0
+<ResponsiveEmbed src="https://www.youtube.com/embed/Rj3GdkQv0R4" />
 
 Show Field Options 
 :    This feature allows you to control if all available options are shown in the PDF for Radio, Checkbox, Select and Multiselect (RCSM) fields.
@@ -41,7 +43,7 @@ Show Field Options
 :    You can find this setting at the bottom of the *Template* tab when [editing the PDF Settings](user-setup-pdf.md#template) for Core and Universal PDF templates.
 
 #### Toggle Option Label / Value 
-https://www.youtube.com/watch?v=oE7aNOWHndU&rel=0
+<ResponsiveEmbed src="https://www.youtube.com/embed/oE7aNOWHndU" />
 
 Option Field Display 
 :    This feature allows you to control whether Radio, Checkbox, Select and Multiselect (RCSM) fields will show the selected option label or value in the PDF.
@@ -50,7 +52,7 @@ Option Field Display
 :    You can find this setting at the bottom of the *Template* tab when [editing the PDF Settings](user-setup-pdf.md#template) for Core and Universal PDF templates.
 
 #### Show Field Descriptions 
-https://www.youtube.com/watch?v=F2hANc35XE4&rel=0
+<ResponsiveEmbed src="https://www.youtube.com/embed/F2hANc35XE4" />
 
 Show Field Description? 
 :    When enabled, a field's description will be displayed alongside the user's response.
@@ -58,7 +60,7 @@ Show Field Description?
 :    You can find this setting at the bottom of the *Template* tab when [editing the PDF Settings](user-setup-pdf.md#template) for Core and Universal PDF templates.
 
 #### Group / Ungroup Product Fields 
-https://www.youtube.com/watch?v=I7KtEI-KHgA&rel=0
+<ResponsiveEmbed src="https://www.youtube.com/embed/I7KtEI-KHgA" />
 
 Group Products? 
 :    Disable this feature to prevent products from being grouped at the end of a PDF. Instead, they'll be displayed in the order they appear in your Form Editor.
@@ -67,7 +69,7 @@ Group Products?
 :    You can find this setting at the bottom of the *Template* tab when [editing the PDF Settings](user-setup-pdf.md#template) for Core and Universal PDF templates.
 
 #### Toggle Field Labels 
-https://www.youtube.com/watch?v=uKTLW_HsiWs&rel=0
+<ResponsiveEmbed src="https://www.youtube.com/embed/uKTLW_HsiWs" />
 
 Field Label Display 
 :    This feature gives you three different ways to display the field labels in the PDF:

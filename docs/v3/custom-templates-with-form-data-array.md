@@ -4,6 +4,8 @@ sidebar_label: "Templates with $form_data Array"
 description: ""
 ---
 
+import ResponsiveEmbed from 'react-responsive-embed'
+
 <div class="message">If you haven't <a href="/v3/custom-templates-introduction/">read our introduction guide to custom templates</a>, do this first.</div>
 Displaying Gravity Form entries using the $form_data array is a little trickier than using merge tags, but it's a much more robust solution and the one we recommend you use. Why? Because you can manipulate the entry data using any PHP or WordPress functions.
 
@@ -25,7 +27,7 @@ $rounded_repayments    = round($monthly_repayments, 2); /* round the results to 
 <h3>Getting Started with the $form_data Array</h3>
 We've put together a video highlighting how to view, access and use the $form_data array. Before you watch this video you should view our <a href="/v3/custom-templates-with-mergetags/#video">Getting Started with Merge Tags</a> video.
 
-https://www.youtube.com/watch?v=FRzVEuwD_8Y
+<ResponsiveEmbed src="https://www.youtube.com/embed/FRzVEuwD_8Y" />
 
 For those who want more of a breakdown on how to use and access the <code>$form_data</code> array read on.
 <h3>Using the $form_data array</h3>

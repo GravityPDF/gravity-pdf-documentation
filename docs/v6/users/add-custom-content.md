@@ -4,9 +4,11 @@ sidebar_label: "Add Custom Content"
 description: "Learn how to add your own custom HTML content to Core and Universal PDF documents anywhere in the PDF."
 ---
 
+import ResponsiveEmbed from 'react-responsive-embed'
+
 Gravity PDF will automatically display user-submitted content in Core ([and Universal](https://gravitypdf.com/store/#universal)) PDFs. But what if you need to include additional text, images, links, or disclaimers alongside the user content? Gravity Forms and Gravity PDF make this easy...
 
-https://www.youtube.com/watch?v=J3X7yrmsxwU
+<ResponsiveEmbed src="https://player.vimeo.com/video/665437101" allowfullscreen />
 
 ## HTML Field
 

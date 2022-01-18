@@ -4,6 +4,8 @@ sidebar_label: "Reports for GFChart"
 description: "Beautiful PDF Reports using Gravity Forms and GFChart. Includes 15 unique designs and supports all GFChart types: Pie, Bar, Line, and Progress Bar."
 ---
 
+import ResponsiveEmbed from 'react-responsive-embed'
+
 ![Gravity PDF reports for GFChart Icon](https://resources.gravitypdf.com/uploads/2020/05/gravitypdf-reports-for-gfchart-cover-artwork-opt.png)
 
 *Reports for GFChart* is a premium plugin for Gravity PDF that creates beautiful PDF Reports [using the third-party plugin GFChart](https://gfchart.com/?ref=24). The extension includes 15 report designs for you to choose from and supports all core GFChart types, including Pie, Bar, Column (horizontal bar), Progress Bar, and Calculations. [You can purchase the *Reports for GFChart* plugin from our Extension Shop](https://gravitypdf.com/shop/reports-for-gfchart-add-on/). This guide will walk you through installing and configuring *Reports for GFChart* to its full potential.
@@ -36,7 +38,7 @@ GFChart Image Charts does not currently support the GFChart Charting vs Time, Gr
 
 We've put together a quick-start guide to get you up and running fast with GFChart. For an in-depth guide, you should [review the GFChart documentation in full](https://gfchart.com/documentation/?ref=24).
 
-https://www.youtube.com/watch?v=8PYT5GwWuCk
+<ResponsiveEmbed src="https://player.vimeo.com/665822507" allowfullscreen />
 
 1. Navigate to `Forms -> Settings -> GFChart` in your admin area and activate your GFChart license key. The GFChart Image Charts plugins **will NOT** work without a valid license key.
 1. Next, head to the `Forms -> Charts/Calculations` page in your admin area.
@@ -68,7 +70,7 @@ All *Reports for GFChart* templates have common settings that can be configured,
 
 ### Templates 
 
-https://www.youtube.com/watch?v=KNABsUDYvD0
+<ResponsiveEmbed src="https://player.vimeo.com/665823109" allowfullscreen />
 
 *Reports for GFChart* come with five unique report styles to choose from, with each report including two variants – a total of 15 different designs! The templates available are:
 
@@ -384,7 +386,7 @@ The ability to get a report emailed to you on a regular schedule is an important
 
 To help with the setup, we've instructions in 📽️ and 📝 format.
 
-https://www.youtube.com/watch?v=Bta_GZMxma8
+<ResponsiveEmbed src="https://player.vimeo.com/665822635" allowfullscreen />
 
 After installing the plugin, you'll have a new checkbox option on the Notification settings called *Schedule Notifications* which will allow you to enable this feature. When checked, you'll then be able to select the frequency of the report. Available options include:
 

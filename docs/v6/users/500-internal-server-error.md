@@ -1,4 +1,5 @@
 ---
+id: 500-internal-server-error
 title: "500 Internal Server Error and Gravity PDF"
 sidebar_label: "500 Internal Server Error"
 description: "The usual cause of a 500 Internal Server error with Gravity PDF is a lack of WP Memory, but other problems may cause it. Find out how to debug and fix."

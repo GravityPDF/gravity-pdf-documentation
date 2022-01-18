@@ -4,6 +4,8 @@ sidebar_label: "PDF Template Manager"
 description: "The PDF Template Manager allows you to better view, search and manage your PDF Templates. You can easily search through your installed templates, see what a PDF might look like and view supported features. You can also install PDFs via a zip file and easily delete them, too."
 ---
 
+import ResponsiveEmbed from 'react-responsive-embed'
+
 ![The all-new PDF Template Manager](https://resources.gravitypdf.com/uploads/2021/03/v6-Advanced-Template-Selector.png)
 
 The PDF Template Manager allows you to view, search and manage your PDF Templates. Modelled after the WordPress Theme Manager, you can easily search through your installed templates and see a screenshot + description. Pick the template you want to use, install a new one, or delete an existing one. It's all handled through the Template Manager. 
@@ -14,7 +16,7 @@ Templates are the backbone of Gravity PDF and **what give it so much power**. Th
 
 In this 6-minute video, Gravity PDF's lead developer takes you through opening and installing custom PDF templates via the PDF Template Manager, how to delete templates, and how to search and select them.
 
-https://www.youtube.com/watch?v=Ktx1uswGYZI
+<ResponsiveEmbed src="https://player.vimeo.com/video/665431569" allowfullscreen />
 
 ## Open the PDF Template Manager 
 

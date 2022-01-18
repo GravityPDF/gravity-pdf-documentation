@@ -4,6 +4,8 @@ sidebar_label: "5 Minute Install"
 description: "Gravity PDF is a free WordPress plugin built for the popular premium form builder software, Gravity Forms. Get started in 5 minutes flat!"
 ---
 
+import ResponsiveEmbed from 'react-responsive-embed'
+
 ![Gravity PDF 6.x PDF Creation](https://resources.gravitypdf.com/uploads/2021/04/v6-Create-PDF.png)
 
 [Gravity PDF](https://gravitypdf.com) is a **free WordPress plugin** built for the popular premium form builder software, [Gravity Forms](https://rocketgenius.pxf.io/c/1211356/445235/7938). Gravity PDF allows you to generate PDF documents that contain user-data captured with Gravity Forms. 
@@ -12,7 +14,7 @@ The look and feel of the PDF is controlled through templates. The software comes
 
 If you enjoy video tutorials, you can watch a 13-minute Getting Started video for Gravity PDF where Gravity PDF's lead developer takes you through the installation and basic setup process, but also goes into more detail about the various Gravity PDF features and settings available.
 
-https://www.youtube.com/watch?v=t7_dNNxmuV4
+<ResponsiveEmbed src="https://player.vimeo.com/video/665407495" allowfullscreen />
 
 ## Installation
 
