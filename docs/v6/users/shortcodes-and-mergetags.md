@@ -4,6 +4,8 @@ sidebar_label: "PDF Download Link"
 description: "You can add a Gravity PDF download link to Gravity Forms Confirmation and Notifications with the [gravitypdf] shortcode."
 ---
 
+import ResponsiveEmbed from 'react-responsive-embed'
+
 ## Before you get started...
 
 There are a number of security protocols in place to prevent unauthorised access to PDF documents. Before using the PDF shortcode or merge tag it's **highly recommended** you [review the documentation detailing PDF security](pdf-security.md) so that your users don't get an `access denied` error when attempting to view or download the PDFs.
@@ -47,7 +49,7 @@ A *Download Shortcode* column can be found on the [PDF form list](managing-pdfs.
 
 If you enjoy video tutorials, watch this 14-minute video with Gravity PDF's lead developer as he takes you through using the [gravitypdf] shortcode with all three confirmation types. 
 
-https://www.youtube.com/watch?v=4NPsz_f9iGI
+<ResponsiveEmbed src="https://player.vimeo.com/video/665416429" allowfullscreen />
 
 ##### Text Confirmation
 

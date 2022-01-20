@@ -69,7 +69,7 @@ PDFs can be **completely disabled** by using the active/inactive toggle – loca
 
 ### Duplicate 
 
-![The UI shown when duplicating PDFs](https://resources.gravitypdf.com/uploads/2021/04/PDF-Settings-Duplicate-PDF-e1618786535603.png) 
+![The UI shown when duplicating PDFs](https://resources.gravitypdf.com/uploads/2022/01/PDF-Settings-Duplicate-PDF.png) 
 
 You can duplicate an existing PDF configuration by clicking the *Duplicate* action. This action will happen in the background without a page reload. The newly-duplicated PDF will have the label appended with "(copy)" and be inactive by default.
 

@@ -4,6 +4,8 @@ sidebar_label: "PDF Security"
 description: "Ensuring your data is protected is top priority and we've implemented security protocols to prevent unauthorised access to PDF documents."
 ---
 
+import ResponsiveEmbed from 'react-responsive-embed'
+
 ![Password Protected PDF](https://resources.gravitypdf.com/uploads/2021/04/v6-PDF-Security-e1618787341558.png)
 
 Ensuring your data is protected is our *top priority*, and we've implemented a number of security protocols to prevent unauthorised access to PDF documents generated with Gravity PDF. **All PDF rendering is done directly on your web server**, and no third-party service has access to your data. 
@@ -12,7 +14,7 @@ Once you've installed the plugin, it's **strongly recommended** you review the s
 
 If you'd like to know specifics about the settings that control security features in Gravity PDF, and see those protocols in action, Gravity PDF's lead developer has put together a 12-minute video:
 
-https://www.youtube.com/watch?v=EuzQiHZKQAM
+<ResponsiveEmbed src="https://player.vimeo.com/video/665431791" allowfullscreen />
 
 **Note: the video doesn't cover every security feature, and you should still review the documentation below.**
 

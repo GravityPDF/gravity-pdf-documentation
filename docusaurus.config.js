@@ -1,4 +1,4 @@
-const oembed = require('@agentofuser/remark-oembed')
+
 module.exports = {
   title: 'Gravity PDF',
   url: 'https://docs.gravitypdf.com',
@@ -140,7 +140,8 @@ module.exports = {
     },
 
     algolia: {
-      apiKey: '3f8f81a078907e98ed8d3a5bedc3c61c',
+      appId: 'NKKEAC9I6I',
+      apiKey: '0b9c90c6e089769be381f47196dbb313',
       indexName: 'gravitypdf',
       searchParameters: {},
     },
@@ -154,11 +155,7 @@ module.exports = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl: 'https://github.com/gravityPDF/gravity-pdf-documentation/edit/master/',
-          remarkPlugins: [
-            oembed.default
-          ],
           showLastUpdateTime: true,
-          disableVersioning: true,
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),

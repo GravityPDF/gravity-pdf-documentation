@@ -4,6 +4,8 @@ sidebar_label: "Templates with Mergetags"
 description: ""
 ---
 
+import ResponsiveEmbed from 'react-responsive-embed'
+
 <div class="message">If you haven't <a href="/v3/custom-templates-introduction/">read our introduction guide to custom templates</a>, do this first.</div>
 Using merge tags in your custom PDF template is a simple and effective way to include information from your Gravity Form in your PDF. However, this method is the least flexible as you cannot manipulate the data using PHP.
 <h3>Finding Your Form's Merge Tags</h3>
@@ -15,4 +17,4 @@ Once you have the merge tags you want you can copy them over to your PDF templat
 <h3 id="video">Getting Started With Merge Tags</h3>
 We've put together a handy video running through the basics of setting up a custom PDF template and display entry data with merge tags.
 
-https://www.youtube.com/watch?v=JITdgLS6UPs
+<ResponsiveEmbed src="https://www.youtube.com/embed/JITdgLS6UPs" />

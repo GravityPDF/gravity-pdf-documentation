@@ -4,6 +4,8 @@ sidebar_label: "Bulk Generator"
 description: "Discover how to install, configure, and use the Gravity PDF Bulk Generator premium plugin so you can be bulk exporting your entry PDFs in no time."
 ---
 
+import ResponsiveEmbed from 'react-responsive-embed'
+
 ![Bulk Generator Plugin Icon](https://resources.gravitypdf.com/uploads/2020/04/bulk-generator-cover-artwork.png)
 
 *Bulk Generator* is a premium plugin for Gravity PDF which allows you to easily bulk export Gravity PDF documents from Gravity Forms entries. Once the PDFs have been generated, you can download a zip file with all the files. 
@@ -28,7 +30,7 @@ The REST API must be enabled to use this plugin.
 
 ## Configuring 
 
-https://www.youtube.com/watch?v=IC1UO2AkRMw
+<ResponsiveEmbed src="https://www.youtube.com/embed/IC1UO2AkRMw" />
 
 The extension adds a new bulk action option called *Download PDF* on [Gravity Forms Entry List pages](https://docs.gravityforms.com/entries/). Like other bulk actions, you select the checkbox next to each entry you would like to generate PDFs for. To refine the entries, you can use Gravity Forms native filters to show only *Starred* or *Unread* entries, or use the entry search feature. If you've got a lot of entries, you can use Gravity Forms *Select All Entries* feature to include all paginated pages.
 
