@@ -34,7 +34,7 @@ Refer to the sections below for information on what each feature does and how to
 
 ### Customise Fields 
 
-<ResponsiveEmbed src="https://player.vimeo.com/665827696" allowfullscreen />
+<ResponsiveEmbed src="https://player.vimeo.com/665827696" allowFullScreen />
 
 #### Display Fields 
 *  This feature allows you to control which fields are displayed or excluded in the current PDF. You can create multiple PDFs on the same form with different fields selected.
@@ -46,7 +46,7 @@ Refer to the sections below for information on what each feature does and how to
 
 ### Display Notes 
 
-<ResponsiveEmbed src="https://player.vimeo.com/665827733" allowfullscreen />
+<ResponsiveEmbed src="https://player.vimeo.com/665827733" allowFullScreen />
 
 #### Show Entry Notes 
 *  This feature allows you to display the Entry Notes at the bottom of the PDF. 
@@ -55,7 +55,7 @@ Refer to the sections below for information on what each feature does and how to
 
 ### Show All Available Options 
 
-<ResponsiveEmbed src="https://player.vimeo.com/666605519" allowfullscreen />
+<ResponsiveEmbed src="https://player.vimeo.com/666605519" allowFullScreen />
 
 #### Show Field Options 
 * This feature allows you to control if all available options are shown in the PDF for Radio, Checkbox, Select and Multiselect (RCSM) fields.
@@ -68,7 +68,7 @@ Refer to the sections below for information on what each feature does and how to
 
 ### Toggle Option Label / Value 
 
-<ResponsiveEmbed src="https://player.vimeo.com/666614031" allowfullscreen />
+<ResponsiveEmbed src="https://player.vimeo.com/666614031" allowFullScreen />
 
 #### Option Field Display 
 * This feature allows you to control whether Radio, Checkbox, Select and Multiselect (RCSM) fields will show the selected option label or value in the PDF.
@@ -78,7 +78,7 @@ Refer to the sections below for information on what each feature does and how to
 
 ### Show Field Descriptions 
 
-<ResponsiveEmbed src="https://player.vimeo.com/666605579" allowfullscreen />
+<ResponsiveEmbed src="https://player.vimeo.com/666605579" allowFullScreen />
 
 #### Show Field Description? 
 * When enabled, a field's description will be displayed alongside the user's response.
@@ -87,7 +87,7 @@ Refer to the sections below for information on what each feature does and how to
 
 ### Group / Ungroup Product Fields 
 
-<ResponsiveEmbed src="https://player.vimeo.com/666614048" allowfullscreen />
+<ResponsiveEmbed src="https://player.vimeo.com/666614048" allowFullScreen />
 
 #### Group Products? 
 * Disable this feature to prevent products from being grouped at the end of a PDF. Instead, they'll be displayed in the order they appear in your Form Editor. 
@@ -96,7 +96,7 @@ Refer to the sections below for information on what each feature does and how to
 
 ### Toggle Field Labels 
 
-<ResponsiveEmbed src="https://player.vimeo.com/665827646" allowfullscreen />
+<ResponsiveEmbed src="https://player.vimeo.com/665827646" allowFullScreen />
 
 #### Field Label Display 
 * This feature gives you four different ways to display the field labels in the PDF:

@@ -8,7 +8,7 @@ import ResponsiveEmbed from 'react-responsive-embed'
 
 You can force a page breaks before certain fields in Core and [Universal PDF templates](https://gravitypdf.com/store/#universal) using a special CSS class in the Gravity Forms Editor.
 
-<ResponsiveEmbed src="https://player.vimeo.com/video/665433270" allowfullscreen />
+<ResponsiveEmbed src="https://player.vimeo.com/video/665433270" allowFullScreen />
 
 ## Add Pagebreak before Field
 

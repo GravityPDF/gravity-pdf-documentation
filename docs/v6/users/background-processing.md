@@ -8,7 +8,7 @@ import ResponsiveEmbed from 'react-responsive-embed'
 
 Gravity PDF has the ability to generate and email PDFs in a background process when a form is submitted. This is an important option for performance, as PDF generation is a resource-intensive task and users could be waiting between 1-10 seconds [to see your form's Confirmation page](https://docs.gravityforms.com/configuring-confirmations/) – the actual amount of time spent generating the PDFs will depend on your hosting provider, the complexity of your PDF(s) and the number of documents that need to be generated. When background processing is enabled, the PDF generation is deferred and, like magic, that wait time is significantly reduced. 
 
-<ResponsiveEmbed src="https://player.vimeo.com/video/666605192" allowfullscreen />
+<ResponsiveEmbed src="https://player.vimeo.com/video/666605192" allowFullScreen />
 
 Background Processing is also integrated with [Gravity Forms Resend Notification feature](https://docs.gravityforms.com/resend-notifications/) so you can bulk send Notifications with PDF attachments without your server suffering timeout or memory-related problems.
 
