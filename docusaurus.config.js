@@ -140,8 +140,7 @@ module.exports = {
     },
 
     algolia: {
-      appId: 'NKKEAC9I6I',
-      apiKey: '0b9c90c6e089769be381f47196dbb313',
+      apiKey: '3f8f81a078907e98ed8d3a5bedc3c61c',
       indexName: 'gravitypdf',
       searchParameters: {},
     },
