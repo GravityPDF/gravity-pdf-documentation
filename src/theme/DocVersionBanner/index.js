@@ -48,7 +48,7 @@ const useMandatoryActiveDocsPluginId = () => {
   return activePlugin.pluginId
 }
 
-function DocVersionSuggestions () {
+export default function DocVersionBanner({className}) {
   const {
     siteConfig: {
       themeConfig: {
@@ -108,5 +108,3 @@ function DocVersionSuggestions () {
     </div>
   )
 }
-
-export default DocVersionSuggestions
