@@ -125,6 +125,7 @@ module.exports = {
     },
     prism: {
       defaultLanguage: 'php',
+      additionalLanguages: ['php'],
     },
     versionNotices: {
       v3: `<div class="alert alert--danger margin-bottom--md" role="alert">&#x1F525; Gravity PDF v3 end of life was 2017-06-20 and <strong>this version is no longer supported</strong>. This legacy documentation is kept for reference only.</div>`,
