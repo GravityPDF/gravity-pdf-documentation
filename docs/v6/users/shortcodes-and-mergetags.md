@@ -13,7 +13,7 @@ There are a number of security protocols in place to prevent unauthorised access
 For the best balance between security and access, it is recommended to enable signed PDF URLs so that anyone with access to the link can view the document for a specific time period (which you define).
 
 :::info What are Signed PDF URLs?
-They are special auto-expiring URLs that allow _anyone_ with the link to view the PDF. They are useful if you want to share the URL via email to a third party, don't want to store IP addresses with entries, or would like to display the link on a page restricted to specific user role(s). Both Shortcode and Merge Tag options support signed URLs, **but the feature has to be enabled** (see below). [Find out more about the PDF security and how Signed PDF URLs fit in the picture](pdf-security.md#default-security).
+They are special auto-expiring URLs that allow _anyone_ with the link to view the PDF. They are useful if you want to share the URL via email to a third party, don't want to store IP addresses with entries, or would like to display the link on a page restricted to specific user role(s). Both Shortcode and Merge Tag options support signed URLs, **but the feature has to be enabled** ([see below](#signed-optional)). [Find out more about the PDF security and how Signed PDF URLs fit in the picture](pdf-security.md#default-security).
 :::
 
 ## Shortcode or Merge Tag?
