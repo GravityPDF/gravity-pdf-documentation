@@ -4,7 +4,7 @@ sidebar_label: "Webhooks Support"
 description: "Gravity PDF fully integrates with Gravity Forms Webhooks add-on, so you can include the PDF URL(s) with your API calls."
 ---
 
-import ResponsiveEmbed from ’react-responsive-embed’
+import ResponsiveEmbed from 'react-responsive-embed'
 
 ![Gravity Forms Webhooks Add-On](https://resources.gravitypdf.com/uploads/2021/04/v6-GF-Webhook-Add-On.png)
 
@@ -14,7 +14,7 @@ import ResponsiveEmbed from ’react-responsive-embed’
 
 In this 8-minute video, Gravity PDF's lead developer takes you through using the Gravity Forms Webhooks Add-on and sending messages to Slack with the Gravity PDF URL included.
 
-<ResponsiveEmbed src=“https://player.vimeo.com/video/671783546” allowfullscreen /> 
+<ResponsiveEmbed src="https://player.vimeo.com/video/671783546" allowfullscreen /> 
 
 ## Request Body
 

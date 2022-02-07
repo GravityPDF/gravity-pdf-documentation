@@ -4,7 +4,7 @@ sidebar_label: "Supported HTML and CSS"
 description: "The PDF software used generate documents, mPDF, has decent legacy HTML and CSS support, but it does have its limitations and quirks."
 ---
 
-import ResponsiveEmbed from ’react-responsive-embed’
+import ResponsiveEmbed from 'react-responsive-embed'
 
 ## Introduction 
 
@@ -23,7 +23,7 @@ For full details on supported HTML tags and attributes, [we recommend you review
 
 If you enjoy video tutorials, watch this 7-minute video with Gravity PDF’s lead developer as he takes you through to adding barcodes and QR codes in Gravity PDF Core and Universal PDF templates.
 
-<ResponsiveEmbed src=“https://player.vimeo.com/video/671780077” allowfullscreen />
+<ResponsiveEmbed src="https://player.vimeo.com/video/671780077" allowfullscreen />
 
 ## CSS Support 
 

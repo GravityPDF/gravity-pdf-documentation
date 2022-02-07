@@ -4,7 +4,7 @@ sidebar_label: "Hide Form Fields"
 description: "Only certain form data is important to you. That's why Gravity PDF has a number of ways to filter out the unimportant data in your generated PDF."
 ---
 
-import ResponsiveEmbed from ’react-responsive-embed’
+import ResponsiveEmbed from 'react-responsive-embed'
 
 Only certain form data is important to you. That's why Gravity PDF has a number of ways to filter out the unimportant fields in your generated PDF. 
 
@@ -22,7 +22,7 @@ You can also choose to show or hide the form's title using the [*Show Form Title
 
 In this 15-minute video, Gravity PDF's lead developer takes you through hiding specific fields in Core and Universal PDF templates using the Gravity Forms custom CSS Class ‘exclude’ and the Gravity PDF Core Booster Add-on.
 
-<ResponsiveEmbed src=“https://player.vimeo.com/video/671780952” allowfullscreen />
+<ResponsiveEmbed src="https://player.vimeo.com/video/671780952" allowfullscreen />
 
 ![Add 'exclude' field to Gravity Forms Field](https://resources.gravitypdf.com/uploads/2021/04/v6-Exclude-Field.png) 
 

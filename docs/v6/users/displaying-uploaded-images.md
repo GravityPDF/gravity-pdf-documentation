@@ -4,11 +4,11 @@ sidebar_label: "Uploaded Images"
 description: "Use the Image Hopper for Gravity Forms plugin to automatically display uploaded images in Core / Universal PDFs generated using Gravity PDF."
 ---
 
-import ResponsiveEmbed from ’react-responsive-embed’
+import ResponsiveEmbed from 'react-responsive-embed'
 
 If you enjoy learning through video, you can watch this 12-minute video with Gravity PDF's lead developer showing you how to include user uploaded images in the Core and Universal PDF templates using both the File Upload field and the amazing Image Hopper plugin.
 
-<ResponsiveEmbed src=“https://player.vimeo.com/video/671784077” allowfullscreen />
+<ResponsiveEmbed src="https://player.vimeo.com/video/671784077" allowfullscreen />
 
 By default, Gravity PDF displays all files uploaded using the [File Upload field](https://docs.gravityforms.com/file-upload/) as a bullet point list with links to those files.
 

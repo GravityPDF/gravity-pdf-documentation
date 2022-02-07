@@ -4,7 +4,7 @@ sidebar_label: "Setup PDF"
 description: "There are a lot of options available, but the most common settings are up front, with the rest grouped by one-of-four sections: and are split into groups: General, Appearance, Template and Advanced."
 ---
 
-import ResponsiveEmbed from ’react-responsive-embed’
+import ResponsiveEmbed from 'react-responsive-embed'
 
 ![Adding new PDF Form](https://resources.gravitypdf.com/uploads/2021/04/v6-Add-a-PDF.png) 
 
@@ -75,7 +75,7 @@ Below is the list of settings available in the General section, with a brief des
 
 If you enjoy learning through video, you can watch this 18-minute video with Gravity PDF's lead developer showing you how to set up multiple PDFs in a single Gravity Form, and use Conditional Logic to conditionally deliver different PDFs based on user input.
 
-<ResponsiveEmbed src=“https://player.vimeo.com/video/671782212” allowfullscreen />
+<ResponsiveEmbed src="https://player.vimeo.com/video/671782212" allowfullscreen />
 
 * Conditional logic is a [powerful feature of Gravity Forms](https://docs.gravityforms.com/enable-conditional-logic/) allowing you to show or hide fields in your form based on a user's response. We've extended this behaviour to Gravity PDF, allowing you to enable or disable a PDF if a user responded a specific way.
 * If the conditional logic determines a PDF should be disabled, it will not be generated for that entry. The PDF will not be accessible through the `[gravitypdf]` shortcode or PDF merge tags, and will not be attached to notifications. Site administrators won't be able to access it from the admin area either.
