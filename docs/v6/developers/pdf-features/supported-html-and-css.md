@@ -4,6 +4,8 @@ sidebar_label: "Supported HTML and CSS"
 description: "The PDF software used generate documents, mPDF, has decent legacy HTML and CSS support, but it does have its limitations and quirks."
 ---
 
+import ResponsiveEmbed from ’react-responsive-embed’
+
 ## Introduction 
 
 The PDF software used to generate documents, [mPDF](http://mpdf.github.io/), has decent legacy HTML and CSS support, but it does have its limitations and quirks. The major consideration is that modern styles like grid or flexbox are not supported, and layouts need to be done with floats / positioning / tables. There are also restrictions on floats, positioning, cascading styles and widow and orphan support.
@@ -16,6 +18,12 @@ Most HTML 4 and 5 tags are recognised and, to some extent, supported in mPDF –
 Along with the standardised HTML tag support, there is also [custom HTML tags which mPDF introduced](http://mpdf.github.io/reference/html-control-tags/overview.html) to give you more control over your PDF. These include header and footers, page breaks, bookmarks, table of contents and annotations. One of the biggest quirks you'll need to get used to is that all HTML elements are hard coded as either `block` or `inline` elements, and they cannot be changed using the CSS `display` property.
 
 For full details on supported HTML tags and attributes, [we recommend you review the mPDF manual](http://mpdf.github.io/html-support/html-tags.html).
+
+### Barcodes and QR Codes using HTML
+
+If you enjoy video tutorials, watch this 7-minute video with Gravity PDF’s lead developer as he takes you through to adding barcodes and QR codes in Gravity PDF Core and Universal PDF templates.
+
+<ResponsiveEmbed src=“https://player.vimeo.com/video/671780077” allowfullscreen />
 
 ## CSS Support 
 

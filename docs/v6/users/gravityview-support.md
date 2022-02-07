@@ -4,11 +4,19 @@ sidebar_label: "GravityView Support"
 description: "GravityView is the best way to display Gravity Forms entries on your website. Basic GravityView support is built right into Gravity PDF."
 ---
 
+import ResponsiveEmbed from ’react-responsive-embed’
+
 [The GravityView plugin](https://gravityview.co/?ref=186) is the best way to display Gravity Forms entries publicly on your website. Basic GravityView support is built right into Gravity PDF.
 
 ## Add PDF Download Link to View 
 
-You can easily add PDF Download links to your View. To do this you'll need to use [GravityView's Custom Content Field](http://docs.gravityview.co/article/111-using-the-custom-content-field). Go edit your View in the admin area, click the `+ Add Field` button in the *Multiple Entries* or *Single Entry* tab, and click *Custom Content*. Next, go to your form's [Manage PDF page](managing-pdfs.md), copy the `[gravitypdf]` shortcode in the list and paste it into the View's Custom Content Field. Save the View and go check if it's working. 
+You can easily add PDF Download links to your View. To do this you'll need to use [GravityView's Custom Content Field](http://docs.gravityview.co/article/111-using-the-custom-content-field).
+
+If you enjoy learning through video, you can watch this 6-minute video with Gravity PDF's lead developer showing you how to add a Gravity PDF Download Link to GravityView.
+
+<ResponsiveEmbed src=“https://player.vimeo.com/video/671780459” allowfullscreen />
+
+Go edit your View in the admin area, click the `+ Add Field` button in the *Multiple Entries* or *Single Entry* tab, and click *Custom Content*. Next, go to your form's [Manage PDF page](managing-pdfs.md), copy the `[gravitypdf]` shortcode in the list and paste it into the View's Custom Content Field. Save the View and go check if it's working. 
 
 ![Adding a Gravity PDF shortcode to GravityView's Custom Content field](https://resources.gravitypdf.com/uploads/2021/04/v6-GravityView-Custom-Content.png)
 _Adding a Gravity PDF shortcode to GravityView's Custom Content field._
