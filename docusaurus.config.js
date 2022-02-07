@@ -121,7 +121,7 @@ module.exports = {
           ],
         },
       ],
-      copyright: `Documentation Licensed under <a href="https://github.com/GravityPDF/gravity-pdf-documentation/LICENSE.md">CC BY-SA 4.0</a>`,
+      copyright: `Copyright © Gravity PDF. All Rights Reserved.`,
     },
     prism: {
       defaultLanguage: 'php',
