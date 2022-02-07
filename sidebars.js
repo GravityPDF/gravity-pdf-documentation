@@ -842,6 +842,7 @@ module.exports = {
             'v6/developers/pdf-features/floats',
             'v6/developers/pdf-features/positioning',
             'v6/developers/pdf-features/pagebreaks',
+            'v6/developers/pdf-features/barcodes',
           ]
         },
         {

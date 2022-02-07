@@ -12,8 +12,6 @@ import ResponsiveEmbed from 'react-responsive-embed'
 
 You can easily add PDF Download links to your View. To do this you'll need to use [GravityView's Custom Content Field](http://docs.gravityview.co/article/111-using-the-custom-content-field).
 
-If you enjoy learning through video, you can watch this 6-minute video with Gravity PDF's lead developer showing you how to add a Gravity PDF Download Link to GravityView.
-
 <ResponsiveEmbed src="https://player.vimeo.com/video/671780459" allowfullscreen />
 
 Go edit your View in the admin area, click the `+ Add Field` button in the *Multiple Entries* or *Single Entry* tab, and click *Custom Content*. Next, go to your form's [Manage PDF page](managing-pdfs.md), copy the `[gravitypdf]` shortcode in the list and paste it into the View's Custom Content Field. Save the View and go check if it's working. 

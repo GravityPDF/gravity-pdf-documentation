@@ -71,14 +71,16 @@ Below is the list of settings available in the General section, with a brief des
 * If there is semi-sensitive user information included in the PDF, it's recommended you also enable [*PDF Security*](#enable-pdf-security) with a strong [*Password*](#password) (more than 12 characters, with a mix of symbols, numbers and upper and lower case). Password-protected PDFs are encrypted using 128-bit AES.
 * If very sensitive user information is included in the PDF, it is recommended you **do not** enable this feature as email can be insecure. Instead [use the `[gravitypdf]` shortcode over HTTPS](shortcodes-and-mergetags.md) so users have to login and [pass PDF security checks](pdf-security.md) before the document can be viewed or downloaded.
 
-### Conditional Logic 
-
-If you enjoy learning through video, you can watch this 18-minute video with Gravity PDF's lead developer showing you how to set up multiple PDFs in a single Gravity Form, and use Conditional Logic to conditionally deliver different PDFs based on user input.
-
-<ResponsiveEmbed src="https://player.vimeo.com/video/671782212" allowfullscreen />
+### Conditional Logic
 
 * Conditional logic is a [powerful feature of Gravity Forms](https://docs.gravityforms.com/enable-conditional-logic/) allowing you to show or hide fields in your form based on a user's response. We've extended this behaviour to Gravity PDF, allowing you to enable or disable a PDF if a user responded a specific way.
 * If the conditional logic determines a PDF should be disabled, it will not be generated for that entry. The PDF will not be accessible through the `[gravitypdf]` shortcode or PDF merge tags, and will not be attached to notifications. Site administrators won't be able to access it from the admin area either.
+
+:::info
+If you enjoy learning through video, you can watch this 18-minute video with Gravity PDF's lead developer showing you how to set up multiple PDFs in a single Gravity Form, and use Conditional Logic to conditionally deliver different PDFs based on user input.
+
+<ResponsiveEmbed src="https://player.vimeo.com/video/671782212" allowfullscreen />
+:::
 
 ## Appearance Section 
 
