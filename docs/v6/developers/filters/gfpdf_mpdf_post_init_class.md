@@ -46,6 +46,17 @@ add_filter( 'gfpdf_mpdf_init_class', function( $mpdf, $form, $entry, $settings, 
 }, 10, 5 );
 ```
 
+Change the default zoom level of the PDF to 100%:
+
+```
+add_filter( 'gfpdf_mpdf_post_init_class', function( $mpdf ) {
+        // See http://mpdf.github.io/reference/mpdf-functions/setdisplaymode.html for valid inputs
+	$mpdf->SetDisplayMode(100);
+
+	return $mpdf;
+} );
+```
+
 ## Source Code 
 
 This filter is located in the `Helper_PDF::begin_pdf()` method of `/src/helper/Helper_PDF.php`.
