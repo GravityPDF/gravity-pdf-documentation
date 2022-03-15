@@ -6,7 +6,7 @@ description: "There are a lot of options available, but the most common settings
 
 import ResponsiveEmbed from 'react-responsive-embed'
 
-![Adding new PDF Form](https://resources.gravitypdf.com/uploads/2021/04/v6-Add-a-PDF.png) 
+![Adding new PDF Form](https://resources.gravitypdf.com/uploads/2022/03/v6.2-Adding-a-New-PDF.png) 
 
 Creating a PDF for individual Gravity Forms is similar to creating Notifications. There are a lot of options available to you, but we've put the most common settings up front. The rest are hidden; split up between four sections:
 
@@ -54,7 +54,7 @@ There are a number of optional fields available which give you granular control 
 
 ## General Section
 
-![PDF Form Settings General Section](https://resources.gravitypdf.com/uploads/2021/04/v6-PDF-General-Tab.png)
+![PDF Form Settings General Section](https://resources.gravitypdf.com/uploads/2022/03/v6.2-General-Tab.png)
 
 Below is the list of settings available in the General section, with a brief description about what each is for.
 
@@ -189,7 +189,7 @@ Below is a description of the Core template settings that all **four free templa
 
 ## Advanced Section 
 
-![PDF Form Settings Advanced Section](https://resources.gravitypdf.com/uploads/2021/04/v6-Advanced-Tab-PDF.png) 
+![PDF Form Settings Advanced Section](https://resources.gravitypdf.com/uploads/2022/03/v6.2-Advanced-Tab-PDF.png) 
 
 The Advanced section allows you to control the PDF security (which includes password protection). You can also change the image DPI and the PDF format.
 

@@ -12,7 +12,7 @@ You can force a page breaks before certain fields in Core and [Universal PDF tem
 
 ## Add Pagebreak before Field
 
-![Add 'pagebreak' class to Gravity Forms Field](https://resources.gravitypdf.com/uploads/2021/04/v6-Add-Pagebreak.png)
+![Add 'pagebreak' class to Gravity Forms Field](https://resources.gravitypdf.com/uploads/2022/03/v6.2-Add-Pagebreak.png)
 
 To create a pagebreak in the PDF, you need to add the CSS class `pagebreak` to a field in the Gravity Forms Editor. You can do this by:
 

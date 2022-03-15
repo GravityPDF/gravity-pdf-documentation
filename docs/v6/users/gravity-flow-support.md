@@ -10,7 +10,7 @@ description: ""
 
 ## Approval Workflow
 
-![Attach PDF to Workflow email](https://resources.gravitypdf.com/uploads/2021/03/Gravity-Flow-PDF-Attachment.png)
+![Attach PDF to Workflow email](https://resources.gravitypdf.com/uploads/2022/03/v62.-Gravity-Flow-PDF-Attachment.png)
 
 When setting up the Approval Workflow you'll be able to attach a PDF to the Assignee Email, Rejection Email and Approval Email notifications. To do this check the appropriate PDFs under the *Attach PDF(s)* setting. Be aware that [Gravity PDF Conditional Logic](setup-pdf.md#conditional-logic) **is not supported** and the PDF you setup will always be attached to the email.
 

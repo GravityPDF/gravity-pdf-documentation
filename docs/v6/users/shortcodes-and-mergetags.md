@@ -63,7 +63,7 @@ Submit a test entry and verify the PDF link is displayed correct, and you can vi
 
 ![The \[gravitypdf\] shortcode in the Gravity Forms page confirmation](https://resources.gravitypdf.com/uploads/2021/04/v6-Page-Confirmation.png) 
 
-The [page confirmation](https://docs.gravityforms.com/configuring-confirmations-in-gravity-forms/#page-confirmations) allows you to redirect users to an existing WordPress page. First, copy the Gravity PDF shortcode found on the [PDF form list](managing-pdfs.md) and place it on the WordPress page you're sending the users to. Once done, go back to your page confirmation configuration and enable the `Pass Field Data Via Query String` option. Add `entry={entry_id}` to the field that appears and click save.
+The [page confirmation](https://resources.gravitypdf.com/uploads/2022/03/v6.2-Page-Confirmation-Setting.png) allows you to redirect users to an existing WordPress page. First, copy the Gravity PDF shortcode found on the [PDF form list](managing-pdfs.md) and place it on the WordPress page you're sending the users to. Once done, go back to your page confirmation configuration and enable the `Pass Field Data Via Query String` option. Add `entry={entry_id}` to the field that appears and click save.
 
 Submit a test entry and verify the PDF link is displayed correct, and you can view the document when selected.
 
@@ -71,7 +71,7 @@ Submit a test entry and verify the PDF link is displayed correct, and you can vi
 
 ![The \[gravitypdf\] shortcode in the Gravity Forms redirect confirmation](https://resources.gravitypdf.com/uploads/2021/03/v6-Redirect-Confirmations.png)
 
-The [redirect confirmation](https://docs.gravityforms.com/configuring-confirmations-in-gravity-forms/#redirect-confirmation) allows you to send the user to another location upon completing their form. If you choose, you can redirect the user straight to a PDF. To get it functioning you need to copy and paste the Gravity PDF shortcode found on the [PDF form list](managing-pdfs.md) and then save.
+The [redirect confirmation](https://resources.gravitypdf.com/uploads/2022/03/v6.2-Redirect-Confirmation.png) allows you to send the user to another location upon completing their form. If you choose, you can redirect the user straight to a PDF. To get it functioning you need to copy and paste the Gravity PDF shortcode found on the [PDF form list](managing-pdfs.md) and then save.
 
 Submit a test entry and verify the PDF link is displayed correct, and you can view the document when selected.
 

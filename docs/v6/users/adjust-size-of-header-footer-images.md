@@ -14,11 +14,11 @@ Follow these steps to make the adjustment:
 
 2. Scroll down to the Header/Footer Rich Text Editor you are interested in and select the _Text_ tab to show the raw HTML markup.
 
-![Switch to Header Rich Text Editor](https://resources.gravitypdf.com/uploads/2021/04/v6-Header-switch-to-Tex-t-Editor.png)
+![Switch to Header Rich Text Editor](https://resources.gravitypdf.com/uploads/2022/03/v6.2-Header-Switch-to-Text-Editor.png)
   
 3. Add `style="max-height: 400px"` to the `<img />` tag and then save/update.
 
-![Include style”max-height: 400px”](https://resources.gravitypdf.com/uploads/2021/03/v6-Header-Style.png)
+![Include style”max-height: 400px”](https://resources.gravitypdf.com/uploads/2022/03/v6.2-Header-Style.png)
 
 It should look like this in your editor:
 ```

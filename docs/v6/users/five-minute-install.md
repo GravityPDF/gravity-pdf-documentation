@@ -6,7 +6,7 @@ description: "Gravity PDF is a free WordPress plugin built for the popular premi
 
 import ResponsiveEmbed from 'react-responsive-embed'
 
-![Gravity PDF 6.x PDF Creation](https://resources.gravitypdf.com/uploads/2021/04/v6-Create-PDF.png)
+![Gravity PDF 6.x PDF Creation](https://resources.gravitypdf.com/uploads/2022/03/v6.2-Create-PDF.png)
 
 [Gravity PDF](https://gravitypdf.com) is a **free WordPress plugin** built for the popular premium form builder software, [Gravity Forms](https://rocketgenius.pxf.io/c/1211356/445235/7938). Gravity PDF allows you to generate PDF documents that contain user-data captured with Gravity Forms. 
 
@@ -48,7 +48,7 @@ Next, it's time to setup a PDF for one of your Gravity Forms. Select `Forms` in 
 
 While there are a lot of options available to you, only the `Name` and `Filename` settings are required. Go ahead and fill those in. You can choose a `Template` from the dropdown or leave it set to the default option. If you want the **PDF automatically attached to the email** when your form is submitted select the [Gravity Forms Notification](https://docs.gravityforms.com/configuring-notifications-in-gravity-forms/) you want to attach it to in the [PDF Notifications setting](setup-pdf.md#notifications). Finally, click *Add PDF* to complete the setup. 
 
-![Adding a new PDF to a form](https://resources.gravitypdf.com/uploads/2021/04/v6-Add-a-PDF.png) 
+![Adding a new PDF to a form](https://resources.gravitypdf.com/uploads/2022/03/v6.2-Add-PDF.png) 
 
 Now that you've setup the PDF you can view and download it from the Gravity Forms Entries page in your admin area (just make sure you've submitted an entry already). If you configured it, when a new entry is submitted the generated PDF will be attached to the email notification. 
 

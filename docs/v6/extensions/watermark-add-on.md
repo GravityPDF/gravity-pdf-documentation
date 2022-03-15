@@ -19,7 +19,7 @@ You can purchase the *Watermark* plugin from our [Extension Shop](https://gravit
 This extension adds a number of new settings to all non-legacy PDF templates (any template designed for Gravity PDF v4 or higher), and [they can be found in the *Appearance* section](../users/setup-pdf.md#appearance-tab) when [adding/editing the PDF settings](../users/setup-pdf.md#locating-pdf-settings).
 
 ### Watermark Settings
-![Watermark settings](https://resources.gravitypdf.com/uploads/2021/04/v6-Watermark-Settings.png)
+![Watermark settings](https://resources.gravitypdf.com/uploads/2022/03/v6.2-Watermark-Settings.png)
 
 Below is the list of settings added by *Watermark*, with a brief description about what each is for:
 

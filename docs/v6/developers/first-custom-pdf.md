@@ -159,7 +159,7 @@ To finish off our example, we've going to replace `<!-- The PDF content should b
 
 ### Viewing PDF 
 
-![The new Sol System PDF group](https://resources.gravitypdf.com/uploads/2021/04/v6-Sol-System-Group.png)
+![The new Sol System PDF group](https://resources.gravitypdf.com/uploads/2022/03/v6.2-Sol-System-Group.png)
 
 Once you've uploaded the template, you'll be able to see your new *Sol System* group added to the [template](../users/setup-pdf.md#template) field of the PDF settings. Go ahead and [configure a new form PDF](../users/setup-pdf.md) with your Hello World template and then [view the PDF](../users/viewing-pdfs.md). You should see a PDF with "Hello World" written in large text.
 

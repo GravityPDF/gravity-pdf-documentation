@@ -24,7 +24,7 @@ In this 15-minute video, Gravity PDF's lead developer takes you through hiding s
 
 <ResponsiveEmbed src="https://player.vimeo.com/video/671780952" allowfullscreen />
 
-![Add 'exclude' field to Gravity Forms Field](https://resources.gravitypdf.com/uploads/2021/04/v6-Exclude-Field.png) 
+![Add 'exclude' field to Gravity Forms Field](https://resources.gravitypdf.com/uploads/2022/03/v6.2-Exclude-Field.png) 
 
 In certain cases, you may not want a particular form field from displaying in the PDF. To exclude a field, you can add the CSS class `exclude` to that field in the Gravity Forms editor. You can do this by:
 

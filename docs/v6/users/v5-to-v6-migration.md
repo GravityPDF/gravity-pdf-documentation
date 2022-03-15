@@ -50,7 +50,7 @@ Gravity Forms 2.5 sees a completely redesigned admin experience. So it doesn't s
 
 ### Form PDF Settings
 
-![Adding new PDF Form](https://resources.gravitypdf.com/uploads/2021/04/v6-Add-a-PDF.png)
+![Adding new PDF Form](https://resources.gravitypdf.com/uploads/2022/03/v6.2-PDF-Settings-Tabs.png)
 
 Instead of being split into tabs, [the PDF settings are now grouped into sections](setup-pdf.md). To aid you in managing the settings, an Add/Update button is included below each section, and you can hide sections by selecting the section title or associated toggle.
 
@@ -84,7 +84,7 @@ A lot of new features and refinements went into this release. Below is the big t
 
 ### Drag and Drop Columns
 
-![Gravity Forms Form Editor with Column Support](https://resources.gravitypdf.com/uploads/2021/04/v6-Gravity-Forms-Column-Support-1.png)
+![Gravity Forms Form Editor with Column Support](https://resources.gravitypdf.com/uploads/2022/03/v6.2-Gravity-Forms-Column-Support-v5-to-v6-Migration.png)
 
 Gravity Forms have revamped their Form Builder and it now includes [Drag and Drop column support](https://docs.gravityforms.com/working-with-columns/). To support this feature individual templates have to be updated with new CSS.
 

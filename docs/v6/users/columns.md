@@ -24,7 +24,7 @@ In the Form Editor you to easily build advanced form layouts visually. Fields ca
 If you upgraded from Gravity PDF v5 or earlier, had previously run the [Setup Custom Template tool](../../v5/user-global-settings.md#setup-custom-templates), and didn't complete the [v5 to v6 migration steps](v5-to-v6-migration.md#drag-and-drop-columns), the Core templates may be outdated and won't support Drag and Drop Columns. You can check if this affects you by viewing the [Gravity Forms System Status page](system-status.md).
 :::
 
-![Gravity Forms Form Editor with Column Support](https://resources.gravitypdf.com/uploads/2021/04/v6-Gravity-Forms-Column-Support-1.png)
+![Gravity Forms Form Editor with Column Support](https://resources.gravitypdf.com/uploads/2022/03/v6.2-Gravity-Forms-Column-Support.png)
 
 You can create up to four columns per row in the Form Editor. The default output is for each column is to be of equal width, but you can resize individual columns to suit your needs eg. `20% / 80%` or `25% / 25% / 50%`.
 

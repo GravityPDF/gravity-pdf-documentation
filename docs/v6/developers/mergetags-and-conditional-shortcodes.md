@@ -10,13 +10,13 @@ Gravity Forms has a [powerful macro they call *Merge Tags*](https://docs.gravity
 
 ## Template Tutorial – Part 2 
 
-![The Hello World Gravity Forms form](https://resources.gravitypdf.com/uploads/2021/04/v6-Gravity-Forms-Form-Editor.png)
+![The Hello World Gravity Forms form](https://resources.gravitypdf.com/uploads/2022/03/v6.2-Gravity-Forms-Form-Editor.png)
 
 In [Template Tutorial – Part 1](first-custom-pdf.md#template-tutorial--part-1) we showed you the very minimum needed to create a PDF template. In part 2 we're going to utilise merge tags and conditional shortcodes in a template. Before you begin you will need to [download the Gravity Forms form](https://resources.gravitypdf.com/uploads/2015/11/hello-world-gravity-form.json) (right click and 'save link as') we'll be working with and [import it into your website](https://docs.gravityforms.com/importing-a-form-into-gravity-forms/). Once done, submit a new entry for the newly-imported *Hello World* form.
 
 ### Merge Tags 
 
-![Mergetags in a Gravity Forms Notification](https://resources.gravitypdf.com/uploads/2021/04/v6-Merge-Tags.png)
+![Mergetags in a Gravity Forms Notification](https://resources.gravitypdf.com/uploads/2022/03/v6.2-Merge-Tags.png)
 
 Gravity Forms *field* merge tags use the format `{[Field Name]:[field_id]}`. Keep in mind, the *Field Name* isn't required, so `{:2}` is a valid merge tag, and advanced fields can have a slightly different format – to display the first name in a Name field you use `{:20.3}`.
 
