@@ -1,14 +1,18 @@
 ---
-title: "Previewer Document: How to Install and Configure"
+title: "Previewer Documentation: How to Install and Configure"
 sidebar_label: "Previewer"
-description: "Previewer allows generated PDFs to be previewed on-screen before a Gravity Forms has been submitted. It includes live reloading and watermark support."
+description: "Previewer allows generated PDFs to be previewed on-screen before a Gravity Forms submission. It includes live reloading and watermark support."
 ---
 
 ![Previewer add-on](https://resources.gravitypdf.com/uploads/edd/2017/08/cover-artwork-1.png)
 
-*Previewer* is a premium plugin for Gravity PDF that allows the user to review the PDF(s) before the form has been submitted. The extension goes hand-in-hand [with a bespoke PDF](https://gravitypdf.com/integration-services/) or one of [our premium PDF templates](https://gravitypdf.com/store/#templates).
+*Previewer* is a premium plugin for Gravity PDF that allows the user to review the PDF(s) before the form has been submitted. It's a perfect tool for providing an on-screen preview of the document to a user before the form is submitted. The extension goes hand-in-hand [with a bespoke PDF](https://gravitypdf.com/integration-services/) or one of [our premium PDF templates](https://gravitypdf.com/store/#templates).
 
 You can purchase the *Previewer* plugin from our [Extension Shop](https://gravitypdf.com/shop/previewer-add-on/). This guide will walk you through installing and configuring *Previewer* to its full potential.
+
+:::info
+This documentation refers to version 2.0+ of the Gravity PDF Previewer add-on. [The v1 documentation can be found here](../../v5/shop-plugin-previewer-add-on.md). 
+:::
 
 ## Installation 
 
@@ -20,66 +24,118 @@ The REST API must be enabled to use this plugin.
 
 ## Configuring 
 
-This extension adds a new field called **PDF Preview** to the [Gravity Forms Editor](https://docs.gravityforms.com/create-a-new-form/) and can be found under the 'Advanced Fields' section. To correctly setup, the *Previewer* field, you first need to [configure a PDF on your chosen Gravity Form](../users/setup-pdf.md).
+This extension adds a new field called **PDF Preview** to the [Gravity Forms Editor](https://docs.gravityforms.com/create-a-new-form/) and can be found under the **Advanced Fields** section. Before you can setup the field, you first need to [configure a PDF on the form](../users/setup-pdf.md).
 
-### PDF Preview Options 
+Once you've added the *PDF Preview* field to the form, you have a number of settings that can be used to change the look and feel of the _PDF Preview_ field.
 
 ![Preview Options](https://resources.gravitypdf.com/uploads/2022/03/v6.2-Previewer-Add-On.png)
 
-Once you've added the *PDF Preview* field to the form, you have a number of options that can be configured. The field supports the following standard Gravity Forms options:
+### Common Settings
 
--   Field Label
--   Description
--   Custom CSS Class
--   Conditional Logic
+The *PDF Previewer* field supports the following common Gravity Forms settings:
 
-### Options specific to the PDF Preview field include:
+- [Field Label](https://docs.gravityforms.com/common-field-settings/#h-field-label)
+- [Description](https://docs.gravityforms.com/common-field-settings/#h-description)
+- [Custom CSS Class](https://docs.gravityforms.com/common-field-settings/#h-custom-css-class)
+- [Conditional Logic](https://docs.gravityforms.com/common-field-settings/#h-conditional-logic-fly-out)
 
-#### PDF to Preview  
+### PDF to Preview  
 
-A dropdown that allows you to select one of the active PDFs [configured on the current Gravity Form](../users/setup-pdf.md) the end user can preview.
+@TODO - VIDEO OF SETTING SELECTION AND FRONT-END OUTPUT
 
-#### Preview Height  
+Select the PDF that the end user will be able to preview. This dropdown setting allows you to choose any of the active PDFs [configured on the form](../users/setup-pdf.md). 
 
-The height in pixels of the preview should be displayed at. The default height is 600px.
+### Download Preview
 
-The width of the preview will always be 100% and fill the container the form is embedded in.
+@TODO - VIDEO OF SETTING SELECTION AND FRONT-END OUTPUT
 
-#### Download Preview 
+When enabled, a download button will be included in the _PDF Preview_ toolbar so a user can download a copy of the document before form submission.
 
-When enabled, a 'download' button will be included in the PDF Preview, so the user can download the generated PDF.
+For security reasons, after a PDF is downloaded the file is automatically deleted from the server. To download the PDF a second time a user may need to use the toolbar refresh action (depends on the browser).
 
-After a PDF is downloaded, it'll automatically be removed from the server. To download the PDF a second time, a user might need to refresh the Previewer (whether they do or not will depend on the browser they're using).
+This setting is disabled by default.
 
-#### Watermark 
+### Appearance
 
-In the preview, text will be overlaid diagonally on each page of the generated PDF.
+@TODO - VIDEO OF SETTING SELECTION AND FRONT-END OUTPUT
 
-You can change the watermark text displayed and the font.
+Select a light or dark appearance for the PDF viewer, or automatically choose the appearance using the device defaults.
 
-### Multiple Previews 
-![Side by side Previews](https://resources.gravitypdf.com/uploads/edd/2017/08/two-previewers-side-by-side.png)
+The default Appearance is set to _Automatic_
 
-If you've got multiple PDFs configured on a single Gravity Form, you may want to allow the end user to preview each of those documents. You can add multiple *PDF Preview* fields to the form and display each of your configured PDFs.
-**Bonus Feature:** Use Gravity Forms [CSS Ready Classes](https://www.gravityforms.com/css-ready-classes/) – like `gf_left_half` and `gf_right_half` – to display the previews side by side.
+### Zoom Level
 
-### Conditional Previews 
+@TODO - VIDEO OF SETTING SELECTION AND FRONT-END OUTPUT
 
-Conditional Logic is fully supported for the *PDF Preview* field. Set it up from the field's Advanced Tab in the Form Editor.
+Control the standard zoom level to use when a PDF is first loaded into the viewer. You can choose an arbitrary zoom level between 50% and 400%. Alternatively, set to _Page Width_ to make the PDF take up the full width of the viewer container, or _Page Fit_ to show the entire first page within the viewer content area. _Actual Size_ is an alias for 100%.
 
-### Gravity Flow 
+The default Zoom Level is set to _Page Width_
 
-The *Previewer* is fully-functional with the Gravity Flow (version 2.0+) User Input step, including when using conditional logic on the Previewer or manually selecting which fields to display. **It's not currently possible to use the *Previewer* during the Approval Step.**
+### Page Scrolling
+
+@TODO - VIDEO OF SETTING SELECTION AND FRONT-END OUTPUT
+
+Display the pages of a PDF vertically or horizontally in the viewer. 
+
+_Page Scrolling_ defaults to _Vertical_
+
+### Spread
+
+@TODO - VIDEO OF SETTING SELECTION AND FRONT-END OUTPUT
+
+Display PDF pages with an odd or even spread in the PDF viewer. That is to say, pages will be displayed side-by-side in the PDF Viewer, like a book. The _Odd Spread_ begins page 1 on the left and page 2 on the right. While an _Even Spread_ begins with page 2 on the left and page 3 on the right. This pattern repeats until all the pages are displayed.
+
+This setting is only available when _Page Scrolling_ is set to _Vertical_. The default _Spread_ is set to _No Spread_.
+
+### Preview Height
+
+@TODO - VIDEO OF SETTING SELECTION AND FRONT-END OUTPUT
+
+The height in pixels the PDF viewer should be displayed on the front-end of the website using. The width is always set to 100% to take up the full width of its container element.
+
+The default height is 600px.
+
+### Watermark
+
+@TODO - VIDEO OF SETTING SELECTION AND FRONT-END OUTPUT
+
+When enabled, the _Watermark Text_ is overlaid diagonally on each page of PDF displayed in the viewer. You can change the font of the text watermark using the _Watermark Font_ dropdown setting.
+
+### Disable Right-Click Protection
+
+@TODO - VIDEO OF SETTING SELECTION AND FRONT-END OUTPUT
+
+By default, users cannot right-click on PDF pages to access the context menu. This prevents people saving the page of the document as an image, which some browsers support. You can turn this protection feature off by toggling on this setting.
+
+### Disable Text-Copying Protection
+
+@TODO - VIDEO OF SETTING SELECTION AND FRONT-END OUTPUT
+
+By default, users cannot copy any text on PDF pages. Enable this setting to render the text in the [Document Object Model (DOM)](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction), making it selectable for users and providing better accessibility for Screen Readers.
+
+## Multiple Previews
+
+@TODO - VIDEO OF SETTING SELECTION AND FRONT-END OUTPUT
+
+If you've got multiple PDFs configured on a form you may want to allow the end user to preview each of those documents before form submission. You can add multiple *PDF Preview* fields to the form and adjust the _PDF to Preview_ setting to display your documents.
+
+### Gravity Flow
+
+The *Previewer* is fully-functional [with the Gravity Flow User Input step](https://gravityflow.io/?ref=12), including when using conditional logic on the Previewer or manually selecting which fields to display. 
+
+**It's not currently possible to display the _PDF Preview_ field during the Approval Step.**
 
 ### File Upload Limitations 
 
-If using the File Upload field with the Multi-File Upload option disabled, the Previewer will need to be on a different page in the form (using Gravity Forms Page fields) for those uploads to display in the PDF preview. This is a limitation of how the File Upload field works.
+If using the File Upload field with the Multi-File Upload option disabled, the Previewer will need to be on a different page in the form ([using Gravity Forms Page field](https://docs.gravityforms.com/page-break/)) for those uploads to display in the PDF preview. This is a limitation of how the File Upload field works.
 
 ## Developers 
 
 ### Conditionally Show Content 
 
-To conditionally display content in the PDF Preview you can use the `DOING_PDF_PREVIEWER` constant in your custom PDF template. For example:
+To conditionally display content in the PDF when used in the context of the PDF viewer you can use the `DOING_PDF_PREVIEWER` constant in your [custom PDF template](../developers/first-custom-pdf.md). 
+
+For example:
 
 ```
 if ( defined( 'DOING_PDF_PREVIEWER' ) && DOING_PDF_PREVIEWER ) {
@@ -93,85 +149,21 @@ if ( ! defined( 'DOING_PDF_PREVIEWER' ) ) {
 echo 'This content will show regardless...';
 ```
 
-### Blurry Background Image 
+### Hook: gfpdf_post_save_pdf
 
-There's [a bug in PDF.js](https://github.com/mozilla/pdf.js/issues/8083) (the library we use to preview PDFs in your browser) that can cause background images to be blurry in the Previewer. There are two different workarounds available, both requiring modifications to your PDF template.
-Originally, your template might have the following code:
+If using the [gfpdf_post_save_pdf hook](../developers/actions/gfpdf_post_save_pdf.md) it will be triggered every time a PDF in the viewer is generated. If this isn't the desired effect, use the constant check above to circumvent this behaviour in your code:
 
-```html
-<!-- With this code there will be a blurry background in the Previewer -->
-<style>
-    #background {
-         background: url(/path/to/image.jpg) no-repeat 0 0;
-         ...other styles here...
+```php
+add_action( 'gfpdf_post_save_pdf', function( $pdf_path, $filename, $settings, $entry, $form ) {
+
+    /* Don't run this hook when the PDF Previewer is being used */
+    if ( defined( 'DOING_PDF_PREVIEWER' ) && DOING_PDF_PREVIEWER ) {
+        return;
     }
-</style>
-
-<div id="background">
-    Content goes here...
-</div>
-```
-
-#### Background on Single Page 
-
-If you only need to display a background image on a single page of your PDF, adjust your template as follows:
-
-```html
-<!-- With this code there will be no blurry background in the Previewer on a Single Page -->
-<style>
-    #background {
-         position: absolute;
-         top: 0;
-         left: 0;
-         width: 100%;
-         height: 100%;
-    }
-</style>
-
-<div id="background">
-    <img src="/path/to/image.jpg" />
-</div>
-
-<div style="z-index: 1">
-    Content goes here...
-    </div>
-```
-
-#### Background on Multiple Pages 
-
-If you need your user content to expand across multiple pages, and include your background image on each page, you can commandeer the PDF Header like so:
-
-```html
-<!-- With this code there will be no blurry background in the Previewer across all pages -->
-<style>
-    @page {
-        header: html_MyCustomHeader;
-    }
-
-    #background {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-    }
-</style>
-
-<htmlpageheader name="MyCustomHeader">
-    <div id="background">
-        <img src="<?php echo __DIR__; ?>/images/House.jpg" />
-    </div>
-</htmlpageheader>
-
-<div style="z-index: 1">
-    <h1>Content</h1>
-
-    Other content
-
-    <pagebreak />
-
-    New page content
-</div>
+    
+    /* Do other actions here */
+    
+}, 10, 5 );
 ```
 
 ### PDF Security in Previewer 
@@ -180,15 +172,4 @@ By default, when you've [allowed your user to download the PDF via the Previewer
 
 ```
 add_filter( 'gfpdf_previewer_enable_pdf_security', '__return_false' );
-```
-
-### Load Previewer Automatically
-
-The plugin currently only loads the Previewer when it comes into the user's viewport via scrolling. If you want it to load as soon as Gravity Forms loads you can use the following JavaScript:
-
-```
-/* Automatically trigger a manual refresh of the Gravity PDF Previewer */
-jQuery(document).on('gform_post_conditional_logic', function () {
-  jQuery('.gpdf-manually-load-preview a').trigger('click')
-})
 ```
