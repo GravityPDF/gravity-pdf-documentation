@@ -85,7 +85,7 @@ _Page Scrolling_ defaults to _Vertical_
 
 Display PDF pages with an odd or even spread in the PDF viewer. That is to say, pages will be displayed side-by-side in the PDF Viewer, like a book. The _Odd Spread_ begins page 1 on the left and page 2 on the right. While an _Even Spread_ begins with page 2 on the left and page 3 on the right. This pattern repeats until all the pages are displayed.
 
-This setting is only available when _Page Scrolling_ is set to _Vertical_. The default _Spread_ is set to _No Spread_.
+This setting is only available when _[Page Scrolling](#page-scrolling)_ is set to _Vertical_. The default _Spread_ is set to _No Spread_.
 
 ### Preview Height
 
@@ -117,15 +117,24 @@ By default, users cannot copy any text on PDF pages. Enable this setting to rend
 
 @TODO - VIDEO OF SETTING SELECTION AND FRONT-END OUTPUT
 
-If you've got multiple PDFs configured on a form you may want to allow the end user to preview each of those documents before form submission. You can add multiple *PDF Preview* fields to the form and adjust the _PDF to Preview_ setting to display your documents.
+If you've got multiple PDFs configured on a form you may want to allow the end user to preview each of those documents before form submission. You can add multiple *PDF Preview* fields to the form and adjust the _[PDF to Preview](#pdf-to-preview)_ setting to display your documents.
 
-### Gravity Flow
+## Right to Left (RTL) Mode
+
+@TODO - VIDEO OF SETTING SELECTION AND FRONT-END OUTPUT
+
+If the PDF selected in _[PDF to Preview](#pdf-to-preview)_ has [RTL enabled](../users/setup-pdf.md#reverse-text-rtl) the order of pages will change if:
+
+1. [Spread](#spread) is enabled: pages displayed side-by-side will be reversed (page 3 on the left and page 2 on the right).
+2. [Page Scrolling](#page-scrolling) is set to _Horizontal_: the order of pages will be reversed and the scroll bar will default to the far right.
+
+## Gravity Flow
 
 The *Previewer* is fully-functional [with the Gravity Flow User Input step](https://gravityflow.io/?ref=12), including when using conditional logic on the Previewer or manually selecting which fields to display. 
 
 **It's not currently possible to display the _PDF Preview_ field during the Approval Step.**
 
-### File Upload Limitations 
+## File Upload Limitations 
 
 If using the File Upload field with the Multi-File Upload option disabled, the Previewer will need to be on a different page in the form ([using Gravity Forms Page field](https://docs.gravityforms.com/page-break/)) for those uploads to display in the PDF preview. This is a limitation of how the File Upload field works.
 
