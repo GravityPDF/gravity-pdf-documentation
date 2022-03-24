@@ -99,6 +99,18 @@ add_filter( 'gfpdf_pdf_field_content', function( $value, $field, $entry, $form, 
 }, 10, 5 );
 ```
 
+Only show the selected response for Quiz fields:
+
+```
+add_filter( 'gfpdf_pdf_field_content', function( $value, $field, $entry, $form, $pdf_field ) {
+	if( $field->type === 'quiz' ) {
+		return $field-> get_selected_choice_output( $pdf_field->get_value(), '', true );
+	}
+
+	return $value;
+}, 10, 5 );
+```
+
 ## Source Code 
 
 This filter is located in the `Helper_Abstract_Fields.php` files in the `/src/helper/abstract/` directory.
