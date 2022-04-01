@@ -1,8 +1,10 @@
 ---
-title: "Previewer Documentation: How to Install and Configure"
+title: "Previewer Plugin Documentation: How to Install and Configure"
 sidebar_label: "Previewer"
 description: "Previewer allows generated PDFs to be previewed on-screen before a Gravity Forms submission. It includes live reloading and watermark support."
 ---
+
+import ResponsiveEmbed from 'react-responsive-embed'
 
 ![Previewer add-on](https://resources.gravitypdf.com/uploads/edd/2017/08/cover-artwork-1.png)
 
@@ -24,109 +26,142 @@ The REST API must be enabled to use this plugin.
 
 ## Configuring 
 
-This extension adds a new field called **PDF Preview** to the [Gravity Forms Editor](https://docs.gravityforms.com/create-a-new-form/) and can be found under the **Advanced Fields** section. Before you can setup the field, you first need to [configure a PDF on the form](../users/setup-pdf.md).
+[![Locating the PDF Previewer field in the Form Editor](https://resources.gravitypdf.com/uploads/2022/04/2.0-Previewer-Add-On-Form-Editor.png)](https://resources.gravitypdf.com/uploads/2022/04/2.0-Previewer-Add-On-Form-Editor.png)
 
-Once you've added the *PDF Preview* field to the form, you have a number of settings that can be used to change the look and feel of the _PDF Preview_ field.
+This extension adds a new field called **PDF Preview** to the [Gravity Forms Editor](https://docs.gravityforms.com/create-a-new-form/) and can be found under the **Advanced Fields** section (or you can use the search bar). Before you can set up the field, you need to [configure at least one PDF on the form](../users/setup-pdf.md).
 
-![Preview Options](https://resources.gravitypdf.com/uploads/2022/03/v6.2-Previewer-Add-On.png)
+[![The PDF Previewer field options in the Form Editor](https://resources.gravitypdf.com/uploads/2022/04/2.0-Previewer-Add-On-Form-Editor-Field-Settings.png)](https://resources.gravitypdf.com/uploads/2022/04/2.0-Previewer-Add-On-Form-Editor-Field-Settings.png)
+
+Once you've added the *PDF Preview* field to your form, you'll have a number of settings that can be used to change the look and feel of PDF viewer. The next few sections describes in detail what each setting does.
 
 ### Common Settings
 
-The *PDF Previewer* field supports the following common Gravity Forms settings:
+The *PDF Previewer* field supports the following Gravity Forms settings:
 
 - [Field Label](https://docs.gravityforms.com/common-field-settings/#h-field-label)
 - [Description](https://docs.gravityforms.com/common-field-settings/#h-description)
 - [Custom CSS Class](https://docs.gravityforms.com/common-field-settings/#h-custom-css-class)
 - [Conditional Logic](https://docs.gravityforms.com/common-field-settings/#h-conditional-logic-fly-out)
 
-### PDF to Preview  
+Refer to the Gravity Forms documentation linked above for further information about these common settings.
 
-@TODO - VIDEO OF SETTING SELECTION AND FRONT-END OUTPUT
+### PDF to Preview
 
 Select the PDF that the end user will be able to preview. This dropdown setting allows you to choose any of the active PDFs [configured on the form](../users/setup-pdf.md). 
 
-### Download Preview
+<ResponsiveEmbed src="https://player.vimeo.com/video/694720548" allow="fullscreen" allowfullscreen />
 
-@TODO - VIDEO OF SETTING SELECTION AND FRONT-END OUTPUT
+### Download Preview
 
 When enabled, a download button will be included in the _PDF Preview_ toolbar so a user can download a copy of the document before form submission.
 
-For security reasons, after a PDF is downloaded the file is automatically deleted from the server. To download the PDF a second time a user may need to use the toolbar refresh action (depends on the browser).
+For security reasons, after a PDF is downloaded the file is automatically deleted from the server. To download the PDF a second time a user may need to use the toolbar refresh action first, but this is browser dependant.
 
 This setting is disabled by default.
 
+<ResponsiveEmbed src="https://player.vimeo.com/video/694720230" allow="fullscreen" allowfullscreen />
+
 ### Appearance
 
-@TODO - VIDEO OF SETTING SELECTION AND FRONT-END OUTPUT
-
-Select a light or dark appearance for the PDF viewer, or automatically choose the appearance using the device defaults.
+Select a light or dark appearance for the PDF viewer, or choose automatic to use the end-user's device settings.
 
 The default Appearance is set to _Automatic_
 
-### Zoom Level
+<ResponsiveEmbed src="https://player.vimeo.com/video/694719979" allow="fullscreen" allowfullscreen />
 
-@TODO - VIDEO OF SETTING SELECTION AND FRONT-END OUTPUT
+### Zoom Level
 
 Control the standard zoom level to use when a PDF is first loaded into the viewer. You can choose an arbitrary zoom level between 50% and 400%. Alternatively, set to _Page Width_ to make the PDF take up the full width of the viewer container, or _Page Fit_ to show the entire first page within the viewer content area. _Actual Size_ is an alias for 100%.
 
 The default Zoom Level is set to _Page Width_
 
-### Page Scrolling
+<ResponsiveEmbed src="https://player.vimeo.com/video/694720933" allow="fullscreen" allowfullscreen />
 
-@TODO - VIDEO OF SETTING SELECTION AND FRONT-END OUTPUT
+### Page Scrolling
 
 Display the pages of a PDF vertically or horizontally in the viewer. 
 
 _Page Scrolling_ defaults to _Vertical_
 
+<ResponsiveEmbed src="https://player.vimeo.com/video/694720465" allow="fullscreen" allowfullscreen />
+
 ### Spread
 
-@TODO - VIDEO OF SETTING SELECTION AND FRONT-END OUTPUT
+Display PDF pages with an odd or even spread in the PDF viewer. When enabled, pages will be displayed side-by-side in the PDF viewer, like a book. The _Odd Spread_ begins page 1 on the left and page 2 on the right. While an _Even Spread_ begins with page 2 on the left and page 3 on the right. This pattern repeats until all the pages are displayed.
 
-Display PDF pages with an odd or even spread in the PDF viewer. That is to say, pages will be displayed side-by-side in the PDF Viewer, like a book. The _Odd Spread_ begins page 1 on the left and page 2 on the right. While an _Even Spread_ begins with page 2 on the left and page 3 on the right. This pattern repeats until all the pages are displayed.
+This setting is only available when _[Page Scrolling](#page-scrolling)_ is set to _Vertical_. The setting defaults to _No Spread_.
 
-This setting is only available when _[Page Scrolling](#page-scrolling)_ is set to _Vertical_. The default _Spread_ is set to _No Spread_.
+<ResponsiveEmbed src="https://player.vimeo.com/video/694720700" allow="fullscreen" allowfullscreen />
 
 ### Preview Height
-
-@TODO - VIDEO OF SETTING SELECTION AND FRONT-END OUTPUT
 
 The height in pixels the PDF viewer should be displayed on the front-end of the website using. The width is always set to 100% to take up the full width of its container element.
 
 The default height is 600px.
 
+<ResponsiveEmbed src="https://player.vimeo.com/video/694720595" allow="fullscreen" allowfullscreen />
+
 ### Watermark
 
-@TODO - VIDEO OF SETTING SELECTION AND FRONT-END OUTPUT
+<ResponsiveEmbed src="https://player.vimeo.com/video/694720778" allow="fullscreen" allowfullscreen />
 
-When enabled, the _Watermark Text_ is overlaid diagonally on each page of PDF displayed in the viewer. You can change the font of the text watermark using the _Watermark Font_ dropdown setting.
+When enabled, _Watermark Text_ youu define is overlaid diagonally on each page of PDF displayed in the viewer. You can change the font of the text watermark using the _Watermark Font_ dropdown setting.
+
+The _Watermark_ setting is disabled by default.
 
 ### Disable Right-Click Protection
 
-@TODO - VIDEO OF SETTING SELECTION AND FRONT-END OUTPUT
+By default, users cannot right-click on PDF pages to access the context menu. This prevents people saving the page of the document as an image (which some browsers support). You can turn this protection feature off by toggling on this setting.
 
-By default, users cannot right-click on PDF pages to access the context menu. This prevents people saving the page of the document as an image, which some browsers support. You can turn this protection feature off by toggling on this setting.
+<ResponsiveEmbed src="https://player.vimeo.com/video/694719993" allow="fullscreen" allowfullscreen />
 
 ### Disable Text-Copying Protection
 
-@TODO - VIDEO OF SETTING SELECTION AND FRONT-END OUTPUT
+By default, users cannot copy any text on PDF pages. Enable this setting to render the text in the [Document Object Model (DOM)](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction), making it selectable for users and providing better accessibility for Screen Readers. When you enable this setting the [grab-scroll feature](#grab-scroll) will be turned off so that text can be selected. 
 
-By default, users cannot copy any text on PDF pages. Enable this setting to render the text in the [Document Object Model (DOM)](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction), making it selectable for users and providing better accessibility for Screen Readers.
+<ResponsiveEmbed src="https://player.vimeo.com/video/694720034" allow="fullscreen" allowfullscreen />
+
+## PDF Viewer
+
+The PDF viewer is designed to be simple and intuitive for end users to view the generated PDF documents. There are minimal controls in the toolbar to help people interact with the PDF. These include:
+
+1. Page Navigation - Use the up and down arrow icons to navigate through each page of the PDF, or enter a specific page number 
+2. Zoom Level - Use the plus and minus icons to step-zoom the PDF in or out. The dropdown has a range of zoom levels to select from to make the reading experience comfortable for any user
+3. Download - [If enabled](#download-preview), a download icon will appear that allows a user to save a copy of the document to their computer
+4. Refresh - an automatic refresh mechanism is used to update the PDF viewer as the form is filled out by the user, but there can be times when this isn't effective and the refresh icon will allow a manual refresh.
+
+The toolbar items listed above match to the numbered area in the image below.
+
+[![How the PDF viewer looks to the end user](https://resources.gravitypdf.com/uploads/2022/04/2.0-Previewer-Toolbar.png)](https://resources.gravitypdf.com/uploads/2022/04/2.0-Previewer-Toolbar.png)
+
+### Responsive Viewer
+
+The PDF viewer will automatically adapt to the available width so that it looks fantastic on any device. For small-screen devices, or when the PDF viewer is displayed in a narrow container, the toolbar controls are enlarged to make it easier to interact with.
+
+[![The PDF viewer on smaller screens or narrow containers](https://resources.gravitypdf.com/uploads/2022/04/2.0-Previewer-Responsive-Layout.png)](https://resources.gravitypdf.com/uploads/2022/04/2.0-Previewer-Responsive-Layout.png)
+
+## Grab Scroll
+
+You can scroll both vertical and horizontal with ease by grabbing (click-hold or touch-hold) a page of the PDF and moving your pointer on the screen. This feature is turned off when you [disable text-copying protection](#disable-text-copying-protection) so that text can be correctly selected.
+
+<ResponsiveEmbed src="https://player.vimeo.com/video/694720294" allow="fullscreen" allowfullscreen />
 
 ## Multiple Previews
 
-@TODO - VIDEO OF SETTING SELECTION AND FRONT-END OUTPUT
+If you've multiple PDFs configured on a form you can allow users to preview each of those documents. Add multiple *PDF Preview* fields to the form and adjust the _[PDF to Preview](#pdf-to-preview)_ setting to display each document. You can even include the fields in columns [using Gravity Forms Drag and Drop column feature](../users/columns.md).
 
-If you've got multiple PDFs configured on a form you may want to allow the end user to preview each of those documents before form submission. You can add multiple *PDF Preview* fields to the form and adjust the _[PDF to Preview](#pdf-to-preview)_ setting to display your documents.
+<ResponsiveEmbed src="https://player.vimeo.com/video/694720365" allow="fullscreen" allowfullscreen />
 
 ## Right to Left (RTL) Mode
-
-@TODO - VIDEO OF SETTING SELECTION AND FRONT-END OUTPUT
 
 If the PDF selected in _[PDF to Preview](#pdf-to-preview)_ has [RTL enabled](../users/setup-pdf.md#reverse-text-rtl) the order of pages will change if:
 
 1. [Spread](#spread) is enabled: pages displayed side-by-side will be reversed (page 3 on the left and page 2 on the right).
 2. [Page Scrolling](#page-scrolling) is set to _Horizontal_: the order of pages will be reversed and the scroll bar will default to the far right.
+
+If the _WordPress Site Language_ setting (found on the Settings -> General admin page) is set to a RTL language the viewer zoom dropdown will be revered, with the text on the right and the chevron on the left. 
+
+<ResponsiveEmbed src="https://player.vimeo.com/video/694720630" allow="fullscreen" allowfullscreen />
 
 ## Gravity Flow
 
