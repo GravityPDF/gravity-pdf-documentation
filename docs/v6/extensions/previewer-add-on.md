@@ -184,6 +184,21 @@ If you'd like to translate the plugin into your own language, or change the exis
 
 If using the File Upload field with the Multi-File Upload option disabled, the Previewer will need to be on a different page in the form ([using Gravity Forms Page field](https://docs.gravityforms.com/page-break/)) for those uploads to display in the PDF preview. This is a limitation of how the File Upload field works.
 
+## Upgrade from v1
+
+Users who use the out-of-the-box features of _Previewer_ should have a seamless upgrade experience to v2, with no breaking changes. If you do have any issues, before [opening a support ticket](https://gravitypdf.com/support/https://gravitypdf.com/support/) try clear both your website cache (if using a caching plugin) and your browser cache and test again. 
+
+The security in v2 has been enhanced and the right-click context menu has been disabled when used with the PDF viewer. If you relied on this functionality to save images of the PDF pages you will need to [toggle the associated security setting to disable](#disable-right-click-protection).
+
+The color scheme has been tweaked, and the grey in v1 has been strengthened/sharpened to create a more pleasant viewing experience. If you would like to revert to the v1 color scheme you can add the following CSS in the Customizer's Additional CSS section:
+
+```css 
+:root {
+  --dark-mode-viewer-bg-color: #7b7b7b;
+  --dark-mode-toolbar-bg-color: #4a4a4a;
+}
+```
+
 ## Developers 
 
 ### Conditionally Show Content 
