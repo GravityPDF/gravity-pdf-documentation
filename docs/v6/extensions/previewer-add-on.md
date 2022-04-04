@@ -159,7 +159,7 @@ If the PDF selected in _[PDF to Preview](#pdf-to-preview)_ has [RTL enabled](../
 1. [Spread](#spread) is enabled: pages displayed side-by-side will be reversed (page 3 on the left and page 2 on the right).
 2. [Page Scrolling](#page-scrolling) is set to _Horizontal_: the order of pages will be reversed and the scroll bar will default to the far right.
 
-If the _WordPress Site Language_ setting (found on the Settings -> General admin page) is set to a RTL language the viewer zoom dropdown will be revered, with the text on the right and the chevron on the left. 
+If the _WordPress Site Language_ setting (found on the Settings -> General admin page) is set to a RTL language the viewer zoom dropdown will be reversed, with the text on the right and the chevron on the left. 
 
 <ResponsiveEmbed src="https://player.vimeo.com/video/694720630" allow="fullscreen" allowfullscreen />
 
