@@ -8,7 +8,7 @@ import ResponsiveEmbed from 'react-responsive-embed'
 
 ![Previewer add-on](https://resources.gravitypdf.com/uploads/edd/2017/08/cover-artwork-1.png)
 
-*Previewer* is a premium plugin for Gravity PDF that allows the user to review the PDF(s) before the form has been submitted. It's a perfect tool for providing an on-screen preview of the document to a user before the form is submitted. The extension goes hand-in-hand [with a bespoke PDF](https://gravitypdf.com/integration-services/) or one of [our premium PDF templates](https://gravitypdf.com/store/#templates).
+*Previewer* is a premium plugin for Gravity PDF that allows the user to review the PDF(s) before the form has been submitted. It's a perfect tool for providing an on-screen preview of the document as the user fills out your form. The extension pairs really nicely [with a bespoke PDF](https://gravitypdf.com/integration-services/) or one of [our premium PDF templates](https://gravitypdf.com/store/#templates).
 
 You can purchase the *Previewer* plugin from our [Extension Shop](https://gravitypdf.com/shop/previewer-add-on/). This guide will walk you through installing and configuring *Previewer* to its full potential.
 
@@ -55,7 +55,7 @@ Select the PDF that the end user will be able to preview. This dropdown setting 
 
 When enabled, a download button will be included in the _PDF Preview_ toolbar so a user can download a copy of the document before form submission.
 
-For security reasons, after a PDF is downloaded the file is automatically deleted from the server. To download the PDF a second time a user may need to use the toolbar refresh action first, but this is browser dependant.
+For security reasons, after a PDF is downloaded the file is automatically deleted from the server. To download the PDF a second time a user may need to [use the toolbar refresh action](#pdf-viewer) first, but this is browser dependant.
 
 This setting is disabled by default.
 
@@ -117,7 +117,7 @@ By default, users cannot right-click on PDF pages to access the context menu. Th
 
 ### Disable Text-Copying Protection
 
-By default, users cannot copy any text on PDF pages. Enable this setting to render the text in the [Document Object Model (DOM)](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction), making it selectable for users and providing better accessibility for Screen Readers. When you enable this setting the [grab-scroll feature](#grab-scroll) will be turned off so that text can be selected. 
+By default, users cannot copy any text on PDF pages. Enable this setting to render the text in the [Document Object Model (DOM)](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction), making it selectable for users and providing better accessibility for Screen Readers. When enabled, the [grab-scroll feature](#grab-scroll) will be turned off so that text can be selected. 
 
 <ResponsiveEmbed src="https://player.vimeo.com/video/694720034" allow="fullscreen" allowfullscreen />
 
@@ -125,10 +125,10 @@ By default, users cannot copy any text on PDF pages. Enable this setting to rend
 
 The PDF viewer is designed to be simple and intuitive for end users to view the generated PDF documents. There are minimal controls in the toolbar to help people interact with the PDF. These include:
 
-1. Page Navigation - Use the up and down arrow icons to navigate through each page of the PDF, or enter a specific page number 
-2. Zoom Level - Use the plus and minus icons to step-zoom the PDF in or out. The dropdown has a range of zoom levels to select from to make the reading experience comfortable for any user
-3. Download - [If enabled](#download-preview), a download icon will appear that allows a user to save a copy of the document to their computer
-4. Refresh - an automatic refresh mechanism is used to update the PDF viewer as the form is filled out by the user, but there can be times when this isn't effective and the refresh icon will allow a manual refresh.
+1. **Page Navigation** - Use the up and down arrow icons to navigate through each page of the PDF, or enter a specific page number 
+2. **Zoom Level** - Use the plus and minus icons to step-zoom the PDF in or out. The dropdown has a range of zoom levels to select from to make the reading experience comfortable for any user
+3. **Download** - [If enabled](#download-preview), a download icon will appear that allows a user to save a copy of the document to their computer
+4. **Refresh** - an automatic refresh mechanism is used to update the PDF viewer as the form is filled out by the user, but there can be times when this isn't effective and the refresh icon will allow a manual refresh.
 
 The toolbar items listed above match to the numbered area in the image below.
 
@@ -169,6 +169,17 @@ The *Previewer* is fully-functional [with the Gravity Flow User Input step](http
 
 **It's not currently possible to display the _PDF Preview_ field during the Approval Step.**
 
+## Translations
+
+The *Previewer* plugin includes the following languages out of the box:
+
+* English
+* French
+* Spanish
+* German
+
+If you'd like to translate the plugin into your own language, or change the existing translations, [you can follow this How To Guide](https://gravitypdf.com/news/how-to-translate-gravity-pdf-strings-into-different-languages/). **Note**: the text domain for _Previewer_ is `gravity-pdf-previewer`.
+
 ## File Upload Limitations 
 
 If using the File Upload field with the Multi-File Upload option disabled, the Previewer will need to be on a different page in the form ([using Gravity Forms Page field](https://docs.gravityforms.com/page-break/)) for those uploads to display in the PDF preview. This is a limitation of how the File Upload field works.
@@ -208,6 +219,57 @@ add_action( 'gfpdf_post_save_pdf', function( $pdf_path, $filename, $settings, $e
     /* Do other actions here */
     
 }, 10, 5 );
+```
+
+### CSS Variables
+
+The following CSS variables are defined by the plugin and are available to easily customize the color scheme of both light and dark-mode viewers. 
+
+```css 
+:root {
+  --viewer-bg-color: rgba(190, 190, 190, 1);
+
+  --toolbar-icon-opacity: 0.8;
+  --toolbar-main-color: rgba(12, 12, 13, 1);
+  --toolbar-icon-bg-color: rgba(0, 0, 0, 1);
+  --toolbar-icon-hover-bg-color: rgba(0, 0, 0, 1);
+  --toolbar-bg-color: rgba(249, 249, 250, 1);
+  --toolbar-border-color: rgba(0, 0, 0, 0.15);
+  --toolbar-option-bg-color: rgba(255, 255, 255, 1);
+
+  --button-hover-color: rgba(221, 222, 223, 1);
+  --toggled-btn-color: rgba(0, 0, 0, 1);
+  --toggled-btn-bg-color: rgba(0, 0, 0, 0.3);
+  --toggled-hover-active-btn-color: rgba(0, 0, 0, 0.4);
+  --dropdown-btn-bg-color: rgba(215, 215, 219, 1);
+
+  --separator-color: rgba(0, 0, 0, 0.3);
+
+  --field-color: rgba(6, 6, 6, 1);
+  --field-border-color: rgba(0, 0, 0, 0.3);
+  --field-bg-color: rgba(255, 255, 255, 1);
+  --field-focus: rgba(10, 132, 255, 1);
+
+  --loading-color: rgba(25, 25, 25, 1);
+  --loading-btn-bg-color: rgba(215, 215, 215, 1);
+  --loading-btn-border-color: rgba(25, 25, 25, 1);
+
+  --dark-mode-viewer-bg-color: rgb(75, 75, 75, 1);
+
+  --dark-mode-toolbar-bg-color: rgba(45, 45, 45, 1);
+  --dark-mode-button-hover-color: rgba(95, 95, 95, 1);
+  --dark-mode-toolbar-text-color: rgba(242, 242, 242, 1);
+  --dark-mode-toolbar-border-color: rgba(0, 0, 0, 0.35);
+
+  --dark-mode-field-bg-color: rgba(75, 75, 75, 1);
+  --dark-mode-field-bg-color-hover: rgba(95, 95, 95, 1);
+  --dark-mode-field-border-color: rgba(0, 0, 0, 0.32);
+  --dark-mode-field-color: rgba(235, 235, 235, 1);
+
+  --dark-mode-loading-color: rgba(235, 235, 235, 1);
+  --dark-mode-loading-btn-bg-color: rgba(95, 95, 95, 1);
+  --dark-mode-loading-btn-border-color: rgba(235, 235, 235, 1);
+}
 ```
 
 ### PDF Security in Previewer 
