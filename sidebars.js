@@ -707,6 +707,7 @@ module.exports = {
             'v6/users/webhooks-support',
             'v6/users/gravityview-support',
             'v6/users/gravity-flow-support',
+            'v6/users/entry-block-perk-support',
             'v6/users/additional-templates',
             'v6/users/gdpr-and-gravity-pdf',
             'v6/users/gravity-forms-compatibility',

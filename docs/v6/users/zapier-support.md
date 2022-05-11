@@ -1,6 +1,6 @@
 ---
 title: "Zapier Add-On Support"
-sidebar_label: "Zapier Support"
+sidebar_label: "Zapier Add-on"
 description: "Gravity PDF fully integrates with Gravity Forms Zapier add-on, so you can pass the PDF URL(s) through to your favorite service."
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "Gravity Flow Support"
-sidebar_label: "Gravity Flow Support"
-description: ""
+sidebar_label: "Gravity Flow"
+description: "Gravity Flow is a powerful tool that makes building workflows and processes with Gravity Forms simple and straightforward."
 ---
 
 ![Gravity Flow Workflow Setup](https://resources.gravitypdf.com/uploads/2021/04/v6-GravityFlow-Approval-Step-Screenshot.png) 
