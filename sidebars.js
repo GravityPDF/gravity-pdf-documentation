@@ -703,6 +703,7 @@ module.exports = {
             'v6/users/displaying-uploaded-images',
             'v6/users/include-pdfs-in-entry-export',
             'v6/users/background-processing',
+            'v6/users/zapier-support',
             'v6/users/webhooks-support',
             'v6/users/gravityview-support',
             'v6/users/gravity-flow-support',
