@@ -888,6 +888,7 @@ module.exports = {
             'v6/developers/filters/gfpdf_container_disable_faux_columns',
             'v6/developers/filters/gfpdf_container_skip_fields',
             'v6/developers/filters/gfpdf_core_template_fields_list',
+            'v6/developers/filters/gfpdf_current_form_object',
             'v6/developers/filters/gfpdf_current_pdf_configuration',
             'v6/developers/filters/gfpdf_disable_global_addon_data',
             'v6/developers/filters/gfpdf_disable_product_table',

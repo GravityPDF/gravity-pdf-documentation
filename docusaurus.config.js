@@ -88,7 +88,7 @@ module.exports = {
 
             {
               label: 'YouTube',
-              href: 'https://www.youtube.com/channel/UCLdyzpNdEw71lvfhkfiTmAA',
+              href: 'https://www.youtube.com/c/gravitypdf',
             },
 
             {
