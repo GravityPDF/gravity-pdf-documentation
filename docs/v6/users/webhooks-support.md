@@ -1,6 +1,6 @@
 ---
 title: "Webhooks Add-On Support"
-sidebar_label: "Webhooks Support"
+sidebar_label: "Webhooks Add-on"
 description: "Gravity PDF fully integrates with Gravity Forms Webhooks add-on, so you can include the PDF URL(s) with your API calls."
 ---
 

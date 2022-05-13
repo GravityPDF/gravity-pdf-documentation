@@ -1,6 +1,6 @@
 ---
 title: "Basic GravityView Support is Built-in to Gravity PDF"
-sidebar_label: "GravityView Support"
+sidebar_label: "GravityView"
 description: "GravityView is the best way to display Gravity Forms entries on your website. Basic GravityView support is built right into Gravity PDF."
 ---
 
