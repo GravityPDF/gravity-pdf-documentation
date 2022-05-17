@@ -34,7 +34,7 @@ All PDF templates have common settings that can be configured, such as font, sec
 ### Certificate Configuration
 
 :::info
-For the best results it is recommended you use ALLCAPS for the [Title](#title-3), [Subtitle](#subtitle-4), and [Introduction](#introduction-5) settings in *Charlie*.  
+For the best results it is recommended you use ALLCAPS for the [Title](#title-3), [Subtitle](#subtitle-4), and [Introduction](#introduction-5) settings.  
 :::
 
 #### Title (3) 

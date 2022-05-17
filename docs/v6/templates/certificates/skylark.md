@@ -34,7 +34,7 @@ All PDF templates have common settings that can be configured, such as font, sec
 ### Certificate Configuration
 
 :::info
-For the best results it is recommended you use ALLCAPS for the [Title](#title-3), [Subtitle](#subtitle-4), and [Introduction](#introduction-5) settings in *Skylark*.  
+For the best results it is recommended you use ALLCAPS for the [Title](#title-3), [Subtitle](#subtitle-4), and [Introduction](#introduction-5) settings.  
 :::
 
 #### Title (3)
@@ -85,7 +85,7 @@ For the best results it is recommended you use ALLCAPS for the [Title](#title-3)
 
 ### Other Fonts
 
-_Skylark_ [makes use of the open source font Paytone One](https://fonts.google.com/specimen/Paytone+One) for the [Title](#title-3), [Subtitle](#subtitle-4), and [Awardee Name](#awardee-name-6), and this font cannot be changed via the UI.
+_Skylark_ [makes use of the open source font Paytone One](https://fonts.google.com/specimen/Paytone+One) for the [Title](#title-3), [Subtitle](#subtitle-4), and [Awardee Name](#awardee-name-6) (with a [fallback to Charm](https://fonts.google.com/specimen/Charm), and these font cannot be changed via the UI.
 
 ## Viewing PDF
 
