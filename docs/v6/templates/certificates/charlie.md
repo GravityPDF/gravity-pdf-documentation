@@ -4,6 +4,8 @@ sidebar_label: "Charlie"
 description: "Charlie is a premium certificate PDF that is dynamically generated using Gravity Forms data and has been built specifically for use with Gravity PDF."
 ---
 
+![A look at the Charlie certificate in A4 Portrait and Landscape mode](https://resources.gravitypdf.com/uploads/2022/05/Charlie.png)
+
 *Charlie* is a single-page PDF certificate for Gravity PDF and Gravity Forms. It offers a clean, subtle design that's perfectly suited for business or medical professionals. *Charlie* is a premium Gravity PDF template and can be [purchased from the PDF Template Shop](https://gravitypdf.com/shop/certificate-charlie/). This guide will walk you through installing and configuring *Charlie* to its full potential.
 
 ## Installation 

@@ -4,6 +4,8 @@ sidebar_label: "Dakota"
 description: "Dakota is a premium certificate PDF that is dynamically generated using Gravity Forms data and has been built specifically for use with Gravity PDF."
 ---
 
+![A look at the Dakota certificate in A4 Portrait and Landscape mode](https://resources.gravitypdf.com/uploads/2022/05/Dakota.png)
+
 *Dakota* is a single-page PDF certificate for Gravity PDF and Gravity Forms. It has a bright, colorful disposition, gives off retro-pop vibes, and would be a good fit for creative industries or younger audiences. *Dakota* is a premium Gravity PDF template and can be [purchased from the PDF Template Shop](https://gravitypdf.com/shop/certificate-dakota/). This guide will walk you through installing and configuring *Dakota* to its full potential.
 
 ## Installation

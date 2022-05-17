@@ -4,6 +4,8 @@ sidebar_label: "Montgomery"
 description: "Montgomery is a premium certificate PDF that is dynamically generated using Gravity Forms data and has been built specifically for use with Gravity PDF."
 ---
 
+![A look at the Montgomery certificate in A4 Portrait and Landscape mode](https://resources.gravitypdf.com/uploads/2022/05/Montgomery.png)
+
 *Montgomery* is a single-page PDF certificate for Gravity PDF and Gravity Forms. Fine gold accents, clean lines, and crisp color create an air of refinement that ensures *Montgomery* is suitable for use across a range of industries or occasions. *Montgomery* is a premium Gravity PDF template and can be [purchased from the PDF Template Shop](https://gravitypdf.com/shop/certificate-montgomery/). This guide will walk you through installing and configuring *Montgomery* to its full potential.
 
 ## Installation
