@@ -71,7 +71,7 @@ For the best results it is recommended you use ALLCAPS for the [Title](#title-3)
 ### Signatory Details 
 
 #### Signature (13) 
-* Upload an image of your signature in JPG, PNG, or GIF format
+* Upload an image of your signature in JPG, PNG, or GIF format (a transparent PNG will give the best results)
 * An image 250px wide will be a suitable resolution in most cases. To ensure your PDF generates quickly and the PDF file size stays small, we recommend using an image under 200kb.
 * Defaults to an empty value
 

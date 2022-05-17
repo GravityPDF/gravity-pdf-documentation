@@ -75,9 +75,13 @@ For the best results it is recommended you use _Sentence Case_ for the [Title](#
 ### Signatory Details
 
 #### Signature (13)
-* Upload an image of your signature in JPG, PNG, or GIF format
+* Upload an image of your signature in JPG, PNG, or GIF format (a transparent PNG will give the best results)
 * An image 250px wide will be a suitable resolution in most cases. To ensure your PDF generates quickly and the PDF file size stays small, we recommend using an image under 200kb.
 * Defaults to an empty value
+
+:::info
+Because of the dark background used in *Royal*, the signature will look best if colored white, or off-white.
+:::
 
 #### Signature Label (14)
 * The [Signature setting](#signature-13) label to be used in the certificate. It is recommended to use the full name of the signatory (i.e the person who is signing the certificate).
