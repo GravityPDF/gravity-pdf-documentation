@@ -799,6 +799,18 @@ module.exports = {
         },
         {
           'type': 'category',
+          'label': 'Certificate Templates',
+          'items': [
+            'v6/templates/certificates/charlie',
+            'v6/templates/certificates/dakota',
+            'v6/templates/certificates/joey',
+            'v6/templates/certificates/montgomery',
+            'v6/templates/certificates/royal',
+            'v6/templates/certificates/skylark',
+          ]
+        },
+        {
+          'type': 'category',
           'label': 'Letter Templates',
           'items': [
             'v6/templates/formal-letter',
