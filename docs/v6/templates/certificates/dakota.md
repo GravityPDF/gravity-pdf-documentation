@@ -1,69 +1,92 @@
 ---
 title: "Dakota Certificate Template: How to Install and Configure"
 sidebar_label: "Dakota"
-description: ""
+description: "Dakota is a premium certificate PDF that is dynamically generated using Gravity Forms data and has been built specifically for use with Gravity PDF."
 ---
 
-The *Dakota* premium PDF template is a modern take on the business certificate. It can be [purchased from our PDF Template Shop](https://gravitypdf.com/shop/). This guide will walk you through installing and configuring *Dakota* to its full potential.
+*Dakota* is a single-page PDF certificate for Gravity PDF and Gravity Forms. It has a bright, colorful disposition, gives off retro-pop vibes, and would be a good fit for creative industries or younger audiences. *Dakota* is a premium Gravity PDF template and can be [purchased from the PDF Template Shop](https://gravitypdf.com/shop/certificate-dakota/). This guide will walk you through installing and configuring *Dakota* to its full potential.
 
-## Installation 
+## Installation
 
 [Please follow our installation guide](../installing-upgrading-premium-templates.md), which provides instructions for setting up and configuring your premium template.
 
-## Limitations 
+## Limitations
 
-*Dakota* can be used with all Gravity Forms. You'll have access to your form data for use in the certificate through Gravity Forms Merge Tags. For more information, see the [Gravity Forms Merge Tags documentation](https://docs.gravityforms.com/category/user-guides/merge-tags-getting-started/).
+*Dakota* can be used with all Gravity Forms and you can display your form data in the certificate [using Gravity Forms Merge Tags](https://docs.gravityforms.com/category/user-guides/merge-tags-getting-started/). All paper sizes are supported out of the box, but for the best results you will need to adjust the [Font Size](../../users/setup-pdf.md#font-size) up or down to suit the size of the paper you choose ([refer to the Recommended Font section](#recommended-font) for the best font and size to use with A4 or Letter paper). The certificate design and color scheme are fixed and cannot be changed.
 
-## Configuring 
+## Configuring
 
 All PDF templates have common settings that can be configured, such as font, security and PDF attachments, and we recommend [reviewing the PDF setup guide](../../users/setup-pdf.md) to get a better understanding of all the available settings. All template-specific configuration is done from the *Template* tab, and below you'll find detailed information about each option available in *Dakota*, what it does and how it alters the generated PDF.
 
 ### Organization Details
 
-#### Logo (1) 
-* This image is positioned in the top-middle of the certificate.
-* An image 500px wide will be a suitable resolution in most cases. To ensure your PDF generates quickly and the PDF file size stays small, we recommend using an image under 1MB.
+#### Logo (1)
+* This image is positioned in the top-center of the certificate.
+* An image 500px wide will be a suitable resolution in most cases. To ensure your PDF generates quickly and the PDF file size stays small, we recommend using an image under 1MB (the smaller the better).
+* If a [Business Name](#business-name-2) is not provided, the available space for the logo will be slightly increased
+* Defaults to an empty value
 
-#### Business Name (2) 
-* Enter the name of the company to be displayed below the [Logo](#logo-1).
-* This text moves slightly upwards, and its font size increases slightly when no logo set.
-* If this setting is blank, it will not be included in the PDF.
+#### Business Name (2)
+* Enter the name of the company or establishment to be displayed in the area just below the Logo
+* If a [Logo](#logo-1) is not provided, the Business Name will use a larger font size and weight to make it stand out
+* Defaults to an empty value
 
 ### Certificate Configuration
 
-#### Title (3) 
-*  The title of the certificate that is displayed below the [Business Name](#business-name-2). [Merge Tags](https://docs.gravityforms.com/category/user-guides/merge-tags-getting-started/) are supported.
+:::info
+For the best results it is recommended you use ALLCAPS for the [Title](#title-3), [Subtitle](#subtitle-4), and [Introduction](#introduction-5) settings in *Dakota*.  
+:::
 
-#### Subtitle (4) 
-* This text is displayed below the [Title](#title-3). It describes what type of certificate is being used in the document.
+#### Title (3)
+* The title of the certificate that is displayed below the [Business Name](#business-name-2). [Merge Tags](https://docs.gravityforms.com/category/user-guides/merge-tags-getting-started/) are supported.
+* Defaults to "CERTIFICATE"
 
-#### Introduction (5) 
-* This text is displayed below the [Subtitle](#subtitle-5). It introduces a certificate presentation to the [Awardee Name](#awardee-name-6).
+#### Subtitle (4)
+* This text is displayed below the [Title](#title-3). It describes what type of certificate is being used in the document eg. appreciation, excellence, honor
+* Defaults to "OF APPRECIATION"
 
-#### Awardee Name (6) 
-* This text is displayed below the [Introduction](#introduction-5). It contains the name of the person receiving the certificate. [Merge Tags](https://docs.gravityforms.com/category/user-guides/merge-tags-getting-started/) are supported.
+#### Introduction (5)
+* This text is displayed below the [Subtitle](#subtitle-5). It is the introduction line for the [Awardee Name](#awardee-name-6).
+* Defaults to "THIS CERTIFICATE IS PROUDLY AWARDED TO"
 
-#### Additional Information (7) 
+#### Awardee Name (6)
+* This text is displayed below the [Introduction](#introduction-5). It displays the name of the person receiving the certificate. [Merge Tags](https://docs.gravityforms.com/category/user-guides/merge-tags-getting-started/) are supported.
+* Defaults to an empty value and in 99% of cases you will use merge tags to add the awardee name.
+
+#### Additional Information (7)
 * This text is displayed below the [Awardee Name](#awardee-name-6). Use the full-featured Rich Text Editor to supply/format a brief description of why the recipient is receiving the certificate. [Merge Tags](https://docs.gravityforms.com/category/user-guides/merge-tags-getting-started/) are supported.
+* Defaults to an empty value
 
-#### Date (8) 
-* The date to be included in the certificate.
+#### Date (8)
+* The date to be included in the certificate. [Merge Tags](https://docs.gravityforms.com/category/user-guides/merge-tags-getting-started/) are supported.
+* Defaults to "{date\_created}" which outputs the entry submission date in the format _April 21, 2022_. [You can use the `:format` modifier](https://docs.gravityforms.com/entry-date-merge-tags/#h-format) to change the date format. Define a custom format [using the WordPress and PHP date/time formatting characters](https://wordpress.org/support/article/formatting-date-and-time/). Examples include:
+    * `{date_created:format:m/d/Y} = 04/21/2022`
+    * `{date_created:format:d/m/Y} = 04/21/2022`
+    * `{date_created:format:Y-m-d} = 2022-04-21`
 
-#### Date Label (9) 
-* The date label to be used in the certificate. 
+#### Date Label (9)
+* The [Date setting](#date-8) label to be used in the certificate.
+* Defaults to "DATE"
 
-### Signatory Details 
+### Signatory Details
 
-#### Signature (13) 
-* Upload an image of your signature.
+#### Signature (13)
+* Upload an image of your signature in JPG, PNG, or GIF format
+* An image 250px wide will be a suitable resolution in most cases. To ensure your PDF generates quickly and the PDF file size stays small, we recommend using an image under 200kb.
+* Defaults to an empty value
 
-#### Signature Label (14) 
-* The full name of the signatory (i.e the person who is signing the certificate).
+#### Signature Label (14)
+* The [Signature setting](#signature-13) label to be used in the certificate. It is recommended to use the full name of the signatory (i.e the person who is signing the certificate).
+* Defaults to "SIGNATURE"
 
-## Recommended Font 
+## Recommended Font
 
-*Roboto R I B Bi* is a neo-grotesque sans-serif typeface family by Google and is easy to read and works well with *Dakota* at 14pt. Set the PDF font in the [Appearance tab](../../users/setup-pdf.md#appearance-tab).
+[*Roboto R I B Bi*, or Roboto for short](https://fonts.google.com/specimen/Roboto), is a free sans serif typeface that is largely geometric, but features natural curves and lettering for more natural reading. Roboto includes characters for Latin, Greek and Cyrillic alphabets. The font works best at 14pt when using A4 or Letter paper. Set the PDF font and size in the [Appearance tab](../../users/setup-pdf.md#appearance-section).
 
-## Viewing PDF 
+### Other Fonts
+
+_Dakota_ [makes use of the open source font Quicksand](https://fonts.google.com/specimen/Quicksand) for the [Title](#title-3), [Introduction](#introduction-5), and [Awardee Name](#awardee-name-6), and this font cannot be changed via the UI. 
+
+## Viewing PDF
 
 Once you've saved your new PDF, you can [view it from the Gravity Forms Entries List page](../../users/viewing-pdfs.md). Just remember to fill out and submit your form if the entry list is empty.

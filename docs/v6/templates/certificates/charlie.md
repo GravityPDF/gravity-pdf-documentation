@@ -4,7 +4,7 @@ sidebar_label: "Charlie"
 description: "Charlie is a premium certificate PDF that is dynamically generated using Gravity Forms data and has been built specifically for use with Gravity PDF."
 ---
 
-*Charlie* is single-page PDF certificate for Gravity PDF and Gravity Forms. It offers a clean, subtle design that's perfectly suited for business or medical professionals. It is a premium Gravity PDF template and can be [purchased from the PDF Template Shop](https://gravitypdf.com/shop/certificate-charlie/). This guide will walk you through installing and configuring *Charlie* to its full potential.
+*Charlie* is a single-page PDF certificate for Gravity PDF and Gravity Forms. It offers a clean, subtle design that's perfectly suited for business or medical professionals. *Charlie* is a premium Gravity PDF template and can be [purchased from the PDF Template Shop](https://gravitypdf.com/shop/certificate-charlie/). This guide will walk you through installing and configuring *Charlie* to its full potential.
 
 ## Installation 
 
@@ -81,7 +81,11 @@ For the best results it is recommended you use ALLCAPS for the [Title](#title-3)
 
 ## Recommended Font 
 
-*Open Sans L Li Sb Sbi*, or Open Sans for short, is a free sans serif typeface created by Steve Matteson from Ascender Corp. It is highly legible and includes characters for Latin, Greek and Cyrillic alphabets. The font works best at 16pt when using A4 or Letter paper. Set the PDF font and size in the [Appearance tab](../../users/setup-pdf.md#appearance-tab).
+[*Open Sans L Li Sb Sbi*, or Open Sans for short](https://fonts.google.com/specimen/Open+Sans), is a free sans serif typeface created by Steve Matteson from Ascender Corp. It is highly legible and includes characters for Latin, Greek and Cyrillic alphabets. The font works best at 16pt when using A4 or Letter paper. Set the PDF font and size in the [Appearance tab](../../users/setup-pdf.md#appearance-section).
+
+### Other Fonts
+
+_Charlie_ [makes use of the open source font Lora](https://fonts.google.com/specimen/Lora) for the [Title](#title-3), [Subtitle](#subtitle-4), and [Awardee Name](#awardee-name-6), and this font cannot be changed via the UI.
 
 ## Viewing PDF 
 
