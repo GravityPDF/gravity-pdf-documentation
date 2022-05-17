@@ -72,13 +72,13 @@ For the best results it is recommended you use ALLCAPS for the [Title](#title-3)
 
 ### Signatory Details 
 
-#### Signature (13) 
+#### Signature (10) 
 * Upload an image of your signature in JPG, PNG, or GIF format (a transparent PNG will give the best results)
 * An image 250px wide will be a suitable resolution in most cases. To ensure your PDF generates quickly and the PDF file size stays small, we recommend using an image under 200kb.
 * Defaults to an empty value
 
-#### Signature Label (14) 
-* The [Signature setting](#signature-13) label to be used in the certificate. It is recommended to use the full name of the signatory (i.e the person who is signing the certificate).
+#### Signature Label (11) 
+* The [Signature setting](#signature-11) label to be used in the certificate. It is recommended to use the full name of the signatory (i.e the person who is signing the certificate).
 * Defaults to "SIGNATURE"
 
 ## Recommended Font 
