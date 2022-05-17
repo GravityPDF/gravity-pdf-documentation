@@ -8,7 +8,7 @@ The *Joey* premium PDF template is a modern take on the children's certificate. 
 
 ## Installation 
 
-[Please follow our installation guide](shop-installing-upgrading-premium-templates.md), which provides instructions for setting up and configuring your premium template.
+[Please follow our installation guide](../installing-upgrading-premium-templates.md), which provides instructions for setting up and configuring your premium template.
 
 ## Limitations 
 
@@ -16,7 +16,7 @@ The *Joey* premium PDF template is a modern take on the children's certificate. 
 
 ## Configuring 
 
-All PDF templates have common settings that can be configured, such as font, security and PDF attachments, and we recommend [reviewing the PDF setup guide](user-setup-pdf.md) to get a better understanding of all the available settings. All template-specific configuration is done from the *Template* tab, and below you'll find detailed information about each option available in *Joey*, what it does and how it alters the generated PDF.
+All PDF templates have common settings that can be configured, such as font, security and PDF attachments, and we recommend [reviewing the PDF setup guide](../../users/setup-pdf.md) to get a better understanding of all the available settings. All template-specific configuration is done from the *Template* tab, and below you'll find detailed information about each option available in *Joey*, what it does and how it alters the generated PDF.
 
 ### Organization Details
 
@@ -62,8 +62,8 @@ All PDF templates have common settings that can be configured, such as font, sec
 
 ## Recommended Font 
 
-*Fira Sans T Ti Sb Sbi* is a free font family by Mozilla and is easy to read and works well with *Joey* at 14pt. Set the PDF font in the [Appearance tab](user-setup-pdf.md#appearance-tab).
+*Fira Sans T Ti Sb Sbi* is a free font family by Mozilla and is easy to read and works well with *Joey* at 14pt. Set the PDF font in the [Appearance tab](../../users/setup-pdf.md#appearance-tab).
 
 ## Viewing PDF 
 
-Once you've saved your new PDF, you can [view it from the Gravity Forms Entries List page](user-viewing-pdfs.md). Just remember to fill out and submit your form if the entry list is empty.
+Once you've saved your new PDF, you can [view it from the Gravity Forms Entries List page](../../users/viewing-pdfs.md). Just remember to fill out and submit your form if the entry list is empty.

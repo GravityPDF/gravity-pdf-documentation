@@ -81,8 +81,8 @@ For the best results it is recommended you use ALLCAPS for the [Title](#title-3)
 
 ## Recommended Font 
 
-*Open Sans L Li Sb Sbi*, or Open Sans for short, is a free sans serif typeface created by Steve Matteson from Ascender Corp. It is highly legible and includes characters for Latin, Greek and Cyrillic alphabets. The font works best at 16pt when using A4 or Letter paper. Set the PDF font and size in the [Appearance tab](user-setup-pdf.md#appearance-tab).
+*Open Sans L Li Sb Sbi*, or Open Sans for short, is a free sans serif typeface created by Steve Matteson from Ascender Corp. It is highly legible and includes characters for Latin, Greek and Cyrillic alphabets. The font works best at 16pt when using A4 or Letter paper. Set the PDF font and size in the [Appearance tab](../../users/setup-pdf.md#appearance-tab).
 
 ## Viewing PDF 
 
-Once you've saved your new PDF, you can [view it from the Gravity Forms Entries List page](user-viewing-pdfs.md). Just remember to fill out and submit your form if the entry list is empty.
+Once you've saved your new PDF, you can [view it from the Gravity Forms Entries List page](../../users/viewing-pdfs.md). Just remember to fill out and submit your form if the entry list is empty.
