@@ -20,6 +20,9 @@ description: "Montgomery is a premium certificate PDF that is dynamically genera
 
 All PDF templates have common settings that can be configured, such as font, security and PDF attachments, and we recommend [reviewing the PDF setup guide](../../users/setup-pdf.md) to get a better understanding of all the available settings. All template-specific configuration is done from the *Template* tab, and below you'll find detailed information about each option available in *Montgomery*, what it does and how it alters the generated PDF.
 
+![The Montgomery PDF Certificate with numbers from 1-11 that represent the corresponding PDF setting](https://resources.gravitypdf.com/uploads/2022/05/Montgomery-with-numbering.png)
+*The position of each PDF setting in the certificate (see below)*
+
 ### Organization Details
 
 #### Logo (1)

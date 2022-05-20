@@ -4,7 +4,7 @@ sidebar_label: "Joey"
 description: "Joey is a premium certificate PDF that is dynamically generated using Gravity Forms data and has been built specifically for use with Gravity PDF."
 ---
 
-![A look at the Joey certificate in A4 Portrait and Landscape mode](https://resources.gravitypdf.com/uploads/2022/05/Joey.png)
+![A look at the Joey certificate in A4 Portrait and Landscape mode](https://resources.gravitypdf.com/uploads/2022/05/Joey-featured.jpg)
 
 *Joey* is a single-page PDF certificate for Gravity PDF and Gravity Forms. The use of natural color, shrubs, and leafy-greens provides the perfect certificate for children of any age, or for those with in industries that have a focus on nature. *Joey* is a premium Gravity PDF template and can be [purchased from the PDF Template Shop](https://gravitypdf.com/shop/certificate-joey/). This guide will walk you through installing and configuring *Joey* to its full potential.
 
@@ -19,6 +19,9 @@ description: "Joey is a premium certificate PDF that is dynamically generated us
 ## Configuring
 
 All PDF templates have common settings that can be configured, such as font, security and PDF attachments, and we recommend [reviewing the PDF setup guide](../../users/setup-pdf.md) to get a better understanding of all the available settings. All template-specific configuration is done from the *Template* tab, and below you'll find detailed information about each option available in *Joey*, what it does and how it alters the generated PDF.
+
+![The Joey PDF Certificate with numbers from 1-11 that represent the corresponding PDF setting](https://resources.gravitypdf.com/uploads/2022/05/Joey-with-numbering.png)
+*The position of each PDF setting in the certificate (see below)*
 
 ### Organization Details
 

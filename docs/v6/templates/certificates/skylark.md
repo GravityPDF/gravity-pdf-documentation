@@ -4,7 +4,7 @@ sidebar_label: "Skylark"
 description: "Skylark is a premium certificate PDF that is dynamically generated using Gravity Forms data and has been built specifically for use with Gravity PDF."
 ---
 
-![A look at the Skylark certificate in A4 Portrait and Landscape mode](https://resources.gravitypdf.com/uploads/2022/05/Skylark.png)
+![A look at the Skylark certificate in A4 Portrait and Landscape mode](https://resources.gravitypdf.com/uploads/2022/05/Skylark-featured.jpg)
 
 *Skylark* is a single-page PDF certificate for Gravity PDF and Gravity Forms. The warm colors used gives off a sense of perpetual delight, and the modern design means this certificate is fit for use across a range of industries or occasions. *Skylark* is a premium Gravity PDF template and can be [purchased from the PDF Template Shop](https://gravitypdf.com/shop/certificate-skylark/). This guide will walk you through installing and configuring *Skylark* to its full potential.
 
@@ -19,6 +19,9 @@ description: "Skylark is a premium certificate PDF that is dynamically generated
 ## Configuring
 
 All PDF templates have common settings that can be configured, such as font, security and PDF attachments, and we recommend [reviewing the PDF setup guide](../../users/setup-pdf.md) to get a better understanding of all the available settings. All template-specific configuration is done from the *Template* tab, and below you'll find detailed information about each option available in *Skylark*, what it does and how it alters the generated PDF.
+
+![The Skylark PDF Certificate with numbers from 1-11 that represent the corresponding PDF setting](https://resources.gravitypdf.com/uploads/2022/05/Skylark-with-numbering.png)
+*The position of each PDF setting in the certificate (see below)*
 
 ### Organization Details
 

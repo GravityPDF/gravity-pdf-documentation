@@ -4,7 +4,7 @@ sidebar_label: "Royal"
 description: "Royal is a premium certificate PDF that is dynamically generated using Gravity Forms data and has been built specifically for use with Gravity PDF."
 ---
 
-![A look at the Royal certificate in A4 Portrait and Landscape mode](https://resources.gravitypdf.com/uploads/2022/05/Royal.png)
+![A look at the Royal certificate in A4 Portrait and Landscape mode](https://resources.gravitypdf.com/uploads/2022/05/Royal-featured.jpg)
 
 *Royal* is a single-page PDF certificate for Gravity PDF and Gravity Forms. This regal design makes heavy use of layered gold to decorate the certificate and the assorted greys contrast beautifully against white text. *Royal* is a premium Gravity PDF template and can be [purchased from the PDF Template Shop](https://gravitypdf.com/shop/certificate-royal/). This guide will walk you through installing and configuring *Royal* to its full potential.
 
@@ -23,6 +23,9 @@ All PDF templates have common settings that can be configured, such as font, sec
 :::info
 The darker background on *Royal* contrasts nicely with a [Font Color](../../users/setup-pdf.md#font-colour) set to white `#FFFFFF`, or an off-white variant (try add a little yellow `#FFFFF2`).
 :::
+
+![The Royal PDF Certificate with numbers from 1-11 that represent the corresponding PDF setting](https://resources.gravitypdf.com/uploads/2022/05/Royal-with-numbering.png)
+*The position of each PDF setting in the certificate (see below)*
 
 ### Organization Details
 
