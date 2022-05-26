@@ -11,7 +11,7 @@ description: "The Entry Block Perk is the new kid on the block for displaying an
 You can include a PDF Download link in any of the Entry Block's variations using either [the [gravitypdf] shortcode](shortcodes-and-mergetags.md#building-the-shortcode), or the [PDF merge tag](shortcodes-and-mergetags.md#building-the-merge-tag) in combination with a _Button_ block.
 
 :::info
-If you are not [filtering entries by the current logged-in user](https://gravitywiz.com/documentation/gravity-forms-entry-blocks/?ref=78#who-can-view-entries), you should enable the signed URL feature. Signed URLs are supported for both [the [gravitypdf] shortcode](shortcodes-and-mergetags.md#signed-optional) and [PDF merge tags](shortcodes-and-mergetags.md#signed). Found out more [by reviewing the PDF Permissions section](#permissions).
+If you are not [filtering entries by the current logged-in user](https://gravitywiz.com/documentation/gravity-forms-entry-blocks/?ref=78#who-can-view-entries), you should enable the signed URL feature. Signed URLs are supported for both [the [gravitypdf] shortcode](shortcodes-and-mergetags.md#signed-optional) and [PDF merge tags](shortcodes-and-mergetags.md#signed). Find out more [by reviewing the PDF Permissions section](#permissions).
 :::
 
 ![The frontend Table variant showing a new custom column to download PDFs for the Gravity Wiz Entry Block perk](https://resources.gravitypdf.com/uploads/2022/05/gravity-wiz-entry-block-table-variant-front-end-2.png)
