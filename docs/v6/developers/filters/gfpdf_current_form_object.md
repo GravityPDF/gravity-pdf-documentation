@@ -42,7 +42,7 @@ The following will reorder Gravity Forms fields in Core / Universal PDFs:
 ```
 add_filter( 'gfpdf_current_form_object', function( $form, $entry, $type ) {
     if ( $type === 'generate_html_structure' ) {
-      /* Move the 3rd and 4th fields to the end of the form two fields from the start of the form and add to the end */
+      /* Move the 3rd and 4th fields to the end of the form for the PDF only */
       $extracted_fields = array_splice( $form['fields'], 2, 2 );
       $form['fields'] = array_merge( $form['fields'], $extracted_fields );
     }
