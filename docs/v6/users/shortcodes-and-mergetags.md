@@ -132,6 +132,7 @@ The `[gravitypdf]` shortcode is customisable and there are a number of attribute
   
 ##### Print (optional) 
 * The `print` attribute will automatically open a print dialog box when the PDF is opened.
+* Support for this functionality is very much PDF viewer dependant. Adobe Reader / Adobe Acrobat natively supports this functionality by default (but it can be disabled by the user). Firefox's PDF viewer will also open the print dialog automatically, but Safari, Edge, and Chrome PDF viewers do not.
 * *Example:* `[gravitypdf id="560f2ef799945" print="1"]`
 
 ##### Entry (semi-optional) 
@@ -188,7 +189,8 @@ All modifiers are optional, and should be included after the `[id]`. They are al
 * _Example:_ `{Report:pdf:6063bd0362dda:download}`
 
 ##### Print
-* Generates a URL that forces the print dialog box to open when the PDF is viewed (viewer dependant)
+* Generates a URL that forces the print dialog box to open when the PDF is viewed
+* Support for this functionality is very much PDF viewer dependant. Adobe Reader / Adobe Acrobat natively supports this functionality by default (but it can be disabled by the user). Firefox's PDF viewer will also open the print dialog automatically, but Safari, Edge, and Chrome PDF viewers do not.
 * _Example:_ `{Report:pdf:6063bd0362dda:print}`
 
 ##### Signed
