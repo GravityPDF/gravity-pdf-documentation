@@ -34,6 +34,7 @@ This filter was introduced in Gravity PDF 6.3.
   * get_active_pdfs
   * get_pdf_name
   * apply_backwards_compatibility_filters
+  * helper_abstract_fields
 
 ## Usage 
 
@@ -56,6 +57,7 @@ add_filter( 'gfpdf_current_form_object', function( $form, $entry, $type ) {
 This filter is located in the following methods and files:
 
 * `Helper_PDF::__construct()` method in `/src/Helper/Helper_PDF.php`.
+* `Helper_Abstract_Fields::__construct()` method in `/src/Helper/Helper_Abstract_Fields.php`.
 * `Model_PDF::get_form_data()` method in `/src/Model/Model_PDF.php`.
 * `View_PDF::get_core_template_styles()` method in `/src/View/View_PDF.php`.
 * `View_PDF::generate_html_structure()` method in `/src/View/View_PDF.php`.
