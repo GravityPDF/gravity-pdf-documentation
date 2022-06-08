@@ -16,6 +16,10 @@ Before Gravity PDF can be used for the first time, the Core font files need to b
 
 When the plugin is activated, Gravity PDF will detect if the Core Fonts have been installed and show a prompt if they cannot be found. When the prompt is shown, click the `Install Core Fonts` button to begin the installation. If you need to reinstall the Core Fonts for any reason, you can do so from the [Global Settings Tools tab](global-settings.md#tools-tab). If any fonts fail to download, the installer will ask if you want to retry. Only the failed font downloads will be retried.
 
+:::info
+The Core Fonts are hosted and will be downloaded to your web server [from a public GitHub repository (maintained by Gravity PDF)](https://github.com/gravityPDF/mpdf-core-fonts) when you use the Core Font Installer. For futher information about GitHub you can refer to their [Terms of Service](https://docs.github.com/en/site-policy/github-terms/github-terms-of-service) and/or [Privacy Statement](https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement#the-short-version).
+:::
+
 ### via FTP 
 
 [Download the Core Fonts](https://github.com/GravityPDF/mpdf-core-fonts/archive/master.zip), unzip the files and upload to `/wp-content/uploads/PDF_EXTENDED_TEMPLATES/fonts` via your FTP client. Depending on your internet upload speed, it could take some time to complete the upload.
