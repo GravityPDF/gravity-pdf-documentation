@@ -6,7 +6,7 @@ description: "By default mPDF temporary files are stored in the system temporary
 
 ## Description 
 
-By default the mPDF temporary files are stored in a folder called `mpdf` [inside the Gravity PDF temporary directory]([url](https://docs.gravitypdf.com/v6/developers/filters/gfpdf_tmp_location)). This filter allows you to change this directory independent of where the Gravity PDF temporary directory is.
+By default the mPDF temporary files are stored in a folder called `mpdf` [inside the Gravity PDF temporary directory](gfpdf_tmp_location.md). This filter allows you to change this directory independent of where the Gravity PDF temporary directory is.
 
 ## Parameters 
 
