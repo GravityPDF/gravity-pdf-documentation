@@ -50,4 +50,4 @@ If a PDF template already exists, it will be automatically updated (the old temp
 
 If you ever need to delete a template you can easily do so via the _Delete_ button when viewing individual PDFs (click the template image to view an individual PDF). You'll be asked to confirm this action before it deletes anything. 
 
-Core PDF templates (Zadani, Rubix, Focus Gravity and Blank Slate) cannot be deleted. However, if you've overridden a core template by copying it to the [PDF Working Directory](../developers/first-custom-pdf.md#working-directory), you will get the option to delete your modified version.
+Core PDF templates (Zadani, Rubix, Focus Gravity and Blank Slate) cannot be deleted. However, if you've overridden a core template by copying it to the [PDF Working Directory](../developers/first-custom-pdf.md#pdf-working-directory), you will get the option to delete your modified version.

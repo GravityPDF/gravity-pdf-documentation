@@ -38,7 +38,7 @@ After uploading the template, when you view the *Hello World* PDF for the entry 
 
 Conditional Shortcodes allow you to output different content in the PDF based on a user's response. The structure of the shortcode is relatively simple, with four required attributes including: `action`, `merge_tag`, `condition` and `value`. [See the Gravity Forms documentation for full details on its usage](https://docs.gravityforms.com/conditional-shortcode/).
 
-:::note
+:::info
 When your `value` contains any of the following characters `<`, `>`, `"`, `'` or `&` you'll need to use the WordPress function `esc_html()` to get the desired result.
 Example: `condition="is" value="<?php echo esc_html( 'Honey & Spice' ); ?>"]`
 :::

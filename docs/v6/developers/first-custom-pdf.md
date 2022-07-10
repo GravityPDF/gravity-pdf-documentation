@@ -12,10 +12,14 @@ Before we jump right into the code, we're going to discuss the architecture Grav
 
 ![The PDF_EXTENDED_TEMPLATES Working Directory](https://resources.gravitypdf.com/uploads/2015/10/v5-pdf-working-directory.png)
 
-When Gravity PDF is installed, it automatically creates a folder called `PDF_EXTENDED_TEMPLATES` in your WordPress upload directory. This folder is used to store temporary files, fonts and custom PDF templates. Any PHP files in the root of this folder will be classified as a PDF template, and the system will automatically register it.
+When Gravity PDF is installed, it automatically creates a folder called `PDF_EXTENDED_TEMPLATES` in your WordPress upload directory. This folder is used to store temporary files, fonts and custom PDF templates. Any PHP files in the root of this folder will be classified as a **PDF Template**, and the system will automatically register it.
 
-:::note
+:::info
 On a vanilla WordPress installation the full path to the `PDF_EXTENDED_TEMPLATES` directory is `/wp-content/uploads/PDF_EXTENDED_TEMPLATES`. Your installation may be different if defining the `WP_CONTENT_DIR` or `UPLOADS` constants, or if you've used the [`gfpdf_template_location`](filters/gfpdf_template_location.md) and [`gfpdf_template_location_uri`](filters/gfpdf_template_location_uri.md) filters.
+:::
+
+:::caution
+The **PDF Template** filename should only contain `A-Z`, `a-z`, `0-9`, `_`, or `-` characters, followed by the `.php` extension. Do not include spaces, symbols, or non-ascii characters. For example `my-custom-template.php` is valid, whereas `F.ID #123.php` is invalid.
 :::
 
 ### Template Hierarchy
@@ -75,6 +79,10 @@ The following is a valid PDF template header:
 
 The following variables are available to all PDF templates:
 
+:::caution
+If you print/echo any PHP variable in the template it is best practice to [late-escape those variables on output](https://developer.wordpress.org/themes/theme-security/data-sanitization-escaping/#escaping-securing-output).
+:::
+
 ### $form 
 * The current [Gravity Forms object](https://docs.gravityforms.com/form-object/) being processed. This is the main object in Gravity Forms and contains all properties of a particular form – form title, fields, notification, confirmation etc.
 
@@ -88,7 +96,7 @@ The following variables are available to all PDF templates:
 * The current PDF configuration settings in array format. Standard settings like filename and font size are stored in this array, as well as [template-specific settings](template-configuration-and-image.md).
 
 ### $fields 
-* An array of the current Gravity Forms fields which can be accessed using their field ID number – `print_r( $fields[20] );`. This is just a formatted version of the `$form['fields']` array.
+* An array of the current Gravity Forms fields which can be accessed using the field ID number – `print_r( $fields[20] );`. This is just a formatted version of the `$form['fields']` array.
 
 ## Supported HTML / CSS
 
@@ -153,7 +161,7 @@ Next, we're going to layout the basic structure. Go ahead and add the following 
 
 Think of Gravity PDF templates as HTML that is automatically included inside the `<body>` tag. Any [supported CSS](pdf-features/supported-html-and-css.md#css-support) can be placed in the `<style>` tags, while your actual content should be included below that.
 
-To finish off our example, we've going to replace `<!-- The PDF content should be placed in here -->` with `<h1>Hello World</h1>`. Once done, save the example and upload it to your [PDF working directory](#working-directory) using an (S)FTP client or by [zipping up the template and uploading via the PDF Template Manager](install-template-via-template-manager.md).
+To finish off our example, we've going to replace `<!-- The PDF content should be placed in here -->` with `<h1>Hello World</h1>`. Once done, save the example and upload it to your [PDF working directory](#pdf-working-directory) using an (S)FTP client or by [zipping up the template and uploading via the PDF Template Manager](install-template-via-template-manager.md).
 
 [Download a completed copy of the Hello World template](https://gist.github.com/jakejackson1/d98b99fd504a5a300f1a).
 

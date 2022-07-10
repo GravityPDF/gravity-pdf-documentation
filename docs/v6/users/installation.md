@@ -31,7 +31,7 @@ Gravity PDF is a third party extension for Gravity Forms, created by an independ
 -   128MB+ WP Memory (**256MB+ recommended**)
 
 :::success Info
-If you are unable to meet the v6 minimum software requirements, Gravity PDF will continue [supporting users on v5](../../v5/five-minute-install.md) with bug and security fixes until at least 27 April 2022.
+If you are unable to meet the v6 minimum software requirements, Gravity PDF will continue [supporting users on v5](../../v5/five-minute-install.md) with bug and security fixes until at least 27 April 2023.
 :::
 
 ## Installation

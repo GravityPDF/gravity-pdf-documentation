@@ -6,7 +6,7 @@ description: "We've attempted to make Gravity PDF as developer-friendly as possi
 
 ## Before You Begin 
 
-This section of the documentation is *primarily written for developers*. Assumed knowledge of WordPress basics, like [action and filter hooks](https://codex.wordpress.org/Plugin_API), with a solid PHP foundation and HTML / CSS is expected. If that doesn't sound like you, [reach out to our friendly team](https://gravitypdf.com/integration-services/) and we can discuss implimenting customisations for you.
+This section of the documentation is *primarily written for developers*. Assumed knowledge of WordPress basics, like [action and filter hooks](https://codex.wordpress.org/Plugin_API), with a solid PHP foundation and HTML / CSS is expected. If that doesn't sound like you, [reach out to our friendly team](https://gravitypdf.com/integration-services/) and we can discuss implementing customisations for you.
 
 ## Overview 
 
@@ -14,14 +14,14 @@ We've attempted to make Gravity PDF as developer-friendly as possible. That mean
 
 ## Custom Templates 
 
-![Sample of a custom PDF template](https://resources.gravitypdf.com/uploads/2015/10/getting-started-v5.png)
+![Screenshot of a custom PDF template](https://resources.gravitypdf.com/uploads/2022/07/pdf-template-sample-r3.png)
 
 The majority of our developer documentation will be targeted at creating custom PDF templates. You'll learn how to:
 
 -   Setup Gravity PDF so it utilises custom templates.
 -   The different techniques for displaying Gravity Forms data in the PDFs – using [Merge Tags](https://docs.gravityforms.com/category/user-guides/merge-tags-getting-started/) or a PHP array.
 -   How to [utilise a PDF configuration file](template-configuration-and-image.md) to create template-specific settings.
--   [Adding a PDF template image](template-configuration-and-image.md#image-preview) so users can see what the custom template looks like in the PDF Template Manager.
+-   [Adding a PDF template image](template-preview-image.md) so users can see what the custom template looks like in the PDF Template Manager.
 -   [How the PDF hierarchy works](template-hierarchy.md) so you can override core templates.
 
 [Find out more about creating your own custom PDF templates](first-custom-pdf.md).
