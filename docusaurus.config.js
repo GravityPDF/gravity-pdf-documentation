@@ -135,8 +135,8 @@ module.exports = {
     },
     latestVersion: 'v6',
 
-    googleAnalytics: {
-      trackingID: 'UA-58177521-3',
+    gtag: {
+      trackingID: 'G-WN1800Y2KF',
       anonymizeIP: true,
     },
 
