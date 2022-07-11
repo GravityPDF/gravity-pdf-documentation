@@ -135,11 +135,6 @@ module.exports = {
     },
     latestVersion: 'v6',
 
-    gtag: {
-      trackingID: 'G-WN1800Y2KF',
-      anonymizeIP: true,
-    },
-
     algolia: {
       appId: 'NKKEAC9I6I',
       apiKey: '0b9c90c6e089769be381f47196dbb313',
@@ -160,6 +155,10 @@ module.exports = {
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
+        },
+        gtag: {
+          trackingID: 'G-WN1800Y2KF',
+          anonymizeIP: true,
         },
 
       },

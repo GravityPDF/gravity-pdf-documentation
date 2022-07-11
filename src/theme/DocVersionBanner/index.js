@@ -7,7 +7,7 @@
 import React from 'react'
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext'
 import Link from '@docusaurus/Link'
-import { useActivePlugin, useLatestVersion, } from '@theme/hooks/useDocs'
+import { useActivePlugin, useLatestVersion, } from '@docusaurus/plugin-content-docs/client'
 import { getVersion } from '../GetVersion'
 
 const router_1 = require('@docusaurus/router')
@@ -89,7 +89,12 @@ export default function DocVersionBanner({className}) {
 
   return (
     <div>
+      <span className="badge badge--secondary margin-bottom--md">
+          Version: {currentVersion.substring(1)}
+      </span>
+
       <div
+        className="margin-bottom--md"
         // Developer provided the HTML, so assume it's safe.
         // eslint-disable-next-line react/no-danger
         dangerouslySetInnerHTML={{
@@ -101,10 +106,6 @@ export default function DocVersionBanner({className}) {
         &#x2139; {jumpToHtml}
       </div>
       }
-
-      <span className="badge badge--secondary">
-          Version: {currentVersion.substring(1)}
-        </span>
     </div>
   )
 }
