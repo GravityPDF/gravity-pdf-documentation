@@ -65,10 +65,10 @@ The invoice PDF configuration is split up into six sections:
 
 #### Invoice Number (2) 
 * By default, the invoice number uses the Gravity Forms entry ID. Be aware, this number is NOT sequential.
-* If you need a sequential invoice number, we recommend [the Gravity Perks Unique ID add-on](https://gravitywiz.com/documentation/gp-unique-id/?ref=78).
+* If you need a sequential invoice number, we recommend <a href="https://gravitywiz.com/documentation/gp-unique-id/?ref=78" rel="sponsored">the Gravity Perks Unique ID add-on</a>.
 
 #### Invoice Number Suffix (3) 
-* This is an optional field that is included after the [Invoice Number](#invoice-number) on the PDF.
+* This is an optional field that is included after the [Invoice Number](#invoice-number-2) on the PDF.
 
 #### Date Format (4) 
 * Select the date format that is shown on the invoice. The date shown on the PDF is taken from the entry submission date.
@@ -138,7 +138,7 @@ With that said, you can take advantage of [Gravity PDF's Conditional Logic](../u
 * Enter your company's tax number (if applicable). For example, VAT-registered companies have a Tax Identification number, which should be included.
 
 #### Tax Number Label (7) 
-* The label to be shown next to the [Tax Number](#tax-number). This won't be shown if the Tax Number is left blank.
+* The label to be shown next to the [Tax Number](#tax-number-6). This won't be shown if the Tax Number is left blank.
 
 ### Additional Details 
 
@@ -205,7 +205,7 @@ The Shipping Label is taken from the Gravity Forms Shipping Field.
 
 ## Recommended Font 
 
-*Roboto* is an open source sans-serif font (Apache License, Version 2.0) that is easy to read and works well with *Invoice Modern* at 10pt. Set the PDF font in the [Appearancesection](../users/setup-pdf.md#appearance-tab).
+*Roboto* is an open source sans-serif font (Apache License, Version 2.0) that is easy to read and works well with *Invoice Modern* at 10pt. Set the PDF font in the [Appearancesection](../users/setup-pdf.md#appearance-section).
 
 ## Viewing PDF 
 

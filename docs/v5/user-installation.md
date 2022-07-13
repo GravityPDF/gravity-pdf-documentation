@@ -6,10 +6,10 @@ description: "Gravity PDF can be run on most shared web hosting. The easiest way
 
 ## Plugin Requirements 
 
-Gravity PDF can be run on most shared web hosting providers and the easiest way to check if yours is compatible is to [install](#install) the plugin. Gravity PDF has multiple checks in place when activating and will let you know if there are any issues than need addressing.
+Gravity PDF can be run on most shared web hosting providers and the easiest way to check if yours is compatible is to [install](#installation) the plugin. Gravity PDF has multiple checks in place when activating and will let you know if there are any issues than need addressing.
 
 :::info
-While Gravity PDF is a free plugin, it requires Gravity Forms to run. You'll need to [purchase a Gravity Forms license](https://rocketgenius.pxf.io/c/1211356/445235/7938) before you can use Gravity PDF – any license type will work.
+While Gravity PDF is a free plugin, it requires Gravity Forms to run. You'll need to <a href="https://rocketgenius.pxf.io/c/1211356/445235/7938" rel="sponsored">purchase a Gravity Forms license</a> before you can use Gravity PDF – any license type will work.
 :::
 
 :::note
@@ -18,7 +18,7 @@ Gravity PDF is a third party extension for Gravity Forms, created by an independ
 
 **Software Requirements**
 
--   [Gravity Forms](https://rocketgenius.pxf.io/c/1211356/445235/7938) 2.3.1+. [Any license type will work](user-gravity-forms-compatibility.md#gravityforms-licenses).
+-   [Gravity Forms](https://rocketgenius.pxf.io/c/1211356/445235/7938) 2.3.1+. [Any license type will work](user-gravity-forms-compatibility.md#gravity-forms-licenses).
 -   WordPress 4.8+
 
 **Server Requirements**

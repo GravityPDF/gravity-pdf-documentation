@@ -9,7 +9,7 @@ description: ""
 You've purchased a [premium PDF template through our online store](https://gravitypdf.com/store/#templates). The next step is to install it on your website.
 
 :::info
-Before you begin, please ensure you have the [Gravity Forms](https://rocketgenius.pxf.io/c/1211356/445235/7938) and [Gravity PDF](../users/five-minute-install.md) plugins both active on your WordPress website. Done? Good! Now let's get you up and running with your new premium template.
+Before you begin, please ensure you have the <a href="https://rocketgenius.pxf.io/c/1211356/445235/7938" rel="sponsored">Gravity Forms</a> and [Gravity PDF](../users/five-minute-install.md) plugins both active on your WordPress website. Done? Good! Now let's get you up and running with your new premium template.
 :::
 
 Once you've completed your purchase you'll receive an email containing a link to your PDF template zip file – the email also contains your product key which will give you access to support: keep it safe! 

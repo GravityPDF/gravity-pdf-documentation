@@ -57,7 +57,7 @@ During the Gravity PDF v3 life cycle we experimented with a couple of different 
 
 Due to major architecture changes in v4, users who rely on these plugins will not be able to upgrade directly (or at all).
 
-If you are using the *Gravity Forms PDF Extended Shortcodes plugin* your migration path is to replace it with the excellent premium add-on, [GravityView](https://gravityview.co/?ref=186) – you'll need access to their [Advanced Filtering extension](https://gravityview.co/extensions/advanced-filter/?ref=186) to create a similar member's area. GravityView has all the features of the Shortcode plugin (and then some), all wrapped in a great easy-to-use UI. Right now Gravity PDF 4.0 has basic support for GravityView and we will be enhancing this in the future. 
+If you are using the *Gravity Forms PDF Extended Shortcodes plugin* your migration path is to replace it with the excellent premium add-on, <a href="https://gravityview.co/?ref=186" rel="sponsored">GravityView</a> – you'll need access to their <a href="https://gravityview.co/extensions/advanced-filter/?ref=186" rel="sponsored">Advanced Filtering extension</a> to create a similar member's area. GravityView has all the features of the Shortcode plugin (and then some), all wrapped in a great easy-to-use UI. Right now Gravity PDF 4.0 has basic support for GravityView and we will be enhancing this in the future. 
 
 If you are using the *Gravity Forms PDF Extended Multiple Reports* plugin unfortunately there is not a migration path for you yet. We'll be looking at creating a premium add-on with similar (but not the same) features in future. For the time being you'll need to continue using Gravity PDF v3.
 

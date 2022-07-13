@@ -4,14 +4,14 @@ sidebar_label: "Entry Block Perk"
 description: "The Entry Block Perk is the new kid on the block for displaying and editing Gravity Forms entries on the frontend of your website."
 ---
 
-[Gravity Wiz's Entry Block Perk](https://gravitywiz.com/documentation/gravity-forms-entry-blocks/?ref=78) uses the WordPress block editor to allow you to configure and display Gravity Forms entries on the frontend of your website. 
+<a href="https://gravitywiz.com/documentation/gravity-forms-entry-blocks/?ref=78" rel="sponsored">Gravity Wiz's Entry Block Perk</a> uses the WordPress block editor to allow you to configure and display Gravity Forms entries on the frontend of your website. 
 
 ## Add PDF Download Link
 
 You can include a PDF Download link in any of the Entry Block's variations using either [the [gravitypdf] shortcode](shortcodes-and-mergetags.md#building-the-shortcode), or the [PDF merge tag](shortcodes-and-mergetags.md#building-the-merge-tag) in combination with a _Button_ block.
 
 :::info
-If you are not [filtering entries by the current logged-in user](https://gravitywiz.com/documentation/gravity-forms-entry-blocks/?ref=78#who-can-view-entries), you should enable the signed URL feature. Signed URLs are supported for both [the [gravitypdf] shortcode](shortcodes-and-mergetags.md#signed-optional) and [PDF merge tags](shortcodes-and-mergetags.md#signed). Find out more [by reviewing the PDF Permissions section](#permissions).
+If you are not <a href="https://gravitywiz.com/documentation/gravity-forms-entry-blocks/?ref=78#who-can-view-entries" rel="sponsored">filtering entries by the current logged-in user</a>, you should enable the signed URL feature. Signed URLs are supported for both [the [gravitypdf] shortcode](shortcodes-and-mergetags.md#signed-optional) and [PDF merge tags](shortcodes-and-mergetags.md#signed). Find out more [by reviewing the PDF Permissions section](#permissions).
 :::
 
 ![The frontend Table variant showing a new custom column to download PDFs for the Gravity Wiz Entry Block perk](https://resources.gravitypdf.com/uploads/2022/05/gravity-wiz-entry-block-table-variant-front-end-2.png)
@@ -53,7 +53,7 @@ Add a _Button_ block and add the Gravity PDF merge tag for the button's link. Al
 
 ## Permissions
 
-Because of [Gravity PDF's security](pdf-security.md), default access to view or download PDFs is restricted to the entry owner, or users with a capability found in the [User Restriction setting](global-settings.md#user-restriction). Unless you [are creating a member's area so the current logged-in user can download their own PDFs](https://gravitywiz.com/documentation/gravity-forms-entry-blocks/?ref=78#permissions), or a simple CRUD system for site admins, you should enable the Signed PDF feature so the public can access the PDF documents. 
+Because of [Gravity PDF's security](pdf-security.md), default access to view or download PDFs is restricted to the entry owner, or users with a capability found in the [User Restriction setting](global-settings.md#user-restriction). Unless you <a href="https://gravitywiz.com/documentation/gravity-forms-entry-blocks/?ref=78#permissions" rel="sponsored">are creating a member's area so the current logged-in user can download their own PDFs</a>, or a simple CRUD system for site admins, you should enable the Signed PDF feature so the public can access the PDF documents. 
 
 If using the `[gravitypdf]` shortcode you should [include the `signed="1"` attribute](shortcodes-and-mergetags.md#signed-optional):
 

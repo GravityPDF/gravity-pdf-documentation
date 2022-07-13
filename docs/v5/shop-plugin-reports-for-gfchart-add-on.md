@@ -8,7 +8,7 @@ import ResponsiveEmbed from 'react-responsive-embed'
 
 ![Gravity PDF reports for GFChart Icon](https://resources.gravitypdf.com/uploads/2020/05/gravitypdf-reports-for-gfchart-cover-artwork-opt.png)
 
-*Reports for GFChart* is a premium plugin for Gravity PDF that creates beautiful PDF Reports [using the third-party plugin GFChart](https://gfchart.com/?ref=24). The extension includes 15 report designs for you to choose from and supports all core GFChart types, including Pie, Bar, Column (horizontal bar), Progress Bar, and Calculations. [You can purchase the *Reports for GFChart* plugin from our Extension Shop](https://gravitypdf.com/shop/reports-for-gfchart-add-on/). This guide will walk you through installing and configuring *Reports for GFChart* to its full potential.
+*Reports for GFChart* is a premium plugin for Gravity PDF that creates beautiful PDF Reports <a href="https://gfchart.com/?ref=24" rel="sponsored">using the third-party plugin GFChart</a>. The extension includes 15 report designs for you to choose from and supports all core GFChart types, including Pie, Bar, Column (horizontal bar), Progress Bar, and Calculations. [You can purchase the *Reports for GFChart* plugin from our Extension Shop](https://gravitypdf.com/shop/reports-for-gfchart-add-on/). This guide will walk you through installing and configuring *Reports for GFChart* to its full potential.
 
 ## Installation 
 
@@ -16,9 +16,9 @@ import ResponsiveEmbed from 'react-responsive-embed'
 
 ## Prerequisites 
 
-Along with having [Gravity Forms](https://rocketgenius.pxf.io/c/1211356/445235/7938) and [Gravity PDF](user-installation.md) installed on your website, **to use Reports for GFChart [you need a GFChart ALL license](https://gfchart.com/pricing/?ref=24)**, and have the following plugins installed:
+Along with having <a href="https://rocketgenius.pxf.io/c/1211356/445235/7938" rel="sponsored">Gravity Forms</a> and [Gravity PDF](user-installation.md) installed on your website, **to use Reports for GFChart <a href="https://gfchart.com/pricing/?ref=24" rel="sponsored">you need a GFChart ALL license</a>**, and have the following plugins installed:
 
-1. [GFChart v1.17+](https://gfchart.com/?ref=24) with active license key
+1. <a href="https://gfchart.com/pricing/?ref=24" rel="sponsored">GFChart v1.17+</a> with active license key
 1. GFChart Image Charts v1.0.0-beta1+
 
 :::tip
@@ -31,12 +31,12 @@ To add additional features to GFChart that enhances *Gravity PDF Reports for GFC
 1. GFChart Survey Customiser (control chart segment colours and order)
 
 :::info
-GFChart Image Charts does not currently support the Charting vs Time extension. If this is a feature you're interested in, [contact GFChart and let them know](https://gfchart.com/support/?ref=24).
+GFChart Image Charts does not currently support the Charting vs Time extension. If this is a feature you're interested in, <a href="https://gfchart.com/support/?ref=24" rel="sponsored">contact GFChart and let them know</a>.
 :::
 
 ## Setup GFChart 
 
-We've put together a quick-start guide to get you up and running fast with GFChart. For an in-depth guide, you should [review the GFChart documentation in full](https://gfchart.com/documentation/?ref=24).
+We've put together a quick-start guide to get you up and running fast with GFChart. For an in-depth guide, you should <a href="https://gfchart.com/documentation/?ref=24" rel="sponsored">review the GFChart documentation in full</a>.
 
 <ResponsiveEmbed src="https://www.youtube.com/embed/8PYT5GwWuCk" />
 
@@ -90,7 +90,7 @@ The reports share a set of common *Template* settings which makes it easy to swa
 
 #### 2. Introduction 
 * Control what content gets displayed before your charts. Merge tags are supported.
-* GFChart has a [Calculation](https://gfchart.com/documentation/?ref=24#calculations) and [Progress Bar](https://gfchart.com/documentation/?ref=24#progress-bars) type, which may not be suitable for the standard chart display. For more control, include the associated shortcode in this setting.
+* GFChart has a <a href="https://gfchart.com/documentation/?ref=24#calculations" rel="sponsored">Calculation</a> and <a href="https://gfchart.com/documentation/?ref=24#progress-bars" rel="sponsored">Progress Bar</a> type, which may not be suitable for the standard chart display. For more control, include the associated shortcode in this setting.
 * Leave the field blank to disable.
 
 #### 3. Chart 1/2/3/4 
@@ -102,7 +102,7 @@ The reports share a set of common *Template* settings which makes it easy to swa
 
 #### 4. Additional Info 
 * Control what content gets displayed after your charts. Merge tags are supported.
-* GFChart has a [Calculation](https://gfchart.com/documentation/?ref=24#calculations) and [Progress Bar](https://gfchart.com/documentation/?ref=24#progress-bars) type which may not be suitable for the standard chart display. For more control, include the associated shortcode in this setting.
+* GFChart has a <a href="https://gfchart.com/documentation/?ref=24#calculations" rel="sponsored">Calculation</a> and <a href="https://gfchart.com/documentation/?ref=24#progress-bars" rel="sponsored">Progress Bar</a> type which may not be suitable for the standard chart display. For more control, include the associated shortcode in this setting.
 * Leave the field blank to disable.
 
 #### 5. Header 
@@ -362,7 +362,7 @@ The standard version of Yuna has no additional Template settings.
 
 ## Scheduling Reports 
 
-The ability to get a report emailed to you on a regular schedule is an important feature. GFChart supports this workflow through the use of [relative date filtering in their charts](https://gfchart.com/documentation/?ref=24#relative-date-filtering) and [their new Scheduled Notification add-on](https://gfchart.com/documentation/?ref=24#scheduled-notifications). At the time of writing the Scheduled Notification, plugin has very limited schedule controls. For users after robust notification scheduling, [Gravity Flow](https://gravityflow.io/?ref=12) (any license type) or the [Delayed Email Notifications plugin](https://ristrettoapps.com/downloads/gravity-forms-delayed-notifications/) (Doppio or Supremo license) are good alternatives.
+The ability to get a report emailed to you on a regular schedule is an important feature. GFChart supports this workflow through the use of <a href="https://gfchart.com/documentation/?ref=24#relative-date-filtering" rel="sponsored">relative date filtering in their charts</a> and <a href="https://gfchart.com/documentation/?ref=24#scheduled-notifications" rel="sponsored">their new Scheduled Notification add-on</a>. At the time of writing the Scheduled Notification, plugin has very limited schedule controls. For users after robust notification scheduling, <a href="https://gravityflow.io/?ref=12" rel="sponsored">Gravity Flow</a> (any license type) or the [Delayed Email Notifications plugin](https://ristrettoapps.com/downloads/gravity-forms-delayed-notifications/) (Doppio or Supremo license) are good alternatives.
 
 ### Scheduling Prerequisite 
 
@@ -375,7 +375,7 @@ The ability to get a report emailed to you on a regular schedule is an important
 
 1. [Create the PDF Report(s)](#setup-pdf-reports) that you want sent out and make sure you configure the PDF to [attach to the Notification(s)](user-setup-pdf.md#notifications) you setup in the previous step.
 
-1. Update the GFChart graphs and/or calculations to be displayed in the report [with a relative date range](https://gfchart.com/documentation/?ref=24#relative-date-filtering). The common setup is to configure a relative date range with the same value as the notification schedule. For example, if you want the report to go out at the beginning of every month with last month's data, you'd set the GFChart's Date Range "Start" date to "first day of last month" and leave the "End" date blank. If the report was going out weekly on a Monday morning with last week's data, use "Monday last week" in GFChart's "Start" date. Or if the report is sent out at the beginning of the day, you could use "yesterday" or "-1 day".
+1. Update the GFChart graphs and/or calculations to be displayed in the report <a href="https://gfchart.com/documentation/?ref=24#relative-date-filtering" rel="sponsored">with a relative date range</a>. The common setup is to configure a relative date range with the same value as the notification schedule. For example, if you want the report to go out at the beginning of every month with last month's data, you'd set the GFChart's Date Range "Start" date to "first day of last month" and leave the "End" date blank. If the report was going out weekly on a Monday morning with last week's data, use "Monday last week" in GFChart's "Start" date. Or if the report is sent out at the beginning of the day, you could use "yesterday" or "-1 day".
 ![Relative date formatting](https://resources.gravitypdf.com/uploads/2020/06/relative-date-format.png)
 
 1. Once you've gone this far, it's best to test that the PDF Report(s) are generating correctly and being attached to the Notification(s). Go submit a test entry to the form and then verify the email is received with the PDF Report attached. If you can correctly [view the PDF Report from the Entry List page](user-viewing-pdfs.md) but are having email delivery issues, [read and implement our Email Notification Best Practice guide](user-email-notifications.md) before proceeding with the scheduling setup.
@@ -414,7 +414,7 @@ GFChart's scheduled event uses the Notification ID as a unique identifier. You c
 
 ### Gravity Flow's Delayed Notifications 
 
-[Gravity Flow is a tool used to automate business processes](https://gravityflow.io/?ref=12), and one of its features include the ability to [schedule Steps at defined intervals](https://docs.gravityflow.io/article/67-scheduling-a-step). You can use this scheduling functionality with their Notification workflow step to send out your Gravity Forms Notification(s) at specific intervals.
+<a href="https://gravityflow.io/?ref=12" rel="sponsored">Gravity Flow is a tool used to automate business processes</a>, and one of its features include the ability to [schedule Steps at defined intervals](https://docs.gravityflow.io/article/67-scheduling-a-step). You can use this scheduling functionality with their Notification workflow step to send out your Gravity Forms Notification(s) at specific intervals.
 
 Before you start the Workflow setup, [have a ready of the Gravity Flow Introduction guide](https://docs.gravityflow.io/article/50-an-introduction-to-the-features), so you've the foundational knowledge you need. To set this up correctly, we'll create two Notification steps on the form. The first will include the Schedule delay and then send the Notification, while the second is used to create a loop so the workflow never ends and the schedule repeats indefinitely.
 
@@ -481,7 +481,7 @@ If everything has been setup correctly, after submitting the entry to your repor
 
 ### How are the GFCharts generated in the reports?
 
-The aggregate form data for the GFChart, as well as the chart settings, are sent securely over HTTPS to a GFChart server for processing, and an image is returned. Whether the aggregate data is [considered, annonymised](https://gdpr-info.eu/recitals/no-26/) will depend on what field(s) and chart settings are configured. The rule of thumb is: if you cannot link the standalone GFChart image to an identifiable natural person then that data is considered annonymised, and the GDPR does not apply to the aggregate data sent to the GFChart server. If you're interested in GFChart's privacy policy, [reach out to their support team with your questions](https://gfchart.com/support/?ref=24). 
+The aggregate form data for the GFChart, as well as the chart settings, are sent securely over HTTPS to a GFChart server for processing, and an image is returned. Whether the aggregate data is <a href="https://gdpr-info.eu/recitals/no-26/) will depend on what field(s) and chart settings are configured. The rule of thumb is: if you cannot link the standalone GFChart image to an identifiable natural person then that data is considered annonymised, and the GDPR does not apply to the aggregate data sent to the GFChart server. If you're interested in GFChart's privacy policy, [reach out to their support team with your questions](https://gfchart.com/support/?ref=24" rel="sponsored">considered, annonymised</a>. 
 
 Once the GFChart image is returned, the PDF generation is completed like normal using Gravity PDF. [Refer to our GDPR for Gravity PDF guide for more information](gdpr-and-gravity-pdf.md).
 

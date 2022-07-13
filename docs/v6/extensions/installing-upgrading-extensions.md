@@ -7,7 +7,7 @@ description: "After purchasing, you'll receive an email containing a link to you
 You've purchased a [premium extension/plugin through the online store](https://gravitypdf.com/store/#extensions). The next step is to install it on your website.
 
 :::info 
-Before you begin, please ensure you have the [Gravity Forms](https://rocketgenius.pxf.io/c/1211356/445235/7938) and [Gravity PDF](../users/five-minute-install.md) plugins both active on your WordPress website. Done? Good! Now let's get you up and running with your new premium plugin.
+Before you begin, please ensure you have the <a href="https://rocketgenius.pxf.io/c/1211356/445235/7938" rel="sponsored">Gravity Forms</a> and [Gravity PDF](../users/five-minute-install.md) plugins both active on your WordPress website. Done? Good! Now let's get you up and running with your new premium plugin.
 :::
 
 Once you've completed your purchase you'll receive an email containing a link to your plugin zip file – the email also contains your product key which will give you access to support and one-click updates: keep it safe!

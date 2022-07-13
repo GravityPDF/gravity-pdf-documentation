@@ -7,8 +7,10 @@
 import React from 'react'
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext'
 import Link from '@docusaurus/Link'
+import Head from '@docusaurus/Head'
 import { useActivePlugin, useLatestVersion, } from '@docusaurus/plugin-content-docs/client'
 import { getVersion } from '../GetVersion'
+import { useBaseUrlUtils } from '@docusaurus/core/lib/client/exports/useBaseUrl'
 
 const router_1 = require('@docusaurus/router')
 
@@ -79,9 +81,12 @@ export default function DocVersionBanner({className}) {
   }
 
   // display notice, link to latest documentation, and badge all together
+  const { withBaseUrl } = useBaseUrlUtils();
+
   let jumpToHtml = ''
+  let newPathname = ''
   if (currentVersion[1] < latestVersion[1]) {
-    const newPathname = doesHaveMatchingLatestDocs(version, latestVersion, basename(pathname))
+    newPathname = doesHaveMatchingLatestDocs(version, latestVersion, basename(pathname))
     if (newPathname !== false) {
       jumpToHtml = <Link to={newPathname}>Go to the current documentation</Link>
     }
@@ -105,6 +110,12 @@ export default function DocVersionBanner({className}) {
       <div className="alert alert--info margin-bottom--md" role="alert">
         &#x2139; {jumpToHtml}
       </div>
+      }
+
+      {jumpToHtml &&
+        <Head>
+          <link rel="canonical" href={withBaseUrl(newPathname, {absolute:true})} />
+        </Head>
       }
     </div>
   )

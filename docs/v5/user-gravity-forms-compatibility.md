@@ -14,13 +14,13 @@ Here are some important details about Gravity Forms/Gravity PDF's compatibility 
 
 ## About Gravity Forms
 
-[Gravity Forms](https://rocketgenius.pxf.io/c/1211356/445235/7938) is a premium WordPress extension that allows you to create advanced forms using an easy-to-use drag and drop editor. You can build and publish complex forms with minimal effort and create automated email notifications. There are also over 30 add-ons that can be used to enhance its features.
+<a href="https://rocketgenius.pxf.io/c/1211356/445235/7938" rel="sponsored">Gravity Forms</a> is a premium WordPress extension that allows you to create advanced forms using an easy-to-use drag and drop editor. You can build and publish complex forms with minimal effort and create automated email notifications. There are also over 30 add-ons that can be used to enhance its features.
 
 While you do have to pay for the software, it's one of those must-have plugins that will revolutionise how you collect and process data online.
 
 ## Gravity Forms Licenses
 
-When purchasing [Gravity Forms](https://rocketgenius.pxf.io/c/1211356/445235/7938) you have a choice of three different licenses which include:
+When purchasing <a href="https://rocketgenius.pxf.io/c/1211356/445235/7938" rel="sponsored">Gravity Forms</a> you have a choice of three different licenses which include:
 
 1. _Basic_ – a single-site license with Basic add-ons
 1. _Pro_ – three-site license with Pro add-ons included
@@ -32,7 +32,7 @@ A license is valid for one calendar year from the purchase date and gives you ac
 
 ### How Does This Affect Gravity PDF?
 
-As long as the [minimum requirements are met](user-installation.md#requirements), Gravity PDF works with any Gravity Forms license type. Pick the one that best suits your business requirements. You can easily upgrade licenses at a later date if you decide you need access to certain add-ons.
+As long as the [minimum requirements are met](user-installation.md#plugin-requirements), Gravity PDF works with any Gravity Forms license type. Pick the one that best suits your business requirements. You can easily upgrade licenses at a later date if you decide you need access to certain add-ons.
 
 ## Gravity PDF Add-Ons Compatibility
 

@@ -6,7 +6,7 @@ description: ""
 
 ![Gravity Flow Workflow Setup](https://resources.gravitypdf.com/uploads/2016/06/approval-step.png)
 
-The [third party Gravity Flow plugin](https://gravityflow.io/?ref=12) is a powerful workflow management system which includes basic Gravity PDF integration for its Approval, User Input and Notification workflow steps. For full details on setting up Workflows in Gravity Flow [please refer to their documentation](http://docs.gravityflow.io/).
+The <a href="https://gravityflow.io/?ref=12" rel="sponsored">third party Gravity Flow plugin</a> is a powerful workflow management system which includes basic Gravity PDF integration for its Approval, User Input and Notification workflow steps. For full details on setting up Workflows in Gravity Flow [please refer to their documentation](http://docs.gravityflow.io/).
 
 ### Approval Workflow
 
