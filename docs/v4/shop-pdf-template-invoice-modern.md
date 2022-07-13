@@ -66,7 +66,7 @@ Invoice Number Prefix (1)
 
 Invoice Number (2) 
 :    By default the invoice number uses the Gravity Forms entry ID. Be aware, this number is NOT sequential. 
-:    If you need a sequential invoice number we recommend [the Gravity Perks Unique ID add-on](https://gravitywiz.com/documentation/gp-unique-id/?ref=78).
+:    If you need a sequential invoice number we recommend <a href="https://gravitywiz.com/documentation/gp-unique-id/?ref=78" rel="sponsored">the Gravity Perks Unique ID add-on</a>.
 
 Invoice Number Suffix (3) 
 :    This is an optional field that is included after the [Invoice Number](#invoice-number) on the PDF.

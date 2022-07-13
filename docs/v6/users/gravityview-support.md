@@ -6,7 +6,7 @@ description: "GravityView is the best way to display Gravity Forms entries on yo
 
 import ResponsiveEmbed from 'react-responsive-embed'
 
-[The GravityView plugin](https://gravityview.co/?ref=186) is the best way to display Gravity Forms entries publicly on your website. Basic GravityView support is built right into Gravity PDF.
+<a href="https://gravityview.co/?ref=186" rel="sponsored">The GravityView plugin</a> is the best way to display Gravity Forms entries publicly on your website. Basic GravityView support is built right into Gravity PDF.
 
 ## Add PDF Download Link to View 
 
@@ -24,7 +24,7 @@ _The PDF Download links added to a GravityView table_
 
 Because of [Gravity PDF's security](pdf-security.md), by default access to the PDFs is restricted to the entry owner or users with a capability found in the [User Restriction setting](global-settings.md#user-restriction). That means that you'd need to:
 
-1.  Using [GravityView's Advanced Filter extension](https://gravityview.co/extensions/advanced-filter/?ref=186) to [show the entries from the current logged in user](https://docs.gravityview.co/article/203-how-to-show-only-results-submitted-by-the-current-user).
+1.  Using <a href="https://gravityview.co/extensions/advanced-filter/?ref=186" rel="sponsored">GravityView's Advanced Filter extension</a> to [show the entries from the current logged in user](https://docs.gravityview.co/article/203-how-to-show-only-results-submitted-by-the-current-user).
 
 2.  Using a Membership plugin that allows you to show/hide content based on user roles ([Paid Memberships Pro](https://wordpress.org/plugins/paid-memberships-pro/) comes to mind). You can display the GravityView to a user with a Role that includes one of the capabilities found in Gravity PDF's [User Restriction setting](global-settings.md#user-restriction) – by default, this is only the Administrator role. Not sure what Roles and Capabilities are? [Here's a great article from WPShout discussing the finer points](https://wpshout.com/working-with-wordpress-user-roles-and-capabilities/).
 

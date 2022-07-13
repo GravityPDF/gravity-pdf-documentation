@@ -560,7 +560,7 @@ if ( isset( $form_data['field']['27_path'][0] ) && is_file( $form_data['field'][
 
 #### Nested Forms 
 
-You'll need [the Gravity Perk Nested Forms add-on](https://gravitywiz.com/documentation/gravity-forms-nested-forms/?ref=78) to use this field type.
+You'll need <a href="https://gravitywiz.com/documentation/gravity-forms-nested-forms/?ref=78" rel="sponsored">the Gravity Perk Nested Forms add-on</a> to use this field type.
 
 ```
 /* 

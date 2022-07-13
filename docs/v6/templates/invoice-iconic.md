@@ -22,11 +22,11 @@ All PDF templates have common settings that can be configured, such as font, sec
 
 The invoice PDF configuration is split up into six sections:
 
--   [Company Info](#company-info)
--   [Invoice Settings](#invoice-information)
+-   [Company Info](#company-information)
+-   [Invoice Settings](#invoice-settings)
 -   [Buyer Info](#buyer-information)
 -   [Tax Settings](#tax-settings)
--   [Extras](#additional-details)
+-   [Extras](#extras)
 -   [Labels](#labels)
 
 ### Company Information 
@@ -67,7 +67,7 @@ The invoice PDF configuration is split up into six sections:
 
 #### Invoice Number (2) 
 * By default, the invoice number uses the Gravity Forms entry ID. Be aware, this number is NOT sequential.
-* If you need a sequential invoice number, we recommend [the Gravity Perks Unique ID add-on](https://gravitywiz.com/documentation/gp-unique-id/?ref=78).
+* If you need a sequential invoice number, we recommend <a href="https://gravitywiz.com/documentation/gp-unique-id/?ref=78" rel="sponsored">the Gravity Perks Unique ID add-on</a>.
 
 #### Invoice Number Suffix (3) 
 * This is an optional field that is included after the [Invoice Number](#invoice-number-2) on the PDF.
@@ -210,7 +210,7 @@ The Shipping Label is taken from the Gravity Forms Shipping Field.
 
 ## Recommended Font 
 
-*Invoice Iconic* comes bundled with Roboto Condensed which is an open source licensed font (Apache License, Version 2). Roboto Condensed is a geometric typeface with condensed lettering. For the best results, we recommend using Roboto Condensed at 10pt. Set the PDF font in the [Appearance section](../users/setup-pdf.md#appearance-tab).
+*Invoice Iconic* comes bundled with Roboto Condensed which is an open source licensed font (Apache License, Version 2). Roboto Condensed is a geometric typeface with condensed lettering. For the best results, we recommend using Roboto Condensed at 10pt. Set the PDF font in the [Appearance section](../users/setup-pdf.md#appearance-section).
 
 ## Viewing PDF 
 

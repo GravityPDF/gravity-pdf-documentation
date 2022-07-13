@@ -4,7 +4,7 @@ sidebar_label: "Display Nested Forms Table"
 description: ""
 ---
 
-You can output the [Gravity Wiz Nested Forms](https://gravitywiz.com/documentation/gravity-forms-nested-forms/?ref=78) field in Core and Universal PDF templates as a table using the following snippet:
+You can output the <a href="https://gravitywiz.com/documentation/gravity-forms-nested-forms/?ref=78" rel="sponsored">Gravity Wiz Nested Forms</a> field in Core and Universal PDF templates as a table using the following snippet:
 
 ```
 add_action( 'after_setup_theme', function() {

@@ -16,7 +16,7 @@ If you aren't ready to upgrade and your server meets the minimum requirements ne
 
 ### Gravity Forms is required
 
-Gravity PDF is an add-on for the form builder plugin Gravity Forms, and cannot be used on your WordPress website without it. You will need to install and activate Gravity Forms before you can begin using Gravity PDF. Don't have a Gravity Forms license? [Go purchase one now](https://rocketgenius.pxf.io/c/1211356/445235/7938).
+Gravity PDF is an add-on for the form builder plugin Gravity Forms, and cannot be used on your WordPress website without it. You will need to install and activate Gravity Forms before you can begin using Gravity PDF. Don't have a Gravity Forms license? <a href="https://rocketgenius.pxf.io/c/1211356/445235/7938" rel="sponsored">Go purchase one now</a>.
 
 ### Gravity Forms version X is required 
 

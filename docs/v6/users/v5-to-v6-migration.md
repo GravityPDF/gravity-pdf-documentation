@@ -113,7 +113,7 @@ Once you've downloaded the latest template zip file [install it via the PDF Temp
 
 ### Nested Forms Column Support
 
-When using [Gravity Perks Nested Forms add-on](https://gravitywiz.com/documentation/gravity-forms-nested-forms/?ref=78) with Gravity PDF, the generated PDF documents now supports Drag and Drop columns when displaying those Nested Forms in Core/Universal templates. 
+When using <a href="https://gravitywiz.com/documentation/gravity-forms-nested-forms/?ref=78" rel="sponsored">Gravity Perks Nested Forms add-on</a> with Gravity PDF, the generated PDF documents now supports Drag and Drop columns when displaying those Nested Forms in Core/Universal templates. 
 
 ### Font Manager
 

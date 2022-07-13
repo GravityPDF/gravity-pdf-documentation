@@ -8,7 +8,7 @@ description: ""
 
 You've purchased a [premium PDF template through our online store](https://gravitypdf.com/template-shop/). The next step is to install it on your website. 
 
-> Before you begin please ensure you have the [Gravity Forms](https://goo.gl/lsBOef) and [Gravity PDF](five-minute-install.md) plugins both active on your WordPress website. Done? Good! Now let's get you up and running with your new premium template. 
+> Before you begin please ensure you have the <a href="https://rocketgenius.pxf.io/c/1211356/445235/7938" rel="sponsored">Gravity Forms</a> and [Gravity PDF](five-minute-install.md) plugins both active on your WordPress website. Done? Good! Now let's get you up and running with your new premium template. 
 
 Once you've completed your purchase you'll receive an email containing a link to your PDF template zip file – the email also contains your product key which will give you access to support: keep it safe! Your template can easily be installed [through the PDF Template Manager](user-pdf-template-manager.md) which is accessed two ways: through the [PDF global settings](user-global-settings.md#default-template); or when you [configure a new PDF on your form](user-setup-pdf.md#template). We're going to walk you through the later option as it's quicker.
 

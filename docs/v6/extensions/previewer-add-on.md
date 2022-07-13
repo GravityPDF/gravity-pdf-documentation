@@ -165,7 +165,7 @@ If the _WordPress Site Language_ setting (found on the Settings -> General admin
 
 ## Gravity Flow
 
-The *Previewer* is fully-functional [with the Gravity Flow User Input step](https://gravityflow.io/?ref=12), including when using conditional logic on the Previewer or manually selecting which fields to display. 
+The *Previewer* is fully-functional <a href="https://gravityflow.io/?ref=12" rel="sponsored">with the Gravity Flow User Input step</a>, including when using conditional logic on the Previewer or manually selecting which fields to display. 
 
 **It's not currently possible to display the _PDF Preview_ field during the Approval Step.**
 

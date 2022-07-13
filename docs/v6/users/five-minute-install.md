@@ -8,7 +8,7 @@ import ResponsiveEmbed from 'react-responsive-embed'
 
 ![Gravity PDF 6.x PDF Creation](https://resources.gravitypdf.com/uploads/2022/05/v6.3-Create-PDF.png)
 
-[Gravity PDF](https://gravitypdf.com) is a **free WordPress plugin** built for the popular premium form builder software, [Gravity Forms](https://rocketgenius.pxf.io/c/1211356/445235/7938). Gravity PDF allows you to generate PDF documents that contain user-data captured with Gravity Forms. 
+[Gravity PDF](https://gravitypdf.com) is a **free WordPress plugin** built for the popular premium form builder software, <a href="https://rocketgenius.pxf.io/c/1211356/445235/7938" rel="sponsored">Gravity Forms</a>. Gravity PDF allows you to generate PDF documents that contain user-data captured with Gravity Forms. 
 
 The look and feel of the PDF is controlled through templates. The software comes with **four free template designs**, but you can also [purchase additional templates from the template shop](https://gravitypdf.com/store/#templates), [build your own using HTML and CSS](../developers/start-customising.md) or have our team [custom-build one for you](https://gravitypdf.com/bespoke/) – our team can even auto-populate existing PDF documents like government forms (not available in our free edition). 
 

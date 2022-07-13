@@ -25,7 +25,7 @@ The invoice PDF configuration is split up into six sections:
 -   [Invoice Settings](#invoice-settings)
 -   [Buyer Info](#buyer-information)
 -   [Tax Settings](#tax-settings)
--   [Extras](#additional-settings)
+-   [Extras](#extras)
 -   [Labels](#labels)
 
 ### Company Information 
@@ -66,7 +66,7 @@ The invoice PDF configuration is split up into six sections:
 
 #### Invoice Number (2) 
 * By default, the invoice number uses the Gravity Forms entry ID. Be aware, this number is NOT sequential.
-* If you need a sequential invoice number, we recommend [the Gravity Perks Unique ID add-on](https://gravitywiz.com/documentation/gp-unique-id/?ref=78).
+* If you need a sequential invoice number, we recommend <a href="https://gravitywiz.com/documentation/gp-unique-id/?ref=78" rel="sponsored">the Gravity Perks Unique ID add-on</a>.
 
 #### Invoice Number Suffix (3) 
 * This is an optional field that is included after the [Invoice Number](#invoice-number-2) on the PDF.
@@ -136,7 +136,7 @@ With that said, you can take advantage of [Gravity PDF's Conditional Logic](../u
 * Enter your company's tax number (if applicable). For example, VAT-registered companies have a Tax Identification number, which should be included.
 
 #### Tax Number Label (6) 
-* The label to be shown next to the [Tax Number](#tax-number). This won't be shown if the Tax Number is left blank.
+* The label to be shown next to the [Tax Number](#tax-number-5). This won't be shown if the Tax Number is left blank.
 
 ### Extras 
 
@@ -146,7 +146,7 @@ With that said, you can take advantage of [Gravity PDF's Conditional Logic](../u
 * Optionally include a text watermark diagonally across the PDF.
 
 #### Primary Colour (2) 
-* The background colour used for the [#title-label](invoice title), [#product-desc-label](product table description) and [#overall-total-label](overall total).
+* The background colour used for the [invoice title](#title-1), [product table description](#product-table-description-9) and [overall total](#overall-total-13).
 
 #### Secondary Colour (3) 
 * The background colour used for the header and product table headings.
@@ -209,7 +209,7 @@ The Shipping Label is taken from the Gravity Forms Shipping Field.
 
 ## Recommended Font 
 
-*Quicksand* is an open source sans-serif font (SIL v1.1, Open Font License) that has rounded terminals and works well with *Invoice Aurora* at 12pt. Set the PDF font in the [Appearancesection](../users/setup-pdf.md#appearance-tab).
+*Quicksand* is an open source sans-serif font (SIL v1.1, Open Font License) that has rounded terminals and works well with *Invoice Aurora* at 12pt. Set the PDF font in the [Appearance section](../users/setup-pdf.md#appearance-section).
 
 ## Viewing PDF 
 

@@ -6,13 +6,13 @@ description: "Gravity PDF can be run on most shared web hosting. The easiest way
 
 ### Plugin Requirements 
 
-Gravity PDF can be run on most shared web hosting, however there are some restrictions in place to prevent problems. The easiest way to check if your web server meets the criteria is to [install](#install) the plugin. The software has multiple checks in place when activating and will let you know if there are any issues than need addressing. 
+Gravity PDF can be run on most shared web hosting, however there are some restrictions in place to prevent problems. The easiest way to check if your web server meets the criteria is to [install](#installation) the plugin. The software has multiple checks in place when activating and will let you know if there are any issues than need addressing. 
 
-> Gravity PDF is a **third party extension**[^1] for Gravity Forms. The software cannot function without it. You'll need to [purchase a license](https://rocketgenius.pxf.io/c/1211356/445235/7938) for Gravity Forms before you can use Gravity PDF - any license type will work. [See more details about Gravity PDF's compatibility with Gravity Forms](user-gravity-forms-compatibility.md).
+> Gravity PDF is a **third party extension**[^1] for Gravity Forms. The software cannot function without it. You'll need to <a href="https://rocketgenius.pxf.io/c/1211356/445235/7938" rel="sponsored">purchase a license</a> for Gravity Forms before you can use Gravity PDF - any license type will work. [See more details about Gravity PDF's compatibility with Gravity Forms](user-gravity-forms-compatibility.md).
 
 **Software Requirements**
 
-* [Gravity Forms](https://rocketgenius.pxf.io/c/1211356/445235/7938) 1.9+. [Any license type will work](user-gravity-forms-compatibility.md#gravityforms-licenses).
+* <a href="https://rocketgenius.pxf.io/c/1211356/445235/7938" rel="sponsored">Gravity Forms</a> 1.9+. [Any license type will work](user-gravity-forms-compatibility.md#gravity-forms-licenses).
 * WordPress 4.4+
 
 **Server Requirements**
@@ -29,9 +29,9 @@ There are multiple ways to install Gravity PDF but the simplest option is to do 
 
 **Jump to section**
 
-1. [Automatic Installation](#automatic) (recommended)
-1. [Manual Installation](#manual)
-1. [FTP Installation](#ftp)
+1. [Automatic Installation](#automatic-installation) (recommended)
+1. [Manual Installation](#manual-installation)
+1. [FTP Installation](#ftp-installation)
 
 ---
 

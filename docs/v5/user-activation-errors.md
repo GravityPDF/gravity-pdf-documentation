@@ -14,7 +14,7 @@ This error means your WordPress software doesn't meet the minimum software requi
 
 ### Gravity Forms Version 2.x is required 
 
-This error means you either haven't installed Gravity Forms or your version of Gravity Forms doesn't meet the minimum software requirements – currently, Gravity Forms 2.3.1 and above are supported. If you haven't installed Gravity Forms, [go get yourself a license](https://rocketgenius.pxf.io/c/1211356/445235/7938), download and then install the plugin. Otherwise, use Gravity Forms' automatic updater to get the latest version. Navigate to `Forms -> Updates` in your admin area to update Gravity Forms. **One-click updates require an activate Gravity Forms license key**.
+This error means you either haven't installed Gravity Forms or your version of Gravity Forms doesn't meet the minimum software requirements – currently, Gravity Forms 2.3.1 and above are supported. If you haven't installed Gravity Forms, <a href="https://rocketgenius.pxf.io/c/1211356/445235/7938" rel="sponsored">go get yourself a license</a>, download and then install the plugin. Otherwise, use Gravity Forms' automatic updater to get the latest version. Navigate to `Forms -> Updates` in your admin area to update Gravity Forms. **One-click updates require an active Gravity Forms license key**.
 
 ### You are running an outdated version of PHP 
 

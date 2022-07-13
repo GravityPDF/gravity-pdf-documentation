@@ -6,7 +6,7 @@ description: "Gravity Flow is a powerful tool that makes building workflows and 
 
 ![Gravity Flow Workflow Setup](https://resources.gravitypdf.com/uploads/2021/04/v6-GravityFlow-Approval-Step-Screenshot.png) 
 
-[The Gravity Flow plugin](https://gravityflow.io/?ref=12) is a powerful workflow management system which includes basic Gravity PDF integration for its Approval, User Input and Notification workflow steps. For full details on setting up Workflows in Gravity Flow [please refer to their documentation](http://docs.gravityflow.io/).
+<a href="https://gravityflow.io/?ref=12" rel="sponsored">The Gravity Flow plugin</a> is a powerful workflow management system which includes basic Gravity PDF integration for its Approval, User Input and Notification workflow steps. For full details on setting up Workflows in Gravity Flow [please refer to their documentation](http://docs.gravityflow.io/).
 
 ## Approval Workflow
 
