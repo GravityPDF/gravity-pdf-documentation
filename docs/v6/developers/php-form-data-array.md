@@ -11,6 +11,7 @@ description: "Take full control over your custom PDF templates for Gravity PDF b
 ## Template Tutorial – Part 3 
 
 ![An example of the Hello World Gravity PDF PHP template](https://resources.gravitypdf.com/uploads/2022/07/pdf-template-sample-r3.png)
+
 First, we're going to convert the template we did in the [Part 2 exercise](mergetags-and-conditional-shortcodes.md#template-tutorial) from merge tags/conditional shortcodes to PHP. Then we'll look at the two post-processing use-cases we discussed in the introduction. Finally, we'll take a closer look at the `$form_data` array.
 
 ### Convert Merge tags to PHP 
@@ -25,7 +26,7 @@ Our [*Hello World* template](https://gist.github.com/jakejackson1/6c0a5268fa23ba
 The `$form_data` array is grouped into a number of different sub-arrays, but the most common is `$form_data['field']`. As the name suggests, it contains the field data for *most* Gravity Forms field – add-ons that add new fields may be stored in a separate sub-array.
 :::
 
-To keep your code cleaner you could set these values as variables earlier in the template and output the variable names in the template instead:
+To keep your code cleaner, you could set these values as variables earlier in the template and output the variable names in the template instead:
 
 ```
 <?php 
