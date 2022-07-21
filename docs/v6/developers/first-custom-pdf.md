@@ -15,7 +15,7 @@ Before we jump right into the code, we're going to discuss the architecture Grav
 When Gravity PDF is installed, it automatically creates a folder called `PDF_EXTENDED_TEMPLATES` in your WordPress upload directory. This folder is used to store temporary files, fonts and custom PDF templates. Any PHP files in the root of this folder will be classified as a **PDF Template**, and the system will automatically register it.
 
 :::info
-On a vanilla WordPress installation the full path to the `PDF_EXTENDED_TEMPLATES` directory is `/wp-content/uploads/PDF_EXTENDED_TEMPLATES`. Your installation may be different if defining the `WP_CONTENT_DIR` or `UPLOADS` constants, or if you've used the [`gfpdf_template_location`](filters/gfpdf_template_location.md) and [`gfpdf_template_location_uri`](filters/gfpdf_template_location_uri.md) filters.
+On a vanilla WordPress installation, the full path to the `PDF_EXTENDED_TEMPLATES` directory is `/wp-content/uploads/PDF_EXTENDED_TEMPLATES`. Your installation may be different if defining the `WP_CONTENT_DIR` or `UPLOADS` constants, or if you've used the [`gfpdf_template_location`](filters/gfpdf_template_location.md) and [`gfpdf_template_location_uri`](filters/gfpdf_template_location_uri.md) filters.
 :::
 
 :::caution
