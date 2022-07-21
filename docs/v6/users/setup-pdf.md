@@ -25,7 +25,7 @@ The PDF settings for an individual form can be accessed by following these steps
 
 1. Navigating to `Forms -> Forms` in your WordPress admin area.
 2. Locate the form you want to create a PDF for, then hover your mouse (or similar device) over that particular row. A list of actions will be revealed; click the `Settings` action.
-3. When the page loads you'll see a navigation item called `PDF` in the left sidebar. Click that link.
+3. When the page loads, you'll see a navigation item called `PDF` in the left sidebar. Click that link.
 4. Finally, select the `Add New` button which is above-and-to-the-right of the table shown in the content area.
 
 :::info
