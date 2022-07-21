@@ -67,7 +67,7 @@ Below is the list of settings available in the General tab, with a brief descrip
 * _PDF statistics:_ when Debug Mode is on the PDF will display the time spent generating the document, peak memory usage, and number of fonts used. 
 * _Template header caching:_ to decrease the plugin initialisation time, we store the template header data in a transient (expires weekly) instead of reading that information from the filesystem. The cache is flushed automatically when installing or deleting a template [via the PDF Template Manager](pdf-template-manager.md), or when toggling Debug Mode. The cache is disabled when Debug Mode is on.
 * _Helper Parameters:_ The developer PDF helper parameters `?html=1` and `?data=1` are enabled on a production website for users with the `gravityforms_edit_forms` capability (added in v6.4).
-* By default, this option is disabled
+* By default, this option is disabled.
 
 ### Security Options 
 
