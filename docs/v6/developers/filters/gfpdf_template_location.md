@@ -18,7 +18,7 @@ The working directory **MUST be in a publicly accessible folder** (accessed via 
 *  The folder name of the [PDF working directory](../first-custom-pdf.md#pdf-working-directory)
 
 ### $working_folder | string
-*  The working directory folder name. By default this is `PDF_EXTENDED_TEMPLATES`.
+*  The working directory folder name. By default, this is `PDF_EXTENDED_TEMPLATES`.
 
 ### $upload_path | string
 *  The path to your uploads directory (where the PDF working directory is stored by default).
