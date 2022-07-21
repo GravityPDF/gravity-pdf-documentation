@@ -12,7 +12,7 @@ Gravity PDF caches the [template header data](first-custom-pdf.md#template-struc
 
 ## Zip Archive Structure 
 
-To create a `.zip` package just zip up your PDF template file(s) in the root of the zip archive:
+To create a `.zip` package, just zip up your PDF template file(s) in the root of the zip archive:
 
 ```text
 +-- PACKAGE.zip
