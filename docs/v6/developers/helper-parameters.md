@@ -64,7 +64,7 @@ When creating custom PDF templates, it's often useful to include external CSS fi
 
 ### PDF\_TEMPLATE\_URL\_LOCATION 
 * This is a constant that contains the URL to the [PDF working directory](first-custom-pdf.md#pdf-working-directory) or, for multisite installations, the URL to the [individual multisite working directory](first-custom-pdf.md#multisite-structure). This is useful if you want to provide a link to a file on the host machine.
-* If you want to include images or stylesheets that are located on your web server we recommend using [`__DIR__`](#__dir__) where possible
+* If you want to include images or stylesheets that are located on your web server, we recommend using [`__DIR__`](#__dir__) where possible
 * Usage: `<a href="<?php echo esc_url( PDF_TEMPLATE_URL_LOCATION ); ?>images/hello-world.png">View Sample</a>`
 
 ### wp\_upload\_dir() 
