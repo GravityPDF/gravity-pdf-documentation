@@ -14,15 +14,15 @@ We [touched on the template hierarchy](first-custom-pdf.md#template-hierarchy) w
 
 ![WordPress Standard Template Hierarchy](https://resources.gravitypdf.com/uploads/2015/11/WordPress-Standard-Hierarchy.png)
 
-On a standard WordPress installation, the template hierarchy is straightforward. Files in the [PDF Working Directory](first-custom-pdf.md#working-directory) override templates with the same name that ship with the plugin.
+On a standard WordPress installation, the template hierarchy is straightforward. Files in the [PDF Working Directory](first-custom-pdf.md#pdf-working-directory) override templates with the same name that ship with the plugin.
 
 ### Multisite WordPress
 
 ![WordPress Multisite Template Hierarchy](https://resources.gravitypdf.com/uploads/2015/11/WordPress-Multisite-Hierarchy.png)
 
-To allow more flexibility with PDF templates, Multisite installations add another layer to the template hierarchy. Each site in a Multisite installation [gets its own PDF Working Directory](first-custom-pdf.md#multisite-structure), so different sites can have their own templates that won't be included for other subsites. If installing a template via the [PDF Template Manager](../users/pdf-template-manager.md), it'll be saved in the subsite directory and not directly in the [Working Directory](first-custom-pdf.md#working-directory).
+To allow more flexibility with PDF templates, Multisite installations add another layer to the template hierarchy. Each site in a Multisite installation [gets its own PDF Working Directory](first-custom-pdf.md#multisite-structure), so different sites can have their own templates that won't be included for other subsites. If installing a template via the [PDF Template Manager](../users/pdf-template-manager.md), it'll be saved in the subsite directory and not directly in the [Working Directory](first-custom-pdf.md#pdf-working-directory).
 
-Individual subsite templates override any global templates in the `PDF_EXTENDED_TEMPLATES` directory (which apply to all Multisite installations), which in turn override the Core Gravity PDF templates (like in a [standard WordPress installation](#standard-wordpress-installation)).
+Individual subsite templates override any global templates in the `PDF_EXTENDED_TEMPLATES` directory (which apply to all Multisite installations), which in turn override the Core Gravity PDF templates (like in a [standard WordPress installation](#standard-wordpress)).
 
 ## Where are the Core template files?
 
@@ -70,4 +70,4 @@ If you get a warning on the [System Status page](../users/system-status.md) abou
 To resolve the warning you've two options available:
 
 1. If you are certain you haven't made any modifications to the Core template(s), you can delete those template files via the [PDF Template Manager](../users/pdf-template-manager.md#delete) and your site will go back to using the template shipped with the plugin.
-1. If you did modify a Core template, you will need to manually copy the changes over to your override file. For the Gravity PDF 6.0 update, [this CSS was added to each Core template to support Drag and Drop columns](https://github.com/GravityPDF/gravity-pdf/blob/6.0.0-RC2/src/templates/zadani.php#L49-L97).
+1. If you did modify a Core template, you will need to manually copy the changes over to your override file. For the Gravity PDF 6.0 update, [this CSS was added to each Core template to support Drag and Drop columns](https://github.com/GravityPDF/gravity-pdf/blob/6.0.0-RC2/src/templates/zadani.php#L49-L97). You should also update the version number in the template header.

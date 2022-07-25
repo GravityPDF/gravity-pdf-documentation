@@ -6,15 +6,15 @@ description: "Gravity PDF allows users to set template-specific options when the
 
 ## Introduction 
 
-The template configuration file is *an optional* feature which allows you to [set template-specific options](../users/setup-pdf.md#template-tab) for your custom template. You can also run commands when the template is installed or deleted [via the PDF Template Manager](../users/pdf-template-manager.md) (work's great for installing custom fonts). 
+The template configuration file is *an optional* feature which allows you to [set template-specific options](../users/setup-pdf.md#template-section) for your custom template. You can also run commands when the template is installed or deleted [via the PDF Template Manager](../users/pdf-template-manager.md) (work's great for installing custom fonts). 
 
 ## Template Configuration 
 
-![Our Hello World Template File](https://resources.gravitypdf.com/uploads/2015/11/configuration.png)
+![The Hello World Template Configuration File](https://resources.gravitypdf.com/uploads/2022/07/template-configuration.png)
 
-The template configuration file is a file you create (or copy) and needs to be placed inside the `/config/` folder in the [PDF working directory](first-custom-pdf.md#working-directory). 
+The template configuration file is a file you create (or copy) and needs to be placed inside the `/config/` folder in the [PDF working directory](first-custom-pdf.md#pdf-working-directory). 
 
-### Configuration Naming Convention 
+### Configuration Naming Convention
 
 Your PHP configuration file needs to have the same name as your PDF template file. The directory structure will be as follows:
 
@@ -23,11 +23,15 @@ Your PHP configuration file needs to have the same name as your PDF template fil
     |   +-- /config/
     |       +-- hello-world.php
 
+:::caution
+The template filename should only contain `A-Z`, `a-z`, `0-9`, `_`, or `-` characters, followed by the `.php` extension. Do not include spaces, symbols, or non-ascii characters. For example `my-custom-template.php` is valid, whereas `F.ID #123.php` is invalid.
+:::
+
 ### Configuration Mark-Up 
 
 The structure of the PHP configuration file is very important; this will allow you to tell Gravity PDF what features your PDF supports. Below is the basic structure of the config file:
 
-```
+```php
 <?php
 
 namespace GFPDF\Templates\Config;
@@ -100,7 +104,7 @@ class Business_Letter extends Helper_Abstract_Config_Settings implements Helper_
 
 ### configuration() 
 
-The `configuration()` method allows you to return an array which [defines the supported template settings](../users/setup-pdf.md#template-tab). The array is split into two sub-keys: `core` and `fields`. The `core` key allows you to enable built-in fields like headers and footers, while the `fields` key allows you to implement your own fields using our settings API.
+The `configuration()` method allows you to return an array which [defines the supported template settings](../users/setup-pdf.md#template-section). The array is split into two sub-keys: `core` and `fields`. The `core` key allows you to enable built-in fields like headers and footers, while the `fields` key allows you to implement your own fields using our settings API.
 
 #### Core Fields 
 
@@ -108,7 +112,7 @@ Gravity PDF has a number of built-in template-specific fields you can easily ena
 
 Below is a sample of the `configuration` method with a number of core fields enabled:
 
-```
+```php
 public function configuration() {
 
     return [
@@ -181,7 +185,7 @@ Below are details of all the core fields available to you:
 
 Adding your own custom fields is where this feature gets really powerful. Using the `fields` sub-key, you can define text, paragraph, rich text, radio buttons, select boxes, colour pickers or upload fields with a few lines of code:
 
-```
+```php
 public function configuration() {
     return [
         /* Enable core fields */
@@ -239,19 +243,18 @@ public function configuration() {
                 'name'    => esc_html__( 'Select', 'gravity-forms-pdf-extended' ),
                 'type'    => 'select',
                 'options' => [
-                    'Value 1' => 'Option 1',
-                    'Value 2' => 'Option 2',
-                    'Value 3' => 'Option 3',
-                    'Value 4' => 'Option 4',
+                    'Value 1' => esc_html__( 'Option 1', 'gravity-forms-pdf-extended' ),
+                    'Value 2' => esc_html__( 'Option 2', 'gravity-forms-pdf-extended' ),
+                    'Value 3' => esc_html__( 'Option 3', 'gravity-forms-pdf-extended' ),
+                    'Value 4' => esc_html__( 'Option 4', 'gravity-forms-pdf-extended' ),
                 ],
-                'chosen'  => true, /* Enable advanced drop down selector */
             ],
 
             'prefix_my_custom_checkbox' => [
                 'id'     => 'prefix_my_custom_checkbox',
                 'name'   => esc_html__( 'Checkbox', 'gravity-forms-pdf-extended' ),
                 'type'   => 'checkbox',
-                'desc'   =>  esc_html__( 'The checkbox label', 'gravity-forms-pdf-extended' ),
+                'desc'   => esc_html__( 'The checkbox label', 'gravity-forms-pdf-extended' ),
             ],
 
             'prefix_my_custom_multicheck' => [
@@ -259,30 +262,30 @@ public function configuration() {
                 'name'    => esc_html__( 'Multple Checkboxes', 'gravity-forms-pdf-extended' ),
                 'type'    => 'multicheck',
                 'options' => [
-                    'Value 1' => 'Option 1',
-                    'Value 2' => 'Option 2',
-                    'Value 3' => 'Option 3',
-                    'Value 4' => 'Option 4',
+                    'Value 1' => esc_html__( 'Option 1', 'gravity-forms-pdf-extended' ),
+                    'Value 2' => esc_html__( 'Option 2', 'gravity-forms-pdf-extended' ),
+                    'Value 3' => esc_html__( 'Option 3', 'gravity-forms-pdf-extended' ),
+                    'Value 4' => esc_html__( 'Option 4', 'gravity-forms-pdf-extended' ),
                 ],
             ],
 
             'prefix_my_custom_radio' => [
                 'id'      => 'prefix_my_custom_radio',
-                'name'    => 'Radio',
-                'desc'    => 'This is my field description',
+                'name'    => esc_html__( 'Radio', 'gravity-forms-pdf-extended' ),
+                'desc'    => esc_html__( 'This is my field description', 'gravity-forms-pdf-extended' ),
                 'type'    => 'radio',
                 'options' => [
-                    'Yes' => __( 'Yes', 'gravity-forms-pdf-extended' ),
-                    'No'  => __( 'No', 'gravity-forms-pdf-extended' ),
+                    'Yes' => esc_html__( 'Yes', 'gravity-forms-pdf-extended' ),
+                    'No'  => esc_html__( 'No', 'gravity-forms-pdf-extended' ),
                 ],
                 'std'     => 'No',
             ],
 
             'prefix_border_colour' => [
                 'id'   => 'prefix_border_colour',
-                'name' => __( 'Colour', 'gravity-forms-pdf-extended' ),
+                'name' => esc_html__( 'Colour', 'gravity-forms-pdf-extended' ),
                 'type' => 'color',
-                'desc' => __( 'Control the colour of the field border.', 'gravity-forms-pdf-extended' ),
+                'desc' => esc_html__( 'Control the colour of the field border.', 'gravity-forms-pdf-extended' ),
                 'std'  => '#CCCCCC',
             ],
         ],
@@ -319,7 +322,7 @@ Because only certain options apply to certain fields, this isn't an exhaustive l
 
 ### Custom Field Support 
 
-The `header`, `first_header`, `footer`, `first_footer`, `background_color` and `background_image` core fields are automatically supported in custom PDF templates (provided you don't override them with your own header/footer or background [using `@page`](pdf-features/pagebreaks.md#at-page)). However, all custom fields will need appropriate logic included in your PDF template.
+The `header`, `first_header`, `footer`, `first_footer`, `background_color` and `background_image` core fields are automatically supported in custom PDF templates (provided you don't override them with your own header/footer or background [using `@page`](pdf-features/pagebreaks.md#page)). However, all custom fields will need appropriate logic included in your PDF template.
 
 To do this, you'll have to access a variable named `$settings` in the PDF template. This variable is an array that contains all the settings a user has defined (using the field ID as the array key) and is where your template settings will be located.
 
@@ -327,14 +330,14 @@ To do this, you'll have to access a variable named `$settings` in the PDF templa
 
 [If you added all the custom fields listed above](#custom-fields) to your configuration file, you could access each in your template file with the following code:
 
-```
+```php
 $gform = GPDFAPI::get_form_class();
 
 $text        = $settings['prefix_text'] ?? '';
 $number      = $settings['prefix_number'] ?? '';
 $password    = $settings['prefix_password'] ?? '';
 $textarea    = isset( $settings['prefix_textarea'] ) ? wpautop( $settings['prefix_textarea'] ) : ''; /* format the text */
-$rich_editor = isset( $settings['prefix_rich_editor'] ) ? wpautop( wp_kses_post( $gform->process_tags( $settings['prefix_rich_editor'], $form, $entry ) ) ) : ''; /* for security, pre-process the merge tags, run through default post HTML filters, then format. Delete `wpautop` if required. */
+$rich_editor = isset( $settings['prefix_rich_editor'] ) ? wpautop( $gform->process_tags( $settings['prefix_rich_editor'], $form, $entry ) ) : '';
 $select      = $settings['prefix_select'] ?? '';
 $checkbox    = isset( $settings['prefix_checkbox'] ) ? true : false;
 $multicheck  = $settings['prefix_multicheck'] ?? [];
@@ -343,25 +346,25 @@ $color       = $settings['prefix_color'] ?? '#000'; /* default to black when doe
 
 ?>
 
-<p><?= $text ?></p>
+<p><?php echo esc_html( $text ); ?></p>
 
-<p><?= $number ?></p>
+<p><?php echo esc_html( $number ); ?></p>
 
-<p><?= $password ?></p>
+<p><?php echo esc_html( $password ); ?></p>
 
-<?= $textarea ?>
+<?php echo esc_textarea( $textarea ); ?>
 
-<?= $rich_editor ?>
+<?php echo wp_kses_post( $rich_editor ); ?>
 
-<p><?= $select ?></p>
+<p><?php echo esc_html( $select ); ?></p>
 
-<p><?= $checkbox ? 'Enabled' : 'Disabled' ?></p>
+<p><?php echo $checkbox ? 'Enabled' : 'Disabled' ?></p>
 
-<p><?= implode( ', ', array_filter( $multicheck ) ) ?></p>
+<p><?php echo esc_html( implode( ', ', array_filter( $multicheck ) ) ); ?></p>
 
-<p><?= $radio ?></p>
+<p><?php echo esc_html( $radio ); ?></p>
 
-<p><?= $color ?></p>
+<p><?php echo esc_html( $color ); ?></p>
 
 ```
 
@@ -377,9 +380,9 @@ The PDF Template Manager *Delete* function will only remove the template file, t
 
 If you need to include additional files with your template, we recommend saving them to `/install/Template_Name/` (substitute `Template_Name`). This will make it easy for you to clean-up when writing `tearDown()`. 
 
-Below is a sample showing you how you can auto-install a font and clean-up your template's files on delete. This assumes you've created the directory structure `/install/Hello_World/font-fira-sans/` in your [PDF working directory](first-custom-pdf.md#working-directory) and have the listed fonts included.
+Below is a sample showing you how you can auto-install a font and clean-up your template's files on delete. This assumes you've created the directory structure `/install/Hello_World/font-fira-sans/` in your [PDF working directory](first-custom-pdf.md#pdf-working-directory) and have the listed fonts included.
 
-```
+```php
 <?php
 
 namespace GFPDF\Templates\Config;
@@ -458,32 +461,32 @@ By extending the `Helper_Abstract_Config_Settings` you'll automatically have acc
 This is a useful shortcut when you want to call a method in the configuration class directly from your template file:
 
 **Partial from config file `/config/hello-world.php`**
-```
+```php
 public function do_something() {
     // get all PDF settings
     $settings = $this->get_settings();
-    echo $settings['name'];
+    echo esc_html( $settings['name'] );
     
     // or get selected PDF settings
     [ 'id' => $id, 'name' => $name, 'filename' => $filename ] = $this->get_settings();
-    echo $name;
+    echo esc_html( $name );
 }
 ```
 
 **Partial from template file `/hello-world.php`**
-```
-echo $config->do_something();
+```php
+echo esc_html( $config->do_something() );
 ```
 
 ## Template Tutorial – Part 4 
 
-![Our Hello World template fields](https://resources.gravitypdf.com/uploads/2015/11/hello-world-configuration.png)
+![Our Hello World template fields in the Gravity PDF user interface](https://resources.gravitypdf.com/uploads/2022/07/hello-world-configuration-r2.png)
 
 Continuing on from our [Part 3 Hello World Tutorial](php-form-data-array.md#template-tutorial--part-3), we're going to show you how to create a template configuration with core footer and background image support enabled. We'll also add a new field that will determine if meta data should be included in the document.
 
 ### Template Configuration 
 
-First, let's [grab a copy of the basic PDF template PHP mark-up](https://gist.github.com/jakejackson1/0c6092dbd0b18c098c39bdacff18bc99) and save it in the `config` folder of our [PDF working directory](first-custom-pdf.md#working-directory). Remember to save the file as `hello-world.php` – the same name we used for our template file. This sample code already has the class name changed to `Hello_World`, but you would normally update this to match your template's file name.
+First, let's [grab a copy of the basic PDF template PHP mark-up](https://gist.github.com/jakejackson1/0c6092dbd0b18c098c39bdacff18bc99) and save it in the `config` folder of our [PDF working directory](first-custom-pdf.md#pdf-working-directory). Remember to save the file as `hello-world.php` – the same name we used for our template file. This sample code already has the class name changed to `Hello_World`, but you would normally update this to match your template's file name.
 
 The only area we'll be focusing on is the empty array being returned in the `configuration` method. We'll need to update this to include our two core fields and create our custom field. Let's do the core fields first:
 
@@ -523,12 +526,12 @@ public function configuration() {
         'fields' => [
             'world_show_meta_data' => [
                 'id'      => 'world_show_meta_data',
-                'name'    => __( 'Show Meta Data', 'world-pdf-template' ),
-                'desc'    => __( 'When enabled the user IP, timestamp, user agent and source URL will be included in the PDF.', 'world-pdf-template' ),
+                'name'    => esc_html__( 'Show Meta Data', 'world-pdf-template' ),
+                'desc'    => esc_html__( 'When enabled the user IP, timestamp, user agent and source URL will be included in the PDF.', 'world-pdf-template' ),
                 'type'    => 'radio',
                 'options' => [
-                    'Yes' => __( 'Yes', 'world-pdf-template' ),
-                    'No'  => __( 'No', 'world-pdf-template' ),
+                    'Yes' => esc_html__( 'Yes', 'world-pdf-template' ),
+                    'No'  => esc_html__( 'No', 'world-pdf-template' ),
                 ],
                 'std'     => 'No',
             ],
@@ -537,7 +540,7 @@ public function configuration() {
 }
 ```
 
-We've just told Gravity PDF about a new radio field called *Show Meta Data* that has Yes/No options. By default, the *No* value will be selected, and a nice description about what the field does is shown just below the radio buttons. We've also prefixed our field ID with `world_`, so we don't clash with any other fields. And because we are conscientious developers we've made all our strings translatable by wrapping them [in the `__()` function](https://developer.wordpress.org/reference/functions/__/). Make sure you only translate the `option` array *values*, and not the keys.
+We've just told Gravity PDF about a new radio field called *Show Meta Data* that has Yes/No options. By default, the *No* value will be selected, and a nice description about what the field does is shown just below the radio buttons. We've also prefixed our field ID with `world_`, so we don't clash with any other fields. And because we are conscientious developers we've escaped all our strings and made them translatable [with the `esc_html__()` function](https://developer.wordpress.org/reference/functions/esc_html__/). Make sure you only translate the `option` array *values*, and not the keys.
 
 [Read more about the specifics of each field attribute](#custom-fields).
 
@@ -582,10 +585,10 @@ Now we can do a simple *IF* statement in the body of our template and output the
 
 <?php if ( $show_meta_data === 'Yes' ): ?>
     <p>
-        <strong>User IP:</strong> <?= $form_data['misc']['ip']; ?><br>
-        <strong>Submission Timestamp:</strong> <?= $form_data['misc']['date_time']; ?><br>
-        <strong>User Agent:</strong> <?= $form_data['misc']['user_agent']; ?><br>
-        <strong>Source URL:</strong> <?= $form_data['misc']['source_url']; ?>
+        <strong>User IP:</strong> <?php echo esc_html( $form_data['misc']['ip'] ); ?><br>
+        <strong>Submission Timestamp:</strong> <?php echo esc_html( $form_data['misc']['date_time'] ); ?><br>
+        <strong>User Agent:</strong> <?php echo esc_html( $form_data['misc']['user_agent'] ); ?><br>
+        <strong>Source URL:</strong> <?php echo esc_html( $form_data['misc']['source_url'] ); ?>
     </p>
 <?php endif; ?>
 ```

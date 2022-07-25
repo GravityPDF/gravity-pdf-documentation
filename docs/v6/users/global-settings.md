@@ -62,11 +62,12 @@ Below is the list of settings available in the General tab, with a brief descrip
 * By default, this option is disabled.
 
 ### Debug Mode 
-* When enabled, this turns on shortcode debugging and PDF statistics, and turns off template header caching.
+* When enabled, this turns on shortcode debugging and PDF statistics, turns off template header caching, and [turns on the helper parameters](../developers/helper-parameters.md).
 * _Shortcode debugging:_ when Debug Mode is on, users with the `gravityforms_view_entries` capability (the Administrator Role by default) will be shown debug messages when the `[gravitypdf]` shortcode cannot be generated. When Debug Mode is disabled and a shortcode error occurs, no content is shown.
 * _PDF statistics:_ when Debug Mode is on the PDF will display the time spent generating the document, peak memory usage, and number of fonts used. 
 * _Template header caching:_ to decrease the plugin initialisation time, we store the template header data in a transient (expires weekly) instead of reading that information from the filesystem. The cache is flushed automatically when installing or deleting a template [via the PDF Template Manager](pdf-template-manager.md), or when toggling Debug Mode. The cache is disabled when Debug Mode is on.
-* By default, this option is disabled
+* _Helper Parameters:_ The developer PDF helper parameters `?html=1` and `?data=1` are enabled on a production website for users with the `gravityforms_edit_forms` capability (added in v6.4).
+* By default, this option is disabled.
 
 ### Security Options 
 

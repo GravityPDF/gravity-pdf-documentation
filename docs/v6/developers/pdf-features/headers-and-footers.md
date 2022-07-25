@@ -20,16 +20,16 @@ The headers/footers HTML tags can be included anywhere inside your template but 
 The `<htmlpageheader>` tag allows you to define a header template and everything inside the tag will be rendered at the top of your page. The tag has one required attribute `name` which acts as an ID for your header. Just ensure you don't use a name that begins with `html_`, as that prefix is reserved.
 
 ```html
-    <htmlpageheader name="MyCustomHeader">
-        <table style="border-bottom: 1px solid #000000; vertical-align: bottom; font-family: serif; font-size: 9pt; color: #000088;" width="100%">
-            <tbody>
-                <tr>
-                    <td width="50%">Title</td>
-                    <td style="text-align: right; font-weight: bold;" width="50%">Logo</td>
-                </tr>
-            </tbody>
-        </table>
-    </htmlpageheader>
+<htmlpageheader name="MyCustomHeader">
+    <table style="border-bottom: 1px solid #000000; vertical-align: bottom; font-family: serif; font-size: 9pt; color: #000088;" width="100%">
+        <tbody>
+            <tr>
+                <td width="50%">Title</td>
+                <td style="text-align: right; font-weight: bold;" width="50%">Logo</td>
+            </tr>
+        </tbody>
+    </table>
+</htmlpageheader>
 ```
 
 ### Footers 
@@ -37,17 +37,17 @@ The `<htmlpageheader>` tag allows you to define a header template and everything
 The `<htmlpagefooter>` tag allows you to define a footer template and everything inside the tag will be rendered at the bottom of your page. The tag has one required attribute `name` which acts as an ID for your footer. Just ensure you don't use a name that begins with `html_`, as that prefix is reserved.
 
 ```html
-    <htmlpagefooter name="MyCustomFooter">
-        <table style="vertical-align: bottom; font-family: serif; font-size: 8pt; color: #000000; font-weight: bold; font-style: italic;" width="100%">
-            <tbody>
-                <tr>
-                    <td width="33%"><span style="font-weight: bold; font-style: italic;">Copyright 2016</span></td>
-                    <td style="font-weight: bold; font-style: italic;" align="center" width="33%">{PAGENO}/{nbpg}</td>
-                    <td style="text-align: right;" width="33%">My document</td>
-                </tr>
-            </tbody>
-        </table>
-    </htmlpagefooter>
+<htmlpagefooter name="MyCustomFooter">
+    <table style="vertical-align: bottom; font-family: serif; font-size: 8pt; color: #000000; font-weight: bold; font-style: italic;" width="100%">
+        <tbody>
+            <tr>
+                <td width="33%"><span style="font-weight: bold; font-style: italic;">Copyright 2016</span></td>
+                <td style="font-weight: bold; font-style: italic;" align="center" width="33%">{PAGENO}/{nbpg}</td>
+                <td style="text-align: right;" width="33%">My document</td>
+            </tr>
+        </tbody>
+    </table>
+</htmlpagefooter>
 ```
 
 ## Displaying Headers/Footers 

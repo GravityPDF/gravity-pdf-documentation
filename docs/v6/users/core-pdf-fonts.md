@@ -28,7 +28,7 @@ The Core Fonts are hosted and will be downloaded to your web server [from a publ
 
 [Trellis](https://roots.io/trellis/) (which uses [Ansible](https://www.ansible.com/how-ansible-works)) is a popular way to setup and manage a server that can automatically deploy your WordPress website. Because of the shared `uploads` directory, out-of-the-box Trellis users can safely use the Core Font installer without needing to rerun it on every deploy. 
 
-If you've moved the [PDF Working Directory](../developers/first-custom-pdf.md#working-directory) to a location outside `uploads` (the default location), and don't want to commit the Core PDF fonts to your Git repo, you'll need to install the fonts with each deployment. Trellis makes this very simple using their deployment hooks. 
+If you've moved the [PDF Working Directory](../developers/first-custom-pdf.md#pdf-working-directory) to a location outside `uploads` (the default location), and don't want to commit the Core PDF fonts to your Git repo, you'll need to install the fonts with each deployment. Trellis makes this very simple using their deployment hooks. 
 
 To start, [create a custom task and override the `deploy_build_after` hook](https://roots.io/trellis/docs/deploys/#custom-tasks). After adding the custom task, your `group_vars/all/main.yml` configuration file should look similar to this:
 

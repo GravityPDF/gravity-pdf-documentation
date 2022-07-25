@@ -18,7 +18,7 @@ You can purchase the Core Booster plugin from our [Extension Shop](https://gravi
 
 ## Configuring 
 
-This extension adds a number of new features to Core and Universal templates. All functionality can be enabled from the *Template* section when [editing the PDF settings](../users/setup-pdf.md#template-tab).
+This extension adds a number of new features to Core and Universal templates. All functionality can be enabled from the *Template* section when [editing the PDF settings](../users/setup-pdf.md#template-section).
 
 ![The new options this extension adds to Core and Universal templates](https://resources.gravitypdf.com/uploads/2021/04/v6-Core-Booster-options.png)
 
