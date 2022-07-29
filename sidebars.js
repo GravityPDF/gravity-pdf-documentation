@@ -960,6 +960,9 @@ module.exports = {
             'v6/developers/filters/gfpdf_tmp_location',
             'v6/developers/filters/gfpdf_update_option',
             'v6/developers/filters/gfpdf_working_folder_name',
+            'v6/developers/filters/gfpdf_wp_kses_allowed_html',
+            'v6/developers/filters/gfpdf_wp_kses_allowed_pdf_styles',
+            'v6/developers/filters/gfpdf_wp_kses_allowed_pdf_protocols',
           ]
         },
         {
