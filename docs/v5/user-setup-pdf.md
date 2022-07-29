@@ -24,6 +24,10 @@ The form PDF settings can be accessed by following these steps:
 1. When the page loads you'll see a new tab called `PDF` in the left sidebar. Click that link.
 1. Finally select the `Add New` button to the right of the *Gravity PDF* title.
 
+:::info
+Only users with the `gravityforms_edit_forms` capability can manage the form PDF settings. By default, this is users with the administrator role.
+:::
+
 ## Required Fields 
 
 There are only two required fields when creating a PDF: the name and filename options. Both appear in the [*General*](#general-tab) tab. These include:
