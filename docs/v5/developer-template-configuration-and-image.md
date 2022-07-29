@@ -23,6 +23,10 @@ Your PHP configuration file needs to have the same name as your PDF template fil
     |   +-- /config/
     |       +-- hello-world.php
 
+:::caution
+The template filename should only contain `A-Z`, `a-z`, `0-9`, `_`, or `-` characters, followed by the `.php` extension. Do not include spaces, symbols, or non-ascii characters. For example `my-custom-template.php` is valid, whereas `F.ID #123.php` is invalid.
+:::
+
 ### Configuration Mark-Up 
 
 The structure of the PHP configuration file is very important; this will allow you to tell Gravity PDF what features your PDF supports. Below is the basic structure of the config file:
