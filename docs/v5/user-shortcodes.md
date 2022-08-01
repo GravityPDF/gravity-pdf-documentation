@@ -44,6 +44,10 @@ The [text confirmation](https://docs.gravityforms.com/configuring-confirmations-
 
 The [page confirmation](https://docs.gravityforms.com/configuring-confirmations-in-gravity-forms/#page-confirmations) allows you to redirect users to an existing WordPress page. This method is not quite "copy and paste", but it's close. To get it functioning you need to copy the sample shortcode found on the [PDF form list](user-managing-pdfs.md) and place it on the WordPress page you're sending your user to. Once done, go back to your confirmation configuration and enable the `Pass Field Data Via Query String` option. Add `entry={entry_id}` to the field that appears and click save.
 
+:::warning
+Do not use the [Signed PDF URL feature](#signed-optional) with this confirmation type, as an end user will be able to change the entry ID in the URL and get access to other PDFs. Signed URLs can be safely used with Text or Redirect Confirmation types. Alternatively, non-signed PDF URLs are not vulnerable, and can be safely used in Page Confirmations.
+:::
+
 #### Redirect Confirmation 
 
 ![The \[gravitypdf\] shortcode in the Gravity Forms redirect confirmation](https://resources.gravitypdf.com/uploads/2015/10/redirect-confirmation-e1541561008512.png) 
