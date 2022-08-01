@@ -40,11 +40,11 @@ add_filter( 'gfpdf_tmp_location', function( $path, $working_folder, $upload_url 
 	 * Note: your hosting may prevent the ability to write to folders outside the WordPress top-level directory and this
 	 * will not work. Make sure you test PDF Notifications still function after adding this code.
 	 */
-	return dirname( ABSPATH ) . '/GravityPDF/tmp/'; /* <-- make sure you include the foward slash */
+	return dirname( ABSPATH ) . '/GravityPDF/tmp/'; /* <-- make sure you include the forward slash */
 	/*
 	 * If the above doesn't work, you can try use the get_temp_dir() function instead
 	 */
-	return get_temp_dir() . 'GravityPDF/'; /* <-- make sure you include the foward slash */
+	return get_temp_dir() . 'GravityPDF/'; /* <-- make sure you include the forward slash */
 
 }, 10, 3 );
 
