@@ -67,6 +67,10 @@ The [page confirmation](https://resources.gravitypdf.com/uploads/2022/03/v6.2-Pa
 
 Submit a test entry and verify the PDF link is displayed correct, and you can view the document when selected.
 
+:::warning
+Do not use the [Signed PDF URL feature](#signed-optional) with this confirmation type, as an end user will be able to change the entry ID in the URL and get access to other PDFs. Standard PDF URLs are not vulnerable to this, and can be safely used in Page Confirmations.
+:::
+
 ##### Redirect Confirmation
 
 ![The \[gravitypdf\] shortcode in the Gravity Forms redirect confirmation](https://resources.gravitypdf.com/uploads/2021/03/v6-Redirect-Confirmations.png)
@@ -76,7 +80,7 @@ The [redirect confirmation](https://resources.gravitypdf.com/uploads/2022/03/v6.
 Submit a test entry and verify the PDF link is displayed correct, and you can view the document when selected.
 
 :::note
-If using the [signed PDF URL feature](#signed-optional) with the redirect method, the `Pass Field Data Via Query String` option will be ignored.
+If using the [PDF URL feature](#signed-optional) with the redirect method, the `Pass Field Data Via Query String` option will be ignored.
 ::: 
 
 #### Usage in Notifications 
