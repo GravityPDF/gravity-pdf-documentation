@@ -38,12 +38,12 @@ If you'd like anyone with access to your View to securely download the PDF(s), y
 
 If you're using [GravityView's Multiple Forms extension](https://www.gravitykit.com/extensions/multiple-forms/?ref=186) and want to display a PDF from one of the _joined_ forms the process is slightly different.
 
-1. Add a new Custom Content field for the specific form, add the Gravity PDF shortcode
+1. Add a new Custom Content field to your View for the specific form the PDF is setup on.
 ![A screenshot of GravityView's Add Field buttons for multiple forms in the View](https://resources.gravitypdf.com/uploads/2022/08/gravityview-add-fields-from-specific-forms.png)
 
-2. Copy the `[gravitypdf]` shortcode from the [Manage PDF page](managing-pdfs.md)and paste it into the View's Custom Content Field
+2. Copy the `[gravitypdf]` shortcode from the [Manage PDF page](managing-pdfs.md)and paste it into the View's Custom Content Field created in step 1
 3. Manually add the `entry` attribute to the shortcode and set the value to `{entry_id}` 
 
 `[gravitypdf name="Default Template" id="56ea5a3b2c684" text="Download PDF" entry="{entry_id}"]`
 
-This will ensure the joined form's entry ID is used to create the PDF link, and not the primary form's entry ID.
+These steps will ensure the joined form's entry ID is used to create the PDF link, and not the primary form's entry ID.
