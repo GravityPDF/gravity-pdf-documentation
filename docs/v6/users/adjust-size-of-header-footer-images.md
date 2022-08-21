@@ -4,9 +4,18 @@ sidebar_label: "Adjust Size of Header / Footer Images"
 description: ""
 ---
 
-Gravity PDF automatically restricts the height of images in headers/footers to prevent them taking up a large portion of a page. You can override this behaviour by including a style attribute in your `img` HTML markup with the `max-height` property.
+Gravity PDF automatically restricts the height of images in headers/footers to prevent them taking up a large portion of a page. This is a good thing, as headers/footers with too large a height can cause display problems. 
 
-Follow these steps to make the adjustment:
+If you trying to add content to the header/footer that really should be in the document body, [there is a better way to handle this](add-custom-content.md).
+
+If you **would like the image to extend the full width of the header/footer** we recommend creating a long and thin image. The exact dimensions will be Paper Size specific, but for the common sizes use:
+
+* A4 (Portrait): 1076 x 140px
+* A4 (Landscape): 1570 x 140px
+* Letter (Portrait): 1110 x 140px
+* Letter (Landscape): 1470 x 140px
+
+If you really want to make the image taller in the header/footer, you can override the default behaviour by including a style attribute in your `img` HTML markup. Follow these steps to make the adjustment:
 
 1. Go to [PDF List Page](managing-pdfs.md) and edit the PDF you want to adjust. Scroll down until you locate the _Template_ section. 
 
@@ -26,7 +35,7 @@ It should look like this in your editor:
 ```
 
 :::info
-To get the size you need the image displayed at, you may have to increase or decrease 400px until you get the desired result.
+Increase or decrease the max-height value of the image to get the desired size. Some trial and error may be required.
 :::
 
 **Before**
