@@ -904,6 +904,7 @@ module.exports = {
             'v6/developers/filters/gfpdf_current_pdf_configuration',
             'v6/developers/filters/gfpdf_disable_global_addon_data',
             'v6/developers/filters/gfpdf_disable_product_table',
+            'v6/developers/filters/gfpdf_field_product_value',
             'v6/developers/filters/gfpdf_enable_master_password_field',
             'v6/developers/filters/gfpdf_field_class',
             'v6/developers/filters/gfpdf_field_html_value',
