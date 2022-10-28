@@ -10,7 +10,7 @@ import ResponsiveEmbed from 'react-responsive-embed'
 
 *Bulk Generator* is a premium plugin for Gravity PDF which allows you to easily bulk export Gravity PDF documents from Gravity Forms entries. Once the PDFs have been generated, you can download a zip file with all the files. 
 
-You can purchase the Bulk Generator plugin from our [Extension Shop](https://gravitypdf.com/shop/bulk-generator-add-on/). This guide will walk you through installing and using the *Bulk Generator* plugin.
+You can purchase the Bulk Generator plugin from the [Extension Shop](https://gravitypdf.com/shop/bulk-generator-add-on/). This guide will walk you through installing and using the *Bulk Generator* plugin.
 
 ## Requirements 
 

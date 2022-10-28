@@ -10,7 +10,7 @@ import ResponsiveEmbed from 'react-responsive-embed'
 
 *Core Booster* is a premium plugin for Gravity PDF that adds a number of enhancements to the Core and Universal PDF templates. The Core PDF templates are the free designs that [ship with Gravity PDF](https://wordpress.org/plugins/gravity-forms-pdf-extended/), and the Universal templates are the [premium designs from our Template Shop](https://gravitypdf.com/store/#universal).
 
-You can purchase the Core Booster plugin from our [Extension Shop](https://gravitypdf.com/shop/core-booster-add-on/). This guide will walk you through installing and configuring *Core Booster* to its full potential.
+You can purchase the Core Booster plugin from the [Extension Shop](https://gravitypdf.com/shop/core-booster-add-on/). This guide will walk you through installing and configuring *Core Booster* to its full potential.
 
 ## Installation 
 
