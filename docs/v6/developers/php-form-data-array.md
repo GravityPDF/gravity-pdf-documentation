@@ -267,13 +267,32 @@ echo esc_html( $form_data['field']['3_name'] ); /* for selected Drop Down name *
 #### Multiselect  
 
 ```
-/* 5 is the ID of our field */
+/* Output all selected items by value. 5 is the ID of our field */
 if ( is_array( $form_data['field'][5] ) ) {
     echo wp_kses_post( implode( '<br>', $form_data['field'][5] ) ); /* output value of each selected item */
 }
 
+/* Output all selected items by label */
 if ( is_array( $form_data['field']['5_name'] ) ) {
     echo wp_kses_post( implode( '<br>', $form_data['field']['5_name'] ) ); /* output name of each selected item */
+}
+
+/* Check if there is a multiselect option selected */
+if ( in_array( 'Apple', (array) $form_data['field'][43], true ) ) {
+   // Do something when the specific checkbox is enabled
+}
+
+/* Check if there are multiple multiselect options selected */
+foreach( (array) $form_data['field'][43] as $item ) {
+    switch( $item ) {
+      case 'Apple':
+          // Do something when the specific checkbox is enabled
+      break;
+      
+      case 'Orange':
+          // Do something when the specific checkbox is enabled
+      break;
+    }
 }
 
 /* Output in a list */
@@ -298,13 +317,32 @@ echo esc_html( $form_data['field'][25] );
 #### Checkbox 
 
 ```
-/* 43 is the ID of our field */
+/* Output all selected items by value. 43 is the ID of our field */
 if ( is_array( $form_data['field'][43] ) ) {
     echo wp_kses_post( implode( '<br>', $form_data['field'][43] ) ); /* output value of each selected item */
 }
 
+/* Output all selected items by label */
 if ( is_array( $form_data['field']['43_name'] ) ) {
     echo wp_kses_post( implode( '<br>', $form_data['field']['43_name'] ) ); /* output name of each selected item */
+}
+
+/* Check if there is a checkbox option selected */
+if ( in_array( 'Apple', (array) $form_data['field'][43], true ) ) {
+   // Do something when the specific checkbox is enabled
+}
+
+/* Check if there are multiple checkbox options selected */
+foreach( (array) $form_data['field'][43] as $item ) {
+    switch( $item ) {
+      case 'Apple':
+          // Do something when the specific checkbox is enabled
+      break;
+      
+      case 'Orange':
+          // Do something when the specific checkbox is enabled
+      break;
+    }
 }
 
 /* Output in a list */
