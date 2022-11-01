@@ -279,18 +279,18 @@ if ( is_array( $form_data['field']['5_name'] ) ) {
 
 /* Check if there is a multiselect option selected */
 if ( in_array( 'Apple', (array) $form_data['field'][43], true ) ) {
-   // Do something when the specific checkbox is enabled
+   // Do something when the specific option is selected
 }
 
 /* Check if there are multiple multiselect options selected */
 foreach( (array) $form_data['field'][43] as $item ) {
     switch( $item ) {
       case 'Apple':
-          // Do something when the specific checkbox is enabled
+          // Do something when the specific option is selected
       break;
       
       case 'Orange':
-          // Do something when the specific checkbox is enabled
+          // Do something when the specific option is selected
       break;
     }
 }
