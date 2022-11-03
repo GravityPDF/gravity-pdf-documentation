@@ -14,7 +14,7 @@ Once you've installed the plugin, it's **strongly recommended** you review the s
 
 If you'd like to know specifics about the settings that control security features in Gravity PDF, and see those protocols in action, Gravity PDF's lead developer has put together a 12-minute video:
 
-<ResponsiveEmbed src="https://player.vimeo.com/video/665431791" allowFullScreen />
+<ResponsiveEmbed src="https://player.vimeo.com/video/665431791?dnt=1" allowFullScreen />
 
 **Note: the video doesn't cover every security feature, and you should still review the documentation below.**
 

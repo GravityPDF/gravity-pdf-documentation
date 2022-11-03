@@ -17,4 +17,4 @@ Once you have the merge tags you want you can copy them over to your PDF templat
 <h3 id="video">Getting Started With Merge Tags</h3>
 We've put together a handy video running through the basics of setting up a custom PDF template and display entry data with merge tags.
 
-<ResponsiveEmbed src="https://www.youtube.com/embed/JITdgLS6UPs" />
+<ResponsiveEmbed src="https://www.youtube-nocookie.com/embed/JITdgLS6UPs" />

@@ -31,4 +31,4 @@ Previously we recommend using the Slim Image Cropper for Gravity Forms plugin, b
 
 If you enjoy learning through video, you can watch this 12-minute video with Gravity PDF's lead developer showing you how to include user uploaded images in the Core and Universal PDF templates using both the File Upload field and the amazing Image Hopper plugin.
 
-<ResponsiveEmbed src="https://player.vimeo.com/video/671784077" allowfullscreen />
+<ResponsiveEmbed src="https://player.vimeo.com/video/671784077?dnt=1" allowfullscreen />

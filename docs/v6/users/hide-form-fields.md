@@ -22,7 +22,7 @@ You can also choose to show or hide the form's title using the [*Show Form Title
 
 In this 15-minute video, Gravity PDF's lead developer takes you through hiding specific fields in Core and Universal PDF templates using the Gravity Forms custom CSS Class ‘exclude’ and the Gravity PDF Core Booster Add-on.
 
-<ResponsiveEmbed src="https://player.vimeo.com/video/671780952" allowfullscreen />
+<ResponsiveEmbed src="https://player.vimeo.com/video/671780952?dnt=1" allowfullscreen />
 
 ![Add 'exclude' field to Gravity Forms Field](https://resources.gravitypdf.com/uploads/2022/03/v6.2-Exclude-Field.png) 
 

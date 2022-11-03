@@ -27,7 +27,7 @@ $rounded_repayments    = round($monthly_repayments, 2); /* round the results to 
 <h3>Getting Started with the $form_data Array</h3>
 We've put together a video highlighting how to view, access and use the $form_data array. Before you watch this video you should view our <a href="/v3/custom-templates-with-mergetags/#video">Getting Started with Merge Tags</a> video.
 
-<ResponsiveEmbed src="https://www.youtube.com/embed/FRzVEuwD_8Y" />
+<ResponsiveEmbed src="https://www.youtube-nocookie.com/embed/FRzVEuwD_8Y" />
 
 For those who want more of a breakdown on how to use and access the <code>$form_data</code> array read on.
 <h3>Using the $form_data array</h3>

@@ -14,7 +14,7 @@ The look and feel of the PDF is controlled through templates. The software comes
 
 If you enjoy video tutorials, you can watch a 13-minute Getting Started video for Gravity PDF where Gravity PDF's lead developer takes you through the installation and basic setup process, but also goes into more detail about the various Gravity PDF features and settings available.
 
-<ResponsiveEmbed src="https://player.vimeo.com/video/665407495" allowFullScreen />
+<ResponsiveEmbed src="https://player.vimeo.com/video/665407495?dnt=1" allowFullScreen />
 
 ## Installation
 

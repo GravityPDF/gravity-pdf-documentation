@@ -20,7 +20,7 @@ The Font Manager will only display custom fonts you've installed, and doesn't li
 
 If you enjoy learning through video, you can watch this 9-minute video with Gravity PDF's lead developer showing you the ropes:
 
-<ResponsiveEmbed src="https://player.vimeo.com/video/665416313" allowFullScreen />
+<ResponsiveEmbed src="https://player.vimeo.com/video/665416313?dnt=1" allowFullScreen />
 
 ## Open the Font Manager
 

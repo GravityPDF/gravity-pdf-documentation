@@ -12,7 +12,7 @@ In the Core PDF templates (and the majority of [Universal templates](https://gra
 
 In the Form Editor you to easily build advanced form layouts visually. Fields can be placed into columns  and then resize to varying widths. Gravity PDF will automatically mimic your form column behaviour (when a template supports it).
 
-<ResponsiveEmbed src="https://player.vimeo.com/video/665408186" allowFullScreen />
+<ResponsiveEmbed src="https://player.vimeo.com/video/665408186?dnt=1" allowFullScreen />
 
 [Gravity Forms doesn't allow the following fields to be used in drag-and-drop columns](https://docs.gravityforms.com/working-with-columns/#known-issues-or-limitations) and Gravity PDF will match this behaviour:
 

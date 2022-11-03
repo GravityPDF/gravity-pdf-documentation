@@ -49,7 +49,7 @@ A *Download Shortcode* column can be found on the [PDF form list](managing-pdfs.
 
 If you enjoy video tutorials, watch this 14-minute video with Gravity PDF's lead developer as he takes you through using the [gravitypdf] shortcode with all three confirmation types. 
 
-<ResponsiveEmbed src="https://player.vimeo.com/video/665416429" allowFullScreen />
+<ResponsiveEmbed src="https://player.vimeo.com/video/665416429?dnt=1" allowFullScreen />
 
 ##### Text Confirmation
 

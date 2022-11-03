@@ -38,7 +38,7 @@ GFChart Image Charts does not currently support the Charting vs Time extension. 
 
 We've put together a quick-start guide to get you up and running fast with GFChart. For an in-depth guide, you should <a href="https://gfchart.com/documentation/?ref=24" rel="sponsored">review the GFChart documentation in full</a>.
 
-<ResponsiveEmbed src="https://www.youtube.com/embed/8PYT5GwWuCk" />
+<ResponsiveEmbed src="https://www.youtube-nocookie.com/embed/8PYT5GwWuCk" />
 
 1. Navigate to `Forms -> Settings -> GFChart` in your admin area and activate your GFChart license key. The GFChart Image Charts plugins **will NOT** work without a valid license key.
 1. Next, head to the `Forms -> Charts/Calculations` page in your admin area.
@@ -70,7 +70,7 @@ All *Reports for GFChart* templates have common settings that can be configured,
 
 ### Templates 
 
-<ResponsiveEmbed src="https://www.youtube.com/embed/KNABsUDYvD0" />
+<ResponsiveEmbed src="https://www.youtube-nocookie.com/embed/KNABsUDYvD0" />
 
 *Reports for GFChart* come with five unique report styles to choose from, with each report including two variants – a total of 15 different designs! The templates available are:
 
@@ -386,7 +386,7 @@ The ability to get a report emailed to you on a regular schedule is an important
 
 To help with the setup, we've instructions in 📽️ and 📝 format.
 
-<ResponsiveEmbed src="https://www.youtube.com/embed/Bta_GZMxma8" />
+<ResponsiveEmbed src="https://www.youtube-nocookie.com/embed/Bta_GZMxma8" />
 
 After installing the plugin, you'll have a new checkbox option on the Notification settings called *Schedule Notifications* which will allow you to enable this feature. When checked, you'll then be able to select the frequency of the report. Available options include:
 

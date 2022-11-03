@@ -83,7 +83,7 @@ Below is the list of settings available in the General section, with a brief des
 :::info
 If you enjoy learning through video, you can watch this 18-minute video with Gravity PDF's lead developer showing you how to set up multiple PDFs in a single Gravity Form, and use Conditional Logic to conditionally deliver different PDFs based on user input.
 
-<ResponsiveEmbed src="https://player.vimeo.com/video/671782212" allowfullscreen />
+<ResponsiveEmbed src="https://player.vimeo.com/video/671782212?dnt=1" allowfullscreen />
 :::
 
 ## Appearance Section 

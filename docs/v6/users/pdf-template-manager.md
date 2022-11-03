@@ -16,7 +16,7 @@ Templates are the backbone of Gravity PDF and **what give it so much power**. Th
 
 In this 6-minute video, Gravity PDF's lead developer takes you through opening and installing custom PDF templates via the PDF Template Manager, how to delete templates, and how to search and select them.
 
-<ResponsiveEmbed src="https://player.vimeo.com/video/665431569" allowFullScreen />
+<ResponsiveEmbed src="https://player.vimeo.com/video/665431569?dnt=1" allowFullScreen />
 
 ## Open the PDF Template Manager 
 

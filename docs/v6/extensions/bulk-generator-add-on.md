@@ -30,7 +30,7 @@ The REST API must be enabled to use this plugin.
 
 ## Configuring 
 
-<ResponsiveEmbed src="https://player.vimeo.com/video/665824467" allowFullScreen />
+<ResponsiveEmbed src="https://player.vimeo.com/video/665824467?dnt=1" allowFullScreen />
 
 The extension adds a new bulk action option called *Download PDF* on [Gravity Forms Entry List pages](https://docs.gravityforms.com/entries/). Like other bulk actions, you select the checkbox next to each entry you would like to generate PDFs for. To refine the entries, you can use Gravity Forms native filters to show only *Starred* or *Unread* entries, or use the entry search feature. If you've got a lot of entries, you can use Gravity Forms *Select All Entries* feature to include all paginated pages.
 

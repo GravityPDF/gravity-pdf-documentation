@@ -14,7 +14,7 @@ import ResponsiveEmbed from 'react-responsive-embed'
 
 In this 8-minute video, Gravity PDF's lead developer takes you through using the Gravity Forms Webhooks Add-on and sending messages to Slack with the Gravity PDF URL included.
 
-<ResponsiveEmbed src="https://player.vimeo.com/video/671783546" allowfullscreen /> 
+<ResponsiveEmbed src="https://player.vimeo.com/video/671783546?dnt=1" allowfullscreen /> 
 
 ## Request Body
 

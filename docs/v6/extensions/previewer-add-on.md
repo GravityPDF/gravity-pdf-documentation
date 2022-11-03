@@ -49,7 +49,7 @@ Refer to the Gravity Forms documentation linked above for further information ab
 
 Select the PDF that the end user will be able to preview. This dropdown setting allows you to choose any of the active PDFs [configured on the form](../users/setup-pdf.md). 
 
-<ResponsiveEmbed src="https://player.vimeo.com/video/694720548" allow="fullscreen" allowfullscreen />
+<ResponsiveEmbed src="https://player.vimeo.com/video/694720548?dnt=1" allow="fullscreen" allowfullscreen />
 
 ### Download Preview
 
@@ -59,7 +59,7 @@ For security reasons, after a PDF is downloaded the file is automatically delete
 
 This setting is disabled by default.
 
-<ResponsiveEmbed src="https://player.vimeo.com/video/694720230" allow="fullscreen" allowfullscreen />
+<ResponsiveEmbed src="https://player.vimeo.com/video/694720230?dnt=1" allow="fullscreen" allowfullscreen />
 
 ### Appearance
 
@@ -67,7 +67,7 @@ Select a light or dark appearance for the PDF viewer, or choose automatic to use
 
 The default Appearance is set to _Automatic_
 
-<ResponsiveEmbed src="https://player.vimeo.com/video/694719979" allow="fullscreen" allowfullscreen />
+<ResponsiveEmbed src="https://player.vimeo.com/video/694719979?dnt=1" allow="fullscreen" allowfullscreen />
 
 ### Zoom Level
 
@@ -75,7 +75,7 @@ Control the standard zoom level to use when a PDF is first loaded into the viewe
 
 The default Zoom Level is set to _Page Width_
 
-<ResponsiveEmbed src="https://player.vimeo.com/video/694720933" allow="fullscreen" allowfullscreen />
+<ResponsiveEmbed src="https://player.vimeo.com/video/694720933?dnt=1" allow="fullscreen" allowfullscreen />
 
 ### Page Scrolling
 
@@ -83,7 +83,7 @@ Display the pages of a PDF vertically or horizontally in the viewer.
 
 _Page Scrolling_ defaults to _Vertical_
 
-<ResponsiveEmbed src="https://player.vimeo.com/video/694720465" allow="fullscreen" allowfullscreen />
+<ResponsiveEmbed src="https://player.vimeo.com/video/694720465?dnt=1" allow="fullscreen" allowfullscreen />
 
 ### Spread
 
@@ -91,7 +91,7 @@ Display PDF pages with an odd or even spread in the PDF viewer. When enabled, pa
 
 This setting is only available when _[Page Scrolling](#page-scrolling)_ is set to _Vertical_. The setting defaults to _No Spread_.
 
-<ResponsiveEmbed src="https://player.vimeo.com/video/694720700" allow="fullscreen" allowfullscreen />
+<ResponsiveEmbed src="https://player.vimeo.com/video/694720700?dnt=1" allow="fullscreen" allowfullscreen />
 
 ### Preview Height
 
@@ -99,11 +99,11 @@ The height in pixels the PDF viewer should be displayed on the front-end of the 
 
 The default height is 600px.
 
-<ResponsiveEmbed src="https://player.vimeo.com/video/694720595" allow="fullscreen" allowfullscreen />
+<ResponsiveEmbed src="https://player.vimeo.com/video/694720595?dnt=1" allow="fullscreen" allowfullscreen />
 
 ### Watermark
 
-<ResponsiveEmbed src="https://player.vimeo.com/video/694720778" allow="fullscreen" allowfullscreen />
+<ResponsiveEmbed src="https://player.vimeo.com/video/694720778?dnt=1" allow="fullscreen" allowfullscreen />
 
 When enabled, _Watermark Text_ youu define is overlaid diagonally on each page of PDF displayed in the viewer. You can change the font of the text watermark using the _Watermark Font_ dropdown setting.
 
@@ -113,13 +113,13 @@ The _Watermark_ setting is disabled by default.
 
 By default, users cannot right-click on PDF pages to access the context menu. This prevents people saving the page of the document as an image (which some browsers support). You can turn this protection feature off by toggling on this setting.
 
-<ResponsiveEmbed src="https://player.vimeo.com/video/694719993" allow="fullscreen" allowfullscreen />
+<ResponsiveEmbed src="https://player.vimeo.com/video/694719993?dnt=1" allow="fullscreen" allowfullscreen />
 
 ### Disable Text-Copying Protection
 
 By default, users cannot copy any text on PDF pages. Enable this setting to render the text in the [Document Object Model (DOM)](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction), making it selectable for users and providing better accessibility for Screen Readers. When enabled, the [grab-scroll feature](#grab-scroll) will be turned off so that text can be selected. 
 
-<ResponsiveEmbed src="https://player.vimeo.com/video/694720034" allow="fullscreen" allowfullscreen />
+<ResponsiveEmbed src="https://player.vimeo.com/video/694720034?dnt=1" allow="fullscreen" allowfullscreen />
 
 ## PDF Viewer
 
@@ -144,13 +144,13 @@ The PDF viewer will automatically adapt to the available width so that it looks 
 
 You can scroll both vertical and horizontal with ease by grabbing (click-hold or touch-hold) a page of the PDF and moving your pointer on the screen. This feature is turned off when you [disable text-copying protection](#disable-text-copying-protection) so that text can be correctly selected.
 
-<ResponsiveEmbed src="https://player.vimeo.com/video/694720294" allow="fullscreen" allowfullscreen />
+<ResponsiveEmbed src="https://player.vimeo.com/video/694720294?dnt=1" allow="fullscreen" allowfullscreen />
 
 ## Multiple Previews
 
 If you've multiple PDFs configured on a form you can allow users to preview each of those documents. Add multiple *PDF Preview* fields to the form and adjust the _[PDF to Preview](#pdf-to-preview)_ setting to display each document. You can even include the fields in columns [using Gravity Forms Drag and Drop column feature](../users/columns.md).
 
-<ResponsiveEmbed src="https://player.vimeo.com/video/694720365" allow="fullscreen" allowfullscreen />
+<ResponsiveEmbed src="https://player.vimeo.com/video/694720365?dnt=1" allow="fullscreen" allowfullscreen />
 
 ## Right to Left (RTL) Mode
 
@@ -161,7 +161,7 @@ If the PDF selected in _[PDF to Preview](#pdf-to-preview)_ has [RTL enabled](../
 
 If the _WordPress Site Language_ setting (found on the Settings -> General admin page) is set to a RTL language the viewer zoom dropdown will be reversed, with the text on the right and the chevron on the left. 
 
-<ResponsiveEmbed src="https://player.vimeo.com/video/694720630" allow="fullscreen" allowfullscreen />
+<ResponsiveEmbed src="https://player.vimeo.com/video/694720630?dnt=1" allow="fullscreen" allowfullscreen />
 
 ## Gravity Flow
 
