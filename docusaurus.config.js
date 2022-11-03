@@ -87,13 +87,18 @@ module.exports = {
             },
 
             {
-              label: 'YouTube',
-              href: 'https://www.youtube.com/c/gravitypdf',
+              label: 'Facebook',
+              href: 'https://www.facebook.com/gravitypdf',
             },
 
             {
-              label: 'Facebook',
-              href: 'https://www.facebook.com/gravitypdf',
+              label: 'Vimeo',
+              href: 'https://vimeo.com/gravitypdf',
+            },
+
+            {
+              label: 'YouTube',
+              href: 'https://www.youtube.com/@gravitypdf',
             },
           ],
         },
@@ -156,12 +161,15 @@ module.exports = {
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
-        gtag: {
-          trackingID: 'G-WN1800Y2KF',
-          anonymizeIP: true,
-        },
-
       },
     ],
+  ],
+  scripts: [
+    {
+      src: 'https://simon.gravitypdf.com/js/script.outbound-links.js',
+      defer: true,
+      'data-domain': 'docs.gravitypdf.com',
+      'data-api': 'https://simon.gravitypdf.com/js/event'
+    }
   ],
 };
