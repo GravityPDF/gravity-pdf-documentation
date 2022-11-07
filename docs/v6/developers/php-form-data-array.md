@@ -618,17 +618,17 @@ You'll need <a href="https://gravitywiz.com/documentation/gravity-forms-nested-f
 
 ```
 /* 
-* 3 is the ID of our field 
+* 3 is the ID of our field in the Parent Form
 */
 $nested_ids = explode( ',', $form_data['field'][3] );
 foreach ( $nested_ids as $id ) {
+  /* 
+   * $nested_form_data contains the individual Child Form entry in the same structure as the $form_data array.
+   */
     $nested_form_data = GPDFAPI::get_form_data( $id );
     if ( ! is_wp_error( $nested_form_data ) ) {
-        /* 
-         * Output required content for this entry using the $nested_form_data array, 
-         * which has the same structure as $form_data (but for the current nested form entry) 
-         */
-         echo esc_html( $nested_form_data['field'][5] ); 
+         /* Output field ID 5 from each Child entry */
+         echo esc_html( $nested_form_data['field'][5] ) . '<br>'; 
     }
 }
 ```
