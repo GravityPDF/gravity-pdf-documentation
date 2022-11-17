@@ -6,7 +6,11 @@ description: "Learn the theory behind Gravity PDF's template system and dive int
 
 ## Introduction 
 
-Before we jump right into the code, we're going to discuss the architecture Gravity PDF uses to register and load custom templates, how multisite sites differ from standard WordPress installations and briefly touch on the template hierarchy.
+A template file is used by Gravity PDF to tell the rendering engine exactly how to generate a PDF (i.e. they control the look and feel of the document). These templates are written using HTML, CSS, and PHP. Before we jump right into the code, we're going to discuss the architecture Gravity PDF uses to register and load custom templates, how multisite sites differ from standard WordPress installations, and briefly touch on the template hierarchy.
+
+:::info
+This documentation is written for _developers_ who have a solid understanding of HTML / CSS, PHP, and WordPress development. If you don't have the time or knowledge to do it yourself, [we offer a Bespoke PDF service and can tailor a solution specifically for you](https://gravitypdf.com/bespoke/).
+:::
 
 ## PDF Working Directory 
 
