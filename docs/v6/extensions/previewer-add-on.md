@@ -8,12 +8,12 @@ import ResponsiveEmbed from 'react-responsive-embed'
 
 ![Previewer add-on](https://resources.gravitypdf.com/uploads/edd/2017/08/cover-artwork-1.png)
 
-*Previewer* is a premium plugin for Gravity PDF that allows the user to review the PDF(s) before the form has been submitted. It's a perfect tool for providing an on-screen preview of the document as the user fills out your form. The extension pairs really nicely [with a bespoke PDF](https://gravitypdf.com/integration-services/) or one of [our premium PDF templates](https://gravitypdf.com/store/#templates).
+*Previewer* is a premium plugin for Gravity PDF that allows the user to review the Gravity PDF-generated document(s) before the form has been submitted. It's the perfect tool for providing an on-screen preview of the document(s) while users fill in you forms. The extension pairs really nicely [with a Bespoke PDF](https://gravitypdf.com/bespoke/) or one of [our premium PDF templates](https://gravitypdf.com/store/#templates).
 
 You can purchase the *Previewer* plugin from our [Extension Shop](https://gravitypdf.com/shop/previewer-add-on/). This guide will walk you through installing and configuring *Previewer* to its full potential.
 
 :::info
-This documentation refers to version 2.0+ of the Gravity PDF Previewer add-on. [The v1 documentation can be found here](../../v5/shop-plugin-previewer-add-on.md). 
+This documentation refers to version 3 of the Gravity PDF Previewer add-on. [The v2 documentation can be found here](../../v5/shop-plugin-previewer-add-on.md) and [the v1 documentation here](../../v4/shop-plugin-previewer-add-on.md). 
 :::
 
 ## Installation 
@@ -21,7 +21,7 @@ This documentation refers to version 2.0+ of the Gravity PDF Previewer add-on. [
 [Please follow our installation guide](installing-upgrading-extensions.md), which provides instructions for uploading the add-on to your WordPress website and adding your license key for automatic updates.
 
 :::note
-The REST API must be enabled to use this plugin.
+The REST API (with public access) must be enabled to use this plugin.
 :::
 
 ## Configuring 
@@ -32,7 +32,7 @@ This extension adds a new field called **PDF Preview** to the [Gravity Forms Edi
 
 [![The PDF Previewer field options in the Form Editor](https://resources.gravitypdf.com/uploads/2022/04/2.0-Previewer-Add-On-Form-Editor-Field-Settings.png)](https://resources.gravitypdf.com/uploads/2022/04/2.0-Previewer-Add-On-Form-Editor-Field-Settings.png)
 
-Once you've added the *PDF Preview* field to your form, you'll have a number of settings that can be used to change the look and feel of PDF viewer. The next few sections describes in detail what each setting does.
+Once you've added the *PDF Preview* field to your form, you'll have a number of settings that can be used to change the look and feel of the viewer. The next few sections describes in detail what each setting does.
 
 ### Common Settings
 
@@ -107,7 +107,7 @@ The default height is 600px.
 
 When enabled, _Watermark Text_ youu define is overlaid diagonally on each page of PDF displayed in the viewer. You can change the font of the text watermark using the _Watermark Font_ dropdown setting.
 
-The _Watermark_ setting is disabled by default.
+The _Watermark_ setting is disabled by default. When it is enabled, the text watermark will override any watermark settings [configured by the Gravity PDF Watermark extension](watermark-add-on.md). When disabled, the Gravity PDF Watermark settings will be preserved. 
 
 ### Disable Right-Click Protection
 
@@ -184,20 +184,15 @@ If you'd like to translate the plugin into your own language, or change the exis
 
 If using the File Upload field with the Multi-File Upload option disabled, the Previewer will need to be on a different page in the form ([using Gravity Forms Page field](https://docs.gravityforms.com/page-break/)) for those uploads to display in the PDF preview. This is a limitation of how the File Upload field works.
 
-## Upgrade from v1
+## Upgrade from v2
 
-Users who use the out-of-the-box features of _Previewer_ should have a seamless upgrade experience to v2, with no breaking changes. If you do have any issues, before [opening a support ticket](https://gravitypdf.com/support/https://gravitypdf.com/support/) try clear both your website cache (if using a caching plugin) and your browser cache and test again. 
+Users who use the out-of-the-box features of _Previewer_ should have a seamless upgrade experience to v3. There are only two changes in v3 that might cause an issue for some users. 
 
-The security in v2 has been enhanced and the right-click context menu has been disabled when used with the PDF viewer. If you relied on this functionality to save images of the PDF pages you will need to [toggle the associated security setting to disable](#disable-right-click-protection).
+These changes include:
 
-The color scheme has been tweaked, and the grey in v1 has been strengthened/sharpened to create a more pleasant viewing experience. If you would like to revert to the v1 color scheme you can add the following CSS in the Customizer's Additional CSS section:
+1. The [Gravity PDF Watermark extension](watermark-add-on.md) will apply any configured text or image watermark if the [Previewer Watermark feature is disabled](#watermark). To bypass the new functionality, you may enable the Previewer Watermark feature and set the Watermark Text to an empty space ` ` character. Save the form when done and then verify no watermark is displayed in the Previewer.
 
-```css 
-:root {
-  --dark-mode-viewer-bg-color: #7b7b7b;
-  --dark-mode-toolbar-bg-color: #4a4a4a;
-}
-```
+2. [CSS variables were introduced in v2](../../v5/shop-plugin-previewer-add-on.md#css-variables) which allowed developers to more easily change the Previewer UI. Unfortunately we didn't prefix these variables, and they could cause conflicts with other plugins that used variables with the same name. In v3 we've renamed all CSS variables defined by the plugin, prefixed each with `gpdf-`, and added more variables for greater control of the design. If you've made changes to the default CSS variable value you will need to update your codebase to be v3-compatible. [See the full list of CSS variables defined in v3](#css-variables).
 
 ## Developers 
 
@@ -242,48 +237,154 @@ The following CSS variables are defined by the plugin and are available to easil
 
 ```css 
 :root {
-  --viewer-bg-color: rgba(190, 190, 190, 1);
+  --gpdf-prev-dir-factor: 1;
+  --gpdf-prev-scale-select-container-width: 140px;
+  --gpdf-prev-scale-select-overflow: 22px;
+  --gpdf-prev-toolbar-icon-opacity: 0.7;
+  --gpdf-prev-main-color: rgba(12, 12, 13, 1);
+  --gpdf-prev-body-bg-color: rgba(190, 190, 190, 1);
+  --gpdf-prev-light-mode-viewer-bg-color: #bebebe;
+  --gpdf-prev-light-mode-refresh-button-hover-color: #c3c2c2;
+  --gpdf-prev-scrollbar-color: auto;
+  --gpdf-prev-scrollbar-bg-color: auto;
+  --gpdf-prev-toolbar-icon-bg-color: rgba(0, 0, 0, 1);
+  --gpdf-prev-toolbar-icon-hover-bg-color: rgba(0, 0, 0, 1);
+  --gpdf-prev-toolbar-bg-color: rgba(249, 249, 250, 1);
+  --gpdf-prev-toolbar-border-color: rgba(204, 204, 204, 1);
+  --gpdf-prev-button-hover-color: rgba(221, 222, 223, 1);
+  --gpdf-prev-toggled-btn-color: rgba(0, 0, 0, 1);
+  --gpdf-prev-toggled-btn-bg-color: rgba(0, 0, 0, 0.3);
+  --gpdf-prev-toggled-hover-active-btn-color: rgba(0, 0, 0, 0.4);
+  --gpdf-prev-dropdown-btn-bg-color: rgba(215, 215, 219, 1);
+  --gpdf-prev-separator-color: rgba(0, 0, 0, 0.3);
+  --gpdf-prev-field-color: rgba(6, 6, 6, 1);
+  --gpdf-prev-field-bg-color: rgba(255, 255, 255, 1);
+  --gpdf-prev-field-border-color: rgba(187, 187, 188, 1);
+  --gpdf-prev-doorhanger-bg-color: rgba(255, 255, 255, 1);
+  --gpdf-prev-doorhanger-border-color: rgba(12, 12, 13, 0.2);
+  --gpdf-prev-doorhanger-hover-color: rgba(12, 12, 13, 1);
+  --gpdf-prev-doorhanger-hover-bg-color: rgba(237, 237, 237, 1);
+  --gpdf-prev-dialog-button-border: 0 none;
+  --gpdf-prev-dialog-button-hover-bg-color: rgba(12, 12, 13, 0.3);
+  --gpdf-prev-loading-icon: url(../images/loading.svg);
+  --gpdf-prev-toolbar-button-menu-arrow-icon: url(../images/toolbar-button-menu-arrow.svg);
+  --gpdf-prev-toolbar-button-page-up-icon: url(../images/toolbar-button-page-up.svg);
+  --gpdf-prev-toolbar-button-page-down-icon: url(../images/toolbar-button-page-down.svg);
+  --gpdf-prev-toolbar-button-zoom-out-icon: url(../images/toolbar-button-zoom-out.svg);
+  --gpdf-prev-toolbar-button-zoom-in-icon: url(../images/toolbar-button-zoom-in.svg);
+  --gpdf-prev-toolbar-button-download-icon: url(../images/toolbar-button-download.svg);
+  --gpdf-prev-toolbar-button-refresh-icon: url(../images/refresh.svg);
+  --gpdf-prev-loading-color: rgba(25, 25, 25, 1);
+  --gpdf-prev-dark-mode-viewer-bg-color: rgb(75, 75, 75, 1);
+  --gpdf-prev-dark-mode-toolbar-bg-color: rgba(45, 45, 45, 1);
+  --gpdf-prev-dark-mode-toolbar-border-color: rgba(0, 0, 0, 0.35);
+  --gpdf-prev-dark-mode-field-bg-color: rgba(75, 75, 75, 1);
+  --gpdf-prev-dark-mode-field-border-color: rgba(0, 0, 0, 0.32);
+  --gpdf-prev-dark-mode-field-color: rgba(235, 235, 235, 1);
+  --gpdf-prev-dark-mode-toolbar-text-color: rgba(242, 242, 242, 1);
+  --gpdf-prev-dark-mode-button-hover-color: rgba(95, 95, 95, 1);
+  --gpdf-prev-dark-mode-field-bg-color-hover: rgba(95, 95, 95, 1);
+  --gpdf-prev-dark-mode-loading-color: rgba(235, 235, 235, 1);
+  --gpdf-prev-dark-mode-loading-btn-border-color: rgba(235, 235, 235, 1);
+  --gpdf-prev-dark-mode-loading-btn-bg-color: rgba(95, 95, 95, 1);
+  --gpdf-prev-dark-mode-split-toolbar-separator-color: #848383;
+  --gpdf-prev-field-focus: rgba(10, 132, 255, 1);
+  --gpdf-prev-toolbar-font-size: 12px;
+  --gpdf-prev-toolbar-input-font-size: 12px;
+  --gpdf-prev-toolbar-small-screen-input-font-size: 18px;
+  --gpdf-prev-toolbar-responsive-height: 47px;
+  --gpdf-prev-toolbar-small-screen-font-size: 15px;
+  --gpdf-prev-toolbar-responsive-icon-size: 20px;
+  --gpdf-prev-toolbar-responsive-button-size: 20px;
+  --gpdf-prev-toolbar-responsive-select-pointer-top: 10px;
+  --gpdf-prev-toolbar-responsive-buttons-top-padding: 0px;
+  --gpdf-prev-toolbar-responsive-label-top-padding: 13px;
+  --gpdf-prev-toolbar-page-number-input-box-width: 45px;
 
-  --toolbar-icon-opacity: 0.8;
-  --toolbar-main-color: rgba(12, 12, 13, 1);
-  --toolbar-icon-bg-color: rgba(0, 0, 0, 1);
-  --toolbar-icon-hover-bg-color: rgba(0, 0, 0, 1);
-  --toolbar-bg-color: rgba(249, 249, 250, 1);
-  --toolbar-border-color: rgba(0, 0, 0, 0.15);
-  --toolbar-option-bg-color: rgba(255, 255, 255, 1);
+  --gpdf-prev-xfa-unfocused-field-background: url("data:image/svg+xml;charset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13);'/></svg>");
 
-  --button-hover-color: rgba(221, 222, 223, 1);
-  --toggled-btn-color: rgba(0, 0, 0, 1);
-  --toggled-btn-bg-color: rgba(0, 0, 0, 0.3);
-  --toggled-hover-active-btn-color: rgba(0, 0, 0, 0.4);
-  --dropdown-btn-bg-color: rgba(215, 215, 219, 1);
+  --gpdf-prev-focus-outline: solid 2px blue;
+  --gpdf-prev-hover-outline: dashed 2px blue;
+  --gpdf-prev-freetext-line-height: 1.35;
+  --gpdf-prev-freetext-padding: 2px;
+  
+  --gpdf-prev-viewer-container-height: 0;
+  --gpdf-prev-pdf-viewer-padding-bottom: 0;
+  --gpdf-prev-page-margin: 1px auto -8px;
+  --gpdf-prev-page-border: 9px solid transparent;
+  --gpdf-prev-page-border-image: url(../images/shadow.png) 9 9 repeat;
+  --gpdf-prev-spread-horizontal-wrapped-margin-lr: -3.5px;
+  --gpdf-prev-scale-factor: 1;
+}
 
-  --separator-color: rgba(0, 0, 0, 0.3);
+[dir="rtl"]:root {
+  --gpdf-prev-dir-factor: -1;
+}
 
-  --field-color: rgba(6, 6, 6, 1);
-  --field-border-color: rgba(0, 0, 0, 0.3);
-  --field-bg-color: rgba(255, 255, 255, 1);
-  --field-focus: rgba(10, 132, 255, 1);
+@media (forced-colors: active) {
+  :root {
+    --gpdf-prev-focus-outline: solid 3px ButtonText;
+    --gpdf-prev-hover-outline: dashed 3px ButtonText;
+  }
 
-  --loading-color: rgba(25, 25, 25, 1);
-  --loading-btn-bg-color: rgba(215, 215, 215, 1);
-  --loading-btn-border-color: rgba(25, 25, 25, 1);
+  .xfaLayer *:required {
+    outline: 1.5px solid selectedItem;
+  }
+}
 
-  --dark-mode-viewer-bg-color: rgb(75, 75, 75, 1);
+@media screen and (forced-colors: active) {
+  :root {
+    --gpdf-prev-button-hover-color: Highlight;
+    --gpdf-prev-doorhanger-hover-bg-color: Highlight;
+    --gpdf-prev-toolbar-icon-opacity: 1;
+    --gpdf-prev-toolbar-icon-bg-color: ButtonText;
+    --gpdf-prev-toolbar-icon-hover-bg-color: ButtonFace;
+    --gpdf-prev-toggled-btn-color: HighlightText;
+    --gpdf-prev-toggled-btn-bg-color: LinkText;
+    --gpdf-prev-doorhanger-hover-color: ButtonFace;
+    --gpdf-prev-doorhanger-border-color-whcm: 1px solid ButtonText;
+    --gpdf-prev-doorhanger-triangle-opacity-whcm: 0;
+    --gpdf-prev-dialog-button-border: 1px solid Highlight;
+    --gpdf-prev-dialog-button-hover-bg-color: Highlight;
+    --gpdf-prev-dialog-button-hover-color: ButtonFace;
+    --gpdf-prev-field-border-color: ButtonText;
+    --gpdf-prev-pdf-viewer-padding-bottom: 9px;
+    --gpdf-prev-page-margin: 8px auto -1px;
+    --gpdf-prev-page-border: 1px solid CanvasText;
+    --gpdf-prev-page-border-image: none;
+    --gpdf-prev-spread-horizontal-wrapped-margin-lr: 3.5px;
+  }
+}
 
-  --dark-mode-toolbar-bg-color: rgba(45, 45, 45, 1);
-  --dark-mode-button-hover-color: rgba(95, 95, 95, 1);
-  --dark-mode-toolbar-text-color: rgba(242, 242, 242, 1);
-  --dark-mode-toolbar-border-color: rgba(0, 0, 0, 0.35);
+@media (prefers-color-scheme: dark) {
+  :root {
+    --gpdf-prev-main-color: rgba(249, 249, 250, 1);
+    --gpdf-prev-scrollbar-color: rgba(121, 121, 123, 1);
+    --gpdf-prev-scrollbar-bg-color: rgba(35, 35, 39, 1);
+    --gpdf-prev-toolbar-icon-bg-color: rgba(255, 255, 255, 1);
+    --gpdf-prev-toolbar-icon-hover-bg-color: rgba(255, 255, 255, 1);
+    --gpdf-prev-toolbar-bg-color: rgba(56, 56, 61, 1);
+    --gpdf-prev-toolbar-border-color: rgba(12, 12, 13, 1);
+    --gpdf-prev-button-hover-color: rgba(102, 102, 103, 1);
+    --gpdf-prev-toggled-btn-color: rgba(255, 255, 255, 1);
+    --gpdf-prev-toggled-btn-bg-color: rgba(0, 0, 0, 0.3);
+    --gpdf-prev-toggled-hover-active-btn-color: rgba(0, 0, 0, 0.4);
+    --gpdf-prev-dropdown-btn-bg-color: rgba(74, 74, 79, 1);
+    --gpdf-prev-separator-color: rgba(0, 0, 0, 0.3);
+    --gpdf-prev-field-color: rgba(250, 250, 250, 1);
+    --gpdf-prev-field-bg-color: rgba(64, 64, 68, 1);
+    --gpdf-prev-field-border-color: rgba(115, 115, 115, 1);
+    --gpdf-prev-doorhanger-bg-color: rgba(74, 74, 79, 1);
+    --gpdf-prev-doorhanger-border-color: rgba(39, 39, 43, 1);
+    --gpdf-prev-doorhanger-hover-color: rgba(249, 249, 250, 1);
+    --gpdf-prev-doorhanger-hover-bg-color: rgba(93, 94, 98, 1);
+    --gpdf-prev-dialog-button-hover-bg-color: rgba(115, 115, 115, 1);
 
-  --dark-mode-field-bg-color: rgba(75, 75, 75, 1);
-  --dark-mode-field-bg-color-hover: rgba(95, 95, 95, 1);
-  --dark-mode-field-border-color: rgba(0, 0, 0, 0.32);
-  --dark-mode-field-color: rgba(235, 235, 235, 1);
-
-  --dark-mode-loading-color: rgba(235, 235, 235, 1);
-  --dark-mode-loading-btn-bg-color: rgba(95, 95, 95, 1);
-  --dark-mode-loading-btn-border-color: rgba(235, 235, 235, 1);
+    /* This image is used in <input> elements, which unfortunately means that
+     * the `mask-image` approach used with all of the other images doesn't work
+     * here; hence why we still have two versions of this particular image. */
+    --gpdf-prev-loading-icon: url(../images/loading-dark.svg);
+  }
 }
 ```
 
