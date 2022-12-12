@@ -6,7 +6,7 @@ description: "This Gravity PDF extension enables a friendly loading indicator wh
 
 import ResponsiveEmbed from 'react-responsive-embed'
 
-![The Enhanced Download extension cover art. It includes an icon of a PDF document and an arrow pointing downward. The text 'Enhanced Download' is displayed.](https://resources.gravitypdf.com/uploads/2022/12/enhanced-download-cover-art.png)
+![The Enhanced Download extension cover art. It includes an icon of a PDF document and an arrow pointing downward. The text 'Enhanced Download' is displayed.]([https://resources.gravitypdf.com/uploads/2022/12/enhanced-download-cover-art.png](https://resources.gravitypdf.com/uploads/2022/12/enhanced-download-cover-art1.png))
 
 *Enhanced Download* is a premium plugin for Gravity PDF that can display a user-friendly modal window + loading indicator when a PDF is generated on the server. It is a useful feature when Gravity PDF is generating complex PDFs that can take a few seconds (or more) to generate, or when you've [set up a Redirect Confirmation to a PDF](../users/shortcodes-and-mergetags.md#redirect-confirmation).  
 
