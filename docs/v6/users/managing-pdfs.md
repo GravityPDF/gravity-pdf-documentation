@@ -39,7 +39,7 @@ The PDF list contains four columns which provide an overview of the PDFs current
 * If you've configured the PDF to attach to any of the form's notifications a list of those notifications will show in this column.
 
 ### Shortcode
-* This column displays a sample shortcode that generates a download link for the PDF. Use it in Gravity Forms Confirmations or Notifications. [See our shortcode documentation](shortcodes-and-mergetags.md) for more details about the `[gravitypdf]` shortcode.
+* This column displays a _Copy_ button that will save the associated PDF download link shortcode to your clipboard. You can then paste it into Gravity Forms Confirmations or Notifications. [See our shortcode documentation](shortcodes-and-mergetags.md) for more details about the `[gravitypdf]` shortcode.
 
 ## Actions 
 
