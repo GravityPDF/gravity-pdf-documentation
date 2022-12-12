@@ -8,7 +8,7 @@ description: "Watermark is a premium plugin for Gravity PDF that allows you to e
 
 *Watermark* is a premium plugin for Gravity PDF that allows you to easily add a watermark to any Gravity PDF-generated document. You can include a text- or image-based watermark, control the watermark opacity, as well as the font.
 
-You can purchase the *Watermark* plugin from our [Extension Shop](https://gravitypdf.com/shop/watermark-add-on/). This guide will walk you through installing and configuring *Watermark* to its full potential.
+You can purchase the *Watermark* plugin from the [Extension Shop](https://gravitypdf.com/shop/watermark-add-on/). This guide will walk you through installing and configuring *Watermark* to its full potential.
 
 ## Installation 
 

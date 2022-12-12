@@ -8,7 +8,7 @@ import ResponsiveEmbed from 'react-responsive-embed'
 
 ![Gravity PDF reports for GFChart Icon](https://resources.gravitypdf.com/uploads/2020/05/gravitypdf-reports-for-gfchart-cover-artwork-opt.png)
 
-*Reports for GFChart* is a premium plugin for Gravity PDF that creates beautiful PDF Reports <a href="https://gfchart.com/?ref=24" rel="sponsored">using the third-party plugin GFChart</a>. The extension includes 15 report designs for you to choose from and supports all core GFChart types, including Pie, Bar, Column (horizontal bar), Progress Bar, and Calculations. [You can purchase the *Reports for GFChart* plugin from our Extension Shop](https://gravitypdf.com/shop/reports-for-gfchart-add-on/). This guide will walk you through installing and configuring *Reports for GFChart* to its full potential.
+*Reports for GFChart* is a premium plugin for Gravity PDF that creates beautiful PDF Reports <a href="https://gfchart.com/?ref=24" rel="sponsored">using the third-party plugin GFChart</a>. The extension includes 15 report designs for you to choose from and supports all core GFChart types, including Pie, Bar, Column (horizontal bar), Progress Bar, and Calculations. [You can purchase the *Reports for GFChart* plugin from the Extension Shop](https://gravitypdf.com/shop/reports-for-gfchart-add-on/). This guide will walk you through installing and configuring *Reports for GFChart* to its full potential.
 
 ## Installation 
 

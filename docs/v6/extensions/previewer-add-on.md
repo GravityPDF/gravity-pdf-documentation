@@ -10,7 +10,7 @@ import ResponsiveEmbed from 'react-responsive-embed'
 
 *Previewer* is a premium plugin for Gravity PDF that allows the user to review the Gravity PDF-generated document(s) before the form has been submitted. It's the perfect tool for providing an on-screen preview of the document(s) while users fill in you forms. The extension pairs really nicely [with a Bespoke PDF](https://gravitypdf.com/bespoke/) or one of [our premium PDF templates](https://gravitypdf.com/store/#templates).
 
-You can purchase the *Previewer* plugin from our [Extension Shop](https://gravitypdf.com/shop/previewer-add-on/). This guide will walk you through installing and configuring *Previewer* to its full potential.
+You can purchase the *Previewer* plugin from the [Extension Shop](https://gravitypdf.com/shop/previewer-add-on/). This guide will walk you through installing and configuring *Previewer* to its full potential.
 
 :::info
 This documentation refers to version 3 of the Gravity PDF Previewer add-on. [The v2 documentation can be found here](../../v5/shop-plugin-previewer-add-on.md) and [the v1 documentation here](../../v4/shop-plugin-previewer-add-on.md). 
