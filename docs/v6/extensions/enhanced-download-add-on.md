@@ -326,4 +326,4 @@ These best practices have been put in place when displaying the loading indicato
 5. When the modal is closed, it is hidden with `display: none` and won't be seen on-screen or by assistive technology.
 6. The modal can be interacted with and closed using a keyboard or pointer device / touch.
 7. The modal contains a `<div>` tag with `role="alertdialog"` and `aria-live="polite"` so assistive technology can read out changes in state.
-8. [The color contrast in the modal passes WGAG AAA requirements](https://www.w3.org/WAI/WCAG2AAA-Conformance).
+8. [The color contrast in the modal passes WGAG 2.0 AAA requirements](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast7.html).
