@@ -6,7 +6,7 @@ description: "This Gravity PDF extension enables a friendly loading indicator wh
 
 import ResponsiveEmbed from 'react-responsive-embed'
 
-![The Enhanced Download extension cover art. It includes an icon of a PDF document and an arrow pointing downward. The text 'Enhanced Download' is displayed.]([https://resources.gravitypdf.com/uploads/2022/12/enhanced-download-cover-art.png](https://resources.gravitypdf.com/uploads/2022/12/enhanced-download-cover-art1.png))
+![The Enhanced Download extension cover art. It includes an icon of a PDF document and an arrow pointing downward. The text 'Enhanced Download' is displayed.](https://resources.gravitypdf.com/uploads/2022/12/enhanced-download-cover-art1.png)
 
 *Enhanced Download* is a premium plugin for Gravity PDF that can display a user-friendly modal window + loading indicator when a PDF is generated on the server. It is a useful feature when Gravity PDF is generating complex PDFs that can take a few seconds (or more) to generate, or when you've [set up a Redirect Confirmation to a PDF](../users/shortcodes-and-mergetags.md#redirect-confirmation).  
 
@@ -62,7 +62,7 @@ For _Enhanced Download_ to function on the Entry List page, you'll need to ensur
 
 ### Global Settings
 
-![A screenshot of the plugin's global settings WordPress admin page, each of which are covered in detail in the next section of this documentation.](https://resources.gravitypdf.com/uploads/2022/12/enhanced-download-extension-settings-1.png)
+[[A screenshot of the plugin's global settings WordPress admin page, each of which are covered in detail in the next section of this documentation.](https://resources.gravitypdf.com/uploads/2022/12/enhanced-download-extension-settings-1.png)
 
 Located at `Forms -> Settings -> PDF -> Extensions` in your WordPress Admin area, a number of global settings are available for the plugin. 
 
