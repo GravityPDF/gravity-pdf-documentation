@@ -79,6 +79,10 @@ The [redirect confirmation](https://resources.gravitypdf.com/uploads/2022/03/v6.
 
 Submit a test entry and verify the PDF link is displayed correct, and you can view the document when selected.
 
+:::tip
+When using PDF Redirect Confirmations, you can significantly improve the user experience [by using the Gravity PDF Enhanced Download extension](https://gravitypdf.com/shop/enhanced-download-add-on/).
+:::
+
 :::note
 If using the [PDF URL feature](#signed-optional) with the redirect method, the `Pass Field Data Via Query String` option will be ignored.
 ::: 
