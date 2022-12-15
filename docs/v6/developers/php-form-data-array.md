@@ -480,7 +480,7 @@ if ( is_array( $form_data['field']['48_path'] ) ) { /* make sure you use the PAT
          $extension = strtolower( pathinfo( $path, PATHINFO_EXTENSION ) );
 
          if ( in_array( $extension, $allowed_extensions ) && is_file( $path ) ) { /* verify path has an image extension and it exists on the server */
-              echo '<img src="' . esc_url( $path ) . '" width="200" />';
+              echo '<img src="' . esc_attr( $path ) . '" width="200" />';
          }
     }
 }
@@ -531,7 +531,7 @@ echo esc_html( $form_data['signature_details_id'][39]['height'] ); /* the signat
 
 /* Output signature if it exists (this prevents a red X showing up in the PDF when the image doesn't exist) */
 if ( is_file( $form_data['signature_details_id'][39]['path'] ) ) {
-    echo '<img src="' . esc_url( $form_data['signature_details_id'][39]['path'] ) . '" width="150" />'; /* best to use the path to reference the image and check it exists on the server first */
+    echo '<img src="' . esc_attr( $form_data['signature_details_id'][39]['path'] ) . '" width="150" />'; /* best to use the path to reference the image and check it exists on the server first */
 }
 ```
 
@@ -577,7 +577,7 @@ echo esc_html( $form_data['field'][3]['url'] ); /* The URL of the uploaded image
 
 $path = isset( $form_data['field'][3]['path'] ) ? $form_data['field'][3]['path'] : ''; /* The path to the uploaded image (if we can locate it) */
 if ( is_file( $path ) ) {
-   echo '<img src="' . esc_url( $path ) . '" width="200" />';
+   echo '<img src="' . esc_attr( $path ) . '" width="200" />';
 }
 ```
 
@@ -591,7 +591,7 @@ if ( is_array( $form_data['field']['27_path'] ) ) {
     foreach ( $form_data['field']['27_path'] as $path ) {      
        /* verify path has an image extension and it exists on the server */
        if ( is_file( $path ) ) { 
-            echo '<img src="' . esc_url( $path ) . '" width="200" />';
+            echo '<img src="' . esc_attr( $path ) . '" width="200" />';
        }
     }
 }
@@ -601,14 +601,14 @@ if ( is_array( $form_data['field']['27_path'] ) ) {
     foreach ( $form_data['field']['27_path'] as $key => $path ) {      
        /* verify path has an image extension and it exists on the server */
        if ( is_file( $path ) ) { 
-            echo '<a href="' . esc_url( $form_data['field']['27_secured'][ $key ] ) . '"><img src="' . esc_url( $path ) . '" width="200" /></a>';
+            echo '<a href="' . esc_url( $form_data['field']['27_secured'][ $key ] ) . '"><img src="' . esc_attr( $path ) . '" width="200" /></a>';
        }
     }
 }
 
 /* Output first image uploaded, if it exists */
 if ( isset( $form_data['field']['27_path'][0] ) && is_file( $form_data['field']['27_path'][0] ) ) {
-    echo '<img src="' . esc_url( $form_data['field']['27_path'][0] ) . '" width="200" />';
+    echo '<img src="' . esc_attr( $form_data['field']['27_path'][0] ) . '" width="200" />';
 }
 ```
 
@@ -742,7 +742,7 @@ if ( ! empty( $form_data['field'][32] ) ) {
 
     /* Output image to PDF */
     if ( is_file( $form_data['field'][32]['path'] ) ) {
-        echo '<img src="' . esc_url( $form_data['field'][32]['path'] ) . '" width="300" />'; /* best to use the path and check it exists on the server first */
+        echo '<img src="' . esc_attr( $form_data['field'][32]['path'] ) . '" width="300" />'; /* best to use the path and check it exists on the server first */
     }
 }
 ```
