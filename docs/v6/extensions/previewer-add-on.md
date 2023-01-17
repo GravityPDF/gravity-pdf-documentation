@@ -117,7 +117,11 @@ By default, users cannot right-click on PDF pages to access the context menu. Th
 
 ### Disable Text-Copying Protection
 
-By default, users cannot copy any text on PDF pages. Enable this setting to render the text in the [Document Object Model (DOM)](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction), making it selectable for users and providing better accessibility for Screen Readers. When enabled, the [grab-scroll feature](#grab-scroll) will be turned off so that text can be selected. 
+By default, users cannot copy any text on PDF pages and links are not functional/clickable. Enable this setting to:
+
+1. Render the text in the [Document Object Model (DOM)](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction), making it selectable for users, and providing better accessibility for Screen Readers. 
+2. Enable internal and external links in the PDF, so they are functional/clickable. 
+3. Change the default cursor action from [grab-scroll feature](#grab-scroll) to text selection (grab-scroll can still be used when holding the spacebar key).  
 
 <ResponsiveEmbed src="https://player.vimeo.com/video/694720034?dnt=1" allow="fullscreen" allowfullscreen />
 
@@ -142,7 +146,7 @@ The PDF viewer will automatically adapt to the available width so that it looks 
 
 ## Grab Scroll
 
-You can scroll both vertical and horizontal with ease by grabbing (click-hold or touch-hold) a page of the PDF and moving your pointer on the screen. This feature is turned off when you [disable text-copying protection](#disable-text-copying-protection) so that text can be correctly selected.
+You can scroll both vertical and horizontal with ease by grabbing (click-hold or touch-hold) a page of the PDF and moving your pointer on the screen. When you [disable text-copying protection](#disable-text-copying-protection) this feature is also disabled and only toggled on when you hold the spacebar key.
 
 <ResponsiveEmbed src="https://player.vimeo.com/video/694720294?dnt=1" allow="fullscreen" allowfullscreen />
 
@@ -177,12 +181,18 @@ The *Previewer* plugin includes the following languages out of the box:
 * French
 * Spanish
 * German
+* Chinese^
+* Dutch^
+* Portuguese^
+* Russian^
 
 If you'd like to translate the plugin into your own language, or change the existing translations, [you can follow this How To Guide](https://gravitypdf.com/news/how-to-translate-gravity-pdf-strings-into-different-languages/). **Note**: the text domain for _Previewer_ is `gravity-pdf-previewer`.
 
+^ We are testing the accuracy of AI / machine learning for these translations.
+
 ## File Upload Limitations 
 
-If using the File Upload field with the Multi-File Upload option disabled, the Previewer will need to be on a different page in the form ([using Gravity Forms Page field](https://docs.gravityforms.com/page-break/)) for those uploads to display in the PDF preview. This is a limitation of how the File Upload field works.
+If using the standard File Upload field **without** having the Multi-File Upload option enabled, the Previewer won't be able to recognise the file if included on the same page in the form. To workaround this limitation you can either enable the Multi-File Upload feature (set Max Files to 1) or place the Previewer on a different page in the form ([using Gravity Forms Page field](https://docs.gravityforms.com/page-break/)).
 
 ## Upgrade from v2
 
