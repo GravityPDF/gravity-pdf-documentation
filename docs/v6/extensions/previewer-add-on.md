@@ -127,7 +127,7 @@ By default, users cannot copy any text on PDF pages and links are not functional
 
 ## PDF Viewer
 
-The PDF viewer is designed to be simple and intuitive for end users to view the generated PDF documents. There are minimal controls in the toolbar to help people interact with the PDF. These include:
+The PDF viewer is designed to be simple and intuitive for end users to view the generated PDF documents. It works across all modern devices and includes touch support (eg. pinch zoom). There are minimal controls in the toolbar to help people interact with the PDF. These include:
 
 1. **Page Navigation** - Use the up and down arrow icons to navigate through each page of the PDF, or enter a specific page number 
 2. **Zoom Level** - Use the plus and minus icons to step-zoom the PDF in or out. The dropdown has a range of zoom levels to select from to make the reading experience comfortable for any user
