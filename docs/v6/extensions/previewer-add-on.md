@@ -212,7 +212,7 @@ To conditionally display content in the PDF when used in the context of the PDF 
 
 For example:
 
-```
+```php
 if ( defined( 'DOING_PDF_PREVIEWER' ) && DOING_PDF_PREVIEWER ) {
     echo 'This content will only show when the PDF is generated for the Previewer';
 }
@@ -226,7 +226,7 @@ echo 'This content will show regardless...';
 
 ### Hook: gfpdf_post_save_pdf
 
-If using the [gfpdf_post_save_pdf hook](../developers/actions/gfpdf_post_save_pdf.md) it will be triggered every time a PDF in the viewer is generated. If this isn't the desired effect, use the constant check above to circumvent this behaviour in your code:
+If using the [gfpdf_post_save_pdf hook](../developers/actions/gfpdf_post_save_pdf.md), it will be triggered every time a PDF in the viewer is generated. If this isn't the desired effect, use the constant check to circumvent this behaviour in your code:
 
 ```php
 add_action( 'gfpdf_post_save_pdf', function( $pdf_path, $filename, $settings, $entry, $form ) {
@@ -239,6 +239,223 @@ add_action( 'gfpdf_post_save_pdf', function( $pdf_path, $filename, $settings, $e
     /* Do other actions here */
     
 }, 10, 5 );
+```
+
+### Hooks
+
+#### Javascript
+
+These hooks can be used to change the how the Previewer field functions in the form. The Javascript code needs to be included on the same page as your form. A really quick way to apply them is to add a HTML field to your chosen form and then wrap the code inside `<script type="text/javascript"></script>` tags.
+
+##### gfpdf_previewer_field_settings
+
+This filter will allow you to change the [Previewer field's settings](#configuring) dynamically. 
+
+**Arguments**
+
+* `settings` (object): a Javascript key/value object containing the current field settings 
+* `formId` (int): the current form ID the Previewer field is included
+* `fieldId` (string): the ID of the current Previewer field
+
+The structure of the `settings` object is:
+
+```
+{
+   download: true,
+   height: "600",
+   pageScrolling: "vertical",
+   rightClickProtection: false,
+   rtl: false,
+   spread: "none",
+   textCopyingProtection: false,
+   theme: "auto",
+   zoomLevel: "page-fit"
+}
+```
+
+**Examples**
+
+This example will override the Previewer height and set it to 200px for any instance: 
+
+```js
+gform.addFilter('gfpdf_previewer_field_settings', function(settings, formId, fieldId) {
+   settings.height = '200'
+
+   return settings;
+}, 10, 3);
+```
+
+You can also limit the filter to a specific form:
+
+```js
+gform.addFilter('gfpdf_previewer_field_settings', function(settings, formId, fieldId) {
+   if(formId === 5) {
+      settings.height = '200'
+   }
+
+   return settings;
+}, 10, 3);
+```
+
+Or a specific form field:
+
+```js
+gform.addFilter('gfpdf_previewer_field_settings', function(settings, formId, fieldId) {
+  if(formId === 5 && fieldId === '7') {
+    settings.height = '200'
+  }
+
+  return settings;
+}, 10, 3);
+```
+
+##### gfpdf_previewer_skip_auto_refresh
+
+This filter will allow you to disable the auto-refresh feature of the Previewer.
+
+**Arguments**
+
+* `action` (bool): If true the auto-refresh feature is turned off. If false (default), it will be turned on
+* `formId` (int): the current form ID the Previewer field is included
+* `fieldId` (string): the ID of the current Previewer field
+
+**Examples**
+
+This example will disable auto-refresh for all Previewer instances:
+
+```js
+gform.addFilter('gfpdf_previewer_skip_auto_refresh', function(action, formId, fieldId) {
+  return true;
+}, 10, 3);
+```
+
+You can also limit the filter to a specific form:
+
+```js
+gform.addFilter('gfpdf_previewer_skip_auto_refresh', function(action, formId, fieldId) {
+  if(formId === 5) {
+    return true;
+  }
+
+  return action;
+}, 10, 3);
+```
+
+Or a specific form field:
+
+```js
+gform.addFilter('gfpdf_previewer_skip_auto_refresh', function(action, formId, fieldId) {
+  if(formId === 5 && fieldId === '7') {
+    return true;
+  }
+
+  return action;
+}, 10, 3);
+```
+
+##### gfpdf_previewer_page_viewer_options
+
+This filter will allow you to change the default pdf.js `PDFViewer()` options used by Previewer.
+
+:::warning
+While the accepted options for `PDFViewer()` [can be found in the pdf.js source code](https://github.com/mozilla/pdf.js/blob/master/web/pdf_viewer.js#L198-L315), only a subset of the viewer code is used for Previewer. Any changes to the options using this filter may break Previewer, so do thorough testing if you use it.
+:::
+
+**Arguments**
+
+* `options` (object): The default options passed to `PDFViewer()` by Previewer
+* `formId` (int): the current form ID the Previewer field is included
+* `fieldId` (string): the ID of the current Previewer field
+
+The structure of the `options` object is:
+
+```
+{
+    container: viewerContainer,
+    eventBus,
+    linkService: pdfLinkService,
+    textLayerMode: disableTextCopyingProtection,
+    annotationMode: disableTextCopyingProtection ? ANNOTATION_MODE.ENABLE : ANNOTATION_MODE.DISABLE
+}
+```
+
+**Examples**
+
+This example will make any links included in the PDF clickable, regardless of whether [text copying protection](#disable-text-copying-protection) is active/inactive:
+
+```js
+gform.addFilter('gfpdf_previewer_page_viewer_options', function(options, formId, fieldId) {
+  options.annotationMode = 1;
+
+  return options;
+}, 10, 3);
+```
+
+You can also limit the filter to a specific form:
+
+```js
+gform.addFilter('gfpdf_previewer_page_viewer_options', function(options, formId, fieldId) {
+  if (formId === 5) {
+    options.annotationMode = 1;
+  }
+
+  return options;
+}, 10, 3);
+```
+
+Or a specific form field:
+
+```js
+gform.addFilter('gfpdf_previewer_page_viewer_options', function(options, formId, fieldId) {
+  if (formId === 5 && fieldId === '7') {
+    options.annotationMode = 1;
+  }
+
+  return options;
+}, 10, 3);
+```
+
+##### gfpdf_previewer_current_form_data
+
+This filter will allow you to manipulate the form data before it is sent to the server so the preview PDF can be generated:
+
+**Arguments**
+
+* `data` ([FormData](https://developer.mozilla.org/en-US/docs/Web/API/FormData)): the object containing all the form information extracted from `form`
+* `form` ([Element](https://developer.mozilla.org/en-US/docs/Web/API/Element)): the current form element where `data` is built from
+
+**Examples**
+
+This example will add a new key to `FormData` (or update a key if it already exists):
+
+```js
+gform.addFilter('gfpdf_previewer_current_form_data', function(data, form) {
+  data.append('name', 'value');
+
+  return data;
+}, 10, 2);
+```
+
+You can also delete a key/field from `FormData`:
+
+```js
+gform.addFilter('gfpdf_previewer_current_form_data', function(data, form) {
+  data.delete('input_7');
+
+  return data;
+}, 10, 2);
+```
+
+If you want to find out what information is being sent to the previewer API:
+
+```js
+gform.addFilter('gfpdf_previewer_current_form_data', function(data, form) {
+  for (const pair of data.entries()) {
+    console.log(`${pair[0]}, ${pair[1]}`);
+  }
+
+  return data;
+}, 10, 2);
 ```
 
 ### CSS Variables
