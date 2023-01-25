@@ -224,9 +224,13 @@ if ( ! defined( 'DOING_PDF_PREVIEWER' ) ) {
 echo 'This content will show regardless...';
 ```
 
-### Hook: gfpdf_post_save_pdf
+### Hooks
 
-If using the [gfpdf_post_save_pdf hook](../developers/actions/gfpdf_post_save_pdf.md), it will be triggered every time a PDF in the viewer is generated. If this isn't the desired effect, use the constant check to circumvent this behaviour in your code:
+#### PHP
+
+##### gfpdf_post_save_pdf
+
+If using the PHP hook [gfpdf_post_save_pdf](../developers/actions/gfpdf_post_save_pdf.md), it will be triggered every time a PDF in the viewer is generated. If this isn't the desired effect, use the constant check to circumvent this behaviour in your code:
 
 ```php
 add_action( 'gfpdf_post_save_pdf', function( $pdf_path, $filename, $settings, $entry, $form ) {
@@ -241,11 +245,9 @@ add_action( 'gfpdf_post_save_pdf', function( $pdf_path, $filename, $settings, $e
 }, 10, 5 );
 ```
 
-### Hooks
-
 #### Javascript
 
-These hooks can be used to change the how the Previewer field functions in the form. The Javascript code needs to be included on the same page as your form. A really quick way to apply them is to add a HTML field to your chosen form and then wrap the code inside `<script type="text/javascript"></script>` tags.
+These hooks can be used to change the how the Previewer field functions in the form. The Javascript code needs to be included on the same page as your form. A really quick way to apply them is to add a HTML field to your chosen form and then place the code inside `<script type="text/javascript"></script>` tags.
 
 ##### gfpdf_previewer_field_settings
 
@@ -417,7 +419,7 @@ gform.addFilter('gfpdf_previewer_page_viewer_options', function(options, formId,
 
 ##### gfpdf_previewer_current_form_data
 
-This filter will allow you to manipulate the form data before it is sent to the server so the preview PDF can be generated:
+This filter will allow you to manipulate the form data before it is sent to the server so the preview PDF can be generated.
 
 **Arguments**
 
@@ -426,7 +428,7 @@ This filter will allow you to manipulate the form data before it is sent to the 
 
 **Examples**
 
-This example will add a new key to `FormData` (or update a key if it already exists):
+This example will add a new key to `FormData` (or update a key if it already exists). Any new keys will be available via the `$_POST` superglobal when the PDF is generated.
 
 ```js
 gform.addFilter('gfpdf_previewer_current_form_data', function(data, form) {
