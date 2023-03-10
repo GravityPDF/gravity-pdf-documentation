@@ -56,7 +56,7 @@ When creating custom PDF templates, it's often useful to include external CSS fi
 ### \_\_DIR\_\_ 
 * [This is a PHP magic constant](http://php.net/manual/en/language.constants.predefined.php) that references the current absolute path to the current file. We use this when referencing images or other PHP files in the PDF template.
 * We recommend using absolute paths for images and stylesheets located on your web server.
-* Usage: `<img src="<?php echo esc_url( __DIR__ ); ?>/images/hello-world.png" width="400" />`
+* Usage: `<img src="<?php echo esc_attr( __DIR__ ); ?>/images/hello-world.png" width="400" />`
 
 ### PDF\_TEMPLATE\_LOCATION 
 * This is a constant that contains the path to the [PDF working directory](first-custom-pdf.md#pdf-working-directory) or, in multisite installations, the path to the [individual multisite working directory](first-custom-pdf.md#multisite-structure).
@@ -73,4 +73,4 @@ When creating custom PDF templates, it's often useful to include external CSS fi
 
 ### ABSPATH 
 * A WordPress constant that references the directory in which WordPress is installed. This is less useful than the other methods (usually you don't store files in the root directory), but it's good to know about.
-* Usage: `<img src="<?php echo esc_url( ABSPATH ); ?>logo.png" width="400" />`
+* Usage: `<img src="<?php echo esc_attr( ABSPATH ); ?>logo.png" width="400" />`
