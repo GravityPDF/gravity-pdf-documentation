@@ -10,6 +10,8 @@ import ResponsiveEmbed from 'react-responsive-embed'
 
 *Reports for GFChart* is a premium plugin for Gravity PDF that creates beautiful PDF Reports <a href="https://gfchart.com/?ref=24" rel="sponsored">using the third-party plugin GFChart</a>. The extension includes 15 report designs for you to choose from and supports all core GFChart types, including Pie, Bar, Column (horizontal bar), Progress Bar, and Calculations. [You can purchase the *Reports for GFChart* plugin from the Extension Shop](https://gravitypdf.com/shop/reports-for-gfchart-add-on/). This guide will walk you through installing and configuring *Reports for GFChart* to its full potential.
 
+You can purchase the _Reports for GFChart_ plugin from the [Extension Shop](https://gravitypdf.com/shop/reports-for-gfchart-add-on/). This guide will walk you through installing and configuring _Reports for GFChart_ to its full potential.
+
 ## Installation 
 
 [Please follow our installation guide](installing-upgrading-extensions.md), which provides instructions for uploading the add-on to your WordPress website and adding your license key for automatic updates.
