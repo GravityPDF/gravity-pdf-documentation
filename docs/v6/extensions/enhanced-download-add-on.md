@@ -62,7 +62,7 @@ For _Enhanced Download_ to function on the Entry List page, you'll need to ensur
 
 ### Global Settings
 
-[[A screenshot of the plugin's global settings WordPress admin page, each of which are covered in detail in the next section of this documentation.](https://resources.gravitypdf.com/uploads/2022/12/enhanced-download-extension-settings-1.png)
+![A screenshot of the plugin's global settings WordPress admin page, each of which are covered in detail in the next section of this documentation.](https://resources.gravitypdf.com/uploads/2022/12/enhanced-download-extension-settings-1.png)
 
 Located at `Forms -> Settings -> PDF -> Extensions` in your WordPress Admin area, a number of global settings are available for the plugin. 
 
