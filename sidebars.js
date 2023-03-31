@@ -755,6 +755,7 @@ module.exports = {
             'v6/extensions/bulk-generator-add-on',
             'v6/extensions/core-booster-add-on',
             'v6/extensions/enhanced-download-add-on',
+            'v6/extensions/pdf-for-gravityview-add-on',
             'v6/extensions/previewer-add-on',
             'v6/extensions/reports-for-gfchart-add-on',
             'v6/extensions/watermark-add-on',
