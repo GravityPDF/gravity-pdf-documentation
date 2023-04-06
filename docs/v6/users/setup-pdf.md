@@ -1,5 +1,5 @@
 ---
-title: "All You Need To Know About Creating a Gravity Forms PDF"
+title: "All You Need To Know About Creating a PDF for Gravity Forms"
 sidebar_label: "Setup PDF"
 description: "There are a lot of options available, but the most common settings are up front, with the rest grouped by one-of-four sections: and are split into groups: General, Appearance, Template and Advanced."
 ---
