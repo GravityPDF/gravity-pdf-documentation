@@ -95,3 +95,19 @@ div[class^="announcementBar"] a {
 div[class^="announcementBar"] a:hover {
   background: #FF1B46;
 }
+
+/* Grid */
+.two-column-grid {
+  display: block;
+}
+
+.two-column-grid > * {
+  padding: 1rem;
+}
+
+@media (min-width:768px) {
+  .two-column-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
