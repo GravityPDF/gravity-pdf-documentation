@@ -1,10 +1,16 @@
 ---
-title: "Basic GravityView Support is Built-in to Gravity PDF"
-sidebar_label: "GravityView Support"
-description: "GravityView is the best way to display Gravity Forms entries on your website. Basic GravityView support is built right into Gravity PDF."
+title: "GravityView Support is Built-in to Gravity PDF"
+sidebar_label: "GravityView"
+description: "GravityView is a superb way to display Gravity Forms entries on the front-end of your website, and Gravity PDF is fully supported."
 ---
 
-<a href="https://gravityview.co/?ref=186" rel="sponsored">The GravityView plugin</a> is the best way to display Gravity Forms entries publicly on your website. Basic GravityView support is built right into Gravity PDF.
+import ResponsiveEmbed from 'react-responsive-embed'
+
+<p><a href="https://www.gravitykit.com/features/?ref=186" rel="sponsored">The GravityView plugin</a> is one of the best way to display Gravity Forms entries publicly on your website. Basic GravityView support is built right into Gravity PDF, and advanced support is available <a href="https://gravitypdf.com/shop/pdf-for-gravityview-add-on/">using the <em>PDF for GravityView</em> extension</a>. The documentation on this page will only cover the basic support, and you should <a href="../v6/extensions/pdf-for-gravityview-add-on/">refer to the <em>PDF for GravityView</em> documentation for the advanced feature-set</a>.</p>
+
+:::tip
+[_PDF for GravityView_ is a premium Gravity PDF extension](https://gravitypdf.com/shop/pdf-for-gravityview-add-on/) which offers deep integration with the View Editor. This [turns GravityView into a powerful PDF builder](https://gravitypdf.com/news/turning-gravityview-into-a-powerful-pdf-builder-tool/), and makes it easy to generate PDFs of your Views. You'll save hours compared to [replicating your view in code using a custom template](developer-first-custom-pdf.md).
+:::
 
 ## Add PDF Download Link to View 
 
