@@ -128,7 +128,7 @@ _PDF for GravityView_ is deeply integrated into GravityView, and most configurat
 * Add a footer to each page of your PDF document using the WordPress Classic Editor. You can use the media library to include images. Or add a more robust three-column table that includes the page number and date ([try this code snippet](https://gist.github.com/jakejackson1/e6179a96cd97ef0a8457)).
 * Gravity Forms merge tags can be used in the footer.
 * The special tags `{PAGENO}` – which displays the current page number – and `{nbpg}` – which displays the total number of pages in the document – can be used in the footer.
-* Unlike Gravity PDF COre, images will **not** have their height restricted. After inserting an image from the media library you may need to scale it down to suit.
+* Unlike Gravity PDF Core, images will **not** have their height restricted. After inserting an image from the media library you may need to scale it down to suit.
 
 #### Background Color
 * Set the background color for all pages in the PDF
@@ -142,6 +142,11 @@ _PDF for GravityView_ is deeply integrated into GravityView, and most configurat
 #### Show Title?
 * Display the Single Entry Title (found in the _Single Entry_ View Settings) at the beginning of the PDF. If empty, the View Title will be used.
 * This is enabled by default.
+
+#### Additional CSS
+* Add CSS to further customize the look and feel of the PDF document. [See the developer section for examples of common selectors and styles](#css).
+* To inspect the HTML used for a PDF, administrator users can [enable PDF Debug Mode](../users/global-settings.md#debug-mode) and then [add the HTML helper parameter](../developers/helper-parameters.md#html1) to the Single Entry View PDF URL.
+* Be aware that [only a subset of CSS is supported by Gravity PDF](../developers/pdf-features/supported-html-and-css.md#css-support). 
 
 ### Fields
 
@@ -344,6 +349,180 @@ To troubleshoot an email deliverability issue:
 ## Developers 
 
 Developers can further customize _PDF for GravityView_ by overriding one of the View PDF templates, or using one of the hooks provided.
+
+### CSS
+
+Here are useful CSS you can [add to the Additional CSS setting](#additional-css) to change the look and feel of the PDF.
+
+#### Table
+
+Add a border to the individual cells of the table: 
+
+```css
+.label, .value {
+  border: 1px solid #333333;
+}
+```
+
+Increase the padding within the table cells:
+
+```css
+.row-separator td {
+  padding: 10px;
+}
+```
+
+Make the labels display in uppercase:
+
+```css
+.label {
+  text-transform: uppercase;
+}
+```
+
+Add a background color to every even row in the table:
+
+```css
+table.view tr:nth-child(even) td {
+  background: #EEEEEE;
+}
+```
+
+#### List
+
+Make the Listing Title display in uppercase:
+
+```css 
+.gv-list-view-title h3 {
+	text-transform: uppercase;	
+}
+```
+
+Change the background color of the Listing Header, as well as the font color of the Listing Title/Subtitle:
+
+```css
+.gv-list-view-title {
+	background: #1D2475;
+    color: #FFFFFF;
+}
+
+.gv-list-view-title h3,
+.gv-list-view-title h4 {
+	color: #FFFFFF;	
+}
+```
+
+Change the background and text color of the Listing Footer:
+
+```css
+.gv-list-view-footer {
+	background: #1D2475;
+	color: #FFFFFF;	
+}
+
+.gv-list-view-footer a {
+  color: #FFFFFF;
+}
+```
+
+Adjust how much space the Image takes up in the main content area:
+```css 
+.gv-list-view-content-image {
+	width: 50%;	
+}
+```
+
+Make the labels bold in the Image and Other Fields section:
+
+```css
+.gv-list-view-content .gv-field-label {
+  font-weight: bold;
+}
+```
+
+#### Map
+
+Make the Title display in uppercase:
+
+```css 
+.gv-map-view-title h3 {
+	text-transform: uppercase;	
+}
+```
+
+Change the background color of the Header, as well as the font color of the Title/Subtitle:
+
+```css
+.gv-map-view-title {
+	background: #1D2475;
+    color: #FFFFFF;
+}
+
+.gv-map-view-title h3,
+.gv-map-view-title h4 {
+	color: #FFFFFF;	
+}
+```
+
+Change the background and text color of the Listing Footer:
+
+```css
+.gv-map-view-footer {
+	background: #1D2475;
+	color: #FFFFFF;	
+}
+
+.gv-map-view-footer a {
+  color: #FFFFFF;
+}
+```
+
+Adjust how much space the Image takes up in the main content area:
+```css 
+.gv-map-view-content-image {
+	width: 50%;	
+}
+```
+
+Make the labels bold in the Image and Other Fields section:
+
+```css
+.gv-map-view-content .gv-field-label {
+  font-weight: bold;
+}
+```
+
+#### DIY
+
+Increase the size of the PDF title:
+
+```css
+#form_title {
+  font-size: 200%;
+}
+```
+
+Adjust the styles of a H1 heading tag:
+
+```css 
+h1 {
+  color: #1D2475;
+  text-transform: uppercase;
+  font-size: 180%;
+}
+```
+
+Make a blockquote more prominent:
+
+```css
+blockquote {
+  border-left: 5px solid #1D2475;
+  margin-left: 0;
+  padding-left: 20px;
+  font-size: 150%;
+  font-style: italic;
+}
+```
 
 ### Hooks
 
