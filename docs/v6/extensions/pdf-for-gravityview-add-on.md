@@ -526,92 +526,17 @@ blockquote {
 
 ### Hooks
 
-#### gfpdf_gv_template_styles
+These hooks are available for developers to further customize the extension:
 
-This filter allows you to add your own CSS into a PDF template.
+* [gfpdf_gv_template_styles](./hooks/pdfgv-gfpdf-gv-template-styles.md)
+* [gfpdf_gv_show_label](./hooks/pdfgv-gfpdf-gv-show-label.md)
 
-* Alias: `gfpdf_gv_template_styles_{$view_id}`: Replace `{$view_id}` with a valid View ID
-* Alias: `gfpdf_gv_template_styles_{$layout}`: Valid values for `{$layout}` include: table, map, list, diy
+### API
 
-**Arguments**
+A public API was introduced in v0.8 to help developers simplify common tasks when extending the software. You can easily call any method using `\PDFGV_API::method_name()`.
 
-* `$view` (`\GV\View`): the current GravityView object
-* `$view_entry` (`\GV\Entry`): the current GravityView entry object
-
-**Examples**
-
-Add a large header and footer margin to all PDFs:
-
-```php 
-add_filter( 'gfpdf_gv_template_styles', function( $view, $view_entry ) {
-	?>
-	@page {
-		margin-header: 2in;
-		margin-footer: 2in;
-	}
-	<?php
-}, 10, 2 );
-```
-
-Add CSS to a specific View's PDF only:
-
-```php 
-add_filter( 'gfpdf_gv_template_styles_885', function( $view, $view_entry ) {
-	?>
-	@page {
-		margin-header: 2in;
-		margin-footer: 2in;
-	}
-	<?php
-}, 10, 2 );
-```
-
-Add CSS to any PDFs generated for a Table Layout View:
-
-```php 
-add_filter( 'gfpdf_gv_template_styles_table', function( $view, $view_entry ) {
-	?>
-	@page {
-		margin-header: 2in;
-		margin-footer: 2in;
-	}
-	<?php
-}, 10, 2 );
-```
-
-#### gfpdf_gv_show_label
-
-Use this filter to disable the field labels in the List, Table, or Map views.
-
-* Alias: `gfpdf_gv_show_label_{$view_id}`: Replace `{$view_id}` with a valid View ID
-* Alias: `gfpdf_gv_show_label_{$layout}`: Valid values for `{$layout}` include: table, map, list
-
-**Arguments**
-
-* `$show_label` (`bool`): Whether to show or hide the field labels
-* `$view` (`\GV\View`): the current GravityView object
-* `$view_entry` (`\GV\Entry`): the current GravityView entry object
-* `$layout` `(`string`): Valid values include: `table` `list` `map`
-
-**Examples**
-
-Hide the field labels in all PDFs:
-
-```php 
-add_filter( 'gfpdf_gv_show_label', '__return_false' );
-```
-
-Hide the field labels in a specific View's PDF only:
-
-```php 
-add_filter( 'gfpdf_gv_show_label_885', '__return_false' );
-```
-
-Hide the field labels in any PDFs generated for a Table Layout View:
-
-```php 
-add_filter( 'gfpdf_gv_show_label_table', '__return_false' );
-```
+* [Creating a Single Entry Layout View PDF](./api/pdfgv-create-single-entry-pdf.md)
+* [Getting the Single Entry PDF Settings](./api/pdfgv-get-single-entry-pdf-settings.md)
 
 ### Template Overrides
 

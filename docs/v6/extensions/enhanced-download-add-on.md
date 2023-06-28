@@ -185,11 +185,15 @@ At any given time, the cookie will hold one of the following values:
 
 ### What should I put in a Cookie Policy?
 
+:::info
+The Cookie Name was changed in v1.0.2. It was renamed from `GravityPdfGenerationCompleted` to `wordpress_GravityPdfGenerationCompleted` to automatically resolve aggressive caching on some web hosting providers.
+:::
+
 You can include the following information in your Cookie Policy (you'll need to make a determination about the category):
 
-| Cookie Name                   | Purpose                                                        | Duration | Category                                 |
-|-------------------------------|----------------------------------------------------------------|----------|------------------------------------------|
-| GravityPdfGenerationCompleted | Determine the status of the form validation and PDF Generation | 24 Hours | **Strictly Necessary or Functionality**^ |
+| Cookie Name                             | Purpose                                                        | Duration | Category                                 |
+|-----------------------------------------|----------------------------------------------------------------|----------|------------------------------------------|
+| wordpress_GravityPdfGenerationCompleted | Determine the status of the form validation and PDF Generation | 24 Hours | **Strictly Necessary or Functionality**^ |
 
 ^ Whether the cookie falls under the **Strictly Necessary** or **Functionality** category depends specifically on how you are using Gravity Forms, Gravity PDF, and _Enhanced Download_ on your website. We cannot make that determination for you. If you decide the cookie falls under **Functionality**, you'll need to determine if consent is implied by submitting the form and/or selecting the PDF download link, or if you need to explicitly ask for consent beforehand.
 
