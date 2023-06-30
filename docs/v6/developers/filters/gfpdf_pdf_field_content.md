@@ -111,6 +111,18 @@ add_filter( 'gfpdf_pdf_field_content', function( $value, $field, $entry, $form, 
 }, 10, 5 );
 ```
 
+If you are using the Core Booster add-on with ungrouped products, and don't want to include the quantity with the product field if it is disabled in the settings, you can use this snippet:
+
+```
+add_filter( 'gfpdf_pdf_field_content_singleproduct', function ( $value, $field, $entry, $form ) {
+	if ( $field->disableQuantity ) {
+		return $field->get_value_export( $entry, $field->id . '.2' );
+	}
+
+	return $value;
+}, 10, 4 );
+```
+
 ## Source Code 
 
 This filter is located in the `Helper_Abstract_Fields.php` files in the `/src/helper/abstract/` directory.
