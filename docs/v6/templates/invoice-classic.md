@@ -14,8 +14,7 @@ _Invoice Classic_ is a feature-rich invoice template that [can be purchased from
 
 :::note
 This documentation is for _Invoice Classic_ version 2.x, which adds [multi-rate tax-inclusive pricing](#enable-tax-inclusive-pricing), grouped or itemized discounts, free trial, localized dates, and [Gravity Wiz eCommerce Fields support](#gravity-forms-ecommerce-fields). Looking for the 1.x documentation? [You can find the Invoice Classic v1 docs here](../../v5/shop-pdf-template-invoice-classic.md).
-::::
-
+:::
 
 ## Limitations
 
