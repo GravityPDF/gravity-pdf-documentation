@@ -4,9 +4,9 @@ sidebar_label: "gfpdf_current_pdf_configuration"
 description: ""
 ---
 
-## Description 
+## Description
 
-The Core and Universal have additional configuration options that can be modified with this filter. Usually, these should be modified at a higher level, but it can be necessary to dynamically change them at runtime. 
+The Core and Universal have additional configuration options that can be modified with this filter. Usually, these should be modified at a higher level, but it can be necessary to dynamically change them at runtime.
 
 Special meta options specific to these templates and accessed via `$config['meta']` include:
 
@@ -23,11 +23,11 @@ Special meta options specific to these templates and accessed via `$config['meta
 
 Alone with the meta options, the standard PDF settings can be manipulated via `$config['settings']`.
 
-## Version 
+## Version
 
 This filter was introduced in Gravity PDF 4.2.
 
-## Parameters 
+## Parameters
 
 ### $config | array
 *  The full configuration for Core and Universal PDF templates. Data is stored in the `$config['meta']` and `$config['settings']` keys.
@@ -38,7 +38,7 @@ This filter was introduced in Gravity PDF 4.2.
 ### $form | array
 *  The Gravity Forms array
 
-## Usage 
+## Usage
 
 The following will dynamically force empty fields to be displayed in Core or Universal templates:
 
@@ -50,6 +50,6 @@ add_filter( 'gfpdf_current_pdf_configuration', function( $config, $entry, $form 
 }, 10, 3 );
 ```
 
-## Source Code 
+## Source Code
 
 This filter is located in the `View_PDF::generate_html_structure()` method in `/src/view/View_PDF.php`.

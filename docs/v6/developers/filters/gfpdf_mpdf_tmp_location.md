@@ -4,16 +4,16 @@ sidebar_label: "gfpdf_mpdf_tmp_location"
 description: "By default mPDF temporary files are stored in the system temporary directory. Change the path with this filter."
 ---
 
-## Description 
+## Description
 
 By default the mPDF temporary files are stored in a folder called `mpdf` [inside the Gravity PDF temporary directory](gfpdf_tmp_location.md). This filter allows you to change this directory independent of where the Gravity PDF temporary directory is.
 
-## Parameters 
+## Parameters
 
 ### $path | string
 *  The path to the `tmp` folder.
 
-## Usage 
+## Usage
 
 The following snippet shows you how you can move the directory to a different location:
 
@@ -26,6 +26,6 @@ add_filter( 'gfpdf_mpdf_tmp_location', function( $path ) {
 
 Once you've verified the filter works correctly, you should manually remove the old directory.
 
-## Source Code 
+## Source Code
 
 This filter is located in the `Model_Install::setup_template_location()` method of `/src/model/Model_Install.php`.

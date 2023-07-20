@@ -4,13 +4,13 @@ sidebar_label: "PDF Security"
 description: "Ensuring your data is protected is top priority and we've implemented security protocols to prevent unauthorised access to PDF documents."
 ---
 
-![Access Denied to PDF](https://resources.gravitypdf.com/uploads/2015/10/access-denied.png) 
+![Access Denied to PDF](https://resources.gravitypdf.com/uploads/2015/10/access-denied.png)
 
-Ensuring your data is protected is our *top priority*, and we've implemented a number of security protocols to prevent unauthorised access to PDF documents generated with Gravity PDF. **All PDF rendering is done directly on your web server**, and no third-party service has access to your data. 
+Ensuring your data is protected is our *top priority*, and we've implemented a number of security protocols to prevent unauthorised access to PDF documents generated with Gravity PDF. **All PDF rendering is done directly on your web server**, and no third-party service has access to your data.
 
 Once you've installed the plugin, it's **strongly recommended** you review the security settings and **thoroughly test** they are working correctly.
 
-## Default Security 
+## Default Security
 
 :::note tl;dr
 The default security settings allow the user who submits the entry to view their own PDF. Site Administrators and Network Super Administrators can view all PDFs.
@@ -32,13 +32,13 @@ The software ships with conservative defaults that provides a well-balanced mix 
 By default, Gravity Forms will not handle proxy-based IP addresses automatically (Cloudflare, Load Balancer and WAF Firewalls are affected). In such cases our IP-based access policy mentioned below will not work. If you are affected you can [use the `gform_ip_address` filter](https://docs.gravityforms.com/gform_ip_address/) to return the correct user IP.
 :::
 
-4. An alternative to the IP-based authentication mentioned in #3 above is signed PDF URLs (added in Gravity PDF 5.1), which correctly authenticates a user even if you've disabled IP addresses using Gravity Forms 2.4+ GDPR features.     
+4. An alternative to the IP-based authentication mentioned in #3 above is signed PDF URLs (added in Gravity PDF 5.1), which correctly authenticates a user even if you've disabled IP addresses using Gravity Forms 2.4+ GDPR features.    
     - Signed URLs are only available using the [gravitypdf] shortcode [with the `signed` attribute](user-shortcodes.md#signed-optional). Anyone with access to the signed link can view the PDF (regardless of their user privileges, if any), provided the link hasn't expired.
     - By default, the signed URL will have a 20-minute timeout window. This behaviour can be changed globally using the [Logged Out Timeout](user-global-settings.md#logged-out-timeout) settings, or per [gravitypdf] shortcode [by including the `expires` attribute](user-shortcodes.md#expires-attribute).
-    - When the timeout period expires, Gravity PDF will fallback to the standard security policies outlined in #1/2/3 above. 
-    - Signed URLs do not work across protocols. For example, you cannot display the shortcode on a HTTP page while the PDF loads over HTTPS (or vice versa). 
+    - When the timeout period expires, Gravity PDF will fallback to the standard security policies outlined in #1/2/3 above.
+    - Signed URLs do not work across protocols. For example, you cannot display the shortcode on a HTTP page while the PDF loads over HTTPS (or vice versa).
 
-## PDFs and the File System 
+## PDFs and the File System
 
 :::note tl;dr
 PDFs stored on the disk have a limited lifespan and are protected from direct access on Apache and Litespeed web servers. Other servers aren’t automatically protected, and it’s advisable to use [the `gfpdf_tmp_location` filter](gfpdf_tmp_location.md) to change the PDF directory to somewhere outside your public directory structure.
@@ -46,15 +46,15 @@ PDFs stored on the disk have a limited lifespan and are protected from direct ac
 
 Currently, the only time a PDF is actually saved to disk is when it's configured to be [attached to a form's notification(s)](user-setup-pdf.md#notifications), or the [*Always Save PDF* setting](user-setup-pdf.md#always-save-pdf) is enabled (use Always Save in conjunction with [the `gfpdf_post_save_pdf` action](gfpdf_post_save_pdf.md) to copy PDFs to another directory). The PDF temporary directory defaults to `/wp-content/uploads/PDF_EXTENDED_TEMPLATES/tmp/` and generated documents stored here are cleaned up automatically from the disk once the Gravity Forms submission process has been completed. Any stray documents older than 12 hours are also automatically cleaned up. The PDFs are not cached on the file system, and they are dynamically generated upon request.
 
-## Prevent Owner Access 
+## Prevent Owner Access
 
 If your PDF is never meant to be viewed by the end user you can enable the [*Restrict Owner*](user-setup-pdf.md#restrict-owner) security setting. This will ensure only logged in users with roles assigned the capabilities set in the global [*User Restriction*](user-global-settings.md#user-restriction) setting have access to the document.
 
-## Enable Public Access 
+## Enable Public Access
 
 If you want to enable public access to the PDFs generated from your Gravity Form, you can do so with the [*Enable Public Access*](user-setup-pdf.md#enable-public-access) option. Use this option sparingly as it will allow anyone worldwide to access PDFs generated from your form – search engines may even index the documents (but are discouraged to do so). In the majority of cases, the standard security protocols are sufficient.
 
-## Sensitive User Information 
+## Sensitive User Information
 
 If you are collecting sensitive data from your users, there are a number of best-practice protocols you should consider implementing to protect that information. These include:
 

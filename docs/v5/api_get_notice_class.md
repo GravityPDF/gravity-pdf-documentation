@@ -4,20 +4,20 @@ sidebar_label: "get_notice_class()"
 description: "If you extend Gravity PDF, this methods allows you to easily display a message or error to the user in the WP Admin area."
 ---
 
-## Description 
+## Description
 
 If you extend Gravity PDF, this methods allows you to easily display a message or error to the user in the WP Admin area. When using this class, you'll need to trigger the message/error before the `admin_notices` or `network_admin_notices` WordPress hooks.
 
-## Version 
+## Version
 
 This method was introduced in Gravity PDF 4.0.
 
-## Return 
+## Return
 
 ### \\GFPDF\\Helper\\Helper\_Notices \| object
 * The notices class
 
-## Usage 
+## Usage
 
 The following snippet shows you the usage of our notice class in a basic admin action your plugin might implement:
 
@@ -52,6 +52,6 @@ add_action( 'admin_init', function() {
 } );
 ```
 
-## Source Code 
+## Source Code
 
 This method is located in `api.php`, and the notice class can be found in `src/helper/Helper_Notices.php`

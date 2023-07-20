@@ -4,13 +4,13 @@ sidebar_label: "Install Template via Template Manager"
 description: "A guide on how to correctly zip up your custom PDF template so it can be installed via the PDF Template Manager. Your zip can contain a single PHP template, or multiple templates."
 ---
 
-After you've created your custom template, you can either upload it to the [PDF Working Directory](first-custom-pdf.md#pdf-working-directory) using an FTP client or zip up the files and [install them via the PDF Template Manager](../users/pdf-template-manager.md#install). 
+After you've created your custom template, you can either upload it to the [PDF Working Directory](first-custom-pdf.md#pdf-working-directory) using an FTP client or zip up the files and [install them via the PDF Template Manager](../users/pdf-template-manager.md#install).
 
 :::info
 Gravity PDF caches the [template header data](first-custom-pdf.md#template-structure) in a transient. If you re-upload the template via FTP after changing the headers, you'll need to [toggle on Debug Mode](../users/global-settings.md#debug-mode) to purge the old header information. The cache is automatically flushed when reinstalling an existing templates via the PDF Template Manager.
-::: 
+:::
 
-## Zip Archive Structure 
+## Zip Archive Structure
 
 To create a `.zip` package, just zip up your PDF template file(s) in the root of the zip archive:
 
@@ -38,7 +38,7 @@ If you've created a [configuration](template-configuration-and-image.md) and/or 
 |       +-- hello-world.png
 ```
 
-## Common Problems 
+## Common Problems
 
 > No valid PDF template found in Zip archive.
 >

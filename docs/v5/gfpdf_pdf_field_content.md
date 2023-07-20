@@ -6,15 +6,15 @@ description: ""
 
 
 
-## Description 
+## Description
 
 Use this filter to dynamically change a field's value in Core and Universal templates before it gets wrapped in the final HTML markup. In the majority of cases this filter will be more useful than [`gfpdf_field_html_value`](gfpdf_field_html_value.md). Be aware, section fields, page fields and the product table are not run through this filter.
 
-## Version 
+## Version
 
 This filter was introduced in Gravity PDF 4.2.
 
-## Parameters 
+## Parameters
 
 ### $value | string
 *  The field's content to be included in the PDF
@@ -31,7 +31,7 @@ This filter was introduced in Gravity PDF 4.2.
 ### $pdf_field | object
 *  The current field helper class. See `/src/helper/fields`
 
-## Usage 
+## Usage
 
 The following code will prefix all values with a bullet point:
 
@@ -99,6 +99,6 @@ add_filter( 'gfpdf_pdf_field_content', function( $value, $field, $entry, $form, 
 }, 10, 5 );
 ```
 
-## Source Code 
+## Source Code
 
 This filter is located in the `Helper_Abstract_Fields.php` files in the `/src/helper/abstract/` directory.

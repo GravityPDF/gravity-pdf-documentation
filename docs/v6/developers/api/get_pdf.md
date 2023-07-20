@@ -4,15 +4,15 @@ sidebar_label: "get_pdf()"
 description: "This method will return an array containing an individual PDF's settings on a particular Gravity Form. "
 ---
 
-## Description 
+## Description
 
 This method will return an array containing an individual PDF's settings on a particular Gravity Form.
 
-## Version 
+## Version
 
 This method was introduced in Gravity PDF 4.0.
 
-## Parameters 
+## Parameters
 
 ### $form\_id \| integer
 * The Gravity Forms ID
@@ -20,12 +20,12 @@ This method was introduced in Gravity PDF 4.0.
 ### $pdf\_id \| string
 * The PDF internal identifier (found in the `pid` URL parameter when viewing individual PDF settings in the admin area)
 
-## Return 
+## Return
 
 ### array \| WP\_Error
 * An array of the PDF settings will be returned on success, otherwise a [WP\_Error object](https://codex.wordpress.org/Class_Reference/WP_Error) on failure
 
-## Usage 
+## Usage
 
 This snippet shows you how to get an individual PDF configuration and do an active if it's currently active:
 
@@ -45,6 +45,6 @@ add_action( 'init', function() {
 } );
 ```
 
-## Source Code 
+## Source Code
 
 This method is located in `api.php`.

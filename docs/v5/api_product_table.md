@@ -4,15 +4,15 @@ sidebar_label: "product_table()"
 description: "This method will output (or return) a correctly formatted Gravity Forms product table for use in your PDF. "
 ---
 
-## Description 
+## Description
 
 This method will output (or return) a correctly formatted Gravity Forms product table for use in your PDF.
 
-## Version 
+## Version
 
 This method was introduced in Gravity PDF 4.0.
 
-## Parameters 
+## Parameters
 
 ### $entry \| array
 * The raw Gravity PDF Entry
@@ -20,12 +20,12 @@ This method was introduced in Gravity PDF 4.0.
 ### $return \| boolean \| optional
 * Set to true to have the product table HTML returned. By default, this is false and will automatically be echoed.
 
-## Return 
+## Return
 
 ### string \| void
 * Returns the HTML string when `$return` is true
 
-## Usage 
+## Usage
 
 The following snippet shows you how to output the product table from your Gravity PDF template:
 
@@ -34,6 +34,6 @@ The following snippet shows you how to output the product table from your Gravit
 GPDFAPI::product_table( $entry );
 ```
 
-## Source Code 
+## Source Code
 
 This method is located in `api.php`.

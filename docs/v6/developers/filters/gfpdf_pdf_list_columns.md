@@ -4,20 +4,20 @@ sidebar_label: "gfpdf_pdf_list_columns"
 description: "Use this filter to add additional columns to the PDF list view table, or change the names of existing columns."
 ---
 
-## Description 
+## Description
 
-Use this filter to add additional columns to the [PDF list view](../../users/managing-pdfs.md) table, or change the names of existing columns. 
+Use this filter to add additional columns to the [PDF list view](../../users/managing-pdfs.md) table, or change the names of existing columns.
 
 By default the software will look in the Gravity PDF settings array for the column content. It searches for an array key which matches the column ID and outputs that value. If you want to customise the output of the column you should use the [`gfpdf_pdf_list_column_$id` action](../actions/gfpdf_pdf_list_column_id.md).
 
-## Parameters 
+## Parameters
 
 ### $columns | array
 *  An associative array which uses the column ID as the array key and the column name as the value.
 
-## Usage 
+## Usage
 
-The following snippet shows you how to add a new column to the PDF list table. 
+The following snippet shows you how to add a new column to the PDF list table.
 
 ```
 add_filter( 'gfpdf_pdf_list_columns', function( $columns ) {
@@ -37,6 +37,6 @@ add_filter( 'gfpdf_pdf_list_columns', function( $columns ) {
 } );
 ```
 
-## Source Code 
+## Source Code
 
 This filter is located in the `Helper_PDF_List_Table::get_columns()` method of `/src/helper/Helper_PDF_List_Table.php`.

@@ -4,16 +4,16 @@ sidebar_label: "gfpdf_form_settings_advanced"
 description: "This filter is used to add new fields to the Advanced tab of the contextual PDF form settings."
 ---
 
-## Description 
+## Description
 
 This filter can be used to add new fields to the [Advanced settings tab for individual PDFs](user-setup-pdf.md#advanced-tab). It's basically a Fields API and all validation, sanitising and saving is handled automatically for you.
 
-## Parameters 
+## Parameters
 
 ### $fields | array
 *  An associative array that includes a breakdown of the field information. We go into more detail about what each field configuration setting does [in our custom PDF configuration guide](developer-template-configuration-and-image.md#custom-fields).
 
-## Usage 
+## Usage
 
 The following sample shows you how to add two new fields to the Advanced tab of the contextual PDF settings pages:
 
@@ -64,6 +64,6 @@ add_filter( 'gfpdf_form_settings_advanced', function( $fields ) {
 } );
 ```
 
-## Source Code 
+## Source Code
 
 This filter is located in the `Helper_Options_Fields::get_registered_fields()` method of `/src/helper/Helper_Options_Fields.php`.

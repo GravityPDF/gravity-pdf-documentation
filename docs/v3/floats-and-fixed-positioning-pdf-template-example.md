@@ -36,7 +36,7 @@ The CSS <code>position</code> property supports the <code>fixed</code> and <code
 </ul>
 
 <h3>Rotating Positioned Elements</h3>
-<a href="/v3/tables-pdf-template-example/">Like the CSS table <code>rotate</code> property</a>, positioned elements can also be rotated 90 degrees. 
+<a href="/v3/tables-pdf-template-example/">Like the CSS table <code>rotate</code> property</a>, positioned elements can also be rotated 90 degrees.
 
 ```css
 #ID {

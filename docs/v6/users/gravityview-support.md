@@ -12,18 +12,18 @@ import ResponsiveEmbed from 'react-responsive-embed'
 [_PDF for GravityView_ is a premium Gravity PDF extension](https://gravitypdf.com/shop/pdf-for-gravityview-add-on/) which offers deep integration with the View Editor. This [turns GravityView into a powerful PDF builder](https://gravitypdf.com/news/turning-gravityview-into-a-powerful-pdf-builder-tool/), and makes it easy to generate PDFs of your Views. You'll save hours compared to [replicating your view in code using a custom template](../developers/first-custom-pdf.md).
 :::
 
-## Add PDF Download Link to View 
+## Add PDF Download Link to View
 
 You can easily add PDF Download links to your View. To do this you'll need to use [GravityView's Custom Content Field](https://docs.gravitykit.com/article/111-using-the-custom-content-field).
 
 <ResponsiveEmbed src="https://player.vimeo.com/video/671780459?dnt=1" allowfullscreen />
 
-Go edit your View in the admin area, click the `+ Add Field` button in the *Multiple Entries* or *Single Entry* tab, and click *Custom Content*. Next, go to your form's [Manage PDF page](managing-pdfs.md), copy the `[gravitypdf]` shortcode in the list and paste it into the View's Custom Content Field. Save the View and go check if it's working. 
+Go edit your View in the admin area, click the `+ Add Field` button in the *Multiple Entries* or *Single Entry* tab, and click *Custom Content*. Next, go to your form's [Manage PDF page](managing-pdfs.md), copy the `[gravitypdf]` shortcode in the list and paste it into the View's Custom Content Field. Save the View and go check if it's working.
 
 ![Adding a Gravity PDF shortcode to GravityView's Custom Content field](https://resources.gravitypdf.com/uploads/2021/04/v6-GravityView-Custom-Content.png)
 _Adding a Gravity PDF shortcode to GravityView's Custom Content field._
 
-![The PDF Download links added to a GravityView table](https://resources.gravitypdf.com/uploads/2016/06/GravityViewList.png) 
+![The PDF Download links added to a GravityView table](https://resources.gravitypdf.com/uploads/2016/06/GravityViewList.png)
 _The PDF Download links added to a GravityView table_
 
 Because of [Gravity PDF's security](pdf-security.md), by default access to the PDFs is restricted to the entry owner or users with a capability found in the [User Restriction setting](global-settings.md#user-restriction). That means that you'd need to:
@@ -32,7 +32,7 @@ Because of [Gravity PDF's security](pdf-security.md), by default access to the P
 
 2.  Using a Membership plugin that allows you to show/hide content based on user roles ([Paid Memberships Pro](https://wordpress.org/plugins/paid-memberships-pro/) comes to mind). You can display the GravityView to a user with a Role that includes one of the capabilities found in Gravity PDF's [User Restriction setting](global-settings.md#user-restriction) – by default, this is only the Administrator role. Not sure what Roles and Capabilities are? [Here's a great article from WPShout discussing the finer points](https://wpshout.com/working-with-wordpress-user-roles-and-capabilities/).
 
-## Public Access 
+## Public Access
 
 If you'd like anyone with access to your View to securely download the PDF(s), you can [take advantage of signed PDF URLs](shortcodes-and-mergetags.md#signed-optional). Just amend the [gravitypdf] shortcode added to the Custom Content Field and include the `signed="1"` attribute:
 
@@ -46,7 +46,7 @@ If you're using [GravityView's Multiple Forms extension](https://www.gravitykit.
 ![A screenshot of GravityView's Add Field buttons for multiple forms in the View](https://resources.gravitypdf.com/uploads/2022/08/gravityview-add-fields-from-specific-forms.png)
 
 2. Copy the `[gravitypdf]` shortcode from the [Manage PDF page](managing-pdfs.md)and paste it into the View's Custom Content Field created in step 1
-3. Manually add the `entry` attribute to the shortcode and set the value to `{entry_id}` 
+3. Manually add the `entry` attribute to the shortcode and set the value to `{entry_id}`
 
 `[gravitypdf name="Default Template" id="56ea5a3b2c684" text="Download PDF" entry="{entry_id}"]`
 

@@ -12,15 +12,15 @@ description: ""
 * [Usage](#usage)
 * [Source Code](#source-code)
 
-### Description 
+### Description
 
 Use this filter to dynamically attach or exclude a PDF from the notification being processed.
 
-### Version 
+### Version
 
 This filter was introduced in Gravity PDF 4.2.
 
-### Parameters 
+### Parameters
 
 $attach | boolean
 :    Return `true` to attach the PDF to the current notification, or `false` otherwise.
@@ -37,7 +37,7 @@ $entry | array
 $form | array
 :    The Gravity Forms array
 
-### Usage 
+### Usage
 
 The following will include all generated PDFs with all Gravity Forms notifications:
 
@@ -59,6 +59,6 @@ add_filter( 'gfpdf_maybe_attach_to_notification', function( $attach, $notificati
 }, 10, 5 );
 ```
 
-### Source Code 
+### Source Code
 
 This filter is located in the `Model_PDF::maybe_attach_to_notification()` method in `/src/model/Model_PDF.php`.

@@ -4,15 +4,15 @@ sidebar_label: "gfpdf_hide_consent_field_if_empty"
 description: "A filter that allows you to hide Consent fields from Core / Universal PDFs if user has not given consent."
 ---
 
-## Description 
+## Description
 
 This filter allows you to hide specific Consent fields from Core / Universal PDF templates if a user has not ticked the box/given their consent.
 
-## Version 
+## Version
 
 This filter was introduced in Gravity PDF 6.6.0
 
-## Parameters 
+## Parameters
 
 ### $remove_if_empty | bool
 * A boolean that will determine if the current consent field should be output in the PDF if a user has not ticked the box/given consent. Defaults to false.
@@ -26,11 +26,11 @@ This filter was introduced in Gravity PDF 6.6.0
 ### $form | array
 *  The current Gravity Forms array
 
-## Usage 
+## Usage
 
 This example will hide all Consent fields in all Core / Universal PDFs if a user has not given their consent:
 
-``` 
+```
 add_filter( 'gfpdf_hide_consent_field_if_empty', function( $remove_if_empty, $field, $entry, $form ) {
     return true;
 }, 10, 4 );
@@ -43,12 +43,12 @@ add_filter( 'gfpdf_hide_consent_field_if_empty', function( $remove_if_empty, $fi
     if ( (int) $form['id'] === 8 ) {
         return true;
     }
-    
+   
     return $remove_if_empty;
 }, 10, 4 );
 ```
 
-## Source Code 
+## Source Code
 
 This filter is located in the `Field_Consent::html()` method of `/src/Helper/Fields/Field_Consent.php`.
-    
+   

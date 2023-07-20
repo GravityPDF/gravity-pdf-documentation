@@ -16,7 +16,7 @@ You can purchase the *PDF for GravityView* plugin from the [Extension Shop](http
 PDFs are only generated for the Single Entry Layout. But what exactly is the Single Entry Layout? When you create a view, there are three different layouts available: Multiple Entries, Single Entry, and Edit Entry. The Single Entry Layout [displays more information about a specific entry](https://gravity.guide/lesson/creating-the-view-single-entries-layout/) and is currently the only layout that can be turned into a PDF.
 :::
 
-## Installation 
+## Installation
 
 [Please follow our installation guide](installing-upgrading-extensions.md), which provides instructions for uploading the add-on to your WordPress website and adding your license key for automatic updates.
 
@@ -32,7 +32,7 @@ If any of the prerequisites aren't met, the plugin will show an appropriate erro
 
 ## View Types
 
-Depending on your license type, [GravityView offers up to five different view types](https://docs.gravitykit.com/article/400-what-are-the-differences-between-the-view-types). To various degrees, _PDF for GravityView_ supports all five view types natively. 
+Depending on your license type, [GravityView offers up to five different view types](https://docs.gravitykit.com/article/400-what-are-the-differences-between-the-view-types). To various degrees, _PDF for GravityView_ supports all five view types natively.
 
 ### Table / DataTables
 <div class="two-column-grid">
@@ -53,13 +53,13 @@ The _Table_ and _DataTables_ layouts display the Single Entry in a tabular layou
     <a href="https://resources.gravitypdf.com/uploads/2023/04/pdf-for-gravityview-List-Map-v2.png"><img src="https://resources.gravitypdf.com/uploads/2023/04/pdf-for-gravityview-List-Map-v2.png" alt="A screenshot of the Single Entry Layout section of the GravityView Editor for a List View" /></a>
 </div>
 
-The _List_ and _Map_ layouts display the Single Entry in a similar card-style layout. There's a Title and Subheading in the header of the card. In the card body is a two column layout, with the left column narrower than the right. While the card footer is split into two equal sized columns. 
+The _List_ and _Map_ layouts display the Single Entry in a similar card-style layout. There's a Title and Subheading in the header of the card. In the card body is a two column layout, with the left column narrower than the right. While the card footer is split into two equal sized columns.
 
 _PDF for GravityView_ has  good support for these view types, and the generated PDF will match the original layout fairly accurately. While the PDF does quite well at replicating your View layout, there are some "gotchas" to be aware of:
 
-1. The Entry Map field included in [GravityView's Maps Layout](https://www.gravitykit.com/extensions/maps/) isn't currently supported. You should [exclude that field from the PDF](#exclude-from-pdf) to prevent a display problem. 
+1. The Entry Map field included in [GravityView's Maps Layout](https://www.gravitykit.com/extensions/maps/) isn't currently supported. You should [exclude that field from the PDF](#exclude-from-pdf) to prevent a display problem.
 
-1. In the card body of the _List_ layout, the right column can wrap around the left column if the content extends beyond the left-column height. Both the PDF and the _Map_ layouts make use of real columns for the card body, and the content will not wrap. 
+1. In the card body of the _List_ layout, the right column can wrap around the left column if the content extends beyond the left-column height. Both the PDF and the _Map_ layouts make use of real columns for the card body, and the content will not wrap.
 
 ### DIY
 
@@ -68,7 +68,7 @@ _PDF for GravityView_ has  good support for these view types, and the generated 
     <a href="https://resources.gravitypdf.com/uploads/2023/04/pdf-for-gravityview-DIY-v3.png"><img src="https://resources.gravitypdf.com/uploads/2023/04/pdf-for-gravityview-DIY-v3.png" alt="A screenshot of the Single Entry Layout section of the GravityView Editor for a DIY View" /></a>
 </div>
 
-The _DIY_ view only has basic PDF support. Unlike the other view types, _DIY_ views don't have a fixed layout or structure, and you can literally design anything. When you combine that with a PDF engine that doesn't support modern CSS layout properties, like Flexbox or Grid (plus a bunch of layout quirks of its own), you'll get less-than-ideal results when using the DIY layout you've built for the modern web. 
+The _DIY_ view only has basic PDF support. Unlike the other view types, _DIY_ views don't have a fixed layout or structure, and you can literally design anything. When you combine that with a PDF engine that doesn't support modern CSS layout properties, like Flexbox or Grid (plus a bunch of layout quirks of its own), you'll get less-than-ideal results when using the DIY layout you've built for the modern web.
 
 The good news is _PDF for GravityView_ includes features that can help improve the PDF output from *DIY* layouts. If you have fields that display poorly in the PDF, you can use the [Exclude from PDF](#exclude-from-pdf) setting to remove them without affecting your website view. You can then use the [Only Include in PDF](#only-include-in-pdf) setting to add new fields specifically for the PDF. That approach should cover the majority of use-cases. However, if you've a really complex layout [you may need to create a template override for your view](#template-overrides) and use PHP/HTML/CSS to get the best result.
 
@@ -80,12 +80,12 @@ _PDF for GravityView_ is deeply integrated into GravityView, and most configurat
 
 ![A screenshot showing all available settings for the PDF in the GravityView Editor](https://resources.gravitypdf.com/uploads/2023/04/pdf-for-gravityview-Single-Entry-PDF-Settings.png)
 
-[In the View Settings Meta Box](https://docs.gravitykit.com/article/382-the-view-settings-meta-box) you'll find a new menu item called **Single Entry PDF**. The following settings are available: 
+[In the View Settings Meta Box](https://docs.gravitykit.com/article/382-the-view-settings-meta-box) you'll find a new menu item called **Single Entry PDF**. The following settings are available:
 
 #### Filename
 * The filename is what the generated PDF will be called when saved. For example, `My_Personal_Flyer.pdf`
 * **If you leave the value empty, your View name will automatically be used for the filename.**
-* [Gravity Forms merge tags](https://docs.gravityforms.com/category/user-guides/merge-tags-getting-started/) are supported in the filename. Any merge tags will be converted to the appropriate value when the PDF is saved. For example, `{Name:3}_Personal_Flyer.pdf` will become `Gravity PDF_Personal_Flyer.pdf` if a user entered *GravityPDF* for field ID 3 in the form. 
+* [Gravity Forms merge tags](https://docs.gravityforms.com/category/user-guides/merge-tags-getting-started/) are supported in the filename. Any merge tags will be converted to the appropriate value when the PDF is saved. For example, `{Name:3}_Personal_Flyer.pdf` will become `Gravity PDF_Personal_Flyer.pdf` if a user entered *GravityPDF* for field ID 3 in the form.
 * If you use merge tags, either use a field marked required or include static text alongside the merge tag to prevent an empty filename.
 * While the following characters will be saved, they are automatically converted to an underscore when generating the PDF: `/ " * ? | :`. This is to prevent problems saving the PDFs to disk on some operating systems.
 
@@ -100,7 +100,7 @@ _PDF for GravityView_ is deeply integrated into GravityView, and most configurat
 * The field defaults to Portrait.
 
 #### Page Margin
-* This allows you to change the page margin used throughout the PDF.  
+* This allows you to change the page margin used throughout the PDF. 
 * The following units are supported when setting the page margin: `mm in px % cm` eg. `20mm`, `1in`, `50px`, `5%`, or `2cm`.
 * This setting [supports CSS shorthand](https://developer.mozilla.org/en-US/docs/Web/CSS/Shorthand_properties#edges_of_a_box) to apply a different margin value to each side of the page eg. `1in 0.5in` will set the top and bottom margin to 1 inch, and the left and right margin to 0.5 inch; `50px 100px 25px` will set the top margin to 50px, the left/right margin to 100px, and the bottom margin to 25px; `10mm 5mm 10mm 20mm` will set the top and bottom margins to 10mm, the right margin to 5mm and the left margin to 20mm.
 * The default value is `20mm`
@@ -146,7 +146,7 @@ _PDF for GravityView_ is deeply integrated into GravityView, and most configurat
 #### Additional CSS
 * Add CSS to further customize the look and feel of the PDF document. [See the developer section for examples of common selectors and styles](#css).
 * To inspect the HTML used for a PDF, administrator users can [enable PDF Debug Mode](../users/global-settings.md#debug-mode) and then [add the HTML helper parameter](../developers/helper-parameters.md#html1) to the Single Entry View PDF URL.
-* Be aware that [only a subset of CSS is supported by Gravity PDF](../developers/pdf-features/supported-html-and-css.md#css-support). 
+* Be aware that [only a subset of CSS is supported by Gravity PDF](../developers/pdf-features/supported-html-and-css.md#css-support).
 
 ### Fields
 
@@ -159,7 +159,7 @@ _PDF for GravityView_ registers new fields that can be used when building a View
     <a href="https://resources.gravitypdf.com/uploads/2023/04/pdf-for-gravityview-Link-Single-Entry-PDF-Settings.png"><img src="https://resources.gravitypdf.com/uploads/2023/04/pdf-for-gravityview-Link-Single-Entry-PDF-Settings.png" alt="A screenshot showing all available settings for the Link to Single Entry PDF field in the GravityView Editor" /></a>
 </div>
 
-Add the "Link to Single Entry PDF" field and it will display a link to view/download the PDF for your View. It can be added to both the Multiple Entries and Single Entry layout. 
+Add the "Link to Single Entry PDF" field and it will display a link to view/download the PDF for your View. It can be added to both the Multiple Entries and Single Entry layout.
 
 The following settings allow you to customize the appearance, display, and functionality of the field:
 
@@ -168,7 +168,7 @@ The following settings allow you to customize the appearance, display, and funct
 * This setting is disabled by default
 
 ##### Link Text
-* The PDF link text to display in the View 
+* The PDF link text to display in the View
 * Merge tags are supported
 * The default value is "View PDF"
 
@@ -192,7 +192,7 @@ The following settings allow you to customize the appearance, display, and funct
 * Merge tags are supported
 
 ##### Link Expiration
-* The length of time a PDF link will remain valid. 
+* The length of time a PDF link will remain valid.
 * The default value is "1 day"
 
 #### Share Single Entry PDF
@@ -229,7 +229,7 @@ The following settings allow you to customize the appearance, display, and funct
 ##### Notification Message
 * The message to use for the email notification
 * Merge tags and most HTML tags are supported
-* The special merge tag `{gv_entry_link}` will display a link to the Single Entry View the PDF was generated from 
+* The special merge tag `{gv_entry_link}` will display a link to the Single Entry View the PDF was generated from
 * The default is "A PDF has been shared with you from {gv_entry_link} and is attached."
 
 ##### Show Label
@@ -328,7 +328,7 @@ For security reasons, each PDF Download link uses a signed URL which is tamper p
 
 ### There was a problem with the request
 
-This error may occur if the GravityView or associated entry has been deleted and cannot be found, or the View is modified to make use of a different Gravity Form. Accessing the View and using a fresh PDF Download link should resolve the issue. 
+This error may occur if the GravityView or associated entry has been deleted and cannot be found, or the View is modified to make use of a different Gravity Form. Accessing the View and using a fresh PDF Download link should resolve the issue.
 
 ### The Notification Email with the PDF Wasn't Received
 
@@ -346,7 +346,7 @@ To troubleshoot an email deliverability issue:
 
 [Any Custom Font you have configured in Gravity PDF](https://docs.gravitypdf.com/v6/users/custom-fonts) will be available to use in your View's PDF. Use the Font Manager to install the font(s) first, and then [update the PDF Font setting in your View](#font).
 
-## Developers 
+## Developers
 
 Developers can further customize _PDF for GravityView_ by overriding one of the View PDF templates, or using one of the hooks provided.
 
@@ -356,7 +356,7 @@ Here are useful CSS you can [add to the Additional CSS setting](#additional-css)
 
 #### Table
 
-Add a border to the individual cells of the table: 
+Add a border to the individual cells of the table:
 
 ```css
 .label, .value {
@@ -392,7 +392,7 @@ table.view tr:nth-child(even) td {
 
 Make the Listing Title display in uppercase:
 
-```css 
+```css
 .gv-list-view-title h3 {
 	text-transform: uppercase;	
 }
@@ -426,7 +426,7 @@ Change the background and text color of the Listing Footer:
 ```
 
 Adjust how much space the Image takes up in the main content area:
-```css 
+```css
 .gv-list-view-content-image {
 	width: 50%;	
 }
@@ -444,7 +444,7 @@ Make the labels bold in the Image and Other Fields section:
 
 Make the Title display in uppercase:
 
-```css 
+```css
 .gv-map-view-title h3 {
 	text-transform: uppercase;	
 }
@@ -478,7 +478,7 @@ Change the background and text color of the Listing Footer:
 ```
 
 Adjust how much space the Image takes up in the main content area:
-```css 
+```css
 .gv-map-view-content-image {
 	width: 50%;	
 }
@@ -504,7 +504,7 @@ Increase the size of the PDF title:
 
 Adjust the styles of a H1 heading tag:
 
-```css 
+```css
 h1 {
   color: #1D2475;
   text-transform: uppercase;
@@ -553,7 +553,7 @@ The plugin includes the following PDF templates:
 
 The above PDF templates are used for any configured PDF in any View (the specific template used depends on the view layout). But there are circumstances where you may want to customize a PDF for a specific View only. To do so, you can copy the correct template file to the PDF Working Directory and then rename so the View ID is included in the filename.
 
-Say you've a View using the Table Layout with a View ID of `885` ([grab the ID from the Embed Shortcode](https://docs.gravitykit.com/article/73-using-the-shortcode)). You would copy the file `src/Pdf/Templates/gravityview-single-entry-table-template.php` from the plugin to the PDF Working Directory, which on a default installation is in `/wp-content/uploads/PDF_EXTENDED_TEMPLATES/`. Finally, rename the template to `gravityview-single-entry-table-template-885.php` and then make your modifications. Any changes you make will only apply to the PDF generated for View ID 885. 
+Say you've a View using the Table Layout with a View ID of `885` ([grab the ID from the Embed Shortcode](https://docs.gravitykit.com/article/73-using-the-shortcode)). You would copy the file `src/Pdf/Templates/gravityview-single-entry-table-template.php` from the plugin to the PDF Working Directory, which on a default installation is in `/wp-content/uploads/PDF_EXTENDED_TEMPLATES/`. Finally, rename the template to `gravityview-single-entry-table-template-885.php` and then make your modifications. Any changes you make will only apply to the PDF generated for View ID 885.
 
 ### How Do I Display X, Y, Z in the PDF?
 

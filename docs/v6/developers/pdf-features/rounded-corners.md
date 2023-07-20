@@ -4,11 +4,11 @@ sidebar_label: "Rounded Corners"
 description: ""
 ---
 
-## Introduction 
+## Introduction
 
 The CSS3 `border-radius` property can be applied to all block elements to easily enhance the look and feel of your PDFs. The software is configured to automatically add appropriate padding to the container when rounded corners are enabled.
 
-## CSS Format 
+## CSS Format
 
 Rounded corners can be enabled using both the CSS3-spec short and long-hand properties:
 
@@ -36,7 +36,7 @@ border-bottom-right-radius: 4em 0.5em;
 border-bottom-left-radius: 1em 3em;
 ```
 
-## Examples 
+## Examples
 
 ```html
 <!-- Standard Border Radius -->

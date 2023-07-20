@@ -43,7 +43,7 @@ The darker background on *Royal* contrasts nicely with a [Font Color](../../user
 ### Certificate Configuration
 
 :::info
-For the best results it is recommended you use _Sentence Case_ for the [Title](#title-3) and [Introduction](#introduction-5), and _lower case_ for the [Subtitle](#subtitle-4) setting.  
+For the best results it is recommended you use _Sentence Case_ for the [Title](#title-3) and [Introduction](#introduction-5), and _lower case_ for the [Subtitle](#subtitle-4) setting. 
 :::
 
 #### Title (3)

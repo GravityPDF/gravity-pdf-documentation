@@ -4,7 +4,7 @@ sidebar_label: "Positioning"
 description: "Like floats, the PDF software does support fixed and absolute positioning of block elements in PDFs, but there are specific restrictions. Let's discuss."
 ---
 
-## Introduction 
+## Introduction
 
 Like [floats](floats.md), the PDF software does support `fixed` and `absolute` positioning of block elements in PDFs, but there are specific restrictions. These include:
 
@@ -22,7 +22,7 @@ Like [floats](floats.md), the PDF software does support `fixed` and `absolute` p
 mPDF can start acting quirky if the page only contains positioned elements. A simple workaround is to add a non-breaking space character `&nbsp;` to the page.
 :::
 
-## Absolute Positioning 
+## Absolute Positioning
 
 Absolute positioning treats the whole physical page as the containing element, irrespective of the page margins. That means if we set the top and left CSS attributes to zero your HTML would be at the very top-left corner of the page.
 
@@ -35,7 +35,7 @@ Absolute positioning treats the whole physical page as the containing element, i
 &nbsp;
 ```
 
-## Fixed Positioning 
+## Fixed Positioning
 
 As oppose to absolute positioning, fixed positioned elements adhere to the page margins (set using the CSS margin attribute in `@page`), using it as the container. That means setting the top and left CSS attributes to zero would show your HTML positioned at the very beginning of the page margins.
 
@@ -47,7 +47,7 @@ As oppose to absolute positioning, fixed positioned elements adhere to the page 
 &nbsp;
 ```
 
-## Rotated Elements 
+## Rotated Elements
 
 Like tables, fixed or absolute positioned elements can be rotated 90 degrees clockwise and anti-clockwise:
 
@@ -71,7 +71,7 @@ Like tables, fixed or absolute positioned elements can be rotated 90 degrees clo
 &nbsp;
 ```
 
-## Auto Fit Text 
+## Auto Fit Text
 
 One of the great features of positioned elements is the ability to have the text resize to fit the container. This is very useful when working with dynamic data from Gravity Forms.
 
@@ -101,6 +101,6 @@ One of the great features of positioned elements is the ability to have the text
 &nbsp;
 ```
 
-## Example 
+## Example
 
 [We've put together a sample showing off the positioning support in Gravity PDF](https://gist.github.com/jakejackson1/995559887bbad94b167f).

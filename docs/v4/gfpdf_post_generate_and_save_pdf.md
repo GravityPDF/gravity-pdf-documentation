@@ -12,15 +12,15 @@ description: ""
 * [Usage](#usage)
 * [Source Code](#source-code)
 
-### Description 
+### Description
 
 This action can be used to a task or clean-up settings changes after the PDF is generated and saved [using the API](api_create_pdf.md). [Usually used in conjunction with `gfpdf_pre_generate_and_save_pdf`](gfpdf_pre_generate_and_save_pdf.md)
 
-### Version 
+### Version
 
 This action was introduced in Gravity PDF 4.5.
 
-### Parameters 
+### Parameters
 
 $form | array
 :    The Gravity Forms form array
@@ -31,7 +31,7 @@ $entry | array
 $settings | array
 :    The current Gravity PDF settings array
 
-### Usage 
+### Usage
 
 ```
 add_action( 'gfpdf_post_generate_and_save_pdf', function( $form, $entry, $settings ) {
@@ -43,6 +43,6 @@ add_action( 'gfpdf_pre_generate_and_save_pdf', function( $form, $entry, $setting
 }, 10, 3 );
 ```
 
-### Source Code 
+### Source Code
 
 This action is located in the `create_pdf()` method of `/api.php`.

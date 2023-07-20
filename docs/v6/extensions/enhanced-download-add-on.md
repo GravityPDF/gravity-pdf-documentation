@@ -8,11 +8,11 @@ import ResponsiveEmbed from 'react-responsive-embed'
 
 ![The Enhanced Download extension cover art. It includes an icon of a PDF document and an arrow pointing downward. The text 'Enhanced Download' is displayed.](https://resources.gravitypdf.com/uploads/2022/12/enhanced-download-cover-art1.png)
 
-*Enhanced Download* is a premium plugin for Gravity PDF that can display a user-friendly modal window + loading indicator when a PDF is generated on the server. It is a useful feature when Gravity PDF is generating complex PDFs that can take a few seconds (or more) to generate, or when you've [set up a Redirect Confirmation to a PDF](../users/shortcodes-and-mergetags.md#redirect-confirmation).  
+*Enhanced Download* is a premium plugin for Gravity PDF that can display a user-friendly modal window + loading indicator when a PDF is generated on the server. It is a useful feature when Gravity PDF is generating complex PDFs that can take a few seconds (or more) to generate, or when you've [set up a Redirect Confirmation to a PDF](../users/shortcodes-and-mergetags.md#redirect-confirmation). 
 
 You can purchase the *Enhanced Download* plugin from the [Extension Shop](https://gravitypdf.com/shop/enhanced-download-add-on/). This guide will walk you through installing and configuring *Enhanced Download* to its full potential.
 
-## Installation 
+## Installation
 
 [Please follow our installation guide](installing-upgrading-extensions.md), which provides instructions for uploading the add-on to your WordPress website and adding your license key for automatic updates.
 
@@ -22,7 +22,7 @@ You can purchase the *Enhanced Download* plugin from the [Extension Shop](https:
 
 ### PDF Download Link
 
-You can enhance [\[gravitypdf\] download links](../users/shortcodes-and-mergetags.md#shortcode) by adding the attribute `enhanced="1"` to any usage of the shortcode displayed on your website – [provided `type` is set to `download`, or is omitted](../users/shortcodes-and-mergetags.md#type-optional). 
+You can enhance [\[gravitypdf\] download links](../users/shortcodes-and-mergetags.md#shortcode) by adding the attribute `enhanced="1"` to any usage of the shortcode displayed on your website – [provided `type` is set to `download`, or is omitted](../users/shortcodes-and-mergetags.md#type-optional).
 
 Enhanced PDF download links can be used in:
 
@@ -46,7 +46,7 @@ The [gravitypdf] shortcode is unique to each PDF configured on your form, so you
 
 ### Redirect Confirmation
 
-If you are using a [PDF Redirect Confirmation](../users/shortcodes-and-mergetags.md#redirect-confirmation) to directly download a PDF on form submission, _Enhanced Download_ will automatically enable [when your form is embedded with AJAX](https://docs.gravityforms.com/adding-a-form-using-blocks/#h-gravity-forms-block-settings). An important caveat is all confirmations configured on the form (excluding [Save and Continue](https://docs.gravityforms.com/save-continue-gravity-forms/#h-confirmations-notifications)) must be PDF Redirects.  
+If you are using a [PDF Redirect Confirmation](../users/shortcodes-and-mergetags.md#redirect-confirmation) to directly download a PDF on form submission, _Enhanced Download_ will automatically enable [when your form is embedded with AJAX](https://docs.gravityforms.com/adding-a-form-using-blocks/#h-gravity-forms-block-settings). An important caveat is all confirmations configured on the form (excluding [Save and Continue](https://docs.gravityforms.com/save-continue-gravity-forms/#h-confirmations-notifications)) must be PDF Redirects. 
 
 After the loading indicator has been displayed and subsequently closed by a user, Gravity Forms' _duplicate submission prevention_ feature is turned off by the plugin. This unlocks the current form so that it can be resubmitted. Without _Enhanced Download_, the form submission button is permanently disabled and users need to do a hard refresh/fill out the form again to download a new PDF. This is cumbersome if someone made a typo while filling out the form, or if a user wanted to explore different variations on the PDF ([the Previewer add-on](previewer-add-on.md) is a good option as well). This change improves the overall user experience when using PDF Redirects, and prevents Gravity Forms UI from being left in a broken state after the redirect occurs.
 
@@ -56,15 +56,15 @@ If the possibility of duplicate submissions is problematic for you, switch to a 
 
 ### Entry List and Details
 
-When the [Entry List and Detail](#entry-list-and-detail) global setting is turned on, _Enhanced Download_ will be enabled when [downloading PDFs from the Entry List or Entry Details page in your admin area](https://docs.gravitypdf.com/v6/users/viewing-pdfs). 
+When the [Entry List and Detail](#entry-list-and-detail) global setting is turned on, _Enhanced Download_ will be enabled when [downloading PDFs from the Entry List or Entry Details page in your admin area](https://docs.gravitypdf.com/v6/users/viewing-pdfs).
 
-For _Enhanced Download_ to function on the Entry List page, you'll need to ensure the [_Entry View_ setting is set to _Download_](../users/global-settings#entry-view). On the Entry Details page only the _download_ link enables _Enhanced Download_. The loading indicator will not be shown when using the _view_ link. 
+For _Enhanced Download_ to function on the Entry List page, you'll need to ensure the [_Entry View_ setting is set to _Download_](../users/global-settings#entry-view). On the Entry Details page only the _download_ link enables _Enhanced Download_. The loading indicator will not be shown when using the _view_ link.
 
 ### Global Settings
 
 ![A screenshot of the plugin's global settings WordPress admin page, each of which are covered in detail in the next section of this documentation.](https://resources.gravitypdf.com/uploads/2022/12/enhanced-download-extension-settings-1.png)
 
-Located at `Forms -> Settings -> PDF -> Extensions` in your WordPress Admin area, a number of global settings are available for the plugin. 
+Located at `Forms -> Settings -> PDF -> Extensions` in your WordPress Admin area, a number of global settings are available for the plugin.
 
 #### Entry List and Detail
 * Toggle this setting on if you'd like to enable the loading indicator when you download a PDF from the [Entry List](../users/viewing-pdfs.md#entry-list) or [Entry Detail](../users/viewing-pdfs.md#entry-details) admin pages.
@@ -73,7 +73,7 @@ Located at `Forms -> Settings -> PDF -> Extensions` in your WordPress Admin area
 
 #### String Localization
 
-The following settings allow you to easily change the strings for the user-facing modal window / loading indicator shown when a PDF is being generated. This makes it easy to translate the front-end strings into your native language. 
+The following settings allow you to easily change the strings for the user-facing modal window / loading indicator shown when a PDF is being generated. This makes it easy to translate the front-end strings into your native language.
 
 :::caution Merge Tags Not Supported
 You cannot use merge tags in any of the String Localization settings.
@@ -81,9 +81,9 @@ You cannot use merge tags in any of the String Localization settings.
 
 ##### Loading Title
 
-* This message is spoken aloud [by screen readers](https://en.wikipedia.org/wiki/Screen_reader) when the loading indicator modal is first opened (right after a user begins the PDF download process). 
+* This message is spoken aloud [by screen readers](https://en.wikipedia.org/wiki/Screen_reader) when the loading indicator modal is first opened (right after a user begins the PDF download process).
 * HTML is not allowed in this setting.
-* The default value is: `Generating PDF...` 
+* The default value is: `Generating PDF...`
 
 ##### Loading Message
 
@@ -140,15 +140,15 @@ There are a number of reasons why the Error Title and Message are shown, includi
 
 ### Limitations
 
-* The loading indicator is disabled for any _view_ PDF links (`[gravitypdf type="view"]`). 
+* The loading indicator is disabled for any _view_ PDF links (`[gravitypdf type="view"]`).
 * [AJAX has to be enabled in the embedded form](https://docs.gravityforms.com/category/getting-started/add-form-to-site/) for _Enhanced Download_ to be enabled when using PDF Redirect Confirmations
 * _Enhanced Download_ is [disabled during form submission](#redirect-confirmation) if all active Confirmations are not PDF Redirects (except Save and Continue confirmations)
-* The loading indicator doesn't work when the [enhanced PDF download link](#pdf-download-link) `[gravitypdf enhanced="1"]` is used in Notifications. 
-* The loading indicator displays a success message when the PDF is generated on the server and begins streaming to a client i.e. the download begins. It doesn't signify the PDF has been fully downloaded (it isn't possible to do reliably with available technology).  
+* The loading indicator doesn't work when the [enhanced PDF download link](#pdf-download-link) `[gravitypdf enhanced="1"]` is used in Notifications.
+* The loading indicator displays a success message when the PDF is generated on the server and begins streaming to a client i.e. the download begins. It doesn't signify the PDF has been fully downloaded (it isn't possible to do reliably with available technology). 
 
 ## Performance
 
-The plugin includes a ~2kb gzipped JavaScript (JS) file that is conditionally loaded in the footer of a page as a non-blocking request. When the plugin's JS is executed, a ~1kb gzipped CSS file is also fetched as a non-blocking request. 
+The plugin includes a ~2kb gzipped JavaScript (JS) file that is conditionally loaded in the footer of a page as a non-blocking request. When the plugin's JS is executed, a ~1kb gzipped CSS file is also fetched as a non-blocking request.
 
 The CSS and JS files are only included when the _Enhanced Download_ functionality is enabled for the current form, or the `[gravitypdf enhanced="1"]` shortcode is used on the page.
 
@@ -162,7 +162,7 @@ _Enhanced Download_ makes use of a first-party persistent cookie to determine wh
 
 ### When is the cookie set?
 
-The cookie is only set when a user clicks on a PDF download link that [has the enhanced attribute enabled](#pdf-download-link), or when an AJAX-enabled form is submitted [with a PDF Redirect Confirmation](#redirect-confirmation). 
+The cookie is only set when a user clicks on a PDF download link that [has the enhanced attribute enabled](#pdf-download-link), or when an AJAX-enabled form is submitted [with a PDF Redirect Confirmation](#redirect-confirmation).
 
 ### How long is the cookie set for?
 
@@ -199,7 +199,7 @@ You can include the following information in your Cookie Policy (you'll need to 
 
 When making your determination, be aware that are two different ways to use _Enhanced Download_:
 
-1. When using the [PDF Redirect Confirmation with AJAX-enabled forms](#redirect-confirmation): the plugin will display the loading indicator on form submission. A message is shown when the PDF is successfully generated on the server, or an error message is shown if the PDF failed to be generated / the timeout period lapsed. The loading indicator is automatically closed if a form validation checks fail during submission. Importantly, upon closing the loading indicator the form will be unlocked so a user can make edits and/or resubmit to generate another PDF. When using a PDF Redirect Confirmation without _Enhanced Download_, the form will remain in a locked state after submission and a user cannot then edit and resubmit the form. 
+1. When using the [PDF Redirect Confirmation with AJAX-enabled forms](#redirect-confirmation): the plugin will display the loading indicator on form submission. A message is shown when the PDF is successfully generated on the server, or an error message is shown if the PDF failed to be generated / the timeout period lapsed. The loading indicator is automatically closed if a form validation checks fail during submission. Importantly, upon closing the loading indicator the form will be unlocked so a user can make edits and/or resubmit to generate another PDF. When using a PDF Redirect Confirmation without _Enhanced Download_, the form will remain in a locked state after submission and a user cannot then edit and resubmit the form.
 
 1. When displaying a [PDF Download Link with the "enhanced" attribute](#pdf-download-link): the plugin will display the loading indicator when the link is selected. A message is shown when the PDF is successfully generated on the server, or an error message is shown if the PDF failed to be generated / the timeout period lapsed. The PDF Download Link will normally be used on a form's [Text or Page Confirmations](../users/shortcodes-and-mergetags.md#confirmation-types), in a [GravityView](../users/gravityview-support.md), or in an [Entry Block](../users/entry-block-perk-support.md). However, it can also be included on non-Gravity Forms related pages when the `entry` and `enhanced` attributes are provided to the `[gravitypdf]` shortcode.
 
@@ -220,7 +220,7 @@ All strings in the loading indicator / modal window can be edited [via the exten
 
 ## Troubleshooting
 
-This section details common problems you might come across when using _Enhanced Download_, and how you can troubleshoot them. If you run into a problem you cannot resolve, [you can always open a support ticket and our friendly team will be happy to help](https://gravitypdf.com/support/#support-form). 
+This section details common problems you might come across when using _Enhanced Download_, and how you can troubleshoot them. If you run into a problem you cannot resolve, [you can always open a support ticket and our friendly team will be happy to help](https://gravitypdf.com/support/#support-form).
 
 ### Loading Indicator / Modal Not Showing
 
@@ -283,9 +283,9 @@ If there are no errors shown in the log, a fatal PHP error might have occurred. 
 
 If you are unsure how to fix the problem, [provide all the information you've discovered – including logs and error messages – to our support team and we'll be happy to help](https://gravitypdf.com/support/#support-form).
 
-## Developers 
+## Developers
 
-This next bit is for developers who want to tweak how _Enhanced Download_ looks or functions. 
+This next bit is for developers who want to tweak how _Enhanced Download_ looks or functions.
 
 ### Disable Programmatically
 
@@ -316,7 +316,7 @@ The plugin defines the following CSS variables that control the colors used in t
 
 * `--gpdf-addon-ed-overlay-color`: This variable holds the text and icon color used throughout the overlay. The default color is white.
 * `--gpdf-addon-ed-overlay-text-shadow-color`: This variable holds the text shadow color used throughout the overlay. The default color is a very dark grey.
-* `--gpdf-addon-ed-overlay-focus-color`: This variable holds the button focus outline color for the overlay's close button. The default color is bright yellow. 
+* `--gpdf-addon-ed-overlay-focus-color`: This variable holds the button focus outline color for the overlay's close button. The default color is bright yellow.
 * `--gpdf-addon-ed-overlay-background`: This variable holds the background color / gradient used for the overlay. By default, a radial gradient is used; but you could change it to any value supported by the `background` property, include a single, transparent color like `rgba(0, 0, 0, 0.85)`.
 
 ### Accessibility Overview

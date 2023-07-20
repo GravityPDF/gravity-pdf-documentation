@@ -4,11 +4,11 @@ sidebar_label: "White Screen of Death"
 description: "If you are experiencing the \"white screen of death\", or when submitting Gravity Forms the page loads endlessly you should follow these steps."
 ---
 
-### Troubleshooting PHP Errors 
+### Troubleshooting PHP Errors
 
 If you are experiencing the "white screen of death", or when submitting Gravity Forms the page loads endlessly, you should follow these steps to try to resolve the problem:
 
-1. If you are **unable to access your WordPress admin area** you should FTP into your website and rename or delete the `/wp-content/plugins/gravity-forms-pdf-extended/` folder. Once done, attempt to access your admin area again. This technique will automatically disable Gravity PDF, so if it's the problem you should get access back to your website (try refreshing the page a couple of times if the problem persists). If it doesn't fix the problem, the issue is likely unrelated to Gravity PDF. 
+1. If you are **unable to access your WordPress admin area** you should FTP into your website and rename or delete the `/wp-content/plugins/gravity-forms-pdf-extended/` folder. Once done, attempt to access your admin area again. This technique will automatically disable Gravity PDF, so if it's the problem you should get access back to your website (try refreshing the page a couple of times if the problem persists). If it doesn't fix the problem, the issue is likely unrelated to Gravity PDF.
 
 1. If you still have full or partial access to your admin area you can verify Gravity PDF is the problem by disabling it on your plugins page. If the problem persists after disabling the software then the issue is unrelated to Gravity PDF. When this is the case you should disable all plugins then enable them one by one until you discover the problem plugin.
 

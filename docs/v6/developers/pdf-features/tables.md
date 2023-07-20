@@ -4,7 +4,7 @@ sidebar_label: "Tables"
 description: "There is quite good support for HTML tables in mPDF, but it does have its quirks. Use tables for tabular data and you'll find them a treat."
 ---
 
-## Introduction 
+## Introduction
 
 There is quite good support for HTML tables in [mPDF](http://mpdf.github.io/), but it does have its quirks. The two biggest issues you might face when using tables are:
 
@@ -16,7 +16,7 @@ Because of these two issues, tables have limited use when designing your PDF lay
 
 ![Example of Tables rendered in mPDF](https://resources.gravitypdf.com/uploads/2015/11/table-preview.png)
 
-## Table Rendering 
+## Table Rendering
 
 The table autosizing feature can sometimes cause issues with your layouts. One way to prevent unnecessary font resizing is to set a special `autosize` attribute to `1` and the table overflow to `wrap` when defining the table:
 
@@ -28,7 +28,7 @@ The table autosizing feature can sometimes cause issues with your layouts. One w
 
 Other problems with cell width can occur when you have fixed widths applied to `<td>` or `<th>` tags. To prevent problems follow these guidelines:
 
-1. You can set the width of a cell [using any Length measuring unit supported by mPDF](http://mpdf.github.io/css-stylesheets/supported-css.html). The most common are `mm`, `%`, `px` and `in`, while the easiest to work with is percentages `%`. 
+1. You can set the width of a cell [using any Length measuring unit supported by mPDF](http://mpdf.github.io/css-stylesheets/supported-css.html). The most common are `mm`, `%`, `px` and `in`, while the easiest to work with is percentages `%`.
 
 2.  Only add a width to the first row in your table – either inline or using CSS classes.
 
@@ -52,11 +52,11 @@ Other problems with cell width can occur when you have fixed widths applied to `
 </table>
 ```
 
-## Repeating Header and Footers 
+## Repeating Header and Footers
 
 If a table extends across multiple pages the `<thead></thead>` and `<tfoot></tfoot>` elements will be automatically appended and prepended to the table for each new page.
 
-## Rotating Table 
+## Rotating Table
 
 Tables can be rotated 90 degrees clockwise or counter-clockwise, so they fit nicely on portrait documents. This feature can be applied using the CSS `rotate` property.
 
@@ -70,7 +70,7 @@ Tables can be rotated 90 degrees clockwise or counter-clockwise, so they fit nic
 }
 ```
 
-## Example 
+## Example
 
 [We’ve put together a sample showing off the table support in Gravity PDF](https://gist.github.com/jakejackson1/de009962d7ec776d223c).
 

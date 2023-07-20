@@ -4,14 +4,14 @@ sidebar_label: "gfpdf_core_template_fields_list"
 description: ""
 ---
 
-## Description 
+## Description
 
 This field can be used to create [new core PDF template fields](../template-configuration-and-image.md#core-fields) and make them available to the PDF configuration.
 
-## Parameters 
+## Parameters
 
 ### $fields | array
-*  The associative array which holds the field ID in the array key and the method/function which will get passed to PHP's `call_user_func` function. 
+*  The associative array which holds the field ID in the array key and the method/function which will get passed to PHP's `call_user_func` function.
 
 ### $template_settings | array
 *  The current template settings being run. [Read more about template configurations here](../template-configuration-and-image.md#core-fields).
@@ -19,7 +19,7 @@ This field can be used to create [new core PDF template fields](../template-conf
 ### $class | object
 *  The current template's configuration class being processed.
 
-## Usage 
+## Usage
 
 This snippet shows how to leverage this filter to create a new core field and define that core field's settings:
 
@@ -50,8 +50,8 @@ function prefix_custom_core_field_function() {
 }
 ```
 
-While this adds a new core field, you still need to process the value when set. Use the [`gfpdf_core_template`](gfpdf_core_template_fields_list.md) action to do this. 
+While this adds a new core field, you still need to process the value when set. Use the [`gfpdf_core_template`](gfpdf_core_template_fields_list.md) action to do this.
 
-## Source Code 
+## Source Code
 
 This filter is located in the `Model_Form_Settings::setup_core_custom_appearance_settings()` method of `/src/model/Model_Form_Settings.php`.

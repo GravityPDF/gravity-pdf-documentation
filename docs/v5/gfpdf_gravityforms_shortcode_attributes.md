@@ -4,16 +4,16 @@ sidebar_label: "gfpdf_gravityforms_shortcode_attributes"
 description: "Use this filter to modify the [gravitypdf] shortcode attribute properties before they are processed."
 ---
 
-## Description 
+## Description
 
 Use this filter to modify the `[gravitypdf]` shortcode attribute properties before they are processed.
 
-## Parameters 
+## Parameters
 
 ### $attributes | array
-*  The current shortcode attributes being processed. By default these include: `id`, `text`, `type`, `class`, `entry` and `print`. [See our shortcode documentation](user-shortcodes.md#attributes) for more details on what each of these attributes does. 
+*  The current shortcode attributes being processed. By default these include: `id`, `text`, `type`, `class`, `entry` and `print`. [See our shortcode documentation](user-shortcodes.md#attributes) for more details on what each of these attributes does.
 
-## Usage 
+## Usage
 
 This snippet shows you how to target a specific PDF's shortcode and include a custom class name:
 
@@ -28,7 +28,7 @@ add_filter( 'gfpdf_gravityforms_shortcode_attributes', function( $attributes ) {
 	return $attributes;
 } );
 ```
- 
-## Source Code 
+
+## Source Code
 
 This filter is located in the `Model_Shortcodes::gravitypdf()` method of `/src/model/Model_Shortcodes.php`.

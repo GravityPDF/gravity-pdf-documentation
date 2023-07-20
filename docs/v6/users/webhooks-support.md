@@ -14,7 +14,7 @@ import ResponsiveEmbed from 'react-responsive-embed'
 
 In this 8-minute video, Gravity PDF's lead developer takes you through using the Gravity Forms Webhooks Add-on and sending messages to Slack with the Gravity PDF URL included.
 
-<ResponsiveEmbed src="https://player.vimeo.com/video/671783546?dnt=1" allowfullscreen /> 
+<ResponsiveEmbed src="https://player.vimeo.com/video/671783546?dnt=1" allowfullscreen />
 
 ## Request Body
 
@@ -26,7 +26,7 @@ In this 8-minute video, Gravity PDF's lead developer takes you through using the
 
 Gravity Forms will send the entire unformatted entry with the request. Any active PDFs configured on the form, which also passes [the current entry conditional logic](setup-pdf.md#conditional-logic), will be added to the request body.
 
-The key used for the individual PDFs uses the format `gpdf_{ID}`, where `{ID}` is the [PDF Setting ID](shortcodes-and-mergetags.md#id-required). 
+The key used for the individual PDFs uses the format `gpdf_{ID}`, where `{ID}` is the [PDF Setting ID](shortcodes-and-mergetags.md#id-required).
 
 ```
 array (

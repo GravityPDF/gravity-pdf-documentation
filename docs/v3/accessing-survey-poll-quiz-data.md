@@ -39,45 +39,45 @@ The code sample below is what your survey data may look like when accessed throu
                                     [Living Room] => Array
                                         (
                                             [1 (poor)] => selected
-                                            [2] => 
-                                            [3] => 
-                                            [4] => 
-                                            [5 (excellent)] => 
+                                            [2] =>
+                                            [3] =>
+                                            [4] =>
+                                            [5 (excellent)] =>
                                         )
 
                                     [Bathroom] => Array
                                         (
-                                            [1 (poor)] => 
+                                            [1 (poor)] =>
                                             [2] => selected
-                                            [3] => 
-                                            [4] => 
-                                            [5 (excellent)] => 
+                                            [3] =>
+                                            [4] =>
+                                            [5 (excellent)] =>
                                         )
 
                                     [Shower] => Array
                                         (
-                                            [1 (poor)] => 
-                                            [2] => 
-                                            [3] => 
+                                            [1 (poor)] =>
+                                            [2] =>
+                                            [3] =>
                                             [4] => selected
-                                            [5 (excellent)] => 
+                                            [5 (excellent)] =>
                                         )
 
                                     [Bedroom] => Array
                                         (
-                                            [1 (poor)] => 
-                                            [2] => 
+                                            [1 (poor)] =>
+                                            [2] =>
                                             [3] => selected
-                                            [4] => 
-                                            [5 (excellent)] => 
+                                            [4] =>
+                                            [5 (excellent)] =>
                                         )
 
                                     [Kitchen] => Array
                                         (
-                                            [1 (poor)] => 
-                                            [2] => 
-                                            [3] => 
-                                            [4] => 
+                                            [1 (poor)] =>
+                                            [2] =>
+                                            [3] =>
+                                            [4] =>
                                             [5 (excellent)] => selected
                                         )
 
@@ -127,50 +127,50 @@ echo GFPDFEntryDetail::get_likert($form, $lead, $field_id);
 For those who need to access specific information about the likert field, the column and row information is stored in the $form_data['survey']['likert'] key.
 
 ```
-<?php 
+<?php
 
 /* output likert column (in this case the first column) with field ID of 1 */
 echo $form_data['survey']['likert'][1]['col']['glikertcol1b6380a6f']; /* column 1 - 1 (poor) */
 echo $form_data['survey']['likert'][1]['col']['glikertcol17fcece6b']; /* column 5 - 5 (excellent) */
-  
-  
+ 
+ 
 /* output multi likert row with field ID of 1 */
 echo $form_data['survey']['likert'][1]['rows']['Living Room']['1 (poor)']; /* row 1, column 1 - selected */
-  
+ 
 /* output multi likert row with field ID of 1 */
 echo $form_data['survey']['likert'][1]['rows']['Shower']['4']; /* row 3, column 4 - selected */
- 
- 
+
+
 /* loop through a multi row likert box and output the header and row information */
 $likert = $form_data['survey']['likert'][1];
- 
+
 /* we'll format the likert in a table */
 echo '<table><tr><th></th>';
- 
+
 /* output the column titles */
 foreach($likert['col'] as $id => $title)
 {
     echo "<th class='$id'>$title</th>";
 }
 echo '</tr>';
- 
+
 /* output the rows */
 foreach($likert['rows'] as $row => $cols)
 {
-?>  
+?> 
     <tr>
         <td><?php echo $row; ?></td>
-            <?php foreach($cols as $col_id => $selected): ?>          
+            <?php foreach($cols as $col_id => $selected): ?>         
                 <td>
                     <?php if($selected === 'selected'): ?>
                         Display a check box or X to show this was selected
                      <?php endif; ?>
-                </td>        
-            <?php endforeach; ?>     
+                </td>       
+            <?php endforeach; ?>    
         </tr>
-<?php   
+<?php  
 }
- 
+
 /* close the table */
 echo '</table>';
 ```
@@ -211,35 +211,35 @@ Array
                                     [text] => A
                                     [value] => 90
                                 )
- 
+
                             [1] => Array
                                 (
                                     [text] => B
                                     [value] => 80
                                 )
- 
+
                             [2] => Array
                                 (
                                     [text] => C
                                     [value] => 70
                                 )
- 
+
                             [3] => Array
                                 (
                                     [text] => D
                                     [value] => 60
                                 )
- 
+
                             [4] => Array
                                 (
                                     [text] => E
                                     [value] => 0
                                 )
- 
+
                         )
- 
+
                 )
- 
+
             [results] => Array
                 (
                     [score] => 3
@@ -248,7 +248,7 @@ Array
                     [grade] => A
                 )
         )
- 
+
     [field] => Array
         (
             [1.Quiz 1_name] => Array
@@ -256,19 +256,19 @@ Array
                             [text] => Third Choice
                             [isCorrect] => 1
                 )
- 
+
             [1] => Array
                 (
                             [text] => Third Choice
                             [isCorrect] => 1
                 )
- 
+
             [2.Quiz 2_name] => Array
                 (
                             [text] => First Choice
                             [isCorrect] => 0
                 )
- 
+
             [2] => Array
                 (
                             [text] => First Choice
@@ -333,40 +333,40 @@ We've introduced a <code>$form_data['poll']</code> key which has global informat
                                             (
                                                 [label] => Poll Field 1
                                             )
-     
+    
                                         [First Choice] => 1
                                         [Second Choice] => 3
                                         [Third Choice] => 1
                                     )
-     
+    
                                 [2] => Array
                                     (
                                         [misc] => Array
                                             (
                                                 [label] => Poll Field 2
                                             )
-     
+    
                                         [First Choice] => 1
                                         [Second Choice] => 0
                                         [Third Choice] => 0
                                     )
-     
+    
                                 [3] => Array
                                     (
                                         [misc] => Array
                                             (
                                                 [label] => Poll Field 3
                                             )
-     
+    
                                         [First Choice] => 0
                                         [Second Choice] => 1
                                         [Third Choice] => 1
                                     )
-     
+    
                             )
-     
+    
                     )
-     
+    
             )
     )
 

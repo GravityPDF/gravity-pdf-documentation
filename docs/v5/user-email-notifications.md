@@ -10,23 +10,23 @@ One of the most common support requests we get is users who aren't getting Gravi
 
 There's a fine art to configuring your website's emails, so they steer clear of spam filters and get delivered to inboxes. The solution involves using the correct settings in Gravity Forms and utilising a dedicated mail delivery service with correctly set up SPF and DKIM DNS records. It sounds complex, but the tools we discuss will make this relatively painless for you to configure.
 
-![Gravity Forms Notification Setup](https://resources.gravitypdf.com/uploads/2015/10/gravityforms.png) 
+![Gravity Forms Notification Setup](https://resources.gravitypdf.com/uploads/2015/10/gravityforms.png)
 
-One of the great things about Gravity Forms is how much freedom and choice the software gives users. But when email is concerned we feel there's not enough guidance, so we've put together this best-practice guide for you. 
+One of the great things about Gravity Forms is how much freedom and choice the software gives users. But when email is concerned we feel there's not enough guidance, so we've put together this best-practice guide for you.
 
-When setting up a notification the *From Email* field **must** contain an email address that includes your website's domain name. For instance, if your domain is `www.mynextproperty.info` the email must include `mynextproperty.info` after the `@` symbol. That could be `admin@mynextproperty.info` or `no-reply@mynextproperty.info`. For the best chance of mail delivery it's important that the From email be a real address – one that you've setup with your email/web hosting provider. 
+When setting up a notification the *From Email* field **must** contain an email address that includes your website's domain name. For instance, if your domain is `www.mynextproperty.info` the email must include `mynextproperty.info` after the `@` symbol. That could be `admin@mynextproperty.info` or `no-reply@mynextproperty.info`. For the best chance of mail delivery it's important that the From email be a real address – one that you've setup with your email/web hosting provider.
 
 **But what if you want the notification to be from the user?** In this case, you should add the user's email address to the *Reply To* field. With this setup, when a user replies to an email, it will be sent to the address in the *Reply To* field, and not the email in the *From Email* field.
 
-## Dedicated Mail Delivery Service 
+## Dedicated Mail Delivery Service
 
 Having the correct Gravity Forms mail settings is a good start, but it doesn't guarantee your emails will always hit the mark. At the beginning of the article we mentioned SPF and DKIM DNS records. These two records are used by mail servers to verify an email is legitimate and hasn't been sent by a spammer – they're like email border control. All quality mail delivery services will instruct you in how to configure these two DNS records and verify they are set up correctly. The best part is, once you start sending emails through the mail service they will correctly sign all outgoing mail automatically (like an official stamp, or seal of approval) and log the status of all emails.
 
-## Which Service to Choose? 
+## Which Service to Choose?
 
-There are a number of premium mail services you can choose from, including [SendGrid](https://sendgrid.com/), [SendIn Blue](https://www.sendinblue.com/) and [Mailjet](https://www.mailjet.com/). Today we're going to walk you through setting up [Mailgun](http://www.mailgun.com/) which provides a great range of features that are cost-effective. 
+There are a number of premium mail services you can choose from, including [SendGrid](https://sendgrid.com/), [SendIn Blue](https://www.sendinblue.com/) and [Mailjet](https://www.mailjet.com/). Today we're going to walk you through setting up [Mailgun](http://www.mailgun.com/) which provides a great range of features that are cost-effective.
 
-## Setting up Mailgun 
+## Setting up Mailgun
 
 While Mailgun touts they are the "Email Service For Developers" there's no need to be worried. Yes, they do have a lot of weird looking code samples during the sign up process, but you can ignore all that. We're going to configure WordPress to send mail using SMTP.
 
@@ -38,7 +38,7 @@ While Mailgun touts they are the "Email Service For Developers" there's no need 
     1.  Try Sending An Email From the Sandbox
     2.  Add Your Own Domain
 
-    You can skip the first section and move straight onto `Add Your Domain`. 
+    You can skip the first section and move straight onto `Add Your Domain`.
 
     ![Add Domain to Mailgun](https://resources.gravitypdf.com/uploads/2015/10/add-domain.png)
 
@@ -58,6 +58,6 @@ While Mailgun touts they are the "Email Service For Developers" there's no need 
 
 Now sit back and enjoy the fact your emails have the best chance of reaching their intended destination.
 
-## Do I Really Need This? 
+## Do I Really Need This?
 
 Unless you're a server administrator who can setup a mail server correctly, then yes. You really do need this. To reiterate, these services help ensure **emails are landing in inboxes**, but if there is a problem, their analytic tools will let you know what went wrong.

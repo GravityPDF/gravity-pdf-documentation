@@ -13,15 +13,15 @@ description: "This function will output (or return) the Survey Add-on Likert tab
 * [Usage](#usage)
 * [Source Code](#source-code)
 
-### Description 
+### Description
 
 This function will output (or return) the Survey Add-on Likert table.
 
-### Version 
+### Version
 
 This method was introduced in Gravity PDF 4.0.
 
-### Parameters 
+### Parameters
 
 $entry | array
 :    The raw Gravity PDF Entry
@@ -32,12 +32,12 @@ $field_id | integer
 $return | boolean | optional
 :    Set to true to have the likert table HTML returned. By default this is false and will automatically be echoed.
 
-### Return 
+### Return
 
 string | void
 :    Returns the HTML string when `$return` is true
 
-### Usage 
+### Usage
 
 The following snippet shows you how to output the likert table from your Gravity PDF template:
 
@@ -46,6 +46,6 @@ The following snippet shows you how to output the likert table from your Gravity
 GPDFAPI::likert_table( $entry, 20 );
 ```
 
-### Source Code 
+### Source Code
 
 This method is located in `api.php`.

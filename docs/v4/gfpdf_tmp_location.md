@@ -11,13 +11,13 @@ description: "By default temporary files Gravity PDF creates are stored in the t
 * [Usage](#usage)
 * [Source Code](#source-code)
 
-### Description 
+### Description
 
 By default temporary files Gravity PDF creates are stored in the `tmp` folder inside the [PDF working directory](developer-first-custom-pdf.md#working-directory). As we discussed [in the PDF security documentation](user-pdf-security.md#filesystem) this directory is protected from direct access by a `.htaccess` file. However, this only works for web servers running Apache or Litespeed. This filter allows you to move this folder to a private directory that isn't accessible from the web, ensuring your PDFs stay private.
 
 *Note:* your web server needs write access to the folder you move this directory to.
 
-### Parameters 
+### Parameters
 
 $path | string
 :    The path to the `tmp` folder.
@@ -28,7 +28,7 @@ $working_folder | string
 $upload_path | string
 :    The path to your uploads directory (where the PDF working directory is stored by default).
 
-### Usage 
+### Usage
 
 The following snippet shows you how you can move the PDF temporary directory to a private folder that's not accessible through a browser:
 
@@ -54,6 +54,6 @@ add_filter( 'gfpdf_tmp_location', function( $path, $working_folder, $upload_url 
 
 Once you've verified the filter works correctly you should manually remove the old directory.
 
-### Source Code 
+### Source Code
 
 This filter is located in the `Model_Install::setup_template_location()` method of `/src/model/Model_Install.php`.

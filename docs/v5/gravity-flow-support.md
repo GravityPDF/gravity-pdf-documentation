@@ -4,7 +4,7 @@ sidebar_label: "Gravity Flow Support"
 description: ""
 ---
 
-![Gravity Flow Workflow Setup](https://resources.gravitypdf.com/uploads/2016/06/approval-step.png) 
+![Gravity Flow Workflow Setup](https://resources.gravitypdf.com/uploads/2016/06/approval-step.png)
 
 <a href="https://gravityflow.io/?ref=12" rel="sponsored">The Gravity Flow plugin</a> is a powerful workflow management system which includes basic Gravity PDF integration for its Approval, User Input and Notification workflow steps. For full details on setting up Workflows in Gravity Flow [please refer to their documentation](http://docs.gravityflow.io/).
 
@@ -20,6 +20,6 @@ When setting up the User Input Workflow you can attach a PDF to the email notifi
 
 ## Notification Workflow
 
-![Notification Workflow](https://resources.gravitypdf.com/uploads/2016/06/notification-workflow.png) 
+![Notification Workflow](https://resources.gravitypdf.com/uploads/2016/06/notification-workflow.png)
 
 As this Workflow actually sends the standard Gravity Forms notification, Gravity PDF is fully supported – including Gravity PDF Conditional Logic. All you have to do is [configure Gravity PDF to attach PDF(s) to notifications](user-setup-pdf.md#notifications) and select the notification(s) you want to send in the Workflow.

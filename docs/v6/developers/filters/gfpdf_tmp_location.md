@@ -4,7 +4,7 @@ sidebar_label: "gfpdf_tmp_location"
 description: "By default temporary files Gravity PDF creates are stored in the tmp folder inside the PDF working directory. Change the path with this filter."
 ---
 
-## Description 
+## Description
 
 By default, temporary files Gravity PDF creates are stored in the `tmp` folder inside the [PDF working directory](../first-custom-pdf.md#pdf-working-directory). As we discussed [in the PDF security documentation](../../users/pdf-security.md#filesystem), this directory is protected from direct access by a `.htaccess` file. However, this only works for web servers running Apache or Litespeed. This filter allows you to move this folder to a private directory that isn't accessible from the web, ensuring your PDFs stay private.
 
@@ -14,9 +14,9 @@ Your web server needs write access to the folder you move this directory to.
 
 :::note
 **Do you host with WP Engine?** Instead of using the filter below, to protect your PDFs you will need to [setup a Redirect Rule](https://wpengine.com/support/redirect/) in your control panel. Set the *Source* to `^/wp-content/uploads/PDF_EXTENDED_TEMPLATES/tmp/.*` and the *Destination* to your home page.
-::: 
+:::
 
-## Parameters 
+## Parameters
 
 ### $path | string
 *  The path to the `tmp` folder.
@@ -27,7 +27,7 @@ Your web server needs write access to the folder you move this directory to.
 ### $upload_path | string
 *  The path to your uploads directory (where the PDF working directory is stored by default).
 
-## Usage 
+## Usage
 
 The following snippet shows you how you can move the PDF temporary directory to a private folder that's not accessible through a browser:
 
@@ -52,6 +52,6 @@ add_filter( 'gfpdf_tmp_location', function( $path, $working_folder, $upload_url 
 
 Once you've verified the filter works correctly, you should manually remove the old directory.
 
-## Source Code 
+## Source Code
 
 This filter is located in the `Model_Install::setup_template_location()` method of `/src/model/Model_Install.php`.

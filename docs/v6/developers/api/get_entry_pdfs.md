@@ -4,25 +4,25 @@ sidebar_label: "get_entry_pdfs()"
 description: "This method will return an array containing all the PDFs available to a particular Gravity Forms entry."
 ---
 
-## Description 
+## Description
 
 This method will return an array containing all the PDFs available to a particular Gravity Forms entry. It's [similar to `GPDFAPI::get_form_pdfs()`](get_form_pdfs.md), but it filters out any PDFs that don't pass [conditional logic checks](../../users/setup-pdf.md#conditional-logic) for the current entry.
 
-## Version 
+## Version
 
 This method was introduced in Gravity PDF 6.0.
 
-## Parameters 
+## Parameters
 
 ### $entry\_id \| integer
 * The Gravity Forms Entry ID
 
-## Return 
+## Return
 
 ### array \| WP\_Error
 * An array of the PDFs will be returned on success, otherwise a [WP\_Error object](https://codex.wordpress.org/Class_Reference/WP_Error) on failure
 
-## Usage 
+## Usage
 
 This snippet will show you how to get the current list of PDFs setup on a particular Gravity Forms entry and loop through the results:
 
@@ -47,6 +47,6 @@ add_action( 'init', function() {
 } );
 ```
 
-## Source Code 
+## Source Code
 
 This method is located in `api.php`.

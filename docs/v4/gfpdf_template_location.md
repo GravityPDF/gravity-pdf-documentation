@@ -11,15 +11,15 @@ description: "By default, the PDF working directory is found in your /wp-content
 * [Usage](#usage)
 * [Source Code](#source-code)
 
-### Description 
+### Description
 
-By default, the [PDF working directory](developer-first-custom-pdf.md#working-directory) is found in your `/wp-content/uploads/PDF_EXTENDED_TEMPLATES` folder. This filter allows you to change that location. 
+By default, the [PDF working directory](developer-first-custom-pdf.md#working-directory) is found in your `/wp-content/uploads/PDF_EXTENDED_TEMPLATES` folder. This filter allows you to change that location.
 
 The working directory **MUST be in a publicly accessible folder** (accessed via a URL) and **MUST be used in conjunction with the [`gfpdf_template_location_uri`](gfpdf_template_location_uri.md) filter**. Both the `gfpdf_template_location` and `gfpdf_template_location_uri` filters should point to the same directory – one is the path and one is the URL.
 
 *Note:* your web server needs write access to the folder you move the working directory to.
 
-### Parameters 
+### Parameters
 
 $directory | string
 :    The folder name of the [PDF working directory](developer-first-custom-pdf.md#working-directory)
@@ -30,7 +30,7 @@ $working_folder | string
 $upload_path | string
 :    The path to your uploads directory (where the PDF working directory is stored by default).
 
-### Usage 
+### Usage
 
 The following snippet shows you how you can move the PDF working directory to your `wp-content` directory (instead of its original location in your uploads folder):
 
@@ -51,6 +51,6 @@ add_filter( 'gfpdf_template_location_uri', function( $url, $working_folder, $upl
 
 ```
 
-### Source Code 
+### Source Code
 
 This filter is located in the `Model_Install::setup_template_location()` method of `/src/model/Model_Install.php`.

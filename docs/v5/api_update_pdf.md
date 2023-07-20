@@ -4,15 +4,15 @@ sidebar_label: "update_pdf()"
 description: "This method allows you to update an existing PDF's settings. If you are using data provided by the user ensure you validate and sanitize everything."
 ---
 
-## Description 
+## Description
 
 This method allows you to update an existing PDF's settings. If you are using data provided by the user **ensure you validate and sanitize everything** as we don't do it for you.
 
-## Version 
+## Version
 
 This method was introduced in Gravity PDF 4.0.
 
-## Parameters 
+## Parameters
 
 ### $form\_id \| integer
 * The Gravity Form ID
@@ -23,12 +23,12 @@ This method was introduced in Gravity PDF 4.0.
 ### $settings \| array
 * The PDF settings you are updating to. This settings array will replace ALL current PDF settings.
 
-## Return 
+## Return
 
 ### boolean
 * True on success, false on failure
 
-## Usage 
+## Usage
 
 The following snippet shows you how to retrieve a PDF's existing settings and update the name:
 
@@ -51,6 +51,6 @@ add_action( 'init', function() {
 
 For the full list of settings available see the `form_settings`, `form_settings_appearance` and `form_settings_advanced` arrays in the `Helper_Options_Fields::get_registered_fields()` method.
 
-## Source Code 
+## Source Code
 
 This method is located in `api.php`.

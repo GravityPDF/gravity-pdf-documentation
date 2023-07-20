@@ -13,7 +13,7 @@ If you want to place the <a href="/v3/wheres-configuration-folder/">PDF_EXTENDED
 
 ```
 /*
- * Change the PDF Template Location 
+ * Change the PDF Template Location
  */
 add_filter('gfpdfe_template_location', 'gfpdfe_change_pdf_location', 10, 3);
 
@@ -74,14 +74,14 @@ function gfpdfe_pdf_name_alteration($name, $form, $lead)
          }
          else
          {
-            $name = 'Underage.pdf';         
+            $name = 'Underage.pdf';        
          }
      }
-      
+     
      /* remember to return $name as this is a filter */
      return $name;
 }
- 
+
 add_filter('gfpdfe_pdf_name', 'gfpdfe_pdf_name_alteration', 10, 3);
 ```
 
@@ -107,14 +107,14 @@ function gfpdfe_template_alteration($template, $form, $lead)
          }
          else
          {
-            return 'underage-template.php';            
+            return 'underage-template.php';           
          }
      }
-      
+     
      /* remember to return $template as this is a filter */
      return $template;
 }
- 
+
 add_filter('gfpdfe_template', 'gfpdfe_template_alteration', 10, 3);
 ```
 
@@ -143,11 +143,11 @@ function gfpdfe_orientation_alteration($orientation, $form, $lead)
            return 'portrait';
          }
      }
-       
+      
      /* remember to return $orientation as this is a filter */
      return $orientation;
 }
-  
+ 
 add_filter('gfpdf_orientation', 'gfpdfe_orientation_alteration', 10, 3);
 ```
 
@@ -176,12 +176,12 @@ function gfpdfe_security_alteration($security, $form, $lead)
            return false; /* the return value must be a boolean - either true or false */
          }
      }
-       
+      
      /* remember to return $security as this is a filter */
      return $security;
 }
-  
-add_filter('gfpdf_security', 'gfpdfe_security_alteration', 10, 3);    
+ 
+add_filter('gfpdf_security', 'gfpdfe_security_alteration', 10, 3);   
 ```
 
 <strong>gfpdfe_password</strong>
@@ -203,12 +203,12 @@ function gfpdfe_password_alteration($password, $form, $lead)
          */
         return $lead[5];
      }
-       
+      
      /* remember to return $password as this is a filter */
      return $password;
 }
-  
-add_filter('gfpdf_password', 'gfpdfe_password_alteration', 10, 3);    
+ 
+add_filter('gfpdf_password', 'gfpdfe_password_alteration', 10, 3);   
 ```
 
 <strong>gfpdfe_master_password</strong>
@@ -230,12 +230,12 @@ function gfpdfe_master_password_alteration($password, $form, $lead)
          */
         return $lead[6];
      }
-       
+      
      /* remember to return $password as this is a filter */
      return $password;
 }
-  
-add_filter('gfpdf_master_password', 'gfpdfe_master_password_alteration', 10, 3);     
+ 
+add_filter('gfpdf_master_password', 'gfpdfe_master_password_alteration', 10, 3);    
 ```
 
 <strong>gfpdf_privilages</strong>
@@ -259,8 +259,8 @@ function gfpdfe_privilages_alteration($privs, $form, $lead)
          * Label: Print   Value: print
          * Label: High Resolution Print   Value: print-highres
          *
-         */       
-         
+         */      
+        
         /* get the $form field information */
         $field = array();
         foreach($form['fields'] as $fields)
@@ -271,17 +271,17 @@ function gfpdfe_privilages_alteration($privs, $form, $lead)
                 break;
             }
         }
-         
+        
         $field_data = array_filter(RGFormsModel::get_lead_field_value($lead, $field));
- 
+
         return $field_data; /* note: the return values MUST be a combination of the following list - array('copy', 'print', 'modify', 'annot-forms', 'fill-forms', 'extract', 'assemble', 'print-highres'); */
      }
-       
+      
      /* remember to return $password as this is a filter */
      return $privs;
 }
-  
-add_filter('gfpdf_privilages', 'gfpdfe_privilages_alteration', 10, 3);            
+ 
+add_filter('gfpdf_privilages', 'gfpdfe_privilages_alteration', 10, 3);           
 ```
 
 <strong>gfpdf_rtl</strong>
@@ -309,12 +309,12 @@ function gfpdfe_rtl_alteration($rtl, $form, $lead)
            return false;
          }
      }
-       
+      
      /* remember to return $rtl as this is a filter */
      return $rtl;
 }
- 
-add_filter('gfpdf_rtl', 'gfpdfe_rtl_alteration', 10, 3);      
+
+add_filter('gfpdf_rtl', 'gfpdfe_rtl_alteration', 10, 3);     
 ```
 
 <h2>Hooks</h2>
@@ -338,32 +338,32 @@ function gfpdfe_post_pdf_save($form_id, $lead_id, $arguments, $filename)
      * This hook is useful if you want to move the PDFs to a new location
      */
     $pdf_name = basename($filename);
- 
+
     /* use this command to 'move' the PDF */
     rename($filename, '/path/you/want/pdf/stored/in/' . $pdf_name);
- 
+
     /* use this command to make a copy of the PDF */
     copy($filename, '/path/you/want/pdf/stored/in/' . $pdf_name);
- 
+
     /* you might only want to do this on a per-form basis, or use the form ID or name in the new path */
     if($form_id == 6)
     {
         /* use this command to make a copy of the PDF */
-        copy($filename, '/path/you/want/pdf/stored/in/' . $pdf_name);      
+        copy($filename, '/path/you/want/pdf/stored/in/' . $pdf_name);     
     }
- 
+
     if($form_id == 6)
     {
         /* Use the $form title in the URL
          * Depending on what name you use and your server OS, this might need parsing the form name further to remove invalid folder characters
          */
         $form = RGFormsModel::get_form_meta($form_id);
-        $form_title = $form['title'];  
- 
+        $form_title = $form['title']; 
+
         /* this assumes the directory already exists */
-        copy($filename, '/path/you/want/pdf/stored/in/' . $form_title. '/' . $pdf_name);       
+        copy($filename, '/path/you/want/pdf/stored/in/' . $form_title. '/' . $pdf_name);      
     }
 }
- 
+
 add_action('gfpdf_post_pdf_save', 'gfpdfe_post_pdf_save', 10, 4);
 ```

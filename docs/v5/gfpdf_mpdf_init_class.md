@@ -4,11 +4,11 @@ sidebar_label: "gfpdf_mpdf_init_class"
 description: "Modify the mPDF settings before any HTML has been processed. Usually you'll want to use this filter to change the default configuration settings for mPDF."
 ---
 
-## Description 
+## Description
 
-This filter can be used to modify the mPDF settings before any HTML has been processed. Usually you'll want to use this filter to [change the default configuration settings for mPDF](https://github.com/mpdf/mpdf/blob/development/src/Config/ConfigVariables.php). If you want to write directly to the PDF (`$pdf->WriteHTML()`), it's recommended to use the [gfpdf_mpdf_class filter](gfpdf_mpdf_class.md) instead as doing so in this filter can break the automated header/footer support. 
+This filter can be used to modify the mPDF settings before any HTML has been processed. Usually you'll want to use this filter to [change the default configuration settings for mPDF](https://github.com/mpdf/mpdf/blob/development/src/Config/ConfigVariables.php). If you want to write directly to the PDF (`$pdf->WriteHTML()`), it's recommended to use the [gfpdf_mpdf_class filter](gfpdf_mpdf_class.md) instead as doing so in this filter can break the automated header/footer support.
 
-## Parameters 
+## Parameters
 
 ### $mpdf | object
 *  The initialised `mPDF` class that handles the PDF generation
@@ -16,7 +16,7 @@ This filter can be used to modify the mPDF settings before any HTML has been pro
 ### $form | array
 *  The current Gravity Form array
 
-### $entry | array 
+### $entry | array
 *  The raw Gravity Form Entry array.
 
 ### $settings | array
@@ -25,13 +25,13 @@ This filter can be used to modify the mPDF settings before any HTML has been pro
 ### $Helper_PDF | object
 *  The initialised `\GFPDF\Helper\Helper_PDF` class
 
-## Usage 
+## Usage
 
-Gravity PDF has some very sane defaults for mPDF, but you may want to utilise one of their more advanced features or change the default settings. If so, this is the filter to use. 
+Gravity PDF has some very sane defaults for mPDF, but you may want to utilise one of their more advanced features or change the default settings. If so, this is the filter to use.
 
 Below is a snippet to disable SSL verification while requesting images (and other assets) for inclusion within the PDF. You might do this if your host is running an outdated version of cURL or the OpenSSL library and the images aren't displaying:
 
-``` 
+```
 add_filter( 'gfpdf_mpdf_init_class', function( $mpdf ) {
 	$mpdf->curlAllowUnsafeSslRequests = true;
 
@@ -41,7 +41,7 @@ add_filter( 'gfpdf_mpdf_init_class', function( $mpdf ) {
 
 Another example is enabling the use of active form fields in PDFs. Keep in mind Gravity PDF does NOT support this feature and our support team will not be able to assist you with any problems you encounter.
 
-``` 
+```
 add_filter( 'gfpdf_mpdf_init_class', function( $mpdf, $form, $entry, $settings, $Helper_PDF ) {
 
 	/**
@@ -61,6 +61,6 @@ add_filter( 'gfpdf_mpdf_init_class', function( $mpdf, $form, $entry, $settings, 
 }, 10, 5 );
 ```
 
-## Source Code 
+## Source Code
 
 This filter is located in the `Helper_PDF::begin_pdf()` method of `/src/helper/Helper_PDF.php`.

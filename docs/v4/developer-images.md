@@ -4,7 +4,7 @@ sidebar_label: "Images"
 description: "The PDF engine, mPDF, which Gravity PDF uses supports the following image formats: .jpg, .png, .gif, .svg, .bmp and .wmf."
 ---
 
-### Introduction 
+### Introduction
 
 The PDF engine Gravity PDF uses, [mPDF](http://mpdf.github.io), supports the following image formats:
 
@@ -15,22 +15,22 @@ The PDF engine Gravity PDF uses, [mPDF](http://mpdf.github.io), supports the fol
 * `bmp`
 * `wmf`
 
-To display images in your PDF template use the standard `<img src="" />` HTML tag. 
+To display images in your PDF template use the standard `<img src="" />` HTML tag.
 
-The software will accept a URL or absolute path to the image file, although we've found [using an absolute path to the image](development-helper-parameters.md#useful-paths-and-urls) offers better cross-server compatibility and it's the recommended solution. 
+The software will accept a URL or absolute path to the image file, although we've found [using an absolute path to the image](development-helper-parameters.md#useful-paths-and-urls) offers better cross-server compatibility and it's the recommended solution.
 
 ![Sample of mPDF image support](https://resources.gravitypdf.com/uploads/2015/11/image-support.png)
 
-### Performance 
+### Performance
 
 Images can slow the PDF generation time. If you are rendering an image heavy document and it is taking considerable time to generate you can optimise the process by:
 
 1. Run your images through a compression service like [TinyPNG](https://tinypng.com/) and/or resize the image to a smaller format.
 1. Use absolute paths to the images
 1. Use JPG images over the other file types as they are quicker to process
-1. PNGs with no alpha channel or transparency come in a close second to JPGs. 
+1. PNGs with no alpha channel or transparency come in a close second to JPGs.
 
-### Float Support 
+### Float Support
 
 There is partial support for floating images in mPDF, however the following limitations apply:
 
@@ -38,7 +38,7 @@ There is partial support for floating images in mPDF, however the following limi
 * Unlike your browser (which will overflow the image out of the container), the containing HTML element is extended at the bottom if necessary to enclose the floated image.
 * Floats are ignored if the image is too wide for the container, inside a table, or `page-break-inside: avoid` is set.
 
-### Samples and Further Reading 
+### Samples and Further Reading
 
 [We've put together a sample showing off the image capabilities in Gravity PDF](https://gist.github.com/jakejackson1/74216f846bbaeefeb29e).
 

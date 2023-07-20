@@ -10,11 +10,11 @@ description: "This hook allows you to output content at the bottom of the PDF Ge
 * [Usage](#usage)
 * [Source Code](#source-code)
 
-### Description 
+### Description
 
 This hook allows you to output content at the bottom of the [PDF General Settings tab](user-global-settings.md#general). Keep in mind our System Status notice uses this hook on priority 10, so you can choose to place your content before or after this block by changing your action's priority.
 
-### Usage 
+### Usage
 
 This snippet shows you how you can include a message after the General Settings form, but before the System Status:
 
@@ -35,6 +35,6 @@ add_action( 'gfpdf_post_general_settings_page', function() { }, 15 );
 ```
 
 
-### Source Code 
+### Source Code
 
 This action is located in `/src/view/html/Settings/general.php`.

@@ -9,5 +9,5 @@ Out of the box, PDFs are never stored on your web hosts filesystem permanently, 
 [Refer to the security documentation for more information about how Gravity PDF handles PDFs and the underlying filesystem](../users/pdf-security.md#pdfs-and-the-file-system).
 
 :::tip
-If you would like to bulk-download your Gravity PDF-generated documents, [the Bulk Generator add-on is a great option](https://gravitypdf.com/shop/bulk-generator-add-on/). 
+If you would like to bulk-download your Gravity PDF-generated documents, [the Bulk Generator add-on is a great option](https://gravitypdf.com/shop/bulk-generator-add-on/).
 :::

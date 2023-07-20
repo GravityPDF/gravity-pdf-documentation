@@ -22,4 +22,4 @@ When setting up the User Input Workflow you can attach a PDF to the email notifi
 
 ![Notification Workflow](https://resources.gravitypdf.com/uploads/2016/06/notification-workflow.png){.aligncenter}
 
-As this Workflow actually sends the standard Gravity Forms notification, Gravity PDF is fully supported – including Gravity PDF Conditional Logic. All you have to do is [configure Gravity PDF to attach PDF(s) to notifications](user-setup-pdf.md#notifications) and select the notification(s) you want to send in the Workflow. 
+As this Workflow actually sends the standard Gravity Forms notification, Gravity PDF is fully supported – including Gravity PDF Conditional Logic. All you have to do is [configure Gravity PDF to attach PDF(s) to notifications](user-setup-pdf.md#notifications) and select the notification(s) you want to send in the Workflow.

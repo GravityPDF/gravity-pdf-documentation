@@ -4,25 +4,25 @@ sidebar_label: "get_form_pdfs()"
 description: "This method will return an array containing all the PDFs configured on a particular Gravity Form."
 ---
 
-## Description 
+## Description
 
 This method will return an array containing all the PDFs configured on a particular Gravity Form. If you want an individual PDF settings [see `GPDFAPI::get_pdf()`](get_pdf.md).
 
-## Version 
+## Version
 
 This method was introduced in Gravity PDF 4.0.
 
-## Parameters 
+## Parameters
 
 ### $form\_id \| integer
 * The Gravity Forms ID
 
-## Return 
+## Return
 
 ### array \| WP\_Error
 * An array of the PDFs will be returned on success, otherwise a [WP\_Error object](https://codex.wordpress.org/Class_Reference/WP_Error) on failure
 
-## Usage 
+## Usage
 
 This snippet will show you how to get the current list of PDFs setup on a particular Gravity Forms and loop through the results:
 
@@ -47,6 +47,6 @@ add_action( 'init', function() {
 } );
 ```
 
-## Source Code 
+## Source Code
 
 This method is located in `api.php`.

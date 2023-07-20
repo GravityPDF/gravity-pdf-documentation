@@ -4,11 +4,11 @@ sidebar_label: "gfpdf_post_tools_settings_page"
 description: "This hook allows you to output content at the bottom of the PDF Tools Settings tab. Change the priority to include before or after the System Status/Uninstaller."
 ---
 
-## Description 
+## Description
 
 This hook allows you to output content at the bottom of the [PDF Tools Settings tab](user-global-settings.md#tools). Keep in mind our System Status notice uses this hook on priority 10, so you can choose to place your content before or after this block by changing your action's priority. Also, the [Uninstaller](user-global-settings.md#uninstall) has a priority of 5.
 
-## Usage 
+## Usage
 
 This snippet shows you how you can include a message after the Tools Settings form, but before the Uninstaller:
 
@@ -34,6 +34,6 @@ And to display content after the System status use a priority over 10:
 add_action( 'gfpdf_post_tools_settings_page', function() { }, 15 );
 ```
 
-## Source Code 
+## Source Code
 
 This action is located in `/src/view/html/Settings/tools.php`.

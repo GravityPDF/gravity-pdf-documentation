@@ -11,13 +11,13 @@ description: "Gravity PDF does standard sanitisation of form fields but you migh
 * [Usage](#usage)
 * [Source Code](#source-code)
 
-### Description 
+### Description
 
-Gravity PDF does standard sanitisation of form fields but you might like to include your own special processing for any form PDF fields you add. 
+Gravity PDF does standard sanitisation of form fields but you might like to include your own special processing for any form PDF fields you add.
 
-You can also use the `gfpdf_form_settings_sanitize_$type` filter, where `$type` refers to the field type – checkbox, select, ect. 
+You can also use the `gfpdf_form_settings_sanitize_$type` filter, where `$type` refers to the field type – checkbox, select, ect.
 
-### Parameters 
+### Parameters
 
 $value | mixed
 :    The new value of the current field being processed
@@ -31,9 +31,9 @@ $input | array
 $field | mixed
 :    The settings for the current field being processed
 
-### Usage 
+### Usage
 
-This snippet shows you how to correctly sanitise your custom Gravity PDF field: 
+This snippet shows you how to correctly sanitise your custom Gravity PDF field:
 
 ```
 add_action( 'gfpdf_settings_sanitize', function( $value, $key, $input, $field ) {
@@ -62,6 +62,6 @@ add_action( 'gfpdf_settings_sanitize_prefix_custom_field', function( $value, $ke
 }, 10, 4 );
 ```
 
-### Source Code 
+### Source Code
 
 This filter is located in the `Model_Form_Settings::settings_sanitize()` method of `/src/model/Model_Form_Settings.php`.

@@ -11,20 +11,20 @@ description: "This action should be used in conjunction with the gfpdf_settings_
 * [Usage](#usage)
 * [Source Code](#source-code)
 
-### Description 
+### Description
 
-This action should be used in conjunction [with the `gfpdf_settings_tools` filter](gfpdf_settings_tools.md) to add new functionality to Gravity PDF. While the `gfpdf_settings_tools` filter adds the new button to the admin area, the `gfpdf_tool_tab_actions` does all the actual validation and processing. 
+This action should be used in conjunction [with the `gfpdf_settings_tools` filter](gfpdf_settings_tools.md) to add new functionality to Gravity PDF. While the `gfpdf_settings_tools` filter adds the new button to the admin area, the `gfpdf_tool_tab_actions` does all the actual validation and processing.
 
-### Parameters 
+### Parameters
 
 $settings | array
 :    An associative array which contains the Tool tab form `$_POST['gfpdf_settings']` data. Use this to check if a user clicked on a specific action.
 
-### Usage 
+### Usage
 
 The following snippet shows you how to correctly process a button called `prefix_flush_logs`, which we've assumed was included in the Tools tab [using the `gfpdf_settings_tools` filter](gfpdf_settings_tools.md).
 
-Note: it's **very important** you don't skip on the nonce verification! 
+Note: it's **very important** you don't skip on the nonce verification!
 
 ```
 add_action( 'gfpdf_tool_tab_actions', function( $settings ) {
@@ -73,6 +73,6 @@ add_action( 'gfpdf_tool_tab_actions', function( $settings ) {
 } );
 ```
 
-### Source Code 
+### Source Code
 
 This filter is located in the `Helper_Options_Fields::get_registered_fields()` method of `/src/helper/Helper_Options_Fields.php`.

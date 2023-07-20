@@ -13,25 +13,25 @@ description: "This function allows you to delete any installed custom PDF fonts 
 * [Usage](#usage)
 * [Source Code](#source-code)
 
-### Description 
+### Description
 
-This function allows you to delete any installed custom PDF fonts using code. It accepts a single argument: the font name. 
+This function allows you to delete any installed custom PDF fonts using code. It accepts a single argument: the font name.
 
-### Version 
+### Version
 
 This method was introduced in Gravity PDF 4.1.
 
-### Parameters 
+### Parameters
 
 font_name | string | required
 :    The name of the custom PDF font to delete
 
-### Return 
+### Return
 
 boolean | WP_Error
 :    Returns `true` if the font is installed correctly, or `WP_Error` on failure
 
-### Usage 
+### Usage
 
 ```
 /* This should be used in a one-time filter or action */
@@ -42,6 +42,6 @@ if ( ! is_wp_error( $results ) ) {
 }
 ```
 
-### Source Code 
+### Source Code
 
 This method is located in `api.php`.

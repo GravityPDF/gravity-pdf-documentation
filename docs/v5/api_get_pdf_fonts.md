@@ -4,24 +4,24 @@ sidebar_label: "get_pdf_fonts()"
 description: "This function allows you to retrieve an associative PHP array with all available fonts. It returns a multi-dimensional array grouped together."
 ---
 
-## Description 
+## Description
 
 This function allows you to retrieve an associative PHP array with all available fonts.
 
-## Version 
+## Version
 
 This method was introduced in Gravity PDF 4.3.
 
-## Parameters 
+## Parameters
 
 This method accepts no parameters.
 
-## Return 
+## Return
 
 ### array
 * A multi-dimensional array, with the list of installed fonts grouped together.
 
-## Usage 
+## Usage
 
 ```
 $fonts_list = GPDFAPI::get_pdf_fonts();
@@ -33,6 +33,6 @@ foreach( $fonts_list as $group_name => $group ) {
 }
 ```
 
-## Source Code 
+## Source Code
 
 This method is located in `api.php`.

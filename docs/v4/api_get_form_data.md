@@ -13,25 +13,25 @@ description: ""
 * [Usage](#usage)
 * [Source Code](#source-code)
 
-### Description 
+### Description
 
-This API method will return [the $form_data array](developer-php-form-data-array.md) for a particular entry. 
+This API method will return [the $form_data array](developer-php-form-data-array.md) for a particular entry.
 
-### Version 
+### Version
 
 This method was introduced in Gravity PDF 4.4.
 
-### Parameters 
+### Parameters
 
 entry_id | integer | required
 :    The Gravity Forms entry ID
 
-### Return 
+### Return
 
 array | WP_Error
 :    Returns the full `$form_data` array on success, or `WP_Error` on failure
 
-### Usage 
+### Usage
 
 ```
 /* Get the form data for the Entry #260 */
@@ -42,6 +42,6 @@ if ( ! is_wp_error( $entry ) ) {
 }
 ```
 
-### Source Code 
+### Source Code
 
 This method is located in `api.php`.

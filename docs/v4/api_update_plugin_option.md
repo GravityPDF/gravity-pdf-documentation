@@ -13,15 +13,15 @@ description: "This method allows you to update a global Gravity PDF setting. If 
 * [Usage](#usage)
 * [Source Code](#source-code)
 
-### Description 
+### Description
 
-This method allows you to update a global Gravity PDF setting. If the option doesn't exist it will be added. 
+This method allows you to update a global Gravity PDF setting. If the option doesn't exist it will be added.
 
-### Version 
+### Version
 
 This method was introduced in Gravity PDF 4.0.
 
-### Parameters 
+### Parameters
 
 $key | string
 :    The global PDF setting ID. Best to prefix this value to prevent conflict.
@@ -29,12 +29,12 @@ $key | string
 $value | mixed
 :    What ever value you want to store.
 
-### Return 
+### Return
 
 boolean
 :    True on success, false if database failed to update.
 
-### Usage 
+### Usage
 
 The following snippet shows you how to update a PDF global option and correctly handle any errors:
 
@@ -53,6 +53,6 @@ add_action( 'init', function() {
 
 ```
 
-### Source Code 
+### Source Code
 
 This method is located in `api.php`.

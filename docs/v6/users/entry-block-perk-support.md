@@ -4,7 +4,7 @@ sidebar_label: "Entry Block Perk"
 description: "The Entry Block Perk is the new kid on the block for displaying and editing Gravity Forms entries on the frontend of your website."
 ---
 
-<a href="https://gravitywiz.com/documentation/gravity-forms-entry-blocks/?ref=78" rel="sponsored">Gravity Wiz's Entry Block Perk</a> uses the WordPress block editor to allow you to configure and display Gravity Forms entries on the frontend of your website. 
+<a href="https://gravitywiz.com/documentation/gravity-forms-entry-blocks/?ref=78" rel="sponsored">Gravity Wiz's Entry Block Perk</a> uses the WordPress block editor to allow you to configure and display Gravity Forms entries on the frontend of your website.
 
 ## Add PDF Download Link
 
@@ -27,13 +27,13 @@ After the new column is added, select the _Open Options_ spanner/wrench icon to 
 
 #### Shortcode
 
-[You can copy and paste your form's `[gravitypdf]` shortcode](shortcodes-and-mergetags.md#using-the-shortcode) straight into the _Content_ field and a PDF Download link will automatically be displayed on the frontend. 
+[You can copy and paste your form's `[gravitypdf]` shortcode](shortcodes-and-mergetags.md#using-the-shortcode) straight into the _Content_ field and a PDF Download link will automatically be displayed on the frontend.
 
 ![Adding the [gravitypdf] shortcode to a new column in the Table Variant of the Gravity Wiz Entry Block perk](https://resources.gravitypdf.com/uploads/2022/05/gravity-wiz-entry-block-table-variant-edit-custom-column-shortcode.png)
 
 #### Merge tag
 
-If you want control of the anchor tag markup [you can use the associated PDF merge tag instead of a shortcode](shortcodes-and-mergetags.md#using-the-merge-tag). This is useful if you wanted the PDF to open up in a new browser tab (`<a target="_blank" ... />`) or to include a wrapper around the link (because your theme auto-applies specific styles to this markup structure). 
+If you want control of the anchor tag markup [you can use the associated PDF merge tag instead of a shortcode](shortcodes-and-mergetags.md#using-the-merge-tag). This is useful if you wanted the PDF to open up in a new browser tab (`<a target="_blank" ... />`) or to include a wrapper around the link (because your theme auto-applies specific styles to this markup structure).
 
 ![Adding an anchor tag that will open in a new window to view a PDF in the Table Variant of the Gravity Wiz Entry Block perk](https://resources.gravitypdf.com/uploads/2022/05/gravity-wiz-entry-block-table-variant-edit-custom-column-mergetag.png)
 
@@ -53,7 +53,7 @@ Add a _Button_ block and add the Gravity PDF merge tag for the button's link. Al
 
 ## Permissions
 
-Because of [Gravity PDF's security](pdf-security.md), default access to view or download PDFs is restricted to the entry owner, or users with a capability found in the [User Restriction setting](global-settings.md#user-restriction). Unless you <a href="https://gravitywiz.com/documentation/gravity-forms-entry-blocks/?ref=78#permissions" rel="sponsored">are creating a member's area so the current logged-in user can download their own PDFs</a>, or a simple CRUD system for site admins, you should enable the Signed PDF feature so the public can access the PDF documents. 
+Because of [Gravity PDF's security](pdf-security.md), default access to view or download PDFs is restricted to the entry owner, or users with a capability found in the [User Restriction setting](global-settings.md#user-restriction). Unless you <a href="https://gravitywiz.com/documentation/gravity-forms-entry-blocks/?ref=78#permissions" rel="sponsored">are creating a member's area so the current logged-in user can download their own PDFs</a>, or a simple CRUD system for site admins, you should enable the Signed PDF feature so the public can access the PDF documents.
 
 If using the `[gravitypdf]` shortcode you should [include the `signed="1"` attribute](shortcodes-and-mergetags.md#signed-optional):
 

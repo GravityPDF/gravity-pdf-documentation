@@ -13,25 +13,25 @@ description: "This method allows you to deleted a global Gravity PDF setting. Th
 * [Usage](#usage)
 * [Source Code](#source-code)
 
-### Description 
+### Description
 
 This method allows you to deleted a global Gravity PDF setting. **This is permanent and cannot be undone**.
 
-### Version 
+### Version
 
 This method was introduced in Gravity PDF 4.0.
 
-### Parameters 
+### Parameters
 
 $key | string
-:    The global PDF setting ID. 
+:    The global PDF setting ID.
 
-### Return 
+### Return
 
 boolean
 :    True on success, false if database failed to update .
 
-### Usage 
+### Usage
 
 The following snippet shows you how to remove a PDF global option and correctly handle any errors:
 
@@ -49,6 +49,6 @@ add_action( 'init', function() {
 
 ```
 
-### Source Code 
+### Source Code
 
 This method is located in `api.php`.

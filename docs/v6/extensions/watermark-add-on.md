@@ -10,11 +10,11 @@ description: "Watermark is a premium plugin for Gravity PDF that allows you to e
 
 You can purchase the *Watermark* plugin from the [Extension Shop](https://gravitypdf.com/shop/watermark-add-on/). This guide will walk you through installing and configuring *Watermark* to its full potential.
 
-## Installation 
+## Installation
 
 [Please follow our installation guide](installing-upgrading-extensions.md), which provides instructions for uploading the add-on to your WordPress website and adding your license key for automatic updates.
 
-## Configuring 
+## Configuring
 
 This extension adds a number of new settings to all non-legacy PDF templates (any template designed for Gravity PDF v4 or higher), and [they can be found in the *Appearance* section](../users/setup-pdf.md#appearance-tab) when [adding/editing the PDF settings](../users/setup-pdf.md#locating-pdf-settings).
 
@@ -23,32 +23,32 @@ This extension adds a number of new settings to all non-legacy PDF templates (an
 
 Below is the list of settings added by *Watermark*, with a brief description about what each is for:
 
-#### Enable Watermark 
+#### Enable Watermark
 *  Toggle to enable the Watermark feature.
 *  When enabled, the PDF/A-1b and PDF/X-1a formats are automatically disabled due to not supporting transparency.
 
-#### Image Watermark 
+#### Image Watermark
 *  Display an image watermark on each page of your PDF, vertically and horizontally centred.
 *  For the best results, use a transparent PNG image the same dimensions as the [PDF Paper Size](../users/setup-pdf.md#paper-size).
 *  To ensure your PDF generates quickly and the PDF file size stays small, we recommend using an image under 1MB. [Try run the image through a compression tool like TinyPNG](https://tinypng.com/).
 
-#### Text Watermark 
+#### Text Watermark
 *  Display a text watermark diagonally-centred on each page of your PDF.
 *  Valid UTF-8 character can be displayed, provided the [Font](#font) supports it.
 *  Text and Image Watermarks can be used concurrently.
 *  Merge tags are supported (v1.1+)
 
-#### Font 
+#### Font
 *  Select the font to use for the [Text Watermark](#text-watermark).
 *  Additional fonts can be installed [via the Font Manager](../users/custom-fonts.md).
 
-#### Opacity 
+#### Opacity
 *  Control the transparency of both the Image and Text Watermarks by selecting a value between 0 and 100%.
 *  A 0% opacity is completely transparent, while 100% opacity is not transparent at all.
 
-### Previewer 
+### Previewer
 
-The *Watermark* plugin settings are supported [with the *Previewer* add-on](previewer-add-on.md), so you can display image watermarks when previewing the PDF. 
+The *Watermark* plugin settings are supported [with the *Previewer* add-on](previewer-add-on.md), so you can display image watermarks when previewing the PDF.
 
 The [*Previewer* Text Watermark setting](previewer-add-on.md#watermark) takes precedent over the *Watermark* setting when the PDF is displayed before form submission. For example, if you were to:
 

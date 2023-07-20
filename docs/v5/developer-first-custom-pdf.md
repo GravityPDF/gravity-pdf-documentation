@@ -4,7 +4,7 @@ sidebar_label: "First Custom PDF"
 description: "Learn the theory behind Gravity PDF's template system and dive into your first custom PDF template: a very basic \"Hello World\" example."
 ---
 
-## Introduction 
+## Introduction
 
 A template file is used by Gravity PDF to tell the rendering engine exactly how to generate a PDF (i.e. they control the look and feel of the document). These templates are written using HTML, CSS, and PHP. Before we jump right into the code, we're going to discuss the architecture Gravity PDF uses to register and load custom templates, how multisite sites differ from standard WordPress installations, and briefly touch on the template hierarchy.
 
@@ -12,7 +12,7 @@ A template file is used by Gravity PDF to tell the rendering engine exactly how 
 This documentation is written for _developers_ who have a solid understanding of HTML / CSS, PHP, and WordPress development. If you don't have the time or knowledge to do it yourself, [we offer a Bespoke PDF service and can tailor a solution specifically for you](https://gravitypdf.com/bespoke/).
 :::
 
-## Working Directory 
+## Working Directory
 
 ![The PDF_EXTENDED_TEMPLATES Working Directory](https://resources.gravitypdf.com/uploads/2015/10/v5-pdf-working-directory.png)
 
@@ -27,13 +27,13 @@ The **PDF Template** filename should only contain `A-Z`, `a-z`, `0-9`, `_`, or `
 :::
 
 
-## Preparing the Infrastructure 
+## Preparing the Infrastructure
 
 ![How to get your server ready for custom PDF templates](https://resources.gravitypdf.com/uploads/2015/10/custom-templates-v5-1.png)
 
 Running the [`Setup Custom Templates` tool function](user-global-settings.md#setup-custom-templates) from `Forms -> Settings -> PDF -> Tools` in your admin area will automatically copy all the core templates to the `PDF_EXTENDED_TEMPLATES` directory so you can easily begin templating. We recommend you copy and rename one of the core templates in `PDF_EXTENDED_TEMPLATES` to use as a starting point for your custom template.
 
-### Multisite Structure 
+### Multisite Structure
 
 ![The PDF_EXTENDED_TEMPLATES Working Directory one a Multisite installation](https://resources.gravitypdf.com/uploads/2015/10/v5-pdf-working-directory-multisite.png)
 
@@ -43,19 +43,19 @@ To correctly handle multisite installations, the plugin creates a directory in `
 
 The site ID can be found by looking at each site's `Edit` URL in the `Network Admin -> Sites` section of your admin area (you'll need to be logged in as a network administrator). Alternatively, the site ID column is automatically added to this page when using the [Multisite Enhancements](https://wordpress.org/plugins/multisite-enhancements/) plugin.
 
-### Template Hierarchy 
+### Template Hierarchy
 
 [Gravity PDF template system is modelled on the Theme hierarchy](https://resources.gravitypdf.com/uploads/2015/10/custom-templates-v5-1.png). The plugin's core templates are like the parent theme, while the `PDF_EXTENDED_TEMPLATES` directory acts like a child theme. All core template can be overridden by placing a file with the same name in `PDF_EXTENDED_TEMPLATES` – which is what happens automatically when you follow the [preparing the infrastructure](#preparing-the-infrastructure) step.
 
-#### Multisite 
+#### Multisite
 
 [The hierarchy in Multisite installations has an extra tier](developer-template-hierarchy.md#multisite-wordpress-installation). In a Multisite network, the core templates and `PDF_EXTENDED_TEMPLATES` directory still act like parent and child themes, but [the sub-site folders](#multisite-structure) act like a child "child theme".
 
 The templates places in the root `PDF_EXTENDED_TEMPLATES` directory are loaded by all sites in the network. While templates in a sub-site directory – like `PDF_EXTENDED_TEMPLATES/5/` – are site specific. This setup can be very useful when duplicating sites in your network, but most of the time you'll add your custom template to the sub-site folders.
 
-## Template Structure 
+## Template Structure
 
-Much like [creating plugins](https://developer.wordpress.org/plugins/the-basics/header-requirements/) or themes, all PDF templates must have the appropriate file headers to tell Gravity PDF more information about your template. 
+Much like [creating plugins](https://developer.wordpress.org/plugins/the-basics/header-requirements/) or themes, all PDF templates must have the appropriate file headers to tell Gravity PDF more information about your template.
 
 Your header should include:
 
@@ -88,7 +88,7 @@ The following is a valid PDF template header:
      */
 ```
 
-## Variables Available 
+## Variables Available
 
 The following variables are available to all PDF templates:
 
@@ -96,22 +96,22 @@ The following variables are available to all PDF templates:
 If you print/echo any PHP variable in the template it is best practice to [late-escape those variables on output](https://developer.wordpress.org/themes/theme-security/data-sanitization-escaping/#escaping-securing-output).
 :::
 
-### $form 
+### $form
 * The current [Gravity Form object](https://docs.gravityforms.com/form-object/) being processed. This is the main object in Gravity Forms and contains all properties of a particular form – form title, fields, notification, confirmation etc.
 
-### $entry 
+### $entry
 * The current [Gravity Form entry object](https://docs.gravityforms.com/entry-object/) being processed. This object contains all properties of a particular entry in **raw** format – accessing field data directly from the object should be avoided, where possible. The object is formatted as an associative array, and the field IDs are the array keys.
 
-### $form\_data 
+### $form\_data
 * The formatted [$entry](#entry) data stored in an associative array. [View full documentation on the `$form_data` array](developer-php-form-data-array.md).
 
-### $settings 
+### $settings
 * The current PDF configuration settings in array format. Standard settings like filename and font size are stored in this array, as well as [template-specific settings](developer-template-configuration-and-image.md).
 
-### $fields 
+### $fields
 * An array of the current Gravity Forms fields which can be accessed using the field ID number – `print_r( $fields[20] );`. This is just a formatted version of the `$form['fields']` array.
 
-## Template Tutorial – Part 1 
+## Template Tutorial – Part 1
 
 ![The basic Hello World PDF template](https://resources.gravitypdf.com/uploads/2015/11/basic-hello-world-template.png)
 
@@ -120,7 +120,7 @@ Now we've got all the theory out of the way let's create our first PDF template.
 To get started, create a new PHP file in your IDE of choice and call it `hello-world.php`. We're going to add the following headers to the file to tell Gravity PDF about the template:
 
 ```
-<?php 
+<?php
 
 /**
  * Template Name: Hello World
@@ -161,13 +161,13 @@ To finish off our example, we've going to replace `<!-- The PDF content should b
 
 [Download a completed copy of the Hello World template](https://gist.github.com/jakejackson1/d98b99fd504a5a300f1a).
 
-### Viewing PDF 
+### Viewing PDF
 
 ![The new Sol System PDF group](https://resources.gravitypdf.com/uploads/2015/11/sol-system-group.png)
 
 Once you've uploaded the template, you'll be able to see your new *Sol System* group added to the [template](user-setup-pdf.md#template) field when configuring new form PDF templates. Go ahead and [configure a new form PDF](user-setup-pdf.md) with your Hello World template and then [view the PDF](user-viewing-pdfs.md). You should see a PDF with "Hello World" written in large text.
 
-### Adding Styles 
+### Adding Styles
 
 If you would like to change the appearance of the PDF we can add new styles to the document. We're going to change the `<h1>` tag appearance by adding the following CSS inside the `<style>` tag:
 
@@ -175,7 +175,7 @@ If you would like to change the appearance of the PDF we can add new styles to t
     h1 {
         text-align: center;
         text-transform: uppercase;
-        color: #a62828; 
+        color: #a62828;
         border-bottom: 1px solid #999;
     }
 ```

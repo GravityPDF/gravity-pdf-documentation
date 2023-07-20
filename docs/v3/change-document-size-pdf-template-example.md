@@ -22,10 +22,10 @@ Pagebreaks can be controlled using the <code>&lt;pagebreak&gt;</code> tag or via
 ```html
 <!-- set the next page to A6 -->
 <pagebreak sheet-size="A6" />
-     
+    
 <!-- set the next page using a custom size -->
 <pagebreak sheet-size="70mm 150mm" />
- 
+
 <!-- set the next page to landscape -->
 <pagebreak orientation="landscape" />
 

@@ -4,7 +4,7 @@ sidebar_label: "Adjust Size of Header / Footer Images"
 description: ""
 ---
 
-Gravity PDF automatically restricts the height of images in headers/footers to prevent them taking up a large portion of a page. This is a good thing, as headers/footers with too large a height can cause display problems. 
+Gravity PDF automatically restricts the height of images in headers/footers to prevent them taking up a large portion of a page. This is a good thing, as headers/footers with too large a height can cause display problems.
 
 If you trying to add content to the header/footer that really should be in the document body, [there is a better way to handle this](add-custom-content.md).
 
@@ -17,14 +17,14 @@ If you **would like the image to extend the full width of the header/footer** we
 
 If you really want to make the image taller in the header/footer, you can override the default behaviour by including a style attribute in your `img` HTML markup. Follow these steps to make the adjustment:
 
-1. Go to [PDF List Page](managing-pdfs.md) and edit the PDF you want to adjust. Scroll down until you locate the _Template_ section. 
+1. Go to [PDF List Page](managing-pdfs.md) and edit the PDF you want to adjust. Scroll down until you locate the _Template_ section.
 
 ![PDF Settings - Template Tab](https://resources.gravitypdf.com/uploads/2021/04/v6-GPDF-Template-Tab.png)
 
 2. Scroll down to the Header/Footer Rich Text Editor you are interested in and select the _Text_ tab to show the raw HTML markup.
 
 ![Switch to Header Rich Text Editor](https://resources.gravitypdf.com/uploads/2022/03/v6.2-Header-Switch-to-Text-Editor.png)
-  
+ 
 3. Add `style="max-height: 400px"` to the `<img />` tag and then save/update.
 
 ![Include style”max-height: 400px”](https://resources.gravitypdf.com/uploads/2022/03/v6.2-Header-Style.png)

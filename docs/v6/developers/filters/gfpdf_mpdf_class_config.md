@@ -4,7 +4,7 @@ sidebar_label: "gfpdf_mpdf_class_config"
 description: "Modify the mPDF settings when the object is initialised. Use this filter to change the default configuration settings for mPDF."
 ---
 
-## Description 
+## Description
 
 This filter is used to [modify the mPDF configuration settings](https://github.com/mpdf/mpdf/blob/development/src/Config/ConfigVariables.php) which is passed to the mPDF object upon initialisation.
 
@@ -20,7 +20,7 @@ This filter was added in Gravity PDF 5.2.
 ### $form | array
 *  The current Gravity Forms array
 
-### $entry | array 
+### $entry | array
 *  The raw Gravity Forms Entry array.
 
 ### $settings | array
@@ -29,13 +29,13 @@ This filter was added in Gravity PDF 5.2.
 ### $Helper_PDF | object
 *  The initialised `\GFPDF\Helper\Helper_PDF` class
 
-## Usage 
+## Usage
 
-Gravity PDF has some very sane defaults for mPDF, but you may want to utilise one of their more advanced features or change the default settings. If so, this is the filter to use. 
+Gravity PDF has some very sane defaults for mPDF, but you may want to utilise one of their more advanced features or change the default settings. If so, this is the filter to use.
 
 Below is a snippet to disable SSL verification while requesting images (and other assets) for inclusion within the PDF. You might do this if your host is running an outdated version of cURL or the OpenSSL library and the images aren't displaying:
 
-``` 
+```
 add_filter( 'gfpdf_mpdf_class_config', function( $config, $form, $entry, $settings, $Helper_PDF ) {
 	$config['curlAllowUnsafeSslRequests'] = true;
 
@@ -45,7 +45,7 @@ add_filter( 'gfpdf_mpdf_class_config', function( $config, $form, $entry, $settin
 
 Another example is enabling the use of active form fields in PDFs. Keep in mind Gravity PDF does NOT support this feature, and our support team will not be able to assist you with any problems you encounter.
 
-``` 
+```
 add_filter( 'gfpdf_mpdf_class_config', function( $config, $form, $entry, $settings, $Helper_PDF ) {
 
 	/**
@@ -65,6 +65,6 @@ add_filter( 'gfpdf_mpdf_class_config', function( $config, $form, $entry, $settin
 }, 10, 5 );
 ```
 
-## Source Code 
+## Source Code
 
 This filter is located in the `Helper_PDF::begin_pdf()` method of `/src/helper/Helper_PDF.php`.

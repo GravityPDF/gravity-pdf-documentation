@@ -39,7 +39,7 @@ All PDF templates have common settings that can be configured, such as font, sec
 ### Certificate Configuration
 
 :::info
-For the best results it is recommended you use ALLCAPS for the [Title](#title-3), [Subtitle](#subtitle-4), and [Introduction](#introduction-5) settings.  
+For the best results it is recommended you use ALLCAPS for the [Title](#title-3), [Subtitle](#subtitle-4), and [Introduction](#introduction-5) settings. 
 :::
 
 #### Title (3)
@@ -90,7 +90,7 @@ For the best results it is recommended you use ALLCAPS for the [Title](#title-3)
 
 ### Other Fonts
 
-_Dakota_ [makes use of the open source font Quicksand](https://fonts.google.com/specimen/Quicksand) for the [Title](#title-3), [Introduction](#introduction-5), and [Awardee Name](#awardee-name-6), and this font cannot be changed via the UI. 
+_Dakota_ [makes use of the open source font Quicksand](https://fonts.google.com/specimen/Quicksand) for the [Title](#title-3), [Introduction](#introduction-5), and [Awardee Name](#awardee-name-6), and this font cannot be changed via the UI.
 
 ## Viewing PDF
 

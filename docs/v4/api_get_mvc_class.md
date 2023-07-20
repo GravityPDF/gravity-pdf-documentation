@@ -12,20 +12,20 @@ description: "If you need direct access to our Model, View or Controller classes
 * [Usage](#usage)
 * [Source Code](#source-code)
 
-### Description 
+### Description
 
-If you need direct access to our Model, View or Controller classes this method will allow you to get the original class. This is useful when you want to remove any action or filters we set, or to call a method we don't provide through the API. 
+If you need direct access to our Model, View or Controller classes this method will allow you to get the original class. This is useful when you want to remove any action or filters we set, or to call a method we don't provide through the API.
 
-### Version 
+### Version
 
 This method was introduced in Gravity PDF 4.0.
 
-### Return 
+### Return
 
 object | boolean
 :    Will return your object if found, otherwise false.
 
-### Usage 
+### Usage
 
 This snippet will show you how to use our method to remove an action we set in the controller:
 
@@ -41,6 +41,6 @@ add_action( 'admin_init', function() {
 } );
 ```
 
-### Source Code 
+### Source Code
 
 This method is located in `api.php`, model classes are found in `src/model/`, view classes are in `src/view/` and controller classes are in `src/controller/`.

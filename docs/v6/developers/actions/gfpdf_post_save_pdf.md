@@ -4,15 +4,15 @@ sidebar_label: "gfpdf_post_save_pdf"
 description: "This action is fired right after a PDF is saved to disk. It allows you to copy the generated PDF to another location."
 ---
 
-## Description 
+## Description
 
-This action is run right after a PDF is saved to disk. It allows you to **copy the PDF** to another location (*do not move the PDF otherwise you'll break the PDF notifications*). 
+This action is run right after a PDF is saved to disk. It allows you to **copy the PDF** to another location (*do not move the PDF otherwise you'll break the PDF notifications*).
 
 The action is triggered during form submission, when Notification emails are sent, when the [`GPDFAPI::create_pdf( $entry_id, $pdf_id )`](../api/create_pdf.md) API is used, or when the [Previewer add-on](http://gravitypdf.com/shop/previewer-add-on/) is used.
 
 You can also use the `gfpdf_post_save_pdf_$form_id` action if needed.
 
-## Parameters 
+## Parameters
 
 ### $pdf_path | string
 *  The full path to the generated PDF
@@ -21,7 +21,7 @@ You can also use the `gfpdf_post_save_pdf_$form_id` action if needed.
 *  The filename of the generated PDF
 
 ### $settings | array
-*  The current PDF's settings 
+*  The current PDF's settings
 
 ### $entry | array
 *  The raw Gravity Forms Entry array.
@@ -29,7 +29,7 @@ You can also use the `gfpdf_post_save_pdf_$form_id` action if needed.
 ### $form | array
 *  The current Gravity Forms array
 
-## Usage 
+## Usage
 
 This snippet shows you how to copy the generated PDF to a separate directory on your server. Keep in mind that unless the folder you copy to is placed outside the root website directory your PDFs will be publicly accessible from this new folder:
 
@@ -127,6 +127,6 @@ add_action( 'gfpdf_post_save_pdf', function( $pdf_path, $filename, $settings, $e
 }, 10, 5 );
 ```
 
-## Source Code 
+## Source Code
 
 This action is located in the `Model_PDF::generate_and_save_pdf()` method of `/src/model/Model_PDF.php`.

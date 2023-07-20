@@ -12,7 +12,7 @@ When [Debug Mode is enabled in the global PDF settings](user-global-settings.md#
     Peak Memory usage 64.00 MB
     Number of fonts 3
 
-This is useful information [when building a custom PDF template](developer-start-customising.md) but not something you'll want enabled during production. You can disable this by setting Debug Mode to `No`. 
+This is useful information [when building a custom PDF template](developer-start-customising.md) but not something you'll want enabled during production. You can disable this by setting Debug Mode to `No`.
 
 ## Gravity PDF 5.0
 

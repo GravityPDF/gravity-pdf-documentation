@@ -4,17 +4,17 @@ sidebar_label: "gfpdf_field_class"
 description: "When rendering PDFs we broke out the functionality which handles the display of Gravity Form fields. Each field is now handled by it's own class."
 ---
 
-## Description 
+## Description
 
-When rendering PDFs, we split the Gravity Form fields display into its own class, which all extend our common abstract class `GFPDF\Helper\Helper_Abstract_Fields` (yes, we use namespaces). This filter makes it easy to customise the output of individual fields types by allowing you to overriding or extend the field's class. 
+When rendering PDFs, we split the Gravity Form fields display into its own class, which all extend our common abstract class `GFPDF\Helper\Helper_Abstract_Fields` (yes, we use namespaces). This filter makes it easy to customise the output of individual fields types by allowing you to overriding or extend the field's class.
 
 The most likely things you'll want to override in a field's class is the `value()` or `html()` method, as it controls the retrieval of the field's entry information and the HTML output, respectively. However, you can completely change all properties of a field if you desire.
 
 In the [usage](#usage) section, we show you how to override an existing field's `value()` method to change the output. But for a more in-depth look at how to extend the `GFPDF\Helper\Helper_Abstract_Fields` class, we recommend you review the field classes found in `/src/helper/fields/`.
 
-You can also use the filter `gfpdf_field_class_$type`, where type refers to the Gravity Form field type (textarea, select, signature etc). 
+You can also use the filter `gfpdf_field_class_$type`, where type refers to the Gravity Form field type (textarea, select, signature etc).
 
-## Parameters 
+## Parameters
 
 ### $class | object
 *  The current field class loaded. These classes are located in `src/helper/fields/`
@@ -28,7 +28,7 @@ You can also use the filter `gfpdf_field_class_$type`, where type refers to the 
 ### $form | array
 *  The current Gravity Form array
 
-## Usage 
+## Usage
 
 The following snippet shows you how to use the filter to override the Textarea class. The actual filter is easy to use but you'll also need to create a separate file for your field:
 
@@ -104,7 +104,7 @@ class Prefix_Allcaps_Textarea_Field extends Field_Textarea {
 }
 ```
 
-It's worth noting that developers who add *new* fields to Gravity Forms don't need to use this filter to switch out the class. You just need to create a class that extends `GFPDF\Helper\Helper_Abstract_Fields` and include it during the `init` action. Just make sure you adhere to the appropriate naming convention – see `Helper_Misc::get_field_class($type)` for an example of the correct class name (when using the `gfpdf_field_class` filter above you don't need to worry about adhering to a specific naming convention). 
+It's worth noting that developers who add *new* fields to Gravity Forms don't need to use this filter to switch out the class. You just need to create a class that extends `GFPDF\Helper\Helper_Abstract_Fields` and include it during the `init` action. Just make sure you adhere to the appropriate naming convention – see `Helper_Misc::get_field_class($type)` for an example of the correct class name (when using the `gfpdf_field_class` filter above you don't need to worry about adhering to a specific naming convention).
 
 ```
 add_action( 'init', function() {
@@ -116,7 +116,7 @@ add_action( 'init', function() {
 	require_once( __DIR__ . '/Field_Colorpicker.php' ); /* See the classes found in `/src/helper/fields/` for examples of this file's structure */
 } );
 ```
- 
-## Source Code 
+
+## Source Code
 
 This filter is located in the `Model_PDF::get_field_class()` method of `/src/model/Model_PDF.php`.

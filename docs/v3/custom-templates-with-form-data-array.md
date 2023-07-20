@@ -51,9 +51,9 @@ First, view your PDF <a href="/v3/custom-templates-introduction/#entries-list">f
             (
                 [0] => Step 1
                 [1] => Step 2
-                [2] => 
+                [2] =>
             )
-    
+   
         [misc] => Array
             (
                 [date_time] => 2014-10-23 09:03:41
@@ -65,54 +65,54 @@ First, view your PDF <a href="/v3/custom-templates-introduction/#entries-list">f
                 [source_url] => https://gravitypdf.com/?gf_page=preview&id=4
                 [post_id] => 279
                 [currency] => USD
-                [payment_status] => 
-                [payment_date] => 
-                [transaction_id] => 
-                [payment_amount] => 
-                [is_fulfilled] => 
+                [payment_status] =>
+                [payment_date] =>
+                [transaction_id] =>
+                [payment_amount] =>
+                [is_fulfilled] =>
                 [created_by] => 1
-                [transaction_type] => 
+                [transaction_type] =>
                 [user_agent] => Mozilla/5.0 (Windows NT 6.1; WOW64; rv:32.0) Gecko/20100101 Firefox/32.0
                 [status] => active
             )
-    
+   
         [field_descriptions] => Array
             (
                 [1] => Description
-                [2] => 
-                [3] => 
-                [4] => 
-                [5] => 
-                [6] => 
-                [7] => 
-                [8] => 
-                [9] => 
-                [10] => 
-                [11] => 
-                [12] => 
+                [2] =>
+                [3] =>
+                [4] =>
+                [5] =>
+                [6] =>
+                [7] =>
+                [8] =>
+                [9] =>
+                [10] =>
+                [11] =>
+                [12] =>
                 [31] => Section...
-                [13] => 
-                [35] => 
-                [14] => 
-                [15] => 
-                [16] => 
-                [37] => 
-                [17] => 
-                [18] => 
-                [19] => 
-                [20] => 
-                [21] => 
-                [30] => 
-                [24] => 
-                [25] => 
-                [26] => 
-                [27] => 
-                [28] => 
-                [29] => 
-                [32] => 
-                [33] => 
+                [13] =>
+                [35] =>
+                [14] =>
+                [15] =>
+                [16] =>
+                [37] =>
+                [17] =>
+                [18] =>
+                [19] =>
+                [20] =>
+                [21] =>
+                [30] =>
+                [24] =>
+                [25] =>
+                [26] =>
+                [27] =>
+                [28] =>
+                [29] =>
+                [32] =>
+                [33] =>
             )
-    
+   
         [field] => Array
             (
                 [1.Single Line Text] => Single Line Test
@@ -127,12 +127,12 @@ First, view your PDF <a href="/v3/custom-templates-introduction/#entries-list">f
                 [3.Drop Down_name] => Second Choice
                 [3_name] => Second Choice
                 [Drop Down_name] => Second Choice
-                [4.Multi Select] => 
-                [4] => 
-                [Multi Select] => 
-                [4.Multi Select_name] => 
-                [4_name] => 
-                [Multi Select_name] => 
+                [4.Multi Select] =>
+                [4] =>
+                [Multi Select] =>
+                [4.Multi Select_name] =>
+                [4_name] =>
+                [Multi Select_name] =>
                 [5.Number] => 1231
                 [5] => 1231
                 [Number] => 1231
@@ -142,21 +142,21 @@ First, view your PDF <a href="/v3/custom-templates-introduction/#entries-list">f
                         [1] => Second Choice
                         [2] => Third Choice
                     )
-    
+   
                 [6] => Array
                     (
                         [0] => First Choice
                         [1] => Second Choice
                         [2] => Third Choice
                     )
-    
+   
                 [Checkboxes] => Array
                     (
                         [0] => First Choice
                         [1] => Second Choice
                         [2] => Third Choice
                     )
-    
+   
                 [7.Radio Buttons] => Second Choice
                 [7] => Second Choice
                 [Radio Buttons] => Second Choice
@@ -171,7 +171,7 @@ First, view your PDF <a href="/v3/custom-templates-introduction/#entries-list">f
                         [last] => Last
                         [suffix] => Suffix
                     )
-    
+   
                 [9] => Array
                     (
                         [prefix] => Mr.
@@ -180,7 +180,7 @@ First, view your PDF <a href="/v3/custom-templates-introduction/#entries-list">f
                         [last] => Last
                         [suffix] => Suffix
                     )
-    
+   
                 [Name] => Array
                     (
                         [prefix] => Mr.
@@ -189,7 +189,7 @@ First, view your PDF <a href="/v3/custom-templates-introduction/#entries-list">f
                         [last] => Last
                         [suffix] => Suffix
                     )
-    
+   
                 [10.Date] => 10/09/2014
                 [10] => 10/09/2014
                 [Date] => 10/09/2014
@@ -208,7 +208,7 @@ First, view your PDF <a href="/v3/custom-templates-introduction/#entries-list">f
                         [zip] => 2441
                         [country] => Australia
                     )
-    
+   
                 [13] => Array
                     (
                         [street] => 12 Fake St
@@ -218,7 +218,7 @@ First, view your PDF <a href="/v3/custom-templates-introduction/#entries-list">f
                         [zip] => 2441
                         [country] => Australia
                     )
-    
+   
                 [Address] => Array
                     (
                         [street] => 12 Fake St
@@ -228,7 +228,7 @@ First, view your PDF <a href="/v3/custom-templates-introduction/#entries-list">f
                         [zip] => 2441
                         [country] => Australia
                     )
-    
+   
                 [35.Address] => Array
                     (
                         [street] => 12 Fake St
@@ -238,7 +238,7 @@ First, view your PDF <a href="/v3/custom-templates-introduction/#entries-list">f
                         [zip] => 2441
                         [country] => Australia
                     )
-    
+   
                 [35] => Array
                     (
                         [street] => 12 Fake St
@@ -248,7 +248,7 @@ First, view your PDF <a href="/v3/custom-templates-introduction/#entries-list">f
                         [zip] => 2441
                         [country] => Australia
                     )
-    
+   
                 [14.Website] => https://www.test.com
                 [14] => https://www.test.com
                 [Website] => https://www.test.com
@@ -259,118 +259,118 @@ First, view your PDF <a href="/v3/custom-templates-introduction/#entries-list">f
                     (
                         [0] => /home/gravitypdf/public_html/app/uploads/gravity_forms/4-868f4621538a77008f5a772adcf266ce/2014/10/259.png
                     )
-    
+   
                 [16.File_path] => Array
                     (
                         [0] => /home/gravitypdf/public_html/app/uploads/gravity_forms/4-868f4621538a77008f5a772adcf266ce/2014/10/259.png
                     )
-    
+   
                 [16.File] => Array
                     (
                         [0] => https://resources.gravitypdf.com/uploads/gravity_forms/4-868f4621538a77008f5a772adcf266ce/2014/10/259.png
                     )
-    
+   
                 [16] => Array
                     (
                         [0] => https://resources.gravitypdf.com/uploads/gravity_forms/4-868f4621538a77008f5a772adcf266ce/2014/10/259.png
                     )
-    
+   
                 [File] => Array
                     (
                         [0] => https://resources.gravitypdf.com/uploads/gravity_forms/4-868f4621538a77008f5a772adcf266ce/2014/10/141009152725_0001.pdf
                         [1] => https://resources.gravitypdf.com/uploads/gravity_forms/4-868f4621538a77008f5a772adcf266ce/2014/10/2014_10_21_CR_Imports_200182.pdf
                     )
-    
+   
                 [37_path] => Array
                     (
                         [0] => /home/gravitypdf/public_html/app/uploads/gravity_forms/4-868f4621538a77008f5a772adcf266ce/2014/10/141009152725_0001.pdf
                         [1] => /home/gravitypdf/public_html/app/uploads/gravity_forms/4-868f4621538a77008f5a772adcf266ce/2014/10/2014_10_21_CR_Imports_200182.pdf
                     )
-    
+   
                 [37.File_path] => Array
                     (
                         [0] => /home/gravitypdf/public_html/app/uploads/gravity_forms/4-868f4621538a77008f5a772adcf266ce/2014/10/141009152725_0001.pdf
                         [1] => /home/gravitypdf/public_html/app/uploads/gravity_forms/4-868f4621538a77008f5a772adcf266ce/2014/10/2014_10_21_CR_Imports_200182.pdf
                     )
-    
+   
                 [37.File] => Array
                     (
                         [0] => https://resources.gravitypdf.com/uploads/gravity_forms/4-868f4621538a77008f5a772adcf266ce/2014/10/141009152725_0001.pdf
                         [1] => https://resources.gravitypdf.com/uploads/gravity_forms/4-868f4621538a77008f5a772adcf266ce/2014/10/2014_10_21_CR_Imports_200182.pdf
                     )
-    
+   
                 [37] => Array
                     (
                         [0] => https://resources.gravitypdf.com/uploads/gravity_forms/4-868f4621538a77008f5a772adcf266ce/2014/10/141009152725_0001.pdf
                         [1] => https://resources.gravitypdf.com/uploads/gravity_forms/4-868f4621538a77008f5a772adcf266ce/2014/10/2014_10_21_CR_Imports_200182.pdf
                     )
-    
-                [36.List] => 
+   
+                [36.List] =>
     Row 1
     Row 2
     Row 3
     Row 4
-    
-                [36] => 
+   
+                [36] =>
     Row 1
     Row 2
     Row 3
     Row 4
-    
-                [List] => 
+   
+                [List] =>
     Column 1	Column 2	Column 3
     Col1	Col2	Col3
     Col2	col2	col2
     col3	col3	col3
     col4	col4	col4
-    
-                [36.List_name] => 
+   
+                [36.List_name] =>
     Row 1
     Row 2
     Row 3
     Row 4
-    
-                [36_name] => 
+   
+                [36_name] =>
     Row 1
     Row 2
     Row 3
     Row 4
-    
-                [List_name] => 
+   
+                [List_name] =>
     Column 1	Column 2	Column 3
     Col1	Col2	Col3
     Col2	col2	col2
     col3	col3	col3
     col4	col4	col4
-    
-                [17.List] => 
+   
+                [17.List] =>
     Column 1	Column 2	Column 3
     Col1	Col2	Col3
     Col2	col2	col2
     col3	col3	col3
     col4	col4	col4
-    
-                [17] => 
+   
+                [17] =>
     Column 1	Column 2	Column 3
     Col1	Col2	Col3
     Col2	col2	col2
     col3	col3	col3
     col4	col4	col4
-    
-                [17.List_name] => 
+   
+                [17.List_name] =>
     Column 1	Column 2	Column 3
     Col1	Col2	Col3
     Col2	col2	col2
     col3	col3	col3
     col4	col4	col4
-    
-                [17_name] => 
+   
+                [17_name] =>
     Column 1	Column 2	Column 3
     Col1	Col2	Col3
     Col2	col2	col2
     col3	col3	col3
     col4	col4	col4
-    
+   
                 [18.Post Title] => Post Title
                 [18] => Post Title
                 [Post Title] => Post Title
@@ -399,26 +399,26 @@ First, view your PDF <a href="/v3/custom-templates-introduction/#entries-list">f
                 [28_name] => Third Choice ($9.10)
                 [Shipping_name] => Third Choice ($9.10)
             )
-    
+   
         [html] => Array
             (
-                [0] => 
-    
+                [0] =>
+   
     This is my HTML text block. This is only included when the 'default-show-html' => true configuration option is enabled on your configuration form node.
-    
+   
     {Single Line Text:1}
-    
-    
-                [1] => 
-                [2] => 
-    
+   
+   
+                [1] =>
+                [2] =>
+   
     PDF Preview Block
-    
+   
     [pdfpreview]
-    
-    
+   
+   
             )
-    
+   
         [list] => Array
             (
                 [36] => Array
@@ -428,7 +428,7 @@ First, view your PDF <a href="/v3/custom-templates-introduction/#entries-list">f
                         [2] => Row 3
                         [3] => Row 4
                     )
-    
+   
                 [17] => Array
                     (
                         [0] => Array
@@ -437,32 +437,32 @@ First, view your PDF <a href="/v3/custom-templates-introduction/#entries-list">f
                                 [Column 2] => Col2
                                 [Column 3] => Col3
                             )
-    
+   
                         [1] => Array
                             (
                                 [Column 1] => Col2
                                 [Column 2] => col2
                                 [Column 3] => col2
                             )
-    
+   
                         [2] => Array
                             (
                                 [Column 1] => col3
                                 [Column 2] => col3
                                 [Column 3] => col3
                             )
-    
+   
                         [3] => Array
                             (
                                 [Column 1] => col4
                                 [Column 2] => col4
                                 [Column 3] => col4
                             )
-    
+   
                     )
-    
+   
             )
-    
+   
         [products] => Array
             (
                 [25] => Array
@@ -480,16 +480,16 @@ First, view your PDF <a href="/v3/custom-templates-introduction/#entries-list">f
                                         [price] => 70
                                         [price_formatted] => $70.00
                                     )
-    
+   
                             )
-    
+   
                         [quantity] => 3
                         [subtotal] => 510
                         [subtotal_formatted] => $510.00
                     )
-    
+   
             )
-    
+   
         [products_totals] => Array
             (
                 [subtotal] => 510
@@ -499,7 +499,7 @@ First, view your PDF <a href="/v3/custom-templates-introduction/#entries-list">f
                 [subtotal_formatted] => $510.00
                 [total_formatted] => $519.10
             )
-    
+   
     )
 
 <h3>Accessing the example $form_data array</h3>

@@ -4,11 +4,11 @@ sidebar_label: "Page Breaks"
 description: "A custom HTML tag allows you to manually create new pages in your PDF. It goes hand in hand with the @page CSS property to give you total control."
 ---
 
-### Introduction 
+### Introduction
 
 The PDF software, [mPDF](http://mpdf.github.io/), introduces a custom HTML tag called `<pagebreaks>` which you can use to create new pages in your PDF. It goes hand in hand with the `@page` CSS property, and when used together they give you precise control over the look and feel of each page of your document.
 
-### Pagebreak 
+### Pagebreak
 
 You can explicitly add page breaks to your PDF using the `<pagebreaks>` HTML tag. And while there are a large number of attributes this tag supports – like page margins and sheet size – we prefer to forgo them and use `@page` instead ([discussed here](#at-page)).
 
@@ -23,9 +23,9 @@ In its most basic form, you can add pagebreaks as simply as:
 <p>This is on a new page</p>
 ```
 
-When used this way the new page will use the same size and margins as your previous page. 
+When used this way the new page will use the same size and margins as your previous page.
 
-When using [page numbering in the header or footer](developer-headers-and-footers.md#reserved-variables) you can also use the `<pagebreaks>` tag to reset the page number. 
+When using [page numbering in the header or footer](developer-headers-and-footers.md#reserved-variables) you can also use the `<pagebreaks>` tag to reset the page number.
 
 ```{.language-html}
 
@@ -36,9 +36,9 @@ When using [page numbering in the header or footer](developer-headers-and-footer
 <pagebreak resetpagenum="5">
 ```
 
-### @page 
+### @page
 
-We briefly touched on using `@page` when [discussing headers and footers](developer-headers-and-footers.md#displaying-headers-and-footers). This special CSS property can be used to control margins, headers/footers and backgrounds: 
+We briefly touched on using `@page` when [discussing headers and footers](developer-headers-and-footers.md#displaying-headers-and-footers). This special CSS property can be used to control margins, headers/footers and backgrounds:
 
 ```{.language-css}
 @page {
@@ -65,7 +65,7 @@ Let's take a look at a simple example:
 <p>This is on a landscape page</p>
 ```
 
-In the above example we've told the PDF engine to use the page selector *rotated* in the `<pagebreak>` tag. This then applies the `@page rotated` properties to your new page. 
+In the above example we've told the PDF engine to use the page selector *rotated* in the `<pagebreak>` tag. This then applies the `@page rotated` properties to your new page.
 
 Feel free to use multiple named @page selectors in your PDF template:
 
@@ -91,7 +91,7 @@ Feel free to use multiple named @page selectors in your PDF template:
 <p>Still on an A5 document (because the last page used A5 and we didn't override it), but with large margins.</p>
 ```
 
-### Samples and Further Reading 
+### Samples and Further Reading
 
 [We've put together a sample PDF templates showing off how page breaks can be effectively used.](https://gist.github.com/jakejackson1/4de8fffb77672868be29)
 

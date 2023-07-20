@@ -6,15 +6,15 @@ description: ""
 
 
 
-## Description 
+## Description
 
 By default, Gravity PDF will group products in a table at the end of a PDF. This filter allows you to hide that table in the PDF.
 
-## Version 
+## Version
 
 This filter was added in Gravity PDF 5.1.
 
-## Parameters 
+## Parameters
 
 ### $disable | bool
 *  Set to "true" to disable global add-on data
@@ -28,10 +28,10 @@ This filter was added in Gravity PDF 5.1.
 ### $config | array
 *  The current PDF configuration
 
-### $products | array 
+### $products | array
 *  The Field_Products object
 
-## Usage 
+## Usage
 
 This snippet will show you how to disable the Product table in PDFs:
 
@@ -51,6 +51,6 @@ add_filter( 'gfpdf_disable_product_table', function( $disable, $entry, $form, $c
 }, 10, 5 );
 ```
 
-## Source Code 
+## Source Code
 
 This filter is located in the `View_PDF:generate_html_structure()` method of `/src/view/View_PDF.php`.

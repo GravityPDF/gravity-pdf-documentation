@@ -8,7 +8,7 @@ import ResponsiveEmbed from 'react-responsive-embed'
 
 ## Introduction
 
-[A large array of barcodes (and QR Codes) are supported right out of the box](http://mpdf.github.io/what-else-can-i-do/barcodes.html) using the [special `<barcode>` HTML tag](http://mpdf.github.io/reference/html-control-tags/barcode.html). 
+[A large array of barcodes (and QR Codes) are supported right out of the box](http://mpdf.github.io/what-else-can-i-do/barcodes.html) using the [special `<barcode>` HTML tag](http://mpdf.github.io/reference/html-control-tags/barcode.html).
 
 At its most basic, you include the `<barcode>` HTML markup in your PDF template or [a HTML field in the Form Editor](../../users/add-custom-content.md):
 
@@ -34,7 +34,7 @@ The following CSS can be set on the `<barcode>` element:
 * `color`
 * `background-color`
 
-## Examples 
+## Examples
 
 ```html
 <!-- Basic Barcode Usage -->

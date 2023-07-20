@@ -6,7 +6,7 @@ description: "A big feature of Gravity PDF v5 is the ability to generate and ema
 
 import ResponsiveEmbed from 'react-responsive-embed'
 
-Gravity PDF has the ability to generate and email PDFs in a background process when a form is submitted. This is an important option for performance, as PDF generation is a resource-intensive task and users could be waiting between 1-10 seconds [to see your form's Confirmation page](https://docs.gravityforms.com/configuring-confirmations/) – the actual amount of time spent generating the PDFs will depend on your hosting provider, the complexity of your PDF(s) and the number of documents that need to be generated. When background processing is enabled, the PDF generation is deferred and, like magic, that wait time is significantly reduced. 
+Gravity PDF has the ability to generate and email PDFs in a background process when a form is submitted. This is an important option for performance, as PDF generation is a resource-intensive task and users could be waiting between 1-10 seconds [to see your form's Confirmation page](https://docs.gravityforms.com/configuring-confirmations/) – the actual amount of time spent generating the PDFs will depend on your hosting provider, the complexity of your PDF(s) and the number of documents that need to be generated. When background processing is enabled, the PDF generation is deferred and, like magic, that wait time is significantly reduced.
 
 <ResponsiveEmbed src="https://player.vimeo.com/video/666605192?dnt=1" allowFullScreen />
 
@@ -14,7 +14,7 @@ Background Processing is also integrated with [Gravity Forms Resend Notification
 
 ### Is your Website Compatible?
 
-Not all websites/servers are able to use the Background Processing feature. The best way to check is by [heading to Gravity Forms System Status page](https://docs.gravityforms.com/checking-environment-details/), locating the *WordPress Environment* section and verifying **Background tasks** has a green tick. The *WordPress Cron* or *WordPress Alternative Cron* also need to be enabled and will display "Yes" if one of them is active. 
+Not all websites/servers are able to use the Background Processing feature. The best way to check is by [heading to Gravity Forms System Status page](https://docs.gravityforms.com/checking-environment-details/), locating the *WordPress Environment* section and verifying **Background tasks** has a green tick. The *WordPress Cron* or *WordPress Alternative Cron* also need to be enabled and will display "Yes" if one of them is active.
 
 ![](https://resources.gravitypdf.com/uploads/2021/03/Background-Tasks.png)
 

@@ -12,20 +12,20 @@ description: "Our options class handles all the settings registration and displa
 * [Usage](#usage)
 * [Source Code](#source-code)
 
-### Description 
+### Description
 
 Our options class handles all the settings registration and display, as well as providing a full CRUD (create, read, update, delete) for our stored global and individual PDF settings. All the CRUD functionality is available directly through our API so you won't need to call it from the options class directly. For full details about utilising the options class we recommend reviewing the `src/helper/abstract/Helper_Abstract_Options.php` file.
 
-### Version 
+### Version
 
 This method was introduced in Gravity PDF 4.0.
 
-### Return 
+### Return
 
 \GFPDF\Helper\Helper_Options_Fields | object
 :    The options class
 
-### Usage 
+### Usage
 
 This snippet shows how to access our options class and get a list of Gravity PDF's supported paper size:
 
@@ -40,6 +40,6 @@ add_action( 'init', function() {
 } );
 ```
 
-### Source Code 
+### Source Code
 
 This method is located in `api.php` and the options class can be found in `src/helper/abstract/Helper_Abstract_Options.php`.

@@ -4,13 +4,13 @@ sidebar_label: "gfpdf_update_option"
 description: "This option allows you to override individual global PDF settings when they are updated in the database. "
 ---
 
-## Description 
+## Description
 
-This option allows you to override individual global PDF settings when they are updated in the database. 
+This option allows you to override individual global PDF settings when they are updated in the database.
 
 You also have the option to use the `gfpdf_update_option_$option` filter, where `$option` is the global setting ID.
 
-## Parameters 
+## Parameters
 
 ### $value | mixed
 *  The PDF settings
@@ -18,7 +18,7 @@ You also have the option to use the `gfpdf_update_option_$option` filter, where 
 ### $key | string
 *  The current Gravity Form ID the PDF is being added to
 
-## Usage 
+## Usage
 
 The following snippet shows how you can change a global PDF setting option:
 
@@ -34,7 +34,7 @@ add_action( 'gfpdf_update_option', function( $value, $key ) {
 ```
 
 
-You can also specifically target an option: 
+You can also specifically target an option:
 
 ```
 add_action( 'gfpdf_update_option_default_template', function( $value, $key ) {
@@ -43,6 +43,6 @@ add_action( 'gfpdf_update_option_default_template', function( $value, $key ) {
 }, 10, 2 );
 ```
 
-## Source Code 
+## Source Code
 
 This filter is located in the `Helper_Abstract_Options::update_option()` method of `/src/helper/abstract/Helper_Abstract_Options.php`.

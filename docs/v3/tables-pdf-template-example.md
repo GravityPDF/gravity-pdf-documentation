@@ -19,7 +19,7 @@ There is quite good support for tables in mPDF (compared with similar software p
 <h3>Rotating Table</h3>
 Tables can be rotated 90 degrees so they fit nicely on portrait documents. This feature can be applied using the CSS <code>rotate: 90|-90;</code> property.
 
-```css 
+```css
 table {
    rotate: 90;
 }

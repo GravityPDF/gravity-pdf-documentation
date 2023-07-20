@@ -4,7 +4,7 @@ sidebar_label: "Backgrounds"
 description: "Background colours, gradients and images can be applied to all block HTML elements in the PDF, including the whole page."
 ---
 
-## Introduction 
+## Introduction
 
 Background colours, gradients and images can be applied to all block HTML elements in the PDF, including the whole page, while inline HTML elements only support the background colour property.
 
@@ -23,7 +23,7 @@ The following background-related CSS properties are supported on block-level ele
 -   `background-image-resolution`
 -   `background-image-opacity`
 
-## Background Colour 
+## Background Colour
 
 Background colours can be set using the `background` or `background-color` CSS properties. The following colour definitions are supported and can be used to set a background colour:
 
@@ -61,7 +61,7 @@ Background colours can be set using the `background` or `background-color` CSS p
 This is inline content <span style="background: yellow">that should be highlighted</span> and go and do this.
 ```
 
-## Background Gradient 
+## Background Gradient
 
 Both background linear and radial gradients are supported and can be applied using the `background-image` property, which follows the CSS3-specification.
 
@@ -115,7 +115,7 @@ Most properties in this specification are supported, including: multiple colour-
 </div>
 ```
 
-## Background Images 
+## Background Images
 
 Background images can be included using the URL or full local path – the preferred method using [one of the absolute path constants](../helper-parameters.md#useful-paths-and-urls) – to the image. You can use the `background` or `background-image`, `background-position`, `background-size` and `background-repeat` CSS properties to control the image display. *Currently unsupported is multiple background images per container*.
 

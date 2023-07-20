@@ -38,7 +38,7 @@ The absolute path to the [PDF Working Directory](../developers/first-custom-pdf.
 The absolute path to where mPDFs core and custom fonts are installed.
 
 * **Temporary Folder location** <br />
-The absolute path to where Gravity PDF will save PDFs to disk. 
+The absolute path to where Gravity PDF will save PDFs to disk.
 
 * **Temporary Folder permissions** <br />
 Whether the web server can create folders and files in this directory.

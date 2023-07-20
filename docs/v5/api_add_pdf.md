@@ -4,15 +4,15 @@ sidebar_label: "add_pdf()"
 description: "This method allows you to create a new PDF on a Gravity Form. Just ensure you sanitise and validate any user input."
 ---
 
-## Description 
+## Description
 
 This method allows you to create a new PDF on a Gravity Form. If you are inserting data provided by the user **ensure you validate and sanitize everything** as we don't do it for you.
 
-## Version 
+## Version
 
 This method was introduced in Gravity PDF 4.0.
 
-## Parameters 
+## Parameters
 
 ### $form\_id \| integer
 * The Gravity Form ID
@@ -20,12 +20,12 @@ This method was introduced in Gravity PDF 4.0.
 ### $settings \| array
 * The PDF settings that should be added
 
-## Return 
+## Return
 
 ### string \| boolean
 * The new PDF ID on success, false on failure
 
-## Usage 
+## Usage
 
 This snippet shows the minimum settings that should be passed when adding a new PDF:
 
@@ -53,6 +53,6 @@ add_action( 'init', function() {
 
 For the full list of settings available see the `form_settings`, `form_settings_appearance` and `form_settings_advanced` arrays in the `Helper_Options_Fields::get_registered_fields()` method.
 
-## Source Code 
+## Source Code
 
 This method is located in `api.php`.

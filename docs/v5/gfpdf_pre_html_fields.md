@@ -6,15 +6,15 @@ description: "This filter can be used to insert HTML mark up before the entry HT
 
 
 
-## Description 
+## Description
 
-This filter can be used to insert HTML mark up before the entry HTML markup has been generated. 
+This filter can be used to insert HTML mark up before the entry HTML markup has been generated.
 
-## Version 
+## Version
 
 This action was introduced in Gravity PDF 4.1.
 
-## Parameters 
+## Parameters
 
 ### $entry | array
 *  The Gravity Form entry array
@@ -22,7 +22,7 @@ This action was introduced in Gravity PDF 4.1.
 ### $config | array
 *  The current Gravity PDF settings array
 
-## Usage 
+## Usage
 
 This snippet will display a message before the PDF field HTML markup:
 
@@ -42,6 +42,6 @@ add_action( 'gfpdf_pre_html_fields', function( $entry, $config ) {
 }, 10, 2 );
 ```
 
-## Source Code 
+## Source Code
 
 This filter is located in the `process_html_structure()` method of `/src/view/View_PDF.php`.

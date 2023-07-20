@@ -8,4 +8,4 @@ This error occurs when you [use the `[gravitypdf]` shortcode](user-shortcodes.md
 
 The most common occurrence is when using [Gravity Forms Page Confirmation](https://www.gravityhelp.com/documentation/article/configuring-confirmations-in-gravity-forms/#page-confirmations) (which redirects a user to an existing WordPress page). If this occurs, [please follow our guide for using the shortcode with the Page Confirmation](user-shortcodes.md#page-confirmation).
 
-If you want to use the shortcode outside of Gravity Forms entirely you need to [include the `entry` attribute](user-shortcodes.md#entry-attribute) with the shortcode so Gravity PDF knows what entry is being generated. 
+If you want to use the shortcode outside of Gravity Forms entirely you need to [include the `entry` attribute](user-shortcodes.md#entry-attribute) with the shortcode so Gravity PDF knows what entry is being generated.

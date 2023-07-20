@@ -4,7 +4,7 @@ sidebar_label: "gfpdf_core_template"
 description: "This hook allows you to inject custom CSS or HTML code dynamically into a Core or Universal PDF template."
 ---
 
-## Description 
+## Description
 
 This hook allows you to inject custom CSS or HTML code dynamically into a Core or Universal PDF template. It's useful to tweak an existing style or add a new one without having to specifically create a custom template.
 
@@ -24,11 +24,11 @@ From Gravity PDF 6.5+, you can also use the `gfpdf_core_template_$form_id` to ta
 *  The current Gravity PDF settings array
 *  Added in Gravity PDF 6.5
 
-## Usage 
+## Usage
 
 This snippet will force text on all PDFs to be display as the colour red:
 
-``` 
+```
 add_action( 'gfpdf_core_template', function( $form, $entry, $settings ) {
 	?>
 		<style>
@@ -66,11 +66,11 @@ If you want to target a specific form and/or PDF you can add conditional checks 
 
 ```
 add_action( 'gfpdf_core_template', function( $form, $entry, $settings ) {
-    
+   
     /* If not Form ID20 and PDF ID 632a587a231ae do NOT inject CSS into template */
     if ( (int) $form['id'] !== 20 && $settings['id'] !== '632a587a231ae' ) {
         return;
-    } 
+    }
 
 	?>
 		<style>
@@ -90,6 +90,6 @@ add_action( 'gfpdf_core_template', function( $form, $entry, $settings ) {
 }, 10, 3 );
 ```
 
-## Source Code 
+## Source Code
 
 This filter is located in `/src/view/html/PDF/core_template_styles.php`.

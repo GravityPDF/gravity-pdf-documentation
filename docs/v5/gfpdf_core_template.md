@@ -4,15 +4,15 @@ sidebar_label: "gfpdf_core_template"
 description: ""
 ---
 
-## Description 
+## Description
 
 This filter is triggered for all Gravity PDF templates. You can add custom CSS or HTML code to control the look and feel of all PDF templates.
 
-## Usage 
+## Usage
 
 This snippet will force text on all PDFs to be display as the colour red:
 
-``` 
+```
 add_action( 'gfpdf_core_template', function() {
 	?>
 		<style>
@@ -46,6 +46,6 @@ add_action( 'gfpdf_core_template', function() {
 } );
 ```
 
-## Source Code 
+## Source Code
 
 This filter is located in `/src/view/html/PDF/core_template_styles.php`.

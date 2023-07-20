@@ -27,26 +27,26 @@ The following arguments are passed to functions that use this hook:
 * The current GravityView Entry object
 
 ### $layout | `string`
-* The current template layout used by the View. 
+* The current template layout used by the View.
 * Valid values include: `table` `list` `map`
 
 ## Usage
 
 Hide the field labels in all PDFs:
 
-```php 
+```php
 add_filter( 'gfpdf_gv_show_label', '__return_false' );
 ```
 
 Hide the field labels in a specific View's PDF only:
 
-```php 
+```php
 add_filter( 'gfpdf_gv_show_label_885', '__return_false' );
 ```
 
 Hide the field labels in any PDFs generated for a Table Layout View:
 
-```php 
+```php
 add_filter( 'gfpdf_gv_show_label_table', '__return_false' );
 ```
 

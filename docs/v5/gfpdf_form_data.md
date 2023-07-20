@@ -6,15 +6,15 @@ description: ""
 
 
 
-## Description 
+## Description
 
 Use this filter to include additional information in the `$form_data` array (which is [used extensively in custom PDF templates](developer-php-form-data-array.md)). While you can remove information added to this array we **strongly recommend against this**. Instead, only use it to add new information.
 
-## Version 
+## Version
 
 This filter was introduced in Gravity PDF 4.2.
 
-## Parameters 
+## Parameters
 
 ### $form_data | array
 *  The processed Gravity Forms data in array format
@@ -25,7 +25,7 @@ This filter was introduced in Gravity PDF 4.2.
 ### $form | array
 *  The Gravity Forms array
 
-## Usage 
+## Usage
 
 The following will include a new piece of data in the `['misc']` key:
 
@@ -38,6 +38,6 @@ add_filter( 'gfpdf_form_data', function( $form_data, $entry, $form ) {
 }, 10, 3 );
 ```
 
-## Source Code 
+## Source Code
 
 This filter is located in the `Model_PDF::get_form_data()` method in `/src/model/Model_PDF.php`.

@@ -4,15 +4,15 @@ sidebar_label: "Start Customising"
 description: "We've attempted to make Gravity PDF as developer-friendly as possible. You can create custom PDF templates and tap into our WordPress actions and filters."
 ---
 
-## Before You Begin 
+## Before You Begin
 
 This section of the documentation is *primarily written for developers*. Assumed knowledge of WordPress basics, like [action and filter hooks](https://codex.wordpress.org/Plugin_API), with a solid PHP foundation and HTML / CSS is expected. If that last sentence just went over your head [get in touch with our friendly team](https://gravitypdf.com/integration-services/) and we can discuss a solution tailored for you.
 
-## Overview 
+## Overview
 
 We've attempted to make Gravity PDF as developer-friendly as possible. That means there are actions and filters placed all through the software, so you can tweak the functionality as you see fit. You can also control the exact look and feel of the generated PDFs using custom PDF templates, which are created using HTML/CSS and a bit of PHP knowledge.
 
-## Custom Templates 
+## Custom Templates
 
 ![Sample of a custom PDF template](https://resources.gravitypdf.com/uploads/2015/10/getting-started-v5.png)
 
@@ -26,7 +26,7 @@ The majority of our developer documentation will be targeted at creating custom 
 
 [Find out more about creating your own custom PDF templates](developer-first-custom-pdf.md).
 
-### Supported PDF Features 
+### Supported PDF Features
 
 ![Sample of a PDF showing off the HTML support](https://resources.gravitypdf.com/uploads/2015/11/pdf-features.png)
 
@@ -45,9 +45,9 @@ We'll cover:
 -   [Positioning](developer-positioning.md)
 -   [Floats](developer-floats.md)
 
-For those developers looking for in-depth knowledge about the PDF software that powers Gravity PDF, [head over to the mPDF documentation](http://mpdf.github.io/). 
+For those developers looking for in-depth knowledge about the PDF software that powers Gravity PDF, [head over to the mPDF documentation](http://mpdf.github.io/).
 
-## Actions / Filters 
+## Actions / Filters
 
 ![Sample of a filter available](https://resources.gravitypdf.com/uploads/2015/11/filters.png)
 

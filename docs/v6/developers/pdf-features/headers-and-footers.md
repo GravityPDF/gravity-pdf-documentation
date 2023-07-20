@@ -4,18 +4,18 @@ sidebar_label: "Headers and Footers"
 description: "Headers and footers are a powerful feature of the PDF rendering software, mPDF. We'll show you how to configure and enable them."
 ---
 
-## Introduction 
+## Introduction
 
 Headers and footers are a powerful feature of the PDF rendering software, [mPDF](http://mpdf.github.io/). They aren't just limited to every page either, you have granular control over which pages your headers and footers display on.
 ![Example of PDF header and footer](https://resources.gravitypdf.com/uploads/2015/11/header-footer-support.png)
 
-## Defining Headers/Footers 
+## Defining Headers/Footers
 
 The first thing you need to do is define a header/footer in your PDF template, then you tell the software when to display it. The two tags to define headers/footers are `<htmlpageheader name="">` and `<htmlpagefooter name="">`.
 
 The headers/footers HTML tags can be included anywhere inside your template but we recommend including it at the beginning of your HTML section (after the styles).
 
-### Headers 
+### Headers
 
 The `<htmlpageheader>` tag allows you to define a header template and everything inside the tag will be rendered at the top of your page. The tag has one required attribute `name` which acts as an ID for your header. Just ensure you don't use a name that begins with `html_`, as that prefix is reserved.
 
@@ -32,7 +32,7 @@ The `<htmlpageheader>` tag allows you to define a header template and everything
 </htmlpageheader>
 ```
 
-### Footers 
+### Footers
 
 The `<htmlpagefooter>` tag allows you to define a footer template and everything inside the tag will be rendered at the bottom of your page. The tag has one required attribute `name` which acts as an ID for your footer. Just ensure you don't use a name that begins with `html_`, as that prefix is reserved.
 
@@ -50,7 +50,7 @@ The `<htmlpagefooter>` tag allows you to define a footer template and everything
 </htmlpagefooter>
 ```
 
-## Displaying Headers/Footers 
+## Displaying Headers/Footers
 
 There are two different methods to assign headers and footers:
 
@@ -59,7 +59,7 @@ There are two different methods to assign headers and footers:
 
 **Setting your own header or footer in your PDF template [will override the core header and footer fields](../template-configuration-and-image.md#template-configuration)**.
 
-### @page 
+### @page
 
 Using `@page` is the preferred way to set a header or footer in the PDF as it has less quirks and keeps your HTML mark-up cleaner.
 
@@ -78,19 +78,19 @@ You can also apply headers and footers to the first page of your document using 
 <style>
     /* Displays on all pages of the PDF */
     @page {
-        header: html_MyCustomHeader; 
+        header: html_MyCustomHeader;
     }
 
     /* Overrides the @page header and displays on the first page of the PDF */
     @page :first {
-        header: html_MyCustomHeader; 
+        header: html_MyCustomHeader;
     }
 </style>
 ```
 
 You can get more specific with named `@page` selectors but [we'll discuss those in the `<pagebreak>` section](pagebreaks.md).
 
-### Inline HTML 
+### Inline HTML
 
 The use of the `<sethtmlpageheader />` or `<sethtmlpagefooter />` tag will set a header/footer on the current page in the document. While using [@page](#page) is preferred, these tags do have their usefulness. Because there's currently no `@page :last` pseudo selector we can use them at the end of our PDF template to display a header/footer on the very last page.
 
@@ -106,14 +106,14 @@ The extra attribute `show-this-page` in the header tag is required because the P
 <sethtmlpagefooter value="off" />
 ```
 
-## Reserved Variables 
+## Reserved Variables
 
 Header and Footers have access to the following reserved variables that can be used to display the current page number and the total page number:
 
 -   `{PAGENO}` – Will be replaced by the current page number.
 -   `{nb}` – Will return the total number of pages in the PDF document
 
-## Samples and Further Reading 
+## Samples and Further Reading
 
 We've put together two sample PDF templates showing off the two header and footer methods we discussed above:
 

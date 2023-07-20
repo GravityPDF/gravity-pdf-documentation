@@ -11,11 +11,11 @@ description: "Modify the mPDF settings before any HTML has been processed. Usual
 * [Usage](#usage)
 * [Source Code](#source-code)
 
-### Description 
+### Description
 
-This filter can be used to modify the mPDF settings before any HTML has been processed. Usually you'll want to use this filter to change the default configuration settings for mPDF (found in `/vendor/blueliquiddesigns/mpdf/config.php`. We don't recommend writing directly to the PDF during this filter (`$pdf->WriteHTML()`) as in some cases it can break the automated header/footer support feature. 
+This filter can be used to modify the mPDF settings before any HTML has been processed. Usually you'll want to use this filter to change the default configuration settings for mPDF (found in `/vendor/blueliquiddesigns/mpdf/config.php`. We don't recommend writing directly to the PDF during this filter (`$pdf->WriteHTML()`) as in some cases it can break the automated header/footer support feature.
 
-### Parameters 
+### Parameters
 
 $mpdf | object
 :    The initialised `mPDF` class that handles the PDF generation
@@ -23,7 +23,7 @@ $mpdf | object
 $form | array
 :    The current Gravity Form array
 
-$entry | array 
+$entry | array
 :    The raw Gravity Form Entry array.
 
 $settings | array
@@ -32,13 +32,13 @@ $settings | array
 $Helper_PDF | object
 :    The initialised `\GFPDF\Helper\Helper_PDF` class
 
-### Usage 
+### Usage
 
-Gravity PDF has some very sane defaults for mPDF, but you may want to utilise one of their more advanced features or change the default settings. If so, this is the filter to use. 
+Gravity PDF has some very sane defaults for mPDF, but you may want to utilise one of their more advanced features or change the default settings. If so, this is the filter to use.
 
 Below is a snippet to enable the use of active form fields in PDFs. Keep in mind Gravity PDF does NOT support this feature and our support team will not be able to assist you with any problems you encounter.
 
-``` 
+```
 add_filter( 'gfpdf_mpdf_init_class', function( $mpdf, $form, $entry, $settings, $Helper_PDF ) {
 
 	/**
@@ -58,6 +58,6 @@ add_filter( 'gfpdf_mpdf_init_class', function( $mpdf, $form, $entry, $settings, 
 }, 10, 5 );
 ```
 
-### Source Code 
+### Source Code
 
 This filter is located in the `Helper_PDF::begin_pdf()` method of `/src/helper/Helper_PDF.php`.

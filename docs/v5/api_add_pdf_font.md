@@ -4,17 +4,17 @@ sidebar_label: "add_pdf_font()"
 description: "This function allows you to add custom fonts to Gravity PDF using code. It accepts an associative array and only the `font_name` and `regular` array keys are required."
 ---
 
-## Description 
+## Description
 
 This function allows you to add custom fonts to Gravity PDF using code. It accepts an associative array, and only the `font_name` and `regular` array keys are required.
 
 The `font_name` can only contain alphanumeric characters or a space. Only `.ttf` font files are supported, and all fonts should be referenced with the full server path.
 
-## Version 
+## Version
 
 This method was introduced in Gravity PDF 4.1.
 
-## Parameters 
+## Parameters
 
 ### font \| array \| required
 * An associative array with information about the font. Only the `font_name` and `regular` array keys are required.
@@ -34,12 +34,12 @@ This method was introduced in Gravity PDF 4.1.
     bolditalics \| string \| option
     * The full path to the bold-italic variant of the font.
 
-## Return 
+## Return
 
 ### boolean \| WP\_Error
 * Returns `true` if the font is installed correctly, or `WP_Error` on failure
 
-## Usage 
+## Usage
 
 This sample shows the simplest usage of `add_pdf_font()`:
 
@@ -76,6 +76,6 @@ if ( ! is_wp_error( $results ) ) {
 }
 ```
 
-## Source Code 
+## Source Code
 
 This method is located in `api.php`.

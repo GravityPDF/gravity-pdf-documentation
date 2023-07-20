@@ -6,7 +6,7 @@ description: ""
 
 ## Description
 
-This filter allows the default Product table displayed at the bottom of Core and Universal templates to be modified. 
+This filter allows the default Product table displayed at the bottom of Core and Universal templates to be modified.
 
 ## Version
 
@@ -23,7 +23,7 @@ This filter was introduced in Gravity PDF 5.1.0
   2. `products_totals`: an array with the subtotal, shipping, and grand totals
 
 ### $field | \GF_Field
-* N/A: there isn't one specific field associated with the product table and this value can be ignored 
+* N/A: there isn't one specific field associated with the product table and this value can be ignored
 
 ### $form | array
 *  The current Gravity Forms array

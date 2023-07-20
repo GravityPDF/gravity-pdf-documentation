@@ -4,17 +4,17 @@ sidebar_label: "Merge Tags and Conditional Shortcodes"
 description: "Gravity Forms has Merge Tags and conditional shortcodes which you can use to display form data and allow simple IF statements in PDF templates."
 ---
 
-## Introduction 
+## Introduction
 
 Gravity Forms has a [powerful macro they call *Merge Tags*](https://docs.gravityforms.com/category/user-guides/merge-tags-getting-started/) which allows you to display form content, user meta data, post data and other information like the entry submission date. There's also [conditional shortcodes](https://docs.gravityforms.com/shortcodes/#conditional-shortcode) which you can use to allow simple *IF* statements. Both merge tags and conditional shortcodes are supported in PDF templates, and together they make a powerful combination.
 
-## Template Tutorial – Part 2 
+## Template Tutorial – Part 2
 
 ![The Hello World Gravity Forms form](https://resources.gravitypdf.com/uploads/2022/03/v6.2-Gravity-Forms-Form-Editor.png)
 
 In [Template Tutorial – Part 1](first-custom-pdf.md#template-tutorial--part-1) we showed you the very minimum needed to create a PDF template. In part 2 we're going to utilise merge tags and conditional shortcodes in a template. Before you begin you will need to [download the Gravity Forms form](https://resources.gravitypdf.com/uploads/2015/11/hello-world-gravity-form.json) (right click and 'save link as') we'll be working with and [import it into your website](https://docs.gravityforms.com/importing-a-form-into-gravity-forms/). Once done, submit a new entry for the newly-imported *Hello World* form.
 
-### Merge Tags 
+### Merge Tags
 
 ![Mergetags in a Gravity Forms Notification](https://resources.gravitypdf.com/uploads/2022/03/v6.2-Merge-Tags.png)
 
@@ -30,11 +30,11 @@ In our `hello-world.php` template we're going to add a new line below the `<h1>`
 <h1>Hello World</h1>
 
 <p>You're from {Where do you live?:3}, {Name (First):1.3}? How cool is that!</p>
-```    
+```   
 
 After uploading the template, when you view the *Hello World* PDF for the entry you created earlier, it will include the Gravity Forms data. All Gravity Forms fields can be displayed in the PDF this way.
 
-### Conditional Shortcodes 
+### Conditional Shortcodes
 
 Conditional Shortcodes allow you to output different content in the PDF based on a user's response. The structure of the shortcode is relatively simple, with four required attributes including: `action`, `merge_tag`, `condition` and `value`. [See the Gravity Forms documentation for full details on its usage](https://docs.gravityforms.com/conditional-shortcode/).
 

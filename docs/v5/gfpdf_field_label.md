@@ -6,15 +6,15 @@ description: ""
 
 
 
-## Description 
+## Description
 
 Use this filter to dynamically change field labels in the Core and Universal PDF templates.
 
-## Version 
+## Version
 
 This filter was introduced in Gravity PDF 4.2.
 
-## Parameters 
+## Parameters
 
 ### $label | string
 *  The current label to be displayed in the PDF
@@ -25,7 +25,7 @@ This filter was introduced in Gravity PDF 4.2.
 ### $entry | array
 *  The Gravity Forms entry array
 
-## Usage 
+## Usage
 
 The following code will display a field's admin label if it exists, otherwise fall back to the standard label:
 
@@ -59,6 +59,6 @@ add_filter( 'gfpdf_field_label', function( $label, $field, $entry ) {
 }, 10, 3 );
 ```
 
-## Source Code 
+## Source Code
 
 This filter is located in the `Helper_Abstract_Fields.php` files in the `/src/helper/abstract/` directory.

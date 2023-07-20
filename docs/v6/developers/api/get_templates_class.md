@@ -26,7 +26,7 @@ add_action( 'init', function() {
     if ( class_exists( 'GPDFAPI' ) ) {
         /* Get Gravity PDF template class */
         $templates = GPDFAPI::get_templates_class();
-        
+       
         $zadani_template_info = $templates->get_template_info_by_id( 'zadani' );
     }
 } );

@@ -4,17 +4,17 @@ sidebar_label: "PHP Form Data Array"
 description: "Take full control over your custom PDF templates for Gravity PDF by using native PHP instead of merge tags and conditional shortcodes."
 ---
 
-## Introduction 
+## Introduction
 
 [Gravity Forms merge tags and conditional shortcodes](mergetags-and-conditional-shortcodes.md) are useful PDF-building tools, but there are drawbacks. For instance, *you cannot create nested conditionals* or do any *post-processing to the entry data*. As an example, you cannot determine the age of someone by their date of birth, or convert a field to upper case using the standard merge tags. To achieve this behaviour we need to utilise PHP and the `$form_data` associative array – a processed and escaped version of the `$entry` object specific to Gravity PDF.
 
-## Template Tutorial – Part 3 
+## Template Tutorial – Part 3
 
 ![An example of the Hello World Gravity PDF PHP template](https://resources.gravitypdf.com/uploads/2022/07/pdf-template-sample-r3.png)
 
 First, we're going to convert the template we did in the [Part 2 exercise](mergetags-and-conditional-shortcodes.md#template-tutorial) from merge tags/conditional shortcodes to PHP. Then we'll look at the two post-processing use-cases we discussed in the introduction. Finally, we'll take a closer look at the `$form_data` array.
 
-### Convert Merge tags to PHP 
+### Convert Merge tags to PHP
 
 Our [*Hello World* template](https://gist.github.com/jakejackson1/6c0a5268fa23ba51a285) included merge tags for field #1 and field #3 – our name and select field, respectively. Their equivalent access keys in the `$form_data` array are `$form_data['field'][1]['first']` and `form_data['field'][3]`. So we'll update the PDF template to:
 
@@ -29,7 +29,7 @@ The `$form_data` array is grouped into a number of different sub-arrays, but the
 To keep your code cleaner, you could set these values as variables earlier in the template and output the variable names in the template instead:
 
 ```
-<?php 
+<?php
 $location = $form_data['field'][3] ?? '';
 $name     = $form_data['field'][1]['first'] ?? '';
 ?>
@@ -40,9 +40,9 @@ $name     = $form_data['field'][1]['first'] ?? '';
 If you're accessing a lot of fields from `$form_data['field']` you might like to assign it a shorter variable name:
 
 ```
-<?php 
+<?php
    $f = $form_data['field'];
-   
+  
    $location = $f[3] ?? '';
    $name     = $f[1]['first'] ?? '';
 ?>
@@ -50,7 +50,7 @@ If you're accessing a lot of fields from `$form_data['field']` you might like to
 <p>You're from <?php echo esc_html( $location ); ?>, <?php echo esc_html( $name ); ?>? How cool is that!</p>
 ```
 
-### Convert Conditional Shortcode to PHP 
+### Convert Conditional Shortcode to PHP
 
 :::info
 When doing conditionals with the `$form_data` array, if your string comparison contains any of the following characters `<`, `>`, `"`, `'` or `&` you'll need to use the WordPress function `esc_html()` to get the desired result.
@@ -111,7 +111,7 @@ And IF/ELSE conditions are simple too:
 
 [Download the completed Hello World PDF template for Part 3](https://gist.github.com/jakejackson1/c7dea5d0953374970f71).
 
-## Doing More With PHP 
+## Doing More With PHP
 
 With the full power of PHP at your fingertips post-processing Gravity Forms data becomes easy. Case in point, it's relatively simple to determine the age of someone using their date of birth.
 
@@ -120,7 +120,7 @@ Let's go back to the *Hello World* sample form and add a date field. For simplic
 Now let's add our PHP logic to display the age in your PDF template:
 
 ```
-<?php 
+<?php
 $dob            = $form_data['field'][4]; /* change the ID if your date field has something different */
 $dob_iso_format = date( 'Y-m-d', strtotime( $dob ) );
 $dob_datetime   = new DateTime( $dob_iso_format );
@@ -133,7 +133,7 @@ $age            = $dob_datetime->diff( new DateTime( 'today' ) )->y;
 Another example is converting case. It's simple to convert entry data to upper case, lower case or sentence case. Just run the field through a PHP function like `mb_strtoupper()` or `strtoupper()` (we recommend using the multibyte PHP functions where possible).
 
 ```
-<?php 
+<?php
 $location = mb_strtoupper( $form_data['field'][3], 'UTF-8' ); /* strtoupper( $form_data['field'][3] ) is also suitable */
 ?>
 
@@ -143,13 +143,13 @@ $location = mb_strtoupper( $form_data['field'][3], 'UTF-8' ); /* strtoupper( $fo
 PDF templates are just PHP files that are loaded in WordPress. Anything you can do in WordPress you can do in the PDF templates. For instance, you can output entire posts in a PDF:
 
 ```
-<?php 
+<?php
 echo esc_html( get_the_title( 120 ) ); /* display post #120's title */
 echo wp_kses_post( get_the_content( 120 ) ); /* display post #120's content */
 ?>
 ```
 
-## Form Data Array Up Close 
+## Form Data Array Up Close
 
 The `$form_data` array is used to access the Gravity Forms entry information, but, unlike merge tags, there's no selector to show you what's actually in the array. That's why we've added a `data` URL parameter which shows you the complete contents of the `$form_data` array.
 
@@ -171,7 +171,7 @@ If we take a look at the `$form_data` array from the [tutorial](#template-tutori
         [form_description] => Gravity PDF tutorial form used in our development documentation.
         [date_created] => 2/11/2015
         [date_created_usa] => 11/2/2015
-        [pages] => 
+        [pages] =>
         [misc] => Array
             (
                 [date_time] => 2015-11-02 03:06:50
@@ -180,16 +180,16 @@ If we take a look at the `$form_data` array from the [tutorial](#template-tutori
                 [is_starred] => 0
                 [is_read] => 0
                 [ip] => 192.168.13.1
-                [source_url] => 
-                [post_id] => 
+                [source_url] =>
+                [post_id] =>
                 [currency] => USD
-                [payment_status] => 
-                [payment_date] => 
-                [transaction_id] => 
-                [payment_amount] => 
-                [is_fulfilled] => 
+                [payment_status] =>
+                [payment_date] =>
+                [transaction_id] =>
+                [payment_amount] =>
+                [is_fulfilled] =>
                 [created_by] => 1
-                [transaction_type] => 
+                [transaction_type] =>
                 [user_agent] => Mozilla/5.0 (Windows NT 6.1; WOW64; rv:41.0) Gecko/20100101 Firefox/41.0
                 [status] => active
             )
@@ -198,29 +198,29 @@ If we take a look at the `$form_data` array from the [tutorial](#template-tutori
             (
                 [1.Name] => Array
                     (
-                        [prefix] => 
+                        [prefix] =>
                         [first] => Jake
-                        [middle] => 
+                        [middle] =>
                         [last] => Jackson
-                        [suffix] => 
+                        [suffix] =>
                     )
 
                 [1] => Array
                     (
-                        [prefix] => 
+                        [prefix] =>
                         [first] => Jake
-                        [middle] => 
+                        [middle] =>
                         [last] => Jackson
-                        [suffix] => 
+                        [suffix] =>
                     )
 
                 [Name] => Array
                     (
-                        [prefix] => 
+                        [prefix] =>
                         [first] => Jake
-                        [middle] => 
+                        [middle] =>
                         [last] => Jackson
-                        [suffix] => 
+                        [suffix] =>
                     )
 
                 [3.Where do you live?] => Mars
@@ -236,27 +236,27 @@ As we mentioned earlier, our main sub-key is `$form_data['field']`, but there ar
 
 You will also notice in our `$form_data['field']` array there are three different references (array keys) for the same field. The keys without any ID are present for legacy reasons, while keys with the ID-and-field-combination make it easier to distinguish what field you are trying to reference. With that said, we recommend accessing the field data using the ID in your templates.
 
-## Accessing Common Field Data 
+## Accessing Common Field Data
 
 The `$form_data` variable is an associative array, so more experienced PHP developers should have no problem accessing the information they need. However, large forms can make this array intimidating for first time template builders. Below are examples of how to access the most common Gravity Forms fields.
 
-### Standard Fields 
+### Standard Fields
 
-#### Single Line Text 
+#### Single Line Text
 
 ```
 /* 20 is the ID of our field */
-echo esc_html( $form_data['field'][20] ); 
+echo esc_html( $form_data['field'][20] );
 ```
 
-#### Paragraph Text 
+#### Paragraph Text
 
 ```
 /* 35 is the ID of our field */
-echo esc_html( $form_data['field'][35] ); 
+echo esc_html( $form_data['field'][35] );
 ```
 
-#### Drop Down 
+#### Drop Down
 
 ```
 /* 3 is the ID of our field */
@@ -264,7 +264,7 @@ echo esc_html( $form_data['field'][3] ); /* for selected Drop Down value */
 echo esc_html( $form_data['field']['3_name'] ); /* for selected Drop Down name */
 ```
 
-#### Multiselect  
+#### Multiselect 
 
 ```
 /* Output all selected items by value. 5 is the ID of our field */
@@ -288,7 +288,7 @@ foreach( (array) $form_data['field'][43] as $item ) {
       case 'Apple':
           // Do something when the specific option is selected
       break;
-      
+     
       case 'Orange':
           // Do something when the specific option is selected
       break;
@@ -307,14 +307,14 @@ if ( is_array( $form_data['field'][5] ) ) {
 }
 ```
 
-#### Number 
+#### Number
 
 ```
 /* 25 is the ID of our field */
-echo esc_html( $form_data['field'][25] ); 
+echo esc_html( $form_data['field'][25] );
 ```
 
-#### Checkbox 
+#### Checkbox
 
 ```
 /* Output all selected items by value. 43 is the ID of our field */
@@ -338,7 +338,7 @@ foreach( (array) $form_data['field'][43] as $item ) {
       case 'Apple':
           // Do something when the specific checkbox is enabled
       break;
-      
+     
       case 'Orange':
           // Do something when the specific checkbox is enabled
       break;
@@ -357,7 +357,7 @@ if ( is_array( $form_data['field'][43] ) ) {
 }
 ```
 
-#### Radio Buttons 
+#### Radio Buttons
 
 ```
 /* 12 is the ID of our field */
@@ -365,21 +365,21 @@ echo wp_kses_post( $form_data['field'][12] ); /* for selected Radio Button value
 echo wp_kses_post( $form_data['field']['12_name'] ); /* for selected Radio Button name */
 ```
 
-#### Hidden 
+#### Hidden
 
 ```
 /* 9 is the ID of our field */
-echo esc_html( $form_data['field'][9] ); 
+echo esc_html( $form_data['field'][9] );
 ```
 
-#### HTML 
+#### HTML
 
 ```
 /* 15 is the ID of our field */
 echo wp_kses_post( $form_data['html_id'][15] ); /* not found in the 'fields' sub-key */
 ```
 
-#### Section 
+#### Section
 
 ```
 /* 82 is the ID of our field */
@@ -387,9 +387,9 @@ echo wp_kses_post( $form_data['section_break'][82]['title'] ); /* not found in t
 echo wp_kses_post( $form_data['section_break'][82]['description'] ); /* not found in the 'fields' sub-key */
 ```
 
-### Advanced Fields 
+### Advanced Fields
 
-#### Name 
+#### Name
 
 ```
 /* 11 is the ID of our field */
@@ -403,28 +403,28 @@ echo esc_html( $form_data['field'][11]['suffix'] );
 echo esc_html( implode( ' ', array_filter( $form_data['field'][11] ) ) );
 ```
 
-#### Date 
+#### Date
 
 ```
 /* 60 is the ID of our field */
-echo esc_html( $form_data['field'][60] ); 
+echo esc_html( $form_data['field'][60] );
 ```
 
-#### Time 
+#### Time
 
 ```
 /* 62 is the ID of our field */
-echo esc_html( $form_data['field'][62] ); 
+echo esc_html( $form_data['field'][62] );
 ```
 
-#### Phone 
+#### Phone
 
 ```
 /* 142 is the ID of our field */
-echo esc_html( $form_data['field'][142] ); 
+echo esc_html( $form_data['field'][142] );
 ```
 
-#### Address 
+#### Address
 
 ```
 /* 16 is the ID of our field */
@@ -446,21 +446,21 @@ echo '<br>';
 echo esc_html( $form_data['field'][16]['city'] . ' ' . $form_data['field'][16]['state'] . ' ' . $form_data['field'][16]['zip'] );
 ```
 
-#### Website 
+#### Website
 
 ```
 /* 120 is the ID of our field */
-echo esc_html( $form_data['field'][120] ); 
+echo esc_html( $form_data['field'][120] );
 ```
 
-#### Email 
+#### Email
 
 ```
 /* 250 is the ID of our field */
-echo esc_html( $form_data['field'][250] ); 
+echo esc_html( $form_data['field'][250] );
 ```
 
-#### File Upload 
+#### File Upload
 
 ```
 /* 48 is the ID of our field */
@@ -473,10 +473,10 @@ if ( is_array( $form_data['field']['48_path'] ) ) {
 }
 
 /* Add images to PDF */
-if ( is_array( $form_data['field']['48_path'] ) ) { /* make sure you use the PATH */  
+if ( is_array( $form_data['field']['48_path'] ) ) { /* make sure you use the PATH */ 
     $allowed_extensions = array( 'jpg', 'jpeg', 'png', 'gif' );
 
-    foreach ( $form_data['field']['48_path'] as $path ) { 
+    foreach ( $form_data['field']['48_path'] as $path ) {
          $extension = strtolower( pathinfo( $path, PATHINFO_EXTENSION ) );
 
          if ( in_array( $extension, $allowed_extensions ) && is_file( $path ) ) { /* verify path has an image extension and it exists on the server */
@@ -486,7 +486,7 @@ if ( is_array( $form_data['field']['48_path'] ) ) { /* make sure you use the PAT
 }
 ```
 
-#### List 
+#### List
 
 ```
 /* 177 is the ID of our field */
@@ -516,11 +516,11 @@ if ( is_array( $form_data['list'][177] ) ) {
 }
 ```
 
-#### Signature 
+#### Signature
 
 ```
-/* 
- * 39 is the ID of our field 
+/*
+ * 39 is the ID of our field
  * The signature details isn't in the 'field' sub-key
  */
 echo wp_kses_post( $form_data['signature_details_id'][39]['img'] ); /* a <img /> HTML tag that includes the signature */
@@ -535,7 +535,7 @@ if ( is_file( $form_data['signature_details_id'][39]['path'] ) ) {
 }
 ```
 
-#### Consent Field 
+#### Consent Field
 
 ```
 /*
@@ -546,13 +546,13 @@ echo esc_html( $form_data['field'][6]['label'] ); /* If consented, will display 
 echo wp_kses_post( $form_data['field'][6]['description'] ); /* Will display the Consent field description, regardless of selection */
 ```
 
-#### Chained Selects 
+#### Chained Selects
 
 You'll need [the Chained Selects add-on](https://www.gravityforms.com/add-ons/chained-selects/) to use this field type.
 
 ```
-/* 
- * 3 is the ID of our field 
+/*
+ * 3 is the ID of our field
  */
 echo esc_html( $form_data['field'][3][0] ?? '' ); /* The first user-selection in the chain */
 echo esc_html( $form_data['field'][3][1] ?? '' ); /* The second user-selection in the chain */
@@ -561,7 +561,7 @@ echo esc_html( $form_data['field'][3][1] ?? '' ); /* The second user-selection i
 echo esc_html( implode( ', ', $form_data['field'][3] ) );
 ```
 
-#### Slim Image Cropper 
+#### Slim Image Cropper
 
 :::note
 The Slim Image Cropper for Gravity Forms add-on has been discontinued and [Image Hopper is the recommended replacement](https://imagehopper.tech).
@@ -588,9 +588,9 @@ You'll need [the Image Hopper add-on](https://imagehopper.tech/) to use this fie
 ```
 /* Add images to PDF for Image Hopper field ID 27 */
 if ( is_array( $form_data['field']['27_path'] ) ) {
-    foreach ( $form_data['field']['27_path'] as $path ) {      
+    foreach ( $form_data['field']['27_path'] as $path ) {     
        /* verify path has an image extension and it exists on the server */
-       if ( is_file( $path ) ) { 
+       if ( is_file( $path ) ) {
             echo '<img src="' . esc_attr( $path ) . '" width="200" />';
        }
     }
@@ -598,9 +598,9 @@ if ( is_array( $form_data['field']['27_path'] ) ) {
 
 /* Add images to PDF with secure link for Image Hopper field ID 27 */
 if ( is_array( $form_data['field']['27_path'] ) ) {
-    foreach ( $form_data['field']['27_path'] as $key => $path ) {      
+    foreach ( $form_data['field']['27_path'] as $key => $path ) {     
        /* verify path has an image extension and it exists on the server */
-       if ( is_file( $path ) ) { 
+       if ( is_file( $path ) ) {
             echo '<a href="' . esc_url( $form_data['field']['27_secured'][ $key ] ) . '"><img src="' . esc_attr( $path ) . '" width="200" /></a>';
        }
     }
@@ -612,30 +612,30 @@ if ( isset( $form_data['field']['27_path'][0] ) && is_file( $form_data['field'][
 }
 ```
 
-#### Nested Forms 
+#### Nested Forms
 
 You'll need <a href="https://gravitywiz.com/documentation/gravity-forms-nested-forms/?ref=78" rel="sponsored">the Gravity Perk Nested Forms add-on</a> to use this field type.
 
 ```
-/* 
+/*
 * 3 is the ID of our field in the Parent Form
 */
 $nested_ids = explode( ',', $form_data['field'][3] );
 foreach ( $nested_ids as $id ) {
-  /* 
+  /*
    * $nested_form_data contains the individual Child Form entry in the same structure as the $form_data array.
    */
     $nested_form_data = GPDFAPI::get_form_data( $id );
     if ( ! is_wp_error( $nested_form_data ) ) {
          /* Output field ID 5 from each Child entry */
-         echo esc_html( $nested_form_data['field'][5] ) . '<br>'; 
+         echo esc_html( $nested_form_data['field'][5] ) . '<br>';
     }
 }
 ```
 
-#### Repeater 
+#### Repeater
 
-The Repeater field contains an array of your field data, using the same structure as would be found in the `$form_data['field']` array key. 
+The Repeater field contains an array of your field data, using the same structure as would be found in the `$form_data['field']` array key.
 
 For a simple single-level repeater:
 
@@ -676,41 +676,41 @@ For a multi-level repeater (in this case, three levels):
 <?php endforeach; ?>
 ```
 
-### Post Fields 
+### Post Fields
 
-#### Title 
+#### Title
 
 ```
 /* 29 is the ID of our field */
-echo esc_html( $form_data['field'][29] ); 
+echo esc_html( $form_data['field'][29] );
 ```
 
-#### Body 
+#### Body
 
 ```
 /* 55 is the ID of our field */
-echo wp_kses_post( $form_data['field'][55] ); 
+echo wp_kses_post( $form_data['field'][55] );
 ```
 
-#### Except 
+#### Except
 
 ```
 /* 30 is the ID of our field */
-echo esc_html( $form_data['field'][30] ); 
+echo esc_html( $form_data['field'][30] );
 ```
 
-#### Tags 
+#### Tags
 
 ```
 /* 17 is the ID of our field */
-echo esc_html( $form_data['field'][17] ); 
+echo esc_html( $form_data['field'][17] );
 
 /* Create a tags array and output each tag on a new line */
 $tags = explode( ',', $form_data['field'][17] );
 echo wp_kses( implode( '<br>', $tags ), [ 'br' => true ] );
 ```
 
-#### Category 
+#### Category
 
 ```
 /* 5 is the ID of our field */
@@ -729,7 +729,7 @@ if ( is_array( $form_data['field']['5_name'] ) ) {
 }
 ```
 
-#### Post Image 
+#### Post Image
 
 ```
 /* 15 is the ID of our field */
@@ -747,17 +747,17 @@ if ( ! empty( $form_data['field'][32] ) ) {
 }
 ```
 
-#### Custom Field 
+#### Custom Field
 
 The Custom Field can be configured to any field type in the [Standard](#standard-fields) or [Advanced](#advanced-fields) fields sections. Refer to that particular field for output details.
 
-### Pricing Fields 
+### Pricing Fields
 
-#### Product 
+#### Product
 
 ```
 /* 300 is the ID of our field */
-echo esc_html( $form_data['field'][300] ); 
+echo esc_html( $form_data['field'][300] );
 
 /* Advanced Product Information */
 echo esc_html( $form_data['products'][300]['name'] );
@@ -770,11 +770,11 @@ echo esc_html( $form_data['products'][300]['subtotal_formatted'] ); /* formatted
 /* Any options are also available in the $form_data['products'][300]['options'] array */
 ```
 
-#### Quantity 
+#### Quantity
 
 ```
 /* 310 is the ID of our field */
-echo esc_html( $form_esc_html( data['field'][310] ); 
+echo esc_html( $form_esc_html( data['field'][310] );
 
 /**
  * Advanced Product Option Information is available through the parent product field it's assigned to
@@ -783,14 +783,14 @@ echo esc_html( $form_esc_html( data['field'][310] );
 echo esc_html( $form_data['products'][300]['quantity'] );
 ```
 
-#### Option 
+#### Option
 
 ```
 /* 320 is the ID of our field */
-echo esc_html( $form_data['field'][320] ); 
+echo esc_html( $form_data['field'][320] );
 
-/** 
- * Advanced Product Option Information are available through the parent product field it's assigned to 
+/**
+ * Advanced Product Option Information are available through the parent product field it's assigned to
  * For example, if this field is linked to product field #300 and would be accessible via $form_data['products'][300]['options']
  */
 echo esc_html( $form_data['products'][300]['options'][0]['field_label'] ?? '' );
@@ -804,11 +804,11 @@ foreach ( $form_data['products'][300]['options'] as $option ) {
 }
 ```
 
-#### Shipping 
+#### Shipping
 
 ```
 /* 330 is the ID of our field */
-echo esc_html( $form_data['field'][330] ); 
+echo esc_html( $form_data['field'][330] );
 
 /**
  * Advanced shipping information is available through the $form_data['products_totals'] sub-key
@@ -818,7 +818,7 @@ echo esc_html( $form_data['products_totals']['shipping_formatted'] ); /* formatt
 echo esc_html( $form_data['products_totals']['shipping_name'] ); /* selected shipping option name */
 ```
 
-#### Total 
+#### Total
 
 ```
 /* 340 is the ID of our field */

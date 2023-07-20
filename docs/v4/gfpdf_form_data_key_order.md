@@ -12,20 +12,20 @@ description: "Use this filter to change the order of array keys in the $form_dat
 * [Usage](#usage)
 * [Source Code](#source-code)
 
-### Description 
+### Description
 
-Use this filter to change the order of array keys in the `$form_data` array. 
+Use this filter to change the order of array keys in the `$form_data` array.
 
-### Version 
+### Version
 
 This filter was introduced in Gravity PDF 4.4.
 
-### Parameters 
+### Parameters
 
 $order | array
 :    The array of `$form_data` keys in the exact order they should get displayed
 
-### Usage 
+### Usage
 
 This snippet will re-order the `misc` and `field` keys in the `$form_data` array.
 
@@ -45,6 +45,6 @@ add_filter( 'gfpdf_form_data_key_order', function( $order ) {
 } );
 ```
 
-### Source Code 
+### Source Code
 
 This filter is located in the `Model_PDF::get_form_data()` method of `/src/model/Model_PDF.php`.

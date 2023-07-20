@@ -11,17 +11,17 @@ description: "For multisite installations we create a subdirectory inside the PD
 * [Usage](#usage)
 * [Source Code](#source-code)
 
-### Description 
+### Description
 
-By default, the [PDF working directory](developer-first-custom-pdf.md#working-directory) is found in your `http://example.com/wp-content/uploads/PDF_EXTENDED_TEMPLATES` folder. For multisite installations we also create a subdirectory inside the `PDF_EXTENDED_TEMPLATES` folder using each multisite's ID. This filter allows you to change that location (but you'll normally want to use the [`gfpdf_template_location_uri` filter](gfpdf_template_location_uri.md) instead). . 
+By default, the [PDF working directory](developer-first-custom-pdf.md#working-directory) is found in your `http://example.com/wp-content/uploads/PDF_EXTENDED_TEMPLATES` folder. For multisite installations we also create a subdirectory inside the `PDF_EXTENDED_TEMPLATES` folder using each multisite's ID. This filter allows you to change that location (but you'll normally want to use the [`gfpdf_template_location_uri` filter](gfpdf_template_location_uri.md) instead). .
 
 The multisite working directory **MUST be accessible by your web browser** and **MUST be used in conjunction with the [`gfpdf_multisite_template_location`](gfpdf_multisite_template_location.md) filter**. Both the `gfpdf_multisite_template_location` and `gfpdf_multisite_template_location_uri` filters should point to the same directory – one is the path and one is the URL.
 
 *Note:* your web server needs write access to the folder you move the working directory to.
 
-You can also use this filter by targeting the multisite ID directly: `gfpdf_multisite_template_location_uri_$blog_id`. 
+You can also use this filter by targeting the multisite ID directly: `gfpdf_multisite_template_location_uri_$blog_id`.
 
-### Parameters 
+### Parameters
 
 $url | string
 :    The URL of the multisite [PDF working directory](developer-first-custom-pdf.md#working-directory)
@@ -35,7 +35,7 @@ $upload_path | string
 $blog_id | integer
 :    The current ID of the multisite being processed
 
-### Usage 
+### Usage
 
 The following snippet shows you how you can move the multisite PDF working directory for site #3 to your `wp-content` directory (instead of its original location in your uploads folder):
 
@@ -63,6 +63,6 @@ add_filter( 'gfpdf_multisite_template_location', function( $directory, $working_
 }, 10, 4 );
 ```
 
-### Source Code 
+### Source Code
 
 This filter is located in the `Model_Install::setup_multisite_template_location()` method of `/src/model/Model_Install.php`.

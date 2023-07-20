@@ -4,7 +4,7 @@ sidebar_label: "Template Overrides"
 description: "Gravity PDF has a template hierarchy much like WordPress theme and child themes. You can override Core PDF templates, configuration and images."
 ---
 
-## Introduction 
+## Introduction
 
 We [touched on the template hierarchy](first-custom-pdf.md#template-hierarchy) when you created your first custom PDF template. The hierarchy allows you to copy Core template files to the PDF Working Directory and modify them without worrying about your changes being overridden when you update the plugin. If you're on a multisite installation the template hierarchy includes an additional tier, so it's important to be aware of the loading order.
 
@@ -65,7 +65,7 @@ Once done, you're free to modify the CSS in the Core template – [`?html=1` hel
 
 ### How do I update outdated templates?
 
-If you get a warning on the [System Status page](../users/system-status.md) about having an outdated PDF template, it means the version of the template shipped with in Gravity PDF core is higher than the version of your template override stored in the PDF Working Directory. You could ignore the warning, but you may miss out on new features that get added ([like Drag and Drop column support in Gravity Forms 2.5](../users/why-arent-columns-showing-in-pdf.md)). 
+If you get a warning on the [System Status page](../users/system-status.md) about having an outdated PDF template, it means the version of the template shipped with in Gravity PDF core is higher than the version of your template override stored in the PDF Working Directory. You could ignore the warning, but you may miss out on new features that get added ([like Drag and Drop column support in Gravity Forms 2.5](../users/why-arent-columns-showing-in-pdf.md)).
 
 To resolve the warning you've two options available:
 

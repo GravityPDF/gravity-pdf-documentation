@@ -12,20 +12,20 @@ description: "While Gravity Forms provides its own API, we wanted to abstract th
 * [Usage](#usage)
 * [Source Code](#source-code)
 
-### Description 
+### Description
 
 While [Gravity Forms provides its own API](https://www.gravityhelp.com/documentation/article/gravity-forms-api/), we wanted to abstract that functionality and really fine tune the methods we needed (we don't implement everything in the Gravity Forms API). We recommend reviewing the `src/helper/Helper_Form.php` file for full details.
 
-### Version 
+### Version
 
 This method was introduced in Gravity PDF 4.0.
 
-### Return 
+### Return
 
 \GFPDF\Helper\Helper_Form | object
 :    The form class
 
-### Usage 
+### Usage
 
 This snippet shows how to access our form class and get a Gravity Form:
 
@@ -41,6 +41,6 @@ add_action( 'init', function() {
 } );
 ```
 
-### Source Code 
+### Source Code
 
 This method is located in `api.php` and the misc class can be found in `src/helper/Helper_Form.php`.

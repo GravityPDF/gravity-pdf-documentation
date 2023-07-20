@@ -6,14 +6,14 @@ description: "Gravity PDF 6.0 is a major update which sees the minimum version r
 
 ## Introduction
 
-Gravity PDF 6.0 is a major update which has an overhauled UI to [match the changes found in Gravity Forms 2.5](https://www.gravityforms.com/two-five-form-editor/). A bunch of new features have been added to this release, with the standouts being: 
+Gravity PDF 6.0 is a major update which has an overhauled UI to [match the changes found in Gravity Forms 2.5](https://www.gravityforms.com/two-five-form-editor/). A bunch of new features have been added to this release, with the standouts being:
 
 1. A [brand new Font Manager](custom-fonts.md)
 1. Support for [Drag and Drop Columns](https://www.gravityforms.com/drag-and-drop-column-control-two-five/) in Core/Universal PDFs
 1. Integration with [Export Entries](include-pdfs-in-entry-export.md)
 1. Integration with the [Webhook add-on](webhooks-support.md)
 1. [New modifiers for PDF Merge Tags](shortcodes-and-mergetags.md#available-modifiers)
-  
+ 
 To future-proof the plugin, the minimum version requirements for PHP, WordPress and Gravity Forms has been increased. And legacy code and settings from version 3 have been removed.
 
 This document presents all the pertinent info you need to upgrade to version 6. It also provides details about potential issues you might run into, how to fix, and how to downgrade back to version 5 if you find a problem you cannot resolve.
@@ -22,9 +22,9 @@ This document presents all the pertinent info you need to upgrade to version 6. 
 
 Because of the large changes found in both Gravity Forms 2.5 and Gravity PDF 6.0, you are strongly encouraged to test the updates in a staging environment first. Doing so will mean you don't negatively affect your production site should you run into problems. Some (but not all) web hosting providers include tools to quickly create a clone of your production site. Check with your host to see if this feature is available to you.
 
-**You are strongly encouraged to take a full backup of your production site before completing the upgrade**. That way, if something goes wrong, you can quickly restore your site from the backup. Your hosting provider should include these tools.  
+**You are strongly encouraged to take a full backup of your production site before completing the upgrade**. That way, if something goes wrong, you can quickly restore your site from the backup. Your hosting provider should include these tools. 
 
-## New Software Requirements 
+## New Software Requirements
 
 Both the server and software requirements have changed. Gravity PDF 6.0 requires the following:
 
@@ -32,7 +32,7 @@ Both the server and software requirements have changed. Gravity PDF 6.0 requires
 -   WordPress 5.3+
 -   Gravity Forms 2.5+
 
-Verify you meet these requirements [by viewing the System Status page](https://docs.gravityforms.com/checking-environment-details/), which can be accessed from the WP Admin menu `Forms -> System Status`. If you aren't running a compatible version of PHP and aren't sure how to upgrade, contact your web hosting provider. If you're running an older version of WordPress or Gravity Forms, [use WordPress's one-click update feature](https://wordpress.org/support/article/dashboard-updates-screen/). 
+Verify you meet these requirements [by viewing the System Status page](https://docs.gravityforms.com/checking-environment-details/), which can be accessed from the WP Admin menu `Forms -> System Status`. If you aren't running a compatible version of PHP and aren't sure how to upgrade, contact your web hosting provider. If you're running an older version of WordPress or Gravity Forms, [use WordPress's one-click update feature](https://wordpress.org/support/article/dashboard-updates-screen/).
 
 :::success Info
 If you are unable to meet the v6 minimum software requirements, Gravity PDF will continue [supporting users on v5](../../v5/five-minute-install.md) with bug and security fixes until 27 April 2023.
@@ -40,7 +40,7 @@ If you are unable to meet the v6 minimum software requirements, Gravity PDF will
 
 ## New User Interface
 
-Gravity Forms 2.5 sees a completely redesigned admin experience. So it doesn't stick out like a sore thumb, Gravity PDF has been updated to match the new user interface. 
+Gravity Forms 2.5 sees a completely redesigned admin experience. So it doesn't stick out like a sore thumb, Gravity PDF has been updated to match the new user interface.
 
 ### Global Settings
 
@@ -64,7 +64,7 @@ Instead of being split into tabs, [the PDF settings are now grouped into section
 
 ![The Gravity Forms Entry Details page](https://resources.gravitypdf.com/uploads/2021/03/Entry-Details-v6.png)
 
-It's now easier than ever to access your PDFs. The PDF links have been moved from the Entry widget [to a dedicated PDFs widget](viewing-pdfs.md#entry-details). 
+It's now easier than ever to access your PDFs. The PDF links have been moved from the Entry widget [to a dedicated PDFs widget](viewing-pdfs.md#entry-details).
 
 ### System Status
 
@@ -113,7 +113,7 @@ Once you've downloaded the latest template zip file [install it via the PDF Temp
 
 ### Nested Forms Column Support
 
-When using <a href="https://gravitywiz.com/documentation/gravity-forms-nested-forms/?ref=78" rel="sponsored">Gravity Perks Nested Forms add-on</a> with Gravity PDF, the generated PDF documents now supports Drag and Drop columns when displaying those Nested Forms in Core/Universal templates. 
+When using <a href="https://gravitywiz.com/documentation/gravity-forms-nested-forms/?ref=78" rel="sponsored">Gravity Perks Nested Forms add-on</a> with Gravity PDF, the generated PDF documents now supports Drag and Drop columns when displaying those Nested Forms in Core/Universal templates.
 
 ### Font Manager
 
@@ -155,7 +155,7 @@ Along with the bump in the minimum software requirements, below is a list of cha
 
 ### Always Save PDF
 
-Because Gravity PDF [doesn't permanently store PDFs on disk](pdf-security.md#pdfs-and-the-file-system), this has always been [a confusion setting for users](../../v5/user-setup-pdf.md#always-save-pdf). The reason it existed was so the `gfpdf_post_save_pdf` hook would always be triggered on form submission, even if no notifications were configured. 
+Because Gravity PDF [doesn't permanently store PDFs on disk](pdf-security.md#pdfs-and-the-file-system), this has always been [a confusion setting for users](../../v5/user-setup-pdf.md#always-save-pdf). The reason it existed was so the `gfpdf_post_save_pdf` hook would always be triggered on form submission, even if no notifications were configured.
 
 We've removed the setting from the UI entirely, and will determine whether to temporarily save the PDF to disk based on if an action is hooked into `gfpdf_post_save_pdf` (or if being included as a notification attachment).
 
@@ -204,7 +204,7 @@ The HTML mark-up used on all Gravity PDF pages in the WordPress Admin area has b
 
 The following files have been removed from Gravity PDF and may affect developers who've manually included or used functionality from them:
 
-```text 
+```text
 bower_components/backbone.modelbinder/Backbone.ModelBinder.min.js
 src/Controller/Controller_Welcome_Screen.php
 src/Helper/Helper_Migration.php
@@ -266,7 +266,7 @@ Model_Settings::process_font() // Use GPDFAPI::add_pdf_font()
 Model_Settings::get_font_id_by_name() // Font names no longer linked to IDs.
 Model_Settings::check_tmp_pdf_security()
 View_Actions::migration()
-View_Save_Core_Fonts::core_fonts_setting() 
+View_Save_Core_Fonts::core_fonts_setting()
 View_Settings::get_avaliable_tabs(); // Renamed View_Settings::get_available_tabs()
 View_Settings::system_status();
 ```
@@ -278,17 +278,17 @@ The following class method signatures have been changed and may affect developer
 ```text
 GPDFAPI::delete_pdf_font( $font_name ) -> GPDFAPI::delete_pdf_font( $font_id )
 Controller_Save_Core_Fonts::__construct( Helper_Abstract_View $view, LoggerInterface $log, Helper_Data $data, Helper_Misc $misc ) -> Controller_Save_Core_Fonts::__construct( LoggerInterface $log, Helper_Data $data, Helper_Misc $misc )
-Controller_System_Report::__construct( $allow_url_fopen ) -> Controller_System_Report::__construct( Helper_Abstract_Model $model, Helper_Abstract_View $view ) 
+Controller_System_Report::__construct( $allow_url_fopen ) -> Controller_System_Report::__construct( Helper_Abstract_Model $model, Helper_Abstract_View $view )
 Model_Install::__construct( Helper_Abstract_Form $gform, LoggerInterface $log, Helper_Data $data, Helper_Misc $misc, Helper_Notices $notices, Helper_Pdf_Queue $queue ) -> Model_Install::__construct( LoggerInterface $log, Helper_Data $data, Helper_Misc $misc, Helper_Notices $notices, Helper_Pdf_Queue $queue, Model_Uninstall $uninstall )
 Model_Mergetags::__construct( Helper_Abstract_Options $options, Model_PDF $pdf, LoggerInterface $log, Helper_Misc $misc ) -> Model_Mergetags::__construct( Helper_Abstract_Options $options, Model_PDF $pdf, LoggerInterface $log, Helper_Misc $misc, Helper_Interface_Url_Signer $url_signer )
 ```
 
 ## Downgrade Plugin
 
-If something broke during the update you can rollback to v5 without much difficulty. First, if you are experiencing the "white screen of death" [please follow these instructions](white-screen-of-death.md) to help resolve the problem. If you still have full control over your website but there's some compatibility issues with v6, we recommend [installing the WP Rollback plugin](https://wordpress.org/plugins/wp-rollback/). Once installed, click the *Rollback* link on the Gravity PDF row on the plugin's page, then select the latest stable v5 release and rollback. 
+If something broke during the update you can rollback to v5 without much difficulty. First, if you are experiencing the "white screen of death" [please follow these instructions](white-screen-of-death.md) to help resolve the problem. If you still have full control over your website but there's some compatibility issues with v6, we recommend [installing the WP Rollback plugin](https://wordpress.org/plugins/wp-rollback/). Once installed, click the *Rollback* link on the Gravity PDF row on the plugin's page, then select the latest stable v5 release and rollback.
 
 ![Rolling back Gravity PDF to v5](https://resources.gravitypdf.com/uploads/2018/08/rollback-v4.png)
 
-## Help and Support 
+## Help and Support
 
 If you run into trouble during the upgrade, [get in touch with our friendly support team](https://gravitypdf.com/support/), and we will be happy to assist you.

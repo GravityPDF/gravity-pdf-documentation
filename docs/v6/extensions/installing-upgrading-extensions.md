@@ -6,13 +6,13 @@ description: "After purchasing, you'll receive an email containing a link to you
 
 You've purchased a [premium extension/plugin through the online store](https://gravitypdf.com/store/#extensions). The next step is to install it on your website.
 
-:::info 
+:::info
 Before you begin, please ensure you have the <a href="https://rocketgenius.pxf.io/c/1211356/445235/7938" rel="sponsored">Gravity Forms</a> and [Gravity PDF](../users/five-minute-install.md) plugins both active on your WordPress website. Done? Good! Now let's get you up and running with your new premium plugin.
 :::
 
 Once you've completed your purchase you'll receive an email containing a link to your plugin zip file – the email also contains your product key which will give you access to support and one-click updates: keep it safe!
 
-## Install Steps 
+## Install Steps
 
 :::note
 If your browser auto-extracts zip files when downloaded, you'll need to temporarily disable this functionality to prevent issues during installation. [See how to disable this in Safari](http://apple.stackexchange.com/a/963).
@@ -35,7 +35,7 @@ If your browser auto-extracts zip files when downloaded, you'll need to temporar
 7.  On the page that loads, enter your license key (found in your Receipt email) and save. A success or error message will be displayed next to the license key to signify how the registration went.
     ![Registering plugin for one-click updates](https://resources.gravitypdf.com/uploads/2021/04/v6-Plugin-License.png)
 
-## One Click Updates 
+## One Click Updates
 
 As long as you've registered your license key (as outlined in the [Install Steps](#install-steps)) and it's still valid (all keys are valid for 12 months after purchase), your extension will periodically check GravityPDF.com for a new version. If there is a new version, it'll be shown on the [Dashboard Updates Screen](https://wordpress.org/support/article/dashboard-updates-screen/) or the Plugins page, and you can one-click update the software.
 

@@ -8,53 +8,53 @@ description: ""
 
 *Tritan* is a fancy Universal PDF template that integrates seamlessly into any Gravity Form you might create. You can [purchase from our PDF Template Shop](https://gravitypdf.com/shop/tritan/). It's ideally suited for short forms with a limited number of pages (resumès instantly come to mind), but can be scaled to larger forms by disabling the first-page sidebar.
 
-## Installation 
+## Installation
 
 [Please follow our installation guide](shop-installing-upgrading-premium-templates.md) that provides instructions for setting up and configuring your premium template.
 
-## Limitations 
+## Limitations
 
 As a *Universal* PDF template *Tritan* can be used with all Gravity Forms and will correctly display any official Gravity Forms fields. **Header text is not supported in Tritan**.
 
-## Configuring 
+## Configuring
 
 All PDF templates have common settings that can be configured, such as font, security and PDF attachments, and we recommend [reviewing the PDF setup guide](user-setup-pdf.md) to get a better understanding on all the available settings. All template-specific configuration is done from the *Template* tab and below you'll find detailed information about each option available in *Tritan*, what it does and how it alters the generated PDF.
 
-### Main Heading 
+### Main Heading
 * The main heading is included at the very start of your PDF, before any other content. Merge tags are supported.
 * Leave the field blank to disable.
 * To include the form title, use the `{form_title}` merge tag.
 
-### Primary Colour 
+### Primary Colour
 * This colour is used in the top-left header triangle and bottom-right footer triangle. The List and Likert fields also make use of this colour in their table layout.
 
-### Secondary Colour 
+### Secondary Colour
 * This colour is used in the top-right header triangle and the bottom-left footer triangle. The HTML and Product fields also make use of this colour in their layout.
 
-### Left Footer 
+### Left Footer
 * This content will be displayed in the bottom left triangle on each page of your document
 * The footer colour will be set to black or white automatically based on the best background contrast.
 * There is limited space for text, so best keep it short.
 
-### Right Footer 
+### Right Footer
 * This content will be displayed in the bottom right triangle on each page of your document.
 * The footer colour will be set to black or white automatically based on the best background contrast.
 * There is limited space for text, so best keep it short.
 
-### Sidebar Image 
+### Sidebar Image
 * This image is included in the first-page sidebar. The width of the image will be 15% of the overall document width (that's roughly 120px on A4 / Letter sized documents).
 * An image 500px wide will be a suitable resolution. To ensure your PDF generates quickly and the PDF file size stays small, we recommend using an image under 1MB.
 * The File Upload field merge tag can be used to display a user-uploaded image. It's recommended you limit the maximum upload size to under 1MB.
 
-### Sidebar Content 
+### Sidebar Content
 * The main content of your sidebar where you can include information such as contact details, instructions, social media links or opening hours, etc.
 * Alternatively, you can add user-supplied content with merge tags and [hide those fields from the main content area](user-hide-form-fields.md).
 * For optimal display, use Headings and Horizontal Lines to split up the sidebar content into easy-to-read blocks. **Note:** All heading tags (h1 – h6) will be displayed identically in the sidebar.
 
-### Sidebar Font Color 
+### Sidebar Font Color
 * This is the font colour used in the sidebar. The default sidebar font colour is dark grey (hex `#1e73be`).
 
-## Additional Settings 
+## Additional Settings
 
 Along with the options specific to *Tritan*, the following core settings are also supported:
 
@@ -64,10 +64,10 @@ Along with the options specific to *Tritan*, the following core settings are als
 -   [Enable Conditional Logic](user-setup-pdf.md#enable-conditional-logic)
 -   [Show Empty Fields](user-setup-pdf.md#show-empty-fields)
 
-## Recommended Font 
+## Recommended Font
 
 *Tritan* comes bundled with both *Fira Sans Regular* and *Fira Sans Light* which are both open source fonts (SIL Open Font License 1.1). *Fira Sans* is a highly legible sans serif font that works great at 10pt with *Tritan*. Set the PDF font in the [Appearance tab](user-setup-pdf.md#appearance-tab).
 
-## Viewing PDF 
+## Viewing PDF
 
 Once you've saved your new PDF, you can [view it from the Gravity Forms Entries List page](user-viewing-pdfs.md). Just remember to fill out and submit your form if the entry list is empty.

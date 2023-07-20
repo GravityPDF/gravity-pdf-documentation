@@ -41,7 +41,7 @@ The <code>$form_data</code> array contains two unique keys for access product in
                 [subtotal] => 300
                 [subtotal_formatted] => $300.00
             )
-            
+           
     )
 
     [products_totals] => Array

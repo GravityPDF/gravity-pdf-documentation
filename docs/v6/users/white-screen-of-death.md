@@ -4,7 +4,7 @@ sidebar_label: "White Screen of Death"
 description: "If you are experiencing the \"white screen of death\", or when submitting Gravity Forms the page loads endlessly you should follow these steps."
 ---
 
-### Troubleshooting PHP Errors 
+### Troubleshooting PHP Errors
 
 If you are experiencing the "white screen of death", or when submitting Gravity Forms the page loads endlessly, you should follow these steps to try to resolve the problem:
 

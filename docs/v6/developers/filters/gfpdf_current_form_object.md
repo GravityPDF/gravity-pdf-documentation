@@ -4,15 +4,15 @@ sidebar_label: "gfpdf_current_form_object"
 description: ""
 ---
 
-## Description 
+## Description
 
-This filter is useful if you want to manipulate the `$form` object specifically when a PDF is being processed. The filter is used in multiple locations throughout the code and, if needed, you can use `$method` to target to only modify `$form` during a specific class/function/method. 
+This filter is useful if you want to manipulate the `$form` object specifically when a PDF is being processed. The filter is used in multiple locations throughout the code and, if needed, you can use `$method` to target to only modify `$form` during a specific class/function/method.
 
-## Version 
+## Version
 
 This filter was introduced in Gravity PDF 6.3.
 
-## Parameters 
+## Parameters
 
 ### $form | array
 *  The Gravity Forms array
@@ -36,7 +36,7 @@ This filter was introduced in Gravity PDF 6.3.
   * apply_backwards_compatibility_filters
   * helper_abstract_fields
 
-## Usage 
+## Usage
 
 The following will reorder Gravity Forms fields in Core / Universal PDFs:
 
@@ -52,7 +52,7 @@ add_filter( 'gfpdf_current_form_object', function( $form, $entry, $type ) {
 }, 10, 3 );
 ```
 
-## Source Code 
+## Source Code
 
 This filter is located in the following methods and files:
 

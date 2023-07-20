@@ -4,16 +4,16 @@ sidebar_label: "gfpdf_working_folder_name"
 description: "By default, the PDF working directory is called PDF_EXTENDED_TEMPLATES. Using this filter you can easily change the name. "
 ---
 
-## Description 
+## Description
 
-By default, the [PDF working directory](developer-first-custom-pdf.md#working-directory) is called `PDF_EXTENDED_TEMPLATES`. Using this filter you can easily change the name. 
+By default, the [PDF working directory](developer-first-custom-pdf.md#working-directory) is called `PDF_EXTENDED_TEMPLATES`. Using this filter you can easily change the name.
 
-## Parameters 
+## Parameters
 
 ### $folder | array
 *  The folder name of the [PDF working directory](developer-first-custom-pdf.md#working-directory)
 
-## Usage 
+## Usage
 
 This snippet shows how to change the PDF working directory name:
 
@@ -23,6 +23,6 @@ add_action( 'gfpdf_working_folder_name', function( $folder ) {
 } );
 ```
 
-## Source Code 
+## Source Code
 
 This filter is located in the `Model_Install::get_working_directory()` method of `/src/model/Model_Install.php`.

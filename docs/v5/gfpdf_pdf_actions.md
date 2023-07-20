@@ -4,11 +4,11 @@ sidebar_label: "gfpdf_pdf_actions"
 description: "This filter allows you to add to the action links on the PDF list page. Keep in mind you still need to write the logic that handles the action. "
 ---
 
-## Description 
+## Description
 
-This filter allows you to add to the action links on the [PDF list page](user-managing-pdfs.md). Keep in mind this is only half the process. You still need to write the logic that handles the action. 
+This filter allows you to add to the action links on the [PDF list page](user-managing-pdfs.md). Keep in mind this is only half the process. You still need to write the logic that handles the action.
 
-## Parameters 
+## Parameters
 
 ### $actions | array
 *  A list of the current PDF actions. By default these include `edit`, `duplicate` and `delete`.
@@ -16,11 +16,11 @@ This filter allows you to add to the action links on the [PDF list page](user-ma
 ### $item | array
 *  The current PDF configuration array.
 
-## Usage 
+## Usage
 
 The following snippet adds a *View* link to the PDF list:
 
-``` 
+```
 add_filter( 'gfpdf_pdf_actions', function( $actions, $item ) {
 
 	/**
@@ -42,6 +42,6 @@ add_filter( 'gfpdf_pdf_actions', function( $actions, $item ) {
 }, 10, 2 );
 ```
 
-## Source Code 
+## Source Code
 
 This filter is located in the `Helper_PDF_List_Table::column_name()` method of `/src/helper/Helper_PDF_List_Table.php`.

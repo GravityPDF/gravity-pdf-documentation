@@ -4,11 +4,11 @@ sidebar_label: "gfpdf_mpdf_class"
 description: "This filter can be used to include additional content directly in your PDF."
 ---
 
-## Description 
+## Description
 
-This filter is run after the PDF template's HTML is loaded into mPDF and right before the document is generated. 
+This filter is run after the PDF template's HTML is loaded into mPDF and right before the document is generated.
 
-## Parameters 
+## Parameters
 
 ### $mpdf | object
 *  The initialised `mPDF` class that handles the PDF generation
@@ -16,7 +16,7 @@ This filter is run after the PDF template's HTML is loaded into mPDF and right b
 ### $form | array
 *  The current Gravity Forms array
 
-### $entry | array 
+### $entry | array
 *  The raw Gravity Forms Entry array.
 
 ### $settings | array
@@ -25,7 +25,7 @@ This filter is run after the PDF template's HTML is loaded into mPDF and right b
 ### $Helper_PDF | object
 *  The initialised `\GFPDF\Helper\Helper_PDF` class
 
-## Usage 
+## Usage
 
 The snippet below will output additional debugging information to the end of the PDF when WordPress has debugging mode enabled:
 
@@ -60,6 +60,6 @@ add_filter( 'gfpdf_mpdf_class', function( $mpdf, $form, $entry, $settings, $Help
 }, 10, 5 );
 ```
 
-## Source Code 
+## Source Code
 
 This filter is located in the `Helper_PDF::generate()` method of `/src/helper/Helper_PDF.php`.

@@ -8,7 +8,7 @@ Added in Gravity PDF 4.2, you can force a page breaks before certain fields in C
 
 ### Add Pagebreak before Field
 
-![Add 'pagebreak' class to Gravity Form Field](https://resources.gravitypdf.com/uploads/2017/06/pagebreak.png) 
+![Add 'pagebreak' class to Gravity Form Field](https://resources.gravitypdf.com/uploads/2017/06/pagebreak.png)
 
 To create a pagebreak in the PDF you need to add the CSS class `pagebreak` to a field in the Gravity Forms Editor. You can do this by:
 

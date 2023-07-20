@@ -4,19 +4,19 @@ sidebar_label: "gfpdf_pdf_middleware"
 description: "Our middleware is used as the bridge between our user and their ability to access the requested PDF. It's our security layer."
 ---
 
-## Description 
+## Description
 
 Middleware is a term used to define a bridge between two operations. In this case, our middleware is used as the bridge between our user and their ability to access the requested PDF. Or in other words, our middleware acts as the security layer. A user has to flow through each middleware filter and pass each test before they can view the PDF. If a middleware filter returns `WP_Error` the user will be denied access to the PDF.
 
-By default we have seven security tests in place to protect your PDFs. These include a check on the PDFs public status, the state, conditional restrictions, the ownership, timeout checks, IP matching and the current user's capabilities. 
+By default we have seven security tests in place to protect your PDFs. These include a check on the PDFs public status, the state, conditional restrictions, the ownership, timeout checks, IP matching and the current user's capabilities.
 
 This filter allows you to remove any of the existing middleware and replace them with your own custom authentication. For instance, you might like to use API keys to do all your authentication. Or create a one-time access link. This filter allows you to do all that and more. But keep security at the forefront of your mind. **By changing the default operation you could unintentionally give unauthorised users access to sensitive information.** *You have been warned!*
 
-Another key consideration when working with this filter and Gravity PDF is that each PDF is generated using a unique URL and should be treated as separate page in WordPress. A PDF has no notion of the post or page it's been linked from so you can't do specific actions based on `is_page()` or `is_post()` – you would need to pass that information as URL parameters instead. 
+Another key consideration when working with this filter and Gravity PDF is that each PDF is generated using a unique URL and should be treated as separate page in WordPress. A PDF has no notion of the post or page it's been linked from so you can't do specific actions based on `is_page()` or `is_post()` – you would need to pass that information as URL parameters instead.
 
 The important part to remember about working with our middleware is that filters should only return `WP_Error` when the check fails. If a check passes we just return the value of `$error` and let the process continue.
 
-## Parameters 
+## Parameters
 
 ### $error | mixed
 *  A `WP_Error` is returned on failure. Anything else is considered valid.
@@ -27,7 +27,7 @@ The important part to remember about working with our middleware is that filters
 ### $settings | array
 *  The current PDF settings being processed
 
-## Usage 
+## Usage
 
 This snippet shows you can how can remove existing middleware. In this case we are effectively enabling public access to all Gravity PDF documents (we do NOT recommend doing this):
 
@@ -76,6 +76,6 @@ add_action( 'gfpdf_pdf_middleware', function( $error, $entry, $settings ) {
 
 ```
 
-## Source Code 
+## Source Code
 
 This filter is located in the `Model_PDF::process_pdf()` method of `/src/model/Model_PDF.php`.

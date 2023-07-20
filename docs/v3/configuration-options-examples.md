@@ -12,7 +12,7 @@ It is simple to generate PDFs and have them attached to Gravity Form notificatio
 
 ```
 $gf_pdf_config[] = array(
-	'form_id' => 1, 
+	'form_id' => 1,
 	'notifications' => true,
 );
 ```
@@ -34,34 +34,34 @@ Users can use these options to change the look and feel of any of the default te
 ```
 /* set individual options for default templates */
 $gf_pdf_config[] = array(
-	'form_id' => 1, 
+	'form_id' => 1,
 	'template' => 'default-template.php',		
 	'default-show-html' => true,
+); 
+
+$gf_pdf_config[] = array(
+	'form_id' => 1,
+	'template' => 'default-template.php',	
+	'default-show-empty' => true,
+);
+
+$gf_pdf_config[] = array(
+	'form_id' => 1,
+	'template' => 'default-template.php',		
+	'default-show-page-names' => true,
 );  
 
 $gf_pdf_config[] = array(
-	'form_id' => 1, 
-	'template' => 'default-template.php',	
-	'default-show-empty' => true,
-); 
-
-$gf_pdf_config[] = array(
-	'form_id' => 1, 
-	'template' => 'default-template.php',		
-	'default-show-page-names' => true,
-);   
-
-$gf_pdf_config[] = array(
-	'form_id' => 1, 
+	'form_id' => 1,
 	'template' => 'default-template.php',		
 	'default-show-section-content' => true,
-); 
+);
 
 /*
 * Or use a combination of the new options to achieve the results you want
 */
 $gf_pdf_config[] = array(
-	'form_id' => 1, 
+	'form_id' => 1,
 	'template' => 'default-template.php',		
 	'default-show-html' => true,
 	'default-show-empty' => true,
@@ -75,23 +75,23 @@ $gf_pdf_config[] = array(
 By default the software doesn't attach PDFs to notifications. By using the <em>notifications</em> option you can choose to attach PDFs to all notifications of a form, or restrict it to particular notifications.
 
 ```
-/* only send default template to the notification called Admin Attachment */ 
+/* only send default template to the notification called Admin Attachment */
 $gf_pdf_config[] = array(
-	'form_id' => 1, 
-  	'notifications' => 'Admin Notification', 
+	'form_id' => 1,
+  	'notifications' => 'Admin Notification',
+);
+ 
+/* multiple attachments but not all */ 
+$gf_pdf_config[] = array(
+	'form_id' => '1',
+  	'notifications' => array('Admin Notification', 'User Notification'),
 ); 
-  
-/* multiple attachments but not all */  
+ 
+/* attach PDF to all form notifications */ 
 $gf_pdf_config[] = array(
-	'form_id' => '1', 
-  	'notifications' => array('Admin Notification', 'User Notification'), 
-);  
-  
-/* attach PDF to all form notifications */  
-$gf_pdf_config[] = array(
-	'form_id' => '1', 
-  	'notifications' => true, 
-);  
+	'form_id' => '1',
+  	'notifications' => true,
+); 
 ```
 
 <strong id="pdf-name">CUSTOM PDF NAME</strong>
@@ -102,9 +102,9 @@ Using this option you can change the PDF name and even use MERGETAGS to customis
 
 ```
 $gf_pdf_config[] = array(
-	'form_id' => '1', 
-	'notifications' => true, 
-	'filename' => 'User &#123;Name:1&#125;.pdf', 
+	'form_id' => '1',
+	'notifications' => true,
+	'filename' => 'User &#123;Name:1&#125;.pdf',
 );
 ```
 
@@ -194,7 +194,7 @@ The software will automatically make appropriate changes to your document to gen
 
 ```
 $gf_pdf_config[] = array(
-	'form_id' => 1, 
+	'form_id' => 1,
 	'pdfa1b' => true,
 );
 ```
@@ -215,8 +215,8 @@ The software will automatically make appropriate changes to your document to gen
 
 ```
 $gf_pdf_config[] = array(
-	'form_id' => 1, 
-	'pdfx1a' => true,    
+	'form_id' => 1,
+	'pdfx1a' => true,   
 );
 ```
 
@@ -228,8 +228,8 @@ Use this option if you want to save the PDF to your server when an entry is subm
 
 ```
 $gf_pdf_config[] = array(
-    'form_id' => 1, 
-    'save' => true,  
+    'form_id' => 1,
+    'save' => true, 
 );
 ```
 
@@ -240,9 +240,9 @@ For when you need control over the image DPI - which is usually set to 300 when 
 
 ```
 $gf_pdf_config[] = array(
-	'form_id' => 1, 
-	'dpi' => 300,  
-);   
+	'form_id' => 1,
+	'dpi' => 300, 
+);  
 ```
 
 <strong id="advanced">ADVANCED USAGE</strong>

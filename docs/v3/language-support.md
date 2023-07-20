@@ -104,10 +104,10 @@ To install a custom font you should upload the .TTF font file to the <code>/font
 <h4>Usage</h4>
 After installation you can use the new font in your PDF templates by setting the <code>font-family</code> CSS property. Your font-family name will be the name of your TTF file without the .tff extension.
 
-```css 
-/* 
- * Apply custom font to your PDF 
- * Note: It's important to include a font-family type at the end of your font chain (in this example it is sans-serif) in case your font is missing characters. 
+```css
+/*
+ * Apply custom font to your PDF
+ * Note: It's important to include a font-family type at the end of your font chain (in this example it is sans-serif) in case your font is missing characters.
  * By default, the plugin will substitute missing characters from a fallback font.
  **/
 

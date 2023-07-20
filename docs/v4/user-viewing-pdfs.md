@@ -6,13 +6,13 @@ description: "Once you've successfully configured a PDF on one of your Gravity F
 
 Once you've successfully configured a PDF on one of your Gravity Forms you'll be able to view and download the PDFs from the [Gravity Forms entries page](https://www.gravityhelp.com/documentation/article/entries/) in your admin area. **If the list is empty you'll need to fill out and submit your form first**.
 
-### Entry List 
+### Entry List
 
 ![The Gravity Forms Entry List page with View PDF link](https://resources.gravitypdf.com/uploads/2015/11/entry-list.png)
 
 When viewing the entries list a "View PDF/View PDFs" or "Download PDF/Download PDFs" link will be added to each entry's quick toolbar – which gets displayed when you hover over the first cell of any entry. The View/Download text you'll see depends on your global [*Entry View*](user-global-settings.md#view) setting.
 
-### Entry Details 
+### Entry Details
 
 ![The Gravity Forms Entry Details page with PDF links](https://resources.gravitypdf.com/uploads/2015/11/entry-details.png)
 

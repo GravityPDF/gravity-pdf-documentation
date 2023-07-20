@@ -13,4 +13,4 @@ Peak Memory usage 64.00 MB
 Number of fonts 3
 ```
 
-This is useful information [when building a custom PDF template](developer-start-customising.md) but not something you'll want enabled during production. You can disable this by setting `WP_DEBUG` to `false` in your `wp-config.php` file. 
+This is useful information [when building a custom PDF template](developer-start-customising.md) but not something you'll want enabled during production. You can disable this by setting `WP_DEBUG` to `false` in your `wp-config.php` file.

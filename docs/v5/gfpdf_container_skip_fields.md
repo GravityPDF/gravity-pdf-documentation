@@ -6,22 +6,22 @@ description: ""
 
 
 
-## Description 
+## Description
 
-Field types that are included will be automatically placed on a new row in Core and Universal PDFs. If you'd like to enable/disable column support for a field, include it in this list. 
+Field types that are included will be automatically placed on a new row in Core and Universal PDFs. If you'd like to enable/disable column support for a field, include it in this list.
 
 By default `page`, `section`, and `html` fields are skipped.
 
-## Version 
+## Version
 
 This filter was introduced in Gravity PDF 4.4.
 
-## Parameters 
+## Parameters
 
 ### $skipped_fields | array
 *  A list of Gravity Forms field types to skip
 
-## Usage 
+## Usage
 
 Enable column support for HTML field types:
 
@@ -41,6 +41,6 @@ add_filter( 'gfpdf_container_skip_fields', function( $items ) {
 } );
 ```
 
-## Source Code 
+## Source Code
 
 This filter is located in the `Helper_Field_Container::__construct()` method of `/src/helper/Helper_Field_Container.php`.

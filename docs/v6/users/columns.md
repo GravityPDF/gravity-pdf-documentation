@@ -38,4 +38,4 @@ Prior to Gravity Forms 2.5 columns were handled using CSS Ready Classes. They ar
 
 ## Gravity Wiz / Gravity Perks Nested Forms Support
 
-Gravity PDF supports columns when rendering <a href="https://gravitywiz.com/documentation/gravity-forms-nested-forms/?ref=78" rel="sponsored">Nested Forms fields</a> in Core/Universal templates. Provided you've taken advantage of Drag and Drop Columns when building the Nested Form, this feature is enabled automatically in your PDF. 
+Gravity PDF supports columns when rendering <a href="https://gravitywiz.com/documentation/gravity-forms-nested-forms/?ref=78" rel="sponsored">Nested Forms fields</a> in Core/Universal templates. Provided you've taken advantage of Drag and Drop Columns when building the Nested Form, this feature is enabled automatically in your PDF.

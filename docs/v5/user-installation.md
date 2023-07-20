@@ -4,7 +4,7 @@ sidebar_label: "Installation"
 description: "Gravity PDF can be run on most shared web hosting. The easiest way to check if your web server meets the criteria is to install the plugin. Simple!"
 ---
 
-## Plugin Requirements 
+## Plugin Requirements
 
 Gravity PDF can be run on most shared web hosting providers and the easiest way to check if yours is compatible is to [install](#installation) the plugin. Gravity PDF has multiple checks in place when activating and will let you know if there are any issues than need addressing.
 
@@ -32,7 +32,7 @@ Gravity PDF is a third party extension for Gravity Forms, created by an independ
 
 ## Installation
 
-### Manual Installation 
+### Manual Installation
 
 You can manually install the plugin by downloading the plugin zip file from WordPress.org and then uploading through your WordPress admin area. The plugin zip file is 4.6MB and most web hosts maximum upload limit should be higher than this (you can check your maximum upload limit by navigating to `Media -> Add New` in your WordPress admin area and reviewing the ​*Maximum upload file size*​ limit).
 
@@ -46,7 +46,7 @@ You can manually install the plugin by downloading the plugin zip file from Word
 
 5.  Once installed, select the `Activate Plugin` link.
 
-### FTP Installation 
+### FTP Installation
 
 Upload the Gravity PDF plugin files to the WordPress plugins directory using your favourite FTP client.
 

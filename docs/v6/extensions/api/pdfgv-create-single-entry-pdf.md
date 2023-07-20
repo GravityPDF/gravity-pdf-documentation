@@ -45,11 +45,11 @@ The following snippet shows you how to save a Single Layout View PDF to disk:
 
 ```
 add_action( 'wp', function() {
-    if ( ! class_exists( '\PDFGV_API' ) ) {      
+    if ( ! class_exists( '\PDFGV_API' ) ) {     
         // handle the error
         return;
     }
-    
+   
    $view_id  = 120;
    $entry_id = 20;
 
@@ -57,11 +57,11 @@ add_action( 'wp', function() {
    if ( is_wp_error( $temporary_pdf_path ) ) {
        // handle the error
        return;
-   }    
-   
+   }   
+  
    // do something with the PDF
-   
-   // clean up    
+  
+   // clean up   
    unlink( $temporary_pdf_path );
 } );
 ```
@@ -70,16 +70,16 @@ You can pass the third parameter to stream the PDF to the current user:
 
 ```
 add_action( 'wp', function() {
-    if ( ! class_exists( '\PDFGV_API' ) ) {   
-        // handle the error   
+    if ( ! class_exists( '\PDFGV_API' ) ) {  
+        // handle the error  
         return;
     }
-    
+   
     if ( headers_sent() ) {
         // handle the error
         return;
     }
-    
+   
    $view_id  = 120;
    $entry_id = 20;
 
@@ -87,19 +87,19 @@ add_action( 'wp', function() {
    if ( is_wp_error( $maybe_error ) ) {
        // handle the error
        return;
-   }      
+   }     
 } );
 ```
 
-If you have GravityView's Multiple Forms extension enabled and configured on your View, you can generate a PDF that contains data from multiple _valid_ entries by passing a comma-separated string of entry IDs. 
+If you have GravityView's Multiple Forms extension enabled and configured on your View, you can generate a PDF that contains data from multiple _valid_ entries by passing a comma-separated string of entry IDs.
 
 ```
 add_action( 'wp', function() {
-    if ( ! class_exists( '\PDFGV_API' ) ) {      
+    if ( ! class_exists( '\PDFGV_API' ) ) {     
         // handle the error
         return;
     }
-    
+   
    $view_id  = 1025;
    $entry_id = '20,32,52';
 
@@ -107,11 +107,11 @@ add_action( 'wp', function() {
    if ( is_wp_error( $temporary_pdf_path ) ) {
        // handle the error
        return;
-   }    
-   
+   }   
+  
    // do something with the PDF
-   
-   // clean up    
+  
+   // clean up   
    unlink( $temporary_pdf_path );
 } );
 ```

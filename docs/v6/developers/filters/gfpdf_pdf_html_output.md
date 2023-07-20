@@ -4,21 +4,21 @@ sidebar_label: "gfpdf_pdf_html_output"
 description: "This filter allows you to manipulate the PDF template HTML before it's sent to mPDF for rendering. This is a quick and dirty way to modify the PDF HTML/CSS."
 ---
 
-## Description 
+## Description
 
-This filter allows you to manipulate the raw PDF template HTML before it's sent to mPDF for rendering. This is a quick and dirty way to modify the PDF HTML dynamically. If you are instead looking to modify a field's mark-up [there are better filters for the job](gfpdf_field_html_value.md). 
+This filter allows you to manipulate the raw PDF template HTML before it's sent to mPDF for rendering. This is a quick and dirty way to modify the PDF HTML dynamically. If you are instead looking to modify a field's mark-up [there are better filters for the job](gfpdf_field_html_value.md).
 
-If you do use this filter we recommend making your changes using a DOM parser. Gravity PDF includes the [QueryPath library](http://api.querypath.org/docs/index.html), which is specifically designed to make it simple to manipulate HTML. 
+If you do use this filter we recommend making your changes using a DOM parser. Gravity PDF includes the [QueryPath library](http://api.querypath.org/docs/index.html), which is specifically designed to make it simple to manipulate HTML.
 
-## Parameters 
+## Parameters
 
 ### $html | string
 *  The PDF template HTML in string format
 
-### $form | array 
+### $form | array
 *  The current Gravity Forms array
 
-### $entry | array 
+### $entry | array
 *  The raw Gravity Forms Entry array.
 
 ### $settings | array
@@ -27,9 +27,9 @@ If you do use this filter we recommend making your changes using a DOM parser. G
 ### $Helper_PDF | object
 *  The initialised `GFPDFHelperHelper_PDF` class
 
-## Usage 
+## Usage
 
-This snippet uses the `GFPDF\\Helper\\Helper_QueryPath` class to load, manipulate and return our HTML. In this sample we're making the colour of all our v4 template labels red. 
+This snippet uses the `GFPDF\\Helper\\Helper_QueryPath` class to load, manipulate and return our HTML. In this sample we're making the colour of all our v4 template labels red.
 
 ```
 add_filter( 'gfpdf_pdf_html_output', function( $html, $form, $entry, $settings, $Helper_PDF ) {
@@ -48,7 +48,7 @@ add_filter( 'gfpdf_pdf_html_output', function( $html, $form, $entry, $settings, 
 }, 10, 5 );
 ```
 
-You might also like to use this filter to insert new mark-up between certain fields. This snippet inserts a `<hr />` tag every three rows – but you could change that to a page break or any other HTML tag: 
+You might also like to use this filter to insert new mark-up between certain fields. This snippet inserts a `<hr />` tag every three rows – but you could change that to a page break or any other HTML tag:
 
 ```
 add_filter( 'gfpdf_pdf_html_output', function( $html, $form, $entry, $settings, $Helper_PDF ) {
@@ -65,7 +65,7 @@ add_filter( 'gfpdf_pdf_html_output', function( $html, $form, $entry, $settings, 
 }, 10, 5 );
 ```
 
-As you can see the Query Path library is very powerful and we *strongly recommend you use it for manipulating HTML*. 
+As you can see the Query Path library is very powerful and we *strongly recommend you use it for manipulating HTML*.
 
 If you need to, you also have the option to specifically target PDF templates assigned to individual Gravity Forms:
 
@@ -74,6 +74,6 @@ If you need to, you also have the option to specifically target PDF templates as
 add_filter( 'gfpdf_pdf_html_output_5', function( $html, $form, $entry, $settings, $Helper_PDF ) { }, 10, 5 )
 ```
 
-## Source Code 
+## Source Code
 
 This filter is located in the `Helper_PDF::render_html()` method of `/src/helper/Helper_PDF.php`.

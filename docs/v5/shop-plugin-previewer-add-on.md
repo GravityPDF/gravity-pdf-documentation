@@ -16,7 +16,7 @@ You can purchase the *Previewer* plugin from our [Extension Shop](https://gravit
 This documentation refers to version 2 of the Gravity PDF Previewer add-on. [The v3 documentation can be found here](../v6/extensions/previewer-add-on.md) and [the v1 documentation here](../v4/shop-plugin-previewer-add-on.md).
 :::
 
-## Installation 
+## Installation
 
 [Please follow our installation guide](shop-installing-upgrading-extensions.md), which provides instructions for uploading the add-on to your WordPress website and adding your license key for automatic updates.
 
@@ -24,7 +24,7 @@ This documentation refers to version 2 of the Gravity PDF Previewer add-on. [The
 The REST API (with public access) must be enabled to use this plugin.
 :::
 
-## Configuring 
+## Configuring
 
 [![Locating the PDF Previewer field in the Form Editor](https://resources.gravitypdf.com/uploads/2022/04/2.0-Previewer-Add-On-Form-Editor.png)](https://resources.gravitypdf.com/uploads/2022/04/2.0-Previewer-Add-On-Form-Editor.png)
 
@@ -192,7 +192,7 @@ The security in v2 has been enhanced and the right-click context menu has been d
 
 The color scheme has been tweaked, and the grey in v1 has been strengthened/sharpened to create a more pleasant viewing experience. If you would like to revert to the v1 color scheme you can add the following CSS in the Customizer's Additional CSS section:
 
-```css 
+```css
 :root {
   --dark-mode-viewer-bg-color: #7b7b7b;
   --dark-mode-toolbar-bg-color: #4a4a4a;
@@ -230,9 +230,9 @@ add_action( 'gfpdf_post_save_pdf', function( $pdf_path, $filename, $settings, $e
     if ( defined( 'DOING_PDF_PREVIEWER' ) && DOING_PDF_PREVIEWER ) {
         return;
     }
-    
+   
     /* Do other actions here */
-    
+   
 }, 10, 5 );
 ```
 
@@ -240,7 +240,7 @@ add_action( 'gfpdf_post_save_pdf', function( $pdf_path, $filename, $settings, $e
 
 The following CSS variables are defined by the plugin and are available to easily customize the color scheme of both light and dark-mode viewers.
 
-```css 
+```css
 :root {
   --viewer-bg-color: rgba(190, 190, 190, 1);
 

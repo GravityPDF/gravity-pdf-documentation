@@ -4,20 +4,20 @@ sidebar_label: "get_plugin_settings()"
 description: "When called this method returns the existing global PDF plugins settings. "
 ---
 
-## Description 
+## Description
 
 When called this method [returns the existing global PDF plugins settings](../../users/global-settings.md).
 
-## Version 
+## Version
 
 This method was introduced in Gravity PDF 4.0.
 
-## Return 
+## Return
 
 ### array
 * Returns an array of the global PDF plugin settings
 
-## Usage 
+## Usage
 
 This following snippet retrieves the global PDF settings and read the `default_pdf_size` option:
 
@@ -30,6 +30,6 @@ add_action( 'init', function() {
 } );
 ```
 
-## Source Code 
+## Source Code
 
 This method is located in `api.php`.

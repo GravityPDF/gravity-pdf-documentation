@@ -4,9 +4,9 @@ sidebar_label: "Installation"
 description: "Gravity PDF can be run on most shared web hosting. The easiest way to check if your web server meets the criteria is to install the plugin. Simple!"
 ---
 
-### Plugin Requirements 
+### Plugin Requirements
 
-Gravity PDF can be run on most shared web hosting, however there are some restrictions in place to prevent problems. The easiest way to check if your web server meets the criteria is to [install](#installation) the plugin. The software has multiple checks in place when activating and will let you know if there are any issues than need addressing. 
+Gravity PDF can be run on most shared web hosting, however there are some restrictions in place to prevent problems. The easiest way to check if your web server meets the criteria is to [install](#installation) the plugin. The software has multiple checks in place when activating and will let you know if there are any issues than need addressing.
 
 > Gravity PDF is a **third party extension**[^1] for Gravity Forms. The software cannot function without it. You'll need to <a href="https://rocketgenius.pxf.io/c/1211356/445235/7938" rel="sponsored">purchase a license</a> for Gravity Forms before you can use Gravity PDF - any license type will work. [See more details about Gravity PDF's compatibility with Gravity Forms](user-gravity-forms-compatibility.md).
 
@@ -23,9 +23,9 @@ Gravity PDF can be run on most shared web hosting, however there are some restri
 * [DOM](http://php.net/manual/en/intro.dom.php)
 * 64MB+ WP Memory (**128MB+ recommended**)
 
-### Installation 
+### Installation
 
-There are multiple ways to install Gravity PDF but the simplest option is to do so via your WordPress admin area. 
+There are multiple ways to install Gravity PDF but the simplest option is to do so via your WordPress admin area.
 
 **Jump to section**
 
@@ -35,34 +35,34 @@ There are multiple ways to install Gravity PDF but the simplest option is to do 
 
 ---
 
-#### Automatic Installation 
+#### Automatic Installation
 
 Search for the plugin directly from your WordPress admin area and install it with a single click.
 
 1. Login to your WordPress admin area and navigate to the `Plugins -> Add New` page.
 
-1. Use the search bar in the top right hand corner of the plugins page to search for `Gravity PDF`. 
+1. Use the search bar in the top right hand corner of the plugins page to search for `Gravity PDF`.
     ![Plugin Installation Screen](https://resources.gravitypdf.com/uploads/2015/10/automatic-install.png)
 
 1. Click the `Install Now` button on the Gravity PDF plugin to confirm the installation.
 
-1. Once the installation has completed select the `Activate Plugin` link. 
+1. Once the installation has completed select the `Activate Plugin` link.
     ![Activate Plugin](https://resources.gravitypdf.com/uploads/2015/10/activate-gravity-pdf.png)
 
 ---
 
-#### Manual Installation 
+#### Manual Installation
 
-You can manually install the plugin by downloading the plugin zip file from WordPress.org and then uploading through your WordPress admin area. However, due to the increase in fonts included in the package the total zip size tops 25MB, while the majority of hosts limit uploads to 8MB. If that’s the case for you the manual installation method won't be viable (try the [FTP](#ftp) method). 
+You can manually install the plugin by downloading the plugin zip file from WordPress.org and then uploading through your WordPress admin area. However, due to the increase in fonts included in the package the total zip size tops 25MB, while the majority of hosts limit uploads to 8MB. If that’s the case for you the manual installation method won't be viable (try the [FTP](#ftp) method).
 
 You can check your maximum upload limit by navigating to `Media -> Add New` in your WordPress admin area and reviewing the ​*Maximum upload file size*​ limit.
 
-1. [Go to the plugin's WordPress repository](https://wordpress.org/plugins/gravity-forms-pdf-extended/) and select the `Download Version 4.x.x` button. 
+1. [Go to the plugin's WordPress repository](https://wordpress.org/plugins/gravity-forms-pdf-extended/) and select the `Download Version 4.x.x` button.
     ![Download the zip file](https://resources.gravitypdf.com/uploads/2015/10/download-plugin.png)
 
 1. In your WordPress admin area, navigate to the `Plugins -> Add New` page then select the `Upload Plugin` button (located to the right of the `Add Plugins` title)
 
-1. Click the `Browse` button and select the zip file downloaded in step one. 
+1. Click the `Browse` button and select the zip file downloaded in step one.
     ![Manual Plugin Installation](https://resources.gravitypdf.com/uploads/2015/10/manual-plugin-installation.png)
 
 1. Click the `Install Now` button and wait. Depending on your internet speed, it could take some time to upload.
@@ -71,7 +71,7 @@ You can check your maximum upload limit by navigating to `Media -> Add New` in y
 
 ---
 
-#### FTP Installation 
+#### FTP Installation
 
 Upload the Gravity PDF plugin files to the WordPress plugins directory using your favourite FTP client.
 
@@ -81,7 +81,7 @@ Upload the Gravity PDF plugin files to the WordPress plugins directory using you
 
 1. Open your favourite FTP client (we recommend [Filezilla](https://filezilla-project.org/)) and enter your hostname, username and password. If you are unsure where to get these details you should contact your web hosting provider for assistance.
 
-1. Once logged in, navigate to your WordPress plugin directory (usually `/wp-content/plugins/`) and upload the `gravity-forms-pdf-extended` folder. If a directory called `gravity-forms-pdf-extended` already exists, delete it before uploading. 
+1. Once logged in, navigate to your WordPress plugin directory (usually `/wp-content/plugins/`) and upload the `gravity-forms-pdf-extended` folder. If a directory called `gravity-forms-pdf-extended` already exists, delete it before uploading.
     ![Upload plugin via FTP](https://resources.gravitypdf.com/uploads/2015/10/ftp-upload.png)
 
 1. Finally activate the plugin via your WordPress admin plugins page `Plugins -> Installed Plugins`

@@ -27,7 +27,7 @@ The following arguments are passed to functions that use this hook:
 
 Add a large header and footer margin to all PDFs:
 
-```php 
+```php
 add_action( 'gfpdf_gv_template_styles', function( $view, $view_entry ) {
 	?>
 	@page {
@@ -40,7 +40,7 @@ add_action( 'gfpdf_gv_template_styles', function( $view, $view_entry ) {
 
 Add CSS to a specific View's PDF only:
 
-```php 
+```php
 add_action( 'gfpdf_gv_template_styles_885', function( $view, $view_entry ) {
 	?>
 	@page {
@@ -53,7 +53,7 @@ add_action( 'gfpdf_gv_template_styles_885', function( $view, $view_entry ) {
 
 Add CSS to any PDFs generated for a Table Layout View:
 
-```php 
+```php
 add_action( 'gfpdf_gv_template_styles_table', function( $view, $view_entry ) {
 	?>
 	@page {

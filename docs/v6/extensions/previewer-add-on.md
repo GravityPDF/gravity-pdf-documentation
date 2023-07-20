@@ -13,10 +13,10 @@ import ResponsiveEmbed from 'react-responsive-embed'
 You can purchase the *Previewer* plugin from the [Extension Shop](https://gravitypdf.com/shop/previewer-add-on/). This guide will walk you through installing and configuring *Previewer* to its full potential.
 
 :::info
-This documentation refers to version 3 of the Gravity PDF Previewer add-on. [The v2 documentation can be found here](../../v5/shop-plugin-previewer-add-on.md) and [the v1 documentation here](../../v4/shop-plugin-previewer-add-on.md). 
+This documentation refers to version 3 of the Gravity PDF Previewer add-on. [The v2 documentation can be found here](../../v5/shop-plugin-previewer-add-on.md) and [the v1 documentation here](../../v4/shop-plugin-previewer-add-on.md).
 :::
 
-## Installation 
+## Installation
 
 [Please follow our installation guide](installing-upgrading-extensions.md), which provides instructions for uploading the add-on to your WordPress website and adding your license key for automatic updates.
 
@@ -24,7 +24,7 @@ This documentation refers to version 3 of the Gravity PDF Previewer add-on. [The
 The REST API (with public access) must be enabled to use this plugin.
 :::
 
-## Configuring 
+## Configuring
 
 [![Locating the PDF Previewer field in the Form Editor](https://resources.gravitypdf.com/uploads/2022/04/2.0-Previewer-Add-On-Form-Editor.png)](https://resources.gravitypdf.com/uploads/2022/04/2.0-Previewer-Add-On-Form-Editor.png)
 
@@ -47,7 +47,7 @@ Refer to the Gravity Forms documentation linked above for further information ab
 
 ### PDF to Preview
 
-Select the PDF that the end user will be able to preview. This dropdown setting allows you to choose any of the active PDFs [configured on the form](../users/setup-pdf.md). 
+Select the PDF that the end user will be able to preview. This dropdown setting allows you to choose any of the active PDFs [configured on the form](../users/setup-pdf.md).
 
 <ResponsiveEmbed src="https://player.vimeo.com/video/694720548?dnt=1" allow="fullscreen" allowfullscreen />
 
@@ -79,7 +79,7 @@ The default Zoom Level is set to _Page Width_
 
 ### Page Scrolling
 
-Display the pages of a PDF vertically or horizontally in the viewer. 
+Display the pages of a PDF vertically or horizontally in the viewer.
 
 _Page Scrolling_ defaults to _Vertical_
 
@@ -107,7 +107,7 @@ The default height is 600px.
 
 When enabled, _Watermark Text_ youu define is overlaid diagonally on each page of PDF displayed in the viewer. You can change the font of the text watermark using the _Watermark Font_ dropdown setting.
 
-The _Watermark_ setting is disabled by default. When it is enabled, the text watermark will override any watermark settings [configured by the Gravity PDF Watermark extension](watermark-add-on.md). When disabled, the Gravity PDF Watermark settings will be preserved. 
+The _Watermark_ setting is disabled by default. When it is enabled, the text watermark will override any watermark settings [configured by the Gravity PDF Watermark extension](watermark-add-on.md). When disabled, the Gravity PDF Watermark settings will be preserved.
 
 ### Disable Right-Click Protection
 
@@ -119,9 +119,9 @@ By default, users cannot right-click on PDF pages to access the context menu. Th
 
 By default, users cannot copy any text on PDF pages and links are not functional/clickable. Enable this setting to:
 
-1. Render the text in the [Document Object Model (DOM)](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction), making it selectable for users, and providing better accessibility for Screen Readers. 
-2. Enable internal and external links in the PDF, so they are functional/clickable. 
-3. Change the default cursor action from [grab-scroll feature](#grab-scroll) to text selection (grab-scroll can still be used when holding the spacebar key).  
+1. Render the text in the [Document Object Model (DOM)](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction), making it selectable for users, and providing better accessibility for Screen Readers.
+2. Enable internal and external links in the PDF, so they are functional/clickable.
+3. Change the default cursor action from [grab-scroll feature](#grab-scroll) to text selection (grab-scroll can still be used when holding the spacebar key). 
 
 <ResponsiveEmbed src="https://player.vimeo.com/video/694720034?dnt=1" allow="fullscreen" allowfullscreen />
 
@@ -129,7 +129,7 @@ By default, users cannot copy any text on PDF pages and links are not functional
 
 The PDF viewer is designed to be simple and intuitive for end users to view the generated PDF documents. It works across all modern devices and includes touch support (eg. pinch zoom). There are minimal controls in the toolbar to help people interact with the PDF. These include:
 
-1. **Page Navigation** - Use the up and down arrow icons to navigate through each page of the PDF, or enter a specific page number 
+1. **Page Navigation** - Use the up and down arrow icons to navigate through each page of the PDF, or enter a specific page number
 2. **Zoom Level** - Use the plus and minus icons to step-zoom the PDF in or out. The dropdown has a range of zoom levels to select from to make the reading experience comfortable for any user
 3. **Download** - [If enabled](#download-preview), a download icon will appear that allows a user to save a copy of the document to their computer
 4. **Refresh** - an automatic refresh mechanism is used to update the PDF viewer as the form is filled out by the user, but there can be times when this isn't effective and the refresh icon will allow a manual refresh.
@@ -163,13 +163,13 @@ If the PDF selected in _[PDF to Preview](#pdf-to-preview)_ has [RTL enabled](../
 1. [Spread](#spread) is enabled: pages displayed side-by-side will be reversed (page 3 on the left and page 2 on the right).
 2. [Page Scrolling](#page-scrolling) is set to _Horizontal_: the order of pages will be reversed and the scroll bar will default to the far right.
 
-If the _WordPress Site Language_ setting (found on the Settings -> General admin page) is set to a RTL language the viewer zoom dropdown will be reversed, with the text on the right and the chevron on the left. 
+If the _WordPress Site Language_ setting (found on the Settings -> General admin page) is set to a RTL language the viewer zoom dropdown will be reversed, with the text on the right and the chevron on the left.
 
 <ResponsiveEmbed src="https://player.vimeo.com/video/694720630?dnt=1" allow="fullscreen" allowfullscreen />
 
 ## Gravity Flow
 
-The *Previewer* is fully-functional <a href="https://gravityflow.io/?ref=12" rel="sponsored">with the Gravity Flow User Input step</a>, including when using conditional logic on the Previewer or manually selecting which fields to display. 
+The *Previewer* is fully-functional <a href="https://gravityflow.io/?ref=12" rel="sponsored">with the Gravity Flow User Input step</a>, including when using conditional logic on the Previewer or manually selecting which fields to display.
 
 **It's not currently possible to display the _PDF Preview_ field during the Approval Step.**
 
@@ -190,13 +190,13 @@ If you'd like to translate the plugin into your own language, or change the exis
 
 ^ We are testing the accuracy of AI / machine learning for these translations.
 
-## File Upload Limitations 
+## File Upload Limitations
 
 If using the standard File Upload field **without** having the Multi-File Upload option enabled, the Previewer won't be able to recognise the file if included on the same page in the form. To workaround this limitation you can either enable the Multi-File Upload feature (set Max Files to 1) or place the Previewer on a different page in the form ([using Gravity Forms Page field](https://docs.gravityforms.com/page-break/)).
 
 ## Upgrade from v2
 
-Users who use the out-of-the-box features of _Previewer_ should have a seamless upgrade experience to v3. There are only two changes in v3 that might cause an issue for some users. 
+Users who use the out-of-the-box features of _Previewer_ should have a seamless upgrade experience to v3. There are only two changes in v3 that might cause an issue for some users.
 
 These changes include:
 
@@ -204,11 +204,11 @@ These changes include:
 
 2. [CSS variables were introduced in v2](../../v5/shop-plugin-previewer-add-on.md#css-variables) which allowed developers to more easily change the Previewer UI. Unfortunately we didn't prefix these variables, and they could cause conflicts with other plugins that used variables with the same name. In v3 we've renamed all CSS variables defined by the plugin, prefixed each with `gpdf-`, and added more variables for greater control of the design. If you've made changes to the default CSS variable value you will need to update your codebase to be v3-compatible. [See the full list of CSS variables defined in v3](#css-variables).
 
-## Developers 
+## Developers
 
-### Conditionally Show Content 
+### Conditionally Show Content
 
-To conditionally display content in the PDF when used in the context of the PDF viewer you can use the `DOING_PDF_PREVIEWER` constant in your [custom PDF template](../developers/first-custom-pdf.md). 
+To conditionally display content in the PDF when used in the context of the PDF viewer you can use the `DOING_PDF_PREVIEWER` constant in your [custom PDF template](../developers/first-custom-pdf.md).
 
 For example:
 
@@ -239,9 +239,9 @@ add_action( 'gfpdf_post_save_pdf', function( $pdf_path, $filename, $settings, $e
     if ( defined( 'DOING_PDF_PREVIEWER' ) && DOING_PDF_PREVIEWER ) {
         return;
     }
-    
+   
     /* Do other actions here */
-    
+   
 }, 10, 5 );
 ```
 
@@ -251,11 +251,11 @@ These hooks can be used to change the how the Previewer field functions in the f
 
 ##### gfpdf_previewer_field_settings
 
-This filter will allow you to change the [Previewer field's settings](#configuring) dynamically. 
+This filter will allow you to change the [Previewer field's settings](#configuring) dynamically.
 
 **Arguments**
 
-* `settings` (object): a Javascript key/value object containing the current field settings 
+* `settings` (object): a Javascript key/value object containing the current field settings
 * `formId` (int): the current form ID the Previewer field is included
 * `fieldId` (string): the ID of the current Previewer field
 
@@ -277,7 +277,7 @@ The structure of the `settings` object is:
 
 **Examples**
 
-This example will override the Previewer height and set it to 200px for any instance: 
+This example will override the Previewer height and set it to 200px for any instance:
 
 ```js
 gform.addFilter('gfpdf_previewer_field_settings', function(settings, formId, fieldId) {
@@ -462,9 +462,9 @@ gform.addFilter('gfpdf_previewer_current_form_data', function(data, form) {
 
 ### CSS Variables
 
-The following CSS variables are defined by the plugin and are available to easily customize the color scheme of both light and dark-mode viewers. 
+The following CSS variables are defined by the plugin and are available to easily customize the color scheme of both light and dark-mode viewers.
 
-```css 
+```css
 :root {
   --gpdf-prev-dir-factor: 1;
   --gpdf-prev-scale-select-container-width: 140px;
@@ -536,7 +536,7 @@ The following CSS variables are defined by the plugin and are available to easil
   --gpdf-prev-hover-outline: dashed 2px blue;
   --gpdf-prev-freetext-line-height: 1.35;
   --gpdf-prev-freetext-padding: 2px;
-  
+ 
   --gpdf-prev-viewer-container-height: 0;
   --gpdf-prev-pdf-viewer-padding-bottom: 0;
   --gpdf-prev-page-margin: 1px auto -8px;
@@ -617,7 +617,7 @@ The following CSS variables are defined by the plugin and are available to easil
 }
 ```
 
-### PDF Security in Previewer 
+### PDF Security in Previewer
 
 By default, when you've [allowed your user to download the PDF via the Previewer](previewer-add-on.md#download-preview) the PDF Security settings are disabled. To use the security [you've set in the PDF settings](../users/setup-pdf.md#enable-pdf-security), include the following snippet in your active theme's functions.php file:
 

@@ -6,15 +6,15 @@ description: "This filter can be used to change the inner HTML mark-up that's wr
 
 
 
-## Description 
+## Description
 
-This filter can be used to change the inner HTML mark-up that's wrapped around Section Break fields. This mark-up is then sent to the PDF renderer. 
+This filter can be used to change the inner HTML mark-up that's wrapped around Section Break fields. This mark-up is then sent to the PDF renderer.
 
-## Version 
+## Version
 
 This filter was introduced in Gravity PDF 4.1.
 
-## Parameters 
+## Parameters
 
 ### $html | string
 *  The formatted HTML for the section field
@@ -40,7 +40,7 @@ This filter was introduced in Gravity PDF 4.1.
 ### $class | object
 *  The Gravity PDF Section Break field wrapper class
 
-## Usage 
+## Usage
 
 This snippet simplifies the mark-up for the Section Break:
 
@@ -76,6 +76,6 @@ add_action( 'gfpdf_field_section_break_html', function( $html, $title, $descript
 }, 10, 8 );
 ```
 
-## Source Code 
+## Source Code
 
 This filter is located in the `Field_Section::html()` method of `/src/helper/fields/Field_Section.php`.

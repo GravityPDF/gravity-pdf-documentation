@@ -12,6 +12,6 @@ Another benefit of our API [is it's fully unit tested](http://www.sitepoint.com/
 
 Our API provides access to our common helper classes, a CRUD for both our global PDF settings and individual PDF settings, the ability to generate PDFs on demand and the output of common complex fields like the product and likert tables.
 
-This section of the documentation goes into detail about the usage of each API method which can be found in the `api.php` file in the root Gravity PDF plugin directory (`/wp-content/plugins/gravity-forms-pdf-extended`). 
+This section of the documentation goes into detail about the usage of each API method which can be found in the `api.php` file in the root Gravity PDF plugin directory (`/wp-content/plugins/gravity-forms-pdf-extended`).
 
 Happy coding!

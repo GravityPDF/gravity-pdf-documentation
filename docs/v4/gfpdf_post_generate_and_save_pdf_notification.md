@@ -12,15 +12,15 @@ description: ""
 * [Usage](#usage)
 * [Source Code](#source-code)
 
-### Description 
+### Description
 
 This action can be used to a task or clean-up settings changes after the PDF is generated and saved for notifications. [Usually used in conjunction with `gfpdf_pre_generate_and_save_pdf_notification`](gfpdf_pre_generate_and_save_pdf_notification.md)
 
-### Version 
+### Version
 
 This action was introduced in Gravity PDF 4.5.
 
-### Parameters 
+### Parameters
 
 $form | array
 :    The Gravity Forms form array
@@ -34,7 +34,7 @@ $settings | array
 #notification | array
 :    The current notification being sent
 
-### Usage 
+### Usage
 
 ```
 add_action( 'gfpdf_post_generate_and_save_pdf_notification', function( $form, $entry, $settings, $notifications ) {
@@ -46,6 +46,6 @@ add_action( 'gfpdf_pre_generate_and_save_pdf_notification', function( $form, $en
 }, 10, 4 );
 ```
 
-### Source Code 
+### Source Code
 
 This action is located in the `notifications()` method of `/src/model/Model_PDF.php`.
