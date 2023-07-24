@@ -793,10 +793,12 @@ module.exports = {
           'type': 'category',
           'label': 'Invoice Templates',
           'items': [
-            'v6/templates/invoice-classic',
-            'v6/templates/invoice-modern',
             'v6/templates/invoice-aurora',
-            'v6/templates/invoice-iconic'
+            'v6/templates/invoice-classic',
+            'v6/templates/invoice-iconic',
+            'v6/templates/invoice-modern',
+            'v6/templates/invoice-nova',
+            'v6/templates/invoice-vertex'
           ]
         },
         {

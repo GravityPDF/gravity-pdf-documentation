@@ -1,20 +1,16 @@
 ---
-title: "Invoice Modern Premium Template: How to Install and Configure"
-sidebar_label: "Modern"
-description: "Invoice Modern is a clean PDF invoice template for Gravity PDF and Gravity Forms."
+title: "Invoice Nova Premium Template: How to Install and Configure"
+sidebar_label: "Nova"
+description: "Invoice Nova is a elegant PDF invoice template for Gravity PDF and Gravity Forms."
 ---
 
-![The Invoice Modern Gravity PDF Template Design, A4 Paper, Unpaid Watermark](https://resources.gravitypdf.com/uploads/2023/07/0-Invoice-Classic-Featured-Image-v1.jpg)
+![The Invoice Nova Gravity PDF Template Design, A4 Paper, Unpaid Watermark](https://resources.gravitypdf.com/uploads/2023/07/0-Invoice-Classic-Featured-Image-v1.jpg)
 
-_Invoice Modern_ is a clean invoice template that [can be purchased from the Gravity PDF Template Shop](https://gravitypdf.com/shop/invoice-modern/). This guide walks you through the process of installing and configuring _Modern_ to its full potential.
+_Invoice Nova_ is an elegant invoice template that [can be purchased from the Gravity PDF Template Shop](https://gravitypdf.com/shop/invoice-nova/). This guide walks you through the process of installing and configuring _Nova_ to its full potential.
 
 ## Installation
 
 [Please follow our installation guide](installing-upgrading-premium-templates.md), which provides initial instructions for setting up and configuring your premium template.
-
-:::note
-This documentation is for _Modern_ version 2.x, which adds [multi-rate tax-inclusive pricing](#enable-tax-inclusive-pricing), grouped or itemized discounts, free trial, localized dates, and [Gravity Wiz eCommerce Fields support](#gravity-forms-ecommerce-fields). Looking for the 1.x documentation? [You can find the _Modern_ v1 docs here](../../v5/shop-pdf-template-invoice-modern.md).
-:::
 
 ## Limitations
 
@@ -28,7 +24,7 @@ The 2.x invoice templates require Gravity PDF version 6.0 or higher to correctly
 
 All PDF templates have common settings – such as font, security, and notification attachments – and we recommend you [review the PDF setup guide](../users/setup-pdf.md) to familiarize yourself. Common settings are found in the [_General_](../users/setup-pdf.md#general-section), [_Appearance_](../users/setup-pdf.md#appearance-section), and [_Advanced_](../users/setup-pdf.md#advanced-section) panels. All invoice-specific settings can be found in the _Template_ panel.
 
-Below you'll find detailed information about each Template setting available to _Modern_. The invoice PDF configuration is split up into six sections:
+Below you'll find detailed information about each Template setting available to _Nova_. The invoice PDF configuration is split up into six sections:
 
 -   [Company Information](#company-information)
 -   [Invoice Settings](#invoice-settings)
@@ -37,15 +33,19 @@ Below you'll find detailed information about each Template setting available to 
 -   [Extras](#extras)
 -   [Labels](#labels)
 
-_Modern_ also has an additional template-specific setting:
+_Nova_ also has these additional template-specific settings:
 
-#### Highlight Color
-* The background color for the invoice total and headings in the product table.
-* The default value is `#336ed0`
+#### Primary Color
+* The border color used in the Summary Section, Product Table column titles, and [Overall Total](#overall-total-label-14).
+* The default value is `#1228b7`
+
+#### Secondary Color
+* The background color used in the Summary Section, Product Table column titles, and [Overall Total](#overall-total-label-14).
+* The default value is `#F3F4FA`
 
 ### Company Information
 
-![A close-up screenshot of the header section of Modern, with numbers one through seven positioned on the invoice area, and controlled by the numbered settings documented in the Company Information section.](https://resources.gravitypdf.com/uploads/2023/07/1-Company-Information-Classic.png)
+![A close-up screenshot of the header section of Nova, with numbers one through seven positioned on the invoice area, and controlled by the numbered settings documented in the Company Information section.](https://resources.gravitypdf.com/uploads/2023/07/1-Company-Information-Classic.png)
 
 #### Logo (1)
 * This image is included at the top of the generated PDF invoice.
@@ -84,7 +84,7 @@ _Modern_ also has an additional template-specific setting:
 
 ### Invoice Settings
 
-![A close-up screenshot of the header section of Modern, with numbers one through five positioned on the invoice area, and controlled by the numbered settings documented in the Invoice Settings section.](https://resources.gravitypdf.com/uploads/2023/07/2-Invoice-Settings-Classic.png)
+![A close-up screenshot of the header section of Nova, with numbers one through five positioned on the invoice area, and controlled by the numbered settings documented in the Invoice Settings section.](https://resources.gravitypdf.com/uploads/2023/07/2-Invoice-Settings-Classic.png)
 
 #### Invoice Number Prefix (1)
 * This is an optional field that appears before the [Invoice Number](#invoice-number-2) in the PDF.
@@ -129,7 +129,7 @@ _Modern_ also has an additional template-specific setting:
 
 ### Buyer Information
 
-![A close-up screenshot of the mid section of Modern, with numbers one through five positioned on the invoice area, and controlled by the numbered settings documented in the Buyer Information section.](https://resources.gravitypdf.com/uploads/2023/07/3-Buyer-Information-Classic.png)
+![A close-up screenshot of the mid section of Nova, with numbers one through five positioned on the invoice area, and controlled by the numbered settings documented in the Buyer Information section.](https://resources.gravitypdf.com/uploads/2023/07/3-Buyer-Information-Classic.png)
 
 #### Buyer Name (1)
 * Provide the name of the individual or company making the purchase.
@@ -158,7 +158,7 @@ Gravity Forms doesn't natively support taxes [for Pricing fields](https://docs.g
 
 All Gravity PDF Invoices natively support tax-inclusive pricing, and you are able to set individual tax rates for each product (or disable taxes for a product entirely). If you require tax-exclusive pricing, [the Gravity Perks eCommerce Fields perk includes a Tax field, and is fully supported by Gravity PDF Invoices](#gravity-forms-ecommerce-fields).
 
-![A screenshot of Modern, with numbers one through seven positioned on the invoice area, and controlled by the numbered settings documented in the Tax Settings section.](https://resources.gravitypdf.com/uploads/2023/07/4-Tax-Settings-Classic.png)
+![A screenshot of Nova, with numbers one through seven positioned on the invoice area, and controlled by the numbered settings documented in the Tax Settings section.](https://resources.gravitypdf.com/uploads/2023/07/4-Tax-Settings-Classic.png)
 
 #### Enable Tax Inclusive Pricing
 * Automatically calculate the taxes that apply to your products using the Default Tax Rate, and any modifiers.
@@ -209,13 +209,13 @@ All Gravity PDF Invoices natively support tax-inclusive pricing, and you are abl
 
 ### Extras
 
-![A screenshot focused on the bottom half of Modern, with numbers one through four positioned on the invoice area, and controlled by the numbered settings documented in the Extras section.](https://resources.gravitypdf.com/uploads/2023/07/7-Extras-Classic-v1.png)
+![A screenshot focused on the bottom half of Nova, with numbers one through four positioned on the invoice area, and controlled by the numbered settings documented in the Extras section.](https://resources.gravitypdf.com/uploads/2023/07/7-Extras-Classic-v1.png)
 
 #### Discounts (1)
 * By default, any discounts included via Gravity Forms Coupon field, or Gravity Wiz's Discount field, will be totaled and shown alongside the [Discount Label](#discount-label-13) (see image above for an example).
 * If you enable the Itemized Discounts / Coupons setting, any discounts that apply will be shown individually, and not grouped together (see image below for an example).
 
-![A screenshot focused on the bottom half of Modern, and showing individual discount amounts, which can be configured with the Itemized Discounts / Coupons setting.](https://resources.gravitypdf.com/uploads/2023/07/6-Discounts-Classic.png)
+![A screenshot focused on the bottom half of Nova, and showing individual discount amounts, which can be configured with the Itemized Discounts / Coupons setting.](https://resources.gravitypdf.com/uploads/2023/07/6-Discounts-Classic.png)
 
 #### Watermark (2)
 * You can include a text watermark in the invoice, which will display diagonally across the PDF from the bottom-left to the top-right corner.
@@ -232,7 +232,7 @@ All Gravity PDF Invoices natively support tax-inclusive pricing, and you are abl
 
 ### Labels
 
-![A screenshot of Modern, with numbers one through fourteen positioned on the invoice area, and controlled by the numbered settings documented in the Labels section.](https://resources.gravitypdf.com/uploads/2023/07/8-Labels-Classic.png)
+![A screenshot of Nova, with numbers one through fourteen positioned on the invoice area, and controlled by the numbered settings documented in the Labels section.](https://resources.gravitypdf.com/uploads/2023/07/8-Labels-Classic.png)
 
 All text in the PDF can be easily changed. By default, the labels are displayed in English, but you can easily translate them. Many elements in the PDF can be disabled by saving a blank label.
 
@@ -295,7 +295,7 @@ All text in the PDF can be easily changed. By default, the labels are displayed 
 
 ## Recommended Font
 
-_Modern_ comes bundled with _Roboto_ which is an open source licensed font (Apache License, Version 2.0). For the best results, we recommend using _Roboto_ at 10pt. Set the PDF font [in the Appearance section](../users/setup-pdf.md#appearance-section).
+_Nova_ comes bundled with _Roboto_ which is an open source licensed font (Apache License, Version 2.0). For the best results, we recommend using _Roboto_ at 10pt. Set the PDF font [in the Appearance section](../users/setup-pdf.md#appearance-section).
 
 ## Viewing PDF
 
@@ -350,26 +350,7 @@ Gravity Forms natively supports user-defined pricing for Product fields. But wha
 
 ## Upgrading from v1.x
 
-For existing customers who'd like to take advantage of the new features included in v2, you'll first need to manually upgrade your Invoice PDF template(s). If you don't require any of the new features, you may continue with the v1 template; we will provide support for both v1 and v2 for the foreseeable future.
-
-Before you complete the upgrade, take note of the changes that have been made to all v2 invoices:
-
-1. Gravity PDF v6 or higher is required.
-2. The Basic Tax feature has been renamed [Tax Inclusive Pricing](#enable-tax-inclusive-pricing).
-3. To support the new multi-tax rate feature, the Tax Name and Tax Rate settings have been renamed [Default Tax Name](#default-tax-name-1) and [Default Tax Rate](#default-tax-rate-2), respectively.
-4. [You can override the Default Tax Rate on a per-product field basis](#enable-tax-inclusive-pricing) using the Custom CSS Class `tax-{rate}-{label}` or `tax-0`.
-5. To support the new multi-tax rate feature, the Tax Rate Label setting has been removed and will no longer appear in the Invoice Summary. Instead, the rate will be shown alongside the tax label in the Invoice Table.
-6. A new [Tax Summary Label](#tax-summary-label-3) setting has been added, and will be used in this section of the invoice alongside the total tax value.
-7. A new [Unit Tax Column Label](#unit-tax-column-label-4) setting has been added, which is used in the tax column of the Invoice Table. The Unit Tax Column Label defaults to the text "Unit Tax".
-8. A new setting [Itemize Discounts / Coupons](#discounts-1) has been added. By default, the invoice will group any discounts into a single total. When the setting is enabled, all discounts will be shown in the invoice individually.
-9. A new [Discount Label](#discount-label-13) setting has been added. It is used if your form includes a Coupon or Discount field, and you haven't enabled the [Itemize Discounts / Coupons](#discounts-1) setting. It defaults to the text "Discount".
-10. Support for tax-exclusive pricing via [Gravity Wiz's eCommerce Field perk](#gravity-forms-ecommerce-fields) has been added. When a Tax field is added to the form, the [Tax Inclusive Pricing feature](#enable-tax-inclusive-pricing) is disabled.
-11. Support for Free Trial Gravity Forms subscriptions has been added to the invoice.
-12. The [Date Format](#date-format-4) setting includes 20 new choices, and the date will be automatically localized using your WordPress Site Language setting. The default date will automatically match your WordPress Date Format setting.
-
-Before upgrading, **we strongly recommend taking a full backup of your website**. [After you complete the upgrade](installing-upgrading-premium-templates.md#upgrading-premium-template), you should review the PDF Invoices being generated by each of your forms, and ensure the output is acceptable. For customers who have translated the invoices, you may need to edit the invoice PDF settings and translate the new labels that have been added.
-
-If there is an issue with your v2 invoices after upgrading, restore the site from the backup you took. You can also attempt to downgrade back to the v1 invoice template, [which can be downloaded from your GravityPDF.com account](https://gravitypdf.com/account/downloads/).
+_Nova_ is a new PDF Invoice introduced for the v2 release, and there was never a v1 edition of the template.
 
 ## Developers
 

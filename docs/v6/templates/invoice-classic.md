@@ -6,14 +6,14 @@ description: "Invoice Classic is a feature-rich PDF invoice template for Gravity
 
 ![The Invoice Classic Gravity PDF Template Design, A4 Paper, Unpaid Watermark](https://resources.gravitypdf.com/uploads/2023/07/0-Invoice-Classic-Featured-Image-v1.jpg)
 
-_Invoice Classic_ is a feature-rich invoice template that [can be purchased from the Gravity PDF Template Shop](https://gravitypdf.com/shop/invoice-classic/). This guide walks you through the process of installing and configuring _Invoice Classic_ to its full potential.
+_Invoice Classic_ is a feature-rich invoice template that [can be purchased from the Gravity PDF Template Shop](https://gravitypdf.com/shop/invoice-classic/). This guide walks you through the process of installing and configuring _Classic_ to its full potential.
 
 ## Installation
 
 [Please follow our installation guide](installing-upgrading-premium-templates.md), which provides initial instructions for setting up and configuring your premium template.
 
 :::note
-This documentation is for _Invoice Classic_ version 2.x, which adds [multi-rate tax-inclusive pricing](#enable-tax-inclusive-pricing), grouped or itemized discounts, free trial, localized dates, and [Gravity Wiz eCommerce Fields support](#gravity-forms-ecommerce-fields). Looking for the 1.x documentation? [You can find the Invoice Classic v1 docs here](../../v5/shop-pdf-template-invoice-classic.md).
+This documentation is for _Classic_ version 2.x, which adds [multi-rate tax-inclusive pricing](#enable-tax-inclusive-pricing), grouped or itemized discounts, free trial, localized dates, and [Gravity Wiz eCommerce Fields support](#gravity-forms-ecommerce-fields). Looking for the 1.x documentation? [You can find the _Classic_ v1 docs here](../../v5/shop-pdf-template-invoice-classic.md).
 :::
 
 ## Limitations
@@ -28,7 +28,7 @@ The 2.x invoice templates require Gravity PDF version 6.0 or higher to correctly
 
 All PDF templates have common settings – such as font, security, and notification attachments – and we recommend you [review the PDF setup guide](../users/setup-pdf.md) to familiarize yourself. Common settings are found in the [_General_](../users/setup-pdf.md#general-section), [_Appearance_](../users/setup-pdf.md#appearance-section), and [_Advanced_](../users/setup-pdf.md#advanced-section) panels. All invoice-specific settings can be found in the _Template_ panel. 
 
-Below you'll find detailed information about each Template setting available to _Invoice Classic_. The invoice PDF configuration is split up into six sections:
+Below you'll find detailed information about each Template setting available to _Classic_. The invoice PDF configuration is split up into six sections:
 
 -   [Company Information](#company-information)
 -   [Invoice Settings](#invoice-settings)
@@ -39,7 +39,7 @@ Below you'll find detailed information about each Template setting available to 
 
 ### Company Information
 
-![A close-up screenshot of the header section of Invoice Classic, with numbers one through seven positioned on the invoice area, and controlled by the numbered settings documented in the Company Information section.](https://resources.gravitypdf.com/uploads/2023/07/1-Company-Information-Classic.png)
+![A close-up screenshot of the header section of Classic, with numbers one through seven positioned on the invoice area, and controlled by the numbered settings documented in the Company Information section.](https://resources.gravitypdf.com/uploads/2023/07/1-Company-Information-Classic.png)
 
 #### Logo (1)
 * This image is included at the top of the generated PDF invoice.
@@ -78,7 +78,7 @@ Below you'll find detailed information about each Template setting available to 
 
 ### Invoice Settings
 
-![A close-up screenshot of the header section of Invoice Classic, with numbers one through five positioned on the invoice area, and controlled by the numbered settings documented in the Invoice Settings section.](https://resources.gravitypdf.com/uploads/2023/07/2-Invoice-Settings-Classic.png)
+![A close-up screenshot of the header section of Classic, with numbers one through five positioned on the invoice area, and controlled by the numbered settings documented in the Invoice Settings section.](https://resources.gravitypdf.com/uploads/2023/07/2-Invoice-Settings-Classic.png)
 
 #### Invoice Number Prefix (1)
 * This is an optional field that appears before the [Invoice Number](#invoice-number-2) in the PDF.
@@ -123,7 +123,7 @@ Below you'll find detailed information about each Template setting available to 
 
 ### Buyer Information
 
-![A close-up screenshot of the mid section of Invoice Classic, with numbers one through five positioned on the invoice area, and controlled by the numbered settings documented in the Buyer Information section.](https://resources.gravitypdf.com/uploads/2023/07/3-Buyer-Information-Classic.png)
+![A close-up screenshot of the mid section of Classic, with numbers one through five positioned on the invoice area, and controlled by the numbered settings documented in the Buyer Information section.](https://resources.gravitypdf.com/uploads/2023/07/3-Buyer-Information-Classic.png)
 
 #### Buyer Name (1)
 * Provide the name of the individual or company making the purchase.
@@ -152,7 +152,7 @@ Gravity Forms doesn't natively support taxes [for Pricing fields](https://docs.g
 
 All Gravity PDF Invoices natively support tax-inclusive pricing, and you are able to set individual tax rates for each product (or disable taxes for a product entirely). If you require tax-exclusive pricing, [the Gravity Perks eCommerce Fields perk includes a Tax field, and is fully supported by Gravity PDF Invoices](#gravity-forms-ecommerce-fields).
 
-![A screenshot of Invoice Classic, with numbers one through seven positioned on the invoice area, and controlled by the numbered settings documented in the Tax Settings section.](https://resources.gravitypdf.com/uploads/2023/07/4-Tax-Settings-Classic.png)
+![A screenshot of Classic, with numbers one through seven positioned on the invoice area, and controlled by the numbered settings documented in the Tax Settings section.](https://resources.gravitypdf.com/uploads/2023/07/4-Tax-Settings-Classic.png)
 
 #### Enable Tax Inclusive Pricing
 * Automatically calculate the taxes that apply to your products using the Default Tax Rate, and any modifiers.
@@ -203,13 +203,13 @@ All Gravity PDF Invoices natively support tax-inclusive pricing, and you are abl
 
 ### Extras
 
-![A screenshot focused on the bottom half of Invoice Classic, with numbers one through four positioned on the invoice area, and controlled by the numbered settings documented in the Extras section.](https://resources.gravitypdf.com/uploads/2023/07/7-Extras-Classic-v1.png)
+![A screenshot focused on the bottom half of Classic, with numbers one through four positioned on the invoice area, and controlled by the numbered settings documented in the Extras section.](https://resources.gravitypdf.com/uploads/2023/07/7-Extras-Classic-v1.png)
 
 #### Discounts (1)
 * By default, any discounts included via Gravity Forms Coupon field, or Gravity Wiz's Discount field, will be totaled and shown alongside the [Discount Label](#discount-label-13) (see image above for an example).
 * If you enable the Itemized Discounts / Coupons setting, any discounts that apply will be shown individually, and not grouped together (see image below for an example).
 
-![A screenshot focused on the bottom half of Invoice Classic, and showing individual discount amounts, which can be configured with the Itemized Discounts / Coupons setting.](https://resources.gravitypdf.com/uploads/2023/07/6-Discounts-Classic.png)
+![A screenshot focused on the bottom half of Classic, and showing individual discount amounts, which can be configured with the Itemized Discounts / Coupons setting.](https://resources.gravitypdf.com/uploads/2023/07/6-Discounts-Classic.png)
 
 #### Watermark (2)
 * You can include a text watermark in the invoice, which will display diagonally across the PDF from the bottom-left to the top-right corner.
@@ -226,7 +226,7 @@ All Gravity PDF Invoices natively support tax-inclusive pricing, and you are abl
 
 ### Labels
 
-![A screenshot of Invoice Classic, with numbers one through fourteen positioned on the invoice area, and controlled by the numbered settings documented in the Labels section.](https://resources.gravitypdf.com/uploads/2023/07/8-Labels-Classic.png)
+![A screenshot of Classic, with numbers one through fourteen positioned on the invoice area, and controlled by the numbered settings documented in the Labels section.](https://resources.gravitypdf.com/uploads/2023/07/8-Labels-Classic.png)
 
 All text in the PDF can be easily changed. By default, the labels are displayed in English, but you can easily translate them. Many elements in the PDF can be disabled by saving a blank label.
 
@@ -289,7 +289,7 @@ All text in the PDF can be easily changed. By default, the labels are displayed 
 
 ## Recommended Font
 
-_Invoice Classic_ comes bundled with _PT Serif_ which is an open source licensed font (SIL Open Font License, Version 1.1). _PT Serif_ is a transitional typeface with humanistic accents. For the best results, we recommend using _PT Serif_ at 10pt. Set the PDF font [in the Appearance section](../users/setup-pdf.md#appearance-section).
+_Classic_ comes bundled with _PT Serif_ which is an open source licensed font (SIL Open Font License, Version 1.1). _PT Serif_ is a transitional typeface with humanistic accents. For the best results, we recommend using _PT Serif_ at 10pt. Set the PDF font [in the Appearance section](../users/setup-pdf.md#appearance-section).
 
 ## Viewing PDF
 
