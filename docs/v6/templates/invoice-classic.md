@@ -4,13 +4,13 @@ sidebar_label: "Classic"
 description: "Invoice Classic is a feature-rich PDF invoice template for Gravity PDF and Gravity Forms."
 ---
 
-![The Invoice Classic Gravity PDF Template Design, A4 Paper, Unpaid Watermark](https://resources.gravitypdf.com/uploads/2023/07/0-Invoice-Classic-Featured-Image.png)
+![The Invoice Classic Gravity PDF Template Design, A4 Paper, Unpaid Watermark](https://resources.gravitypdf.com/uploads/2023/07/0-Invoice-Classic-Featured-Image-v1.jpg)
 
-_Invoice Classic_ is a feature-rich invoice template that [can be purchased from our PDF Template Shop](https://gravitypdf.com/shop/invoice-classic/). This guide will walk you through the process of installing and configuring _Invoice Classic_ to its full potential.
+_Invoice Classic_ is a feature-rich invoice template that [can be purchased from the Gravity PDF Template Shop](https://gravitypdf.com/shop/invoice-classic/). This guide walks you through the process of installing and configuring _Invoice Classic_ to its full potential.
 
 ## Installation
 
-[Please follow our installation guide](installing-upgrading-premium-templates.md), which provides instructions for setting up and configuring your premium template.
+[Please follow our installation guide](installing-upgrading-premium-templates.md), which provides initial instructions for setting up and configuring your premium template.
 
 :::note
 This documentation is for _Invoice Classic_ version 2.x, which adds [multi-rate tax-inclusive pricing](#enable-tax-inclusive-pricing), grouped or itemized discounts, free trial, localized dates, and [Gravity Wiz eCommerce Fields support](#gravity-forms-ecommerce-fields). Looking for the 1.x documentation? [You can find the Invoice Classic v1 docs here](../../v5/shop-pdf-template-invoice-classic.md).
@@ -18,17 +18,17 @@ This documentation is for _Invoice Classic_ version 2.x, which adds [multi-rate 
 
 ## Limitations
 
-Invoice templates can only be used with forms that [include a Gravity Forms Product field](https://docs.gravityforms.com/product/). If you try to use the invoice on a form without any products (or conditional products where no product is included for that entry) an error message will be shown in the PDF.
+Invoice templates can only be used with forms that [include a Gravity Forms Product field](https://docs.gravityforms.com/product/). If you try to use the invoice on a form without any products (or conditional products where no product is included for a specific entry) an error message will be shown in the PDF. If you do have conditional Products, [enable PDF Conditional Logic to match](../users/setup-pdf.md#enable-conditional-logic). 
 
-If you have the [Gravity Wiz eCommerce Fields perk](#gravity-forms-ecommerce-fields) enabled, taxes in the invoice can only be included via the Tax field (tax-exclusive pricing). The [native tax-inclusive pricing feature](#enable-tax-inclusive-pricing) is automatically disabled when this perk is installed and activated (even if you had previously set up tax-inclusive pricing).
+If you have the [Gravity Wiz eCommerce Fields perk](#gravity-forms-ecommerce-fields) and the form includes the Tax field, [tax-inclusive pricing in the PDF invoice](#enable-tax-inclusive-pricing) is automatically disabled. You cannot use tax-inclusive and tax-exclusive pricing together.
 
 The 2.x invoice templates require Gravity PDF version 6.0 or higher to correctly function.
 
 ## Configuring
 
-All PDF templates have common settings – such as font, security, and notification attachments – and we recommend you [review the PDF setup guide](../users/setup-pdf.md) to familiarize yourself with these. The common settings are found in the [_General_](../users/setup-pdf.md#general-section), [_Appearance_](../users/setup-pdf.md#appearance-section), and [_Advanced_](../users/setup-pdf.md#advanced-section) panels. Whereas all invoice-specific settings can be found in the _Template_ panel. Below you'll find detailed information about each Template setting available to _Invoice Classic_.
+All PDF templates have common settings – such as font, security, and notification attachments – and we recommend you [review the PDF setup guide](../users/setup-pdf.md) to familiarize yourself. Common settings are found in the [_General_](../users/setup-pdf.md#general-section), [_Appearance_](../users/setup-pdf.md#appearance-section), and [_Advanced_](../users/setup-pdf.md#advanced-section) panels. All invoice-specific settings can be found in the _Template_ panel. 
 
-The invoice PDF configuration is split up into six sections:
+Below you'll find detailed information about each Template setting available to _Invoice Classic_. The invoice PDF configuration is split up into six sections:
 
 -   [Company Information](#company-information)
 -   [Invoice Settings](#invoice-settings)
@@ -43,7 +43,7 @@ The invoice PDF configuration is split up into six sections:
 
 #### Logo (1)
 * This image is included at the top of the generated PDF invoice.
-* To ensure your PDF generates quickly, and the PDF file size stays small, we recommend using an image under 250kb.
+* To ensure your PDF generates quickly, and the PDF file size stays small, we recommend using an image under 250kb (run it through an image optimizer to get it as small as possible).
 * The image will be positioned on the left-hand or right-hand side of the invoice, and is determined by the [Logo Position](#logo-position) setting.
 
 #### Logo Position
@@ -58,10 +58,10 @@ The invoice PDF configuration is split up into six sections:
 #### Business Address (3)
 * The business address is divided into three separate fields, each occupying a line in the invoice.
 * You may use [Gravity Forms merge tags](https://docs.gravityforms.com/category/user-guides/merge-tags-getting-started/) to populate these three settings.
-* If you use any of these symbols `, | / \ - –` to separate multiple merge tags (e.g. `{City:3.3}, {State:3.4}, {Zip:3.5}`), and a merge tag is replaced with an empty value, the extra symbol will be automatically removed.
+* If you use any of these symbols `, | / \ - –` to separate multiple merge tags (e.g. `{City:3.3}, {State:3.4}, {Zip:3.5}`), and a merge tag is replaced with an empty value, the extra symbol(s) will be automatically removed.
 
 #### Registration Number (4)
-* If applicable, include a business registration number here (EIN in the US, ABN in Australia, and CRN in the UK).
+* If applicable, include a business registration number here (e.g. EIN in the US, ABN in Australia, and CRN in the UK).
 * You may use [Gravity Forms merge tags](https://docs.gravityforms.com/category/user-guides/merge-tags-getting-started/) to populate this setting.
 
 #### Contact Information (5)
@@ -85,7 +85,7 @@ The invoice PDF configuration is split up into six sections:
 
 #### Invoice Number (2)
 * The invoice number to be used in the PDF. By default, this is set to the unique Entry ID using the merge tag `{entry_id}`.
-* **Be aware that the Entry ID is not sequential for a specific form** (it will increment for every entry you have across all your forms). If you require your form / invoices to have sequential number, we recommend using the [Gravity Wiz Unique ID perk](#gravity-forms-unique-id).
+* **The Entry ID is not sequential for a specific form**, and will increment for every entry you have across all your forms. If you require your form / invoices to have sequential number, we recommend using the [Gravity Wiz Unique ID perk](#gravity-forms-unique-id).
 
 #### Invoice Number Suffix (3)
 * This is an optional field that is included after the [Invoice Number](#invoice-number-2) in the PDF.
@@ -114,7 +114,8 @@ The invoice PDF configuration is split up into six sections:
   - 2024 November 29 (yyyy mmmm d)
   - 2024 Nov 29 (yyyy mmm d)
   - WordPress Date Format (date configured in Settings -> General)
-* If your preferred date format isn’t available, [the `gfpdf_invoice_date_format` filter](#) can be used to adjust it.
+* When necessary, the WordPress Language your site is configured with will be used to translate the date.  
+* If your preferred date format isn't available, [the `gfpdf_invoice_date_format` filter](hooks/invoice-gfpdf-invoice-date-format.md) can be used to adjust it.
 
 #### Invoice Due Date (5)
 * You can show a due date in the invoice, which is configured by entering the number of days an invoice is due after the form submission date. For example, if the form submission date is `2024-11-29`, and this setting is set to `7` days, the invoice would be shown as due on `2024-12-06`.
@@ -131,14 +132,14 @@ The invoice PDF configuration is split up into six sections:
 #### Buyer Address (2)
 * The buyer address is divided into three separate fields, with each field corresponding to a line on the invoice.
 * You may use [Gravity Forms merge tags](https://docs.gravityforms.com/category/user-guides/merge-tags-getting-started/) to populate these three settings.
-* If you use any of these symbols `, | / \ - –` to separate multiple merge tags (e.g. `{City:3.3}, {State:3.4}, {Zip:3.5}`), and a merge tag is replaced with an empty value, the extra symbol will be automatically removed.
+* If you use any of these symbols `, | / \ - –` to separate multiple merge tags (e.g. `{City:3.3}, {State:3.4}, {Zip:3.5}`), and a merge tag is replaced with an empty value, the extra symbol(s) will be automatically removed.
 
 #### Buyer Registration Number (3)
-* If applicable, include your buyer’s registration number here (EIN in the US, ABN in Australia, and CRN in the UK).
+* If applicable, include your buyer's registration number here (EIN in the US, ABN in Australia, and CRN in the UK).
 * You may use [Gravity Forms merge tags](https://docs.gravityforms.com/category/user-guides/merge-tags-getting-started/) to populate this setting.
 
 #### Buyer Contact Information (4)
-* You can include the buyer’s phone number, email address, fax, or website.
+* You can include the buyer's phone number, email address, fax, or website.
 * You may use [Gravity Forms merge tags](https://docs.gravityforms.com/category/user-guides/merge-tags-getting-started/) to populate this setting.
 
 #### Buyer Alternate Contact Information (5)
@@ -147,28 +148,28 @@ The invoice PDF configuration is split up into six sections:
 
 ### Tax Settings
 
-Gravity Forms doesn't natively support taxes [for Pricing fields](https://docs.gravityforms.com/category/user-guides/pricing-fields/). You could use a [Product Calculation field](https://docs.gravityforms.com/product/) to calculate a product’s tax, but there are limitations. For example, it can be difficult updating you calculation when the form products change, the tax amount will be displayed in the line items (and not the totals section), and this method only supports tax-exclusive pricing. Thankfully, you have more feature-rich tax options available to you.
+Gravity Forms doesn't natively support taxes [for Pricing fields](https://docs.gravityforms.com/category/user-guides/pricing-fields/). You could use a [Product Calculation field](https://docs.gravityforms.com/product/) to calculate each product's tax, but there are limitations. For example, it can be challenging to update the calculations when you add/remove products in your form, the tax amount will be displayed in the line items (and not the totals section), and this method only supports tax-exclusive pricing. Thankfully, you have more feature-rich tax options available.
 
-All Gravity PDF Invoices natively support tax-inclusive pricing, and you can set different tax rates for different products (or disable taxes on a product). If you require tax-exclusive pricing, [the Gravity Perks eCommerce Fields perk includes a Tax field, and is fully supported by Gravity PDF Invoices](#gravity-forms-ecommerce-fields).
+All Gravity PDF Invoices natively support tax-inclusive pricing, and you are able to set individual tax rates for each product (or disable taxes for a product entirely). If you require tax-exclusive pricing, [the Gravity Perks eCommerce Fields perk includes a Tax field, and is fully supported by Gravity PDF Invoices](#gravity-forms-ecommerce-fields).
 
 ![A screenshot of Invoice Classic, with numbers one through seven positioned on the invoice area, and controlled by the numbered settings documented in the Tax Settings section.](https://resources.gravitypdf.com/uploads/2023/07/4-Tax-Settings-Classic.png)
 
 #### Enable Tax Inclusive Pricing
-* Automatically calculate the taxes that apply to your products using the Default Tax Rate, or any modifiers.
+* Automatically calculate the taxes that apply to your products using the Default Tax Rate, and any modifiers.
 * By default, tax-inclusive pricing is disabled on invoices.
-* Multiple tax rates are supported for products using the Custom CSS Class `tax-{rate}-{label}` on Product or Shipping fields [in the Form Editor](https://docs.gravityforms.com/css-ready-classes/#h-how-to-use-ready-classes). The `{rate}` is a percentage between 0.01 and 99.99. While the `{label}` is the name of the tax (substitute spaces for hyphens).
-* You cannot add different tax rates directly to Option fields. To affect Option fields, you need to add the `tax-{rate}-{label}` class on the associated Product field.
-* Taxes can be disabled on a per-product basis using the Custom CSS Class `tax-0`.
-* If you have the [Gravity Wiz eCommerce Fields perk](#gravity-forms-ecommerce-fields) activated on your website, tax-inclusive pricing is automatically disabled if a Tax field is included in the form.
+* Multiple tax rates are supported for products using the Custom CSS Class `tax-{rate}-{label}` on Product or Shipping fields [in the Form Editor](https://docs.gravityforms.com/css-ready-classes/#h-how-to-use-ready-classes). The `{rate}` is a percentage between 0 and 100. While the `{label}` is the name of the tax (substitute spaces for hyphens). For example, if you wanted a specific product to be taxed at 5.25% with the label "CA Taxes", you would add the CSS class `tax-5.25-CA-Taxes` to the Product field in the Form Editor.
+* You cannot add different tax rates directly to Option fields; it can only be added to Products. Option fields will inherit the tax rate of the associated Product field.
+* Taxes can be disabled on a per-product basis using the Custom CSS Class `tax-0`. Do not include the label `-{label}` when disabling taxes this way.
+* If you have the [Gravity Wiz eCommerce Fields perk](#gravity-forms-ecommerce-fields) activated on your website, tax-inclusive pricing is automatically disabled when a Tax field is included in the form.
 
 ![A screenshot of the Gravity Forms Editor with a Product field selected, the Custom CSS Class setting is highlighted in the Field Settings section, the value of the setting shows tax-7.25-California, which is how you define multiple tax rates in the invoice.](https://resources.gravitypdf.com/uploads/2023/07/5-Tax-Inclusive-Pricing-Classic.png)
 
 #### Default Tax Name (1)
-* Provide the name of the default tax being applied to products and shipping ([if taxes on shipping is enabled](#tax-shipping-5)). For example, Sales Tax in the US, VAT in Europe, and GST in Australia.
-* This label is displayed with the tax calculated using the Default Tax Rate in the invoice.
+* Provide the name of the default tax being applied to products and shipping fields  ([if taxes on shipping is enabled](#tax-shipping-5)). For example, _Sales Tax_ in the US, _VAT_ in Europe, _GST_ in Australia.
+* This label is displayed with the tax calculated using the [Default Tax Rate](#default-tax-rate-2) in the invoice.
 
 #### Default Tax Rate (2)
-* Provide a percentage between 0 and 99.99 to be used as the default tax rate. For example, you would enter `10` for GST in Australia.
+* Provide a percentage between 0 and 100 to be used as the default tax rate. For example, you would enter `10` for GST in Australia.
 * The default tax rate [can be overridden on a per-product basis](#enable-tax-inclusive-pricing) using the Custom CSS Class `tax-{rate}-{label}` or `tax-0`.
 
 #### Tax Summary Label (3)
@@ -186,7 +187,7 @@ All Gravity PDF Invoices natively support tax-inclusive pricing, and you can set
 * By default, taxes on the Shipping field is disabled.
 
 #### Hide Tax in Summary
-* By default, the total tax is shown in the invoice summary section (the top right of the PDF). Tick this box to remove the tax amount from the summary.
+* By default, the total tax is shown in the Invoice Summary section (the top of the PDF). Tick this box to remove the tax amount from the summary.
 
 #### Hide Tax Column
 * When enabled, the Unit Tax column will be hidden from the Product Table.
@@ -202,11 +203,11 @@ All Gravity PDF Invoices natively support tax-inclusive pricing, and you can set
 
 ### Extras
 
-![A screenshot focused on the bottom half of Invoice Classic, with numbers one through four positioned on the invoice area, and controlled by the numbered settings documented in the Extras section.](https://resources.gravitypdf.com/uploads/2023/07/7-Extras-v1-Classic.png)
+![A screenshot focused on the bottom half of Invoice Classic, with numbers one through four positioned on the invoice area, and controlled by the numbered settings documented in the Extras section.](https://resources.gravitypdf.com/uploads/2023/07/7-Extras-Classic-v1.png)
 
 #### Discounts (1)
-* By default, any discounts included via Gravity Forms Coupon field, or Gravity Wiz’s Discount field, will be totaled and shown alongside the [Discount Label](#discount-label-13) (see image above for an example).
-* If you enable the Itemized Discounts / Coupons setting, any discounts that apply will be shown individually and not grouped together (see image below for an example).
+* By default, any discounts included via Gravity Forms Coupon field, or Gravity Wiz's Discount field, will be totaled and shown alongside the [Discount Label](#discount-label-13) (see image above for an example).
+* If you enable the Itemized Discounts / Coupons setting, any discounts that apply will be shown individually, and not grouped together (see image below for an example).
 
 ![A screenshot focused on the bottom half of Invoice Classic, and showing individual discount amounts, which can be configured with the Itemized Discounts / Coupons setting.](https://resources.gravitypdf.com/uploads/2023/07/6-Discounts-Classic.png)
 
@@ -296,54 +297,54 @@ Once you've saved your new PDF, you can [view it from the Gravity Forms Entries 
 
 ## Notification Email PDF Attachment
 
-You can easily include the invoice as an email attachment in your Notifications. First, ensure you’ve [created the appropriate Notification(s) for your form](https://docs.gravityforms.com/configuring-notifications-in-gravity-forms/). Once done, you can [configure the Notification PDF setting](../users/setup-pdf.md#notifications) for your invoice.
+You can easily add the invoice as an attachment in your Notification emails. First, ensure you've [created the appropriate Notification(s) for your form](https://docs.gravityforms.com/configuring-notifications-in-gravity-forms/). Once done, you can [configure the Notification PDF setting](../users/setup-pdf.md#notifications) for your invoice.
 
 ## Enhance Invoices With Gravity Perks
 
-<a href="https://gravitywiz.com/?ref=78" rel="sponsored">Gravity Perks</a> is a suite of add-ons or "perks" that can enhance Gravity Forms functionality, and are built and maintained by fellow <a href="https://www.gravityforms.com/certified-developers-and-add-ons/">Certified Gravity Forms Developer</a>. From the 47+ perks the Wizards have to offer, there are a number of them that can enhance Gravity PDF Invoices. Here’s a non-exhaustive list of useful perks.
+<a href="https://gravitywiz.com/?ref=78" rel="sponsored">Gravity Perks</a> is a suite of add-ons or "perks" that can enhance Gravity Forms functionality. From the 47+ perks the Wizards have to offer, there are a number of perks that will enhance Gravity PDF Invoices. Here's a non-exhaustive list of useful perks:
 
 ### Gravity Forms eCommerce Fields
 
-<a href="https://gravitywiz.com/documentation/gravity-forms-ecommerce-fields/?ref=78" rel="sponsored">This perk adds new eCommerce features to Gravity Forms</a>, including Tax, Discounts, and Subtotal fields. We recommend using this perk If you require tax-exclusive pricing in your invoices (the enhanced discounts are handy, too).
+<a href="https://gravitywiz.com/documentation/gravity-forms-ecommerce-fields/?ref=78" rel="sponsored">This perk adds new eCommerce features to Gravity Forms</a>, including Tax, Discounts, and Subtotal fields. We recommend using this perk If you require tax-exclusive pricing in your invoices (the enhanced Discount field is handy, too).
 
 ![A screenshot of the Gravity Forms Editor with a Gravity Forms eCommerce Fields Tax field selected, an arrow points to the Tax Amount setting in the Field Settings section, the value of the setting shows 7.25%.](https://resources.gravitypdf.com/uploads/2023/07/9-eCommerce-Field-Classic.png)
 
-The Tax field allows you to apply taxes on all products/shipping fields, or you can selectively include/exclude fields from taxes. You can also add multiple Tax fields to apply multiple tax rates, as well as conditionally include the tax field based on other fields. The perk auto-calculates the correct taxes that apply to an order based on the rules, conditions, and product quantities.
+The Tax field allows you to apply taxes on all products/shipping fields, or you can selectively include/exclude fields from taxes. For multiple rates, you can add additional Tax fields to your form, as well as conditionally show/hide the field. The perk auto-calculates the correct taxes for an entry based on the rules, conditions, and product quantities selected.
 
 :::info
-You cannot use tax-inclusive and tax-exclusive pricing together. If you have Gravity Perks eCommerce Fields plugin on your website, the Tax Inclusive Pricing feature is automatically disabled once you add a Tax field to your form.
+You cannot use tax-inclusive and tax-exclusive pricing together. The Tax Inclusive Pricing feature is automatically disabled once you add a Tax field to your form.
 :::	
 
-When a Tax field is detected in the form, all tax-inclusive invoice settings are removed. You can still control the [Tax Summary](#hide-tax-in-summary) and [Tax Number](#tax-number-6) in the PDF settings.
+When a Tax field is detected in the form, all tax-inclusive invoice settings are removed. You still have control over the [Tax Summary](#hide-tax-in-summary) and [Tax Number](#tax-number-6) settings.
 
 ### Gravity Forms Unique ID
-<a href="https://gravitywiz.com/documentation/gravity-forms-unique-id/?ref=78" rel="sponsored">The Unique ID Gravity Wiz perk</a> allows you to generate a sequential or alphanumeric ID for each entry on a per-form basis. Replace the standard entry ID <a href="#invoice-number-2">Invoice Number</a> with the Unique ID instead.
+<a href="https://gravitywiz.com/documentation/gravity-forms-unique-id/?ref=78" rel="sponsored">The Unique ID Gravity Wiz perk</a> allows you to generate a sequential or alphanumeric ID for each entry on a per-form basis. To use with PDF Invoices, replace the entry ID merge tag in the <a href="#invoice-number-2">Invoice Number</a> setting with the Unique ID equivalent.
 
 ![A screenshot of the Gravity Forms Editor with a Unique ID field selected, an arrow points to the Field Settings section, which has been configured as a sequential number with a prefix of 'PDF' and a suffix of 'Y23'.](https://resources.gravitypdf.com/uploads/2023/07/10-Unique-ID-Classic.png)
 
 ### Gravity Forms Inventory
 
-If you’d like to use Gravity Forms to sell a limited number of tickets or bookings, <a href="https://gravitywiz.com/documentation/gravity-forms-inventory/?ref=78" rel="sponsored">the Inventory perk is a safe bet</a>. One (of the many) features available is simple and advanced inventory tracking for Product fields. PDF Invoices supports this perk automatically when used with Products, without any extra configuration on your part.
+If you'd like to use Gravity Forms to sell tickets / take bookings in limited quantities, <a href="https://gravitywiz.com/documentation/gravity-forms-inventory/?ref=78" rel="sponsored">the Inventory perk is useful</a>. One (of the many) features available is inventory tracking for Product fields. PDF Invoices supports this perk automatically when used with Products, without any extra configuration on your part.
 
 :::tip
-Pro Tip: Use the <a href="https://gravitywiz.com/documentation/gravity-forms-qr-code/?ref=78" rel="sponsored">QRCode</a> and <a href="https://gravitywiz.com/documentation/gravity-forms-easy-passthrough/?ref=78" rel="sponsored">Easy Passthrough</a> perks to <a href="https://gravitywiz.com/documentation/gravity-forms-qr-code/?ref=78#use-case-event-registration" rel="sponsored">create an event check-in tool</a>, then add the check-in QRCode to your invoice via the <a href="#additional-information-3">Additional Information</a> setting.
+Pro Tip: Use the <a href="https://gravitywiz.com/documentation/gravity-forms-qr-code/?ref=78" rel="sponsored">QRCode</a> and <a href="https://gravitywiz.com/documentation/gravity-forms-easy-passthrough/?ref=78" rel="sponsored">Easy Passthrough</a> perks to <a href="https://gravitywiz.com/documentation/gravity-forms-qr-code/?ref=78#use-case-event-registration" rel="sponsored">create an event check-in tool</a>, and then add the check-in QRCode to your invoice via the <a href="#additional-information-3">Additional Information</a> setting.
 :::
 
 ### Gravity Forms Conditional Pricing
 
-Build complex pricing rules for a Product in your form <a href="https://gravitywiz.com/documentation/gravity-forms-conditional-pricing/?ref=78" rel="sponsored">with the Conditional Pricing perk</a>. This saves you adding a heap of different conditional Product fields in your form. PDF Invoices supports this perk automatically, without any extra configuration on your part.
+You can create complex pricing rules for Product fields <a href="https://gravitywiz.com/documentation/gravity-forms-conditional-pricing/?ref=78" rel="sponsored">with the Conditional Pricing perk</a>. This saves adding a heap of different conditional products to your form, and is very useful if your pricing regularly changes. PDF Invoices supports this perk automatically, without any extra configuration on your part.
 
 ### Gravity Forms Advanced Calculations
 
-<a href="https://gravitywiz.com/documentation/gravity-forms-advanced-calculations/?ref=78" rel="sponsored">The Advanced Calculations perk</a> allows for advanced number crunching using Gravity Forms data, and can be used to calculate the price of a Product field. PDF Invoices supports this perk automatically when used with Products, without any extra configuration on your part.
+<a href="https://gravitywiz.com/documentation/gravity-forms-advanced-calculations/?ref=78" rel="sponsored">The Advanced Calculations perk</a> does exactly as the name suggests: advanced number crunching using Gravity Forms data. It supports the Calculation Product field, so you can create complex product pricing. PDF Invoices supports this perk automatically when used with Product fields, without any extra configuration on your part.
 
 ### Gravity Forms Price Range
 
-If you want to allow your users to define the price of a product, you can use Gravity Forms User Defined Price product field. But what if you require a minimum (or maximum) spend? <a href="https://gravitywiz.com/documentation/gravity-forms-price-range/?ref=78" rel="sponsored">The Pricing Range perk has you covered</a>. PDF Invoices supports this perk automatically, without any extra configuration on your part.
+Gravity Forms natively supports user-defined pricing for Product fields. But what if you require a minimum (or maximum) spend? <a href="https://gravitywiz.com/documentation/gravity-forms-price-range/?ref=78" rel="sponsored">The Pricing Range perk enables this functionality</a>. PDF Invoices supports this perk automatically, without any extra configuration on your part.
 
 ## Upgrading from v1.x
 
-For existing customers who’d like to take advantage of the new features included in v2, you’ll need to manually upgrade your Invoice PDF template. Be aware, this upgrade isn’t a requirement, and we will continue offering and supporting the v1 invoices for the foreseeable future.
+For existing customers who'd like to take advantage of the new features included in v2, you'll first need to manually upgrade your Invoice PDF template(s). If you don't require any of the new features, you may continue with the v1 template; we will provide support for both v1 and v2 for the foreseeable future.
 
 Before you complete the upgrade, take note of the changes that have been made to all v2 invoices:
 
@@ -355,26 +356,28 @@ Before you complete the upgrade, take note of the changes that have been made to
 6. A new [Tax Summary Label](#tax-summary-label-3) setting has been added, and will be used in this section of the invoice alongside the total tax value.
 7. A new [Unit Tax Column Label](#unit-tax-column-label-4) setting has been added, which is used in the tax column of the Invoice Table. The Unit Tax Column Label defaults to the text "Unit Tax".
 8. A new setting [Itemize Discounts / Coupons](#discounts-1) has been added. By default, the invoice will group any discounts into a single total. When the setting is enabled, all discounts will be shown in the invoice individually.
-9. A new [Discount Label](#discount-label-13) setting has been added. It is used if your form includes a Coupon or Discount field, and you haven’t enabled the [Itemize Discounts / Coupons](#discounts-1) setting. It defaults to the text "Discount".
-10. Support for tax-exclusive pricing via [Gravity Wiz’s eCommerce Field perk](#gravity-forms-ecommerce-fields) has been added. When enabled, and a Tax field is added to the form, the [Tax Inclusive Pricing feature](#enable-tax-inclusive-pricing) is disabled.
+9. A new [Discount Label](#discount-label-13) setting has been added. It is used if your form includes a Coupon or Discount field, and you haven't enabled the [Itemize Discounts / Coupons](#discounts-1) setting. It defaults to the text "Discount".
+10. Support for tax-exclusive pricing via [Gravity Wiz's eCommerce Field perk](#gravity-forms-ecommerce-fields) has been added. When a Tax field is added to the form, the [Tax Inclusive Pricing feature](#enable-tax-inclusive-pricing) is disabled.
 11. Support for Free Trial Gravity Forms subscriptions has been added to the invoice.
 12. The [Date Format](#date-format-4) setting includes 20 new choices, and the date will be automatically localized using your WordPress Site Language setting. The default date will automatically match your WordPress Date Format setting.
 
-Before upgrading, **we strongly recommend taking a full backup of your website**. [After you complete the upgrade](installing-upgrading-premium-templates.md#upgrading-premium-template), you should review the PDF Invoices being generated by each of your forms, and ensure the output is acceptable. For customers who have translated the invoices, you may need to edit the invoice PDF settings and translate the new labels that have been added. If there’s an issue with the invoices after upgrading, revert to your backup (or downgrade to the v1 invoice template).
+Before upgrading, **we strongly recommend taking a full backup of your website**. [After you complete the upgrade](installing-upgrading-premium-templates.md#upgrading-premium-template), you should review the PDF Invoices being generated by each of your forms, and ensure the output is acceptable. For customers who have translated the invoices, you may need to edit the invoice PDF settings and translate the new labels that have been added. 
+
+If there is an issue with your v2 invoices after upgrading, restore the site from the backup you took. You can also attempt to downgrade back to the v1 invoice template, [which can be downloaded from your GravityPDF.com account](https://gravitypdf.com/account/downloads/).
 
 ## Developers
 
-Developers can customize the invoice by editing the template file, or using of the hooks provided. If you do modify the template directly, be aware that if you upgrade the template in the future it will override your changes (automatic updates aren’t available for templates).
+Developers can customize the invoice by editing the template file, or using of the hooks provided. If you do modify the template directly, be aware that if you manually upgrade the template you will override your modifications (automatic updates aren't available for templates).
 
 ### Hooks
 
 These hooks are available for developers to further customize the extension:
 
-* [gfpdf_invoice_currency_format](#)
-* [gfpdf_invoice_date_format](#)
-* [gfpdf_invoice_number](#)
-* [gfpdf_invoice_watermark](#)
-* [gfpdf_pre_invoice_html](#)
-* [gfpdf_pre_invoice_table](#)
-* [gfpdf_post_invoice_table](#)
-* [gfpdf_post_invoice_html](#)
+* [gfpdf_invoice_currency_format](hooks/invoice-gfpdf-invoice-currency-format.md)
+* [gfpdf_invoice_date_format](hooks/invoice-gfpdf-invoice-date-format.md)
+* [gfpdf_invoice_number](hooks/invoice-gfpdf-invoice-number.md)
+* [gfpdf_invoice_watermark](hooks/invoice-gfpdf-invoice-watermark.md)
+* [gfpdf_pre_invoice_html](hooks/invoice-gfpdf-pre-invoice-html.md)
+* [gfpdf_pre_invoice_table](hooks/invoice-gfpdf-pre-invoice-table.md)
+* [gfpdf_post_invoice_table](hooks/invoice-gfpdf-post-invoice-table.md)
+* [gfpdf_post_invoice_html](hooks/invoice-gfpdf-post-invoice-html.md)
