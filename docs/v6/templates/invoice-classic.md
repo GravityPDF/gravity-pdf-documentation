@@ -115,7 +115,7 @@ Below you'll find detailed information about each Template setting available to 
   - 2024 Nov 29 (yyyy mmm d)
   - WordPress Date Format (date configured in Settings -> General)
 * When necessary, the WordPress Language your site is configured with will be used to translate the date.  
-* If your preferred date format isn't available, [the `gfpdf_invoice_date_format` filter](hooks/invoice-gfpdf-invoice-date-format.md) can be used to adjust it.
+* If your preferred date format isn't available, [the `gfpdf_invoice_date_format` filter](hooks/invoices/gfpdf-invoice-date-format.md) can be used to adjust it.
 
 #### Invoice Due Date (5)
 * You can show a due date in the invoice, which is configured by entering the number of days an invoice is due after the form submission date. For example, if the form submission date is `2024-11-29`, and this setting is set to `7` days, the invoice would be shown as due on `2024-12-06`.
@@ -373,11 +373,11 @@ Developers can customize the invoice by editing the template file, or using of t
 
 These hooks are available for developers to further customize the extension:
 
-* [gfpdf_invoice_currency_format](hooks/invoice-gfpdf-invoice-currency-format.md)
-* [gfpdf_invoice_date_format](hooks/invoice-gfpdf-invoice-date-format.md)
-* [gfpdf_invoice_number](hooks/invoice-gfpdf-invoice-number.md)
-* [gfpdf_invoice_watermark](hooks/invoice-gfpdf-invoice-watermark.md)
-* [gfpdf_pre_invoice_html](hooks/invoice-gfpdf-pre-invoice-html.md)
-* [gfpdf_pre_invoice_table](hooks/invoice-gfpdf-pre-invoice-table.md)
-* [gfpdf_post_invoice_table](hooks/invoice-gfpdf-post-invoice-table.md)
-* [gfpdf_post_invoice_html](hooks/invoice-gfpdf-post-invoice-html.md)
+* [gfpdf_invoice_currency_format](hooks/invoices/gfpdf-invoice-currency-format.md)
+* [gfpdf_invoice_date_format](hooks/invoices/gfpdf-invoice-date-format.md)
+* [gfpdf_invoice_number](hooks/invoices/gfpdf-invoice-number.md)
+* [gfpdf_invoice_watermark](hooks/invoices/gfpdf-invoice-watermark.md)
+* [gfpdf_pre_invoice_html](hooks/invoices/gfpdf-pre-invoice-html.md)
+* [gfpdf_pre_invoice_table](hooks/invoices/gfpdf-pre-invoice-table.md)
+* [gfpdf_post_invoice_table](hooks/invoices/gfpdf-post-invoice-table.md)
+* [gfpdf_post_invoice_html](hooks/invoices/gfpdf-post-invoice-html.md)

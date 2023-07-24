@@ -61,4 +61,4 @@ add_filter( 'gfpdf_invoice_number', function( $formatted_invoice_number, $invoic
 
 ## Source Code
 
-This hook can be found in the `Gpdf_Invoice_Base::get_invoice_number()` method, which is located in the `/config/gpdf-invoice-base.php` file in the [PDF Working Directory](../../developers/first-custom-pdf.md#pdf-working-directory).
+This hook can be found in the `Gpdf_Invoice_Base::get_invoice_number()` method, which is located in the `/config/gpdf-invoice-base.php` file in the [PDF Working Directory](../../../developers/first-custom-pdf.md#pdf-working-directory).

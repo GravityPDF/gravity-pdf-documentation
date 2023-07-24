@@ -48,4 +48,4 @@ add_filter( 'gfpdf_invoice_watermark', function( $watermark, $settings, $entry, 
 
 ## Source Code
 
-This hook can be found in the `Gpdf_Invoice_Base::get_watermark()` method, which is located in the `/config/gpdf-invoice-base.php` file in the [PDF Working Directory](../../developers/first-custom-pdf.md#pdf-working-directory).
+This hook can be found in the `Gpdf_Invoice_Base::get_watermark()` method, which is located in the `/config/gpdf-invoice-base.php` file in the [PDF Working Directory](../../../developers/first-custom-pdf.md#pdf-working-directory).

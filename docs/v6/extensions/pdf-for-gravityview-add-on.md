@@ -528,15 +528,15 @@ blockquote {
 
 These hooks are available for developers to further customize the extension:
 
-* [gfpdf_gv_template_styles](./hooks/pdfgv-gfpdf-gv-template-styles.md)
-* [gfpdf_gv_show_label](./hooks/pdfgv-gfpdf-gv-show-label.md)
+* [gfpdf_gv_template_styles](hooks/pdfgv/gfpdf-gv-template-styles.md)
+* [gfpdf_gv_show_label](hooks/pdfgv/gfpdf-gv-show-label.md)
 
 ### API
 
 A public API was introduced in v0.8 to help developers simplify common tasks when extending the software. You can easily call any method using `\PDFGV_API::method_name()`.
 
-* [Creating a Single Entry Layout View PDF](./api/pdfgv-create-single-entry-pdf.md)
-* [Getting the Single Entry PDF Settings](./api/pdfgv-get-single-entry-pdf-settings.md)
+* [Creating a Single Entry Layout View PDF](api/pdfgv/create-single-entry-pdf.md)
+* [Getting the Single Entry PDF Settings](api/pdfgv/get-single-entry-pdf-settings.md)
 
 ### Template Overrides
 

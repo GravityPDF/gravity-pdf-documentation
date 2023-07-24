@@ -43,4 +43,4 @@ add_action( 'gfpdf_post_invoice_table', function( $args ) {
 
 ## Source Code
 
-This hook can be found in the associated Invoice PDF template file, which is located in the [PDF Working Directory](../../developers/first-custom-pdf.md#pdf-working-directory).
+This hook can be found in the associated Invoice PDF template file, which is located in the [PDF Working Directory](../../../developers/first-custom-pdf.md#pdf-working-directory).
