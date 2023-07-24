@@ -26,7 +26,7 @@ The following plugins are required to make use of *PDF for GravityView*:
 
 * <a href="https://rocketgenius.pxf.io/c/1211356/445235/7938" rel="sponsored">Gravity Forms</a> (any license type)
 * [Gravity PDF](../users/installation.md)
-* <a href="https://www.gravitykit.com/pricing/?ref=186" rel="sponsored">GravityView v1.16+</a> (any license type)
+* <a href="https://www.gravitykit.com/pricing/?ref=186" rel="sponsored">GravityView v2.16+</a> (any license type)
 
 If any of the prerequisites aren't met, the plugin will show an appropriate error message on the Plugins admin screen after activation.
 
