@@ -301,7 +301,7 @@ You can easily add the invoice as an attachment in your Notification emails. Fir
 
 ## Enhance Invoices With Gravity Perks
 
-<a href="https://gravitywiz.com/?ref=78" rel="sponsored">Gravity Perks</a> is a suite of add-ons or "perks" that can enhance Gravity Forms functionality. From the 47+ perks the Wizards have to offer, there are a number of perks that will enhance Gravity PDF Invoices. Here's a non-exhaustive list of useful perks:
+<a href="https://gravitywiz.com/?ref=78" rel="sponsored">Gravity Perks</a> is a suite of add-ons or "perks" that can enhance Gravity Forms functionality. From the 47+ perks the Wizards have to offer, a number of those can enhance Gravity PDF Invoices. Here's a non-exhaustive list to consider:
 
 ### Gravity Forms eCommerce Fields
 
