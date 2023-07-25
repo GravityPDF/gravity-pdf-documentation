@@ -253,7 +253,7 @@ All text in the PDF can be easily changed. By default, the labels are displayed 
 * The default value is "Invoice". Australian businesses registered for GST should change their invoice title to "Tax Invoice".
 
 #### Invoice Date Label (2)
-* The label displayed next to the [Invoice Date](#invoice-date-label-2) value. Leave blank to disable.
+* The label displayed next to the Invoice Date value. Leave blank to disable.
 * The default value is "Invoice Date:".
 
 #### Invoice Due Date Label (3)
