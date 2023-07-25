@@ -240,56 +240,48 @@ All text in the PDF can be easily changed. By default, the labels are displayed 
 * The document title, which is displayed in the top-left or top-right of the invoice (depending on the [Logo Position](#logo-position) setting).
 * The default value is "Invoice". Australian businesses registered for GST should change their invoice title to "Tax Invoice".
 
-#### Invoice Date Label (2)
-* The label displayed next to the [Invoice Date](#invoice-date-label-2) value. Leave blank to disable.
-* The default value is "Invoice Date:".
-
-#### Invoice Due Date Label (3)
+#### Invoice Due Date Label (2)
 * The label displayed next to the [Invoice Due Date](#invoice-due-date-5) value.
 * The default value is "Due Date:".
 
-#### Invoice Number Label (4)
-* The label displayed next to the [Invoice Number](#invoice-number-2) value. Leave blank to disable.
-* The default value is "Invoice Number:".
-
-#### Invoice Total Cost Summary Label (5)
+#### Invoice Total Cost Summary Label (3)
 * The label displayed next to the invoice total value in the Summary Section. Leave blank to disable.
 * The default value is "Invoice Total:".
 
-#### Currency Type Label (6)
+#### Currency Type Label (4)
 * The label displayed next to the form's currency in the summary section (eg. USD, AUD, EUR). Leave blank to disable.
 * The default value is "Currency Type:".
 
-#### Buyer Details Label (7)
+#### Buyer Details Label (5)
 * The label displayed above the Buyer Name / Contact Info values.
 * The default value is "Buyer Details:".
 
-#### Quantity Column Label (8)
+#### Quantity Column Label (6)
 * The label displayed in the Product Table header for the Quantity column. The column cannot be removed.
 * The default value is "Qty".
 
-#### Description Column Label (9)
+#### Description Column Label (7)
 * The label displayed in the Product Table header for the Description column. The column cannot be removed.
 * The default value is "Description".
 
-#### Unit Price Column Label (10)
+#### Unit Price Column Label (8)
 * The label displayed in the Product Table header for the Unit Price column. The column cannot be removed.
 * The default value is "Unit Price".
 
-#### Total Column Label (11)
+#### Total Column Label (9)
 * The label displayed in the Product Table header for the Total column. The column cannot be removed.
 * The default value is "Total".
 
-#### Subtotal Label (12)
+#### Subtotal Label (10)
 * The label displayed next to the invoice subtotal value (the total cost for all products, excluding shipping and taxes), after the line items. Leave blank to disable.
 * The default value is "Subtotal".
 
-#### Discount Label (13)
+#### Discount Label (11)
 * The label displayed next to the total discounts applied to the order (using the Coupons or Discount field).
 * If there are no discounts, or the [Itemize Discounts / Coupons](#discounts-1) setting is enabled, this label will not be included in the invoice.
 * The default value is "Discount".
 
-#### Overall Total Label (14)
+#### Overall Total Label (12)
 * The label displayed next to the invoice total value (the overall cost), after the line items. The label/value cannot be removed.
 * The default value is "Total".
 
