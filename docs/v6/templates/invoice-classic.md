@@ -4,7 +4,7 @@ sidebar_label: "Classic"
 description: "Invoice Classic is a feature-rich PDF invoice template for Gravity PDF and Gravity Forms."
 ---
 
-![The Invoice Classic Gravity PDF Template Design, A4 Paper, Unpaid Watermark](https://resources.gravitypdf.com/uploads/2023/07/0-Invoice-Classic-Featured-Image-v1.jpg)
+![A stack of Invoice Classic documents printed on A4 paper, leaning against a wall at a 10-degree angle.](https://resources.gravitypdf.com/uploads/2023/07/Invoice-Classic-Featured-Image.jpg)
 
 _Invoice Classic_ is a feature-rich invoice template that [can be purchased from the Gravity PDF Template Shop](https://gravitypdf.com/shop/invoice-classic/). This guide walks you through the process of installing and configuring _Classic_ to its full potential.
 

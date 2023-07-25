@@ -4,7 +4,7 @@ sidebar_label: "Nova"
 description: "Invoice Nova is a elegant PDF invoice template for Gravity PDF and Gravity Forms."
 ---
 
-![The Invoice Nova Gravity PDF Template Design, A4 Paper, Unpaid Watermark](https://resources.gravitypdf.com/uploads/2023/07/0-Invoice-Classic-Featured-Image-v1.jpg)
+![A stack of Invoice Nova documents printed on A4 paper, leaning against a wall at a 10-degree angle.](https://resources.gravitypdf.com/uploads/2023/07/Invoice-Nova-Featured-Image.jpg)
 
 _Invoice Nova_ is an elegant invoice template that [can be purchased from the Gravity PDF Template Shop](https://gravitypdf.com/shop/invoice-nova/). This guide walks you through the process of installing and configuring _Nova_ to its full potential.
 

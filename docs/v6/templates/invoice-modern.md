@@ -4,7 +4,7 @@ sidebar_label: "Modern"
 description: "Invoice Modern is a clean PDF invoice template for Gravity PDF and Gravity Forms."
 ---
 
-![The Invoice Modern Gravity PDF Template Design, A4 Paper, Unpaid Watermark](https://resources.gravitypdf.com/uploads/2023/07/0-Invoice-Classic-Featured-Image-v1.jpg)
+![A stack of Invoice Modern documents printed on A4 paper, leaning against a wall at a 10-degree angle.](https://resources.gravitypdf.com/uploads/2023/07/Invoice-Modern-Featured-Image.jpg)
 
 _Invoice Modern_ is a clean invoice template that [can be purchased from the Gravity PDF Template Shop](https://gravitypdf.com/shop/invoice-modern/). This guide walks you through the process of installing and configuring _Modern_ to its full potential.
 
