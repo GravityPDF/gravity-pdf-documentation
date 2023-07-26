@@ -221,7 +221,7 @@ All Gravity PDF Invoices natively support tax-inclusive pricing, and you are abl
 
 ### Extras
 
-![A screenshot focused on the bottom half of Iconic, with numbers one through four positioned on the invoice area, and controlled by the numbered settings documented in the Extras section.]([https://resources.gravitypdf.com/uploads/2023/07/7-Extras-Classic-v1.png](https://resources.gravitypdf.com/uploads/2023/07/7-Extras-Iconic.png))
+![A screenshot focused on the bottom half of Iconic, with numbers one through four positioned on the invoice area, and controlled by the numbered settings documented in the Extras section.](https://resources.gravitypdf.com/uploads/2023/07/7-Extras-Iconic.png)
 
 #### Discounts (1)
 * By default, any discounts included via Gravity Forms Coupon field, or Gravity Wiz's Discount field, will be totaled and shown alongside the [Discount Label](#discount-label-13) (see image above for an example).
