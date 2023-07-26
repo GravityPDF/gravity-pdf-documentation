@@ -45,7 +45,7 @@ _Modern_ also has an additional template-specific setting:
 
 ### Company Information
 
-![A close-up screenshot of the header section of Modern, with numbers one through seven positioned on the invoice area, and controlled by the numbered settings documented in the Company Information section.](https://resources.gravitypdf.com/uploads/2023/07/1-Company-Information-Classic.png)
+![A close-up screenshot of the header section of Modern, with numbers one through seven positioned on the invoice area, and controlled by the numbered settings documented in the Company Information section.](https://resources.gravitypdf.com/uploads/2023/07/1-Company-Information-Modern.png)
 
 #### Logo (1)
 * This image is included at the top of the generated PDF invoice.
@@ -84,7 +84,7 @@ _Modern_ also has an additional template-specific setting:
 
 ### Invoice Settings
 
-![A close-up screenshot of the header section of Modern, with numbers one through five positioned on the invoice area, and controlled by the numbered settings documented in the Invoice Settings section.](https://resources.gravitypdf.com/uploads/2023/07/2-Invoice-Settings-Classic.png)
+![A close-up screenshot of the header section of Modern, with numbers one through five positioned on the invoice area, and controlled by the numbered settings documented in the Invoice Settings section.](https://resources.gravitypdf.com/uploads/2023/07/2-Invoice-Settings-Modern.png)
 
 #### Invoice Number Prefix (1)
 * This is an optional field that appears before the [Invoice Number](#invoice-number-2) in the PDF.
@@ -129,7 +129,7 @@ _Modern_ also has an additional template-specific setting:
 
 ### Buyer Information
 
-![A close-up screenshot of the mid section of Modern, with numbers one through five positioned on the invoice area, and controlled by the numbered settings documented in the Buyer Information section.](https://resources.gravitypdf.com/uploads/2023/07/3-Buyer-Information-Classic.png)
+![A close-up screenshot of the mid section of Modern, with numbers one through five positioned on the invoice area, and controlled by the numbered settings documented in the Buyer Information section.](https://resources.gravitypdf.com/uploads/2023/07/3-Buyer-Information-Modern.png)
 
 #### Buyer Name (1)
 * Provide the name of the individual or company making the purchase.
@@ -158,7 +158,7 @@ Gravity Forms doesn't natively support taxes [for Pricing fields](https://docs.g
 
 All Gravity PDF Invoices natively support tax-inclusive pricing, and you are able to set individual tax rates for each product (or disable taxes for a product entirely). If you require tax-exclusive pricing, [the Gravity Perks eCommerce Fields perk includes a Tax field, and is fully supported by Gravity PDF Invoices](#gravity-forms-ecommerce-fields).
 
-![A screenshot of Modern, with numbers one through seven positioned on the invoice area, and controlled by the numbered settings documented in the Tax Settings section.](https://resources.gravitypdf.com/uploads/2023/07/4-Tax-Settings-Classic.png)
+![A screenshot of Modern, with numbers one through seven positioned on the invoice area, and controlled by the numbered settings documented in the Tax Settings section.](Tax Settings - Modern)
 
 #### Enable Tax Inclusive Pricing
 * Automatically calculate the taxes that apply to your products using the Default Tax Rate, and any modifiers.
@@ -168,7 +168,7 @@ All Gravity PDF Invoices natively support tax-inclusive pricing, and you are abl
 * Taxes can be disabled on a per-product basis using the Custom CSS Class `tax-0`. Do not include the label `-{label}` when disabling taxes this way.
 * If you have the [Gravity Wiz eCommerce Fields perk](#gravity-forms-ecommerce-fields) activated on your website, tax-inclusive pricing is automatically disabled when a Tax field is included in the form.
 
-![A screenshot of the Gravity Forms Editor with a Product field selected, the Custom CSS Class setting is highlighted in the Field Settings section, the value of the setting shows tax-7.25-California, which is how you define multiple tax rates in the invoice.](https://resources.gravitypdf.com/uploads/2023/07/5-Tax-Inclusive-Pricing-Classic.png)
+![A screenshot of the Gravity Forms Editor with a Product field selected, the Custom CSS Class setting is highlighted in the Field Settings section, the value of the setting shows tax-7.25-California, which is how you define multiple tax rates in the invoice.](https://resources.gravitypdf.com/uploads/2023/07/5-Tax-Inclusive-Pricing-Modern.png)
 
 #### Default Tax Name (1)
 * Provide the name of the default tax being applied to products and shipping fields  ([if taxes on shipping is enabled](#tax-shipping-5)). For example, _Sales Tax_ in the US, _VAT_ in Europe, _GST_ in Australia.
@@ -209,13 +209,13 @@ All Gravity PDF Invoices natively support tax-inclusive pricing, and you are abl
 
 ### Extras
 
-![A screenshot focused on the bottom half of Modern, with numbers one through four positioned on the invoice area, and controlled by the numbered settings documented in the Extras section.](https://resources.gravitypdf.com/uploads/2023/07/7-Extras-Classic-v1.png)
+![A screenshot focused on the bottom half of Modern, with numbers one through four positioned on the invoice area, and controlled by the numbered settings documented in the Extras section.](https://resources.gravitypdf.com/uploads/2023/07/7-Extras-Modern.png)
 
 #### Discounts (1)
 * By default, any discounts included via Gravity Forms Coupon field, or Gravity Wiz's Discount field, will be totaled and shown alongside the [Discount Label](#discount-label-13) (see image above for an example).
 * If you enable the Itemized Discounts / Coupons setting, any discounts that apply will be shown individually, and not grouped together (see image below for an example).
 
-![A screenshot focused on the bottom half of Modern, and showing individual discount amounts, which can be configured with the Itemized Discounts / Coupons setting.](https://resources.gravitypdf.com/uploads/2023/07/6-Discounts-Classic.png)
+![A screenshot focused on the bottom half of Modern, and showing individual discount amounts, which can be configured with the Itemized Discounts / Coupons setting.](https://resources.gravitypdf.com/uploads/2023/07/6-Discounts-Modern.png)
 
 #### Watermark (2)
 * You can include a text watermark in the invoice, which will display diagonally across the PDF from the bottom-left to the top-right corner.
@@ -232,7 +232,7 @@ All Gravity PDF Invoices natively support tax-inclusive pricing, and you are abl
 
 ### Labels
 
-![A screenshot of Modern, with numbers one through fourteen positioned on the invoice area, and controlled by the numbered settings documented in the Labels section.](https://resources.gravitypdf.com/uploads/2023/07/8-Labels-Classic.png)
+![A screenshot of Modern, with numbers one through fourteen positioned on the invoice area, and controlled by the numbered settings documented in the Labels section.](https://resources.gravitypdf.com/uploads/2023/07/8-Labels-Modern.png)
 
 All text in the PDF can be easily changed. By default, the labels are displayed in English, but you can easily translate them. Many elements in the PDF can be disabled by saving a blank label.
 
@@ -313,7 +313,7 @@ You can easily add the invoice as an attachment in your Notification emails. Fir
 
 <a href="https://gravitywiz.com/documentation/gravity-forms-ecommerce-fields/?ref=78" rel="sponsored">This perk adds new eCommerce features to Gravity Forms</a>, including Tax, Discounts, and Subtotal fields. We recommend using this perk If you require tax-exclusive pricing in your invoices (the enhanced Discount field is handy, too).
 
-![A screenshot of the Gravity Forms Editor with a Gravity Forms eCommerce Fields Tax field selected, an arrow points to the Tax Amount setting in the Field Settings section, the value of the setting shows 7.25%.](https://resources.gravitypdf.com/uploads/2023/07/9-eCommerce-Field-Classic.png)
+![A screenshot of the Gravity Forms Editor with a Gravity Forms eCommerce Fields Tax field selected, an arrow points to the Tax Amount setting in the Field Settings section, the value of the setting shows 7.25%.](https://resources.gravitypdf.com/uploads/2023/07/9-Gravity-Forms-eCommerce-Field-Modern.png)
 
 The Tax field allows you to apply taxes on all products/shipping fields, or you can selectively include/exclude fields from taxes. For multiple rates, you can add additional Tax fields to your form, as well as conditionally show/hide the field. The perk auto-calculates the correct taxes for an entry based on the rules, conditions, and product quantities selected.
 
@@ -326,7 +326,7 @@ When a Tax field is detected in the form, all tax-inclusive invoice settings are
 ### Gravity Forms Unique ID
 <a href="https://gravitywiz.com/documentation/gravity-forms-unique-id/?ref=78" rel="sponsored">The Unique ID Gravity Wiz perk</a> allows you to generate a sequential or alphanumeric ID for each entry on a per-form basis. To use with PDF Invoices, replace the entry ID merge tag in the <a href="#invoice-number-2">Invoice Number</a> setting with the Unique ID equivalent.
 
-![A screenshot of the Gravity Forms Editor with a Unique ID field selected, an arrow points to the Field Settings section, which has been configured as a sequential number with a prefix of 'PDF' and a suffix of 'Y23'.](https://resources.gravitypdf.com/uploads/2023/07/10-Unique-ID-Classic.png)
+![A screenshot of the Gravity Forms Editor with a Unique ID field selected, an arrow points to the Field Settings section, which has been configured as a sequential number with a prefix of 'PDF' and a suffix of 'Y23'.](https://resources.gravitypdf.com/uploads/2023/07/10-Unique-ID-Modern.png)
 
 ### Gravity Forms Inventory
 
