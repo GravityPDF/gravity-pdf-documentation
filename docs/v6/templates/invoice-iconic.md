@@ -45,7 +45,7 @@ _Iconic_ also has these additional template-specific settings:
 
 #### Show Currency Code
 * Toggle the Currency Code (e.g. USD, EUR, AUD) on / off in the Invoice Summary section.
-* The default value is "on"
+* The default value is "off"
 
 #### Business Details Label
 * The label displayed above the [Business Name](#business-name-2) in the invoice.
@@ -268,40 +268,36 @@ All text in the PDF can be easily changed. By default, the labels are displayed 
 * The label displayed next to the invoice total value in the Summary Section. Leave blank to disable.
 * The default value is "Invoice Total:".
 
-#### Currency Type Label (6)
-* The label displayed next to the form's currency in the summary section (eg. USD, AUD, EUR). Leave blank to disable.
-* The default value is "Currency Type:".
-
-#### Buyer Details Label (7)
+#### Buyer Details Label (6)
 * The label displayed above the Buyer Name / Contact Info values.
 * The default value is "Buyer Details:".
 
-#### Quantity Column Label (8)
+#### Quantity Column Label (7)
 * The label displayed in the Product Table header for the Quantity column. The column cannot be removed.
 * The default value is "Qty".
 
-#### Description Column Label (9)
+#### Description Column Label (8)
 * The label displayed in the Product Table header for the Description column. The column cannot be removed.
 * The default value is "Description".
 
-#### Unit Price Column Label (10)
+#### Unit Price Column Label (9)
 * The label displayed in the Product Table header for the Unit Price column. The column cannot be removed.
 * The default value is "Unit Price".
 
-#### Total Column Label (11)
+#### Total Column Label (10)
 * The label displayed in the Product Table header for the Total column. The column cannot be removed.
 * The default value is "Total".
 
-#### Subtotal Label (12)
+#### Subtotal Label (11)
 * The label displayed next to the invoice subtotal value (the total cost for all products, excluding shipping and taxes), after the line items. Leave blank to disable.
 * The default value is "Subtotal".
 
-#### Discount Label (13)
+#### Discount Label (12)
 * The label displayed next to the total discounts applied to the order (using the Coupons or Discount field).
 * If there are no discounts, or the [Itemize Discounts / Coupons](#discounts-1) setting is enabled, this label will not be included in the invoice.
 * The default value is "Discount".
 
-#### Overall Total Label (14)
+#### Overall Total Label (13)
 * The label displayed next to the invoice total value (the overall cost), after the line items. The label/value cannot be removed.
 * The default value is "Total".
 
