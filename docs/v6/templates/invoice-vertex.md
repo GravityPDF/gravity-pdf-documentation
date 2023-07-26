@@ -1,20 +1,16 @@
 ---
-title: "Invoice Iconic Premium Template: How to Install and Configure"
-sidebar_label: "Iconic"
-description: "Invoice Iconic is a vibrant PDF invoice template for Gravity PDF and Gravity Forms."
+title: "Invoice Vertex Premium Template: How to Install and Configure"
+sidebar_label: "Vertex"
+description: "Invoice Vertex is a condensed PDF invoice template for Gravity PDF and Gravity Forms."
 ---
 
-![A stack of Invoice Iconic documents printed on A4 paper, leaning against a wall at a 10-degree angle.](https://resources.gravitypdf.com/uploads/2023/07/Invoice-Iconic-Featured-Image.jpg)
+![A stack of Invoice Vertex documents printed on A4 paper, leaning against a wall at a 10-degree angle.](https://resources.gravitypdf.com/uploads/2023/07/Invoice-Vertex-Featured-Image.jpg)
 
-_Invoice Iconic_ is a vibrant invoice template that [can be purchased from the Gravity PDF Template Shop](https://gravitypdf.com/shop/invoice-iconic/). This guide walks you through the process of installing and configuring _Iconic_ to its full potential.
+_Invoice Vertex_ is an condensed invoice template that [can be purchased from the Gravity PDF Template Shop](https://gravitypdf.com/shop/invoice-vertex/). This guide walks you through the process of installing and configuring _Vertex_ to its full potential.
 
 ## Installation
 
 [Please follow our installation guide](installing-upgrading-premium-templates.md), which provides initial instructions for setting up and configuring your premium template.
-
-:::note
-This documentation is for _Iconic_ version 2.x, which adds [multi-rate tax-inclusive pricing](#enable-tax-inclusive-pricing), grouped or itemized discounts, free trial, localized dates, and [Gravity Wiz eCommerce Fields support](#gravity-forms-ecommerce-fields). Looking for the 1.x documentation? [You can find the _Iconic_ v1 docs here](../../v5/shop-pdf-template-invoice-iconic.md).
-:::
 
 ## Limitations
 
@@ -28,7 +24,7 @@ The 2.x invoice templates require Gravity PDF version 6.0 or higher to correctly
 
 All PDF templates have common settings – such as font, security, and notification attachments – and we recommend you [review the PDF setup guide](../users/setup-pdf.md) to familiarize yourself. Common settings are found in the [_General_](../users/setup-pdf.md#general-section), [_Appearance_](../users/setup-pdf.md#appearance-section), and [_Advanced_](../users/setup-pdf.md#advanced-section) panels. All invoice-specific settings can be found in the _Template_ panel.
 
-Below you'll find detailed information about each Template setting available to _Iconic_. The invoice PDF configuration is split up into six sections:
+Below you'll find detailed information about each Template setting available to _Vertex_. The invoice PDF configuration is split up into six sections:
 
 -   [Company Information](#company-information)
 -   [Invoice Settings](#invoice-settings)
@@ -37,27 +33,19 @@ Below you'll find detailed information about each Template setting available to 
 -   [Extras](#extras)
 -   [Labels](#labels)
 
-_Iconic_ also has these additional template-specific settings:
+_Vertex_ also has these additional template-specific settings:
 
-#### Highlight Color
-* The background color for the Invoice Summary section.
-* The default value is `#eeeeee`
+#### Primary Color
+* The border color used in the Summary Section, Product Table column titles, and [Overall Total](#overall-total-label-14).
+* The default value is `#1228b7`
 
-#### Show Currency Code
-* Toggle the Currency Code (e.g. USD, EUR, AUD) on / off in the Invoice Summary section.
-* The default value is "off"
-
-#### Business Details Label
-* The label displayed above the [Business Name](#business-name-2) in the invoice.
-* The default value is "Business Details".
-
-#### Business Address Label
-* The label displayed above the [Business Address](#business-address-3) in the invoice.
-* The default value is "Business Address".
+#### Secondary Color
+* The background color used in the Summary Section, Product Table column titles, and [Overall Total](#overall-total-label-14).
+* The default value is `#F3F4FA`
 
 ### Company Information
 
-![A close-up screenshot of the header section of Iconic, with numbers one through seven positioned on the invoice area, and controlled by the numbered settings documented in the Company Information section.](https://resources.gravitypdf.com/uploads/2023/07/1-Company-Information-Iconic.png)
+![A close-up screenshot of the header section of Vertex, with numbers one through seven positioned on the invoice area, and controlled by the numbered settings documented in the Company Information section.](https://resources.gravitypdf.com/uploads/2023/07/1-Company-Information-Vertex.png)
 
 #### Logo (1)
 * This image is included at the top of the generated PDF invoice.
@@ -96,7 +84,7 @@ _Iconic_ also has these additional template-specific settings:
 
 ### Invoice Settings
 
-![A close-up screenshot of the header section of Iconic, with numbers one through five positioned on the invoice area, and controlled by the numbered settings documented in the Invoice Settings section.](https://resources.gravitypdf.com/uploads/2023/07/2-Invoice-Settings-Iconic.png)
+![A close-up screenshot of the header section of Vertex, with numbers one through five positioned on the invoice area, and controlled by the numbered settings documented in the Invoice Settings section.](https://resources.gravitypdf.com/uploads/2023/07/2-Invoice-Settings-Vertex.png)
 
 #### Invoice Number Prefix (1)
 * This is an optional field that appears before the [Invoice Number](#invoice-number-2) in the PDF.
@@ -141,7 +129,7 @@ _Iconic_ also has these additional template-specific settings:
 
 ### Buyer Information
 
-![A close-up screenshot of the mid section of Iconic, with numbers one through five positioned on the invoice area, and controlled by the numbered settings documented in the Buyer Information section.](https://resources.gravitypdf.com/uploads/2023/07/3-Buyer-Information-Iconic.png)
+![A close-up screenshot of the mid section of Vertex, with numbers one through five positioned on the invoice area, and controlled by the numbered settings documented in the Buyer Information section.](https://resources.gravitypdf.com/uploads/2023/07/3-Buyer-Information-Vertex.png)
 
 #### Buyer Name (1)
 * Provide the name of the individual or company making the purchase.
@@ -170,7 +158,7 @@ Gravity Forms doesn't natively support taxes [for Pricing fields](https://docs.g
 
 All Gravity PDF Invoices natively support tax-inclusive pricing, and you are able to set individual tax rates for each product (or disable taxes for a product entirely). If you require tax-exclusive pricing, [the Gravity Perks eCommerce Fields perk includes a Tax field, and is fully supported by Gravity PDF Invoices](#gravity-forms-ecommerce-fields).
 
-![A screenshot of Iconic, with numbers one through seven positioned on the invoice area, and controlled by the numbered settings documented in the Tax Settings section.](https://resources.gravitypdf.com/uploads/2023/07/4-Tax-Settings-Iconic.png)
+![A screenshot of Vertex, with numbers one through seven positioned on the invoice area, and controlled by the numbered settings documented in the Tax Settings section.](https://resources.gravitypdf.com/uploads/2023/07/4-Tax-Settings-Vertex.png)
 
 #### Enable Tax Inclusive Pricing
 * Automatically calculate the taxes that apply to your products using the Default Tax Rate, and any modifiers.
@@ -180,7 +168,7 @@ All Gravity PDF Invoices natively support tax-inclusive pricing, and you are abl
 * Taxes can be disabled on a per-product basis using the Custom CSS Class `tax-0`. Do not include the label `-{label}` when disabling taxes this way.
 * If you have the [Gravity Wiz eCommerce Fields perk](#gravity-forms-ecommerce-fields) activated on your website, tax-inclusive pricing is automatically disabled when a Tax field is included in the form.
 
-![A screenshot of the Gravity Forms Editor with a Product field selected, the Custom CSS Class setting is highlighted in the Field Settings section, the value of the setting shows tax-7.25-California, which is how you define multiple tax rates in the invoice.](https://resources.gravitypdf.com/uploads/2023/07/5-Tax-Inclusive-Pricing-Classic-1.png)
+![A screenshot of the Gravity Forms Editor with a Product field selected, the Custom CSS Class setting is highlighted in the Field Settings section, the value of the setting shows tax-7.25-California, which is how you define multiple tax rates in the invoice.](https://resources.gravitypdf.com/uploads/2023/07/5-Tax-Inclusive-Pricing-Vertex-1.png)
 
 #### Default Tax Name (1)
 * Provide the name of the default tax being applied to products and shipping fields  ([if taxes on shipping is enabled](#tax-shipping-5)). For example, _Sales Tax_ in the US, _VAT_ in Europe, _GST_ in Australia.
@@ -221,13 +209,13 @@ All Gravity PDF Invoices natively support tax-inclusive pricing, and you are abl
 
 ### Extras
 
-![A screenshot focused on the bottom half of Iconic, with numbers one through four positioned on the invoice area, and controlled by the numbered settings documented in the Extras section.](https://resources.gravitypdf.com/uploads/2023/07/7-Extras-Iconic.png)
+![A screenshot focused on the bottom half of Vertex, with numbers one through four positioned on the invoice area, and controlled by the numbered settings documented in the Extras section.](https://resources.gravitypdf.com/uploads/2023/07/7-Extras-Vertex.png)
 
 #### Discounts (1)
 * By default, any discounts included via Gravity Forms Coupon field, or Gravity Wiz's Discount field, will be totaled and shown alongside the [Discount Label](#discount-label-13) (see image above for an example).
 * If you enable the Itemized Discounts / Coupons setting, any discounts that apply will be shown individually, and not grouped together (see image below for an example).
 
-![A screenshot focused on the bottom half of Iconic, and showing individual discount amounts, which can be configured with the Itemized Discounts / Coupons setting.](https://resources.gravitypdf.com/uploads/2023/07/6-Discounts-Iconic.png)
+![A screenshot focused on the bottom half of Vertex, and showing individual discount amounts, which can be configured with the Itemized Discounts / Coupons setting.](https://resources.gravitypdf.com/uploads/2023/07/6-Discounts-Vertex.png)
 
 #### Watermark (2)
 * You can include a text watermark in the invoice, which will display diagonally across the PDF from the bottom-left to the top-right corner.
@@ -244,7 +232,7 @@ All Gravity PDF Invoices natively support tax-inclusive pricing, and you are abl
 
 ### Labels
 
-![A screenshot of Iconic, with numbers one through thirteen positioned on the invoice area, and controlled by the numbered settings documented in the Labels section.](https://resources.gravitypdf.com/uploads/2023/07/8-Labels-Iconic-v2.png)
+![A screenshot of Vertex, with numbers one through thirteen positioned on the invoice area, and controlled by the numbered settings documented in the Labels section.](https://resources.gravitypdf.com/uploads/2023/07/8-Labels-Vertex.png)
 
 All text in the PDF can be easily changed. By default, the labels are displayed in English, but you can easily translate them. Many elements in the PDF can be disabled by saving a blank label.
 
@@ -260,13 +248,13 @@ All text in the PDF can be easily changed. By default, the labels are displayed 
 * The label displayed next to the [Invoice Due Date](#invoice-due-date-5) value.
 * The default value is "Due Date:".
 
-#### Invoice Number Label (4)
-* The label displayed next to the [Invoice Number](#invoice-number-2) value. Leave blank to disable.
-* The default value is "Invoice Number:".
-
-#### Invoice Total Cost Summary Label (5)
+#### Invoice Total Cost Summary Label (4)
 * The label displayed next to the invoice total value in the Summary Section. Leave blank to disable.
 * The default value is "Invoice Total:".
+
+#### Currency Type Label (5)
+* The label displayed next to the form's currency in the summary section (eg. USD, AUD, EUR). Leave blank to disable.
+* The default value is "Currency Type:".
 
 #### Buyer Details Label (6)
 * The label displayed above the Buyer Name / Contact Info values.
@@ -303,7 +291,7 @@ All text in the PDF can be easily changed. By default, the labels are displayed 
 
 ## Recommended Font
 
-_Iconic_ comes bundled with _Roboto Condensed_ which is an open source licensed font (Apache License, Version 2.0). For the best results, we recommend using _Roboto Condensed_ at 10pt. Set the PDF font [in the Appearance section](../users/setup-pdf.md#appearance-section).
+_Vertex_ comes bundled with _Barlow Condensed_ which is an open source licensed font (SIL Open Font License, Version 1.1). For the best results, we recommend using _Barlow Condensed_ at 10pt. Set the PDF font [in the Appearance section](../users/setup-pdf.md#appearance-section).
 
 ## Viewing PDF
 
@@ -321,7 +309,7 @@ You can easily add the invoice as an attachment in your Notification emails. Fir
 
 <a href="https://gravitywiz.com/documentation/gravity-forms-ecommerce-fields/?ref=78" rel="sponsored">This perk adds new eCommerce features to Gravity Forms</a>, including Tax, Discounts, and Subtotal fields. We recommend using this perk If you require tax-exclusive pricing in your invoices (the enhanced Discount field is handy, too).
 
-![A screenshot of the Gravity Forms Editor with a Gravity Forms eCommerce Fields Tax field selected, an arrow points to the Tax Amount setting in the Field Settings section, the value of the setting shows 7.25%.](https://resources.gravitypdf.com/uploads/2023/07/9-eCommerce-Field-Iconic.png)
+![A screenshot of the Gravity Forms Editor with a Gravity Forms eCommerce Fields Tax field selected, an arrow points to the Tax Amount setting in the Field Settings section, the value of the setting shows 7.25%.](https://resources.gravitypdf.com/uploads/2023/07/9-eCommerce-Field-Vertex-1.png)
 
 The Tax field allows you to apply taxes on all products/shipping fields, or you can selectively include/exclude fields from taxes. For multiple rates, you can add additional Tax fields to your form, as well as conditionally show/hide the field. The perk auto-calculates the correct taxes for an entry based on the rules, conditions, and product quantities selected.
 
@@ -334,7 +322,7 @@ When a Tax field is detected in the form, all tax-inclusive invoice settings are
 ### Gravity Forms Unique ID
 <a href="https://gravitywiz.com/documentation/gravity-forms-unique-id/?ref=78" rel="sponsored">The Unique ID Gravity Wiz perk</a> allows you to generate a sequential or alphanumeric ID for each entry on a per-form basis. To use with PDF Invoices, replace the entry ID merge tag in the <a href="#invoice-number-2">Invoice Number</a> setting with the Unique ID equivalent.
 
-![A screenshot of the Gravity Forms Editor with a Unique ID field selected, an arrow points to the Field Settings section, which has been configured as a sequential number with a prefix of 'PDF' and a suffix of 'Y23'.](https://resources.gravitypdf.com/uploads/2023/07/10-Unique-ID-Iconic.png)
+![A screenshot of the Gravity Forms Editor with a Unique ID field selected, an arrow points to the Field Settings section, which has been configured as a sequential number with a prefix of 'PDF' and a suffix of 'Y23'.](https://resources.gravitypdf.com/uploads/2023/07/10-Unique-ID-Vertex-1.png)
 
 ### Gravity Forms Inventory
 
@@ -358,26 +346,7 @@ Gravity Forms natively supports user-defined pricing for Product fields. But wha
 
 ## Upgrading from v1.x
 
-For existing customers who'd like to take advantage of the new features included in v2, you'll first need to manually upgrade your Invoice PDF template(s). If you don't require any of the new features, you may continue with the v1 template; we will provide support for both v1 and v2 for the foreseeable future.
-
-Before you complete the upgrade, take note of the changes that have been made to all v2 invoices:
-
-1. Gravity PDF v6 or higher is required.
-2. The Basic Tax feature has been renamed [Tax Inclusive Pricing](#enable-tax-inclusive-pricing).
-3. To support the new multi-tax rate feature, the Tax Name and Tax Rate settings have been renamed [Default Tax Name](#default-tax-name-1) and [Default Tax Rate](#default-tax-rate-2), respectively.
-4. [You can override the Default Tax Rate on a per-product field basis](#enable-tax-inclusive-pricing) using the Custom CSS Class `tax-{rate}-{label}` or `tax-0`.
-5. To support the new multi-tax rate feature, the Tax Rate Label setting has been removed and will no longer appear in the Invoice Summary. Instead, the rate will be shown alongside the tax label in the Invoice Table.
-6. A new [Tax Summary Label](#tax-summary-label-3) setting has been added, and will be used in this section of the invoice alongside the total tax value.
-7. A new [Unit Tax Column Label](#unit-tax-column-label-4) setting has been added, which is used in the tax column of the Invoice Table. The Unit Tax Column Label defaults to the text "Unit Tax".
-8. A new setting [Itemize Discounts / Coupons](#discounts-1) has been added. By default, the invoice will group any discounts into a single total. When the setting is enabled, all discounts will be shown in the invoice individually.
-9. A new [Discount Label](#discount-label-13) setting has been added. It is used if your form includes a Coupon or Discount field, and you haven't enabled the [Itemize Discounts / Coupons](#discounts-1) setting. It defaults to the text "Discount".
-10. Support for tax-exclusive pricing via [Gravity Wiz's eCommerce Field perk](#gravity-forms-ecommerce-fields) has been added. When a Tax field is added to the form, the [Tax Inclusive Pricing feature](#enable-tax-inclusive-pricing) is disabled.
-11. Support for Free Trial Gravity Forms subscriptions has been added to the invoice.
-12. The [Date Format](#date-format-4) setting includes 20 new choices, and the date will be automatically localized using your WordPress Site Language setting. The default date will automatically match your WordPress Date Format setting.
-
-Before upgrading, **we strongly recommend taking a full backup of your website**. [After you complete the upgrade](installing-upgrading-premium-templates.md#upgrading-premium-template), you should review the PDF Invoices being generated by each of your forms, and ensure the output is acceptable. For customers who have translated the invoices, you may need to edit the invoice PDF settings and translate the new labels that have been added.
-
-If there is an issue with your v2 invoices after upgrading, restore the site from the backup you took. You can also attempt to downgrade back to the v1 invoice template, [which can be downloaded from your GravityPDF.com account](https://gravitypdf.com/account/downloads/).
+_Vertex_ is a new PDF Invoice introduced for the v2 release, and there was never a v1 edition of the template.
 
 ## Developers
 

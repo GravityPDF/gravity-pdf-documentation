@@ -144,7 +144,9 @@ module.exports = {
       appId: 'NKKEAC9I6I',
       apiKey: '0b9c90c6e089769be381f47196dbb313',
       indexName: 'gravitypdf',
+      contextualSearch: false,
       searchParameters: {},
+      searchPagePath: false,
     },
   },
   presets: [
