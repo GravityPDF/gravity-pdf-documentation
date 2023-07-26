@@ -232,7 +232,7 @@ All Gravity PDF Invoices natively support tax-inclusive pricing, and you are abl
 
 ### Labels
 
-![A screenshot of Nova, with numbers one through fourteen positioned on the invoice area, and controlled by the numbered settings documented in the Labels section.](https://resources.gravitypdf.com/uploads/2023/07/8-Labels-Nova.png)
+![A screenshot of Nova, with numbers one through twelve positioned on the invoice area, and controlled by the numbered settings documented in the Labels section.](https://resources.gravitypdf.com/uploads/2023/07/8-Labels-Nova.png)
 
 All text in the PDF can be easily changed. By default, the labels are displayed in English, but you can easily translate them. Many elements in the PDF can be disabled by saving a blank label.
 
