@@ -170,7 +170,7 @@ Gravity Forms doesn't natively support taxes [for Pricing fields](https://docs.g
 
 All Gravity PDF Invoices natively support tax-inclusive pricing, and you are able to set individual tax rates for each product (or disable taxes for a product entirely). If you require tax-exclusive pricing, [the Gravity Perks eCommerce Fields perk includes a Tax field, and is fully supported by Gravity PDF Invoices](#gravity-forms-ecommerce-fields).
 
-![A screenshot of Iconic, with numbers one through seven positioned on the invoice area, and controlled by the numbered settings documented in the Tax Settings section.]([https://resources.gravitypdf.com/uploads/2023/07/4-Tax-Settings-Classic.png](https://resources.gravitypdf.com/uploads/2023/07/4-Tax-Settings-Iconic.png))
+![A screenshot of Iconic, with numbers one through seven positioned on the invoice area, and controlled by the numbered settings documented in the Tax Settings section.](https://resources.gravitypdf.com/uploads/2023/07/4-Tax-Settings-Iconic.png)
 
 #### Enable Tax Inclusive Pricing
 * Automatically calculate the taxes that apply to your products using the Default Tax Rate, and any modifiers.
