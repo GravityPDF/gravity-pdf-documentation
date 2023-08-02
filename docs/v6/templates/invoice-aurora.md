@@ -4,7 +4,7 @@ sidebar_label: "Aurora"
 description: "Invoice Aurora is a sleek PDF invoice template for Gravity PDF and Gravity Forms."
 ---
 
-![A stack of Invoice Aurora documents printed on A4 paper, leaning against a wall at a 10-degree angle.](https://resources.gravitypdf.com/uploads/2023/07/Invoice-Aurora-Featured-Image.jpg)
+![A stack of Invoice Aurora documents printed on A4 paper, leaning against a wall at a 10-degree angle.](https://resources.gravitypdf.com/uploads/2023/08/0-Invoice-Aurora-Featured-Image-v2.jpg)
 
 _Invoice Aurora_ is a sleek invoice template that [can be purchased from the Gravity PDF Template Shop](https://gravitypdf.com/shop/invoice-aurora/). This guide walks you through the process of installing and configuring _Aurora_ to its full potential.
 
@@ -166,7 +166,7 @@ Gravity Forms doesn't natively support taxes [for Pricing fields](https://docs.g
 
 All Gravity PDF Invoices natively support tax-inclusive pricing, and you are able to set individual tax rates for each product (or disable taxes for a product entirely). If you require tax-exclusive pricing, [the Gravity Perks eCommerce Fields perk includes a Tax field, and is fully supported by Gravity PDF Invoices](#gravity-forms-ecommerce-fields).
 
-![A screenshot of Aurora, with numbers one through seven positioned on the invoice area, and controlled by the numbered settings documented in the Tax Settings section.](https://resources.gravitypdf.com/uploads/2023/07/4-Tax-Settings-Aurora.png)
+![A screenshot of Aurora, with numbers one through seven positioned on the invoice area, and controlled by the numbered settings documented in the Tax Settings section.](https://resources.gravitypdf.com/uploads/2023/08/4-Tax-Settings-Aurora-v2.png)
 
 #### Enable Tax Inclusive Pricing
 * Automatically calculate the taxes that apply to your products using the Default Tax Rate, and any modifiers.
@@ -217,7 +217,7 @@ All Gravity PDF Invoices natively support tax-inclusive pricing, and you are abl
 
 ### Extras
 
-![A screenshot focused on the bottom half of Aurora, with numbers one through four positioned on the invoice area, and controlled by the numbered settings documented in the Extras section.](https://resources.gravitypdf.com/uploads/2023/07/6-Extras-Aurora.png)
+![A screenshot focused on the bottom half of Aurora, with numbers one through four positioned on the invoice area, and controlled by the numbered settings documented in the Extras section.](https://resources.gravitypdf.com/uploads/2023/08/6-Extras-Aurora-v2.png)
 
 #### Discounts (1)
 * By default, any discounts included via Gravity Forms Coupon field, or Gravity Wiz's Discount field, will be totaled and shown alongside the [Discount Label](#discount-label-13) (see image above for an example).
