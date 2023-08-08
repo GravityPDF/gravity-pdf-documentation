@@ -484,6 +484,24 @@ if ( is_array( $form_data['field']['48_path'] ) ) { /* make sure you use the PAT
          }
     }
 }
+
+/* Since Gravity PDF 6.7, the secured URL of each file is included in the `$id_secured` field key */
+if ( is_array( $form_data['field']['48_path'] ) ) { /* make sure you use the PATH */
+	$allowed_extensions = [ 'jpg', 'jpeg', 'png', 'gif' ];
+
+	foreach ( $form_data['field']['48_path'] as $key => $path ) {
+		$extension = strtolower( pathinfo( $path, PATHINFO_EXTENSION ) );
+
+		if ( in_array( $extension, $allowed_extensions ) && is_file( $path ) ) { /* verify path has an image extension and it exists on the server */
+			echo '<a href="' . esc_url( $form_data['field']['48_secured'][ $key ] ?? $form_data['field'][48][ $key ] ) . '"><img src="' . esc_attr( $path ) . '" width="200" /></a>';
+		}
+	}
+}
+
+if ( is_array( $form_data['field']['48_secured'] ) ) {
+    echo wp_kses( implode( '<br>', $form_data['field']['48_secured'] ), [ 'br' => true ] ); /* output secured URL of each selected item */
+}
+
 ```
 
 #### List
@@ -734,7 +752,7 @@ if ( is_array( $form_data['field']['5_name'] ) ) {
 ```
 /* 15 is the ID of our field */
 if ( ! empty( $form_data['field'][32] ) ) {
-    echo esc_html( $form_data['field'][32]['url'] );
+    echo esc_url( $form_data['field'][32]['url'] );
     echo esc_html( $form_data['field'][32]['path'] );
     echo esc_html( $form_data['field'][32]['title'] );
     echo esc_html( $form_data['field'][32]['caption'] );
@@ -743,6 +761,13 @@ if ( ! empty( $form_data['field'][32] ) ) {
     /* Output image to PDF */
     if ( is_file( $form_data['field'][32]['path'] ) ) {
         echo '<img src="' . esc_attr( $form_data['field'][32]['path'] ) . '" width="300" />'; /* best to use the path and check it exists on the server first */
+    }
+    
+    /* As of Gravity PDF 6.7 the secured URL is available */
+    echo esc_url( $form_data['field'][32]['secured_url'] );
+    
+   if ( is_file( $form_data['field'][32]['path'] ) ) {
+        echo '<a href="' . esc_url( $form_data['field'][32]['secured_url'] ?? $form_data['field'][32]['url'] ) . '"><img src="' . esc_attr( $form_data['field'][32]['path'] ) . '" width="300" /></a>';
     }
 }
 ```
