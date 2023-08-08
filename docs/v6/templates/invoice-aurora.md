@@ -4,7 +4,7 @@ sidebar_label: "Aurora"
 description: "Invoice Aurora is a sleek PDF invoice template for Gravity PDF and Gravity Forms."
 ---
 
-![A stack of Invoice Aurora documents printed on A4 paper, leaning against a wall at a 10-degree angle.](https://resources.gravitypdf.com/uploads/2023/07/Invoice-Aurora-Featured-Image.jpg)
+![A stack of Invoice Aurora documents printed on A4 paper, leaning against a wall at a 10-degree angle.](https://resources.gravitypdf.com/uploads/2023/08/0-Invoice-Aurora-Featured-Image-v2.jpg)
 
 _Invoice Aurora_ is a sleek invoice template that [can be purchased from the Gravity PDF Template Shop](https://gravitypdf.com/shop/invoice-aurora/). This guide walks you through the process of installing and configuring _Aurora_ to its full potential.
 
