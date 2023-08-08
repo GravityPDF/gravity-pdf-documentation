@@ -6,7 +6,7 @@ description: "Invoice Vertex is a condensed PDF invoice template for Gravity PDF
 
 ![A stack of Invoice Vertex documents printed on A4 paper, leaning against a wall at a 10-degree angle.](https://resources.gravitypdf.com/uploads/2023/07/Invoice-Vertex-Featured-Image.jpg)
 
-_Invoice Vertex_ is an condensed invoice template that [can be purchased from the Gravity PDF Template Shop](https://gravitypdf.com/shop/invoice-vertex/). This guide walks you through the process of installing and configuring _Vertex_ to its full potential.
+_Invoice Vertex_ is a condensed invoice template that [can be purchased from the Gravity PDF Template Shop](https://gravitypdf.com/shop/invoice-vertex/). This guide walks you through the process of installing and configuring _Vertex_ to its full potential.
 
 ## Installation
 
