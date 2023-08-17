@@ -48,9 +48,9 @@ In previous versions of Gravity PDF this setting was know as the _Name_.
 * The filename is what the generated PDF will be called when saved. For example, `My_Personal_Flyer.pdf`.
 * [Gravity Forms merge tags](https://docs.gravityforms.com/category/user-guides/merge-tags-getting-started/) are supported in the filename. Any merge tags will be converted to the appropriate value when the PDF is saved. For example, `{Name:3}_Personal_Flyer.pdf` will become `Gravity PDF_Personal_Flyer.pdf` if _Gravity PDF_ was entered into field 3 for the current entry.
 * If you use merge tags, either use a field marked required or include static text alongside the merge tag to prevent empty filenames.
-* If you have multiple PDFs configured on a single form, make sure the Filename is unique for each document, otherwise the [PDF Notification attachments](#notifications) feature and [`gfpdf_post_save_pdf` hook](../developers/actions/gfpdf_post_save_pdf.md) won't work correctly.
 * The `.pdf` extension should be excluded from the filename field (but will be automatically removed if you add it).
 * While the following characters will be saved, they are automatically converted to an underscore when generating the PDF: `/ " * ? | :`. This is to prevent problems saving the PDFs to disk on some operating systems.
+* ~~If you have multiple PDFs configured on a single form, make sure the Filename is unique for each document, otherwise the [PDF Notification attachments](#notifications) feature and [`gfpdf_post_save_pdf` hook](../developers/actions/gfpdf_post_save_pdf.md) won't work correctly.~~ From Gravity PDF v6.7, the Filename does not need to be unique.
 
 ## Optional Fields
 
