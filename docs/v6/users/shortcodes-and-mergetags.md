@@ -204,7 +204,7 @@ All modifiers are optional, and should be included after the `[id]`. They are al
 ##### Signed
 * Generate a secure PDF URL that auto-expires after a set period. Anyone with access to the signed link can view the PDF (regardless of their user privileges, if any), provided the link hasn't expired.
 * Signed PDF URLs is an alternative authentication method to the default IP-based authentication. It functions correctly even if you've [disabled IP addresses using Gravity Forms Personal Data feature](https://docs.gravityforms.com/personal-data-settings/).
-* You can pass an optional expiration value (separated by a comma `,`) which changes the default signed URL timeout period. [Valid formats can be found in the PHP documentation](https://www.php.net/manual/en/datetime.formats.relative.php).
+* You can pass an optional expiration value (separated by a comma `,`) which changes the default signed URL timeout period. [Valid formats can be found in the PHP documentation](https://www.php.net/manual/en/datetime.formats.php#datetime.formats.relative).
 * If no expiration value is included, the signed URL will fallback to the global [Logged Out Timeout](global-settings.md#logged-out-timeout) setting (20-minutes by default).
 * _Example:_ `{Report:pdf:6063bd0362dda:signed}`
 * _Example:_ `{Report:pdf:6063bd0362dda:signed,5 minutes}`
