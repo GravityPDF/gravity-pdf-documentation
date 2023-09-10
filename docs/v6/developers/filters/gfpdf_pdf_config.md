@@ -20,7 +20,7 @@ You also have the option to use the `gfpdf_pdf_config_$form_id` filter.
 This snippet shows you how you can easily update all your forms from a legacy v3 template to a v4 template, without having to manually change the settings in the UI.
 
 ```
-add_action( 'gfpdf_pdf_config', function( $settings, $form_id ) {
+add_filter( 'gfpdf_pdf_config', function( $settings, $form_id ) {
 
 	/* Change from the legacy v3 template to a v4 template */
 	if( 'default-template' === $settings['template'] ) {
@@ -35,7 +35,7 @@ add_action( 'gfpdf_pdf_config', function( $settings, $form_id ) {
 While the PDF master password setting has been removed from the UI, you can manually set this using the following snippet:
 
 ```
-add_action( 'gfpdf_pdf_config', function( $settings, $form_id ) {
+add_filter( 'gfpdf_pdf_config', function( $settings, $form_id ) {
 
 	/* When security is on we'll use our own master password instead of a random one */
 	if( $settings['security'] === 'Yes' ) {
@@ -50,7 +50,7 @@ add_action( 'gfpdf_pdf_config', function( $settings, $form_id ) {
 You can also specifically target a form:
 
 ```
-add_action( 'gfpdf_pdf_config_2', function( $settings ) { }, 10 );
+add_filter( 'gfpdf_pdf_config_2', function( $settings ) { }, 10 );
 ```
 
 ## Source Code
