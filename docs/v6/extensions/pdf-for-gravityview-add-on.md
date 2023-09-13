@@ -203,7 +203,7 @@ The following settings allow you to customize the appearance, display, and funct
 * This setting is disabled by default
 
 ##### Use Smart Loading Indicator
-* When [Force Download](#force-download) is on, this feature will display a user-friendly loading indicator to a user while the PDF is generated.
+* When [Force Download](#force-download) and this setting is toggled on, a user-friendly loading indicator is shown to the user while the PDF is generated/downloaded.
 * This setting is only available when the [Gravity PDF Enhanced Download extension](https://gravitypdf.com/shop/enhanced-download-add-on/) is installed.
 
 ##### Show Label
