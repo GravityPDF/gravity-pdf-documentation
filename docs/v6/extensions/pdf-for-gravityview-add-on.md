@@ -148,6 +148,32 @@ _PDF for GravityView_ is deeply integrated into GravityView, and most configurat
 * To inspect the HTML used for a PDF, administrator users can [enable PDF Debug Mode](../users/global-settings.md#debug-mode) and then [add the HTML helper parameter](../developers/helper-parameters.md#html1) to the Single Entry View PDF URL.
 * Be aware that [only a subset of CSS is supported by Gravity PDF](../developers/pdf-features/supported-html-and-css.md#css-support).
 
+### Watermark Settings
+
+If the [Gravity PDF Watermark extension](watermark-add-on.md) is activated on your site, you'll be able to add a text or image watermark to your PDFs. The following settings are available:
+
+#### Enable Watermark
+*  Toggle to enable the text/image watermark feature.
+
+#### Image Watermark
+*  Display an image watermark on each page of your PDF, vertically and horizontally centred.
+*  For the best results, use a transparent PNG image the same dimensions as the [Paper Size](#paper-size).
+*  To ensure your PDF generates quickly and the PDF file size stays small, we recommend using an image under 1MB. [Try run the image through a compression tool like TinyPNG](https://tinypng.com/).
+
+#### Text Watermark
+*  Display a text watermark diagonally-centred on each page of your PDF.
+*  Valid UTF-8 character can be displayed, provided the [Watermark Font](#watermark-font) supports it.
+*  Text and Image Watermarks can be used concurrently.
+*  Merge tags are supported
+
+#### Watermark Font
+*  Select the font to use for the [Text Watermark](#text-watermark).
+*  Additional fonts can be installed [via the Font Manager](../users/custom-fonts.md).
+
+#### Opacity
+*  Control the transparency of both the Image and Text Watermarks by selecting a value between 0 and 100%.
+*  A 0% opacity is completely transparent, while 100% opacity is not transparent at all.
+
 ### Fields
 
 _PDF for GravityView_ registers new fields that can be used when building a View. [They can be added to your View just like any other field](https://docs.gravitykit.com/article/734-getting-started-adding-fields-to-the-multiple-entries-and-single-entry-pages). However, unlike standard form fields, they are limited to specific View layouts (see below).
@@ -175,6 +201,10 @@ The following settings allow you to customize the appearance, display, and funct
 ##### Force Download
 * When enabled, a save dialog box will open / the PDF will be downloaded automatically (depending on the browser settings). When disabled, the document will open directly in the browser window
 * This setting is disabled by default
+
+##### Use Smart Loading Indicator
+* When [Force Download](#force-download) is on, this feature will display a user-friendly loading indicator to a user while the PDF is generated.
+* This setting is only available when the [Gravity PDF Enhanced Download extension](https://gravitypdf.com/shop/enhanced-download-add-on/) is installed.
 
 ##### Show Label
 * [Displays the field label in the view](https://docs.gravitykit.com/article/72-working-with-field-labels)
@@ -296,8 +326,6 @@ The following GravityView fields are always excluded in the PDF:
 1. There is only rudimentary support for [GravityView's DIY Layout](https://www.gravitykit.com/extensions/diy-layout/).
 1. Embedding a View into the Single Entry Layout of another View via the Custom Content field isn't supported
 1. Entry Map field included in [GravityView's Maps Layout](https://www.gravitykit.com/extensions/maps/) isn't currently supported ([let us know if this feature is important to you](https://gravitypdf.com/support/)).
-1. [Gravity PDF Watermark extension](https://gravitypdf.com/shop/watermark-add-on/) isn't currently supported ([let us know if this feature is important to you](https://gravitypdf.com/support/)).
-1. [Gravity PDF Enhanced Download extension](https://gravitypdf.com/shop/enhanced-download-add-on/) isn't currently supported ([let us know if this feature is important to you](https://gravitypdf.com/support/)).
 
 ## Translations
 

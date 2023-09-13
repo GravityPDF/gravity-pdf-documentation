@@ -8,7 +8,7 @@ import ResponsiveEmbed from 'react-responsive-embed'
 
 ![The Enhanced Download extension cover art. It includes an icon of a PDF document and an arrow pointing downward. The text 'Enhanced Download' is displayed.](https://resources.gravitypdf.com/uploads/2022/12/enhanced-download-cover-art1.png)
 
-*Enhanced Download* is a premium plugin for Gravity PDF that can display a user-friendly modal window + loading indicator when a PDF is generated on the server. It is a useful feature when Gravity PDF is generating complex PDFs that can take a few seconds (or more) to generate, or when you've [set up a Redirect Confirmation to a PDF](../users/shortcodes-and-mergetags.md#redirect-confirmation). 
+*Enhanced Download* is a premium plugin for Gravity PDF that can display a user-friendly loading indicator while the PDF is generated on the server. It is a useful feature when Gravity PDF is generating complex PDFs that can take a few seconds (or more) to dynamically create, or when you've [set up a Redirect Confirmation to a PDF](../users/shortcodes-and-mergetags.md#redirect-confirmation). 
 
 You can purchase the *Enhanced Download* plugin from the [Extension Shop](https://gravitypdf.com/shop/enhanced-download-add-on/). This guide will walk you through installing and configuring *Enhanced Download* to its full potential.
 
@@ -137,6 +137,10 @@ There are a number of reasons why the Error Title and Message are shown, includi
 * When not in the _loading_ state, a user is able to click anywhere on the screen to close the modal. The modal can also be closed with the Escape key.
 * HTML is not allowed in this setting.
 * The default value is: `close`
+
+### PDF for GravityView
+
+You can enable the Enhanced Download functionality when [using the _Link to Single Entry PDF_ field from the _PDF for GravityView_ extension](pdf-for-gravityview-add-on.md#link-to-single-entry-pdf).
 
 ### Limitations
 
