@@ -89,7 +89,7 @@ If using the [PDF URL feature](#signed-optional) with the redirect method, the `
 
 #### Usage in Notifications
 
-![Adding the shortcode to notifications](https://resources.gravitypdf.com/uploads/2022/03/v6.2-Notification-Example.png)
+![Adding the shortcode to notifications](https://resources.gravitypdf.com/uploads/2023/11/PDF-Download-Link-in-Notifcation.png)
 
 Gravity Forms [Notifications](https://docs.gravityforms.com/configuring-notifications-in-gravity-forms/) are automated emails sent after the form is submitted. If you would prefer not [sending the PDF as an email attachment](setup-pdf.md#notifications) (usually for security reasons), you can use the `[gravitypdf]` shortcode to include a link to the PDF. Because of the default [security protocols](pdf-security.md), this method is very effective when the recipient has a WordPress user account. If users aren't logged in when completing the form, or you want to email a link to the document to a third party, use the [signed PDF URL feature](#signed-optional).
 
