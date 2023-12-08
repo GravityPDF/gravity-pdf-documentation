@@ -96,8 +96,13 @@ _Nova_ also has these additional template-specific settings:
 #### Invoice Number Suffix (3)
 * This is an optional field that is included after the [Invoice Number](#invoice-number-2) in the PDF.
 
+#### Invoice Date (4)
+* Control the date the invoice was generated. [You may use any date that PHP understands (including relative dates)](https://www.php.net/manual/en/datetime.formats.php#datetime.formats.relative).
+* The invoice date will be formatted using the [Date Format setting](#date-format-4).
+* The default value is the form submission date, which is set using the `{date_created:format:Y-m-d}` merge tag.
+
 #### Date Format (4)
-* Select the date format used for the Invoice Date (the form submission date) and [Invoice Due Date](#invoice-due-date-5) (if set).
+* Select the date format used for the [Invoice Date](#invoice-date-4) and [Invoice Due Date](#invoice-due-date-5) (if set).
 * The following date formats are supported:
   - 11/29/2024 (mm/dd/yyyy)
   - 11/29/24 (mm/dd/yy)
