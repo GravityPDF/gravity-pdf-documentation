@@ -53,7 +53,7 @@ If you enjoy video tutorials, watch this 14-minute video with Gravity PDF's lead
 
 ##### Text Confirmation
 
-![The \[gravitypdf\] shortcode in the Gravity Forms text confirmation](https://resources.gravitypdf.com/uploads/2022/03/v6.2-Text-Confirmation.jpg)
+![The \[gravitypdf\] shortcode in the Gravity Forms text confirmation](https://resources.gravitypdf.com/uploads/2023/12/v6-Text-Confirmation-v2.png)
 
 The [text confirmation](https://docs.gravityforms.com/configuring-confirmations-in-gravity-forms/#text-confirmations) is the simplest Gravity Forms confirmation type and allows you to add a message using the WordPress classic editor, which is then shown to the user right after submission. Copy and paste the Gravity PDF shortcode found on the [PDF form list](managing-pdfs.md) and save the confirmation.
 
