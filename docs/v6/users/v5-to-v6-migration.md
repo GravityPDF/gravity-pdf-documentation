@@ -34,10 +34,6 @@ Both the server and software requirements have changed. Gravity PDF 6.0 requires
 
 Verify you meet these requirements [by viewing the System Status page](https://docs.gravityforms.com/checking-environment-details/), which can be accessed from the WP Admin menu `Forms -> System Status`. If you aren't running a compatible version of PHP and aren't sure how to upgrade, contact your web hosting provider. If you're running an older version of WordPress or Gravity Forms, [use WordPress's one-click update feature](https://wordpress.org/support/article/dashboard-updates-screen/).
 
-:::success Info
-If you are unable to meet the v6 minimum software requirements, Gravity PDF will continue [supporting users on v5](../../v5/five-minute-install.md) with bug and security fixes until 27 April 2023.
-:::
-
 ## New User Interface
 
 Gravity Forms 2.5 sees a completely redesigned admin experience. So it doesn't stick out like a sore thumb, Gravity PDF has been updated to match the new user interface.
