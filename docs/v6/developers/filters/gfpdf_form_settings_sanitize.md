@@ -29,7 +29,7 @@ You can also use the `gfpdf_form_settings_sanitize_$type` filter, where `$type` 
 This snippet shows you how to correctly sanitize your custom Gravity PDF field:
 
 ```
-add_filter( 'gfpdf_settings_sanitize', function( $value, $key, $input, $field ) {
+add_filter( 'gfpdf_form_settings_sanitize', function( $value, $key, $input, $field ) {
 
 	/* Check if it's our custom field and return a blank array if the variable type isn't currently an array */
 	if ( 'prefix_custom_field' === $key ) {
@@ -40,18 +40,6 @@ add_filter( 'gfpdf_settings_sanitize', function( $value, $key, $input, $field ) 
 
 	return $value;
 
-}, 10, 4 );
-```
-
-You can also target your field directly using the field ID:
-
-```
-add_filter( 'gfpdf_settings_sanitize_prefix_custom_field', function( $value, $key, $input, $field ) {	
-	if ( ! is_array( $value ) ) {
-		return array();
-	}	
-
-	return $value;
 }, 10, 4 );
 ```
 
