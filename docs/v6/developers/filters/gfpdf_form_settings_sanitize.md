@@ -1,12 +1,12 @@
 ---
 title: "gfpdf_form_settings_sanitize"
 sidebar_label: "gfpdf_form_settings_sanitize"
-description: "Gravity PDF does standard sanitisation of form fields but you might like to include your own special processing for any form PDF fields you add. "
+description: "Gravity PDF does standard sanitization of form fields but you might like to include your own special processing for any form PDF fields you add. "
 ---
 
 ## Description
 
-Gravity PDF does standard sanitisation of form fields, but you might like to include your own special processing for any form PDF fields you add.
+Gravity PDF does standard sanitization of form fields, but you might like to include your own special processing for any form PDF fields you add.
 
 You can also use the `gfpdf_form_settings_sanitize_$type` filter, where `$type` refers to the field type – checkbox, select, etc.
 
@@ -26,14 +26,14 @@ You can also use the `gfpdf_form_settings_sanitize_$type` filter, where `$type` 
 
 ## Usage
 
-This snippet shows you how to correctly sanitise your custom Gravity PDF field:
+This snippet shows you how to correctly sanitize your custom Gravity PDF field:
 
 ```
-add_action( 'gfpdf_settings_sanitize', function( $value, $key, $input, $field ) {
+add_filter( 'gfpdf_settings_sanitize', function( $value, $key, $input, $field ) {
 
 	/* Check if it's our custom field and return a blank array if the variable type isn't currently an array */
-	if( 'prefix_custom_field' === $key ) {
-		if( ! is_array( $value ) ) {
+	if ( 'prefix_custom_field' === $key ) {
+		if ( ! is_array( $value ) ) {
 			return array();
 		}
 	}
@@ -46,8 +46,8 @@ add_action( 'gfpdf_settings_sanitize', function( $value, $key, $input, $field ) 
 You can also target your field directly using the field ID:
 
 ```
-add_action( 'gfpdf_settings_sanitize_prefix_custom_field', function( $value, $key, $input, $field ) {	
-	if( ! is_array( $value ) ) {
+add_filter( 'gfpdf_settings_sanitize_prefix_custom_field', function( $value, $key, $input, $field ) {	
+	if ( ! is_array( $value ) ) {
 		return array();
 	}	
 
