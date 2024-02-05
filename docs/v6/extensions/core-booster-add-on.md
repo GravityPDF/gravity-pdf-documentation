@@ -1,16 +1,18 @@
 ---
-title: "Core Booster Documentation: How to Install and Configure"
+title: "Core Booster Plugin Documentation: How to Install and Configure"
 sidebar_label: "Core Booster"
-description: "Core Booster is a premium plugin for Gravity PDF that adds a number of enhancements to the Core (free) and Universal PDF templates (premium)."
+description: "Core Booster adds useful display options – like showing all choices and field selection – to Core and Universal templates for Gravity PDF."
 ---
 
-import ResponsiveEmbed from 'react-responsive-embed'
+![](https://resources.gravitypdf.com/uploads/edd/2017/06/cover-artwork-2.png)
 
-![Core Booster add-on](https://resources.gravitypdf.com/uploads/edd/2017/06/cover-artwork-2.png)
+*Core Booster* is a premium plugin for Gravity PDF that adds a number of new settings to control the look and feel of Core and Universal templates. *Core templates* are the free designs that [ship with Gravity PDF Core](https://wordpress.org/plugins/gravity-forms-pdf-extended/). Universal templates are the [premium designs available for purchase from the Template Shop](https://gravitypdf.com/store/#universal).
 
-*Core Booster* is a premium plugin for Gravity PDF that adds a number of enhancements to the Core and Universal PDF templates. The Core PDF templates are the free designs that [ship with Gravity PDF](https://wordpress.org/plugins/gravity-forms-pdf-extended/), and the Universal templates are the [premium designs from our Template Shop](https://gravitypdf.com/store/#universal).
+You can [purchase the Core Booster plugin from the Extension Shop](https://gravitypdf.com/shop/core-booster-add-on/). This guide will walk you through installing and configuring *Core Booster* to its full potential.
 
-You can purchase the Core Booster plugin from the [Extension Shop](https://gravitypdf.com/shop/core-booster-add-on/). This guide will walk you through installing and configuring *Core Booster* to its full potential.
+:::info
+This documentation refers to version 2 of the Gravity PDF Core Booster add-on. [The v1 documentation can be found here](../../v5/shop-plugin-core-booster-add-on.md).
+:::
 
 ## Installation
 
@@ -18,92 +20,213 @@ You can purchase the Core Booster plugin from the [Extension Shop](https://gravi
 
 ## Configuring
 
-This extension adds a number of new features to Core and Universal templates. All functionality can be enabled from the *Template* section when [editing the PDF settings](../users/setup-pdf.md#template-section).
+Once the plugin is activated, you'll find new settings [in the _Template_ section](../users/setup-pdf.md#template-section) when you create or edit a PDF [configured with a Core or Universal template](../users/setup-pdf#template). The following section details what each setting does: Refer to the sections below for information on what each setting does:
 
-![The new options this extension adds to Core and Universal templates](https://resources.gravitypdf.com/uploads/2021/04/v6-Core-Booster-options.png)
+* [Page Margin](#page-margin)
+* [Filter Fields](#filter-fields)
+* [Field Label Display](#field-label-display)
+* [Field Choices](#field-choices)
+* [Field Choices Layout](#field-choices-layout)
+* [Field Choices Display](#field-choices-display)
+* [Field Description](#field-description)
+* [Pricing Fields](#pricing-fields)
+* [Entry Notes](#entry-notes)
 
-Refer to the sections below for information on what each feature does and how to enable it:
+### Page Margins
 
--   [Customise Fields](#customise-fields)
--   [Display Notes](#display-notes)
--   [Show All Available Options](#show-all-available-options)
--   [Toggle Option Label / Value](#toggle-option-label--value)
--   [Show Field Descriptions](#show-field-descriptions)
--   [Group / Ungroup Product Fields](#group--ungroup-product-fields)
--   [Toggle Field Labels](#toggle-field-labels)
+Adjust the gap between the page edge and the main content area. The page margin format follows the [CSS shorthand convention](https://developer.mozilla.org/en-US/docs/Web/CSS/Shorthand_properties#margin_and_padding_properties), allowing you to specify the margin for each side of the page. 
 
-### Customise Fields
+The CSS shorthand rules are:
 
-<ResponsiveEmbed src="https://player.vimeo.com/video/666605049?dnt=1" allowFullScreen />
+* If one value (e.g. `10mm` or `1in`), it is used for all four sides
+* If two values (e.g. `10mm 5mm` or `1in 0.5in`), the first is used on top and bottom margins, and the second for the left and right.
+* If three values (e.g. `10mm 5mm 20mm` or `1in 0.5in 1.5in`), the first is the top margin, the second is the left and right, and the third the bottom.
+* If four values (e.g. `10mm 5mm 20mm 15mm` or `1in 0.5in 1.5in 0.7in`), the first is the top, the second the right, the third the bottom, and fourth the left.
 
-#### Display Fields
-*  This feature allows you to control which fields are displayed or excluded in the current PDF. You can create multiple PDFs on the same form with different fields selected.
-*  This setting will override the [rudimentary "exclude" CSS class](../users/hide-form-fields.md).
-*  The fields you included will be displayed in the original order used [in the Form Editor](https://docs.gravityforms.com/form-editor/). You cannot re-order the fields.
-*  As of v1.3.0, this setting can be toggled on or off (default off). When on, you can pick and choose the fields to display. When off, all form fields will automatically be considered for display in the PDF.
-*  To control the display of HTML fields you first need to [enable the Show HTML Fields setting](../users/setup-pdf.md#show-html-fields).
-* To control the display of Product fields you first need to [set the Group Product setting to "No"](#group--ungroup-product-fields).
+When defining a margin, the following units are supported:
 
-### Display Notes
+* Millimeters: `mm`
+* Centimeters: `cm` 
+* Inches: `in`
+* Percentage: `%`
+* Pixels: `px`
 
-<ResponsiveEmbed src="https://player.vimeo.com/video/665827733?dnt=1" allowFullScreen />
+If you prefer, you may use a different unit for each side e.g. `10mm 0.5in 1% 30px`
 
-#### Show Entry Notes
-*  This feature allows you to display the Entry Notes at the bottom of the PDF.
-*  Regardless of template used, the Notes will match the layout and style used in Gravity Forms.
-*  This feature is disabled by default.
+:::note
+The top/bottom margins are automatically increased if you include a header or footer that would overlap the main body content with the margin you have chosen.
+:::
 
-### Show All Available Options
+### Filter Fields
 
-<ResponsiveEmbed src="https://player.vimeo.com/video/666605519?dnt=1" allowFullScreen />
+When enabled, you can control exactly which fields are included or excluded in the PDF. This allows you to configure multiple PDFs on the same form, with different fields in each document. The [rudimentary "exclude" CSS class](../users/hide-form-fields.md) is ignored when this setting is enabled. 
 
-#### Show Field Options
-* This feature allows you to control if all available options are shown in the PDF for Radio, Checkbox, Select and Multiselect (RCSM) fields.
-* If a user selected an option, it'll show up as an ☒, if the option isn't selected it'll be an empty ballot box instead ☐
-* You can individually enable this functionality for each field type. For example, you can set only Radio fields to show all options, and leave the other fields using the standard Gravity PDF output.
-* If you aren't using a layout column on your RCSM field (usually using the CSS classes, like `gf_left_half`, `gf_left_third` or `gf_first_quarter`) you can create up to five option columns. Use the CSS classes `gf_list_2col`, `gf_list_3col`, `gf_list_4col`, or `gf_list_5col` to enable this functionality.
-* **Note:** Option columns don't work in the templates *Formium*, *Colossus* or *Cellulose* as they utilise layout columns internally.
-* Product fields that utilise an RCSM field are compatible [provided you ungroup the products](#group--ungroup-product-fields).
-* You can find this setting at the bottom of the *Template* section when [editing the PDF Settings](../users/setup-pdf.md#template) for Core and Universal PDF templates.
+When this setting is disabled (the default), all form fields will be displayed in the PDF (unless another setting excludes specific fields e.g. [Enable Conditional Logic](../users/setup-pdf.md#enable-conditional-logic)). When enabled, included fields are displayed in the order shown [in the Form Editor](https://docs.gravityforms.com/form-editor/) (you cannot re-order them independently).
 
-### Toggle Option Label / Value
+If you'd like to control which HTML fields are included, first [enable the Show HTML Fields setting](../users/setup-pdf.md#show-html-fields). To filter pricing fields, [set the Pricing Fields setting to Display Individually](#pricing-fields) (it's not possible to filter these fields in the summary table).
 
-<ResponsiveEmbed src="https://player.vimeo.com/video/666614031?dnt=1" allowFullScreen />
+### Field Label Display
 
-#### Option Field Display
-* This feature allows you to control whether Radio, Checkbox, Select and Multiselect (RCSM) fields will show the selected option label or value in the PDF.
-* This setting will apply to all RCSM fields in your form, including Product fields that utilise RCSM field types.
-* To utilise this feature correctly, you need to take advantage of RCSM field's "Use Value" option in the Form Editor. *Values must be unique and cannot contain any HTML markup or special characters*.
-* You can find this setting at the bottom of the *Template* section when [editing the PDF Settings](../users/setup-pdf.md#template) for Core and Universal PDF templates.
+This setting allows you to control what label will be displayed for fields in the PDF. You have four choices available:
 
-### Show Field Descriptions
+1. **Field Label:** All fields will use the value set in the Field Label setting, which is found under a field's _General_ section in the Form Editor. 
+2. **Admin Label:** All fields will use the value set in the Admin Field Label setting, which is found under a field's _Advanced_ section in the Form Editor.
+3. **Admin Label (if not empty):** If it has been set, a field's Admin Field Label will be display. Otherwise, the standard Field Label is used.
+4. **No Label:** This option disables all field labels in the PDF, and only the field value is included.
 
-<ResponsiveEmbed src="https://player.vimeo.com/video/666605579?dnt=1" allowFullScreen />
+### Field Choices
 
-#### Show Field Description?
-* When enabled, a field's description will be displayed alongside the user's response.
-* The description position is [determined by your Form Settings](https://docs.gravityforms.com/form-settings/#form-layout) and can be placed above or below the user's response in the PDF.
-* You can find this setting at the bottom of the *Template* section when [editing the PDF Settings](../users/setup-pdf.md#template) for Core and Universal PDF templates.
+By default, Gravity PDF only displays the user-selected choices for Radio, Checkbox, Select, and Multiselect fields in Core and Universal templates. When enabled, this setting will display all available field choices for specific fields, and check the choices a user has selected when they completed the form.
 
-### Group / Ungroup Product Fields
+If a user has selected a choice, it will show up as a crossed ballot box ☒. If it has not been selected an empty ballot box is displayed ☐. 
 
-<ResponsiveEmbed src="https://player.vimeo.com/video/666614048?dnt=1" allowFullScreen />
+All choices are shown in a list/block format by default, but you can use the [_Field Choices Layout_ setting](#field-choices-layout) to display them inline. You can override this setting for individual fields by adding  `show_all_options` or `hide_all_options` to the Custom CSS Class setting (under the _Advanced_ section) in the Form Editor.
 
-#### Group Products?
-* Disable this feature to prevent products from being grouped at the end of a PDF. Instead, they'll be displayed in the order they appear in your Form Editor.
-* As of Gravity PDF 5.1, you can completely remove the Product table. Prior to 5.1, to remove you have to ungroup the products and remove them [using the Customise Field setting](#customise-fields).
-* You can find this setting at the bottom of the *Template* section when [editing the PDF Settings](../users/setup-pdf.md#template) for Core and Universal PDF templates.
+:::note
+If you display [_Pricing Fields individually_](#pricing-fields), those that support choices are compatible with this feature.  
+:::
 
-### Toggle Field Labels
+If making use of [Gravity Wiz's Populate Anything perk](https://gravitywiz.com/documentation/gravity-forms-populate-anything/?ref=78), your [Live Merge Tags](https://gravitywiz.com/documentation/gravity-forms-populate-anything/?ref=78#live-merge-tags) are correctly processed and displayed in the PDF when included in choice labels/values.
 
-<ResponsiveEmbed src="https://player.vimeo.com/video/666605654?dnt=1" allowFullScreen />
+### Field Choices Layout
 
-#### Field Label Display
-* This feature gives you four different ways to display the field labels in the PDF:
-    1.  Display the Standard/Field Label for all fields
-    2.  Display the Admin Field Label for all fields
-    3.  Display the Admin Field Label for fields that have one, otherwise fall back to the Standard/Field Label
-    4.  Disable the Field Label
+If you have enabled [_Field Choices_](#field-choices), this setting will be available to control how all the choices will be presented in the PDF. You can choose to display each choice on a new line (Block), or include them side-by-side (Inline).
 
-* This feature applies to all Gravity Forms fields that support an Admin Field label
-* You can find this setting at the bottom of the *Template* section when [editing the PDF Settings](../users/setup-pdf.md#template) for Core and Universal PDF templates.
+When using the Block layout, and a field isn't included in a [Drag and Drop column](../users/columns.md) (or using Formium, Colossus, or Cellulose templates), you can also [display choices in a 2 to 5 column list](https://docs.gravityforms.com/css-ready-classes/#h-list-classes). This may produce a more uniform layout than the _Inline_ setting.
+
+You can override this setting for individual fields by adding  `gf_list_inline` or `gf_list_block` to the Custom CSS Class setting (under the _Advanced_ section) in the Form Editor.
+
+### Field Choices Display
+
+Gravity PDF defaults to displaying the choices label for Radio, Checkbox, Select, and Multiselect fields. This setting allows you to display the choice value instead. 
+
+If you'd like relevant pricing fields to use the choice value, you need to [set the Pricing Fields setting to _Display Individually_](#pricing-fields).
+
+### Field Description
+
+When enabled, each field Description (found under the _General_ section in the Form Editor) will be displayed alongside the label and value. The description position is [determined by your Form Settings](https://docs.gravityforms.com/form-settings/#h-form-layout), and can be placed above or below the user's response in the PDF.
+
+### Pricing Fields
+
+Pricing fields are all fields shown [under the _Pricing Fields_ section in the Form Editor](https://docs.gravityforms.com/form-fields/#pricing-fields). This includes _Product_, _Option_, _Quantity_, and _Shipping_ field types. 
+
+In the PDF, the default layout for Pricing fields is to group them together at the end of the document in a Summary/Order table – similar to how they are displayed [on Entry Details](https://docs.gravityforms.com/entry-detail/). This setting allows you to alter this behaviour and display all Pricing fields individually, in the order they appear in the Form Editor. When shown individually, pricing fields can be affected by the [_Filter Fields_](#filter-fields) and [_Field Choices_](#field-choices) settings.
+
+For convenience, the _Remove Fields_ option is an easy shortcut to remove all Pricing fields from the PDF.
+
+### Entry Notes
+
+[Every entry has a notes section](https://docs.gravityforms.com/entry-detail/#h-entry-notes) to keep important, related information with each submission. When this feature is enabled, your Gravity PDF Core or Universal template will include these notes at the end of the document. 
+
+## Translations
+
+The *Core Booster* plugin supports the following languages out of the box:
+
+* English
+* French
+* Spanish
+* German
+* Chinese
+* Dutch
+* Portuguese
+* Russian
+
+If you'd like to translate the plugin into your own language, or change an existing translations, [you can follow this How To Guide](https://gravitypdf.com/news/how-to-translate-gravity-pdf-strings-into-different-languages/). **Note**: the text domain for _Core Booster_ is `gravity-pdf-core-booster`.
+
+:::info
+All translations have been generated with AI / machine learning. If a translation is incorrect, [please submit a ticket and let us know](https://gravitypdf.com/support/#contact-support) (select _Other_ for the enquiry type).
+:::
+
+## Upgrade from v1
+
+Provided you are running Gravity PDF (Core) 6.0 or higher, you'll have a seamless upgrade experience to _Core Booster_ v2. Besides the new features, the important changes include:
+
+1. The minimum support version of Gravity PDF has been increased to 6.0 or higher. 
+2. The labels/descriptions for existing settings have been updated to better reflect what they do. This is purely presentational, and doesn't change how those features work in your PDFs.
+3. The `gf_inline_list` CSS class is now natively supported when the current field is [displaying all field choices](#field-choices). If you'd like to continue showing your choices inline in your form, but as a list in the PDF, you can add an additional CSS class `gf_inline_block` to the field.
+
+## Developers
+
+### Custom Templates
+
+You can take advantage of the Core Booster PDF settings [in your custom template](https://docs.gravitypdf.com/v6/developers/first-custom-pdf) by doing the following:
+
+1. In the Header section of your custom template, include the `core-booster-supported` tag. If you already have tags in your template, add a comma and then the tag (the position in the list doesn't matter).
+
+```
+<?php
+
+/**
+ * Template Name: My Custom Template
+ * Version: 0.1
+ * Description: A custom template that makes use of the Core Booster settings
+ * Group: Dunder Mifflin Paper Co.
+ * Required PDF Version: 6.0
+ * Tags: core-booster-supported
+ */
+```
+
+2. Your custom template must call `$pdf->process_html_structure()` at some point in the file:
+
+```
+<?php 
+
+/*
+ * Load our core-specific styles from our PDF settings which will be passed to the PDF template $config array
+ */
+$show_form_title      = ( $settings['show_form_title'] ?? '' ) === 'Yes';
+$show_page_names      = ( $settings['show_page_names'] ?? '' ) === 'Yes';
+$show_html            = ( $settings['show_html'] ?? '' ) === 'Yes';
+$show_section_content = ( $settings['show_section_content'] ?? '' ) === 'Yes';
+$enable_conditional   = ( $settings['enable_conditional'] ?? '' ) === 'Yes';
+$show_empty           = ( $settings['show_empty'] ?? '' ) === 'Yes';
+
+/**
+ * Set up our configuration array to control what is and is not shown in the generated PDF
+ *
+ * @var array
+ */
+$html_config = [
+	'settings' => $settings,
+	'meta'     => [
+		'echo'                     => true, /* whether to output the HTML or return it */
+		'exclude'                  => true, /* whether we should exclude fields with a CSS value of 'exclude'. Default to true */
+		'empty'                    => $show_empty, /* whether to show empty fields or not. Default is false */
+		'conditional'              => $enable_conditional, /* whether we should skip fields hidden with conditional logic. Default to true. */
+		'show_title'               => $show_form_title, /* whether we should show the form title. Default to true */
+		'section_content'          => $show_section_content, /* whether we should include a section breaks content. Default to false */
+		'page_names'               => $show_page_names, /* whether we should show the form's page names. Default to false */
+		'html_field'               => $show_html, /* whether we should show the form's html fields. Default to false */
+		'individual_products'      => false, /* Whether to show individual fields in the entry. Default to false - they are grouped together at the end of the form */
+		'enable_css_ready_classes' => true, /* Whether to enable or disable Gravity Forms CSS Ready Class support in your PDF */
+	],
+];
+
+/*
+ * Generate our HTML markup
+ *
+ * You can access Gravity PDFs common functions and classes through our API wrapper class "GPDFAPI"
+ */
+$pdf = GPDFAPI::get_pdf_class();
+$pdf->process_html_structure( $entry, GPDFAPI::get_pdf_class( 'model' ), $html_config );
+```
+
+### Hooks
+
+#### PHP
+
+##### gfpdf_description_spacer
+
+When displaying a [field description](#field-description), the default behaviour is to include a spacer/divider between the description and the content. This filter allows you to change what that spacer is:
+
+```
+add_filter( 'gfpdf_description_spacer', function( $spacer, $field, $entry, $form ) {
+  return '<div class="gfpdf_description_spacer">––––––</div>';
+}, 10, 4 ); 
+```
+
+Or remove the spacer altogether:
+
+```
+add_filter( 'gfpdf_description_spacer', '__return_empty_string' ); 
+```
