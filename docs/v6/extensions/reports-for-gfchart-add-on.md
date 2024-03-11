@@ -483,12 +483,12 @@ If everything has been setup correctly, after submitting the entry to your repor
 
 ### How are the GFCharts generated in the reports?
 
-The aggregate form data for the GFChart, as well as the chart settings, are sent securely over HTTPS to a GFChart server for processing, and an image is returned. Whether the aggregate data is <a href="https://gdpr-info.eu/recitals/no-26/) will depend on what field(s) and chart settings are configured. The rule of thumb is: if you cannot link the standalone GFChart image to an identifiable natural person then that data is considered annonymised, and the GDPR does not apply to the aggregate data sent to the GFChart server. If you're interested in GFChart's privacy policy, [reach out to their support team with your questions](https://gfchart.com/support/?ref=24" rel="sponsored">considered, annonymised</a>.
+The aggregate form data for the GFChart, as well as the chart settings, are sent securely over HTTPS to a GFChart server for processing, and an image is returned. Whether the aggregate data is <a href="https://gdpr-info.eu/recitals/no-26/">considered annonymised</a> will depend on what field(s) and chart settings are configured. The rule of thumb is: if you cannot link the standalone GFChart image to an identifiable natural person then that data is considered annonymised, and the GDPR does not apply to the aggregate data sent to the GFChart server. If you're interested in GFChart's privacy policy <a href="https://gfchart.com/support/?ref=24" rel="sponsored">reach out to their support team with your questions</a>.
 
 Once the GFChart image is returned, the PDF generation is completed like normal using Gravity PDF. [Refer to our GDPR for Gravity PDF guide for more information](../users/gdpr-and-gravity-pdf.md).
 
 ### The reports are slow to generate. Is it possible to make it faster?
 
-For each chart you include in the PDF report, an API request has to be made to the GFChart server, and we have to await a response. Reports with one or two charts will generate quicker than those with three or four.
+For each chart you include in the PDF report an API request has to be made to the GFChart server, and we have to await a response. Reports with one or two charts will generate quicker than those with three or four.
 
 If the bottleneck is during the form submission process, you can dramatically speed this up [by enabling Gravity PDF's Background Processing feature](../users/global-settings.md#background-processing) which will offload the Notification sending process (and PDF generation) to a background queue.
