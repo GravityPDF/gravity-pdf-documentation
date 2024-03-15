@@ -20,8 +20,8 @@ You can purchase the _Reports for GFChart_ plugin from the [Extension Shop](http
 
 Along with having <a href="https://rocketgenius.pxf.io/c/1211356/445235/7938" rel="sponsored">Gravity Forms</a> and [Gravity PDF](../users/installation.md) installed on your website, **to use Reports for GFChart, <a href="https://gfchart.com/pricing/?ref=24" rel="sponsored">you need a GFChart ALL license</a>**, and have the following plugins installed:
 
-1. <a href="https://gfchart.com/?ref=24" rel="sponsored">GFChart v1.17+</a> with active license key
-1. GFChart Image Charts v1.0.0-beta1+
+1. <a href="https://gfchart.com/?ref=24" rel="sponsored">GFChart v2.2+</a> with active license key
+1. GFChart Image Charts v1.1.0-beta3+
 
 :::tip
 The GFChart Image Charts plugins **will NOT** work with *Gravity PDF Report for GFChart* unless you've activated your GFChart license key on your website.
