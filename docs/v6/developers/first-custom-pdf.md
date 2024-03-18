@@ -84,7 +84,7 @@ The following is a valid PDF template header:
 The following variables are available to all PDF templates:
 
 :::caution
-If you print/echo any PHP variable in the template it is best practice to [late-escape those variables on output](https://developer.wordpress.org/themes/theme-security/data-sanitization-escaping/#escaping-securing-output).
+If you print/echo any PHP variable in the template it is best practice to [late-escape those variables on output](https://developer.wordpress.org/apis/security/escaping/).
 :::
 
 ### $form
