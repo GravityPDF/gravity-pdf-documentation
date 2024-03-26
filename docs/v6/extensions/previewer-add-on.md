@@ -125,6 +125,14 @@ By default, users cannot copy any text on PDF pages and links are not functional
 
 <ResponsiveEmbed src="https://player.vimeo.com/video/694720034?dnt=1" allow="fullscreen" allowfullscreen />
 
+### Toggle Automatic Refresh
+
+By default, the Previewer automatically refreshes as users fill out the form. Enable this to update the PDF preview manually using the refresh button.
+
+Note: A PDF preview is automatically loaded on the initial page.
+
+[![The auto-refresh toggle under the advanced setting](https://resources.gravitypdf.com/uploads/2024/03/Previewer-3.3-Auto-refresh-toggle.png)](https://resources.gravitypdf.com/uploads/2024/03/Previewer-3.3-Auto-refresh-toggle.png)
+
 ## PDF Viewer
 
 The PDF viewer is designed to be simple and intuitive for end users to view the generated PDF documents. It works across all modern devices and includes touch support (eg. pinch zoom). There are minimal controls in the toolbar to help people interact with the PDF. These include:
