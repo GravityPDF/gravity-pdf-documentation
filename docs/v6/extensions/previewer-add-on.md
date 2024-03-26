@@ -125,6 +125,12 @@ By default, users cannot copy any text on PDF pages and links are not functional
 
 <ResponsiveEmbed src="https://player.vimeo.com/video/694720034?dnt=1" allow="fullscreen" allowfullscreen />
 
+### Disable Automatic Refresh
+
+By default, the PDF Previewer will automatically refresh as users complete the form (provided the field is visible). Turning this setting on will disable that auto-refresh feature, and users will need to manually select the refresh button to update the document. Regardless of the configuration, when the page initially renders the PDF Previewer field will auto-generate when it initially comes into the viewport.
+
+[![The Disable Automtic Refresh setting can be found under the Advanced Settings section of the PDF Previewer field in the Form Editor](https://resources.gravitypdf.com/uploads/2024/03/Previewer-3.3-Auto-refresh-toggle.png)](https://resources.gravitypdf.com/uploads/2024/03/Previewer-3.3-Auto-refresh-toggle.png)
+
 ## PDF Viewer
 
 The PDF viewer is designed to be simple and intuitive for end users to view the generated PDF documents. It works across all modern devices and includes touch support (eg. pinch zoom). There are minimal controls in the toolbar to help people interact with the PDF. These include:
@@ -323,7 +329,7 @@ This filter will allow you to disable the auto-refresh feature of the Previewer.
 
 **Examples**
 
-This example will disable auto-refresh for all Previewer instances:
+This example will programmatically disable auto-refresh for all Previewer instances:
 
 ```js
 gform.addFilter('gfpdf_previewer_skip_auto_refresh', function(action, formId, fieldId) {
