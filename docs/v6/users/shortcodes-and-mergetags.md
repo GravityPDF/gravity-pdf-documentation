@@ -67,8 +67,8 @@ The [page confirmation](https://resources.gravitypdf.com/uploads/2022/03/v6.2-Pa
 
 Submit a test entry and verify the PDF link is displayed correct, and you can view the document when selected.
 
-:::warning
-Do not use the [Signed PDF URL feature](#signed-optional) with this confirmation type, as an end user will be able to change the entry ID in the URL and get access to other PDFs. Signed URLs can be safely used with Text or Redirect Confirmation types. Alternatively, non-signed PDF URLs are not vulnerable, and can be safely used in Page Confirmations.
+:::info
+For security reasons the [Signed PDF URL feature](#signed-optional) is disabled for this confirmation type (as of v6.9.1). Signed URLs can be used with Text or Redirect Confirmation types, in Notifications, or when the [entry ID is passed as a shortcode attribute](#entry-semi-optional).
 :::
 
 ##### Redirect Confirmation
@@ -122,6 +122,7 @@ The `[gravitypdf]` shortcode is customisable and there are a number of attribute
 ##### Signed (optional)
 * The `signed` attribute tells Gravity PDF to generate a secure PDF URL that auto-expires after a set period. Anyone with access to the signed link can view the PDF (regardless of their user privileges, if any), provided the link hasn't expired.
 * Signed PDF URLs is an alternative authentication method to the default IP-based authentication. It functions correctly even if you've [disabled IP addresses using Gravity Forms Personal Data feature](https://docs.gravityforms.com/personal-data-settings/).
+* For security reasons this feature is disabled for Page Confirmations. It can be used with Text or Redirect Confirmation types, in Notifications, or when the [entry ID is passed as a shortcode attribute](#entry-semi-optional).
 * *Example:* `[gravitypdf id="560f2ef799945" signed="1"]`
 
 ##### Expires (optional)
