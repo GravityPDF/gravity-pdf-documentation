@@ -69,7 +69,7 @@ When creating custom PDF templates, it's often useful to include external CSS fi
 
 ### wp\_upload\_dir()
 * A [WordPress function](https://codex.wordpress.org/Function_Reference/wp_upload_dir) that returns path and URL information about the uploads directory.
-* Usage: `<?php $upload_dir = wp_upload_dir(); echo '<img src="' . esc_url( $upload_dir['path'] ) . '2015/04/hello-world.png" width="400" />'; ?>`
+* Usage: `<?php $upload_dir = wp_upload_dir(); ?> <img src="<?php echo esc_attr( $upload_dir['basedir'] . '2015/04/hello-world.png' ); ?>" width="400" />`
 
 ### ABSPATH
 * A WordPress constant that references the directory in which WordPress is installed. This is less useful than the other methods (usually you don't store files in the root directory), but it's good to know about.
