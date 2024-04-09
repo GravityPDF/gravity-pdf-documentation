@@ -18,12 +18,14 @@ This documentation is written for _developers_ who have a solid understanding of
 
 When Gravity PDF is installed, it automatically creates a folder called `PDF_EXTENDED_TEMPLATES` in your WordPress upload directory. This folder is used to store temporary files, fonts and custom PDF templates. Any PHP files in the root of this folder will be classified as a **PDF Template**, and the system will automatically register it.
 
-:::info
 On a vanilla WordPress installation, the full path to the `PDF_EXTENDED_TEMPLATES` directory is `/wp-content/uploads/PDF_EXTENDED_TEMPLATES`. Your installation may be different if defining the `WP_CONTENT_DIR` or `UPLOADS` constants, or if you've used the [`gfpdf_template_location`](filters/gfpdf_template_location.md) and [`gfpdf_template_location_uri`](filters/gfpdf_template_location_uri.md) filters.
-:::
 
 :::caution
 The **PDF Template** filename should only contain `A-Z`, `a-z`, `0-9`, `_`, or `-` characters, followed by the `.php` extension. Do not include spaces, symbols, or non-ascii characters. For example `my-custom-template.php` is valid, whereas `F.ID #123.php` is invalid.
+:::
+
+:::caution
+For performance, Gravity PDF maintains a cache of custom templates in the PDF Working Directory. The cache is automatically flushed when you install/delete a template using the [PDF Template Manager](../users/pdf-template-manager.md). If you upload a template using (S)FTP or a File Manager you will need to [toggle Debug Mode on to clear the cache](../users/global-settings.md#debug-mode).
 :::
 
 ### Template Hierarchy
@@ -165,7 +167,7 @@ Next, we're going to layout the basic structure. Go ahead and add the following 
 
 Think of Gravity PDF templates as HTML that is automatically included inside the `<body>` tag. Any [supported CSS](pdf-features/supported-html-and-css.md#css-support) can be placed in the `<style>` tags, while your actual content should be included below that.
 
-To finish off our example, we've going to replace `<!-- The PDF content should be placed in here -->` with `<h1>Hello World</h1>`. Once done, save the example and upload it to your [PDF working directory](#pdf-working-directory) using an (S)FTP client or by [zipping up the template and uploading via the PDF Template Manager](install-template-via-template-manager.md).
+To finish off our example, we've going to replace `<!-- The PDF content should be placed in here -->` with `<h1>Hello World</h1>`. Once done, save the example, zip it up, and [upload using the PDF Template Manager](install-template-via-template-manager.md).
 
 [Download a completed copy of the Hello World template](https://gist.github.com/jakejackson1/d98b99fd504a5a300f1a).
 

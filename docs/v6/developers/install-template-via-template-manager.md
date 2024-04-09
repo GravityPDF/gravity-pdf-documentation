@@ -4,11 +4,7 @@ sidebar_label: "Install Template via Template Manager"
 description: "A guide on how to correctly zip up your custom PDF template so it can be installed via the PDF Template Manager. Your zip can contain a single PHP template, or multiple templates."
 ---
 
-After you've created your custom template, you can either upload it to the [PDF Working Directory](first-custom-pdf.md#pdf-working-directory) using an FTP client or zip up the files and [install them via the PDF Template Manager](../users/pdf-template-manager.md#install).
-
-:::info
-Gravity PDF caches the [template header data](first-custom-pdf.md#template-structure) in a transient. If you re-upload the template via FTP after changing the headers, you'll need to [toggle on Debug Mode](../users/global-settings.md#debug-mode) to purge the old header information. The cache is automatically flushed when reinstalling an existing templates via the PDF Template Manager.
-:::
+After you've created your custom template, you can zip up the files and [install them via the PDF Template Manager](../users/pdf-template-manager.md#install).
 
 ## Zip Archive Structure
 
@@ -40,9 +36,7 @@ If you've created a [configuration](template-configuration-and-image.md) and/or 
 
 ## Common Problems
 
-> No valid PDF template found in Zip archive.
->
-> The PHP file [Name] is not a valid PDF Template.
+### No valid PDF template found in Zip archive / The PHP file [Name] is not a valid PDF Template.
 
 These errors can occur if:
 
@@ -50,3 +44,6 @@ These errors can occur if:
 
 2. The PHP template [does not contain a valid header structure](first-custom-pdf.md#template-structure). Edit your template and ensure you add all the required headers, then zip up and try again.
 
+### I uploaded my template to the PDF Working Directory using (S)FTP but it isn't showing up/the old header information is still showing when I configure my PDF
+
+Gravity PDF caches the installed custom templates and the [associated header data](first-custom-pdf.md#template-structure). The cache is automatically flushed when (re)installing a templates via the PDF Template Manager. But if you upload the template via (S)FTP or a File Manager, you should [toggle on Debug Mode](../users/global-settings.md#debug-mode) to clear it.
