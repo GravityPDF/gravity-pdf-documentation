@@ -4,6 +4,10 @@ sidebar_label: "Display Nested Forms Table"
 description: ""
 ---
 
+:::info After a no-code solution?
+The [Gravity PDF Core Booster extension](https://gravitypdf.com/shop/core-booster-add-on/) provides [three layout options for Nested Forms](../extensions/core-booster-add-on.md#nested-forms) – two of which are table variants. You can also selectively include individual nested form fields, and reorder those fields for the PDF.
+:::
+
 You can output the <a href="https://gravitywiz.com/documentation/gravity-forms-nested-forms/?ref=78" rel="sponsored">Gravity Wiz Nested Forms</a> field in Core and Universal PDF templates as a table using the following snippet:
 
 ```
