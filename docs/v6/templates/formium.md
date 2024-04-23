@@ -1,7 +1,7 @@
 ---
 title: "Formium Universal Template: How to Install and Configure"
 sidebar_label: "Formium"
-description: "A form-inspired PDF design which dynamically generates using Gravity Forms data using Gravity PDF.""
+description: "A form-inspired PDF design which dynamically generates using Gravity Forms data using Gravity PDF."
 ---
 
 ![When you need a PDF that looks just like your form layout, Formium is the best template for the job.](https://resources.gravitypdf.com/uploads/2017/06/cover-image-v2-10.jpg)

@@ -116,7 +116,7 @@ All PDF templates have common settings that can be configured, such as font, sec
 
 ## Recommended Fonts
 
-*Open Sans* is an open source font (Apache License, Version 2.0) that's optimised for print, web, and mobile interfaces. It works well with *Business Letter #2* at 10pt. You can set the PDF font in the [Appearancesection](../users/setup-pdf.md#appearance-tab).
+*Open Sans* is an open source font (Apache License, Version 2.0) that's optimised for print, web, and mobile interfaces. It works well with *Business Letter #2* at 10pt. You can set the PDF font in the [Appearance section](../users/setup-pdf.md#appearance-section).
 
 ## Viewing PDF
 
