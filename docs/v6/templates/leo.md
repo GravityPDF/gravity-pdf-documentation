@@ -1,20 +1,20 @@
 ---
-title: "Leo Premium Template: How to Install and Configure"
+title: "Leo Universal Template: How to Install and Configure"
 sidebar_label: "Leo"
-description: "Leo is a premium PDF template that displays your form data with both professionalism and charisma."
+description: "A charismatic PDF design which dynamically generates using Gravity Forms data using Gravity PDF."
 ---
 
-![Leo is a Universal template with an aesthetically pleasing look and feel](https://resources.gravitypdf.com/uploads/edd/2018/10/leo-standard.png)
+![Two A4 pieces of paper stacked on top of each other. Both are printed copies of PDFs generated using Gravity PDF and Leo.](https://resources.gravitypdf.com/uploads/2018/10/leo-cover-image-v2a.jpg)
 
 *Leo* is a premium PDF template that displays your form data with both professionalism and charisma. You can purchase it from our [PDF Template Shop](https://gravitypdf.com/shop/leo/). This guide will walk you through installing and configuring *Leo* to its full potential.
+
+## Introduction
+
+As a *Universal* PDF template, *Leo* can be used with all Gravity Forms and will correctly display any official Gravity Forms fields. Because the design is a fixed two-column layout, [Drag and Drop columns are not supported](../users/columns.md).
 
 ## Installation
 
 [Please follow our installation guide](installing-upgrading-premium-templates.md), which provides instructions for setting up and configuring your premium template.
-
-## Limitations
-
-As a *Universal* PDF template, *Leo* can be used with all Gravity Forms and will correctly display any official Gravity Forms fields. However, [columns using CSS Ready Classes](../users/css-ready-classes.md) are not compatible.
 
 ## Configuring
 
@@ -23,7 +23,6 @@ All PDF templates have common settings that can be configured, such as font, sec
 ### Main Heading
 * The main heading is included on the first page of your PDF, before any other content, on the top-left side (adjacent to the [Logo](#logo)). Merge tags are supported.
 * Leave the field blank to disable.
-* This option replaces the "Show Form Title" setting. To replicate, use the `{form_title}` merge tag.
 
 ### Sub Heading
 * The sub heading is included below the Main Heading. Merge tags are supported.
@@ -36,13 +35,13 @@ All PDF templates have common settings that can be configured, such as font, sec
 ### Footer
 * The footer is displayed in the bottom of all pages in your PDF.
 * The footer text is center-aligned in the document, and this cannot be changed.
-* The footer background colour is set using the [Secondary Color](#secondary-color) Setting. The text colour will use black or white (whichever has the best contrast).
+* The footer background color is set using the [Secondary Color](#secondary-color) Setting. The text color will use black or white (whichever has the best contrast).
 
 ### Primary Color
-* Used for the top-bar background colour that is displayed on every page. The default colour is Azure Radiance (hex `#098FFE`).
+* Used for the top-bar background color that is displayed on every page. The default color is Azure Radiance (hex `#098FFE`).
 
 ### Secondary Color
-* Used for the bottom-bar background colour that is displayed on every page. The default colour is Tundora (hex `#4C4C4C`).
+* Used for the bottom-bar background color that is displayed on every page. The default color is Tundora (hex `#4C4C4C`).
 
 ## Additional Settings
 
@@ -56,7 +55,7 @@ Along with the options specific to *Leo*, the following core settings are also s
 
 ## Recommended Font
 
-*Leo* comes bundled with *Montserrat*, an open source Google web font (SIL Open Font License Version 1.1). *Montserrat* is an ode to the old posters and signs in the traditional Montserrat neighbourhood of Buenos Aires and works great at 10pt with *Leo*. Set the PDF font [in the Appearancesection](../users/setup-pdf.md#appearance-tab).
+*Leo* comes bundled with *Montserrat*, an open source Google web font (SIL Open Font License Version 1.1). *Montserrat* is an ode to the old posters and signs in the traditional Montserrat neighbourhood of Buenos Aires and works great at 10pt with *Leo*. Set the PDF font [in the Appearance section](../users/setup-pdf.md#appearance-section).
 
 ## Viewing PDF
 

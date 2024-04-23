@@ -1,20 +1,20 @@
 ---
-title: "Cellulose Premium Template: How to Install and Configure"
+title: "Cellulose Universal Template: How to Install and Configure"
 sidebar_label: "Cellulose"
-description: ""
+description: "A table-based PDF layout dynamically generated from Gravity Forms data using Gravity PDF."
 ---
 
-![Cellulose displays your form data in a slim two-column table-based layout](https://resources.gravitypdf.com/uploads/2017/03/black-border_R1.png)
+![Two A4 pieces of paper stacked on top of each other. Both are printed copies of PDFs generated using Gravity PDF and Cellulose.](https://resources.gravitypdf.com/uploads/2017/06/cover-image-v2_R1.jpg)
 
 *Cellulose* is a business-orientated premium PDF template that displays your form data in a slim two-column table-based layout. You can purchase it from our [PDF Template Shop](https://gravitypdf.com/shop/cellulose/). This guide will walk you through installing and configuring *Cellulose* to its full potential.
+
+## Introduction
+
+As a *Universal* PDF template, *Cellulose* can be used with all Gravity Forms and will correctly display any official Gravity Forms fields. Because the design is a fixed two-column table layout, [Drag and Drop columns are not supported](../users/columns.md).
 
 ## Installation
 
 [Please follow our installation guide](installing-upgrading-premium-templates.md), which provides instructions for setting up and configuring your premium template.
-
-## Limitations
-
-As a *Universal* PDF template, *Cellulose* can be used with all Gravity Forms and will correctly display any official Gravity Forms fields. However, [columns using CSS Ready Classes](../users/css-ready-classes.md) are not compatible.
 
 ## Configuring
 
@@ -23,14 +23,13 @@ All PDF templates have common settings that can be configured, such as font, sec
 ### Main Heading
 * The main heading is included at the very start of your PDF, before any other content. Merge tags are supported.
 * Leave the field blank to disable.
-* This option replaces the "Show Form Title" setting. To replicate, use the `{form_title}` merge tag.
 
 ### Logo / Image
 * This image is positioned in the top-left of the first page of the PDF. The height of the image will be no greater than 175px (15 millimetres or about 0.6 inches).
 * An image 500px wide will be a suitable resolution in most cases. To ensure your PDF generates quickly and the PDF file size stays small, we recommend using an image under 1MB.
 
 ### Cell Border Color
-* Set the cell border colour for the field label and user response. The default colour is Alto (hex `#d4d4d4`).
+* Set the cell border color for the field label and user response. The default color is Alto (hex `#d4d4d4`).
 
 ### Cell Border
 * Cell borders are shown by default. When this checkbox is ticked, the PDF will not show any borders around the field label or user response.
@@ -60,7 +59,7 @@ Along with the options specific to *Cellulose*, the following core settings are 
 
 ## Recommended Font
 
-*Cellulose* comes bundled with *Arimo*, an open source Google web font (Apache License, Version 2.0). *Arimo* is an innovative, refreshing sans serif font that works great at 10pt with *Cellulose*. Set the PDF font [in the Appearancesection](../users/setup-pdf.md#appearance-tab).
+*Cellulose* comes bundled with *Arimo*, an open source Google web font (Apache License, Version 2.0). *Arimo* is an innovative, refreshing sans serif font that works great at 10pt with *Cellulose*. Set the PDF font [in the Appearance section](../users/setup-pdf.md#appearance-section).
 
 ## Viewing PDF
 

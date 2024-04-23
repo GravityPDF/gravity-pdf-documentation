@@ -1,20 +1,20 @@
 ---
-title: "Tritan Premium Template: How to Install and Configure"
+title: "Tritan Universal Template: How to Install and Configure"
 sidebar_label: "Tritan"
-description: ""
+description: "A fancy PDF design which dynamically generates using Gravity Forms data using Gravity PDF."
 ---
 
-![Tritan is a fancy template](https://resources.gravitypdf.com/uploads/edd/2018/02/tritan-cover-image-v2.jpg)
+![Two A4 pieces of paper stacked on top of each other. Both are printed copies of PDFs generated using Gravity PDF and Tritan](https://resources.gravitypdf.com/uploads/edd/2018/02/tritan-cover-image-v2.jpg)
 
 *Tritan* is a fancy Universal PDF template that integrates seamlessly into any Gravity Forms you might create. You can [purchase from our PDF Template Shop](https://gravitypdf.com/shop/tritan/). It's ideally suited for short forms with a limited number of pages (resumès instantly come to mind), but can be scaled to larger forms by disabling the first-page sidebar.
+
+## Introduction
+
+As a *Universal* PDF template *Tritan* can be used with all Gravity Forms and will correctly display any official Gravity Forms fields.
 
 ## Installation
 
 [Please follow our installation guide](installing-upgrading-premium-templates.md) that provides instructions for setting up and configuring your premium template.
-
-## Limitations
-
-As a *Universal* PDF template *Tritan* can be used with all Gravity Forms and will correctly display any official Gravity Forms fields. **Header text is not supported in Tritan**.
 
 ## Configuring
 
@@ -23,22 +23,21 @@ All PDF templates have common settings that can be configured, such as font, sec
 ### Main Heading
 * The main heading is included at the very start of your PDF, before any other content. Merge tags are supported.
 * Leave the field blank to disable.
-* To include the form title, use the `{form_title}` merge tag.
 
-### Primary Colour
-* This colour is used in the top-left header triangle and bottom-right footer triangle. The List and Likert fields also make use of this colour in their table layout.
+### Primary color
+* This color is used in the top-left header triangle and bottom-right footer triangle. The List and Likert fields also make use of this color in their table layout.
 
-### Secondary Colour
-* This colour is used in the top-right header triangle and the bottom-left footer triangle. The HTML and Product fields also make use of this colour in their layout.
+### Secondary color
+* This color is used in the top-right header triangle and the bottom-left footer triangle. The HTML and Product fields also make use of this color in their layout.
 
 ### Left Footer
 * This content will be displayed in the bottom left triangle on each page of your document
-* The footer colour will be set to black or white automatically based on the best background contrast.
+* The footer color will be set to black or white automatically based on the best background contrast.
 * There is limited space for text, so best keep it short.
 
 ### Right Footer
 * This content will be displayed in the bottom right triangle on each page of your document.
-* The footer colour will be set to black or white automatically based on the best background contrast.
+* The footer color will be set to black or white automatically based on the best background contrast.
 * There is limited space for text, so best keep it short.
 
 ### Sidebar Image
@@ -52,7 +51,7 @@ All PDF templates have common settings that can be configured, such as font, sec
 * For optimal display, use Headings and Horizontal Lines to split up the sidebar content into easy-to-read blocks. **Note:** All heading tags (h1 – h6) will be displayed identically in the sidebar.
 
 ### Sidebar Font Color
-* This is the font colour used in the sidebar. The default sidebar font colour is dark grey (hex `#1e73be`).
+* This is the font color used in the sidebar. The default sidebar font color is dark grey (hex `#1e73be`).
 
 ## Additional Settings
 
@@ -66,7 +65,7 @@ Along with the options specific to *Tritan*, the following core settings are als
 
 ## Recommended Font
 
-*Tritan* comes bundled with both *Fira Sans Regular* and *Fira Sans Light* which are both open source fonts (SIL Open Font License 1.1). *Fira Sans* is a highly legible sans serif font that works great at 10pt with *Tritan*. Set the PDF font in the [Appearancesection](../users/setup-pdf.md#appearance-tab).
+*Tritan* comes bundled with both *Fira Sans Regular* and *Fira Sans Light* which are both open source fonts (SIL Open Font License 1.1). *Fira Sans* is a highly legible sans serif font that works great at 10pt with *Tritan*. Set the PDF font in the [Appearance section](../users/setup-pdf.md#appearance-section).
 
 ## Viewing PDF
 

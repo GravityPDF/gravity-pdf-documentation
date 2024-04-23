@@ -1,20 +1,20 @@
 ---
-title: "Sabre Premium Template: How to Install and Configure"
+title: "Sabre Universal Template: How to Install and Configure"
 sidebar_label: "Sabre"
-description: ""
+description: "A business-orientated PDF design which dynamically generates using Gravity Forms data using Gravity PDF."
 ---
 
-![Sabre works great with business letters, invoices, etc](https://resources.gravitypdf.com/uploads/edd/2017/03/sabre-2.png)
+![Two A4 pieces of paper stacked on top of each other. Both are printed copies of PDFs generated using Gravity PDF and Sabre.](https://resources.gravitypdf.com/uploads/2017/06/cover-image-v2-8.jpg)
 
 *Sabre* is a universal PDF template that integrates seamlessly into any Gravity Forms you might create. You can [purchase from our PDF Template Shop](https://gravitypdf.com/shop/sabre/). It provides functionality to include both the submitted user info and your important business details through a highly customisable full-height sidebar.
+
+## Introduction
+
+As a *Universal* PDF template, *Sabre* can be used with all Gravity Forms and will correctly display any official Gravity Forms fields.
 
 ## Installation
 
 [Please follow our installation guide](installing-upgrading-premium-templates.md) that provides instructions for setting up and configuring your premium template.
-
-## Limitations
-
-As a *Universal* PDF template, *Sabre* can be used with all Gravity Forms and will correctly display any official Gravity Forms fields.
 
 ## Configuring
 
@@ -23,7 +23,6 @@ All PDF templates have common settings that can be configured, such as font, sec
 ### Main Heading
 * The main heading is included at the very start of your PDF, before any other content. Merge tags are supported.
 * Leave the field blank to disable.
-* This option replaces the "Show Form Title" setting. To replicate, use the `{form_title}` merge tag.
 
 ### Sidebar Position
 * The sidebar spans the full height of the document and can be positioned either on the left or right-hand-side of the page.
@@ -43,21 +42,20 @@ All PDF templates have common settings that can be configured, such as font, sec
 * For best results, keep this short and sweet.
 
 ### Sidebar Font
-* Set the font type used in the sidebar. This overrides the font set in the [Appearancesection](../users/setup-pdf.md#appearance-tab).
+* Set the font type used in the sidebar. This overrides the font set in the [Appearance section](../users/setup-pdf.md#appearance-section).
 
 ### Sidebar Font Size
-* Set the font size used in the sidebar. The default font size is 11pt. This overrides the font set in the [Appearancesection](../users/setup-pdf.md#appearance-tab).
+* Set the font size used in the sidebar. The default font size is 11pt. This overrides the font set in the [Appearance section](../users/setup-pdf.md#appearance-section).
 
 ### Sidebar Font Color
-* Set the font colour used in the sidebar. This overrides the font set in the [Appearancesection](../users/setup-pdf.md#appearance-tab).
+* Set the font color used in the sidebar. This overrides the font set in the [Appearance section](../users/setup-pdf.md#appearance-section).
 
-Only Display Sidebar on First Page?
+### Only Display Sidebar on First Page?
 * When enabled the sidebar will only show on page 1 of the PDF. The content area margins will remain unchanged on subsequent pages. Defaults to display on all pages.
-* Added in version 1.2
 
 ### Sidebar Background Color
-* This is the background colour used in the sidebar. The default sidebar background colour used in *Sabre* is a Denim (hex `#1e73be`).
-* Pick a suitable contrasting colour for your [logo](#logo).
+* This is the background color used in the sidebar. The default sidebar background color used in *Sabre* is a Denim (hex `#1e73be`).
+* Pick a suitable contrasting color for your [logo](#sidebar-logo--image).
 
 ## Additional Settings
 
@@ -71,7 +69,7 @@ Along with the options specific to *Sabre*, the following core settings are also
 
 ## Recommended Font
 
-*Sabre* comes bundled with *Lato*, an open source Google font (SIL Open Font License 1.1). *Lato* is a highly readable sans serif font that works great at 11pt with *Sabre*. Set the PDF font in the [Appearancesection](../users/setup-pdf.md#appearance-tab).
+*Sabre* comes bundled with *Lato*, an open source Google font (SIL Open Font License 1.1). *Lato* is a highly readable sans serif font that works great at 11pt with *Sabre*. Set the PDF font in the [Appearance section](../users/setup-pdf.md#appearance-section).
 
 ## Viewing PDF
 
