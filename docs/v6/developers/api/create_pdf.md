@@ -9,7 +9,7 @@ description: ""
 When provided the Gravity Forms entry ID and PDF ID, this method will correctly generate the PDF, save it to disk, [trigger the `gfpdf_post_save_pdf` action](../actions/gfpdf_post_save_pdf.md) and return the absolute path to the PDF.
 
 :::note
-When using this method, the PDF will be cached in the temporary directory for up to 24 hours and the cached copy used for sending future notifications. To prevent this behaviour you should delete the PDF from the temporary location when you've finished with it.
+When using this method, the PDF will be cached in the temporary directory for up to 12 hours and the cached copy used for sending future notifications. To prevent this behaviour you should delete the PDF from the temporary location when you've finished with it.
 :::
 
 ## Version

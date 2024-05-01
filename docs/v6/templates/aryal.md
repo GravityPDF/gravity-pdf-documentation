@@ -1,20 +1,20 @@
 ---
-title: "Aryal Premium Template: How to Install and Configure"
+title: "Aryal Universal Template: How to Install and Configure"
 sidebar_label: "Aryal"
-description: "Aryal is a colourful, stylish Universal template with a focus on design. It's a great fit for businesses with a creative focus."
+description: "A colorful and stylish PDF design which dynamically generates using Gravity Forms data using Gravity PDF."
 ---
 
-![Aryal is a colourful, stylish Universal template with a focus on design](https://resources.gravitypdf.com/uploads/edd/2018/10/aryal-standard.png)
+![Two A4 pieces of paper stacked on top of each other. Both are printed copies of PDFs generated using Gravity PDF and Aryal.](https://resources.gravitypdf.com/uploads/2018/10/aryal-cover-image-a1.jpg)
 
-*Aryal* is a premium PDF template with a colourful, vibrant and stylish look and feel. You can purchase it from our [PDF Template Shop](https://gravitypdf.com/shop/aryal/). This guide will walk you through installing and configuring *Aryal* to its full potential.
+*Aryal* is a premium PDF template with a colorful, vibrant and stylish look and feel. You can purchase it from our [PDF Template Shop](https://gravitypdf.com/shop/aryal/). This guide will walk you through installing and configuring *Aryal* to its full potential.
+
+## Introduction
+
+As a *Universal* PDF template, *Aryal* can be used with all Gravity Forms and will correctly display any official Gravity Forms fields.
 
 ## Installation
 
 [Please follow our installation guide](installing-upgrading-premium-templates.md), which provides instructions for setting up and configuring your premium template.
-
-## Limitations
-
-As a *Universal* PDF template, *Aryal* can be used with all Gravity Forms and will correctly display any official Gravity Forms fields.
 
 ## Configuring
 
@@ -23,19 +23,18 @@ All PDF templates have common settings that can be configured, such as font, sec
 ### Main Heading
 * The main heading is left-aligned and included on the first page of your PDF, [below the Logo](#logo--image) (if present), and before any of your Gravity Forms fields. Merge tags are supported.
 * Leave the field blank to disable.
-* This option replaces the "Show Form Title" setting. To replicate, use the `{form_title}` merge tag.
 
 ### Logo / Image
 * This image is positioned in the top-left of the first page of the PDF (above the [Main Heading](#main-heading)). The height of the image will be no greater than 283px (24 millimetres or about 0.94 inches).
 * An image 500px wide will be a suitable resolution in most cases. To ensure your PDF generates quickly and the PDF file size stays small, we recommend using an image under 1MB.
 
 ### Primary Color
-* The Primary Color is used to calculate a spread of colours for the background triangles. The List and Likert fields, as well as the Product Table, make use of this colour in their table layout.
-* The default colour is Fall Green (hex `#ededb8`).
+* The Primary Color is used to calculate a spread of colors for the background triangles. The List and Likert fields, as well as the Product Table, make use of this color in their table layout.
+* The default color is Fall Green (hex `#ededb8`).
 
 ### Secondary Color
-* The Secondary Color is used to calculate an alternate spread of colours for the background triangles.
-* The default colour is
+* The Secondary Color is used to calculate an alternate spread of colors for the background triangles.
+* The default color is
 Aqua Island (hex `#acd4e0`).
 
 ### Color Schemes
@@ -62,7 +61,7 @@ Along with the options specific to *Aryal*, the following core settings are also
 
 ## Recommended Font
 
-*Aryal* comes packaged with the open source sans-serif font, [Roboto](https://fonts.google.com/specimen/Roboto), which was designed by Christian Robertson, an interface designer for Google. Roboto features friendly and open curves and has a natural reading rhythm. For the best results, we recommend using Roboto at 10pt.
+*Aryal* comes packaged with the open source sans-serif font, [Roboto](https://fonts.google.com/specimen/Roboto), which was designed by Christian Robertson, an interface designer for Google. Roboto features friendly and open curves and has a natural reading rhythm. For the best results, we recommend using Roboto at 10pt. Set the PDF font in the [Appearance section](../users/setup-pdf.md#appearance-section).
 
 ## Viewing PDF
 

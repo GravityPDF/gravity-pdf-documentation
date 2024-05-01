@@ -94,7 +94,7 @@ All PDF templates have common settings that can be configured, such as font, sec
 
 ## Recommended Font
 
-*Merriweather* is an open source Google serif font (SIL Open Font License, Version 1.1) that is pleasant to read on screens and works well with *Formal Letter* at 10pt. You can set the PDF font in the [Appearancesection](../users/setup-pdf.md#appearance-tab).
+*Merriweather* is an open source Google serif font (SIL Open Font License, Version 1.1) that is pleasant to read on screens and works well with *Formal Letter* at 10pt. You can set the PDF font in the [Appearance section](../users/setup-pdf.md#appearance-section).
 
 ## Viewing PDF
 

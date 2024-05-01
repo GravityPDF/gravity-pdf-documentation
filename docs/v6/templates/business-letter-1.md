@@ -117,7 +117,7 @@ All PDF templates have common settings that can be configured, such as font, sec
 
 ## Recommended Font
 
-*Roboto* is an open source sans-serif font (Apache License, Version 2.0) that is easy to read and works well with *Business Letter #1* at 10pt. Set the PDF font in the [Appearancesection](../users/setup-pdf.md#appearance-tab).
+*Roboto* is an open source sans-serif font (Apache License, Version 2.0) that is easy to read and works well with *Business Letter #1* at 10pt. Set the PDF font in the [Appearance section](../users/setup-pdf.md#appearance-section).
 
 ## Viewing PDF
 

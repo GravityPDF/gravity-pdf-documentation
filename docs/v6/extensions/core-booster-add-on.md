@@ -34,6 +34,8 @@ Once the plugin is activated, you'll find new settings [in the _Template_ sectio
 
 ### Page Margins
 
+![A screenshot of the Gravity PDF Core Booster Page Margins setting with values 20mm, 20mm, 30mm, and 40mm. An arrow points from the Page Margin setting to a PDF document that uses those margins.](https://resources.gravitypdf.com/uploads/2024/05/gravity-pdf-core-booster-page-margins-feature.png)
+
 Adjust the gap between the page edge and the main content area. The page margin format follows the [CSS shorthand convention](https://developer.mozilla.org/en-US/docs/Web/CSS/Shorthand_properties#margin_and_padding_properties), allowing you to specify the margin for each side of the page. 
 
 The CSS shorthand rules are:
@@ -59,13 +61,21 @@ The top/bottom margins are automatically increased if you include a header or fo
 
 ### Filter Fields
 
-When enabled, you can control exactly which fields are included or excluded in the PDF. This allows you to configure multiple PDFs on the same form, with different fields in each document. The [rudimentary "exclude" CSS class](../users/hide-form-fields.md) is ignored when this setting is enabled. 
+![A screenshot of the Gravity PDF Core Booster Filter Fields and Field Selector settings. The Filter Fields toggle is on. In the Field Selector it shows the Email field being reordered in the "Included" list.](https://resources.gravitypdf.com/uploads/2024/05/gravity-pdf-core-booster-field-selector-feature.png)
 
-When this setting is disabled (the default), all form fields will be displayed in the PDF (unless another setting excludes specific fields e.g. [Enable Conditional Logic](../users/setup-pdf.md#enable-conditional-logic)). When enabled, included fields are displayed in the order shown [in the Form Editor](https://docs.gravityforms.com/form-editor/) (you cannot re-order them independently).
+When enabled, you can control exactly which fields are included in the PDF, and the order those fields are displayed (from v2.1). This allows you to configure multiple PDFs on the same form, with different fields in each document.
+ 
+Fields you add to the _Included_ list will be displayed in the PDF using the order selected. You may reordered fields in this list using drag and drop, or by holding left shift on the keyboard and using the up/down arrow keys.
 
-If you'd like to control which HTML fields are included, first [enable the Show HTML Fields setting](../users/setup-pdf.md#show-html-fields). To filter pricing fields, [set the Pricing Fields setting to Display Individually](#pricing-fields) (it's not possible to filter these fields in the summary table).
+If you'd like to control which HTML fields are included in a PDF, first [enable the Show HTML Fields setting](../users/setup-pdf.md#show-html-fields). To filter pricing fields, [set the Pricing Fields setting to Display Individually](#pricing-fields) (it's not possible to filter these fields in the summary table). To filter Page Break fields in the PDF [enable the Show Page Names setting](../users/setup-pdf.md#show-page-names).
+
+The [rudimentary "exclude" CSS class](../users/hide-form-fields.md) is ignored when this setting is enabled.
+
+When Filter Fields is disabled (the default), all form fields will be displayed in the PDF (unless another setting excludes specific fields e.g. [Enable Conditional Logic](../users/setup-pdf.md#enable-conditional-logic)).
 
 ### Field Label Display
+
+![A screenshot of the Gravity Forms Admin Field Label setting in the Form Editor with the value "Workshop Selection (Admin)". An arrow points from the Admin Field Label setting to a PDF document that includes that field and admin label.](https://resources.gravitypdf.com/uploads/2024/05/gravity-pdf-core-booster-admin-label-feature.png)
 
 This setting allows you to control what label will be displayed for fields in the PDF. You have four choices available:
 
@@ -86,9 +96,11 @@ All choices are shown in a list/block format by default, but you can use the [_F
 If you display [_Pricing Fields individually_](#pricing-fields), those that support choices are compatible with this feature.  
 :::
 
-If making use of [Gravity Wiz's Populate Anything perk](https://gravitywiz.com/documentation/gravity-forms-populate-anything/?ref=78), your [Live Merge Tags](https://gravitywiz.com/documentation/gravity-forms-populate-anything/?ref=78#live-merge-tags) are correctly processed and displayed in the PDF when included in choice labels/values.
+If making use of <a href="https://gravitywiz.com/documentation/gravity-forms-populate-anything/?ref=78" rel="sponsored">Gravity Wiz's Populate Anything perk</a>, your <a href="https://gravitywiz.com/documentation/gravity-forms-populate-anything/?ref=78#live-merge-tags" rel="sponsored">Live Merge Tags</a> are correctly processed and displayed in the PDF when included in choice labels/values.
 
 ### Field Choices Layout
+
+![A screenshot of a PDF document with two fields highlighted. The first field is labeled "Product Purchased" and displays three available options, with one selected. These options are displayed side-by-side. The second field is labeled "Feature Likes" and displays five available options, with three selected. These options are displayed in a vertical list.](https://resources.gravitypdf.com/uploads/2024/05/gravity-pdf-core-booster-display-field-choices-feature.png)
 
 If you have enabled [_Field Choices_](#field-choices), this setting will be available to control how all the choices will be presented in the PDF. You can choose to display each choice on a new line (Block), or include them side-by-side (Inline).
 
@@ -104,9 +116,13 @@ If you'd like relevant pricing fields to use the choice value, you need to [set 
 
 ### Field Description
 
+![A screenshot of the Gravity Forms Field Description setting in the Form Editor with the value "New member's preferred membership level." An arrow points from the Description setting to a PDF document that includes the field and description.](https://resources.gravitypdf.com/uploads/2024/05/gravity-pdf-core-booster-field-description-feature.png)
+
 When enabled, each field Description (found under the _General_ section in the Form Editor) will be displayed alongside the label and value. The description position is [determined by your Form Settings](https://docs.gravityforms.com/form-settings/#h-form-layout), and can be placed above or below the user's response in the PDF.
 
 ### Pricing Fields
+
+![A screenshot of a PDF document that is showing individual Gravity Forms Pricing fields under a "Services" section. The product label, option label, price, and quantity are shown.](https://resources.gravitypdf.com/uploads/2024/05/gravity-pdf-core-booster-individual-products-feature.png)
 
 Pricing fields are all fields shown [under the _Pricing Fields_ section in the Form Editor](https://docs.gravityforms.com/form-fields/#pricing-fields). This includes _Product_, _Option_, _Quantity_, and _Shipping_ field types. 
 
@@ -116,7 +132,51 @@ For convenience, the _Remove Fields_ option is an easy shortcut to remove all Pr
 
 ### Entry Notes
 
+![A screenshot of a PDF document with the associated Gravity Forms Entry Notes displayed at the end of the document.](https://resources.gravitypdf.com/uploads/2024/05/gravity-pdf-core-booster-entry-notes-feature.png)
+
 [Every entry has a notes section](https://docs.gravityforms.com/entry-detail/#h-entry-notes) to keep important, related information with each submission. When this feature is enabled, your Gravity PDF Core or Universal template will include these notes at the end of the document. 
+
+### Nested Forms
+
+Core Booster 2.1+ has three layout options available for the display of a <a href="https://gravitywiz.com/documentation/gravity-forms-nested-forms/?ref=78" rel="sponsored">Gravity Wiz Nested Forms field</a>:
+
+1. [Standard](#standard)
+2. [Table](#table)
+3. [Table (transposed)](#table-transposed)
+
+You may override this setting for individual Nested Forms fields by adding `gpdf_nested_standard`, `gpdf_nested_table`, or `gpdf_nested_transposed` to the Custom CSS Class field setting in the Form Editor.
+
+#### Standard
+
+Gravity PDF will display all Nested Forms fields for each entry, provided each entry/field combination passes the various settings configured for the PDF eg. [Show HTML Fields](../users/setup-pdf.md#show-html-fields), [Enable Conditional Logic](../users/setup-pdf.md#enable-conditional-logic), [Show Empty Fields](../users/setup-pdf.md#show-empty-fields) to name a few.
+
+When you enable the [Filter Fields setting](#filter-fields), only the child fields you select will be shown in the PDF. The field order chosen in Filter Fields will be respected.
+
+#### Table
+
+Nested Forms entry data will be displayed in a table layout in the PDF. By default, the table columns used are the Nested Forms Summary Fields chosen in the Form Editor (minus the Row ID). Each row in the table is an individual entry.
+
+When you enable the [Filter Fields setting](#filter-fields), the child fields you select will be used in the table columns (instead of the Summary Fields). The field order chosen in Filter Fields will be respected when the table is created.
+
+:::note
+If your Summary Fields/Filter Fields setting includes a large number of Nested Forms fields, there may be display issues in the PDF when using this layout option.
+:::
+
+#### Table (transposed)
+
+Like the [Table layout](#table), but with the rows and columns reversed. This format is useful when you've set a low Maximum Entry Limit on your Nested Forms field.
+
+:::note
+If you do not limit the maximum number of entries – no greater than 5 is a good rule of thumb – there may be display issues in the PDF when using this layout option.
+:::
+
+### Additional CSS
+
+The Additional CSS editor allows you to tweak the design and layout of your PDF using CSS. **This is a power user feature, and if you are not careful you could cause display issues.**
+
+For convenience, CSS for common layout adjustments have been included in the editor. To activate one of these snippets, remove the opening `/*` and closing `*/` comment tags from around the CSS.
+
+To help you write your CSS, [you can use the HTML URL parameter](../developers/helper-parameters.md#html1) while viewing a PDF. Use your browser development tools to view the source code. [Only a subset of CSS is supported](../developers/pdf-features/supported-html-and-css.md#css-support) by the PDF engine being used.
 
 ## Translations
 
@@ -144,6 +204,7 @@ Provided you are running Gravity PDF (Core) 6.0 or higher, you'll have a seamles
 1. The minimum support version of Gravity PDF has been increased to 6.0 or higher. 
 2. The labels/descriptions for existing settings have been updated to better reflect what they do. This is purely presentational, and doesn't change how those features work in your PDFs.
 3. The `gf_inline_list` CSS class is now natively supported when the current field is [displaying all field choices](#field-choices). If you'd like to continue showing your choices inline in your form, but as a list in the PDF, you can add an additional CSS class `gf_inline_block` to the field.
+4. To support all the features available in Core Booster v2, your [Universal PDF templates](https://gravitypdf.com/store/#universal) need to be [manually upgraded to v3.0+ via the PDF Template Manager](../templates/installing-upgrading-premium-templates.md#upgrading-premium-template). 
 
 ## Developers
 

@@ -9,7 +9,7 @@ description: ""
 This method generates a temporary Single Entry View PDF and either saves it to disk (returning the absolute path to the file), or it will stream to the current user's browser.
 
 :::note
-When using this method with the "save" output type, the PDF will be cached in the temporary directory for up to 24 hours. To prevent this behaviour you should delete the PDF from the temporary location when you've finished with it.
+When using this method with the "save" output type, the PDF will be cached in the temporary directory for up to 12 hours. To prevent this behaviour you should delete the PDF from the temporary location when you've finished with it.
 :::
 
 :::info
