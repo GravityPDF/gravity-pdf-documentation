@@ -110,11 +110,11 @@ add_filter( 'gfpdf_bg_download_url_timeout', function( $timeout ) {
 } );
 ```
 
-The timeout cannot be more than 24 hours, as the zip file gets automatically deleted.
+The timeout cannot be more than 12 hours, as the zip file gets automatically deleted.
 
 ### When is the zip file deleted from the server?
 
-The zip file is deleted from the server after 24 hours during the daily scheduled clean-up.
+The zip file is deleted from the server after 12 hours during the daily scheduled clean-up.
 
 ### Why is the filename of some PDFs suffixed with the entry ID and PDF ID?
 
