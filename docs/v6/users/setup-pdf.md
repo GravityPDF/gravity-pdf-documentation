@@ -136,7 +136,9 @@ Below is a description of the Core template settings that all **four free templa
 * This is disabled by default.
 
 ### Show Page Names
-* When using Gravity Forms *Page Break* field you have the option to [name each page using the *Start Paging* field](https://docs.gravityforms.com/page-break/). When this PDF option is enabled, thee page names will be displayed in your PDF.
+* When using Gravity Forms *Page Break* field you have the option to [name each page using the *Start Paging* field](https://docs.gravityforms.com/page-break/). When this PDF option is enabled the page names will be displayed in your PDF.
+* If a Page Break field has conditional logic, and the [Enable Conditional Logic](#enable-conditional-logic) setting is enabled, that logic will is evaluated in the PDF. If the page is hidden, both the page title and all fields on the page will be excluded from the PDF. This feature was added in Gravity PDF 6.10.1.
+* If a Page Break field uses [the "exclude" CSS class added](hide-form-fields.md), the page name will not be shown in the PDF. This feature was added in Gravity PDF 6.10.1.
 * This is disabled by default.
 
 ### Show HTML Fields
