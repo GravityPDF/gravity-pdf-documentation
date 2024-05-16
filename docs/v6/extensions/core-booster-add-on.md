@@ -293,7 +293,7 @@ add_filter( 'gfpdf_form_field_selector_sort_enabled', function ( $enabled, $form
 	}
 
 	return $enabled;
-} );
+}, 10, 2 );
 ```
 
 ##### gfpdf_description_spacer
