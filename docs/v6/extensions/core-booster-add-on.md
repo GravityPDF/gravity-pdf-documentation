@@ -276,6 +276,26 @@ $pdf->process_html_structure( $entry, GPDFAPI::get_pdf_class( 'model' ), $html_c
 
 #### PHP
 
+##### gfpdf_form_field_selector_sort_enabled
+
+Use this filter to disable the reordering feature in the Field Selector setting:
+
+```
+add_filter( 'gfpdf_form_field_selector_sort_enabled', '__return_false' );
+```
+
+Use this snippet to disable the feature on specific forms (change the numbers `10, 11, 12` to match your specific form IDs):
+
+```
+add_filter( 'gfpdf_form_field_selector_sort_enabled', function ( $enabled, $form_id ) {
+	if ( in_array( (int) $form_id, [ 10, 11, 12 ], true ) ) {
+		return false;
+	}
+
+	return $enabled;
+} );
+```
+
 ##### gfpdf_description_spacer
 
 When displaying a [field description](#field-description), the default behaviour is to include a spacer/divider between the description and the content. This filter allows you to change what that spacer is:
