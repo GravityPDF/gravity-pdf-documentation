@@ -16,7 +16,7 @@ _Invoice Vertex_ is a condensed invoice template that [can be purchased from the
 
 Invoice templates can only be used with forms that [include a Gravity Forms Product field](https://docs.gravityforms.com/product/). If you try to use the invoice on a form without any products (or conditional products where no product is included for a specific entry) an error message will be shown in the PDF. If you do have conditional Products, [enable PDF Conditional Logic to match](../users/setup-pdf.md#enable-conditional-logic).
 
-If you have the [Gravity Wiz eCommerce Fields perk](#gravity-forms-ecommerce-fields) and the form includes the Tax field, [tax-inclusive pricing in the PDF invoice](#enable-tax-inclusive-pricing) is automatically disabled. You cannot use tax-inclusive and tax-exclusive pricing together.
+If you have the [Gravity Wiz eCommerce Fields perk](#gravity-forms-ecommerce-fields) or [EU VAT plugin](https://geekontheroad.com/eu-vat-for-gravity-forms/) and your form includes a Tax field, [tax-inclusive pricing in the PDF invoice](#enable-tax-inclusive-pricing) is automatically disabled. You cannot use tax-inclusive and tax-exclusive pricing together.
 
 The 2.x invoice templates require Gravity PDF version 6.0 or higher to correctly function.
 
@@ -161,7 +161,7 @@ _Vertex_ also has these additional template-specific settings:
 
 Gravity Forms doesn't natively support taxes [for Pricing fields](https://docs.gravityforms.com/category/user-guides/pricing-fields/). You could use a [Product Calculation field](https://docs.gravityforms.com/product/) to calculate each product's tax, but there are limitations. For example, it can be challenging to update the calculations when you add/remove products in your form, the tax amount will be displayed in the line items (and not the totals section), and this method only supports tax-exclusive pricing. Thankfully, you have more feature-rich tax options available.
 
-All Gravity PDF Invoices natively support tax-inclusive pricing, and you are able to set individual tax rates for each product (or disable taxes for a product entirely). If you require tax-exclusive pricing, [the Gravity Perks eCommerce Fields perk includes a Tax field, and is fully supported by Gravity PDF Invoices](#gravity-forms-ecommerce-fields).
+All Gravity PDF Invoices natively support tax-inclusive pricing, and you are able to set individual tax rates for each product (or disable taxes for a product entirely). If you require tax-exclusive pricing, [the Gravity Perks eCommerce Fields perk includes a Tax field](#gravity-forms-ecommerce-fields), and is fully supported by Gravity PDF Invoices. The [EU VAT for Gravity Forms plugin](https://geekontheroad.com/eu-vat-for-gravity-forms/) is another option that is well-supported, too.
 
 ![A screenshot of Vertex, with numbers one through seven positioned on the invoice area, and controlled by the numbered settings documented in the Tax Settings section.](https://resources.gravitypdf.com/uploads/2023/07/4-Tax-Settings-Vertex.png)
 
@@ -171,7 +171,8 @@ All Gravity PDF Invoices natively support tax-inclusive pricing, and you are abl
 * Multiple tax rates are supported for products using the Custom CSS Class `tax-{rate}-{label}` on Product or Shipping fields [in the Form Editor](https://docs.gravityforms.com/css-ready-classes/#h-how-to-use-ready-classes). The `{rate}` is a percentage between 0 and 100. While the `{label}` is the name of the tax (substitute spaces for hyphens). For example, if you wanted a specific product to be taxed at 5.25% with the label "CA Taxes", you would add the CSS class `tax-5.25-CA-Taxes` to the Product field in the Form Editor.
 * You cannot add different tax rates directly to Option fields; it can only be added to Products. Option fields will inherit the tax rate of the associated Product field.
 * Taxes can be disabled on a per-product basis using the Custom CSS Class `tax-0`. Do not include the label `-{label}` when disabling taxes this way.
-* If you have the [Gravity Wiz eCommerce Fields perk](#gravity-forms-ecommerce-fields) activated on your website, tax-inclusive pricing is automatically disabled when a Tax field is included in the form.
+* When using [Gravity Forms Coupon add-on](https://www.gravityforms.com/add-ons/coupons/), taxes are [calculated for a product after the discount is applied](#discounts-1).
+* If you have the [Gravity Wiz eCommerce Fields perk](#gravity-forms-ecommerce-fields) or the [EU VAT add-on](https://geekontheroad.com/eu-vat-for-gravity-forms/) activated on your website, tax-inclusive pricing is automatically disabled when a Tax field is added to the form.
 
 ![A screenshot of the Gravity Forms Editor with a Product field selected, the Custom CSS Class setting is highlighted in the Field Settings section, the value of the setting shows tax-7.25-California, which is how you define multiple tax rates in the invoice.](https://resources.gravitypdf.com/uploads/2023/07/5-Tax-Inclusive-Pricing-Vertex-1.png)
 
@@ -201,7 +202,10 @@ All Gravity PDF Invoices natively support tax-inclusive pricing, and you are abl
 * By default, the total tax is shown in the Invoice Summary section (the top of the PDF). Tick this box to remove the tax amount from the summary.
 
 #### Hide Tax Column
-* When enabled, the Unit Tax column will be hidden from the Product Table.
+* The Tax Column in the Product Table shows the calculated unit tax cost for each line item (rounded to two-decimal places). Due to rounding, the total tax for an order may differ from the unit price displayed. Consider adding a disclaimer in the [Additional Information](#additional-information-3) setting if you keep the tax column visible.
+* When the Tax Column is visible, the invoice will display line item prices, shipping, and subtotal costs with the calculated tax excluded (tax-exclusive pricing).
+* When the Tax Column is hidden, all prices will continue to be displayed with the tax included (tax-inclusive pricing).
+* If using [Gravity Forms Coupon add-on](https://www.gravityforms.com/add-ons/coupons/), it's recommended you hide the Tax Column.
 
 #### Tax Number (6)
 * Provide your company's tax number (if applicable). For example, VAT-registered companies have a Tax Identification number which can be included.
@@ -219,6 +223,7 @@ All Gravity PDF Invoices natively support tax-inclusive pricing, and you are abl
 #### Discounts (1)
 * By default, any discounts included via Gravity Forms Coupon field, or Gravity Wiz's Discount field, will be totaled and shown alongside the [Discount Label](#discount-label-13) (see image above for an example).
 * If you enable the Itemized Discounts / Coupons setting, any discounts that apply will be shown individually, and not grouped together (see image below for an example).
+* Gravity Forms Coupon field applies to the entire order (excluding shipping), and not individual products. [To calculate Tax Inclusive Pricing correctly](#enable-tax-inclusive-pricing), the discounted coupon amount is divided by the number of products and subtracted from each product's total. Tax for a product is then calculated on the discounted total. Where a discount is greater than the product cost, the difference is evenly discounted from all remaining products.
 
 ![A screenshot focused on the bottom half of Vertex, and showing individual discount amounts, which can be configured with the Itemized Discounts / Coupons setting.](https://resources.gravitypdf.com/uploads/2023/07/6-Discounts-Vertex.png)
 
