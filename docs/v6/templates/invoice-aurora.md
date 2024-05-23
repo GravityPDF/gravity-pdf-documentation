@@ -13,14 +13,14 @@ _Invoice Aurora_ is a sleek invoice template that [can be purchased from the Gra
 [Please follow our installation guide](installing-upgrading-premium-templates.md), which provides initial instructions for setting up and configuring your premium template.
 
 :::note
-This documentation is for _Aurora_ version 2.x, which adds [multi-rate tax-inclusive pricing](#enable-tax-inclusive-pricing), grouped or itemized discounts, free trial, localized dates, and [Gravity Wiz eCommerce Fields support](#gravity-forms-ecommerce-fields). Looking for the 1.x documentation? [You can find the _Aurora_ v1 docs here](../../v5/shop-pdf-template-invoice-aurora.md).
+This documentation is for _Aurora_ version 2.x, which adds [multi-rate tax-inclusive pricing](#enable-tax-inclusive-pricing), grouped or itemized discounts, free trial, localized dates, [EU VAT add-on](https://geekontheroad.com/eu-vat-for-gravity-forms/), and [Gravity Wiz eCommerce Fields support](#gravity-forms-ecommerce-fields). Looking for the 1.x documentation? [You can find the _Aurora_ v1 docs here](../../v5/shop-pdf-template-invoice-aurora.md).
 :::
 
 ## Limitations
 
 Invoice templates can only be used with forms that [include a Gravity Forms Product field](https://docs.gravityforms.com/product/). If you try to use the invoice on a form without any products (or conditional products where no product is included for a specific entry) an error message will be shown in the PDF. If you do have conditional Products, [enable PDF Conditional Logic to match](../users/setup-pdf.md#enable-conditional-logic).
 
-If you have the [Gravity Wiz eCommerce Fields perk](#gravity-forms-ecommerce-fields) and the form includes the Tax field, [tax-inclusive pricing in the PDF invoice](#enable-tax-inclusive-pricing) is automatically disabled. You cannot use tax-inclusive and tax-exclusive pricing together.
+If you have the [Gravity Wiz eCommerce Fields perk](#gravity-forms-ecommerce-fields) or [EU VAT plugin](https://geekontheroad.com/eu-vat-for-gravity-forms/) and your form includes a Tax field, [tax-inclusive pricing in the PDF invoice](#enable-tax-inclusive-pricing) is automatically disabled. You cannot use tax-inclusive and tax-exclusive pricing together.
 
 The 2.x invoice templates require Gravity PDF version 6.0 or higher to correctly function.
 
@@ -169,7 +169,7 @@ _Aurora_ also has these additional template-specific settings:
 
 Gravity Forms doesn't natively support taxes [for Pricing fields](https://docs.gravityforms.com/category/user-guides/pricing-fields/). You could use a [Product Calculation field](https://docs.gravityforms.com/product/) to calculate each product's tax, but there are limitations. For example, it can be challenging to update the calculations when you add/remove products in your form, the tax amount will be displayed in the line items (and not the totals section), and this method only supports tax-exclusive pricing. Thankfully, you have more feature-rich tax options available.
 
-All Gravity PDF Invoices natively support tax-inclusive pricing, and you are able to set individual tax rates for each product (or disable taxes for a product entirely). If you require tax-exclusive pricing, [the Gravity Perks eCommerce Fields perk includes a Tax field, and is fully supported by Gravity PDF Invoices](#gravity-forms-ecommerce-fields).
+All Gravity PDF Invoices natively support tax-inclusive pricing, and you are able to set individual tax rates for each product (or disable taxes for a product entirely). If you require tax-exclusive pricing, [the Gravity Perks eCommerce Fields perk includes a Tax field](#gravity-forms-ecommerce-fields), and is fully supported by Gravity PDF Invoices. The [EU VAT for Gravity Forms plugin](https://geekontheroad.com/eu-vat-for-gravity-forms/) is another option that is well-supported, too.
 
 ![A screenshot of Aurora, with numbers one through seven positioned on the invoice area, and controlled by the numbered settings documented in the Tax Settings section.](https://resources.gravitypdf.com/uploads/2023/08/4-Tax-Settings-Aurora-v2.png)
 
@@ -179,7 +179,8 @@ All Gravity PDF Invoices natively support tax-inclusive pricing, and you are abl
 * Multiple tax rates are supported for products using the Custom CSS Class `tax-{rate}-{label}` on Product or Shipping fields [in the Form Editor](https://docs.gravityforms.com/css-ready-classes/#h-how-to-use-ready-classes). The `{rate}` is a percentage between 0 and 100. While the `{label}` is the name of the tax (substitute spaces for hyphens). For example, if you wanted a specific product to be taxed at 5.25% with the label "CA Taxes", you would add the CSS class `tax-5.25-CA-Taxes` to the Product field in the Form Editor.
 * You cannot add different tax rates directly to Option fields; it can only be added to Products. Option fields will inherit the tax rate of the associated Product field.
 * Taxes can be disabled on a per-product basis using the Custom CSS Class `tax-0`. Do not include the label `-{label}` when disabling taxes this way.
-* If you have the [Gravity Wiz eCommerce Fields perk](#gravity-forms-ecommerce-fields) activated on your website, tax-inclusive pricing is automatically disabled when a Tax field is included in the form.
+* When using [Gravity Forms Coupon add-on](https://www.gravityforms.com/add-ons/coupons/), taxes are [calculated for a product after the discount is applied](#discounts-1).
+* If you have the [Gravity Wiz eCommerce Fields perk](#gravity-forms-ecommerce-fields) or the [EU VAT add-on](https://geekontheroad.com/eu-vat-for-gravity-forms/) activated on your website, tax-inclusive pricing is automatically disabled when a Tax field is added to the form.
 
 ![A screenshot of the Gravity Forms Editor with a Product field selected, the Custom CSS Class setting is highlighted in the Field Settings section, the value of the setting shows tax-7.25-California, which is how you define multiple tax rates in the invoice.](https://resources.gravitypdf.com/uploads/2023/07/5-Tax-Inclusive-Pricing-Aurora.png)
 
@@ -209,7 +210,10 @@ All Gravity PDF Invoices natively support tax-inclusive pricing, and you are abl
 * By default, the total tax is shown in the Invoice Summary section (the top of the PDF). Tick this box to remove the tax amount from the summary.
 
 #### Hide Tax Column
-* When enabled, the Unit Tax column will be hidden from the Product Table.
+* The Tax Column in the Product Table shows the calculated unit tax cost for each line item (rounded to two-decimal places). Due to rounding, the total tax for an order may differ from the unit price displayed. Consider adding a disclaimer in the [Additional Information](#additional-information-3) setting if you keep the tax column visible.
+* When the Tax Column is visible, the invoice will display line item prices, shipping, and subtotal costs with the calculated tax excluded (tax-exclusive pricing).
+* When the Tax Column is hidden, all prices will continue to be displayed with the tax included (tax-inclusive pricing).
+* If using [Gravity Forms Coupon add-on](https://www.gravityforms.com/add-ons/coupons/), it's recommended you hide the Tax Column.
 
 #### Tax Number (6)
 * Provide your company's tax number (if applicable). For example, VAT-registered companies have a Tax Identification number which can be included.
@@ -227,6 +231,7 @@ All Gravity PDF Invoices natively support tax-inclusive pricing, and you are abl
 #### Discounts (1)
 * By default, any discounts included via Gravity Forms Coupon field, or Gravity Wiz's Discount field, will be totaled and shown alongside the [Discount Label](#discount-label-13) (see image above for an example).
 * If you enable the Itemized Discounts / Coupons setting, any discounts that apply will be shown individually, and not grouped together (see image below for an example).
+* Gravity Forms Coupon field applies to the entire order (excluding shipping), and not individual products. [To calculate Tax Inclusive Pricing correctly](#enable-tax-inclusive-pricing), the discounted coupon amount is divided by the number of products and subtracted from each product's total. Tax for a product is then calculated on the discounted total. Where a discount is greater than the product cost, the difference is evenly discounted from all remaining products.
 
 ![A screenshot focused on the bottom half of Aurora, and showing individual discount amounts, which can be configured with the Itemized Discounts / Coupons setting.](https://resources.gravitypdf.com/uploads/2023/07/7-Discounts-Aurora.png)
 
@@ -376,7 +381,7 @@ Before you complete the upgrade, take note of the changes that have been made to
 7. A new [Unit Tax Column Label](#unit-tax-column-label-4) setting has been added, which is used in the tax column of the Invoice Table. The Unit Tax Column Label defaults to the text "Unit Tax".
 8. A new setting [Itemize Discounts / Coupons](#discounts-1) has been added. By default, the invoice will group any discounts into a single total. When the setting is enabled, all discounts will be shown in the invoice individually.
 9. A new [Discount Label](#discount-label-13) setting has been added. It is used if your form includes a Coupon or Discount field, and you haven't enabled the [Itemize Discounts / Coupons](#discounts-1) setting. It defaults to the text "Discount".
-10. Support for tax-exclusive pricing via [Gravity Wiz's eCommerce Field perk](#gravity-forms-ecommerce-fields) has been added. When a Tax field is added to the form, the [Tax Inclusive Pricing feature](#enable-tax-inclusive-pricing) is disabled.
+10. Support for tax-exclusive pricing via [Gravity Wiz's eCommerce Field perk](#gravity-forms-ecommerce-fields) or the [EU VAT add-on](https://geekontheroad.com/eu-vat-for-gravity-forms/) has been added. When a Tax field is added to the form, the [Tax Inclusive Pricing feature](#enable-tax-inclusive-pricing) is disabled.
 11. Support for Free Trial Gravity Forms subscriptions has been added to the invoice.
 12. The [Date Format](#date-format-4) setting includes 20 new choices, and the date will be automatically localized using your WordPress Site Language setting. The default date will automatically match your WordPress Date Format setting.
 
