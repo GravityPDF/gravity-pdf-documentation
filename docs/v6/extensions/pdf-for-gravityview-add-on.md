@@ -16,10 +16,6 @@ You can purchase the *PDF for GravityView* plugin from the [Extension Shop](http
 PDFs are only generated for the Single Entry Layout. But what exactly is the Single Entry Layout? When you create a view, there are three different layouts available: Multiple Entries, Single Entry, and Edit Entry. The Single Entry Layout [displays more information about a specific entry](https://gravity.guide/lesson/creating-the-view-single-entries-layout/) and is currently the only layout that can be turned into a PDF.
 :::
 
-## Installation
-
-[Please follow our installation guide](installing-upgrading-extensions.md), which provides instructions for uploading the add-on to your WordPress website and adding your license key for automatic updates.
-
 ## Prerequisites
 
 The following plugins are required to make use of *PDF for GravityView*:
@@ -29,6 +25,10 @@ The following plugins are required to make use of *PDF for GravityView*:
 * <a href="https://www.gravitykit.com/pricing/?ref=186" rel="sponsored">GravityView v2.16+</a> (any license type)
 
 If any of the prerequisites aren't met, the plugin will show an appropriate error message on the Plugins admin screen after activation.
+
+## Installation
+
+[Please follow our installation guide](installing-upgrading-extensions.md), which provides instructions for uploading the add-on to your WordPress website and adding your license key for automatic updates.
 
 ## View Types
 
@@ -142,6 +142,10 @@ _PDF for GravityView_ is deeply integrated into GravityView, and most configurat
 #### Show Title?
 * Display the Single Entry Title (found in the _Single Entry_ View Settings) at the beginning of the PDF. If empty, the View Title will be used.
 * This is enabled by default.
+
+#### Form Notifications
+* Include the GravityView Single Entry PDF as an email attachment when a notification is sent from the associated form.
+* This feature is not available for views that leverage the [Multiple Forms extension](https://www.gravitykit.com/products/multiple-forms/).
 
 #### Additional CSS
 * Add CSS to further customize the look and feel of the PDF document. [See the developer section for examples of common selectors and styles](#css).
