@@ -12,10 +12,6 @@ import ResponsiveEmbed from 'react-responsive-embed'
 
 You can purchase the *Previewer* plugin from the [Extension Shop](https://gravitypdf.com/shop/previewer-add-on/). This guide will walk you through installing and configuring *Previewer* to its full potential.
 
-:::info
-This documentation refers to version 3/4 of the Gravity PDF Previewer add-on. [The v2 documentation can be found here](../../v5/shop-plugin-previewer-add-on.md) and [the v1 documentation here](../../v4/shop-plugin-previewer-add-on.md).
-:::
-
 ## Prerequisites
 
 * Gravity PDF 6.0 or higher
