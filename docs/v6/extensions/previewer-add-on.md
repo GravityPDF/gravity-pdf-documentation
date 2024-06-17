@@ -265,11 +265,11 @@ add_filter( 'gfpdf_previewer_enable_pdf_security', '__return_false' );
 
 These hooks can be used to change how the Previewer field functions when displayed in your forms:
 
-* [gfpdf_previewer_field_settings](hooks/previewer/gfpdf_previewer_field_settings.md)
-* [gfpdf_previewer_skip_auto_refresh](hooks/previewer/gfpdf_previewer_skip_auto_refresh.md)
-* [gfpdf_previewer_page_viewer_options](hooks/previewer/gfpdf_previewer_page_viewer_options.md)
-* [gfpdf_previewer_current_form_data](hooks/previewer/gfpdf_previewer_current_form_data.md)
 * [gfpdf_previewer_auto_refresh_delay](hooks/previewer/gfpdf_previewer_auto_refresh_delay.md)
+* [gfpdf_previewer_current_form_data](hooks/previewer/gfpdf_previewer_current_form_data.md)
+* [gfpdf_previewer_field_settings](hooks/previewer/gfpdf_previewer_field_settings.md)
+* [gfpdf_previewer_page_viewer_options](hooks/previewer/gfpdf_previewer_page_viewer_options.md)
+* [gfpdf_previewer_skip_auto_refresh](hooks/previewer/gfpdf_previewer_skip_auto_refresh.md)
 
 ### CSS Variables
 
