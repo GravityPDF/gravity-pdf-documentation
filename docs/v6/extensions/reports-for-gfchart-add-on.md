@@ -12,10 +12,6 @@ import ResponsiveEmbed from 'react-responsive-embed'
 
 You can purchase the _Reports for GFChart_ plugin from the [Extension Shop](https://gravitypdf.com/shop/reports-for-gfchart-add-on/). This guide will walk you through installing and configuring _Reports for GFChart_ to its full potential.
 
-## Installation
-
-[Please follow our installation guide](installing-upgrading-extensions.md), which provides instructions for uploading the add-on to your WordPress website and adding your license key for automatic updates.
-
 ## Prerequisites
 
 Along with having <a href="https://rocketgenius.pxf.io/c/1211356/445235/7938" rel="sponsored">Gravity Forms</a> and [Gravity PDF](../users/installation.md) installed on your website, **to use Reports for GFChart, <a href="https://gfchart.com/pricing/?ref=24" rel="sponsored">you need a GFChart ALL license</a>**, and have the following plugins installed:
@@ -35,6 +31,10 @@ To add additional features to GFChart that enhances *Gravity PDF Reports for GFC
 :::info
 GFChart Image Charts does not currently support the GFChart Charting vs Time, GravityView, or DIY add-ons. If this is a feature you're interested in, <a href="https://gfchart.com/support/?ref=24" rel="sponsored">contact GFChart and let them know</a>.
 :::
+
+## Installation
+
+[Please follow our installation guide](installing-upgrading-extensions.md), which provides instructions for uploading the add-on to your WordPress website and adding your license key for automatic updates.
 
 ## Setup GFChart
 

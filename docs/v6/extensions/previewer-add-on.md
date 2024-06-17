@@ -12,17 +12,14 @@ import ResponsiveEmbed from 'react-responsive-embed'
 
 You can purchase the *Previewer* plugin from the [Extension Shop](https://gravitypdf.com/shop/previewer-add-on/). This guide will walk you through installing and configuring *Previewer* to its full potential.
 
-:::info
-This documentation refers to version 3 of the Gravity PDF Previewer add-on. [The v2 documentation can be found here](../../v5/shop-plugin-previewer-add-on.md) and [the v1 documentation here](../../v4/shop-plugin-previewer-add-on.md).
-:::
+## Prerequisites
+
+* Gravity PDF 6.0 or higher
+* The REST API (with public access) must be enabled to use this plugin.
 
 ## Installation
 
 [Please follow our installation guide](installing-upgrading-extensions.md), which provides instructions for uploading the add-on to your WordPress website and adding your license key for automatic updates.
-
-:::note
-The REST API (with public access) must be enabled to use this plugin.
-:::
 
 ## Configuring
 
@@ -181,20 +178,18 @@ The *Previewer* is fully-functional <a href="https://gravityflow.io/?ref=12" rel
 
 ## Translations
 
-The *Previewer* plugin includes the following languages out of the box:
+The *Previewer* plugin has been translated in the following languages with the help of AI:
 
 * English
 * French
 * Spanish
 * German
-* Chinese^
-* Dutch^
-* Portuguese^
-* Russian^
+* Chinese
+* Dutch
+* Portuguese
+* Russian
 
 If you'd like to translate the plugin into your own language, or change the existing translations, [you can follow this How To Guide](https://gravitypdf.com/news/how-to-translate-gravity-pdf-strings-into-different-languages/). **Note**: the text domain for _Previewer_ is `gravity-pdf-previewer`.
-
-^ We are testing the accuracy of AI / machine learning for these translations.
 
 ## File Upload Limitations
 
@@ -202,7 +197,7 @@ If using the standard File Upload field **without** having the Multi-File Upload
 
 ## Upgrade from v2
 
-Users who use the out-of-the-box features of _Previewer_ should have a seamless upgrade experience to v3. There are only two changes in v3 that might cause an issue for some users.
+Users who use the out-of-the-box features of _Previewer_ should have a seamless upgrade experience to v3/v4. There are only two changes that might cause an issue for some users.
 
 These changes include:
 
@@ -234,6 +229,8 @@ echo 'This content will show regardless...';
 
 #### PHP
 
+You can add the PHP snippets to your active theme's functions.php file, or install and use a code snippets plugin to easily include it on your site.
+
 ##### gfpdf_post_save_pdf
 
 If using the PHP hook [gfpdf_post_save_pdf](../developers/actions/gfpdf_post_save_pdf.md), it will be triggered every time a PDF in the viewer is generated. If this isn't the desired effect, use the constant check to circumvent this behaviour in your code:
@@ -251,220 +248,24 @@ add_action( 'gfpdf_post_save_pdf', function( $pdf_path, $filename, $settings, $e
 }, 10, 5 );
 ```
 
+##### gfpdf_previewer_enable_pdf_security
+
+By default, when you've [allowed your user to download the PDF via the Previewer](previewer-add-on.md#download-preview) the PDF Security settings are disabled. To use the security [you've set in the PDF settings](../users/setup-pdf.md#enable-pdf-security) use the following filter:
+
+```
+add_filter( 'gfpdf_previewer_enable_pdf_security', '__return_false' );
+```
+
+
 #### Javascript
 
-These hooks can be used to change the how the Previewer field functions in the form. The Javascript code needs to be included on the same page as your form. A really quick way to apply them is to add a HTML field to your chosen form and then place the code inside `<script type="text/javascript"></script>` tags.
+These hooks can be used to change how the Previewer field functions when displayed in your forms:
 
-##### gfpdf_previewer_field_settings
-
-This filter will allow you to change the [Previewer field's settings](#configuring) dynamically.
-
-**Arguments**
-
-* `settings` (object): a Javascript key/value object containing the current field settings
-* `formId` (int): the current form ID the Previewer field is included
-* `fieldId` (string): the ID of the current Previewer field
-
-The structure of the `settings` object is:
-
-```
-{
-   download: true,
-   height: "600",
-   pageScrolling: "vertical",
-   rightClickProtection: false,
-   rtl: false,
-   spread: "none",
-   textCopyingProtection: false,
-   theme: "auto",
-   zoomLevel: "page-fit"
-}
-```
-
-**Examples**
-
-This example will override the Previewer height and set it to 200px for any instance:
-
-```js
-gform.addFilter('gfpdf_previewer_field_settings', function(settings, formId, fieldId) {
-   settings.height = '200'
-
-   return settings;
-}, 10, 3);
-```
-
-You can also limit the filter to a specific form:
-
-```js
-gform.addFilter('gfpdf_previewer_field_settings', function(settings, formId, fieldId) {
-   if(formId === 5) {
-      settings.height = '200'
-   }
-
-   return settings;
-}, 10, 3);
-```
-
-Or a specific form field:
-
-```js
-gform.addFilter('gfpdf_previewer_field_settings', function(settings, formId, fieldId) {
-  if(formId === 5 && fieldId === '7') {
-    settings.height = '200'
-  }
-
-  return settings;
-}, 10, 3);
-```
-
-##### gfpdf_previewer_skip_auto_refresh
-
-This filter will allow you to disable the auto-refresh feature of the Previewer.
-
-**Arguments**
-
-* `action` (bool): If true the auto-refresh feature is turned off. If false (default), it will be turned on
-* `formId` (int): the current form ID the Previewer field is included
-* `fieldId` (string): the ID of the current Previewer field
-
-**Examples**
-
-This example will programmatically disable auto-refresh for all Previewer instances:
-
-```js
-gform.addFilter('gfpdf_previewer_skip_auto_refresh', function(action, formId, fieldId) {
-  return true;
-}, 10, 3);
-```
-
-You can also limit the filter to a specific form:
-
-```js
-gform.addFilter('gfpdf_previewer_skip_auto_refresh', function(action, formId, fieldId) {
-  if(formId === 5) {
-    return true;
-  }
-
-  return action;
-}, 10, 3);
-```
-
-Or a specific form field:
-
-```js
-gform.addFilter('gfpdf_previewer_skip_auto_refresh', function(action, formId, fieldId) {
-  if(formId === 5 && fieldId === '7') {
-    return true;
-  }
-
-  return action;
-}, 10, 3);
-```
-
-##### gfpdf_previewer_page_viewer_options
-
-This filter will allow you to change the default pdf.js `PDFViewer()` options used by Previewer.
-
-:::warning
-While the accepted options for `PDFViewer()` [can be found in the pdf.js source code](https://github.com/mozilla/pdf.js/blob/master/web/pdf_viewer.js#L198-L315), only a subset of the viewer code is used for Previewer. Any changes to the options using this filter may break Previewer, so do thorough testing if you use it.
-:::
-
-**Arguments**
-
-* `options` (object): The default options passed to `PDFViewer()` by Previewer
-* `formId` (int): the current form ID the Previewer field is included
-* `fieldId` (string): the ID of the current Previewer field
-
-The structure of the `options` object is:
-
-```
-{
-    container: viewerContainer,
-    eventBus,
-    linkService: pdfLinkService,
-    textLayerMode: disableTextCopyingProtection,
-    annotationMode: disableTextCopyingProtection ? ANNOTATION_MODE.ENABLE : ANNOTATION_MODE.DISABLE
-}
-```
-
-**Examples**
-
-This example will make any links included in the PDF clickable, regardless of whether [text copying protection](#disable-text-copying-protection) is active/inactive:
-
-```js
-gform.addFilter('gfpdf_previewer_page_viewer_options', function(options, formId, fieldId) {
-  options.annotationMode = 1;
-
-  return options;
-}, 10, 3);
-```
-
-You can also limit the filter to a specific form:
-
-```js
-gform.addFilter('gfpdf_previewer_page_viewer_options', function(options, formId, fieldId) {
-  if (formId === 5) {
-    options.annotationMode = 1;
-  }
-
-  return options;
-}, 10, 3);
-```
-
-Or a specific form field:
-
-```js
-gform.addFilter('gfpdf_previewer_page_viewer_options', function(options, formId, fieldId) {
-  if (formId === 5 && fieldId === '7') {
-    options.annotationMode = 1;
-  }
-
-  return options;
-}, 10, 3);
-```
-
-##### gfpdf_previewer_current_form_data
-
-This filter will allow you to manipulate the form data before it is sent to the server so the preview PDF can be generated.
-
-**Arguments**
-
-* `data` ([FormData](https://developer.mozilla.org/en-US/docs/Web/API/FormData)): the object containing all the form information extracted from `form`
-* `form` ([Element](https://developer.mozilla.org/en-US/docs/Web/API/Element)): the current form element where `data` is built from
-
-**Examples**
-
-This example will add a new key to `FormData` (or update a key if it already exists). Any new keys will be available via the `$_POST` superglobal when the PDF is generated.
-
-```js
-gform.addFilter('gfpdf_previewer_current_form_data', function(data, form) {
-  data.append('name', 'value');
-
-  return data;
-}, 10, 2);
-```
-
-You can also delete a key/field from `FormData`:
-
-```js
-gform.addFilter('gfpdf_previewer_current_form_data', function(data, form) {
-  data.delete('input_7');
-
-  return data;
-}, 10, 2);
-```
-
-If you want to find out what information is being sent to the previewer API:
-
-```js
-gform.addFilter('gfpdf_previewer_current_form_data', function(data, form) {
-  for (const pair of data.entries()) {
-    console.log(`${pair[0]}, ${pair[1]}`);
-  }
-
-  return data;
-}, 10, 2);
-```
+* [gfpdf_previewer_auto_refresh_delay](hooks/previewer/gfpdf_previewer_auto_refresh_delay.md)
+* [gfpdf_previewer_current_form_data](hooks/previewer/gfpdf_previewer_current_form_data.md)
+* [gfpdf_previewer_field_settings](hooks/previewer/gfpdf_previewer_field_settings.md)
+* [gfpdf_previewer_page_viewer_options](hooks/previewer/gfpdf_previewer_page_viewer_options.md)
+* [gfpdf_previewer_skip_auto_refresh](hooks/previewer/gfpdf_previewer_skip_auto_refresh.md)
 
 ### CSS Variables
 
@@ -621,12 +422,4 @@ The following CSS variables are defined by the plugin and are available to easil
     --gpdf-prev-loading-icon: url(../images/loading-dark.svg);
   }
 }
-```
-
-### PDF Security in Previewer
-
-By default, when you've [allowed your user to download the PDF via the Previewer](previewer-add-on.md#download-preview) the PDF Security settings are disabled. To use the security [you've set in the PDF settings](../users/setup-pdf.md#enable-pdf-security), include the following snippet in your active theme's functions.php file:
-
-```
-add_filter( 'gfpdf_previewer_enable_pdf_security', '__return_false' );
 ```

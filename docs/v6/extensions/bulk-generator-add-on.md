@@ -12,7 +12,7 @@ import ResponsiveEmbed from 'react-responsive-embed'
 
 You can purchase the Bulk Generator plugin from the [Extension Shop](https://gravitypdf.com/shop/bulk-generator-add-on/). This guide will walk you through installing and using the *Bulk Generator* plugin.
 
-## Requirements
+## Prerequisites
 
 To use this software you web server and WordPress installation must meet these requirements:
 
