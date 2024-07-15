@@ -28,7 +28,7 @@ This error means the version of PHP running on your website's web server does no
 
 ### The PHP Extension MB String could not be detected
 
-This error means the version of PHP you are running doesn't have support for MB String. This extension is used to correctly display non-English characters in PDF documents. To fix this issue, you'll need to contact your web hosting and tell them you need MB String enabled.
+This error means the version of PHP you are running doesn't have support for [MB String](https://www.php.net/manual/en/intro.mbstring.php). This extension is used to correctly display non-English characters in PDF documents. To fix this issue, you'll need to contact your web hosting and tell them you need MB String enabled.
 
 ### The PHP Extension MB String does not have MB Regex enabled
 
@@ -36,15 +36,19 @@ This error means the version of PHP you are running does have the [MB String](#t
 
 ### The PHP Extension GD Image Library could not be detected
 
-This error means the version of PHP you are running doesn't have the GD Image Library installed. This is used to correctly display images in the PDF documents. To fix this issue, you'll need to contact your web hosting and tell them you need the GD Image Library installed with jpeg and png support.
+This error means the version of PHP you are running doesn't have the [GD Image Library extension](https://www.php.net/manual/en/intro.image.php) installed. This is used to correctly display images in the PDF documents. To fix this issue, you'll need to contact your web hosting and tell them you need the GD Image Library installed with jpeg and png support.
 
 ### The PHP DOM Extension was not found
 
-This error means the version of PHP you are running doesn't have the DOM extension installed. This is used to correct certain display issues when generating PDFs. To fix this issue, you'll need to contact your web hosting and tell them you need the DOM extension installed.
+This error means the version of PHP you are running doesn't have the [DOM extension](https://www.php.net/manual/en/intro.dom.php) installed. This is used to correct certain display issues when generating PDFs. To fix this issue, you'll need to contact your web hosting and tell them you need the DOM extension installed.
 
 ### The PHP Extension libxml could not be detected
 
-This error means the version of PHP you are running doesn't have the LibXML extension installed. This is needed by the [DOM](#the-php-dom-extension-was-not-found) extension. To fix this issue, you'll need to contact your web hosting and tell them you need the LibXML extension installed.
+This error means the version of PHP you are running doesn't have the [libxml extension](https://www.php.net/manual/en/intro.libxml.php) installed. This is needed by the [DOM](#the-php-dom-extension-was-not-found) extension. To fix this issue, you'll need to contact your web hosting and tell them you need the LibXML extension installed.
+
+### The PHP Extension Ctype could not be detected
+
+This error means the version of PHP you are running doesn't have the [Ctype extension enabled](https://www.php.net/manual/en/intro.ctype.php). This is used for performant string validation and sanitization. To fix this issue, you'll need to contact your web hosting and tell them you need the Ctype extension installed.
 
 ### You need 128MB of WP Memory (RAM) but we only found X available
 

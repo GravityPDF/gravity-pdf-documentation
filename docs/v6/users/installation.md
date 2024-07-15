@@ -27,12 +27,10 @@ Gravity PDF is a third party extension for Gravity Forms, created by an independ
 -   [MB String](http://www.php.net/manual/en/mbstring.installation.php) with Regex enabled (`--enable-mbregex`)
 -   [GD Library](http://www.php.net/manual/en/image.installation.php)
 -   [DOM](http://php.net/manual/en/intro.dom.php)
+-   [libxml](https://www.php.net/manual/en/intro.libxml.php)
+-   [Ctype](https://www.php.net/manual/en/intro.ctype.php)
 -   [allow_url_fopen](https://www.php.net/manual/en/filesystem.configuration.php#ini.allow-url-fopen) (optional) - If you have image display problems make sure this option is enabled.
 -   128MB+ WP Memory (**256MB+ recommended**)
-
-:::success Info
-If you are unable to meet the v6 minimum software requirements, Gravity PDF will continue [supporting users on v5](../../v5/five-minute-install.md) with bug and security fixes until at least 27 April 2023.
-:::
 
 ## Installation
 
@@ -51,7 +49,7 @@ Search for the plugin directly from your WordPress admin area and install it wit
 
 ### Manual Installation
 
-You can manually install the plugin by downloading the plugin zip file from WordPress.org and then uploading through your WordPress admin area. The plugin zip file is 4.2MB and most web hosts maximum upload limit should be higher than this (you can check your maximum upload limit by navigating to `Media -> Add New` in your WordPress admin area and reviewing the *Maximum upload file size* limit).
+You can manually install the plugin by downloading the plugin zip file from WordPress.org and then uploading through your WordPress admin area. The plugin zip file is 4.8MB and most web hosts maximum upload limit should be higher than this (you can check your maximum upload limit by navigating to `Media -> Add New` in your WordPress admin area and reviewing the *Maximum upload file size* limit).
 
 1. [Go to the plugin's WordPress repository](https://wordpress.org/plugins/gravity-forms-pdf-extended/) and select the `Download Version 6.x.x` button.
 
