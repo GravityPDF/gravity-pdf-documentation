@@ -46,7 +46,7 @@ If a PDF template already exists, it will be automatically updated (the old temp
 
 ## Delete
 
-![Delete custom PDF templates](https://resources.gravitypdf.com/uploads/2021/03/v6-Details-Page-Delete.png)
+![Delete custom PDF templates](https://resources.gravitypdf.com/uploads/2024/09/v6-Details-Page-Delete-2024.jpg)
 
 If you ever need to delete a template, you can easily do so via the _Delete_ button when viewing individual PDFs (click the template image to view an individual PDF). You'll be asked to confirm this action before it deletes anything.
 
