@@ -36,7 +36,7 @@ If you [purchase a PDF template from our shop](https://gravitypdf.com/shop/) the
 
 ## Delete
 
-![Delete custom PDF templates](https://resources.gravitypdf.com/uploads/2017/03/details-page-delete.png)
+![Delete custom PDF templates](https://resources.gravitypdf.com/uploads/2024/09/v6-Details-Page-Delete-2024.jpg)
 
 If you ever need to delete a custom PDF template you can easily do so via the Delete button when viewing individual PDFs (click the template image to view an individual PDF). You'll be asked to confirm this action before it deletes anything.
 
