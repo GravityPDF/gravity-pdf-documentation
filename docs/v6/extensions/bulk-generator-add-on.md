@@ -1,142 +1,134 @@
 ---
 title: "Bulk Generator Plugin Documentation: How to Install and Configure"
 sidebar_label: "Bulk Generator"
-description: "Discover how to install, configure, and use the Gravity PDF Bulk Generator premium plugin so you can be bulk exporting your entry PDFs in no time."
+description: "Easily bulk-generate the PDFs for your Gravity Forms entries and download as a zip file or merged document."
 ---
 
 import ResponsiveEmbed from 'react-responsive-embed'
 
-![Bulk Generator Plugin Icon](https://resources.gravitypdf.com/uploads/2020/04/bulk-generator-cover-artwork.png)
+![](https://resources.gravitypdf.com/uploads/2020/04/bulk-generator-cover-artwork.png)
 
-*Bulk Generator* is a premium plugin for Gravity PDF which allows you to easily bulk export Gravity PDF documents from Gravity Forms entries. Once the PDFs have been generated, you can download a zip file with all the files.
+*Bulk Generator* is a premium plugin for Gravity PDF that makes it simple to bulk-generate the PDFs for your Gravity Forms entries and download as a zip file or merged document.
 
 You can purchase the Bulk Generator plugin from the [Extension Shop](https://gravitypdf.com/shop/bulk-generator-add-on/). This guide will walk you through installing and using the *Bulk Generator* plugin.
 
+:::info
+This documentation refers to version 2 of the Gravity PDF Bulk Generator add-on. [The v1 documentation can be found here](../../v5/shop-plugin-bulk-generator-add-on.md).
+:::
+
+
 ## Prerequisites
 
-To use this software you web server and WordPress installation must meet these requirements:
-
-* Gravity PDF 5.2+
-* REST API enabled (on by default, can be disabled via security plugins)
+* Gravity PDF 6.0 or higher
+* WordPress 5.7 or higher
+* The WordPress REST API must be enabled to use this plugin.
 * [PHP Zip Extension](https://www.php.net/manual/en/zip.installation.php)
 
 ## Installation
 
 [Please follow our installation guide](installing-upgrading-extensions.md), which provides instructions for uploading the add-on to your WordPress website and adding your license key for automatic updates.
 
-:::note
-The REST API must be enabled to use this plugin.
-:::
-
 ## Configuring
 
-<ResponsiveEmbed src="https://player.vimeo.com/video/665824467?dnt=1" allowFullScreen />
-
-The extension adds a new bulk action option called *Download PDF* on [Gravity Forms Entry List pages](https://docs.gravityforms.com/entries/). Like other bulk actions, you select the checkbox next to each entry you would like to generate PDFs for. To refine the entries, [you can use Gravity Forms native filters](https://gravitypdf.com/news/how-to-search-and-filter-gravity-forms-entries-like-a-pro/) to show only *Starred* or *Unread* entries, or use the entry search feature. If you've got a lot of entries, you can use Gravity Forms *Select All Entries* feature to include all paginated pages.
-
-![A screenshot of the Entry List page with the Select All Entries link highlighted](https://resources.gravitypdf.com/uploads/2023/04/bulk-download-select-all-entries.png)
+The extension adds a new bulk action called *Download PDF* to [Gravity Forms Entry List pages](https://docs.gravityforms.com/entries/). Like other bulk actions, you can select the checkbox next to each entry to include them in the download. We recommend you become familiar with [Gravity Forms' powerful search and filtering capabilities](https://gravitypdf.com/news/how-to-search-and-filter-gravity-forms-entries-like-a-pro/) to help select only the entries you are interested in. You can also use Gravity Forms' *Select All Entries* feature to include every entry that matches your current search/filter parameters.
 
 :::note
-The `Download PDF` option will only be listed in the Bulk Action select box [if you have at least one active PDF configured on your Gravity Form](../users/setup-pdf.md#locating-pdf-settings).
+The `Download PDF` option will only be listed in the Bulk Action select box [if you have at least one active PDF configured on your form](../users/setup-pdf.md#locating-pdf-settings).
 :::
 
-### Bulk Generator
+### 0. Bulk Generator
 
-![Initialising a Bulk Generator action from the Entry List page](https://resources.gravitypdf.com/uploads/2021/04/v6-Bulk-Download-PDFs.png)
+![A screenshot of the Entry List Page displaying a list of form entries. All entries on the page are selected, as indicated by checkmarks next to each entry. At the top of the page, the Bulk Actions dropdown menu is open, with the cursor hovering over the 'Download PDF' option.](https://resources.gravitypdf.com/uploads/2024/09/Bulk-Generator-2024-Select-All-Entries.png)
 
-Once you've picked your entries, selected the *Download PDF* Bulk Action option and clicked the **Apply** button. A new window will appear to take you through the rest of the process.
-
-The bulk generator process is split into three steps:
+Once you've picked your entries, select the *Download PDF* bulk action from the dropdown menu and then the *Apply* button. A new window will appear to take you through the rest of the process, which is split into three simple steps:
 
 1. Configure
 1. Build
 1. Download
 
-### Configure Step
+### 1. Configure
 
-Before you can kickoff the build process, you'll need to do a tiny bit of configuration. The following options are available:
+After you've selected the *Download PDF* bulk action a dialog box will open and bring up the _Configure_ step. This screen allows you to choose the PDFs to include in the export, how the documents are stored in the zip, whether the PDFs are merged together, and the filename of the export. 
 
-![Initialising a Bulk Generator action from the Entry List page](https://resources.gravitypdf.com/uploads/2020/04/bulk-generator-step-1.png)
+:::info
+*Bulk Generator's* form settings will be remembered by your browser, making it easier to run regular exports.
+:::
+
+![Screenshot of the Bulk Generator Step 1 Configure user interface. Two out of four available PDFs are selected.](https://resources.gravitypdf.com/uploads/2024/09/Bulk-Generator-2024-Step-1.png)
 
 #### Select PDFs 
 
-Choose the PDFs you'd like to generate for the entries you've selected. If you've got multiple PDFs, and you'd like to generate them all, you can use the handy *Toggle All* feature.
+Choose the entry PDFs you'd like included in the export. If a PDF isn't shown then [verify it hasn't been deactivated](../users/managing-pdfs.md#activate--deactivate-pdfs)) (only active PDFs are included in the list).
 
-If a PDF isn't showing up, you should [check if it has not been deactivated](../users/managing-pdfs.md#active-toggle). Only active PDFs will be listed.
+#### Merge PDFs
+
+Enable this setting to combine all selected PDFs into a single document. The current and total page numbers will be displayed in the footer of the document. 
+
+When this setting is disabled, you will download a zip file that contains all generated documents.
+
+:::caution
+This feature is in beta and can be resource-intensive. You may encounter problems if trying to merge a substantial number of documents / pages together.
+:::
+
+#### PDF Filename
+
+When the *[Merge PDFs](#merge-pdfs)* setting is enabled, you can set the filename of the PDF you download. Form merge tags that do not rely on entry data can be used, and the UI includes a small list of common tags to add.
 
 #### Directory Structure 
 
-This option controls the folder structure used in the generated zip file you will download at the end of the process. It provides a simple way for you to organise and group your PDFs.
+This option allows you to organize your PDFs into folders inside the zip archive, and will be shown when the *[Merge PDFs](#merge-pdfs)* setting is disabled. 
 
-[Almost any merge tags available for the current Gravity Form](https://docs.gravityforms.com/category/user-guides/merge-tags-getting-started/) can be used in the Directory Structure. We've included a small list of common tags you can easily add, but you are not limited to these.
+[Most merge tags available to the current form](https://docs.gravityforms.com/category/user-guides/merge-tags-getting-started/) can be used in the Directory Structure setting. The UI includes a small list of common tags you can add, but you aren't limited to these.
 
-### Build Step
+#### Zip Filename
 
-This step does all the grunt work of generating each individual PDF and zipping them up. Once you've completed the Configure step, click the **Build** button in the bottom-right corner of the window to start the Build process.
+When the *[Merge PDFs](#merge-pdfs)* setting is disabled, you can set the filename of the zip archive you download. Form merge tags that do not rely on entry data can be used, and the UI includes a small list of common tags to add.
 
-![The Bulk Generator Build Step](https://resources.gravitypdf.com/uploads/2020/04/bulk-generator-step-2.png)
+### 2. Build
 
-:::info
-You need to leave your browser window open until the Build process is completed.
-:::
+This step does all the heavy lifting to generate and zip or merge the PDF documents. Once you've chosen the PDFs to create, select the _Build_ button to begin. 
 
-The length of time it takes to complete this step will depend on how many entries you've selected, the size and complexity of each PDF, as well as the quality of your web hosting provider. A VPS or managed hosting provide will generate the PDFs faster than a low-budget shared host. Simpler PDFs will also generate much quicker than more complex PDFs.
+You'll need to leave your browser window open until the process is completed, otherwise the build will be cancelled.
 
-A progress bar is displayed to indicate the overall progress. An activity log is also available, and will highlight any warnings or errors that might occur during the process. By default, the activity log only shows the total number of events. To view more details, click the log title to unfurl the logs.
+![A screenshot that shows the user interface for Step 2 Build of the Bulk Generator process. The screen displays a progress bar that is 70% complete, indicating how far along the PDF generation process is. Below the progress bar there's a PDF log section where real-time updates on the status of each individual PDF being generated is displayed.](https://resources.gravitypdf.com/uploads/2024/09/Bulk-Generator-2024-Step-2.png)
 
-You can cancel the build process at any time by clicking the **Cancel** button in the bottom-right corner of the window.
+The length of time it takes a build to run depends on how many entries you've selected, the size and complexity of each PDF, and the quality of your web hosting provider. A progress bar will show the overall progress, and an activity log highlights any problems that might occur.
 
-### Download Step
+You can cancel the build process at any time by selecting the _Cancel_ button.
 
-![The Bulk Generator Download Step](https://resources.gravitypdf.com/uploads/2020/04/bulk-generator-step-3.png)
+### 3. Download
 
-Once all your PDFs are generated and zipped, you are automatically redirected to the Download step. Depending on your browser settings, you'll either be prompted to download the zip package or the file will be downloaded automatically. If neither of those occur, you can click the download link displayed on the screen.
+![A user interface screenshot of the Bulk Generator's Step 3 Download process. The main area shows a PDF log listing the status of each generated PDF. Overlaying this is a browser's 'Save As' dialog box for downloading a zip file. The filename field in this dialog is highlighted in green.](https://resources.gravitypdf.com/uploads/2024/09/Bulk-Generator-2024-Step-3.png)
 
-You can also view the Activity Log in full on the Download Step page.
+When all the PDFs are generated and zipped/merged you'll reach the _Download_ step. You'll either be prompted to download the file or it will be downloaded automatically (depends on your browser settings). If neither of those occur, you can use the download link displayed on screen.
 
 ## FAQ
 
-### Just how many PDFs can I generate with this plugin
+### How many entries / PDFs can be bulk-generated? 
 
-We have tested the plugin with 10,000 PDFs. It took a few hours to complete the process, but a zip file containing every single document was spat out the other end. The limiting factor is likely the amount of available disk space you have. For example, if the generated PDFs are 100kb each then bulk generating 10,000 is going to create a 1GB zip file. For 500kb PDFs, that would be a 5GB zip. And for 1MB PDFs, that would be a 10GB zip.
+There aren't any hard limits when zipping the PDFs (we've tested with 10,000 documents). The limiting factor is likely to be the amount of disk space your hosting plan allows. For example, if each generated PDF is 100kb, and you've 10,000 documents to include, you'll need at least 1GB of free space for the build.
 
-### How long is the zip download url valid?
+[Merging the PDF documents together](#merge-pdfs) requires a lot more WordPress memory than the zip method, and will be the limiting factor. For the best experience we recommend keeping the total page count under 1000.
 
-The zip download URL will expire 12 hours after it was created. If you'd like to modify the timeout for future zip files, use the `gfpdf_bg_download_url_timeout` filter:
+### In the zip, why does the filename of some PDFs include the entry ID and PDF ID?
 
-```
-add_filter( 'gfpdf_bg_download_url_timeout', function( $timeout ) {
-    return '2 hours';
-} );
-```
+If a PDF with the same filename already exists, the Entry ID and a shortened version of the PDF ID (the first two and last two characters) is added to the filename to prevent a naming conflict. If you don't want this to occur, [make use of merge tags in the PDF filename](../users/setup-pdf.md#filename) so it will be unique for each document.
 
-The timeout cannot be more than 12 hours, as the zip file gets automatically deleted.
+### Do I need to configure my settings every time I generate in bulk?
 
-### When is the zip file deleted from the server?
+No, you don't. Your browser will remember the last settings used for specific form. The settings won't be restored if you use a different computer or web browser, clear your browser cache, or run the bulk generator for the first time on a new form.
 
-The zip file is deleted from the server after 12 hours during the daily scheduled clean-up.
-
-### Why is the filename of some PDFs suffixed with the entry ID and PDF ID?
-
-If a PDF with the same filename already exists in the zip, the plugin includes the Entry ID and a shortened version of the PDF ID (the first two and last two characters) in the filename to prevent a naming conflict. If you don't want this to occur, [make use of merge tags in the PDF filename](../users/setup-pdf.md#filename) so it is unique for each document.
-
-### Has the plugin been translated into any other languages?
-
-Yes! Besides English, we've had the plugin translated into Dutch, French, German, and Spanish.
-
-### There are a number of warnings in my Activity Log. What do they mean?
-
-![Warning Log](https://resources.gravitypdf.com/uploads/2020/04/bulk-generator-warnings.png)
+### There are warnings in the activity log. What do they mean?
 
 The Bulk Generator will display warnings for the following reasons:
 
-1. **Conditional Logic** – this is the most common warning. It means the [PDF Conditional Logic](../users/setup-pdf.md#conditional-logic) did not pass for the current entry and so it was skipped. This is normal behaviour and can usually be ignored.
-1. **Deactivated PDF** - this warning can occur if [a PDF gets deactivated](../users/managing-pdfs.md#active-toggle) after you've begun the Build step. If this occurs, wait until the current Build finishes, reactivate the PDF and then run a new build just for the problem PDF.
-1. **Invalid PDF** - this warning can occur if a PDF gets deleted after you've begun the Build step. If it was deleted accidentally, you should [recreate the PDF on the form](../users/setup-pdf.md) and run the build again.
+1. **Deactivated PDF** - shown when [a PDF is deactivated](../users/managing-pdfs.md#activate--deactivate-pdfs) after the build has begun. Reactivate the PDF and run the build again.
+
+1. **Invalid PDF** - shown when a PDF gets deleted after the build has begun. If it was deleted accidentally, you should [recreate the PDF on the form](../users/setup-pdf.md) and run the build again.
 
 ### There are a number of errors in my Activity Log. Why did they occur?
 
-![Error Log](https://resources.gravitypdf.com/uploads/2020/04/bulk-generator-errors.png)
+![The image shows the PDF log. Multiple entries in the log display the status "Inactive PDF". This indicates that during the PDF generation process, certain PDFs were skipped and not processed.](https://resources.gravitypdf.com/uploads/2024/09/Bulk-Generator-2024-Error-Log.png)
 
 Errors are shown in the activity log if, after three attempts, the PDF was unable to be successfully generated and saved on the server. Some reasons this could occur include:
 
@@ -146,18 +138,29 @@ Errors are shown in the activity log if, after three attempts, the PDF was unabl
 * PHP Error / Warning / Notice triggered
 * Bulk Generator session becomes invalid
 
-The activity log only shows a generic error that a problem occurred. You will need to enable [Gravity Forms logging](https://docs.gravityforms.com/logging-and-debugging/) and run the Bulk Generator process again to get more details about what specifically went wrong. The log is verbose and can be hard to read, so if you'd like help please leave logging enabled and [open a support ticket](https://gravitypdf.com/support/).
+The activity log only shows a generic error. You will need to enable [Gravity Forms logging](https://docs.gravityforms.com/logging-and-debugging/) and run the Bulk Generator process again to get specific information about the problem. The log files are verbose and can be hard to read, so if you need help please leave logging enabled and [open a support ticket](https://gravitypdf.com/support/).
 
 ### During the Build step a fatal error occurred. What now?
 
-![The Fatal Error screen](https://resources.gravitypdf.com/uploads/2020/04/bulk-generator-fatal-error.png)
-
-If a fatal error occurs, it could be a temporary filesystem or network error. First, reload the page in your browser and run the Bulk Generator again. If it occurs a second time, enable [Gravity Forms logging](https://docs.gravityforms.com/logging-and-debugging/) and re-run the Bulk Generator. This will save the specific errors in the log file and can be used to debug the issue. The log is verbose and can be hard to read, so if you'd like help please leave logging enabled and [open a support ticket](https://gravitypdf.com/support/).
-
-### I'm a developer. How exactly does the Build process works?
-
-The front-end UI is powered by ReactJS and it communicates with your server using the REST API. When you click the *Build* button, an API request is made that returns a unique session ID and links your configuration to that ID. Next, five concurrent API requests are made to generate individual PDFs for an entry. For every five PDFs that are generated, a separate zip API request is made to move those documents into the zip archive (this is more memory efficient that zipping everything up at the end). This process repeats until the PDFs for all your entries are generated. The Zip API call returns a secure URL which can be used to download the zip file. We redirect the browser to that URL upon completion. There's also a lot of error handling built into the process, e.g., retry API calls if they fail and continue on error.
+![A screenshot of an error message displayed during Step 2 Build of the Bulk Generator process. The message reads "Build process could not be completed."](https://resources.gravitypdf.com/uploads/2024/09/Bulk-Generator-2024-Fatal-Error-Screen.png)
+ 
+It could be a temporary filesystem or network error. First, reload the page in your browser and run the Bulk Generator again. If it happens again, enable [Gravity Forms logging](https://docs.gravityforms.com/logging-and-debugging/) and re-run the Bulk Generator. This will save the specific errors in the log file and can be used to debug the issue. The log files are verbose and can be hard to read, so if you need help please leave logging enabled and [open a support ticket](https://gravitypdf.com/support/).
 
 ### I'm a developer and want to trigger an action after the Build process is complete
 
-The Build process is powered by Javascript and you'll need to tap into the `gform.doAction('gpdf-bulk-generator-redux-store', store)` hook so you can subscribe to Redux `store` events. [This basic plugin shows how to correctly set this up](https://github.com/GravityPDF/gravity-pdf-bulk-generator-store-example) and access all the entry IDs that were processed during the build.
+The Javascript hook `gform.doAction('gpdf-bulk-generator-redux-store', store)` allows you to listen for changes to the data store. [This basic plugin shows how to set this up](https://github.com/GravityPDF/gravity-pdf-bulk-generator-store-example).
+
+## Translations
+
+The *Bulk Generator* plugin has been translated in the following languages with the help of AI:
+
+* English
+* French
+* Spanish
+* German
+* Chinese
+* Dutch
+* Portuguese
+* Russian
+
+If you'd like to translate the plugin into your own language, or change the existing translations, [you can follow this How To Guide](https://gravitypdf.com/news/how-to-translate-gravity-pdf-strings-into-different-languages/). **Note**: the text domain for _Bulk Generator_ is `gravity-pdf-bulk-generator`.
