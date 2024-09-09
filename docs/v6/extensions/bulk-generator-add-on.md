@@ -146,7 +146,7 @@ The activity log only shows a generic error. You will need to enable [Gravity Fo
  
 It could be a temporary filesystem or network error. First, reload the page in your browser and run the Bulk Generator again. If it happens again, enable [Gravity Forms logging](https://docs.gravityforms.com/logging-and-debugging/) and re-run the Bulk Generator. This will save the specific errors in the log file and can be used to debug the issue. The log files are verbose and can be hard to read, so if you need help please leave logging enabled and [open a support ticket](https://gravitypdf.com/support/).
 
-### I'm a developer and want to trigger an action after the Build process is complete
+### I'm a developer and want to trigger an action after the Build process is complete. How do I do that?
 
 The Javascript hook `gform.doAction('gpdf-bulk-generator-redux-store', store)` allows you to listen for changes to the data store. [This basic plugin shows how to set this up](https://github.com/GravityPDF/gravity-pdf-bulk-generator-store-example).
 
