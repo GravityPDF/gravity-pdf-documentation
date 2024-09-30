@@ -26,13 +26,17 @@ $alias = [
 	'\setasign\Fpdi\PdfParser\Filter\FilterException',
 	'\setasign\Fpdi\PdfParser\Type\PdfArray',
 	'\setasign\Fpdi\PdfParser\Type\PdfDictionary',
+	'\setasign\Fpdi\PdfParser\Type\PdfHexString',
 	'\setasign\Fpdi\PdfParser\Type\PdfIndirectObject',
 	'\setasign\Fpdi\PdfParser\Type\PdfIndirectObjectReference',
 	'\setasign\Fpdi\PdfParser\Type\PdfType',
 	'\setasign\Fpdi\PdfParser\Type\PdfTypeException',
 	'\setasign\Fpdi\PdfParser\Type\PdfNumeric',
 	'\setasign\Fpdi\PdfParser\Type\PdfStream',
+	'\setasign\Fpdi\PdfParser\Type\PdfString',
+	'\setasign\Fpdi\PdfParser\Type\PdfName',
 	'\setasign\Fpdi\PdfParser\Type\PdfToken',
+	'\setasign\Fpdi\FpdiException',
 ];
 
 foreach( $alias as $class ) {
@@ -46,6 +50,10 @@ $alias = [
 	'\setasign\FpdiPdfParser\PdfParser\CrossReference\CrossReference',
 	'\setasign\FpdiPdfParser\PdfParser\Filter\Predictor',
 	'\setasign\FpdiPdfParser\PdfParser\Filter\PredictorException',
+	'\setasign\FpdiPdfParser\PdfParser\SecHandler\SaslPrep',
+	'\setasign\FpdiPdfParser\PdfParser\SecHandler\SecHandler',
+	'\setasign\FpdiPdfParser\PdfParser\SecHandler\SecHandlerException',
+	'\setasign\FpdiPdfParser\PdfParser\SecHandler\Standard',
 	'\setasign\FpdiPdfParser\PdfParser\PdfParser',
 ];
 
