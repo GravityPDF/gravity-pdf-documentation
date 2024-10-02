@@ -39,4 +39,4 @@ This technique works for all fields except the *Hidden* field (which doesn't inc
 
 ![Customise Fields with Core Booster](https://resources.gravitypdf.com/uploads/2021/03/v6-Display-Fields.png)
 
-The `exclude` technique is a simple, quick and easy way to remove fields from your PDF, but it does have its limitations. For example, besides not being able to exclude Hidden or Product fields, you cannot create multiple PDFs on a single form and control which fields are shown in each. To overcome these limitations, [take advantage of the Core Booster add-on's *Customise Fields* feature](https://gravitypdf.com/shop/core-booster-add-on/).
+The `exclude` technique is a simple, quick and easy way to remove fields from your PDF, but it does have limitations. Besides not being able to exclude Hidden or Pricing fields, you cannot create multiple PDFs on a single form and control which fields are shown in each document. You also cannot change the order the fields are displayed. To overcome these limitations [you can use the *Customize Fields* feature in the Core Booster extension](https://gravitypdf.com/shop/core-booster-add-on/).
