@@ -198,33 +198,33 @@ public function configuration() {
             'prefix_descriptive_text' => [
                 'id'    => 'prefix_descriptive_text',
                 'type'  => 'descriptive_text',
-                'desc'  => '<h4 class="section-title">' . esc_html__( 'Description', 'gravity-forms-pdf-extended' ) . '</h4>',
+                'desc'  => '<h4 class="section-title">' . esc_html__( 'Description', 'gravity-pdf' ) . '</h4>',
                 'class' => 'gfpdf-no-padding',
             ],
 
             'prefix_my_custom_text' => [
                 'id'         => 'prefix_my_custom_text',
-                'name'       => esc_html__( 'Text', 'gravity-forms-pdf-extended' ),
+                'name'       => esc_html__( 'Text', 'gravity-pdf' ),
                 'type'       => 'text',
-                'desc'       => esc_html__( 'This is my field description', 'gravity-forms-pdf-extended' ),
+                'desc'       => esc_html__( 'This is my field description', 'gravity-pdf' ),
                 'inputClass' => 'merge-tag-support mt-hide_all_fields', /* add merge tag support */
             ],
 
             'prefix_my_custom_number' => [
                 'id'   => 'prefix_my_custom_number',
-                'name' => esc_html__( 'Number', 'gravity-forms-pdf-extended' ),
+                'name' => esc_html__( 'Number', 'gravity-pdf' ),
                 'type' => 'number',
             ],
 
             'prefix_my_custom_password' => [
                 'id'   => 'prefix_my_custom_password',
-                'name' => esc_html__( 'Password', 'gravity-forms-pdf-extended' ),
+                'name' => esc_html__( 'Password', 'gravity-pdf' ),
                 'type' => 'password',
             ],
 
             'prefix_my_custom_textarea' => [
                 'id'         => 'prefix_my_custom_textarea',
-                'name'       => esc_html__( 'Textarea', 'gravity-forms-pdf-extended' ),
+                'name'       => esc_html__( 'Textarea', 'gravity-pdf' ),
                 'type'       => 'textarea',
                 'size'       => 12, /* control the default height of the editor */
                 'inputClass' => 'merge-tag-support mt-hide_all_fields', /* enable merge tag support */
@@ -232,7 +232,7 @@ public function configuration() {
 
             'prefix_my_custom_rich_editor' => [
                 'id'         => 'prefix_my_custom_rich_editor',
-                'name'       => esc_html__( 'Rich Editor', 'gravity-forms-pdf-extended' ),
+                'name'       => esc_html__( 'Rich Editor', 'gravity-pdf' ),
                 'type'       => 'rich_editor',
                 'size'       => 12, /* control the default height of the editor */
                 'inputClass' => 'merge-tag-support mt-wp_editor mt-manual_position mt-position-right mt-hide_all_fields', /* enable merge tag support */
@@ -240,52 +240,52 @@ public function configuration() {
 
             'prefix_my_custom_select' => [
                 'id'      => 'prefix_my_custom_select',
-                'name'    => esc_html__( 'Select', 'gravity-forms-pdf-extended' ),
+                'name'    => esc_html__( 'Select', 'gravity-pdf' ),
                 'type'    => 'select',
                 'options' => [
-                    'Value 1' => esc_html__( 'Option 1', 'gravity-forms-pdf-extended' ),
-                    'Value 2' => esc_html__( 'Option 2', 'gravity-forms-pdf-extended' ),
-                    'Value 3' => esc_html__( 'Option 3', 'gravity-forms-pdf-extended' ),
-                    'Value 4' => esc_html__( 'Option 4', 'gravity-forms-pdf-extended' ),
+                    'Value 1' => esc_html__( 'Option 1', 'gravity-pdf' ),
+                    'Value 2' => esc_html__( 'Option 2', 'gravity-pdf' ),
+                    'Value 3' => esc_html__( 'Option 3', 'gravity-pdf' ),
+                    'Value 4' => esc_html__( 'Option 4', 'gravity-pdf' ),
                 ],
             ],
 
             'prefix_my_custom_checkbox' => [
                 'id'     => 'prefix_my_custom_checkbox',
-                'name'   => esc_html__( 'Checkbox', 'gravity-forms-pdf-extended' ),
+                'name'   => esc_html__( 'Checkbox', 'gravity-pdf' ),
                 'type'   => 'checkbox',
-                'desc'   => esc_html__( 'The checkbox label', 'gravity-forms-pdf-extended' ),
+                'desc'   => esc_html__( 'The checkbox label', 'gravity-pdf' ),
             ],
 
             'prefix_my_custom_multicheck' => [
                 'id'      => 'prefix_my_custom_multicheck',
-                'name'    => esc_html__( 'Multple Checkboxes', 'gravity-forms-pdf-extended' ),
+                'name'    => esc_html__( 'Multple Checkboxes', 'gravity-pdf' ),
                 'type'    => 'multicheck',
                 'options' => [
-                    'Value 1' => esc_html__( 'Option 1', 'gravity-forms-pdf-extended' ),
-                    'Value 2' => esc_html__( 'Option 2', 'gravity-forms-pdf-extended' ),
-                    'Value 3' => esc_html__( 'Option 3', 'gravity-forms-pdf-extended' ),
-                    'Value 4' => esc_html__( 'Option 4', 'gravity-forms-pdf-extended' ),
+                    'Value 1' => esc_html__( 'Option 1', 'gravity-pdf' ),
+                    'Value 2' => esc_html__( 'Option 2', 'gravity-pdf' ),
+                    'Value 3' => esc_html__( 'Option 3', 'gravity-pdf' ),
+                    'Value 4' => esc_html__( 'Option 4', 'gravity-pdf' ),
                 ],
             ],
 
             'prefix_my_custom_radio' => [
                 'id'      => 'prefix_my_custom_radio',
-                'name'    => esc_html__( 'Radio', 'gravity-forms-pdf-extended' ),
-                'desc'    => esc_html__( 'This is my field description', 'gravity-forms-pdf-extended' ),
+                'name'    => esc_html__( 'Radio', 'gravity-pdf' ),
+                'desc'    => esc_html__( 'This is my field description', 'gravity-pdf' ),
                 'type'    => 'radio',
                 'options' => [
-                    'Yes' => esc_html__( 'Yes', 'gravity-forms-pdf-extended' ),
-                    'No'  => esc_html__( 'No', 'gravity-forms-pdf-extended' ),
+                    'Yes' => esc_html__( 'Yes', 'gravity-pdf' ),
+                    'No'  => esc_html__( 'No', 'gravity-pdf' ),
                 ],
                 'std'     => 'No',
             ],
 
             'prefix_border_colour' => [
                 'id'   => 'prefix_border_colour',
-                'name' => esc_html__( 'Colour', 'gravity-forms-pdf-extended' ),
+                'name' => esc_html__( 'Colour', 'gravity-pdf' ),
                 'type' => 'color',
-                'desc' => esc_html__( 'Control the colour of the field border.', 'gravity-forms-pdf-extended' ),
+                'desc' => esc_html__( 'Control the colour of the field border.', 'gravity-pdf' ),
                 'std'  => '#CCCCCC',
             ],
         ],

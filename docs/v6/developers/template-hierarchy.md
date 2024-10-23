@@ -26,7 +26,7 @@ Individual subsite templates override any global templates in the `PDF_EXTENDED_
 
 ## Where are the Core template files?
 
-You can find the Core templates in the [`/wp-content/plugins/gravity-forms-pdf-extended/src/templates/` directory](https://github.com/GravityPDF/gravity-pdf/tree/development/src/templates) on a normal WordPress installation.
+You can find the Core templates in the [`/wp-content/plugins/gravity-pdf/src/templates/` directory](https://github.com/GravityPDF/gravity-pdf/tree/development/src/templates) on a normal WordPress installation.
 
 ## How do I modify Core templates?
 
