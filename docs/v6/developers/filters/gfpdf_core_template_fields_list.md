@@ -40,10 +40,10 @@ function prefix_custom_core_field_function() {
 		'name'    => __( 'Custom Field', 'prefix-text-domain' ),
 		'type'    => 'radio',
 		'options' => array(
-			'Yes' => __( 'Yes', 'gravity-forms-pdf-extended' ),
-			'No'  => __( 'No', 'gravity-forms-pdf-extended' ),
+			'Yes' => __( 'Yes', 'gravity-pdf' ),
+			'No'  => __( 'No', 'gravity-pdf' ),
 		),
-		'std'     => __( 'No', 'gravity-forms-pdf-extended' ),
+		'std'     => __( 'No', 'gravity-pdf' ),
 	);
 
 	return $fields;

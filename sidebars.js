@@ -721,6 +721,7 @@ module.exports = {
           'type': 'category',
           'label': 'Common Questions',
           'items': [
+            'v6/users/canonical-plugin-faq',
             'v6/users/500-internal-server-error',
             'v6/users/white-screen-of-death',
             'v6/users/increasing-memory-limit',

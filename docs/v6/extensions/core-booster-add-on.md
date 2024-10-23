@@ -6,7 +6,7 @@ description: "Core Booster adds useful display options – like showing all choi
 
 ![](https://resources.gravitypdf.com/uploads/edd/2017/06/cover-artwork-2.png)
 
-*Core Booster* is a premium plugin for Gravity PDF that adds a number of new settings to control the look and feel of Core and Universal templates. *Core templates* are the free designs that [ship with Gravity PDF Core](https://wordpress.org/plugins/gravity-forms-pdf-extended/). Universal templates are the [premium designs available for purchase from the Template Shop](https://gravitypdf.com/store/#universal).
+*Core Booster* is a premium plugin for Gravity PDF that adds a number of new settings to control the look and feel of Core and Universal templates. *Core templates* are the free designs that [ship with Gravity PDF Core](../users/installation.md). Universal templates are the [premium designs available for purchase from the Template Shop](https://gravitypdf.com/store/#universal).
 
 You can [purchase the Core Booster plugin from the Extension Shop](https://gravitypdf.com/shop/core-booster-add-on/). This guide will walk you through installing and configuring *Core Booster* to its full potential.
 
